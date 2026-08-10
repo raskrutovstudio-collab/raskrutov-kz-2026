@@ -9,7 +9,7 @@
     ],
     "preToolUse": [
       {
-        "command": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File .cursor/hooks/pre-tool-parallel.ps1",
+        "command": "node .cursor/hooks/pre-tool-parallel.js",
         "matcher": "Write|StrReplace|Delete|Edit|ApplyPatch|Shell",
         "timeout": 10
       }
