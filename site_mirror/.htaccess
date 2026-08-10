@@ -211,3 +211,7 @@ Redirect 301 /seo-prodvizhenie-sajtov-v-uralske /web-studiya/seo-prodvizhenie/ur
 Redirect 301 /seo-prodvizhenie-sajtov-v-uralske/ /web-studiya/seo-prodvizhenie/uralsk/
 Redirect 301 /seo-prodvizhenie-sajtov-v-ust-kamenogorske /web-studiya/seo-prodvizhenie/ust-kamenogorsk/
 Redirect 301 /seo-prodvizhenie-sajtov-v-ust-kamenogorske/ /web-studiya/seo-prodvizhenie/ust-kamenogorsk/
+
+# Partner case canonical recovery: old nested Turan Agency URL -> final case URL
+Redirect 301 /keysy/partnery/turan-agency/ /keysy/partnery/
+Redirect 301 /keysy/partnery/turan-agency /keysy/partnery/
