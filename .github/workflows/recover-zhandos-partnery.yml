@@ -1,0 +1,47 @@
+name: Recover Zhandos partner case
+
+on:
+  push:
+    branches:
+      - recovery/zhandos-partnery
+
+permissions:
+  contents: write
+
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout recovery branch
+        uses: actions/checkout@v4
+        with:
+          ref: recovery/zhandos-partnery
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.19.0
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Restore final partner case
+        run: node scripts/recover-zhandos-partnery.js
+
+      - name: Run project quality gates
+        run: npm run quality:all
+
+      - name: Commit recovery result
+        shell: bash
+        run: |
+          if git diff --quiet && git diff --cached --quiet; then
+            echo "No recovery changes to commit."
+            exit 0
+          fi
+          git config user.name "Raskrutov Recovery Bot"
+          git config user.email "recovery-bot@raskrutov.local"
+          git add site_mirror/keysy/partnery/index.html site_mirror/keysy/partnery/turan-agency/index.html site_mirror/.htaccess site_mirror/sitemap.xml
+          git commit -m "fix: restore Zhandos partner case at canonical URL"
+          git push origin HEAD:recovery/zhandos-partnery
