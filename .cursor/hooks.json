@@ -3,7 +3,7 @@
   "hooks": {
     "beforeSubmitPrompt": [
       {
-        "command": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File .cursor/hooks/before-submit-parallel.ps1",
+        "command": "node .cursor/hooks/before-submit-parallel.js",
         "timeout": 30
       }
     ],
@@ -16,7 +16,7 @@
     ],
     "afterAgentResponse": [
       {
-        "command": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File .cursor/hooks/after-response-parallel.ps1",
+        "command": "node .cursor/hooks/after-response-parallel.js",
         "timeout": 180
       }
     ]
