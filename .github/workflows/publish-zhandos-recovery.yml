@@ -1,0 +1,61 @@
+name: Publish restored Zhandos case to Plesk
+
+on:
+  push:
+    branches:
+      - recovery/publish-zhandos
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout recovery controller
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Publish restored page and required assets to plesk
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch origin main plesk
+          git checkout -B plesk origin/plesk
+          git config user.name "Raskrutov Recovery Bot"
+          git config user.email "recovery-bot@raskrutov.local"
+
+          mkdir -p keysy/partnery assets/images/cases/turan-agency
+          git show origin/main:site_mirror/keysy/partnery/index.html > keysy/partnery/index.html
+          git show origin/main:site_mirror/assets/images/cases/turan-agency/zhandos-kasenov.webp > assets/images/cases/turan-agency/zhandos-kasenov.webp
+          git show origin/main:site_mirror/assets/images/cases/turan-agency/zhandos-kasenov-520.webp > assets/images/cases/turan-agency/zhandos-kasenov-520.webp
+          rm -rf keysy/partnery/turan-agency
+
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('.htaccess')
+          text = p.read_text(encoding='utf-8')
+          marker = 'Redirect 301 /keysy/partnery/turan-agency/ /keysy/partnery/'
+          if marker not in text:
+              text = text.rstrip() + '\n\n# Partner case canonical recovery: old nested Turan Agency URL -> final case URL\n'
+              text += 'Redirect 301 /keysy/partnery/turan-agency/ /keysy/partnery/\n'
+              text += 'Redirect 301 /keysy/partnery/turan-agency /keysy/partnery/\n'
+              p.write_text(text, encoding='utf-8')
+          PY
+
+          grep -q 'Жандос Орманович Басыбаев' keysy/partnery/index.html
+          grep -q 'canonical" href="https://raskrutov.kz/keysy/partnery/"' keysy/partnery/index.html
+          grep -q 'case-study.css' keysy/partnery/index.html
+          if grep -q 'blk_section\|data-tpl-id\|m-block-wrapper' keysy/partnery/index.html; then
+            echo 'ERROR: Mottor markup found in restored partner page' >&2
+            exit 1
+          fi
+
+          git add keysy/partnery/index.html assets/images/cases/turan-agency .htaccess
+          if git diff --cached --quiet; then
+            echo 'Plesk branch already contains restored Zhandos case.'
+            exit 0
+          fi
+          git commit -m 'fix: publish restored Zhandos partner case'
+          git push origin HEAD:plesk
