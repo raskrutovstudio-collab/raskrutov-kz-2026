@@ -5,9 +5,10 @@ function Section([string]$Title) {
     Write-Host "=== $Title ==="
 }
 
-function Run-Git([string[]]$Args) {
+function Run-Git {
+    param([Parameter(ValueFromRemainingArguments=$true)][string[]]$GitArgs)
     try {
-        $out = & git @Args 2>&1
+        $out = & git @GitArgs 2>&1
         $code = $LASTEXITCODE
         if ($null -ne $out) { $out | ForEach-Object { Write-Host $_ } }
         Write-Host "[exit=$code]"
@@ -24,19 +25,19 @@ Write-Host ("PowerShell: {0}" -f $PSVersionTable.PSVersion)
 Write-Host ("PWD: {0}" -f (Get-Location).Path)
 
 Section "REPOSITORY"
-Run-Git @("rev-parse", "--show-toplevel")
-Run-Git @("remote", "-v")
-Run-Git @("branch", "--show-current")
-Run-Git @("status", "--short", "--branch")
-Run-Git @("log", "-1", "--oneline")
+Run-Git rev-parse --show-toplevel
+Run-Git remote -v
+Run-Git branch --show-current
+Run-Git status --short --branch
+Run-Git log -1 --oneline
 
 Section "FETCH"
-Run-Git @("fetch", "origin", "--prune")
+Run-Git fetch origin --prune
 
 Section "REMOTE REFS"
 foreach ($ref in @("origin/main", "origin/work/pc1", "origin/work/pc2")) {
     Write-Host ("-- {0}" -f $ref)
-    Run-Git @("rev-parse", "--verify", $ref)
+    Run-Git rev-parse --verify $ref
 }
 
 Section "REQUIRED FILES"
@@ -73,9 +74,10 @@ if (Test-Path -LiteralPath $config) {
 }
 
 Section "GIT CONFIG"
-Run-Git @("config", "--get", "core.hooksPath")
-Run-Git @("config", "--get", "fetch.prune")
-Run-Git @("config", "--get", "pull.ff")
+Run-Git config --get core.hooksPath
+Run-Git config --get fetch.prune
+Run-Git config --get pull.ff
+Run-Git config --get-all remote.origin.fetch
 
 Section "SETUP SCRIPT PARSE"
 $setup = "scripts/setup-parallel-work.ps1"
