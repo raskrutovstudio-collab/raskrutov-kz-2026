@@ -35,8 +35,19 @@ if (-not (Test-Path -LiteralPath $configPath)) {
 
 $branch = if ($MachineName -eq "PC1") { "work/pc1" } else { "work/pc2" }
 
+# Нормализуем refspec: оба ПК должны видеть main и обе машинные ветки.
+& git -C $root config --replace-all remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"
+if ($LASTEXITCODE -ne 0) { throw "Не удалось настроить remote.origin.fetch." }
+
 & git -C $root fetch origin --prune
-if ($LASTEXITCODE -ne 0) { throw "git fetch завершился ошибкой." }
+if ($LASTEXITCODE -ne 0) { throw "git fetch origin --prune завершился ошибкой." }
+
+# Явно убеждаемся, что нужная remote branch существует локально.
+& git -C $root rev-parse --verify "origin/$branch" 2>$null | Out-Null
+if ($LASTEXITCODE -ne 0) {
+    & git -C $root fetch origin "+refs/heads/$branch`:refs/remotes/origin/$branch"
+    if ($LASTEXITCODE -ne 0) { throw "Не удалось получить origin/$branch." }
+}
 
 $status = @(& git -C $root status --porcelain)
 if ($status.Count -gt 0 -and -not [string]::IsNullOrWhiteSpace(($status -join ""))) {
@@ -49,10 +60,29 @@ if ($current -eq "main") {
     if ($LASTEXITCODE -ne 0) { throw "Не удалось синхронизировать main." }
 }
 
-& git -C $root switch -C $branch "origin/$branch"
-if ($LASTEXITCODE -ne 0) { throw "Не удалось переключиться на $branch." }
+# Переключаемся без принудительного сброса существующей локальной ветки.
+& git -C $root show-ref --verify --quiet "refs/heads/$branch"
+$localBranchExists = ($LASTEXITCODE -eq 0)
+if ($localBranchExists) {
+    & git -C $root switch $branch
+    if ($LASTEXITCODE -ne 0) { throw "Не удалось переключиться на локальную ветку $branch." }
+} else {
+    & git -C $root switch --track -c $branch "origin/$branch"
+    if ($LASTEXITCODE -ne 0) { throw "Не удалось создать локальную ветку $branch из origin/$branch." }
+}
+
+# Рабочая ветка должна начинать новую задачу с актуального main.
+& git -C $root merge --ff-only origin/main
+if ($LASTEXITCODE -ne 0) {
+    throw "Ветка $branch не может быть безопасно fast-forward синхронизирована с origin/main."
+}
+
+# Upstream фиксируем явно, даже если локальная ветка уже существовала.
+& git -C $root branch --set-upstream-to="origin/$branch" $branch | Out-Null
+if ($LASTEXITCODE -ne 0) { throw "Не удалось установить upstream для $branch." }
 
 & git -C $root config core.hooksPath .githooks
+if ($LASTEXITCODE -ne 0) { throw "Не удалось установить core.hooksPath=.githooks" }
 & git -C $root config fetch.prune true
 & git -C $root config pull.ff only
 
@@ -61,5 +91,7 @@ Write-Host "=== PARALLEL WORK SETUP OK ==="
 Write-Host "Machine: $MachineName"
 Write-Host "Branch:  $branch"
 Write-Host "Repo:    $root"
+Write-Host "Hooks:   .githooks"
+Write-Host "Fetch:   all origin branches"
 Write-Host ""
 Write-Host "Cursor теперь работает параллельно через отдельную ветку этого ПК."
