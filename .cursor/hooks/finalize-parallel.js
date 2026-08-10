@@ -17,6 +17,17 @@ function run(cmd, args, cwd) {
   };
 }
 
+function runNpm(root, args) {
+  if (process.platform === 'win32') {
+    // .cmd files cannot be spawned reliably with shell:false on Windows.
+    // Route npm.cmd through cmd.exe to avoid spawnSync EINVAL while keeping
+    // the hook independent from PowerShell execution policy.
+    const comspec = process.env.ComSpec || 'C:\\Windows\\System32\\cmd.exe';
+    return run(comspec, ['/d', '/s', '/c', 'npm.cmd', ...args], root);
+  }
+  return run('npm', args, root);
+}
+
 function appendLog(logPath, message) {
   try {
     fs.appendFileSync(logPath, `${new Date().toISOString()} ${message}\n`, 'utf8');
@@ -89,8 +100,7 @@ try {
     process.exit(0);
   }
 
-  const npmCmd = process.platform === 'win32' ? 'npm.cmd' : 'npm';
-  const quality = run(npmCmd, ['run', 'quality:all'], root);
+  const quality = runNpm(root, ['run', 'quality:all']);
   appendLog(logPath, `quality code=${quality.code}`);
   if (quality.code !== 0) {
     appendLog(logPath, `STOP: quality failed ${quality.stderr || quality.stdout || quality.error}`);
