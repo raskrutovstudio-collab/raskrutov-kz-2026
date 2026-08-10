@@ -16,7 +16,13 @@
     ],
     "afterAgentResponse": [
       {
-        "command": "node .cursor/hooks/after-response-parallel.js",
+        "command": "node .cursor/hooks/finalize-parallel.js",
+        "timeout": 180
+      }
+    ],
+    "stop": [
+      {
+        "command": "node .cursor/hooks/finalize-parallel.js",
         "timeout": 180
       }
     ]
