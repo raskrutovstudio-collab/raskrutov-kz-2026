@@ -1,0 +1,48 @@
+name: Publish final Zhandos copy
+
+on:
+  push:
+    branches:
+      - publish/zhandos-final-copy
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout controller branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Publish final page to plesk
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch origin main plesk
+          git checkout -B plesk origin/plesk
+          git config user.name "Raskrutov Publish Bot"
+          git config user.email "publish-bot@raskrutov.local"
+
+          mkdir -p keysy/partnery
+          git show origin/main:site_mirror/keysy/partnery/index.html > keysy/partnery/index.html
+
+          grep -q 'Команда освоила digital-процессы и вышла на самостоятельную работу' keysy/partnery/index.html
+          grep -q 'Хронология запуска Turan Agency' keysy/partnery/index.html
+          grep -q 'Команда получила систему для самостоятельной работы' keysy/partnery/index.html
+          grep -q 'Главный результат — самостоятельная работа команды' keysy/partnery/index.html
+          grep -q 'Алгоритм работы с клиентом на всех этапах проекта' keysy/partnery/index.html
+          if grep -q 'Не набор лекций, а система\|самостоятельная работа, а не один договор\|не просто научиться делать сайты, а понять\|а не заменяет команду' keysy/partnery/index.html; then
+            echo 'ERROR: machine-style contrast remains in final live page' >&2
+            exit 1
+          fi
+
+          git add keysy/partnery/index.html
+          if git diff --cached --quiet; then
+            echo 'Plesk already has final Zhandos copy.'
+            exit 0
+          fi
+          git commit -m 'fix: publish final Zhandos partner copy'
+          git push origin HEAD:plesk
