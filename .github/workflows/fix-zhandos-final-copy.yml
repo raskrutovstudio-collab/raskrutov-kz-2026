@@ -1,0 +1,47 @@
+name: Fix final Zhandos copy
+
+on:
+  push:
+    branches:
+      - fix/zhandos-final-copy
+
+permissions:
+  contents: write
+
+jobs:
+  fix-copy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+        with:
+          ref: fix/zhandos-final-copy
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.19.0
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Apply approved copy changes
+        run: node scripts/fix-zhandos-final-copy.js
+
+      - name: Run quality gates
+        run: npm run quality:all
+
+      - name: Commit result
+        shell: bash
+        run: |
+          if git diff --quiet && git diff --cached --quiet; then
+            echo "No copy changes to commit."
+            exit 0
+          fi
+          git config user.name "Raskrutov Copy Bot"
+          git config user.email "copy-bot@raskrutov.local"
+          git add site_mirror/keysy/partnery/index.html
+          git commit -m "fix: finalize Zhandos partner case copy"
+          git push origin HEAD:fix/zhandos-final-copy
