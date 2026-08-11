@@ -130,12 +130,6 @@
     <loc>https://raskrutov.kz/web-studiya/aeo-prodvizhenie</loc>
   </url>
   <url>
-    <loc>https://raskrutov.kz/web-studiya/aeo-geo-prodvizhenie/</loc>
-  </url>
-  <url>
-    <loc>https://raskrutov.kz/web-studiya/aeo-geo-prodvizhenie/astana/</loc>
-  </url>
-  <url>
     <loc>https://raskrutov.kz/web-studiya/digital-konsalting</loc>
   </url>
   <url>
@@ -584,5 +578,62 @@
     <loc>https://raskrutov.kz/web-studiya/dizayn/ust-kamenogorsk</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+  </url>
+<url>
+    <loc>https://raskrutov.kz/web-studiya/aeo-geo-prodvizhenie/</loc>
+  </url>
+<url>
+    <loc>https://raskrutov.kz/web-studiya/aeo-geo-prodvizhenie/astana/</loc>
+  </url>
+<url>
+    <loc>https://raskrutov.kz/web-studiya/aeo-geo-prodvizhenie/almaty/</loc>
+  </url>
+<url>
+    <loc>https://raskrutov.kz/web-studiya/aeo-geo-prodvizhenie/shymkent/</loc>
+  </url>
+<url>
+    <loc>https://raskrutov.kz/web-studiya/aeo-geo-prodvizhenie/aktau/</loc>
+  </url>
+<url>
+    <loc>https://raskrutov.kz/web-studiya/aeo-geo-prodvizhenie/aktobe/</loc>
+  </url>
+<url>
+    <loc>https://raskrutov.kz/web-studiya/aeo-geo-prodvizhenie/atyrau/</loc>
+  </url>
+<url>
+    <loc>https://raskrutov.kz/web-studiya/aeo-geo-prodvizhenie/karaganda/</loc>
+  </url>
+<url>
+    <loc>https://raskrutov.kz/web-studiya/aeo-geo-prodvizhenie/kokshetau/</loc>
+  </url>
+<url>
+    <loc>https://raskrutov.kz/web-studiya/aeo-geo-prodvizhenie/kostanay/</loc>
+  </url>
+<url>
+    <loc>https://raskrutov.kz/web-studiya/aeo-geo-prodvizhenie/kyzylorda/</loc>
+  </url>
+<url>
+    <loc>https://raskrutov.kz/web-studiya/aeo-geo-prodvizhenie/pavlodar/</loc>
+  </url>
+<url>
+    <loc>https://raskrutov.kz/web-studiya/aeo-geo-prodvizhenie/petropavlovsk/</loc>
+  </url>
+<url>
+    <loc>https://raskrutov.kz/web-studiya/aeo-geo-prodvizhenie/semey/</loc>
+  </url>
+<url>
+    <loc>https://raskrutov.kz/web-studiya/aeo-geo-prodvizhenie/taldykorgan/</loc>
+  </url>
+<url>
+    <loc>https://raskrutov.kz/web-studiya/aeo-geo-prodvizhenie/taraz/</loc>
+  </url>
+<url>
+    <loc>https://raskrutov.kz/web-studiya/aeo-geo-prodvizhenie/turkestan/</loc>
+  </url>
+<url>
+    <loc>https://raskrutov.kz/web-studiya/aeo-geo-prodvizhenie/uralsk/</loc>
+  </url>
+<url>
+    <loc>https://raskrutov.kz/web-studiya/aeo-geo-prodvizhenie/ust-kamenogorsk/</loc>
   </url>
 </urlset>
