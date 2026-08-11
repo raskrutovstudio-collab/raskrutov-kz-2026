@@ -263,6 +263,26 @@
   background: #f8f7fc;
 }
 
+/* 3 related cards: don't inherit SEO 4-col grid (left gap) */
+.aeo-page .aeo-related .seo-services__grid {
+  justify-content: center;
+  justify-items: stretch;
+}
+
+@media (min-width: 768px) {
+  .aeo-page .aeo-related .seo-services__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1100px) {
+  .aeo-page .aeo-related .seo-services__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    max-width: 1080px;
+    margin-inline: auto;
+  }
+}
+
 .aeo-page .aeo-synergy {
   max-width: 72ch;
   margin: 0 auto 24px;
