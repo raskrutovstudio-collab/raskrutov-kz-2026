@@ -119,6 +119,15 @@
   color: #444;
 }
 
+.aeo-page .aeo-why__item a,
+.aeo-page .seo-inc a,
+.aeo-page .aeo-prose a {
+  color: #006fdc;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .aeo-page .aeo-tasks {
   background: #f8f7fc;
 }
