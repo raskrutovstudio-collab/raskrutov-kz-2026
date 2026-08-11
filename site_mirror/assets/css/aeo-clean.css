@@ -1,0 +1,325 @@
+/* AEO/GEO service page — page-specific extensions over home-clean + seo-clean */
+.aeo-page .aeo-hero__title {
+  max-width: 22ch;
+}
+
+.aeo-page .seo-trust {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.aeo-page .aeo-prose {
+  max-width: 72ch;
+  margin: 0 auto 20px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #3a3a3a;
+  text-align: left;
+}
+
+.aeo-page .aeo-prose--center {
+  text-align: center;
+}
+
+.aeo-page .aeo-list {
+  max-width: 72ch;
+  margin: 0 auto;
+  padding: 0 0 0 1.15em;
+  color: #3a3a3a;
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.aeo-page .aeo-list li + li {
+  margin-top: 8px;
+}
+
+.aeo-page .aeo-def-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr;
+}
+
+.aeo-page .aeo-def-card {
+  padding: 20px 18px;
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid #ebe7f7;
+  box-shadow: 0 8px 24px rgba(80, 60, 140, 0.06);
+}
+
+.aeo-page .aeo-def-card h3 {
+  margin: 0 0 8px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #111;
+}
+
+.aeo-page .aeo-def-card p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #444;
+}
+
+.aeo-page .aeo-why {
+  background: #fff;
+}
+
+.aeo-page .aeo-why__grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: 1fr;
+}
+
+.aeo-page .aeo-why__item {
+  padding: 18px 16px;
+  border-radius: 12px;
+  background: #f8f7fc;
+  border: 1px solid #ebe7f7;
+}
+
+.aeo-page .aeo-why__item h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #111;
+}
+
+.aeo-page .aeo-why__item p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #444;
+}
+
+.aeo-page .aeo-tasks {
+  background: #f8f7fc;
+}
+
+.aeo-page .aeo-tasks__grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr;
+}
+
+.aeo-page .aeo-task {
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  gap: 12px;
+  align-items: start;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid #ebe7f7;
+}
+
+.aeo-page .aeo-task__num {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(270deg, rgb(223, 98, 226) 9%, rgb(106, 92, 234) 90%);
+}
+
+.aeo-page .aeo-task p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.45;
+  color: #333;
+}
+
+.aeo-page .aeo-results {
+  background: #fff;
+}
+
+.aeo-page .aeo-results__grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: 1fr;
+}
+
+.aeo-page .aeo-result {
+  padding: 18px 16px;
+  border-radius: 12px;
+  border: 1px solid #ebe7f7;
+  background: linear-gradient(180deg, #fbfaff 0%, #fff 100%);
+}
+
+.aeo-page .aeo-result h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #111;
+}
+
+.aeo-page .aeo-result p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #444;
+}
+
+.aeo-page .aeo-process {
+  background: #f8f7fc;
+}
+
+.aeo-page .aeo-process__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.aeo-page .aeo-process__item {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 14px;
+  align-items: start;
+  padding: 16px 18px;
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid #ebe7f7;
+}
+
+.aeo-page .aeo-process__step {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #004f9a;
+  background: #eef5ff;
+}
+
+.aeo-page .aeo-process__item h3 {
+  margin: 0 0 4px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #111;
+}
+
+.aeo-page .aeo-process__item p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #444;
+}
+
+.aeo-page .aeo-audience {
+  background: #fff;
+}
+
+.aeo-page .aeo-audience__grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr;
+}
+
+.aeo-page .aeo-audience__item {
+  padding: 16px 18px;
+  border-radius: 12px;
+  background: #f8f7fc;
+  border: 1px solid #ebe7f7;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.aeo-page .aeo-related {
+  background: #f8f7fc;
+}
+
+.aeo-page .aeo-synergy {
+  max-width: 72ch;
+  margin: 0 auto 24px;
+  padding: 18px 18px;
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid #ebe7f7;
+  font-size: 15px;
+  line-height: 1.55;
+  color: #3a3a3a;
+}
+
+.aeo-page .aeo-synergy a {
+  color: #006fdc;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.aeo-page .aeo-synergy a:hover,
+.aeo-page .aeo-synergy a:focus-visible {
+  color: #7f3ff2;
+}
+
+.aeo-page .aeo-hero-visual {
+  display: grid;
+  place-items: center;
+  min-height: 220px;
+  padding: 28px;
+  border-radius: 16px;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(127, 63, 242, 0.16), transparent 45%),
+    radial-gradient(circle at 80% 30%, rgba(0, 111, 220, 0.14), transparent 40%),
+    linear-gradient(160deg, #f4f1ff 0%, #eef5ff 55%, #fff 100%);
+  border: 1px solid #ebe7f7;
+  box-shadow: 0 16px 40px rgba(80, 60, 140, 0.1);
+}
+
+.aeo-page .aeo-hero-visual img {
+  width: min(180px, 55%);
+  height: auto;
+}
+
+.aeo-page .aeo-note {
+  max-width: 72ch;
+  margin: 18px auto 0;
+  font-size: 13px;
+  line-height: 1.45;
+  color: #667085;
+  text-align: center;
+}
+
+@media (min-width: 700px) {
+  .aeo-page .aeo-def-grid,
+  .aeo-page .aeo-why__grid,
+  .aeo-page .aeo-results__grid,
+  .aeo-page .aeo-audience__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .aeo-page .aeo-tasks__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 980px) {
+  .aeo-page .aeo-process__list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .aeo-page .aeo-why__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .aeo-page .aeo-includes-like {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .aeo-page .seo-btn,
+  .aeo-page .seo-scard,
+  .aeo-page #rk-seo-regions .rk-seo-regions__card,
+  .aeo-page #rk-seo-regions .rk-seo-regions__image {
+    transition: none;
+  }
+}
