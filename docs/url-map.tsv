@@ -54,6 +54,10 @@ url	title	type	on_disk
 /web-studiya/kontekstnaya-reklama	Контекстная реклама	Услуга	True
 /web-studiya/kontekstnaya-reklama/google-ads	Контекстная реклама в Google	Узкая услуга	True
 /web-studiya/kontekstnaya-reklama/yandex-direct	Контекстная реклама в Яндекс	Узкая услуга	True
+/web-studiya/kontekstnaya-reklama/almaty	Контекстная реклама в Алматы	Регион услуги	True
+/web-studiya/kontekstnaya-reklama/astana	Контекстная реклама в Астане	Регион услуги	True
+/web-studiya/kontekstnaya-reklama/shymkent	Контекстная реклама в Шымкенте	Регион услуги	True
+/web-studiya/kontekstnaya-reklama/karaganda	Контекстная реклама в Караганде	Регион услуги	True
 /web-studiya/lidogeneratsiya	Лидогенерация	Услуга	True
 /web-studiya/podderzhka-saytov	Поддержка сайтов	Услуга	True
 /web-studiya/seo-prodvizhenie	SEO-продвижение	Услуга	True
