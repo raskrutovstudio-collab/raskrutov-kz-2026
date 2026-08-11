@@ -1,0 +1,374 @@
+---
+description: Mandatory release quality gate for every production page. Enforces mobile performance, accessibility, SEO, image, font, CSS, JS and agentic quality before publishing.
+alwaysApply: true
+---
+
+# RASKRUTOV — PAGE RELEASE QUALITY GATE
+
+Это обязательное правило для новых, переработанных, региональных, мигрированных и существенно изменённых production-страниц.
+
+Цель: каждая production-страница должна выходить в публикацию уже технически оптимизированной.
+
+Эталон качества:
+- Mobile Performance: 95–100
+- Desktop Performance: 98–100
+- Accessibility: 100
+- Best Practices: 100
+- SEO: 100
+- Agentic browsing: все применимые проверки PASS
+
+Абсолютный минимальный порог Mobile Performance: 90.
+Страница с Mobile Performance < 90 НЕ готова к публикации.
+
+## 1. Общий принцип
+
+Performance, SEO, Accessibility и корректная семантика являются частью разработки страницы.
+Они не должны добавляться отдельным этапом после завершения верстки.
+HTML, CSS, JS, изображения, шрифты и структура страницы должны сразу проектироваться с учетом Lighthouse / Core Web Vitals.
+Запрещено сознательно создавать технический долг с расчетом «сначала сделаем страницу, потом оптимизируем».
+
+## 2. Обязательный Quality Gate
+
+Перед признанием страницы готовой обязательно выполнить:
+
+`npm run quality:all`
+
+Результат: `exit 0`.
+
+После этого провести Lighthouse / PageSpeed проверки.
+Для MOBILE выполнить минимум 3 одинаковых Lighthouse-прогона и использовать медианный результат.
+
+Release targets:
+- Mobile Performance median >= 95
+- каждый отдельный Mobile Performance run >= 90
+- Desktop Performance >= 98
+- Accessibility = 100
+- Best Practices = 100
+- SEO = 100
+- CLS <= 0.05
+- TBT <= 100 ms
+- желательный LCP <= 2.5 s
+- допустимый пограничный LCP <= 3.0 s
+
+Если показатели ниже — определить причину и исправить до публикации.
+Не оптимизировать страницу под один случайный удачный прогон.
+
+## 3. Mobile First
+
+Основной performance gate проводится на мобильной версии.
+Desktop 100 при слабом mobile не считается успешным результатом.
+
+Приоритет:
+1. Mobile LCP
+2. Mobile FCP
+3. CLS
+4. TBT
+5. Speed Index
+6. Accessibility
+7. Desktop
+
+## 4. Critical Rendering Path
+
+Первый мобильный экран должен отображаться максимально быстро.
+Не допускать длинных render-blocking цепочек.
+
+Для первого экрана определить минимальный critical CSS.
+Critical CSS должен включать только необходимые стили: reset/base, body, container, header, hero, H1, первый текст, hero CTA, первый media-element и необходимые font-face.
+
+Critical CSS допустимо размещать inline в `<head>`, если это реально уменьшает render delay.
+Он должен оставаться компактным.
+
+Основной CSS ниже первого экрана загружать неблокирующим способом только после проверки отсутствия FOUC, CLS, поломки layout и задержки interaction.
+Не создавать несколько тяжелых render-blocking CSS-файлов.
+
+## 5. CSS
+
+Запрещены:
+- огромные CSS bundle для небольшой страницы;
+- CSS конструктора;
+- public.bundle;
+- неиспользуемые стили старых страниц;
+- дублирующиеся правила;
+- тяжелые inline-style dumps;
+- подключение глобального CSS, если странице нужен небольшой его процент.
+
+Каждая самостоятельная clean-страница должна использовать только необходимые CSS.
+Перед публикацией проверять Coverage.
+Большие объемы unused CSS должны быть устранены.
+
+## 6. Шрифты
+
+Шрифты являются частью critical rendering path.
+Предпочитать WOFF2.
+
+Для production-страниц использовать `font-display: swap` или после тестирования `font-display: fallback`.
+Запрещено `font-display: block`.
+
+Не загружать начертания, которые не используются.
+Не загружать normal/medium/semibold/bold одновременно, если странице реально нужны только 1–2 веса.
+Особенно контролировать шрифт H1.
+
+Если H1 является LCP-element, его font resource должен обнаруживаться максимально рано.
+Preload разрешается только для реально критичных шрифтов.
+Обычно достаточно 1 critical font preload.
+Не preload все семейства и веса.
+URL preload должен точно совпадать с URL в `@font-face`.
+Не использовать тяжелый WOFF, если существует качественный WOFF2.
+
+## 7. LCP
+
+Для каждой страницы определить фактический LCP-element.
+Нельзя оптимизировать LCP вслепую.
+
+Если LCP = текст, приоритет: CSS, fonts, render delay.
+Если LCP = изображение, приоритет: размер файла, responsive source, srcset, sizes, preload, fetchpriority, раннее обнаружение ресурса.
+
+Только реальный LCP-resource может получать `fetchpriority="high"`.
+Не использовать `fetchpriority="high"` массово.
+
+## 8. Изображения
+
+Каждый `<img>` обязан иметь атрибут `alt`.
+Информационное изображение — содержательный короткий alt.
+Декоративное — `alt=""`.
+
+Запрещены бессмысленные alt: image, photo, picture, картинка, фото, icon.
+
+Для всех изображений задавать `width` и `height`, если размеры известны.
+Below-the-fold изображения: `loading="lazy"`, `decoding="async"`.
+Above-the-fold LCP image нельзя lazy-load.
+Предпочитать WebP / AVIF, если формат поддерживается workflow проекта.
+
+## 9. Responsive Images
+
+Запрещено отдавать мобильному контейнеру огромный desktop-image без необходимости.
+Использовать `srcset` и `sizes`.
+
+Для ключевых изображений создавать разумные варианты размеров, например 320w / 480w / 640w / 960w / 1280w.
+Особенно проверять hero, логотип, изображения карточек, портфолио и кейсы.
+Изображение не должно быть в несколько раз больше реального display size без причины.
+Retina/DPR учитывать.
+
+## 10. Логотип
+
+Логотип должен быть адаптивным.
+Не загружать файл 400–1000 px для контейнера ~150–200 px без необходимости.
+Использовать адекватный `src/srcset`.
+Сохранять визуальную четкость на DPR 2.
+
+## 11. ALT Quality Gate
+
+Перед публикацией автоматически или вручную проверить все `img`, `picture` и SVG с `role="img"`.
+Ни одно информационное изображение не должно остаться без корректного альтернативного описания.
+Lighthouse PASS по image-alt не отменяет ручную семантическую проверку alt.
+
+## 12. JavaScript
+
+JavaScript должен оставаться минимальным.
+Использовать `defer`, где возможно.
+Не подключать JS другой страницы только ради одной маленькой функции.
+
+Не допускать duplicate JS, старый Mottor runtime, builder JS, ненужные polyfills, длинные main-thread tasks и блокирующие синхронные scripts.
+
+TBT target: <= 100 ms.
+Идеальный результат для статических страниц: около 0 ms.
+
+## 13. Third-party JS
+
+Особенно контролировать Google Tag Manager, analytics, chat widgets, maps, CRM scripts и external embeds.
+Не удалять рабочую аналитику ради PageSpeed.
+GTM/analytics должны сохранять корректную работу.
+
+Если оптимизация GTM может изменить аналитику, conversions, consent или attribution — не менять способ загрузки без отдельного подтверждения.
+
+## 14. CLS
+
+Целевой CLS: <= 0.05.
+Идеально: <= 0.01.
+
+Не допускать изображения без dimensions, динамическое появление header, смену размера H1 после загрузки font, прыгающие кнопки, injected elements above-the-fold, изменение высоты hero и позднюю загрузку критического CSS.
+
+## 15. Accessibility
+
+Target: 100.
+
+Проверить color contrast, alt, labels, aria-label, focus-visible, keyboard navigation, semantic headings, один H1, landmarks, nav, main, footer, buttons, link names, form labels и touch targets.
+
+WCAG AA minimum contrast для обычного текста: 4.5:1.
+Не оставлять Accessibility 97–99, если проблема технически исправима без ухудшения дизайна.
+
+## 16. SEO
+
+Target: 100.
+
+Обязательно: lang, charset, viewport, Title, Description, canonical, robots, один H1, crawlable links, valid robots.txt и valid hreflang, где применяется.
+Страница должна быть индексируемой только если это production SEO page.
+
+## 17. Schema
+
+JSON-LD должен быть валидным.
+Использовать только релевантные типы Schema.
+FAQPage разрешена только при реально видимом FAQ.
+BreadcrumbList должен соответствовать фактической навигации.
+Не создавать вымышленные reviews, ratings, offers, prices или FAQ ради rich results.
+
+## 18. Agentic / AI Readiness
+
+Дерево доступности должно быть корректным.
+ИИ-агенты должны понимать H1, структуру страницы, навигацию, кнопки, формы, ссылки и основные сущности.
+Не создавать интерфейс, смысл которого существует только визуально и отсутствует в семантическом HTML.
+Если Lighthouse показывает Agentic Browsing checks — все применимые проверки должны PASS.
+
+## 19. Forms
+
+Формы не должны ухудшать Accessibility и agentic browsing.
+Каждое поле должно иметь name, type, label или aria-label.
+Где применимо: required и autocomplete.
+Submit button должен иметь понятное имя.
+Не использовать input без name.
+Не использовать старые Mottor handlers.
+
+## 20. LP Motor / Mottor
+
+На clean production-страницах запрещены runtime-зависимости: public.bundle, Mottor JS, LP Motor JS, builder runtime и CDN конструктора.
+Локально сохраненный font/image path с историческим названием CDN допускается только как обычный локальный asset, если он не вызывает внешней зависимости.
+Предпочтительно постепенно переносить такие assets в нормальную структуру проекта.
+
+## 21. External Requests
+
+Каждый внешний request в critical path должен иметь причину.
+Не добавлять preconnect автоматически.
+Preconnect использовать только если страница действительно рано обращается к внешнему origin.
+
+## 22. Security / Best Practices
+
+Best Practices target: 100.
+Не создавать mixed content, console errors, broken requests, deprecated APIs и unsafe inline behavior без причины.
+CSP/HSTS/COOP/XFO относятся преимущественно к server-level policy.
+Не ломать действующий сайт массовым внедрением security headers без отдельного тестирования.
+
+## 23. Cache
+
+Статические assets должны иметь корректное browser caching.
+При изменении CSS/JS использовать принятый cache-busting механизм проекта.
+Не создавать случайные версии query string при каждом сохранении.
+
+## 24. Mobile Visual QA
+
+Обязательно проверить минимум: 390 px, 430 px, 768 px, 1440 px.
+
+Не допускаются horizontal scroll, наложение элементов, переполнение H1, кнопки за пределами viewport, маленькие touch targets, обрезанные изображения и layout shift.
+
+## 25. Lighthouse Procedure
+
+Для новой или существенно измененной страницы:
+- RUN 1 MOBILE
+- RUN 2 MOBILE
+- RUN 3 MOBILE
+- получить медиану
+- затем DESKTOP RUN
+
+Финальные показатели записывать в отчет.
+Не считать страницу готовой по одному Lighthouse запуску.
+
+## 26. Performance Regression
+
+Если изменение улучшает один показатель и существенно ухудшает другой — разобраться в причине.
+
+Приоритеты:
+1. функциональность
+2. отсутствие ошибок
+3. SEO/indexability
+4. accessibility
+5. Core Web Vitals
+6. visual fidelity
+7. score
+
+Не ломать сайт ради искусственного Lighthouse 100.
+
+## 27. Release Stop Conditions
+
+Публикация запрещена, если:
+- Mobile Performance < 90;
+- Accessibility < 100 при исправимой ошибке;
+- Best Practices < 100;
+- SEO < 100;
+- `quality:all` != 0;
+- есть 404 local assets;
+- есть новые browser console errors;
+- сломана форма;
+- сломано mobile menu;
+- невалиден JSON-LD;
+- есть критический CLS;
+- страница зависит от отсутствующих файлов.
+
+## 28. Target Quality
+
+MOBILE:
+- Performance: 95–100
+- Accessibility: 100
+- Best Practices: 100
+- SEO: 100
+
+DESKTOP:
+- Performance: 98–100
+- Accessibility: 100
+- Best Practices: 100
+- SEO: 100
+
+Идеальный эталон:
+- Mobile: 99 / 100 / 100 / 100
+- Desktop: 100 / 100 / 100 / 100
+- Agentic browsing: PASS всех применимых проверок.
+
+## 29. Финальный отчет перед Release
+
+Cursor должен вывести:
+
+PAGE: <URL>
+QUALITY:all: PASS / FAIL
+
+MOBILE RUN 1: Performance / FCP / LCP / TBT / CLS
+MOBILE RUN 2: Performance / FCP / LCP / TBT / CLS
+MOBILE RUN 3: Performance / FCP / LCP / TBT / CLS
+MOBILE MEDIAN: Performance / FCP / LCP / TBT / CLS
+
+ACCESSIBILITY: ...
+BEST PRACTICES: ...
+SEO: ...
+AGENTIC: ...
+
+DESKTOP: Performance / Accessibility / Best Practices / SEO
+
+IMAGES: missing alt / missing width-height / oversized / broken
+CSS: render blocking requests / critical CSS status
+FONTS: critical requests / unused weights
+JS: TBT / duplicate-unused critical JS
+404: 0 / count
+CONSOLE ERRORS: 0 / count
+
+FINAL VERDICT:
+READY FOR PRODUCTION: YES / NO
+
+Если NO — перечислить причины.
+
+## 30. Правило для масштабирования
+
+При создании пачки страниц нельзя создавать сначала всю пачку, а затем впервые проверять производительность.
+
+Порядок:
+1. создать первую страницу;
+2. довести её до полного Quality Gate;
+3. считать её техническим эталоном;
+4. масштабировать только оптимизированную архитектуру;
+5. после генерации пачки повторно проверить каждую страницу;
+6. минимум одну мобильную Lighthouse-проверку каждой страницы;
+7. полный 3-run check для представителя каждого шаблона.
+
+Плохая архитектура не должна масштабироваться на региональные страницы.
+
+## 31. Главное правило
+
+Страница считается законченной только тогда, когда одновременно готовы CONTENT, DESIGN, MOBILE, SEO, AEO, ACCESSIBILITY, PERFORMANCE, SCHEMA, FORMS, ASSETS и QUALITY GATES.
+
+Техническая оптимизация является частью страницы, а не пост-релизной задачей.
