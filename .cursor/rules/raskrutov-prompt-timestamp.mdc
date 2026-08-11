@@ -1,0 +1,322 @@
+---
+
+description: Adds an exact local date, time and task ID to every Cursor Agent response without guessing the current time.
+globs:
+alwaysApply: true
+-----------------
+
+# Prompt Timestamp and Task ID
+
+## Purpose
+
+Every user prompt handled by Cursor Agent must receive an exact timestamp and unique task ID.
+
+This rule applies to every task in this project.
+
+The timestamp must come from the operating system clock.
+
+Never estimate, infer or hallucinate the current date or time.
+
+---
+
+# 1. Get exact system time
+
+At the beginning of processing every new user prompt, run this command in the terminal:
+
+```powershell
+Get-Date -Format "yyyy-MM-dd HH:mm:ss zzz"
+```
+
+Use the returned value as the timestamp for the current user prompt.
+
+Example system result:
+
+```text
+2026-08-11 11:34:12 +05:00
+```
+
+Do not generate the timestamp from model knowledge.
+
+Do not reuse the timestamp from the previous task.
+
+Every new user prompt must receive a fresh timestamp.
+
+---
+
+# 2. Generate Task ID
+
+Generate the Task ID directly from the same system timestamp.
+
+Format:
+
+```text
+TASK-YYYYMMDD-HHMMSS
+```
+
+Example:
+
+System timestamp:
+
+```text
+2026-08-11 11:34:12 +05:00
+```
+
+Task ID:
+
+```text
+TASK-20260811-113412
+```
+
+No separate counter file is required.
+
+Do not modify the repository only to maintain task numbering.
+
+---
+
+# 3. Response header
+
+Every substantive final response to the user must begin with:
+
+```text
+[TASK-20260811-113412 | 11.08.2026 11:34:12]
+```
+
+Use the actual values obtained from the operating system.
+
+Then continue with the normal response.
+
+Example:
+
+```text
+[TASK-20260811-113412 | 11.08.2026 11:34:12]
+
+Готово.
+
+Пересобрал страницу:
+site_mirror/web-studiya/kontekstnaya-reklama/index.html
+
+Изменено:
+- HTML
+- page-specific CSS
+- Schema
+- изображения
+- внутренняя перелинковка
+
+Lighthouse Mobile:
+Performance: 97
+Accessibility: 100
+Best Practices: 100
+SEO: 100
+
+Статус: READY FOR REVIEW
+```
+
+---
+
+# 4. Timestamp represents the user prompt
+
+The timestamp records when Cursor started processing the current user prompt.
+
+It is not:
+
+* commit time;
+* file modification time;
+* deploy time;
+* completion time.
+
+It is the timestamp associated with the user's current instruction.
+
+---
+
+# 5. Long-running tasks
+
+For long tasks, keep the original Task ID for the entire execution of that prompt.
+
+Do not generate a new Task ID for:
+
+* terminal commands;
+* internal subtasks;
+* file edits;
+* tests;
+* Lighthouse runs;
+* retries;
+* QA steps.
+
+One user prompt = one Task ID.
+
+Example:
+
+```text
+User prompt
+    ↓
+TASK-20260811-113412
+    ↓
+audit
+    ↓
+edit files
+    ↓
+tests
+    ↓
+Lighthouse
+    ↓
+final report
+```
+
+All actions belong to the same task.
+
+---
+
+# 6. New user instruction
+
+When the user sends another message containing a new instruction, request, correction or continuation:
+
+1. obtain a fresh system timestamp;
+2. generate a new Task ID;
+3. associate all subsequent work with the new Task ID.
+
+Example:
+
+```text
+TASK-20260811-113412
+Пересобрать страницу контекстной рекламы
+```
+
+Next user message:
+
+```text
+Исправь мобильную версию первого экрана
+```
+
+must receive a new ID:
+
+```text
+TASK-20260811-120305
+```
+
+---
+
+# 7. Follow-up messages
+
+Even when the user writes a short continuation such as:
+
+```text
+делай
+```
+
+```text
+проверяй
+```
+
+```text
+публикуй
+```
+
+```text
+исправь
+```
+
+```text
+продолжай
+```
+
+it is a new user prompt.
+
+Obtain a new timestamp and create a new Task ID.
+
+---
+
+# 8. Do not modify project files for timestamping
+
+Timestamping itself must not create or modify:
+
+* TASK_LOG.md;
+* JSON logs;
+* text logs;
+* counters;
+* package files;
+* project source files;
+* Git metadata.
+
+The timestamp exists in the Agent conversation only.
+
+Project files may be changed only when required by the user's actual task.
+
+---
+
+# 9. Git commits
+
+If the user's task includes a Git commit, the Task ID may be included in the commit message when useful.
+
+Recommended format:
+
+```text
+TASK-20260811-113412: rebuild contextual advertising page
+```
+
+Do not create a commit solely for the Task ID.
+
+Do not commit unless the user's workflow or instruction allows it.
+
+---
+
+# 10. Reports
+
+For substantial development tasks, reuse the same Task ID in the final report.
+
+Example:
+
+```text
+[TASK-20260811-113412 | 11.08.2026 11:34:12]
+
+Status: READY FOR REVIEW
+```
+
+This makes it possible to associate:
+
+* user instruction;
+* Cursor response;
+* changed files;
+* test results;
+* commit;
+* deployment
+
+with one task.
+
+---
+
+# 11. Failure to obtain system time
+
+If the terminal is temporarily unavailable, retry obtaining system time once.
+
+Never invent the timestamp.
+
+Never substitute an estimated time from the language model.
+
+If exact system time genuinely cannot be retrieved, use:
+
+```text
+[TASK-TIME-UNAVAILABLE]
+```
+
+and continue the user's actual task.
+
+Do not block development work only because timestamp retrieval failed.
+
+---
+
+# 12. Priority
+
+Timestamping is administrative metadata.
+
+It must never interfere with:
+
+* implementation;
+* coding;
+* testing;
+* SEO;
+* performance optimization;
+* publishing workflow;
+* project rules;
+* user instructions.
+
+The user's actual task always remains the primary objective.
