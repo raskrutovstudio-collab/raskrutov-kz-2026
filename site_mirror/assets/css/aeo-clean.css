@@ -119,6 +119,15 @@
   color: #444;
 }
 
+.aeo-page .aeo-why__item a,
+.aeo-page .seo-inc a,
+.aeo-page .aeo-prose a {
+  color: #006fdc;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .aeo-page .aeo-tasks {
   background: #f8f7fc;
 }
@@ -261,6 +270,26 @@
 
 .aeo-page .aeo-related {
   background: #f8f7fc;
+}
+
+/* 3 related cards: don't inherit SEO 4-col grid (left gap) */
+.aeo-page .aeo-related .seo-services__grid {
+  justify-content: center;
+  justify-items: stretch;
+}
+
+@media (min-width: 768px) {
+  .aeo-page .aeo-related .seo-services__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1100px) {
+  .aeo-page .aeo-related .seo-services__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    max-width: 1080px;
+    margin-inline: auto;
+  }
 }
 
 .aeo-page .aeo-synergy {
@@ -448,6 +477,7 @@
 }
 
 /* Reduce initial style/layout work for below-fold blocks */
+.aeo-page #regional,
 .aeo-page #what-is,
 .aeo-page #why,
 .aeo-page #tasks,
@@ -457,9 +487,83 @@
 .aeo-page #audience,
 .aeo-page #related,
 .aeo-page #cities,
+.aeo-page #aeo-local,
 .aeo-page #faq,
 .aeo-page #contacts,
 .aeo-page .seo-cta-band {
   content-visibility: auto;
   contain-intrinsic-size: 1px 720px;
+}
+
+/* City photo + local copy — same BEM as hubs / dizayn geo */
+.aeo-page .rk-astana-regional {
+  padding: 40px 0 48px;
+  background: #fff;
+}
+
+.aeo-page .rk-astana-regional__inner {
+  display: grid;
+  gap: 24px;
+  align-items: center;
+}
+
+.aeo-page .rk-astana-regional__media {
+  margin: 0;
+  border-radius: 20px;
+  overflow: hidden;
+  background: transparent;
+  align-self: center;
+}
+
+.aeo-page .rk-astana-regional__media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  max-height: 380px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.aeo-page .rk-astana-regional__copy .rk-h2 {
+  margin: 0 0 16px;
+  text-align: left;
+  font-size: clamp(22px, 2.8vw, 30px);
+  font-weight: 700;
+  line-height: 1.25;
+  color: #1e1e1e;
+}
+
+.aeo-page .rk-astana-regional__text p {
+  margin: 0 0 12px;
+  color: #4b4b4b;
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.aeo-page .rk-astana-regional__note {
+  margin: 16px 0 0 !important;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid #e4e8f4;
+  background: #f7f8ff;
+  color: #333 !important;
+}
+
+@media (min-width: 900px) {
+  .aeo-page .rk-astana-regional__inner {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 36px;
+  }
+}
+
+@media (max-width: 899px) {
+  .aeo-page .rk-astana-regional__media {
+    max-width: 520px;
+    margin-inline: auto;
+  }
+
+  .aeo-page .rk-astana-regional__media img {
+    max-height: 240px;
+  }
 }
