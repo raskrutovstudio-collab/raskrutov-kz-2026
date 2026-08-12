@@ -3,6 +3,7 @@
   RewriteEngine On
   RewriteRule ^raskrutov-kz-2026/(.*)$ /$1 [R=301,L]
   RewriteRule ^raskrutov-kz-2026/?$ / [R=301,L]
+  RewriteRule ^keysy/partnery/turan-agency/?$ /keysy/partnery/ [R=301,L,NE]
 </IfModule>
 
 # 301: legacy /pages/*.html -> pretty URLs
@@ -65,9 +66,9 @@ Redirect 301 /pages/web-studiya_kontekstnaya-reklama_google-ads.html /web-studiy
 Redirect 301 /pages/web-studiya_kontekstnaya-reklama_yandex-direct.html /web-studiya/kontekstnaya-reklama/yandex-direct
 Redirect 301 /pages/web-studiya_lidogeneratsiya.html /web-studiya/lidogeneratsiya
 Redirect 301 /pages/web-studiya_podderzhka-saytov.html /web-studiya/podderzhka-saytov
-Redirect 301 /pages/web-studiya_seo-prodvizhenie.html /web-studiya/seo-prodvizhenie/
-Redirect 301 /pages/web-studiya_seo-prodvizhenie_google.html /web-studiya/seo-prodvizhenie/google/
-Redirect 301 /pages/web-studiya_seo-prodvizhenie_yandex.html /web-studiya/seo-prodvizhenie/yandex/
+Redirect 301 /pages/web-studiya_seo-prodvizhenie.html /web-studiya/seo-prodvizhenie
+Redirect 301 /pages/web-studiya_seo-prodvizhenie_google.html /web-studiya/seo-prodvizhenie/google
+Redirect 301 /pages/web-studiya_seo-prodvizhenie_yandex.html /web-studiya/seo-prodvizhenie/yandex
 Redirect 301 /pages/web-studiya_sozdanie-saitov.html /web-studiya/sozdanie-saitov
 Redirect 301 /pages/web-studiya_sozdanie-saitov_ai-konsultanty.html /web-studiya/sozdanie-saitov/ai-konsultanty
 Redirect 301 /pages/web-studiya_sozdanie-saitov_crm-sistemy.html /web-studiya/sozdanie-saitov/crm-sistemy
@@ -104,9 +105,13 @@ Redirect 301 /pages/web-studiya_sozdanie-saitov_sayt-vizitka.html /web-studiya/s
   <FilesMatch "(__q_v_|/-/|lpfile/).+\.(css|js|webp|png|jpe?g|svg|woff2?)$">
     Header set Cache-Control "public, max-age=31536000, immutable"
   </FilesMatch>
-  # Site-owned CSS/JS/images without content-hash in filename — short cache so hotfixes propagate
-  <FilesMatch "^(home-|sozdanie-|lead-forms|breadcrumbs|hero-|perf-img).+\.(css|js|webp)$">
-    Header set Cache-Control "public, max-age=3600, must-revalidate"
+  # Optimized perf images (content-addressed via new filenames)
+  <FilesMatch "perf/.+\.(webp|avif)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  # Site-owned CSS/JS — medium cache; bump ?v= on change
+  <FilesMatch "^(home-|lead-forms|breadcrumbs|hero-|perf-img).+\.(css|js|webp)$">
+    Header set Cache-Control "public, max-age=604800, must-revalidate"
   </FilesMatch>
   <FilesMatch "\.(html|htm)$">
     Header set Cache-Control "public, max-age=0, must-revalidate"
@@ -129,6 +134,7 @@ Redirect 301 /pages/web-studiya_sozdanie-saitov_sayt-vizitka.html /web-studiya/s
 <IfModule mod_deflate.c>
   AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json image/svg+xml application/xml text/xml font/woff font/woff2 application/font-woff
 </IfModule>
+
 # Canonical AEO/GEO clean page (old Motor URL redirects here)
 # RedirectMatch exact: plain Redirect prefix-matches and turns .../aeo-prodvizhenie/ into .../aeo-geo-prodvizhenie//
 RedirectMatch 301 ^/web-studiya/aeo-prodvizhenie/?$ /web-studiya/aeo-geo-prodvizhenie/
