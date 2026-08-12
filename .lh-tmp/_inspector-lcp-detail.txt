@@ -1,0 +1,181 @@
+=== CATEGORY SCORES ===
+performance: 0.96 (Performance)
+accessibility: 1 (Accessibility)
+best-practices: 0.79 (Best Practices)
+seo: 1 (SEO)
+
+=== inspector-issues DETAILS ===
+{
+  "type": "table",
+  "headings": [
+    {
+      "key": "issueType",
+      "valueType": "text",
+      "subItemsHeading": {
+        "key": "url",
+        "valueType": "url"
+      },
+      "label": "Issue type"
+    }
+  ],
+  "items": [
+    {
+      "issueType": "Cookie",
+      "subItems": {
+        "type": "subitems",
+        "items": [
+          {
+            "url": "https://mc.yandex.ru/metrika/tag.js"
+          },
+          {
+            "url": "https://mc.yandex.ru/metrika/advert.gif?t=gdpr(14)ti(4)"
+          },
+          {
+            "url": "https://mc.yandex.ru/watch/101127167?wmode=7&page-url=http%3A%2F%2F127.0.0.1%3A4173%2Fweb-studiya%2Fkontekstnaya-reklama%2Fgoogle-ads%2F&charset=utf-8&uah=chu%0A%22Chromium%22%3Bv%3D%22136%22%2C%22Google%20Chrome%22%3Bv%3D%22136%22%0Achb%0A64%0Achf%0A136.0.0.0%0Achl%0A%22Not%3DA%3FBrand%22%3Bv%3D%2299.0.0.0%22%2C%22Google%20Chrome%22%3Bv%3D%22151.0.7922.76%22%2C%22Chromium%22%3Bv%3D%22151.0.7922.76%22%0Achm%0A%3F1%0Acho%0Amoto%20g%20power%20(2022)%0Achp%0AAndroid%0Achv%0A11.0&browser-info=pv%3A1%3Avf%3A4uoujm0trtfzam26nf44fkb1vz8frz%3Afu%3A0%3Aen%3Autf-8%3Ala%3Aru-RU%3Av%3A2610%3Acn%3A1%3Adp%3A0%3Als%3A638913865832%3Ahid%3A296050121%3Az%3A300%3Ai%3A20260812150114%3Aet%3A1786528874%3Ac%3A1%3Arn%3A89852168%3Arqn%3A1%3Au%3A1786528874372494405%3Aw%3A412x823%3As%3A412x823x24%3Ask%3A1.7499999701976776%3Afp%3A440%3Awv%3A2%3Ads%3A0%2C0%2C3%2C0%2C1%2C0%2C%2C158%2C0%2C397%2C397%2C0%2C175%3Aco%3A0%3Acpf%3A1%3Ans%3A1786528873634%3Arqnl%3A1%3Ast%3A1786528874%3At%3AGoogle%20Ads%20%D0%B2%20%D0%9A%D0%B0%D0%B7%D0%B0%D1%85%D1%81%D1%82%D0%B0%D0%BD%D0%B5%20%E2%80%94%20%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0%20%D0%B8%20%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D1%8B%20%7C%20Raskrutov&t=clt(719)gdpr(14)clc(0-0-0)rqnt(1)aw(1)rcm(1)cdl(na)eco(42009092)ti(1)"
+          },
+          {
+            "url": "https://mc.yandex.ru/watch/101127167/1?wmode=7&page-url=http%3A%2F%2F127.0.0.1%3A4173%2Fweb-studiya%2Fkontekstnaya-reklama%2Fgoogle-ads%2F&charset=utf-8&uah=chu%0A%22Chromium%22%3Bv%3D%22136%22%2C%22Google%20Chrome%22%3Bv%3D%22136%22%0Achb%0A64%0Achf%0A136.0.0.0%0Achl%0A%22Not%3DA%3FBrand%22%3Bv%3D%2299.0.0.0%22%2C%22Google%20Chrome%22%3Bv%3D%22151.0.7922.76%22%2C%22Chromium%22%3Bv%3D%22151.0.7922.76%22%0Achm%0A%3F1%0Acho%0Amoto%20g%20power%20%282022%29%0Achp%0AAndroid%0Achv%0A11.0&browser-info=pv%3A1%3Avf%3A4uoujm0trtfzam26nf44fkb1vz8frz%3Afu%3A0%3Aen%3Autf-8%3Ala%3Aru-RU%3Av%3A2610%3Acn%3A1%3Adp%3A0%3Als%3A638913865832%3Ahid%3A296050121%3Az%3A300%3Ai%3A20260812150114%3Aet%3A1786528874%3Ac%3A1%3Arn%3A89852168%3Arqn%3A1%3Au%3A1786528874372494405%3Aw%3A412x823%3As%3A412x823x24%3Ask%3A1.7499999701976776%3Afp%3A440%3Awv%3A2%3Ads%3A0%2C0%2C3%2C0%2C1%2C0%2C%2C158%2C0%2C397%2C397%2C0%2C175%3Aco%3A0%3Acpf%3A1%3Ans%3A1786528873634%3Arqnl%3A1%3Ast%3A1786528874%3At%3AGoogle%20Ads%20%D0%B2%20%D0%9A%D0%B0%D0%B7%D0%B0%D1%85%D1%81%D1%82%D0%B0%D0%BD%D0%B5%20%E2%80%94%20%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0%20%D0%B8%20%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D1%8B%20%7C%20Raskrutov&t=clt%28719%29gdpr%2814%29clc%280-0-0%29rqnt%281%29aw%281%29rcm%281%29cdl%28na%29eco%2842009092%29ti%281%29&redirnss=1"
+          },
+          {
+            "url": "https://mc.yandex.ru/metrika/tag_phono.js"
+          },
+          {
+            "url": "https://yandex.ru/an/mapuid/googledctssp/"
+          },
+          {
+            "url": "https://cm.g.doubleclick.net/pixel?google_nid=direct_cursus_technology_llc&google_hm=D1A75735528AB6AF&google_ula=9203968469"
+          },
+          {
+            "url": "https://cm.g.doubleclick.net/pixel?google_nid=direct_cursus_technology_llc&google_hm=D1A75735528AB6AF&google_ula=9203968469&google_tc="
+          }
+        ]
+      }
+    }
+  ]
+}
+
+=== LCP ELEMENT DETAILS ===
+{
+  "type": "list",
+  "items": [
+    {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "valueType": "node",
+          "label": "Element"
+        }
+      ],
+      "items": [
+        {
+          "node": {
+            "type": "node",
+            "lhId": "page-0-P",
+            "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,0,DIV,2,P",
+            "selector": "section#ctx-hero > div.rk-container > div.ctx-hero__copy > p.ctx-hero__lead",
+            "boundingRect": {
+              "top": 307,
+              "bottom": 431,
+              "left": 20,
+              "right": 392,
+              "width": 372,
+              "height": 124
+            },
+            "snippet": "<p class=\"ctx-hero__lead\">",
+            "nodeLabel": "Собираем спрос, семантику и объявления, подключаем аналитику и конверсии, систе…"
+          }
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "headings": [
+        {
+          "key": "phase",
+          "valueType": "text",
+          "label": "Phase"
+        },
+        {
+          "key": "percent",
+          "valueType": "text",
+          "label": "% of LCP"
+        },
+        {
+          "key": "timing",
+          "valueType": "ms",
+          "label": "Timing"
+        }
+      ],
+      "items": [
+        {
+          "phase": "TTFB",
+          "timing": 454.67535,
+          "percent": "17%"
+        },
+        {
+          "phase": "Load Delay",
+          "timing": 0,
+          "percent": "0%"
+        },
+        {
+          "phase": "Load Time",
+          "timing": 0,
+          "percent": "0%"
+        },
+        {
+          "phase": "Render Delay",
+          "timing": 2184.3507,
+          "percent": "83%"
+        }
+      ]
+    }
+  ]
+}
+
+=== third-party-cookies DETAILS ===
+{
+  "type": "table",
+  "headings": [
+    {
+      "key": "name",
+      "valueType": "text",
+      "label": "Name"
+    },
+    {
+      "key": "url",
+      "valueType": "url",
+      "label": "URL"
+    }
+  ],
+  "items": [
+    {
+      "name": "bh",
+      "url": "https://mc.yandex.ru/metrika/tag.js"
+    },
+    {
+      "name": "yabs-sid",
+      "url": "https://mc.yandex.ru/watch/101127167?wmode=7&page-url=http%3A%2F%2F127.0.0.1%3A4173%2Fweb-studiya%2Fkontekstnaya-reklama%2Fgoogle-ads%2F&charset=utf-8&uah=chu%0A%22Chromium%22%3Bv%3D%22136%22%2C%22Google%20Chrome%22%3Bv%3D%22136%22%0Achb%0A64%0Achf%0A136.0.0.0%0Achl%0A%22Not%3DA%3FBrand%22%3Bv%3D%2299.0.0.0%22%2C%22Google%20Chrome%22%3Bv%3D%22151.0.7922.76%22%2C%22Chromium%22%3Bv%3D%22151.0.7922.76%22%0Achm%0A%3F1%0Acho%0Amoto%20g%20power%20(2022)%0Achp%0AAndroid%0Achv%0A11.0&browser-info=pv%3A1%3Avf%3A4uoujm0trtfzam26nf44fkb1vz8frz%3Afu%3A0%3Aen%3Autf-8%3Ala%3Aru-RU%3Av%3A2610%3Acn%3A1%3Adp%3A0%3Als%3A638913865832%3Ahid%3A296050121%3Az%3A300%3Ai%3A20260812150114%3Aet%3A1786528874%3Ac%3A1%3Arn%3A89852168%3Arqn%3A1%3Au%3A1786528874372494405%3Aw%3A412x823%3As%3A412x823x24%3Ask%3A1.7499999701976776%3Afp%3A440%3Awv%3A2%3Ads%3A0%2C0%2C3%2C0%2C1%2C0%2C%2C158%2C0%2C397%2C397%2C0%2C175%3Aco%3A0%3Acpf%3A1%3Ans%3A1786528873634%3Arqnl%3A1%3Ast%3A1786528874%3At%3AGoogle%20Ads%20%D0%B2%20%D0%9A%D0%B0%D0%B7%D0%B0%D1%85%D1%81%D1%82%D0%B0%D0%BD%D0%B5%20%E2%80%94%20%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0%20%D0%B8%20%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D1%8B%20%7C%20Raskrutov&t=clt(719)gdpr(14)clc(0-0-0)rqnt(1)aw(1)rcm(1)cdl(na)eco(42009092)ti(1)"
+    },
+    {
+      "name": "i",
+      "url": "https://mc.yandex.ru/watch/101127167?wmode=7&page-url=http%3A%2F%2F127.0.0.1%3A4173%2Fweb-studiya%2Fkontekstnaya-reklama%2Fgoogle-ads%2F&charset=utf-8&uah=chu%0A%22Chromium%22%3Bv%3D%22136%22%2C%22Google%20Chrome%22%3Bv%3D%22136%22%0Achb%0A64%0Achf%0A136.0.0.0%0Achl%0A%22Not%3DA%3FBrand%22%3Bv%3D%2299.0.0.0%22%2C%22Google%20Chrome%22%3Bv%3D%22151.0.7922.76%22%2C%22Chromium%22%3Bv%3D%22151.0.7922.76%22%0Achm%0A%3F1%0Acho%0Amoto%20g%20power%20(2022)%0Achp%0AAndroid%0Achv%0A11.0&browser-info=pv%3A1%3Avf%3A4uoujm0trtfzam26nf44fkb1vz8frz%3Afu%3A0%3Aen%3Autf-8%3Ala%3Aru-RU%3Av%3A2610%3Acn%3A1%3Adp%3A0%3Als%3A638913865832%3Ahid%3A296050121%3Az%3A300%3Ai%3A20260812150114%3Aet%3A1786528874%3Ac%3A1%3Arn%3A89852168%3Arqn%3A1%3Au%3A1786528874372494405%3Aw%3A412x823%3As%3A412x823x24%3Ask%3A1.7499999701976776%3Afp%3A440%3Awv%3A2%3Ads%3A0%2C0%2C3%2C0%2C1%2C0%2C%2C158%2C0%2C397%2C397%2C0%2C175%3Aco%3A0%3Acpf%3A1%3Ans%3A1786528873634%3Arqnl%3A1%3Ast%3A1786528874%3At%3AGoogle%20Ads%20%D0%B2%20%D0%9A%D0%B0%D0%B7%D0%B0%D1%85%D1%81%D1%82%D0%B0%D0%BD%D0%B5%20%E2%80%94%20%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0%20%D0%B8%20%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D1%8B%20%7C%20Raskrutov&t=clt(719)gdpr(14)clc(0-0-0)rqnt(1)aw(1)rcm(1)cdl(na)eco(42009092)ti(1)"
+    },
+    {
+      "name": "yandexuid",
+      "url": "https://mc.yandex.ru/watch/101127167?wmode=7&page-url=http%3A%2F%2F127.0.0.1%3A4173%2Fweb-studiya%2Fkontekstnaya-reklama%2Fgoogle-ads%2F&charset=utf-8&uah=chu%0A%22Chromium%22%3Bv%3D%22136%22%2C%22Google%20Chrome%22%3Bv%3D%22136%22%0Achb%0A64%0Achf%0A136.0.0.0%0Achl%0A%22Not%3DA%3FBrand%22%3Bv%3D%2299.0.0.0%22%2C%22Google%20Chrome%22%3Bv%3D%22151.0.7922.76%22%2C%22Chromium%22%3Bv%3D%22151.0.7922.76%22%0Achm%0A%3F1%0Acho%0Amoto%20g%20power%20(2022)%0Achp%0AAndroid%0Achv%0A11.0&browser-info=pv%3A1%3Avf%3A4uoujm0trtfzam26nf44fkb1vz8frz%3Afu%3A0%3Aen%3Autf-8%3Ala%3Aru-RU%3Av%3A2610%3Acn%3A1%3Adp%3A0%3Als%3A638913865832%3Ahid%3A296050121%3Az%3A300%3Ai%3A20260812150114%3Aet%3A1786528874%3Ac%3A1%3Arn%3A89852168%3Arqn%3A1%3Au%3A1786528874372494405%3Aw%3A412x823%3As%3A412x823x24%3Ask%3A1.7499999701976776%3Afp%3A440%3Awv%3A2%3Ads%3A0%2C0%2C3%2C0%2C1%2C0%2C%2C158%2C0%2C397%2C397%2C0%2C175%3Aco%3A0%3Acpf%3A1%3Ans%3A1786528873634%3Arqnl%3A1%3Ast%3A1786528874%3At%3AGoogle%20Ads%20%D0%B2%20%D0%9A%D0%B0%D0%B7%D0%B0%D1%85%D1%81%D1%82%D0%B0%D0%BD%D0%B5%20%E2%80%94%20%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0%20%D0%B8%20%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D1%8B%20%7C%20Raskrutov&t=clt(719)gdpr(14)clc(0-0-0)rqnt(1)aw(1)rcm(1)cdl(na)eco(42009092)ti(1)"
+    },
+    {
+      "name": "yuidss",
+      "url": "https://mc.yandex.ru/watch/101127167?wmode=7&page-url=http%3A%2F%2F127.0.0.1%3A4173%2Fweb-studiya%2Fkontekstnaya-reklama%2Fgoogle-ads%2F&charset=utf-8&uah=chu%0A%22Chromium%22%3Bv%3D%22136%22%2C%22Google%20Chrome%22%3Bv%3D%22136%22%0Achb%0A64%0Achf%0A136.0.0.0%0Achl%0A%22Not%3DA%3FBrand%22%3Bv%3D%2299.0.0.0%22%2C%22Google%20Chrome%22%3Bv%3D%22151.0.7922.76%22%2C%22Chromium%22%3Bv%3D%22151.0.7922.76%22%0Achm%0A%3F1%0Acho%0Amoto%20g%20power%20(2022)%0Achp%0AAndroid%0Achv%0A11.0&browser-info=pv%3A1%3Avf%3A4uoujm0trtfzam26nf44fkb1vz8frz%3Afu%3A0%3Aen%3Autf-8%3Ala%3Aru-RU%3Av%3A2610%3Acn%3A1%3Adp%3A0%3Als%3A638913865832%3Ahid%3A296050121%3Az%3A300%3Ai%3A20260812150114%3Aet%3A1786528874%3Ac%3A1%3Arn%3A89852168%3Arqn%3A1%3Au%3A1786528874372494405%3Aw%3A412x823%3As%3A412x823x24%3Ask%3A1.7499999701976776%3Afp%3A440%3Awv%3A2%3Ads%3A0%2C0%2C3%2C0%2C1%2C0%2C%2C158%2C0%2C397%2C397%2C0%2C175%3Aco%3A0%3Acpf%3A1%3Ans%3A1786528873634%3Arqnl%3A1%3Ast%3A1786528874%3At%3AGoogle%20Ads%20%D0%B2%20%D0%9A%D0%B0%D0%B7%D0%B0%D1%85%D1%81%D1%82%D0%B0%D0%BD%D0%B5%20%E2%80%94%20%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0%20%D0%B8%20%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D1%8B%20%7C%20Raskrutov&t=clt(719)gdpr(14)clc(0-0-0)rqnt(1)aw(1)rcm(1)cdl(na)eco(42009092)ti(1)"
+    },
+    {
+      "name": "ymex",
+      "url": "https://mc.yandex.ru/watch/101127167?wmode=7&page-url=http%3A%2F%2F127.0.0.1%3A4173%2Fweb-studiya%2Fkontekstnaya-reklama%2Fgoogle-ads%2F&charset=utf-8&uah=chu%0A%22Chromium%22%3Bv%3D%22136%22%2C%22Google%20Chrome%22%3Bv%3D%22136%22%0Achb%0A64%0Achf%0A136.0.0.0%0Achl%0A%22Not%3DA%3FBrand%22%3Bv%3D%2299.0.0.0%22%2C%22Google%20Chrome%22%3Bv%3D%22151.0.7922.76%22%2C%22Chromium%22%3Bv%3D%22151.0.7922.76%22%0Achm%0A%3F1%0Acho%0Amoto%20g%20power%20(2022)%0Achp%0AAndroid%0Achv%0A11.0&browser-info=pv%3A1%3Avf%3A4uoujm0trtfzam26nf44fkb1vz8frz%3Afu%3A0%3Aen%3Autf-8%3Ala%3Aru-RU%3Av%3A2610%3Acn%3A1%3Adp%3A0%3Als%3A638913865832%3Ahid%3A296050121%3Az%3A300%3Ai%3A20260812150114%3Aet%3A1786528874%3Ac%3A1%3Arn%3A89852168%3Arqn%3A1%3Au%3A1786528874372494405%3Aw%3A412x823%3As%3A412x823x24%3Ask%3A1.7499999701976776%3Afp%3A440%3Awv%3A2%3Ads%3A0%2C0%2C3%2C0%2C1%2C0%2C%2C158%2C0%2C397%2C397%2C0%2C175%3Aco%3A0%3Acpf%3A1%3Ans%3A1786528873634%3Arqnl%3A1%3Ast%3A1786528874%3At%3AGoogle%20Ads%20%D0%B2%20%D0%9A%D0%B0%D0%B7%D0%B0%D1%85%D1%81%D1%82%D0%B0%D0%BD%D0%B5%20%E2%80%94%20%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0%20%D0%B8%20%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D1%8B%20%7C%20Raskrutov&t=clt(719)gdpr(14)clc(0-0-0)rqnt(1)aw(1)rcm(1)cdl(na)eco(42009092)ti(1)"
+    },
+    {
+      "name": "test_cookie",
+      "url": "https://cm.g.doubleclick.net/pixel?google_nid=direct_cursus_technology_llc&google_hm=D1A75735528AB6AF&google_ula=9203968469"
+    }
+  ]
+}

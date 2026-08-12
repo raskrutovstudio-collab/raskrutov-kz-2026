@@ -1,0 +1,25 @@
+PAGE: site_mirror/web-studiya/kontekstnaya-reklama/google-ads/index.html
+Unique path-only hrefs: 17
+EXIST: 17
+MISSING: 0
+
+=== MISSING ===
+
+=== EXIST (href -> matched) ===
+/ -> site_mirror\index.html
+/akademiya/ -> site_mirror\akademiya\index.html
+/consent/ -> site_mirror\consent\index.html
+/crm/ -> site_mirror\crm\index.html
+/faq/ -> site_mirror\faq\index.html
+/keysy/ -> site_mirror\keysy\index.html
+/keysy/prodvizhenie/ -> site_mirror\keysy\prodvizhenie\index.html
+/kontakty/ -> site_mirror\kontakty\index.html
+/o-kompanii/ -> site_mirror\o-kompanii\index.html
+/partneram/ -> site_mirror\partneram\index.html
+/r-builder/ -> site_mirror\r-builder\index.html
+/regulation/ -> site_mirror\regulation\index.html
+/web-studiya/ -> site_mirror\web-studiya\index.html
+/web-studiya/kontekstnaya-reklama/ -> site_mirror\web-studiya\kontekstnaya-reklama\index.html
+/web-studiya/kontekstnaya-reklama/yandex-direct/ -> site_mirror\web-studiya\kontekstnaya-reklama\yandex-direct\index.html
+/web-studiya/seo-prodvizhenie/ -> site_mirror\web-studiya\seo-prodvizhenie\index.html
+/web-studiya/sozdanie-saitov/ -> site_mirror\web-studiya\sozdanie-saitov\index.html
