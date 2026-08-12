@@ -1,4 +1,4 @@
-$ErrorActionPreference = "SilentlyContinue"
+﻿$ErrorActionPreference = "SilentlyContinue"
 
 function Emit([string]$Message) {
     $obj = [ordered]@{}
@@ -38,8 +38,7 @@ try {
     }
 
     if ($qualityCode -ne 0) {
-        Remove-ParallelSessionMarker -RepoRoot $root
-        Emit "PARALLEL WORK: quality:all не пройден. Изменения сохранены локально, автоматический commit/push остановлен."
+        Emit "PARALLEL WORK: quality:all не пройден. Изменения сохранены, безопасная сессия оставлена активной. Исправьте эту же задачу и повторите проверку."
         exit 0
     }
 
@@ -59,10 +58,6 @@ try {
     exit 0
 }
 catch {
-    try {
-        $root = Get-ParallelRepoRoot
-        Remove-ParallelSessionMarker -RepoRoot $root
-    } catch {}
-    Emit "PARALLEL WORK AUTO-SYNC STOPPED: $($_.Exception.Message). Изменения не потеряны."
+    Emit "PARALLEL WORK AUTO-SYNC STOPPED: $($_.Exception.Message). Изменения не потеряны; безопасная сессия сохранена для продолжения этой же задачи."
     exit 0
 }

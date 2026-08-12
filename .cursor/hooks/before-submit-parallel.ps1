@@ -1,4 +1,4 @@
-$ErrorActionPreference = "Stop"
+﻿$ErrorActionPreference = "Stop"
 
 function Emit-Result {
     param([bool]$Continue, [string]$Message = "")
@@ -18,7 +18,12 @@ try {
     $ctx = Assert-OwnWorkBranch -RepoRoot $root
 
     if (-not (Test-WorkingTreeClean -RepoRoot $root)) {
-        Emit-Result -Continue $false -Message "PARALLEL WORK BLOCKED: рабочее дерево содержит незавершённые изменения. Сначала завершите или сохраните предыдущую задачу."
+        if (Test-ParallelSessionMarker -RepoRoot $root -MachineConfig $ctx.machine -WorkBranch $ctx.branch) {
+            Emit-Result -Continue $true -Message "PARALLEL WORK: обнаружены незавершённые изменения текущей безопасной сессии $($ctx.branch). Разрешено продолжить и исправить эту же задачу."
+            exit 0
+        }
+
+        Emit-Result -Continue $false -Message "PARALLEL WORK BLOCKED: рабочее дерево содержит незавершённые изменения без активной безопасной сессии. Сначала завершите или сохраните предыдущую задачу."
         exit 0
     }
 
