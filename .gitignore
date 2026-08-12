@@ -24,4 +24,9 @@ node_modules/
 _work/
 site_plesk/
 _tmp_*
+tmp_*
 _perf_tools/_tmp_*
+
+# Local audit / rebuild scratch files
+scripts/_audit_*.py
+*.pre-rebuild-*.html
