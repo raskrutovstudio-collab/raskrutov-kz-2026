@@ -473,6 +473,70 @@
   color: rgba(255, 255, 255, 0.92);
 }
 
+/* —— Cities —— */
+.lido-page .rk-cities {
+  margin: 0;
+  padding: 48px 0 56px;
+}
+.lido-page .rk-cities__title {
+  margin: 0 0 12px;
+  text-align: center;
+  font-size: clamp(22px, 3vw, 28px);
+  font-weight: 700;
+  line-height: 1.25;
+  color: #1e1e1e;
+}
+.lido-page .rk-cities__lead {
+  margin: 0 auto 28px;
+  max-width: 70ch;
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #4a4a4a;
+}
+.lido-page .rk-cities__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.lido-page .rk-cities__card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 14px;
+  background: #7f3ff2;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 8px 24px rgba(127, 63, 242, 0.16);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.lido-page .rk-cities__card:hover,
+.lido-page .rk-cities__card:focus-visible {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(127, 63, 242, 0.26);
+  color: #fff;
+  outline: none;
+}
+.lido-page .rk-cities__card:focus-visible {
+  outline: 3px solid #9867f3;
+  outline-offset: 3px;
+}
+.lido-page .rk-cities__photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  background: #ebe4ff;
+}
+.lido-page .rk-cities__label {
+  padding: 12px 10px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.35;
+  text-align: center;
+}
+
 /* —— Related —— */
 .lido-related__grid {
   display: grid;
@@ -530,6 +594,7 @@
   .lido-stats__grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .lido-sources__row { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .lido-related__grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .lido-page .rk-cities__grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
 }
 
 @media (min-width: 900px) {
@@ -550,4 +615,23 @@
   .lido-sources__row { grid-template-columns: repeat(6, minmax(0, 1fr)); }
   .lido-cta__inner { padding: 40px 48px; }
   .lido-related__grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+
+@media (min-width: 1100px) {
+  .lido-page .rk-cities__grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 16px;
+  }
+  .lido-page .rk-cities__label { font-size: 14px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lido-btn,
+  .lido-btn__arrow,
+  .lido-page .rk-cities__card {
+    transition: none;
+  }
+  .lido-page .rk-cities__card:hover {
+    transform: none;
+  }
 }
