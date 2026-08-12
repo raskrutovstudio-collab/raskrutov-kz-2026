@@ -1,0 +1,30 @@
+{
+  "size": 53020,
+  "title": "Лидогенерация для бизнеса — заявки из сайта и рекламы | Raskrutov",
+  "desc": "Выстраиваем поток целевых заявок через сайт, рекламу, квизы, аналитику, CRM и оптимизацию воронки продаж.",
+  "canonical": "https://raskrutov.kz/web-studiya/lidogeneratsiya/",
+  "h1_count": 1,
+  "h1": "Лидогенерация для бизнеса — заявки из сайта и рекламы",
+  "public_bundle": false,
+  "leads_receive": false,
+  "lpmotor": false,
+  "motor_endpoint": false,
+  "ctx_title_wrong": false,
+  "fake_kpi": false,
+  "aeo_double": false,
+  "lead_forms": 2,
+  "service_hidden": 2,
+  "faq_details": 12,
+  "cities": 18,
+  "og_url": "https://raskrutov.kz/web-studiya/lidogeneratsiya/",
+  "jsonld_ok": true,
+  "jsonld_types": [
+    "Organization/ProfessionalService",
+    "WebSite",
+    "WebPage",
+    "BreadcrumbList",
+    "Service",
+    "FAQPage"
+  ],
+  "faq_json": 12
+}
