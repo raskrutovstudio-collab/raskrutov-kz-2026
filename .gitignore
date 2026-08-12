@@ -30,3 +30,6 @@ _perf_tools/_tmp_*
 # Local audit / rebuild scratch files
 scripts/_audit_*.py
 *.pre-rebuild-*.html
+
+# Local safety-hook backups
+.cursor/hooks/*.ps1.bak-*
