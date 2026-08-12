@@ -1,0 +1,20 @@
+﻿const fs = require("fs");
+const p = "d:/РАБОТА/111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111/raskrutov-kz-2026/site_mirror/web-studiya/kontekstnaya-reklama/google-ads/index.html";
+const t = fs.readFileSync(p, "utf8");
+const faq = t.match(/<section class="rk-section ctx-faq" id="faq">[\s\S]*?<\/section>/)[0];
+console.log(faq);
+console.log("\n===== HEAD ASSETS =====");
+console.log(t.slice(t.indexOf('rel="preload" as="image"')-10, t.indexOf("</head>")+7));
+console.log("\n===== CONTACTS FORM =====");
+const f = t.indexOf('id="rk-form-contacts-gads"');
+console.log(t.slice(f, f+1800));
+console.log("\n===== AUTOMATION =====");
+const a = t.indexOf('id="automation"');
+console.log(t.slice(a, a+900));
+console.log("\n===== HERO =====");
+const h = t.indexOf("rk-hero__lead");
+console.log(t.slice(h, h+400));
+const img = t.indexOf("hero-ctx.webp");
+// find img tag
+const im = t.match(/<img[^>]*hero-ctx\.webp[^>]*>/);
+console.log(im[0]);

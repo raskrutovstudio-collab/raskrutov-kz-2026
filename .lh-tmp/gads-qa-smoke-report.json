@@ -1,0 +1,144 @@
+{
+  "checks": {
+    "1a_horizontal_360": true,
+    "1a_horizontal_390": true,
+    "1a_horizontal_430": true,
+    "1a_horizontal_1440": true,
+    "1b_screenshots": true,
+    "2a_modal_visible": true,
+    "2b_modal_empty_invalid": true,
+    "2c_modal_filled_valid": true,
+    "2d_modal_mock_success": true,
+    "2e_modal_reopen_enabled": true,
+    "3a_contacts_empty_invalid": true,
+    "3b_contacts_filled_valid": true,
+    "4_console_errors": true,
+    "5_mobile_menu": true
+  },
+  "results": {
+    "horizontalScroll": {
+      "360": {
+        "pass": true,
+        "scrollWidth": 360,
+        "clientWidth": 360,
+        "status": 200
+      },
+      "390": {
+        "pass": true,
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "status": 200
+      },
+      "430": {
+        "pass": true,
+        "scrollWidth": 430,
+        "clientWidth": 430,
+        "status": 200
+      },
+      "1440": {
+        "pass": true,
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "status": 200
+      }
+    },
+    "screenshots": {
+      "360": {
+        "pass": true,
+        "path": "D:\\РАБОТА\\111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111\\raskrutov-kz-2026\\.lh-tmp\\gads-qa-360.png"
+      },
+      "390": {
+        "pass": true,
+        "path": "D:\\РАБОТА\\111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111\\raskrutov-kz-2026\\.lh-tmp\\gads-qa-390.png"
+      },
+      "430": {
+        "pass": true,
+        "path": "D:\\РАБОТА\\111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111\\raskrutov-kz-2026\\.lh-tmp\\gads-qa-430.png"
+      },
+      "1440": {
+        "pass": true,
+        "path": "D:\\РАБОТА\\111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111\\raskrutov-kz-2026\\.lh-tmp\\gads-qa-1440.png"
+      }
+    },
+    "modalForm": {
+      "openButtonFound": true,
+      "popupVisible": {
+        "pass": true
+      },
+      "emptyInvalid": {
+        "pass": true,
+        "detail": {
+          "checkValidity": false,
+          "phoneValidationMessage": "Заполните это поле.",
+          "consentValidationMessage": "Чтобы продолжить, установите этот флажок."
+        }
+      },
+      "filledValid": {
+        "pass": true,
+        "detail": {
+          "checkValidity": true,
+          "phone": "+7 (700) 123 45 67",
+          "consent": true
+        }
+      },
+      "successAfterMockSubmit": {
+        "pass": true,
+        "detail": {
+          "hit": "спасибо",
+          "statusText": null,
+          "bodySnippet": "×\n\nОбсудим Ваш проект?\n\nОставьте заявку — и мы предложим оптимальное digital-решение под ваши задачи\n\nИмя\nТелефон\nE-mail\nЗадайте вопрос или опишите вашу задачу\nЯ принимаю Положение и даю Согласие на обработку персональных данных.\nПолучить консультацию\nСпасибо! Заявка отправлена. Мы скоро свяжемся с вами."
+        }
+      },
+      "reopenSubmitEnabled": {
+        "pass": true,
+        "detail": {
+          "formVisible": true,
+          "buttonDisabled": false,
+          "buttonEnabled": true
+        }
+      }
+    },
+    "contactsForm": {
+      "exists": true,
+      "emptyInvalid": {
+        "pass": true,
+        "detail": {
+          "checkValidity": false
+        }
+      },
+      "filledValid": {
+        "pass": true,
+        "detail": {
+          "checkValidity": true,
+          "phone": "+7 (700) 123 45 67",
+          "consent": true
+        }
+      }
+    },
+    "consoleErrors": {
+      "pass": true,
+      "errors": []
+    },
+    "mobileMenu": {
+      "pass": true,
+      "detail": {
+        "found": true,
+        "before": {
+          "ariaExpanded": "false",
+          "bodyClass": "rk-clean ctx-page"
+        },
+        "after": {
+          "ariaExpanded": "true",
+          "bodyClass": "rk-clean ctx-page rk-menu-open",
+          "navHidden": true,
+          "navClass": "rk-nav"
+        },
+        "opened": true,
+        "afterCloseExpanded": "false",
+        "toggleTag": "BUTTON",
+        "toggleClass": "rk-burger"
+      }
+    }
+  },
+  "consoleErrors": []
+}
