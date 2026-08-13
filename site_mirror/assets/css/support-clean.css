@@ -443,6 +443,7 @@
 }
 .support-page .support-plan .support-btn {
   width: 100%;
+  margin-top: auto;
 }
 .support-page .support-plan-custom {
   display: grid;
