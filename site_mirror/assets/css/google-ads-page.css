@@ -538,41 +538,60 @@
 
 .gads-page .gads-card--b2b {
   border-top: 3px solid rgba(127, 63, 242, 0.55);
+  background:
+    radial-gradient(120% 90% at 12% 0%, rgba(127, 63, 242, 0.12), transparent 58%),
+    #fff;
 }
 
 .gads-page .gads-card--ecom {
   border-top: 3px solid rgba(66, 133, 244, 0.5);
+  background:
+    radial-gradient(120% 90% at 12% 0%, rgba(66, 133, 244, 0.12), transparent 58%),
+    #fff;
 }
 
 .gads-page .gads-card--local {
   border-top: 3px solid rgba(52, 168, 83, 0.5);
+  background:
+    radial-gradient(120% 90% at 12% 0%, rgba(52, 168, 83, 0.12), transparent 58%),
+    #fff;
 }
 
 .gads-page .gads-card--account {
   border-top: 3px solid rgba(234, 67, 53, 0.4);
+  background:
+    radial-gradient(120% 90% at 12% 0%, rgba(251, 188, 5, 0.14), transparent 58%),
+    #fff;
 }
 
 .gads-card__visual {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 80px;
-  height: 80px;
+  justify-content: flex-start;
+  width: 100%;
+  min-height: 120px;
   margin: 0 0 14px;
+  padding: 8px 4px 0;
   border-radius: 18px;
+  background: transparent;
 }
 
-.gads-card__visual svg {
+.gads-card__visual img {
   display: block;
-  width: 80px;
-  height: 80px;
+  width: 112px;
+  height: 112px;
+  object-fit: contain;
 }
 
 @media (max-width: 767px) {
-  .gads-card__visual,
-  .gads-card__visual svg {
-    width: 64px;
-    height: 64px;
+  .gads-card__visual {
+    min-height: 96px;
+    margin-bottom: 12px;
+  }
+
+  .gads-card__visual img {
+    width: 88px;
+    height: 88px;
   }
 }
 
@@ -679,31 +698,63 @@
   overflow: hidden;
 }
 
+.gads-camp--search {
+  background:
+    radial-gradient(110% 80% at 8% 0%, rgba(66, 133, 244, 0.12), transparent 55%),
+    #fff;
+}
+
+.gads-camp--pmax {
+  background:
+    radial-gradient(110% 80% at 8% 0%, rgba(127, 63, 242, 0.12), transparent 55%),
+    #fff;
+}
+
+.gads-camp--shop {
+  background:
+    radial-gradient(110% 80% at 8% 0%, rgba(251, 188, 5, 0.14), transparent 55%),
+    #fff;
+}
+
+.gads-camp--remark {
+  background:
+    radial-gradient(110% 80% at 8% 0%, rgba(52, 168, 83, 0.12), transparent 55%),
+    #fff;
+}
+
+.gads-camp--video {
+  background:
+    radial-gradient(110% 80% at 8% 0%, rgba(234, 67, 53, 0.1), transparent 55%),
+    #fff;
+}
+
 .gads-camp__visual {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   width: 100%;
-  height: 88px;
+  min-height: 120px;
   margin: 0 0 12px;
+  padding: 4px 0 0;
   border-radius: 14px;
   background: transparent;
 }
 
-.gads-camp__visual svg {
+.gads-camp__visual img {
   display: block;
-  width: 80px;
-  height: 80px;
+  width: 104px;
+  height: 104px;
+  object-fit: contain;
 }
 
 @media (max-width: 767px) {
   .gads-camp__visual {
-    height: 72px;
+    min-height: 96px;
   }
 
-  .gads-camp__visual svg {
-    width: 64px;
-    height: 64px;
+  .gads-camp__visual img {
+    width: 84px;
+    height: 84px;
   }
 }
 
