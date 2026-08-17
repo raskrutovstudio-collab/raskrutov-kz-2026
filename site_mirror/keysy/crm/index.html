@@ -46,7 +46,8 @@ a{color:inherit;text-decoration:none}
 button{font:inherit;cursor:pointer;border:none;background:none}
 h1,h2,h3,p,ul,ol,dl,blockquote,figure{margin-top:0}
 h1,h2,h3{color:var(--color-ink);font-family:var(--rk-font-head);font-weight:700;line-height:1.16;letter-spacing:-.025em}
-body.case-study h1{margin-bottom:18px;font-size:clamp(28px,3.4vw,52px);line-height:1.15}
+body.case-study h1{margin-bottom:18px;font-size:clamp(26px,7.5vw,36px);line-height:1.15;text-wrap:balance}
+@media (min-width:721px){body.case-study h1{font-size:clamp(30px,3vw,45px)}}
 .rk-container{width:min(100% - var(--rk-gutter) * 2,1400px);margin-inline:auto}
 .rk-header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.96);border-bottom:1px solid var(--rk-border);backdrop-filter:blur(8px)}
 .rk-header__bar{display:grid;grid-template-columns:1fr 45px;align-items:center;gap:10px;min-height:61px;padding:15px;width:100%;margin-inline:auto}
@@ -71,16 +72,17 @@ body.case-study h1{margin-bottom:18px;font-size:clamp(28px,3.4vw,52px);line-heig
 .hero__actions{display:flex;margin-bottom:8px;flex-wrap:wrap;gap:10px}
 .crm-hero-media{position:relative;width:100%;max-width:720px;margin:0;justify-self:center}
 .crm-hero-media__frame{position:relative;overflow:hidden;border:1px solid var(--color-line);border-radius:24px;background:#fff;box-shadow:var(--shadow-md)}
-.crm-hero-media__frame img{width:100%;height:auto;aspect-ratio:4 / 3;object-fit:cover;object-position:center 32%}
+.crm-hero-media__frame img{width:100%;height:auto;aspect-ratio:3 / 2;object-fit:cover;object-position:center}
 .crm-hero-media figcaption{margin-top:14px;color:var(--color-muted);font-size:.84rem;line-height:1.45;text-align:center}
 .crm-float{display:none}
 .crm-hero-chain{display:grid;gap:10px;margin:6px 0 0;padding:0;list-style:none}
-.crm-hero-chain li{display:grid;align-items:center;gap:11px;grid-template-columns:auto minmax(0,1fr);min-width:0;padding:10px 13px;border:1px solid var(--color-line);border-radius:13px;background:#fff;color:var(--color-ink-soft);font-size:.87rem;font-weight:600;line-height:1.4}
+.crm-hero-chain li{display:grid;align-items:center;gap:11px;grid-template-columns:auto minmax(0,1fr);min-width:0;padding:12px 14px;border:1px solid var(--color-line);border-radius:14px;background:#fff;color:var(--color-ink-soft);font-size:.88rem;font-weight:600;line-height:1.4}
+.crm-hero-chain__text{min-width:0}
 .crm-ico{display:inline-flex;width:44px;height:44px;align-items:center;justify-content:center;flex:0 0 auto;border:1px solid rgba(109,80,232,.18);border-radius:13px;color:#6d50e8;background:rgba(109,80,232,.08)}
 .crm-ico svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
 .crm-ico--sm{width:38px;height:38px;border-radius:11px}
 .crm-ico--sm svg{width:20px;height:20px}
-@media (min-width:560px){.crm-hero-chain{grid-template-columns:repeat(2,minmax(0,1fr))}.crm-hero-chain li:first-child{grid-column:1 / -1}}
+@media (min-width:721px){.crm-hero-chain{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.crm-hero-chain li{align-items:start;gap:12px;grid-template-columns:minmax(0,1fr);padding:15px 15px 16px}}
 .button{display:inline-flex;min-height:44px;padding:11px 18px;border:1px solid transparent;border-radius:11px;align-items:center;justify-content:center;gap:8px;font-size:13px;font-weight:700;line-height:1.25;text-align:center;text-decoration:none}
 .button--primary{color:#fff;background:var(--gradient-brand-wide);box-shadow:0 13px 30px rgba(108,79,231,.24)}
 .button--secondary{border-color:#d9d5df;color:var(--color-brand-deep);background:#fff;box-shadow:0 8px 20px rgba(31,23,47,.06)}
@@ -89,15 +91,15 @@ body.case-study h1{margin-bottom:18px;font-size:clamp(28px,3.4vw,52px);line-heig
 @media (max-width:767px){body.rk-clean.case-study{padding-bottom:calc(88px + env(safe-area-inset-bottom,0))}}
 @media (max-width:480px){.button{width:100%}.hero__actions{display:grid;grid-template-columns:1fr}}
 @media (min-width:501px){.rk-header__bar{grid-template-columns:17% 1fr 17%;gap:20px;padding:6px 10px;width:min(100%,1400px)}.rk-logo img{width:211px;height:49px}.rk-burger{display:none}.rk-nav{display:flex;align-items:center;justify-content:center;gap:5px;flex-wrap:wrap}.rk-nav a{display:inline-flex;align-items:center;min-height:44px;padding:8px 4px;color:var(--rk-text-dark);font-family:var(--rk-font-head);font-size:14px;font-weight:500}.rk-nav a[aria-current=page]{color:var(--rk-purple)}.rk-header__contacts{display:flex;align-items:center;justify-content:flex-end;gap:10px}.rk-header__phone{font-weight:700;color:var(--rk-link);white-space:nowrap;min-height:44px;display:inline-flex;align-items:center}.rk-wa{display:inline-flex;width:44px;height:44px;align-items:center;justify-content:center}.rk-wa img{width:30px;height:30px}}
-@media (min-width:981px){.hero__grid{grid-template-columns:minmax(0,48fr) minmax(0,52fr)}.hero__content{max-width:none}}
+@media (min-width:981px){.hero__grid{grid-template-columns:minmax(0,0.99fr) minmax(0,1.01fr)}.hero__content{max-width:none}.crm-hero-media{justify-self:end}}
 </style>
   <link rel="stylesheet" href="/assets/css/case-chrome.css?v=2" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="/assets/css/case-study.css?v=2" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="/keysy/crm/crm-case.css?v=4" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="/keysy/crm/crm-case.css?v=5" media="print" onload="this.media='all'">
   <noscript>
     <link rel="stylesheet" href="/assets/css/case-chrome.css?v=2">
     <link rel="stylesheet" href="/assets/css/case-study.css?v=2">
-    <link rel="stylesheet" href="/keysy/crm/crm-case.css?v=4">
+    <link rel="stylesheet" href="/keysy/crm/crm-case.css?v=5">
   </noscript>
   <link rel="stylesheet" href="/assets/css/lead-forms.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="/assets/css/lead-forms.css"></noscript>
@@ -442,7 +444,7 @@ body.case-study h1{margin-bottom:18px;font-size:clamp(28px,3.4vw,52px);line-heig
         <div class="container hero__grid">
           <div class="hero__content">
             <p class="eyebrow">Кейс 03. CRM и автоматизация</p>
-            <h1 id="case-title">Кейс CRM и автоматизации: каждая заявка получает <span class="gradient-text">следующий шаг</span></h1>
+            <h1 id="case-title">Кейс CRM и автоматизации: каждая заявка получает <span class="gradient-text">следующий&nbsp;шаг</span></h1>
             <p class="hero__lead">Связываем сайт, формы, мессенджеры, CRM, воронки и задачи менеджеров в единую систему, чтобы обращения не терялись и проходили понятный путь до продажи.</p>
             <div class="hero__actions">
               <button class="button button--primary" type="button" data-rk-open-modal="rk-modal-lead">Обсудить проект</button>
@@ -451,15 +453,15 @@ body.case-study h1{margin-bottom:18px;font-size:clamp(28px,3.4vw,52px);line-heig
             <ul class="crm-hero-chain">
               <li>
                 <span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-inbox"></use></svg></span>
-                Заявка попадает в систему
+                <span class="crm-hero-chain__text">Заявка попадает в систему</span>
               </li>
               <li>
                 <span class="crm-ico crm-ico--sm crm-ico--blue" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-user"></use></svg></span>
-                Назначается ответственный
+                <span class="crm-hero-chain__text">Назначается ответственный</span>
               </li>
               <li>
                 <span class="crm-ico crm-ico--sm crm-ico--cyan" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-arrow"></use></svg></span>
-                Появляется следующий шаг
+                <span class="crm-hero-chain__text">Появляется следующий шаг</span>
               </li>
             </ul>
           </div>
@@ -963,6 +965,11 @@ body.case-study h1{margin-bottom:18px;font-size:clamp(28px,3.4vw,52px);line-heig
             <p class="section-label">FAQ</p>
             <h2 id="faq-title">Вопросы о CRM и автоматизации</h2>
             <p>Короткие ответы по типовым сценариям внедрения.</p>
+            <div class="crm-faq-visual" aria-hidden="true">
+              <span class="crm-faq-visual__bubble crm-faq-visual__bubble--q"><i></i><i></i></span>
+              <span class="crm-faq-visual__bubble crm-faq-visual__bubble--a"><i></i><i></i><i></i></span>
+              <span class="crm-faq-visual__bubble crm-faq-visual__bubble--q"><i></i></span>
+            </div>
           </div>
           <div class="faq__items">
             <details open>
