@@ -69,6 +69,18 @@ body.case-study h1{margin-bottom:18px;font-size:clamp(28px,3.4vw,52px);line-heig
 .gradient-text{color:var(--color-brand);background:var(--gradient-brand);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .hero__lead{max-width:640px;margin-bottom:22px;color:var(--color-ink-soft);font-size:clamp(14px,1.15vw,16px);line-height:1.55}
 .hero__actions{display:flex;margin-bottom:8px;flex-wrap:wrap;gap:10px}
+.crm-hero-media{position:relative;width:100%;max-width:720px;margin:0;justify-self:center}
+.crm-hero-media__frame{position:relative;overflow:hidden;border:1px solid var(--color-line);border-radius:24px;background:#fff;box-shadow:var(--shadow-md)}
+.crm-hero-media__frame img{width:100%;height:auto;aspect-ratio:4 / 3;object-fit:cover;object-position:center 32%}
+.crm-hero-media figcaption{margin-top:14px;color:var(--color-muted);font-size:.84rem;line-height:1.45;text-align:center}
+.crm-float{display:none}
+.crm-hero-chain{display:grid;gap:10px;margin:6px 0 0;padding:0;list-style:none}
+.crm-hero-chain li{display:grid;align-items:center;gap:11px;grid-template-columns:auto minmax(0,1fr);min-width:0;padding:10px 13px;border:1px solid var(--color-line);border-radius:13px;background:#fff;color:var(--color-ink-soft);font-size:.87rem;font-weight:600;line-height:1.4}
+.crm-ico{display:inline-flex;width:44px;height:44px;align-items:center;justify-content:center;flex:0 0 auto;border:1px solid rgba(109,80,232,.18);border-radius:13px;color:#6d50e8;background:rgba(109,80,232,.08)}
+.crm-ico svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.crm-ico--sm{width:38px;height:38px;border-radius:11px}
+.crm-ico--sm svg{width:20px;height:20px}
+@media (min-width:560px){.crm-hero-chain{grid-template-columns:repeat(2,minmax(0,1fr))}.crm-hero-chain li:first-child{grid-column:1 / -1}}
 .button{display:inline-flex;min-height:44px;padding:11px 18px;border:1px solid transparent;border-radius:11px;align-items:center;justify-content:center;gap:8px;font-size:13px;font-weight:700;line-height:1.25;text-align:center;text-decoration:none}
 .button--primary{color:#fff;background:var(--gradient-brand-wide);box-shadow:0 13px 30px rgba(108,79,231,.24)}
 .button--secondary{border-color:#d9d5df;color:var(--color-brand-deep);background:#fff;box-shadow:0 8px 20px rgba(31,23,47,.06)}
@@ -77,15 +89,15 @@ body.case-study h1{margin-bottom:18px;font-size:clamp(28px,3.4vw,52px);line-heig
 @media (max-width:767px){body.rk-clean.case-study{padding-bottom:calc(88px + env(safe-area-inset-bottom,0))}}
 @media (max-width:480px){.button{width:100%}.hero__actions{display:grid;grid-template-columns:1fr}}
 @media (min-width:501px){.rk-header__bar{grid-template-columns:17% 1fr 17%;gap:20px;padding:6px 10px;width:min(100%,1400px)}.rk-logo img{width:211px;height:49px}.rk-burger{display:none}.rk-nav{display:flex;align-items:center;justify-content:center;gap:5px;flex-wrap:wrap}.rk-nav a{display:inline-flex;align-items:center;min-height:44px;padding:8px 4px;color:var(--rk-text-dark);font-family:var(--rk-font-head);font-size:14px;font-weight:500}.rk-nav a[aria-current=page]{color:var(--rk-purple)}.rk-header__contacts{display:flex;align-items:center;justify-content:flex-end;gap:10px}.rk-header__phone{font-weight:700;color:var(--rk-link);white-space:nowrap;min-height:44px;display:inline-flex;align-items:center}.rk-wa{display:inline-flex;width:44px;height:44px;align-items:center;justify-content:center}.rk-wa img{width:30px;height:30px}}
-@media (min-width:981px){.hero__grid{grid-template-columns:minmax(0,1.15fr) minmax(280px,.85fr)}}
+@media (min-width:981px){.hero__grid{grid-template-columns:minmax(0,48fr) minmax(0,52fr)}.hero__content{max-width:none}}
 </style>
   <link rel="stylesheet" href="/assets/css/case-chrome.css?v=2" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="/assets/css/case-study.css?v=2" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="/keysy/crm/crm-case.css?v=2" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="/keysy/crm/crm-case.css?v=4" media="print" onload="this.media='all'">
   <noscript>
     <link rel="stylesheet" href="/assets/css/case-chrome.css?v=2">
     <link rel="stylesheet" href="/assets/css/case-study.css?v=2">
-    <link rel="stylesheet" href="/keysy/crm/crm-case.css?v=2">
+    <link rel="stylesheet" href="/keysy/crm/crm-case.css?v=4">
   </noscript>
   <link rel="stylesheet" href="/assets/css/lead-forms.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="/assets/css/lead-forms.css"></noscript>
@@ -272,6 +284,103 @@ body.case-study h1{margin-bottom:18px;font-size:clamp(28px,3.4vw,52px);line-heig
 
   <a class="skip-link" href="#main-content">Перейти к содержанию</a>
 
+  <svg width="0" height="0" style="display:none" aria-hidden="true" focusable="false">
+    <symbol id="i-inbox" viewBox="0 0 24 24">
+      <path d="M3.5 13.2 5.7 6.4A2.2 2.2 0 0 1 7.8 4.9h8.4a2.2 2.2 0 0 1 2.1 1.5l2.2 6.8V17a2 2 0 0 1-2 2H5.5a2 2 0 0 1-2-2z"/>
+      <path d="M3.5 13.2h4.7l1 2h5.6l1-2h4.7"/>
+    </symbol>
+    <symbol id="i-funnel" viewBox="0 0 24 24">
+      <path d="M4.2 5.2h15.6l-6 7.1v6.4l-3.6 1.6v-8z"/>
+    </symbol>
+    <symbol id="i-task" viewBox="0 0 24 24">
+      <path d="M8.4 4.4H7a2 2 0 0 0-2 2v11.2a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6.4a2 2 0 0 0-2-2h-1.4"/>
+      <path d="M8.4 3.4h7.2v2.8H8.4z"/>
+      <path d="M8.6 11.6l1.8 1.8 3.4-3.6"/>
+      <path d="M8.6 16.4h6.8"/>
+    </symbol>
+    <symbol id="i-dash" viewBox="0 0 24 24">
+      <path d="M4.2 4.6h15.6a1 1 0 0 1 1 1v12.8a1 1 0 0 1-1 1H4.2a1 1 0 0 1-1-1V5.6a1 1 0 0 1 1-1z"/>
+      <path d="M7.4 15.6v-3.2M12 15.6V8.8M16.6 15.6v-5"/>
+    </symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24">
+      <path d="M18 15.4v-4.8a6 6 0 1 0-12 0v4.8L4.4 18h15.2z"/>
+      <path d="M9.9 20.2a2.3 2.3 0 0 0 4.2 0"/>
+    </symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24">
+      <path d="M20.4 11.6a7.6 7.6 0 0 1-11.2 6.7L4.4 19.6l1.5-4.2a7.6 7.6 0 1 1 14.5-3.8z"/>
+      <path d="M9.4 11.7h.01M12.4 11.7h.01M15.4 11.7h.01"/>
+    </symbol>
+    <symbol id="i-site" viewBox="0 0 24 24">
+      <path d="M4.4 4.6h15.2a1 1 0 0 1 1 1v11.8a1 1 0 0 1-1 1H4.4a1 1 0 0 1-1-1V5.6a1 1 0 0 1 1-1z"/>
+      <path d="M3.4 9h17.2"/>
+      <path d="M6.4 6.8h.01M8.8 6.8h.01"/>
+    </symbol>
+    <symbol id="i-plug" viewBox="0 0 24 24">
+      <path d="M9.6 14.4l4.8-4.8"/>
+      <path d="M11.4 6.6l1.7-1.7a3.6 3.6 0 0 1 5.1 5.1l-1.8 1.7"/>
+      <path d="M12.6 17.4l-1.7 1.7a3.6 3.6 0 0 1-5.1-5.1l1.8-1.7"/>
+    </symbol>
+    <symbol id="i-user" viewBox="0 0 24 24">
+      <path d="M12 4.6a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7z"/>
+      <path d="M5 19.8c0-3.6 3.1-5.6 7-5.6s7 2 7 5.6"/>
+    </symbol>
+    <symbol id="i-team" viewBox="0 0 24 24">
+      <path d="M9.2 5.4a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/>
+      <path d="M3.4 19.4c0-3.1 2.6-4.9 5.8-4.9s5.8 1.8 5.8 4.9"/>
+      <path d="M16.2 6.6a3 3 0 0 1 0 5.6"/>
+      <path d="M17.6 14.9c1.9.7 3.2 2.2 3.2 4.5"/>
+    </symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24">
+      <path d="M12 3.4l7 2.4v5.6c0 4.2-2.9 7.6-7 9.2-4.1-1.6-7-5-7-9.2V5.8z"/>
+      <path d="M9.2 11.9l2.2 2.2 4.2-4.3"/>
+    </symbol>
+    <symbol id="i-search" viewBox="0 0 24 24">
+      <path d="M11 5a6 6 0 1 1 0 12 6 6 0 0 1 0-12z"/>
+      <path d="M15.4 15.4 20 20"/>
+    </symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24">
+      <path d="M12 4a8 8 0 1 1 0 16 8 8 0 0 1 0-16z"/>
+      <path d="M12 7.6V12l3 2"/>
+    </symbol>
+    <symbol id="i-table" viewBox="0 0 24 24">
+      <path d="M4.4 4.6h15.2a1 1 0 0 1 1 1v12.8a1 1 0 0 1-1 1H4.4a1 1 0 0 1-1-1V5.6a1 1 0 0 1 1-1z"/>
+      <path d="M3.4 9.4h17.2M3.4 14.6h17.2M9.6 9.4v10"/>
+    </symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24">
+      <path d="M4.4 5.4h15.2a1 1 0 0 1 1 1v11.2a1 1 0 0 1-1 1H4.4a1 1 0 0 1-1-1V6.4a1 1 0 0 1 1-1z"/>
+      <path d="M4 7l8 5.8L20 7"/>
+    </symbol>
+    <symbol id="i-db" viewBox="0 0 24 24">
+      <path d="M12 3.6c3.9 0 7 1.3 7 3s-3.1 3-7 3-7-1.3-7-3 3.1-3 7-3z"/>
+      <path d="M5 6.6v10.8c0 1.7 3.1 3 7 3s7-1.3 7-3V6.6"/>
+      <path d="M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3"/>
+    </symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24">
+      <path d="M13.6 3.4 6.4 13.6h4.8L10.4 20.6l7.2-10.2h-4.8z"/>
+    </symbol>
+    <symbol id="i-report" viewBox="0 0 24 24">
+      <path d="M13.8 3.4H7a2 2 0 0 0-2 2v13.2a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8.6z"/>
+      <path d="M13.8 3.4v5.2H19"/>
+      <path d="M8.6 13.4h6.8M8.6 16.6h4.4"/>
+    </symbol>
+    <symbol id="i-deal" viewBox="0 0 24 24">
+      <path d="M12 3.6a8.4 8.4 0 1 1 0 16.8 8.4 8.4 0 0 1 0-16.8z"/>
+      <path d="M8.4 12.2l2.5 2.5 4.7-5.2"/>
+    </symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24">
+      <path d="M4.6 12h14.8"/>
+      <path d="M14.4 7l5 5-5 5"/>
+    </symbol>
+    <symbol id="i-target" viewBox="0 0 24 24">
+      <path d="M12 4a8 8 0 1 1 0 16 8 8 0 0 1 0-16z"/>
+      <path d="M12 8.4a3.6 3.6 0 1 1 0 7.2 3.6 3.6 0 0 1 0-7.2z"/>
+      <path d="M12 11.7h.01"/>
+    </symbol>
+    <symbol id="i-check" viewBox="0 0 24 24">
+      <path d="M5.5 12.5l4 4 9-9"/>
+    </symbol>
+  </svg>
+
   <header class="rk-header">
     <div class="rk-container rk-header__bar">
       <a class="rk-logo" href="https://raskrutov.kz/" aria-label="Raskrutov — на главную">
@@ -339,6 +448,20 @@ body.case-study h1{margin-bottom:18px;font-size:clamp(28px,3.4vw,52px);line-heig
               <button class="button button--primary" type="button" data-rk-open-modal="rk-modal-lead">Обсудить проект</button>
               <a class="button button--secondary" href="/keysy/">Вернуться к кейсам</a>
             </div>
+            <ul class="crm-hero-chain">
+              <li>
+                <span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-inbox"></use></svg></span>
+                Заявка попадает в систему
+              </li>
+              <li>
+                <span class="crm-ico crm-ico--sm crm-ico--blue" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-user"></use></svg></span>
+                Назначается ответственный
+              </li>
+              <li>
+                <span class="crm-ico crm-ico--sm crm-ico--cyan" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-arrow"></use></svg></span>
+                Появляется следующий шаг
+              </li>
+            </ul>
           </div>
 
           <figure class="crm-hero-media">
@@ -346,12 +469,42 @@ body.case-study h1{margin-bottom:18px;font-size:clamp(28px,3.4vw,52px);line-heig
               <img
                 src="/assets/generated/sozdanie/crm-sistemy/v2.webp"
                 srcset="/assets/generated/sozdanie/crm-sistemy/v2.webp 1200w, /assets/generated/sozdanie/crm-sistemy/hero.webp 1536w"
-                sizes="(max-width: 980px) min(100vw, 520px), 480px"
+                sizes="(max-width: 980px) min(calc(100vw - 32px), 720px), min(52vw, 720px)"
                 width="1200"
                 height="800"
                 alt="Интерфейс CRM: заявки, воронка и контроль обработки обращений"
                 decoding="async"
                 fetchpriority="high">
+            </div>
+            <div class="crm-hero-media__floats" aria-hidden="true">
+              <div class="crm-float crm-float--a">
+                <span class="crm-ico crm-ico--xs crm-ico--solid"><svg viewBox="0 0 24 24" width="17" height="17"><use href="#i-inbox"></use></svg></span>
+                <span class="crm-float__text">
+                  <span class="crm-float__title">Новая заявка</span>
+                  <span class="crm-float__meta">сайт / WhatsApp</span>
+                </span>
+              </div>
+              <div class="crm-float crm-float--b" aria-hidden="true">
+                <span class="crm-ico crm-ico--xs crm-ico--blue"><svg viewBox="0 0 24 24" width="17" height="17"><use href="#i-user"></use></svg></span>
+                <span class="crm-float__text">
+                  <span class="crm-float__title">Назначен менеджер</span>
+                  <span class="crm-float__meta">ответственный за заявку</span>
+                </span>
+              </div>
+              <div class="crm-float crm-float--c" aria-hidden="true">
+                <span class="crm-ico crm-ico--xs crm-ico--cyan"><svg viewBox="0 0 24 24" width="17" height="17"><use href="#i-funnel"></use></svg></span>
+                <span class="crm-float__text">
+                  <span class="crm-float__title">Этап: уточнение</span>
+                  <span class="crm-float__meta">воронка продаж</span>
+                </span>
+              </div>
+              <div class="crm-float crm-float--d" aria-hidden="true">
+                <span class="crm-ico crm-ico--xs crm-ico--magenta"><svg viewBox="0 0 24 24" width="17" height="17"><use href="#i-bell"></use></svg></span>
+                <span class="crm-float__text">
+                  <span class="crm-float__title">Следующая задача</span>
+                  <span class="crm-float__meta">связаться с клиентом</span>
+                </span>
+              </div>
             </div>
             <figcaption>Заявки, воронка и задачи менеджеров в одной системе</figcaption>
           </figure>
@@ -365,11 +518,27 @@ body.case-study h1{margin-bottom:18px;font-size:clamp(28px,3.4vw,52px);line-heig
             <h2 id="result-title">Заявка не должна оставаться в почте, мессенджере или таблице без следующего действия</h2>
             <p>Когда обращение приходит из разных каналов, бизнесу сложно контролировать скорость ответа, статус клиента и работу менеджеров. CRM-система собирает заявки в одном месте, фиксирует этап обработки и помогает назначать следующий шаг.</p>
           </div>
-          <ul class="crm-points">
-            <li>единый учёт входящих обращений;</li>
-            <li>понятные этапы воронки;</li>
-            <li>автоматические задачи менеджерам;</li>
-            <li>контроль обработки заявок руководителем.</li>
+          <ul class="crm-tiles">
+            <li class="crm-tile crm-tile--violet">
+              <span class="crm-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><use href="#i-inbox"></use></svg></span>
+              <h3>Единый учёт обращений</h3>
+              <p>Заявки из сайта, форм и мессенджеров собираются в одном рабочем пространстве.</p>
+            </li>
+            <li class="crm-tile crm-tile--blue">
+              <span class="crm-ico crm-ico--blue" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><use href="#i-funnel"></use></svg></span>
+              <h3>Понятные этапы воронки</h3>
+              <p>У каждой заявки есть текущий этап и критерий перехода на следующий.</p>
+            </li>
+            <li class="crm-tile crm-tile--cyan">
+              <span class="crm-ico crm-ico--cyan" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><use href="#i-task"></use></svg></span>
+              <h3>Автоматические задачи</h3>
+              <p>Система ставит задачу ответственному и напоминает о сроке ответа.</p>
+            </li>
+            <li class="crm-tile crm-tile--magenta">
+              <span class="crm-ico crm-ico--magenta" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><use href="#i-dash"></use></svg></span>
+              <h3>Контроль руководителя</h3>
+              <p>Видно статусы заявок, загрузку менеджеров и этапы, где обращения зависают.</p>
+            </li>
           </ul>
         </div>
       </section>
@@ -381,53 +550,130 @@ body.case-study h1{margin-bottom:18px;font-size:clamp(28px,3.4vw,52px);line-heig
             <h2 id="task-title">Задача: убрать потери между заявкой и продажей</h2>
             <p>Типовая ситуация для компаний, у которых уже идут заявки с сайта, рекламы и WhatsApp, но обработка зависит от ручной передачи информации.</p>
           </div>
-          <div class="crm-card-grid">
-            <article class="crm-card">
-              <h3>Разные каналы</h3>
-              <p>Заявки приходят из разных каналов и живут в разных местах.</p>
-            </article>
-            <article class="crm-card">
-              <h3>Пропуски ответа</h3>
-              <p>Часть обращений остаётся без ответа слишком долго.</p>
-            </article>
-            <article class="crm-card">
-              <h3>Неясный следующий шаг</h3>
-              <p>Менеджеры не всегда понимают, что делать с заявкой прямо сейчас.</p>
-            </article>
-            <article class="crm-card">
-              <h3>Слабый контроль</h3>
-              <p>Руководителю сложно контролировать обработку и загрузку команды.</p>
-            </article>
-            <article class="crm-card">
-              <h3>Нет единой картины</h3>
-              <p>Нет общей картины по источникам, статусам и этапам продаж.</p>
-            </article>
-            <article class="crm-card">
-              <h3>Ручная передача</h3>
-              <p>Ручная передача информации создаёт задержки и ошибки.</p>
-            </article>
+          <div class="crm-task">
+            <div class="crm-scatter">
+              <p class="crm-scatter__label">Заявки живут в разных местах</p>
+              <ul class="crm-scatter__grid">
+                <li><span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-site"></use></svg></span>Сайт и формы</li>
+                <li><span class="crm-ico crm-ico--sm crm-ico--cyan" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-chat"></use></svg></span>WhatsApp</li>
+                <li><span class="crm-ico crm-ico--sm crm-ico--blue" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-mail"></use></svg></span>Почта</li>
+                <li><span class="crm-ico crm-ico--sm crm-ico--magenta" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-table"></use></svg></span>Таблица</li>
+                <li><span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-user"></use></svg></span>Менеджер</li>
+                <li><span class="crm-ico crm-ico--sm crm-ico--blue" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-clock"></use></svg></span>Ожидание ответа</li>
+              </ul>
+              <p class="crm-scatter__note">Пока каналы не связаны между собой, статус обращения приходится собирать вручную из нескольких источников.</p>
+            </div>
+            <div class="crm-problems">
+              <article class="crm-problem">
+                <span class="crm-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><use href="#i-plug"></use></svg></span>
+                <div>
+                  <h3>Разные каналы</h3>
+                  <p>Заявки приходят из разных каналов и живут в разных местах.</p>
+                </div>
+              </article>
+              <article class="crm-problem">
+                <span class="crm-ico crm-ico--blue" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><use href="#i-clock"></use></svg></span>
+                <div>
+                  <h3>Пропуски ответа</h3>
+                  <p>Часть обращений остаётся без ответа слишком долго.</p>
+                </div>
+              </article>
+              <article class="crm-problem">
+                <span class="crm-ico crm-ico--cyan" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><use href="#i-arrow"></use></svg></span>
+                <div>
+                  <h3>Неясный следующий шаг</h3>
+                  <p>Менеджеры не всегда понимают, что делать с заявкой прямо сейчас.</p>
+                </div>
+              </article>
+              <article class="crm-problem">
+                <span class="crm-ico crm-ico--magenta" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><use href="#i-shield"></use></svg></span>
+                <div>
+                  <h3>Слабый контроль</h3>
+                  <p>Руководителю сложно контролировать обработку и загрузку команды.</p>
+                </div>
+              </article>
+              <article class="crm-problem">
+                <span class="crm-ico crm-ico--blue" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><use href="#i-dash"></use></svg></span>
+                <div>
+                  <h3>Нет единой картины</h3>
+                  <p>Нет общей картины по источникам, статусам и этапам продаж.</p>
+                </div>
+              </article>
+              <article class="crm-problem">
+                <span class="crm-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><use href="#i-table"></use></svg></span>
+                <div>
+                  <h3>Ручная передача</h3>
+                  <p>Ручная передача информации создаёт задержки и ошибки.</p>
+                </div>
+              </article>
+            </div>
           </div>
         </div>
       </section>
 
       <section class="section section--soft" aria-labelledby="diagnostics-title">
-        <div class="container split-layout">
-          <div class="section-heading split-layout__intro">
-            <p class="section-label">Диагностика</p>
-            <h2 id="diagnostics-title">Диагностика: где бизнес теряет обращения</h2>
-            <p>До внедрения анализируем типовые точки CRM-проекта. Это карта проверки процессов, а не описание проблем конкретного клиента.</p>
+        <div class="container crm-diag">
+          <div class="crm-diag__aside">
+            <span class="crm-ico crm-ico--lg crm-ico--solid" aria-hidden="true"><svg viewBox="0 0 24 24" width="30" height="30"><use href="#i-search"></use></svg></span>
+            <div class="section-heading">
+              <p class="section-label">Диагностика</p>
+              <h2 id="diagnostics-title">Диагностика: где бизнес теряет обращения</h2>
+              <p>До внедрения анализируем типовые точки CRM-проекта. Это карта проверки процессов, а не описание проблем конкретного клиента.</p>
+            </div>
           </div>
-          <ul class="check-list">
-            <li>источники заявок;</li>
-            <li>формы сайта;</li>
-            <li>WhatsApp и другие каналы связи;</li>
-            <li>текущая CRM или таблицы;</li>
-            <li>этапы продаж;</li>
-            <li>роли менеджеров;</li>
-            <li>скорость реакции;</li>
-            <li>причины зависания заявок;</li>
-            <li>отчётность и контроль руководителя.</li>
-          </ul>
+          <div class="crm-diag__panel">
+            <div class="crm-diag__head">
+              <span>Зона проверки</span>
+              <span>Смотрим на старте</span>
+            </div>
+            <ul class="crm-diag__list">
+              <li>
+                <span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-inbox"></use></svg></span>
+                источники заявок;
+                <span class="crm-diag__mark" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14"><use href="#i-check"></use></svg></span>
+              </li>
+              <li>
+                <span class="crm-ico crm-ico--sm crm-ico--blue" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-site"></use></svg></span>
+                формы сайта;
+                <span class="crm-diag__mark" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14"><use href="#i-check"></use></svg></span>
+              </li>
+              <li>
+                <span class="crm-ico crm-ico--sm crm-ico--cyan" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-chat"></use></svg></span>
+                WhatsApp и другие каналы связи;
+                <span class="crm-diag__mark" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14"><use href="#i-check"></use></svg></span>
+              </li>
+              <li>
+                <span class="crm-ico crm-ico--sm crm-ico--magenta" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-db"></use></svg></span>
+                текущая CRM или таблицы;
+                <span class="crm-diag__mark" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14"><use href="#i-check"></use></svg></span>
+              </li>
+              <li>
+                <span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-funnel"></use></svg></span>
+                этапы продаж;
+                <span class="crm-diag__mark" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14"><use href="#i-check"></use></svg></span>
+              </li>
+              <li>
+                <span class="crm-ico crm-ico--sm crm-ico--blue" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-team"></use></svg></span>
+                роли менеджеров;
+                <span class="crm-diag__mark" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14"><use href="#i-check"></use></svg></span>
+              </li>
+              <li>
+                <span class="crm-ico crm-ico--sm crm-ico--cyan" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-clock"></use></svg></span>
+                скорость реакции;
+                <span class="crm-diag__mark" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14"><use href="#i-check"></use></svg></span>
+              </li>
+              <li>
+                <span class="crm-ico crm-ico--sm crm-ico--magenta" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-target"></use></svg></span>
+                причины зависания заявок;
+                <span class="crm-diag__mark" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14"><use href="#i-check"></use></svg></span>
+              </li>
+              <li>
+                <span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-report"></use></svg></span>
+                отчётность и контроль руководителя.
+                <span class="crm-diag__mark" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14"><use href="#i-check"></use></svg></span>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -438,28 +684,44 @@ body.case-study h1{margin-bottom:18px;font-size:clamp(28px,3.4vw,52px);line-heig
             <h2 id="solution-title">Решение: единая логика обработки заявки</h2>
             <p>Собираем путь обращения в одну рабочую схему: от поступления до статуса сделки. Платформа подбирается под процессы компании; при необходимости используется amoCRM или другая CRM.</p>
           </div>
-          <div class="system-grid">
-            <article class="crm-card">
+          <div class="crm-builder">
+            <div class="crm-hub">
+              <div>
+                <p class="crm-hub__label">Ядро системы</p>
+                <h3>Единая логика обработки заявки</h3>
+                <p>Каналы, воронка, задачи, уведомления, интеграции и аналитика собираются вокруг одного правила: у обращения всегда есть статус, ответственный и следующий шаг.</p>
+              </div>
+              <div class="crm-hub__media">
+                <img src="/assets/generated/sozdanie/integratsii/v1.webp" width="800" height="800" alt="Схема: каналы, аналитика, оплата и коммуникация связаны с карточкой клиента" loading="lazy" decoding="async">
+              </div>
+            </div>
+            <article class="crm-mod">
+              <span class="crm-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><use href="#i-site"></use></svg></span>
               <h3>Каналы и формы</h3>
               <p>Подключение форм сайта к CRM и фиксация источника обращения.</p>
             </article>
-            <article class="crm-card">
+            <article class="crm-mod">
+              <span class="crm-ico crm-ico--blue" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><use href="#i-funnel"></use></svg></span>
               <h3>Воронка и роли</h3>
               <p>Настройка воронки продаж и распределение заявок по ответственным.</p>
             </article>
-            <article class="crm-card">
+            <article class="crm-mod">
+              <span class="crm-ico crm-ico--cyan" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><use href="#i-bolt"></use></svg></span>
               <h3>Автоматизации</h3>
               <p>Автоматическое создание задач и уведомления менеджерам.</p>
             </article>
-            <article class="crm-card">
+            <article class="crm-mod">
+              <span class="crm-ico crm-ico--magenta" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><use href="#i-deal"></use></svg></span>
               <h3>Статусы</h3>
               <p>Контроль статуса каждой заявки на всём пути обработки.</p>
             </article>
-            <article class="crm-card">
+            <article class="crm-mod">
+              <span class="crm-ico crm-ico--blue" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><use href="#i-plug"></use></svg></span>
               <h3>Интеграции</h3>
               <p>Интеграция с телефонией и мессенджерами при необходимости.</p>
             </article>
-            <article class="crm-card">
+            <article class="crm-mod">
+              <span class="crm-ico crm-ico--cyan" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><use href="#i-report"></use></svg></span>
               <h3>Управление</h3>
               <p>Отчётность для руководителя и регламенты обработки обращений.</p>
             </article>
@@ -468,68 +730,82 @@ body.case-study h1{margin-bottom:18px;font-size:clamp(28px,3.4vw,52px);line-heig
       </section>
 
       <section class="section section--soft" id="process" aria-labelledby="process-title">
-        <div class="container split-layout">
-          <div class="section-heading split-layout__intro">
-            <p class="section-label">Внедрение</p>
-            <h2 id="process-title">Как CRM превращается в рабочий процесс</h2>
-            <p>Внедрение идёт по шагам: сначала понятная логика, затем настройка, проверка сценариев и поддержка команды.</p>
+        <div class="container">
+          <div class="crm-sechead">
+            <div class="section-heading">
+              <p class="section-label">Внедрение</p>
+              <h2 id="process-title">Как CRM превращается в рабочий процесс</h2>
+              <p>Внедрение идёт по шагам: сначала понятная логика, затем настройка, проверка сценариев и поддержка команды.</p>
+            </div>
+            <span class="crm-sechead__note">
+              <span class="crm-ico crm-ico--xs" aria-hidden="true"><svg viewBox="0 0 24 24" width="17" height="17"><use href="#i-task"></use></svg></span>
+              8 шагов внедрения
+            </span>
           </div>
-          <ol class="timeline">
+          <ol class="crm-steps">
             <li>
-              <span class="timeline__date">Шаг 1</span>
-              <div>
-                <h3>Анализ текущих заявок и процессов</h3>
-                <p>Собираем каналы, роли и текущий путь обращения.</p>
+              <div class="crm-steps__top">
+                <span class="crm-steps__num">Шаг 1</span>
+                <span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-search"></use></svg></span>
               </div>
+              <h3>Анализ текущих заявок и процессов</h3>
+              <p>Собираем каналы, роли и текущий путь обращения.</p>
             </li>
             <li>
-              <span class="timeline__date">Шаг 2</span>
-              <div>
-                <h3>Проектирование воронки</h3>
-                <p>Фиксируем этапы, статусы и критерии перехода.</p>
+              <div class="crm-steps__top">
+                <span class="crm-steps__num">Шаг 2</span>
+                <span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-funnel"></use></svg></span>
               </div>
+              <h3>Проектирование воронки</h3>
+              <p>Фиксируем этапы, статусы и критерии перехода.</p>
             </li>
             <li>
-              <span class="timeline__date">Шаг 3</span>
-              <div>
-                <h3>Настройка CRM и каналов поступления</h3>
-                <p>Подключаем формы и согласованные каналы к системе.</p>
+              <div class="crm-steps__top">
+                <span class="crm-steps__num">Шаг 3</span>
+                <span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-db"></use></svg></span>
               </div>
+              <h3>Настройка CRM и каналов поступления</h3>
+              <p>Подключаем формы и согласованные каналы к системе.</p>
             </li>
             <li>
-              <span class="timeline__date">Шаг 4</span>
-              <div>
-                <h3>Распределение ролей и задач</h3>
-                <p>Назначаем ответственных и правила передачи заявок.</p>
+              <div class="crm-steps__top">
+                <span class="crm-steps__num">Шаг 4</span>
+                <span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-team"></use></svg></span>
               </div>
+              <h3>Распределение ролей и задач</h3>
+              <p>Назначаем ответственных и правила передачи заявок.</p>
             </li>
             <li>
-              <span class="timeline__date">Шаг 5</span>
-              <div>
-                <h3>Настройка автоматизаций и уведомлений</h3>
-                <p>Добавляем задачи, напоминания и служебные сценарии.</p>
+              <div class="crm-steps__top">
+                <span class="crm-steps__num">Шаг 5</span>
+                <span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-bolt"></use></svg></span>
               </div>
+              <h3>Настройка автоматизаций и уведомлений</h3>
+              <p>Добавляем задачи, напоминания и служебные сценарии.</p>
             </li>
             <li>
-              <span class="timeline__date">Шаг 6</span>
-              <div>
-                <h3>Тестирование сценариев</h3>
-                <p>Проверяем путь заявки от поступления до сделки.</p>
+              <div class="crm-steps__top">
+                <span class="crm-steps__num">Шаг 6</span>
+                <span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-deal"></use></svg></span>
               </div>
+              <h3>Тестирование сценариев</h3>
+              <p>Проверяем путь заявки от поступления до сделки.</p>
             </li>
             <li>
-              <span class="timeline__date">Шаг 7</span>
-              <div>
-                <h3>Обучение команды</h3>
-                <p>Показываем менеджерам и руководителю рабочий порядок действий.</p>
+              <div class="crm-steps__top">
+                <span class="crm-steps__num">Шаг 7</span>
+                <span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-user"></use></svg></span>
               </div>
+              <h3>Обучение команды</h3>
+              <p>Показываем менеджерам и руководителю рабочий порядок действий.</p>
             </li>
             <li>
-              <span class="timeline__date">Шаг 8</span>
-              <div>
-                <h3>Контроль работы и дальнейшая оптимизация</h3>
-                <p>Смотрим узкие места и донастраиваем процесс после запуска.</p>
+              <div class="crm-steps__top">
+                <span class="crm-steps__num">Шаг 8</span>
+                <span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-dash"></use></svg></span>
               </div>
+              <h3>Контроль работы и дальнейшая оптимизация</h3>
+              <p>Смотрим узкие места и донастраиваем процесс после запуска.</p>
             </li>
           </ol>
         </div>
@@ -542,59 +818,148 @@ body.case-study h1{margin-bottom:18px;font-size:clamp(28px,3.4vw,52px);line-heig
             <h2 id="business-result-title">Что меняется после настройки системы</h2>
             <p>Цель настройки — управляемая обработка обращений, где сайт, реклама и продажи работают в одной связке.</p>
           </div>
-          <ul class="check-list">
-            <li>заявки фиксируются в едином пространстве;</li>
-            <li>у каждой заявки есть статус и ответственный;</li>
-            <li>менеджер понимает следующий шаг;</li>
-            <li>руководитель видит загрузку и качество обработки;</li>
-            <li>проще находить узкие места воронки;</li>
-            <li>снижается зависимость от ручного контроля;</li>
-            <li>сайт, реклама и продажи работают в связке.</li>
-          </ul>
+          <div class="crm-outcome">
+            <div class="crm-dash" aria-hidden="true">
+              <div class="crm-dash__top">
+                <span class="crm-ico crm-ico--xs crm-ico--solid"><svg viewBox="0 0 24 24" width="17" height="17"><use href="#i-dash"></use></svg></span>
+                Воронка обращений
+                <span class="crm-dash__dots"><i></i><i></i><i></i></span>
+              </div>
+              <div class="crm-dash__body">
+                <div class="crm-dash__row">
+                  <span class="crm-dash__stage">Новая</span>
+                  <span class="crm-dash__bar crm-dash__bar--w1"><i></i></span>
+                </div>
+                <div class="crm-dash__row">
+                  <span class="crm-dash__stage">В работе</span>
+                  <span class="crm-dash__bar crm-dash__bar--w2"><i></i></span>
+                </div>
+                <div class="crm-dash__row">
+                  <span class="crm-dash__stage">Уточнение</span>
+                  <span class="crm-dash__bar crm-dash__bar--w3"><i></i></span>
+                </div>
+                <div class="crm-dash__row">
+                  <span class="crm-dash__stage">Сделка</span>
+                  <span class="crm-dash__bar crm-dash__bar--w4"><i></i></span>
+                </div>
+                <ul class="crm-dash__tasks">
+                  <li><span class="crm-ico crm-ico--xs" aria-hidden="true"><svg viewBox="0 0 24 24" width="17" height="17"><use href="#i-user"></use></svg></span>Ответственный назначен</li>
+                  <li><span class="crm-ico crm-ico--xs crm-ico--blue" aria-hidden="true"><svg viewBox="0 0 24 24" width="17" height="17"><use href="#i-task"></use></svg></span>Задача на следующий шаг</li>
+                  <li><span class="crm-ico crm-ico--xs crm-ico--cyan" aria-hidden="true"><svg viewBox="0 0 24 24" width="17" height="17"><use href="#i-bell"></use></svg></span>Напоминание о сроке ответа</li>
+                </ul>
+              </div>
+            </div>
+            <ul class="crm-benefits">
+              <li class="is-key"><span class="crm-ico crm-ico--sm crm-ico--solid" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-inbox"></use></svg></span>заявки фиксируются в едином пространстве;</li>
+              <li class="is-key"><span class="crm-ico crm-ico--sm crm-ico--solid" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-user"></use></svg></span>у каждой заявки есть статус и ответственный;</li>
+              <li><span class="crm-ico crm-ico--sm crm-ico--blue" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-arrow"></use></svg></span>менеджер понимает следующий шаг;</li>
+              <li class="is-key"><span class="crm-ico crm-ico--sm crm-ico--solid" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-dash"></use></svg></span>руководитель видит загрузку и качество обработки;</li>
+              <li><span class="crm-ico crm-ico--sm crm-ico--cyan" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-funnel"></use></svg></span>проще находить узкие места воронки;</li>
+              <li><span class="crm-ico crm-ico--sm crm-ico--blue" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-bolt"></use></svg></span>снижается зависимость от ручного контроля;</li>
+              <li><span class="crm-ico crm-ico--sm crm-ico--magenta" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-plug"></use></svg></span>сайт, реклама и продажи работают в связке.</li>
+            </ul>
+          </div>
         </div>
       </section>
 
       <section class="section section--soft" aria-labelledby="flow-title">
         <div class="container">
-          <div class="section-heading section-heading--wide">
-            <p class="section-label">Схема</p>
-            <h2 id="flow-title">Путь заявки в рабочей системе</h2>
-            <p>Короткая схема, по которой строится обработка обращений.</p>
+          <div class="crm-sechead">
+            <div class="section-heading">
+              <p class="section-label">Схема</p>
+              <h2 id="flow-title">Путь заявки в рабочей системе</h2>
+              <p>Короткая схема, по которой строится обработка обращений.</p>
+            </div>
+            <span class="crm-sechead__note">
+              <span class="crm-ico crm-ico--xs" aria-hidden="true"><svg viewBox="0 0 24 24" width="17" height="17"><use href="#i-arrow"></use></svg></span>
+              7 этапов пути заявки
+            </span>
           </div>
-          <ol class="crm-flow" aria-label="Схема обработки заявки">
-            <li><span class="crm-flow__step">Заявка</span><span class="crm-flow__arrow" aria-hidden="true">→</span></li>
-            <li><span class="crm-flow__step">Фиксация</span><span class="crm-flow__arrow" aria-hidden="true">→</span></li>
-            <li><span class="crm-flow__step">Распределение</span><span class="crm-flow__arrow" aria-hidden="true">→</span></li>
-            <li><span class="crm-flow__step">Задача менеджеру</span><span class="crm-flow__arrow" aria-hidden="true">→</span></li>
-            <li><span class="crm-flow__step">Коммуникация</span><span class="crm-flow__arrow" aria-hidden="true">→</span></li>
-            <li><span class="crm-flow__step">Сделка</span><span class="crm-flow__arrow" aria-hidden="true">→</span></li>
-            <li><span class="crm-flow__step">Аналитика</span></li>
-          </ol>
+          <div class="crm-journey-panel">
+            <ol class="crm-journey" aria-label="Схема обработки заявки">
+              <li>
+                <span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-inbox"></use></svg></span>
+                <span class="crm-journey__body">
+                  <span class="crm-journey__title">Заявка</span>
+                  <span class="crm-journey__text">Обращение приходит из канала.</span>
+                </span>
+              </li>
+              <li>
+                <span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-db"></use></svg></span>
+                <span class="crm-journey__body">
+                  <span class="crm-journey__title">Фиксация</span>
+                  <span class="crm-journey__text">Данные попадают в систему.</span>
+                </span>
+              </li>
+              <li>
+                <span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-team"></use></svg></span>
+                <span class="crm-journey__body">
+                  <span class="crm-journey__title">Распределение</span>
+                  <span class="crm-journey__text">Назначается ответственный.</span>
+                </span>
+              </li>
+              <li>
+                <span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-task"></use></svg></span>
+                <span class="crm-journey__body">
+                  <span class="crm-journey__title">Задача</span>
+                  <span class="crm-journey__text">Менеджер получает действие.</span>
+                </span>
+              </li>
+              <li>
+                <span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-chat"></use></svg></span>
+                <span class="crm-journey__body">
+                  <span class="crm-journey__title">Коммуникация</span>
+                  <span class="crm-journey__text">Ведётся работа с клиентом.</span>
+                </span>
+              </li>
+              <li>
+                <span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-deal"></use></svg></span>
+                <span class="crm-journey__body">
+                  <span class="crm-journey__title">Сделка</span>
+                  <span class="crm-journey__text">Фиксируется результат.</span>
+                </span>
+              </li>
+              <li>
+                <span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-dash"></use></svg></span>
+                <span class="crm-journey__body">
+                  <span class="crm-journey__title">Аналитика</span>
+                  <span class="crm-journey__text">Руководитель видит движение заявки.</span>
+                </span>
+              </li>
+            </ol>
+          </div>
         </div>
       </section>
 
       <section class="section" aria-labelledby="analytics-title">
-        <div class="container split-layout">
-          <div class="section-heading split-layout__intro">
-            <p class="section-label">Контроль и аналитика</p>
-            <h2 id="analytics-title">CRM нужна для управляемости продаж</h2>
-            <p>База контактов полезна только вместе с контролем статусов, сроков и качества обработки.</p>
+        <div class="container crm-analytics">
+          <figure class="crm-analytics__media">
+            <img src="/assets/generated/sozdanie/crm-sistemy/v1.webp" width="800" height="800" alt="Воронка с карточками заявок и переходом обращений между этапами" loading="lazy" decoding="async">
+            <figcaption>Этапы воронки и карточки обращений, по которым видно движение заявки</figcaption>
+          </figure>
+          <div>
+            <div class="section-heading">
+              <p class="section-label">Контроль и аналитика</p>
+              <h2 id="analytics-title">CRM нужна для управляемости продаж</h2>
+              <p>База контактов полезна только вместе с контролем статусов, сроков и качества обработки.</p>
+            </div>
+            <ul class="crm-rows">
+              <li><span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-inbox"></use></svg></span>откуда приходят обращения;</li>
+              <li><span class="crm-ico crm-ico--sm crm-ico--blue" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-funnel"></use></svg></span>сколько заявок находится на каждом этапе;</li>
+              <li><span class="crm-ico crm-ico--sm crm-ico--cyan" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-clock"></use></svg></span>где возникают задержки;</li>
+              <li><span class="crm-ico crm-ico--sm crm-ico--magenta" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-bell"></use></svg></span>какие задачи просрочены;</li>
+              <li><span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-team"></use></svg></span>как менеджеры обрабатывают обращения;</li>
+              <li><span class="crm-ico crm-ico--sm crm-ico--blue" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-target"></use></svg></span>какие каналы дают качественные лиды;</li>
+              <li><span class="crm-ico crm-ico--sm crm-ico--cyan" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-report"></use></svg></span>какие процессы требуют доработки.</li>
+            </ul>
           </div>
-          <ul class="check-list">
-            <li>откуда приходят обращения;</li>
-            <li>сколько заявок находится на каждом этапе;</li>
-            <li>где возникают задержки;</li>
-            <li>какие задачи просрочены;</li>
-            <li>как менеджеры обрабатывают обращения;</li>
-            <li>какие каналы дают качественные лиды;</li>
-            <li>какие процессы требуют доработки.</li>
-          </ul>
         </div>
       </section>
 
       <section class="section section--soft faq" aria-labelledby="faq-title">
         <div class="container faq__grid">
           <div class="section-heading">
+            <span class="crm-ico crm-ico--lg crm-ico--solid" aria-hidden="true"><svg viewBox="0 0 24 24" width="30" height="30"><use href="#i-chat"></use></svg></span>
             <p class="section-label">FAQ</p>
             <h2 id="faq-title">Вопросы о CRM и автоматизации</h2>
             <p>Короткие ответы по типовым сценариям внедрения.</p>
@@ -637,15 +1002,22 @@ body.case-study h1{margin-bottom:18px;font-size:clamp(28px,3.4vw,52px);line-heig
       </section>
 
       <section class="crm-cta-band" aria-labelledby="final-cta-title">
-        <div class="container">
-          <div class="section-heading">
-            <h2 id="final-cta-title">Заявки уже поступают, но часть из них теряется?</h2>
-            <p>Разберём текущую систему обработки обращений и предложим понятную схему CRM, автоматизации и контроля продаж под задачи вашего бизнеса.</p>
+        <div class="container crm-cta-band__inner">
+          <div>
+            <div class="section-heading">
+              <h2 id="final-cta-title">Заявки уже поступают, но часть из них теряется?</h2>
+              <p>Разберём текущую систему обработки обращений и предложим понятную схему CRM, автоматизации и контроля продаж под задачи вашего бизнеса.</p>
+            </div>
+            <div class="hero__actions">
+              <button class="button button--primary" type="button" data-rk-open-modal="rk-modal-lead">Обсудить CRM-проект</button>
+              <a class="button button--secondary" href="/keysy/">Все кейсы</a>
+            </div>
           </div>
-          <div class="hero__actions">
-            <button class="button button--primary" type="button" data-rk-open-modal="rk-modal-lead">Обсудить CRM-проект</button>
-            <a class="button button--secondary" href="/keysy/">Все кейсы</a>
-          </div>
+          <ul class="crm-cta-chips">
+            <li><span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-site"></use></svg></span>Каналы и формы заявок</li>
+            <li><span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-funnel"></use></svg></span>Воронка и ответственные</li>
+            <li><span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-shield"></use></svg></span>Контроль обработки</li>
+          </ul>
         </div>
       </section>
 
