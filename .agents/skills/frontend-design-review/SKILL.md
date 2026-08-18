@@ -52,6 +52,8 @@ metadata:
 - изображения не искажаются;
 - формы и таблицы корректно перестраиваются.
 
+Для regional batch Raskrutov итоговый visual PASS требует выполнения `027-regional-viewport-qa.mdc`; отсутствие overflow само по себе не является доказательством корректного layout.
+
 ### 5. Состояния интерфейса
 
 - hover, focus, active, disabled;
