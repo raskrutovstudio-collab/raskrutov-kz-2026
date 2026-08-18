@@ -1,5 +1,5 @@
 ---
-description: Mandatory viewport QA standard for pilot pages and mass regional page scaling. Defines full QA for templates and optimized representative QA for pages sharing the same approved HTML/CSS architecture.
+description: Mandatory viewport and visual QA standard for pilot pages and mass regional page scaling. Preserves the approved viewport matrix and requires screenshot evidence, geometry sanity, and component DOM-contract checks. Horizontal overflow alone cannot produce PASS.
 alwaysApply: true
 ---
 
@@ -8,6 +8,10 @@ alwaysApply: true
 Это обязательное правило для разработки и массового масштабирования региональных страниц.
 
 Правило определяет, какие viewport необходимо проверять для пилотной страницы и для последующих страниц, созданных на одном утверждённом HTML/CSS-шаблоне.
+
+Это правило также определяет качество visual QA: screenshot evidence, review всей страницы, geometry sanity и COMPONENT DOM CONTRACT.
+
+Утверждённая viewport matrix не изменяется этим правилом.
 
 ## 1. Основной принцип
 
@@ -19,6 +23,10 @@ alwaysApply: true
 
 Это правило не разрешает переносить основные mobile/desktop PASS с одной региональной страницы на другую.
 
+`horizontal-scroll = 0` является необходимым условием, но не доказательством visual PASS.
+
+Agent обязан проверить внутреннюю геометрию компонентов и визуальный результат по screenshot evidence проверяемого URL.
+
 ## 2. Пилот / новый шаблон
 
 Для первой страницы каждого нового визуально-технического шаблона обязательно проверить:
@@ -29,6 +37,8 @@ alwaysApply: true
 - 1440 px
 
 Все четыре viewport проверяются непосредственно на пилотной странице.
+
+Для пилота обязательны screenshot artifacts на всех четырёх viewport.
 
 Проверить минимум:
 
@@ -49,7 +59,11 @@ alwaysApply: true
 - touch targets;
 - изображения;
 - наложения;
-- обрезанный контент.
+- обрезанный контент;
+- аномально узкий текст;
+- чрезмерно высокий элемент из-за неправильного wrapping;
+- пустые огромные области;
+- элементы, визуально съехавшие в соседнюю колонку.
 
 Пилот нельзя считать прошедшим viewport QA по результатам другой страницы.
 
@@ -70,6 +84,8 @@ alwaysApply: true
 
 Основной mobile QA.
 
+Каждая страница должна быть реально открыта, проверена визуально и иметь собственный screenshot artifact.
+
 Проверить минимум:
 
 - horizontal scroll;
@@ -83,11 +99,18 @@ alwaysApply: true
 - popup;
 - menu;
 - sticky CTA;
-- footer.
+- footer;
+- text wrapping;
+- repeated components;
+- grids / flex layouts;
+- аномально узкий текст;
+- чрезмерно высокий элемент из-за неправильного wrapping.
 
 ### 1440 px
 
 Основной desktop QA.
+
+Каждая страница должна быть реально открыта, проверена визуально и иметь собственный screenshot artifact.
 
 Проверить минимум:
 
@@ -99,7 +122,11 @@ alwaysApply: true
 - forms;
 - menu;
 - footer;
-- отсутствие визуальных перекосов.
+- отсутствие визуальных перекосов;
+- grids / flex layouts;
+- repeated components;
+- элементы, визуально съехавшие в соседнюю колонку;
+- неожиданное изменение размеров относительно эталона.
 
 390 и 1440 нельзя засчитывать по representative page.
 
@@ -110,7 +137,9 @@ alwaysApply: true
 Для массового батча с неизменным шаблоном:
 
 - минимум одна representative page батча проходит полноценную проверку на 430 px;
-- все страницы батча должны проходить автоматический horizontal-overflow check на 430 px.
+- representative page обязана иметь screenshot artifact на 430 px;
+- все страницы батча должны проходить автоматический horizontal-overflow check на 430 px;
+- все страницы батча на обязательных viewport проходят geometry sanity checks из раздела 8.
 
 Отдельная полноценная ручная проверка каждой страницы на 430 px не требуется, если архитектура полностью совпадает с утверждённым шаблоном.
 
@@ -130,15 +159,242 @@ alwaysApply: true
 Для массового батча:
 
 - минимум одна representative page проходит полноценную проверку на 768 px;
+- representative page обязана иметь screenshot artifact на 768 px;
 - все страницы проходят автоматический horizontal-overflow check на 768 px.
 
 Если CSS использует breakpoint около 768 px, representative page должна быть реально проверена в этой зоне.
 
 При изменении responsive CSS соответствующие страницы должны проходить расширенный QA.
 
-## 6. Автоматический viewport check
+## 6. Mandatory screenshot evidence
 
-Для всех страниц регионального батча желательно автоматически проверить:
+Для КАЖДОЙ страницы regional batch должны существовать screenshot artifacts:
+
+- 390 px
+- 1440 px
+
+Screenshot должен быть получен с фактически проверяемого URL.
+
+Нельзя засчитывать screenshot другой страницы.
+
+Для representative page дополнительно обязательны:
+
+- 430 px
+- 768 px
+
+Для пилота обязательны screenshot artifacts на 390 / 430 / 768 / 1440.
+
+### Требование к покрытию
+
+Для 390 и 1440 предпочтителен:
+
+```text
+full-page screenshot
+```
+
+Если инструмент или размер страницы делает full-page screenshot технически неудобным, обязательны:
+
+- viewport screenshot;
+- screenshots ключевых секций ниже первого экрана.
+
+В любом случае QA должен покрывать всю страницу, а не только hero.
+
+Below-the-fold review обязателен.
+
+### Хранение
+
+Screenshot artifacts хранить только в:
+
+```text
+site_mirror/_work/<task-or-batch>-qa/
+```
+
+Эти файлы являются локальными QA evidence.
+
+Их нельзя включать в deploy, sitemap, production HTML/CSS/JS или публикуемый site_mirror tree.
+
+Если screenshot обязательного viewport отсутствует:
+
+```text
+PAGE VISUAL QA = FAIL
+```
+
+## 7. Screenshot review является hard gate
+
+Факт создания screenshot сам по себе не является PASS.
+
+Agent обязан фактически просмотреть screenshot и проверить визуальный результат.
+
+PASS запрещён без screenshot review.
+
+Для каждой страницы на 390 и 1440 проверить минимум:
+
+- hero;
+- H1/H2/H3;
+- text wrapping;
+- cards;
+- repeated components;
+- grids;
+- flex layouts;
+- pricing;
+- forms;
+- popup/modal;
+- FAQ;
+- breadcrumbs;
+- sticky/fixed;
+- footer;
+- длинные строки;
+- аномально узкий текст;
+- чрезмерно высокий элемент из-за неправильного wrapping;
+- пустые огромные области;
+- наложения;
+- clipping;
+- элементы, визуально съехавшие в соседнюю колонку;
+- неожиданное изменение размеров относительно эталона.
+
+Критически:
+
+```text
+horizontal-scroll = 0
+```
+
+НЕ является доказательством visual PASS.
+
+Проверка только первого экрана недостаточна.
+
+## 8. Geometry sanity check
+
+Automatic viewport QA обязан проверять не только document overflow.
+
+Для каждой страницы на обязательных viewport (390 и 1440; для representative и expanded QA также 430 и 768) выполнять geometry sanity checks.
+
+Не использовать один универсальный абсолютный порог ширины для всех элементов.
+
+### A. Unexpected narrow content
+
+Для значимых текстовых блоков внутри:
+
+- cards;
+- grid items;
+- flex items;
+- repeated components;
+
+выявлять элементы, у которых computed width аномально мала относительно родительского контейнера.
+
+Проверять отношение:
+
+```text
+content width / parent width
+```
+
+и учитывать тип компонента.
+
+Если основной content-child карточки занимает только узкую служебную колонку, QA должен FAIL.
+
+Типичный провал: CSS `grid-template-columns: 40px 1fr` при отсутствии structural child иконки, из-за чего единственный content `<div>` попадает в колонку 40 px и текст переносится почти по одному слову.
+
+### B. Excessive wrapping
+
+Выявлять подозрительные случаи:
+
+- каждое или почти каждое слово переносится на отдельную строку;
+- небольшой текст создаёт аномально высокий блок;
+- heading получает неожиданно большое число строк;
+- content height резко превышает аналогичный компонент эталона без контентной причины.
+
+Не считать обычный mobile wrapping ошибкой.
+
+### C. Bounding boxes
+
+Проверять:
+
+- width > 0;
+- height > 0;
+- элемент расположен внутри ожидаемого parent;
+- значимый content не clipped;
+- элементы не перекрывают друг друга без предусмотренного overlay;
+- служебная колонка не стала единственным контейнером основного текста.
+
+Geometry FAIL запрещает visual PASS страницы, даже если overflow равен 0.
+
+## 9. COMPONENT DOM CONTRACT QA
+
+Если масштабируемая страница переиспользует CSS-компонент эталона, Agent обязан проверить, что его structural DOM contract сохранён.
+
+COMPONENT DOM CONTRACT описывает, какие structural children нужны layout-у компонента.
+
+Примеры контрактов:
+
+- icon + content;
+- media + text;
+- label + value;
+- multi-column card;
+- fixed-width service column + flexible content column.
+
+Если CSS компонента предполагает:
+
+```css
+grid-template-columns: 40px 1fr;
+```
+
+Agent должен установить назначение обеих колонок на эталоне.
+
+Если эталон содержит:
+
+```html
+icon
+content
+```
+
+региональная страница не может молча удалить icon и оставить CSS без адаптации.
+
+Перед PASS regional batch выполнить выборочный DOM-contract audit повторно используемых компонентов.
+
+Нарушенный DOM contract = FAIL, даже если страница формально visible и не имеет horizontal overflow.
+
+## 10. Template vs regional DOM audit
+
+Для нового регионального кластера / нового пилота создать список ключевых повторно используемых component selectors.
+
+Для каждого компонента зафиксировать минимум:
+
+```text
+selector
+expected structural children
+layout type
+visual role
+```
+
+При масштабировании проверить, что regional adaptation не уничтожила structural child.
+
+Не требовать абсолютной идентичности HTML там, где компонент сознательно изменён.
+
+Сознательное изменение DOM при сохранении старого CSS должно быть проверено как новый layout и должно включать expanded QA:
+
+```text
+390 + 430 + 768 + 1440
+```
+
+плюс screenshot evidence на всех четырёх viewport этой страницы.
+
+## 11. Special regression check для repeated components
+
+Если на странице есть повторяющаяся группа карточек, недостаточно проверить только первую карточку.
+
+Проверить минимум:
+
+- первую;
+- последнюю;
+- карточку с самым длинным заголовком;
+- карточку с самым длинным текстом.
+
+Если automated test может проверить все элементы — проверять все.
+
+Сломанная одна карточка в repeated group = FAIL страницы.
+
+## 12. Автоматический viewport check
+
+Для всех страниц регионального батча автоматически проверить:
 
 - 390 px
 - 430 px
@@ -154,11 +410,19 @@ alwaysApply: true
 - main content существует;
 - footer существует;
 - отсутствуют page-owned JS errors;
-- ключевые элементы не выходят за границы viewport.
+- ключевые элементы не выходят за границы viewport;
+- geometry sanity checks из раздела 8 на обязательных viewport;
+- bounding boxes repeated components;
+- выборочный COMPONENT DOM CONTRACT.
 
-Автоматическая проверка не заменяет визуальный QA пилотной страницы.
+Автоматическая проверка не заменяет:
 
-## 7. Когда representative QA запрещён
+- визуальный QA пилотной страницы;
+- screenshot review каждой regional page на 390 и 1440.
+
+Overflow check обязателен и недостаточен.
+
+## 13. Когда representative QA запрещён
 
 Для конкретной страницы полный QA:
 
@@ -180,76 +444,221 @@ alwaysApply: true
 - добавлена нестандартная grid/flex структура;
 - появился нестандартно длинный контент;
 - обнаружена responsive regression;
-- страница визуально отличается от утверждённого эталона.
+- страница визуально отличается от утверждённого эталона;
+- нарушен COMPONENT DOM CONTRACT;
+- DOM изменён, а CSS компонента сохранён без адаптации;
+- geometry sanity обнаружил узкую content-column, excessive wrapping или сломанный bounding box.
 
 В этих случаях результаты representative page не переносить.
 
-## 8. Batch viewport gate
+Для такой страницы обязательны screenshot artifacts на всех четырёх viewport.
 
-Обычный региональный батч на утверждённом шаблоне проходит viewport gate при выполнении:
+## 14. Screenshot count gate
+
+Для обычного батча из N страниц при отсутствии expanded-QA triggers минимальное число screenshot evidence:
+
+```text
+N × 2
+```
+
+то есть 390 + 1440 для каждой страницы.
+
+Плюс минимум:
+
+```text
+1 × 430
+1 × 768
+```
+
+для representative page.
+
+Пример: batch из 4 страниц без expanded-QA triggers:
+
+```text
+минимум 10 screenshot artifacts
+```
+
+Если у одной или нескольких страниц сработал expanded QA, для этих страниц добавляются 430 и 768.
+
+Если screenshot отсутствует:
+
+```text
+PAGE VISUAL QA = FAIL
+```
+
+## 15. Batch viewport / visual gate
+
+Обычный региональный батч на утверждённом шаблоне проходит viewport/visual gate при выполнении:
 
 Для каждой страницы:
 
-- 390 PASS
-- 1440 PASS
+- 390 VISUAL PASS с просмотренным screenshot evidence;
+- 1440 VISUAL PASS с просмотренным screenshot evidence;
+- GEOMETRY PASS;
+- DOM CONTRACT PASS;
+- H-SCROLL PASS.
 
 Для батча минимум:
 
-- 1 × 430 PASS
-- 1 × 768 PASS
+- 1 × 430 PASS с screenshot evidence representative page;
+- 1 × 768 PASS с screenshot evidence representative page.
 
 Для всех страниц:
 
-- automatic horizontal overflow check PASS
+- automatic horizontal overflow check PASS;
+- automatic geometry sanity PASS на обязательных viewport.
 
-Если хотя бы одна страница не проходит обязательный 390 или 1440:
+Если хотя бы одна страница не проходит обязательный 390, 1440, screenshot review, geometry или DOM contract:
 
-BATCH VIEWPORT QA = FAIL.
+```text
+BATCH VIEWPORT QA = FAIL
+```
 
-## 9. Запрещённые действия агента
+## 16. Запрещённые действия агента
 
 Запрещено:
 
 - засчитывать 390 по другой странице;
 - засчитывать 1440 по другой странице;
+- засчитывать screenshot другой страницы;
 - писать PASS без фактического открытия страницы;
+- писать PASS без screenshot evidence обязательного viewport;
+- писать PASS без фактического screenshot review;
+- писать PASS только по horizontal overflow;
+- проверять только hero / первый экран;
 - скрывать пропущенную проверку словами «тот же шаблон»;
 - использовать representative page после изменения responsive CSS;
 - считать новый компонент автоматически проверенным по старому шаблону;
-- самостоятельно уменьшать установленную QA-матрицу.
+- игнорировать нарушенный COMPONENT DOM CONTRACT;
+- проверять только первую карточку repeated group;
+- самостоятельно уменьшать установленную QA-матрицу;
+- включать QA screenshots в deploy.
 
 Representative page разрешена только для дополнительных viewport 430 и 768 и только при выполнении условий этого правила.
 
-## 10. Отчёт для регионального батча
+## 17. Evidence-based report
 
-Финальный viewport QA должен содержать:
+Финальный viewport / visual QA регионального батча должен содержать:
 
-| CITY | 390 | 430 | 768 | 1440 | H-SCROLL | VERDICT |
-|---|---|---|---|---|---|---|
+| CITY | 390 VISUAL | 1440 VISUAL | 430/768 | SCREENSHOTS | GEOMETRY | DOM CONTRACT | H-SCROLL | VERDICT |
+|---|---|---|---|---|---|---|---|---|
+
+Для каждой обязательной проверки указывать evidence.
+
+Пример:
+
+```text
+390 VISUAL: PASS
+screenshot: site_mirror/_work/<task-or-batch>-qa/almaty-390.png
+
+1440 VISUAL: PASS
+screenshot: site_mirror/_work/<task-or-batch>-qa/almaty-1440.png
+
+GEOMETRY: PASS
+DOM CONTRACT: PASS
+H-SCROLL: PASS
+```
 
 Для representative viewport допустимо указывать:
 
+```text
 430: REPRESENTATIVE PASS
+screenshot: site_mirror/_work/<task-or-batch>-qa/<city>-430.png
+
 768: REPRESENTATIVE PASS
+screenshot: site_mirror/_work/<task-or-batch>-qa/<city>-768.png
+```
 
-Но для 390 и 1440 разрешены только:
+Для 390 и 1440 разрешены только:
 
+```text
 PASS
 FAIL
+```
 
-после фактической проверки конкретной страницы.
+после фактической проверки конкретной страницы и review её screenshot.
 
-## 11. Приоритет правил
+Запрещено писать просто:
+
+```text
+визуально OK
+```
+
+без фактического evidence.
+
+При любой неопределённости:
+
+```text
+VISUAL QA = FAIL / NEEDS REVIEW
+```
+
+а не PASS по предположению.
+
+## 18. PASS / FAIL rule
+
+Regional page НЕ может получить viewport/visual PASS, если:
+
+- отсутствует screenshot обязательного viewport;
+- screenshot не был просмотрен;
+- обнаружена аномально узкая content-column;
+- structural DOM contract нарушен;
+- значимый текст визуально схлопнут;
+- repeated component имеет сломанную карточку;
+- Agent проверил только horizontal overflow;
+- проверен только первый экран страницы.
+
+Неопределённость = `FAIL / NEEDS REVIEW`.
+
+## 19. Приоритет правил
 
 Для региональных страниц это правило уточняет общий Responsive / Viewport Visual QA из:
 
-.cursor/rules/025-page-release-quality.mdc
+`.cursor/rules/025-page-release-quality.mdc`
 
 Общий Quality Gate, Lighthouse, Accessibility, SEO, Schema, forms и release requirements из 025-page-release-quality.mdc продолжают действовать.
 
-Это правило изменяет только viewport QA matrix для массового регионального масштабирования.
+Это правило является single source of truth для regional batch viewport matrix и regional visual QA.
+
+Оно не дублирует новую visual-матрицу в другие files автоматически.
+
+Другие инструкции не могут объявить regional visual PASS вопреки этому правилу.
+
+Это правило изменяет качество visual QA. Оно не изменяет утверждённую viewport matrix:
+
+Пилот:
+
+```text
+390
+430
+768
+1440
+```
+
+Обычная regional batch page:
+
+```text
+390 — непосредственно каждая страница
+1440 — непосредственно каждая страница
+```
+
+Representative:
+
+```text
+430
+768
+```
 
 ## Changelog
+
+### 2026-08-18 — Visual regression hardening
+
+- Mandatory screenshot evidence for every regional page at 390 and 1440.
+- Representative screenshots at 430 and 768.
+- Full-page / below-the-fold visual review required.
+- Geometry sanity checks added.
+- Component DOM-contract QA added.
+- Horizontal overflow alone cannot produce PASS.
+- Evidence paths required in final QA report.
 
 ### 2026-08-18
 - Initial rule.
