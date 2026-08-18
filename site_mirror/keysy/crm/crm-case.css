@@ -1087,3 +1087,73 @@ body.rk-modal-open {
     min-width: 640px;
   }
 }
+
+/* Floating chat + scroll-top occupy the bottom-right corner.
+   Keep the buttons; give copy, captions, cards and the final CTA a clear gutter. */
+body.case-study {
+  --crm-float-pad-x: 88px;
+}
+
+@media (min-width: 1600px) {
+  body.case-study {
+    --crm-float-pad-x: 0px;
+  }
+}
+
+body.case-study .crm-hero-media,
+body.case-study .crm-shot,
+body.case-study .crm-result__cards,
+body.case-study .crm-issues,
+body.case-study .crm-board,
+body.case-study .crm-compare,
+body.case-study .crm-cta-band__inner {
+  padding-right: var(--crm-float-pad-x);
+}
+
+body.case-study .crm-shot-role,
+body.case-study .crm-shot figcaption,
+body.case-study .crm-hero-media figcaption {
+  padding-right: 4px;
+}
+
+@media (max-width: 767px) {
+  body.rk-clean.case-study {
+    padding-bottom: calc(120px + env(safe-area-inset-bottom, 0));
+  }
+
+  body.case-study {
+    --crm-float-pad-x: 84px;
+  }
+
+  body.case-study .crm-hero-media,
+  body.case-study .crm-shot,
+  body.case-study .crm-result__cards,
+  body.case-study .crm-issues,
+  body.case-study .crm-board,
+  body.case-study .crm-compare,
+  body.case-study .crm-cta-band {
+    padding-bottom: 28px;
+    scroll-margin-bottom: 120px;
+  }
+
+  body.case-study .crm-cta-band__inner {
+    padding-bottom: 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  body.case-study {
+    --crm-float-pad-x: 88px;
+    --crm-float-pad-left: 64px;
+  }
+
+  body.case-study .crm-hero-media,
+  body.case-study .crm-shot,
+  body.case-study .crm-result__cards,
+  body.case-study .crm-issues,
+  body.case-study .crm-board,
+  body.case-study .crm-compare,
+  body.case-study .crm-cta-band__inner {
+    padding-left: var(--crm-float-pad-left);
+  }
+}
