@@ -75,6 +75,13 @@ for (const file of files) {
       if (/^<input/i.test(tag) && !attr(tag, 'type')) fail(`форма #${fi + 1}, input #${ci + 1} без type`);
     });
   });
+  const scopeItems = count(html, /class="[^"]*gads-scope-list__item\b/gi);
+  if (scopeItems) {
+    const scopeIcons = count(html, /class="[^"]*gads-scope-list__icon\b/gi);
+    if (scopeIcons < scopeItems) {
+      fail(`gads-scope-list__item без icon (${scopeItems} items, ${scopeIcons} icons)`);
+    }
+  }
 }
 
 if (!files.length) errors.push('HTML-файлы не найдены; проверьте roots/htmlFileNames в site-standard.config.json');
