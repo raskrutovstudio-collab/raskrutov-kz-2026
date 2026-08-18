@@ -21,6 +21,7 @@ metadata:
 2. Прочитай `AGENTS.md`, `.cursor/rules/` и проектные ограничения.
 3. Не изменяй код до составления списка проблем.
 4. Зафиксируй тип проверки: одна страница, шаблон страниц или весь сайт.
+5. Для regional batch Raskrutov специализированный screenshot / geometry / DOM-contract gate находится в `027-regional-viewport-qa.mdc` и обязателен до final PASS.
 
 ## Порядок аудита
 

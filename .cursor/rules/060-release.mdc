@@ -4,6 +4,7 @@ alwaysApply: true
 ---
 
 - Готовность требует: `npm run quality:all`, визуальную проверку ключевых ширин, консоль без новых ошибок и проверку интерактива.
+- Для regional batch release visual PASS разрешён только после выполнения `.cursor/rules/027-regional-viewport-qa.mdc`. Generic viewport/overflow smoke не заменяет screenshot-based regional visual gate.
 - Для производительности выполни 3 мобильных Lighthouse-запуска и сообщи медиану.
 - Покажи изменённые файлы, результаты проверок, остаточные риски и git diff.
 - Не заявляй достижение PageSpeed без фактического замера.

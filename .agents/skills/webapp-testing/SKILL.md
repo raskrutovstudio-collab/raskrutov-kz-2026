@@ -28,6 +28,12 @@ metadata:
 6. Сделай скриншоты только значимых состояний.
 7. Останови созданные процессы после проверки.
 
+Если задача относится к mass regional scaling проекта Raskrutov, screenshots «только значимых состояний» недостаточны для финального PASS. Использовать обязательный evidence/gate из `.cursor/rules/027-regional-viewport-qa.mdc`.
+
+```text
+horizontal overflow PASS != regional visual PASS
+```
+
 ## Что проверять
 
 - навигация, логотип, меню и breadcrumbs;

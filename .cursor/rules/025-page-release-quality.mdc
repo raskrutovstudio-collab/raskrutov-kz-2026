@@ -288,6 +288,8 @@ CSP/HSTS/COOP/XFO относятся преимущественно к server-le
 - автоматический overflow check выполняется для всех страниц;
 - при изменении DOM/CSS/layout применяется полный расширенный QA.
 
+Для regional batch automatic overflow check является только одной из автоматических проверок и не может сам по себе дать visual PASS. Итоговый viewport/visual gate полностью определяется `.cursor/rules/027-regional-viewport-qa.mdc`, включая screenshot evidence, screenshot review, geometry sanity и component DOM-contract requirements.
+
 Все остальные требования данного Page Release Quality Gate продолжают действовать.
 
 ## 25. Lighthouse Procedure
