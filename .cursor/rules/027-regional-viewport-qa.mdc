@@ -408,7 +408,7 @@ visual role
 - H1 существует и видим;
 - header существует и видим;
 - main content существует;
-- footer существует;
+- terminal page check PASS;
 - отсутствуют page-owned JS errors;
 - ключевые элементы не выходят за границы viewport;
 - geometry sanity checks из раздела 8 на обязательных viewport;
@@ -421,6 +421,18 @@ visual role
 - screenshot review каждой regional page на 390 и 1440.
 
 Overflow check обязателен и недостаточен.
+
+### Terminal page check
+
+По умолчанию ожидается `<footer>`.
+
+Если утверждённый template сознательно не содержит `<footer>`, допустим утверждённый terminal section / footer-equivalent.
+
+Для текущего Google Ads template таким terminal section является `#contacts`.
+
+Отсутствие и footer, и утверждённого terminal section = FAIL.
+
+Визуальные пункты `footer` в этом правиле проверяют footer либо утверждённый terminal section шаблона. Не объявлять FAIL только из-за отсутствия `<footer>`, если template утверждён без него и terminal section на месте.
 
 ## 13. Когда representative QA запрещён
 
@@ -649,6 +661,13 @@ Representative:
 ```
 
 ## Changelog
+
+### 2026-08-18 — Terminal page check
+
+- Default expected page ending is `<footer>`.
+- Approved template without `<footer>` may use an approved terminal section / footer-equivalent.
+- Current Google Ads template terminal section: `#contacts`.
+- Missing both footer and approved terminal section = FAIL.
 
 ### 2026-08-18 — Visual regression hardening
 
