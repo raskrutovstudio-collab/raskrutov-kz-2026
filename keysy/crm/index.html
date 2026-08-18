@@ -7,8 +7,8 @@
   <meta name="author" content="Raskrutov">
   <meta name="theme-color" content="#ffffff">
 
-  <title>Кейс CRM и автоматизации — заявки и продажи | Raskrutov</title>
-  <meta name="description" content="Показываем, как CRM, воронки, формы сайта и автоматизация помогают бизнесу не терять заявки, контролировать работу менеджеров и выстраивать понятный путь от обращения до продажи.">
+  <title>Кейс Futora.kz: CRM и FutoraBot для обработки заявок | Raskrutov</title>
+  <meta name="description" content="Как для Futora.kz настроили CRM, FutoraBot, автоматические задачи и аналитику, сократив время первого автоматического ответа клиенту с 20 минут до 30 секунд.">
   <link rel="canonical" href="https://raskrutov.kz/keysy/crm/">
   <link rel="alternate" hreflang="ru-KZ" href="https://raskrutov.kz/keysy/crm/">
   <link rel="alternate" hreflang="x-default" href="https://raskrutov.kz/keysy/crm/">
@@ -16,22 +16,23 @@
   <meta property="og:type" content="article">
   <meta property="og:locale" content="ru_KZ">
   <meta property="og:site_name" content="Raskrutov">
-  <meta property="og:title" content="Кейс CRM и автоматизации — заявки и продажи | Raskrutov">
-  <meta property="og:description" content="Показываем, как CRM, воронки, формы сайта и автоматизация помогают бизнесу не терять заявки, контролировать работу менеджеров и выстраивать понятный путь от обращения до продажи.">
+  <meta property="og:title" content="Кейс Futora.kz: CRM и FutoraBot для обработки заявок | Raskrutov">
+  <meta property="og:description" content="Как для Futora.kz настроили CRM, FutoraBot, автоматические задачи и аналитику, сократив время первого автоматического ответа клиенту с 20 минут до 30 секунд.">
   <meta property="og:url" content="https://raskrutov.kz/keysy/crm/">
-  <meta property="og:image" content="https://raskrutov.kz/assets/generated/sozdanie/crm-sistemy/v2.webp">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="800">
-  <meta property="og:image:alt" content="Схема CRM и автоматизации обработки заявок">
+  <meta property="og:image" content="https://raskrutov.kz/assets/images/keysy/crm-futora/futora-bot-dialog.webp">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="577">
+  <meta property="og:image:alt" content="Обезличенный пример консультации клиента ботом FutoraBot">
   <meta property="article:section" content="Кейсы CRM и автоматизации">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Кейс CRM и автоматизации — заявки и продажи | Raskrutov">
-  <meta name="twitter:description" content="Связываем сайт, формы, мессенджеры и CRM, чтобы каждая заявка получала следующий шаг.">
-  <meta name="twitter:image" content="https://raskrutov.kz/assets/generated/sozdanie/crm-sistemy/v2.webp">
+  <meta name="twitter:title" content="Кейс Futora.kz: CRM и FutoraBot для обработки заявок | Raskrutov">
+  <meta name="twitter:description" content="Как для Futora.kz настроили CRM, FutoraBot, автоматические задачи и аналитику, сократив время первого автоматического ответа клиенту с 20 минут до 30 секунд.">
+  <meta name="twitter:image" content="https://raskrutov.kz/assets/images/keysy/crm-futora/futora-bot-dialog.webp">
 
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="preload" href="/assets/m-files.cdn1.cc/web/user/fonts/montserrat/montserrat_bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" as="image" href="/assets/images/keysy/crm-futora/futora-bot-dialog.webp" fetchpriority="high">
   <style id="case-critical">
 @font-face{font-family:"Montserrat";src:url("/assets/m-files.cdn1.cc/web/user/fonts/montserrat/montserrat_bold.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
 @font-face{font-family:"Montserrat Fallback";src:local("Arial"),local("Helvetica Neue"),local("Helvetica");size-adjust:107%;ascent-override:92%;descent-override:23%;line-gap-override:0%}
@@ -69,10 +70,13 @@ body.case-study h1{margin-bottom:18px;font-size:clamp(26px,7.5vw,36px);line-heig
 .eyebrow{display:inline-flex;margin-bottom:12px;padding:7px 12px;border:1px solid rgba(109,80,232,.14);border-radius:999px;align-items:center;gap:8px;background:rgba(109,80,232,.07);color:var(--color-brand);font-size:11px;font-weight:700;letter-spacing:.08em;line-height:1.4;text-transform:uppercase}
 .gradient-text{color:var(--color-brand);background:var(--gradient-brand);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .hero__lead{max-width:640px;margin-bottom:22px;color:var(--color-ink-soft);font-size:clamp(14px,1.15vw,16px);line-height:1.55}
+.crm-hero-metric{margin:0 0 20px;padding:16px 18px;border:1px solid rgba(109,80,232,.18);border-radius:16px;background:linear-gradient(180deg,#fff,#f7f4ff);max-width:520px}
+.crm-hero-metric strong{display:block;font-family:var(--rk-font-head);font-size:clamp(32px,8vw,48px);line-height:1.05;letter-spacing:-.04em;background:var(--gradient-brand);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.crm-hero-metric span{display:block;margin-top:6px;color:var(--color-ink-soft);font-size:.92rem;line-height:1.4}
 .hero__actions{display:flex;margin-bottom:8px;flex-wrap:wrap;gap:10px}
 .crm-hero-media{position:relative;width:100%;max-width:720px;margin:0;justify-self:center}
 .crm-hero-media__frame{position:relative;overflow:hidden;border:1px solid var(--color-line);border-radius:24px;background:#fff;box-shadow:var(--shadow-md)}
-.crm-hero-media__frame img{width:100%;height:auto;aspect-ratio:3 / 2;object-fit:cover;object-position:center}
+.crm-hero-media__frame{padding:10px}.crm-hero-media__frame img{width:100%;height:auto;aspect-ratio:1024 / 577;object-fit:contain;object-position:top center;border-radius:14px;background:#152232}.crm-hero-kpis{display:grid;gap:10px;margin:18px 0 14px;padding:0;list-style:none}.crm-hero-kpis li{min-width:0;padding:14px 15px;border:1px solid var(--color-line);border-radius:14px;background:#fff}.crm-hero-kpis strong{display:block;margin-bottom:4px;font-family:var(--rk-font-head);font-size:1.02rem}.crm-hero-kpis span{color:var(--color-muted);font-size:.84rem}.crm-extlink{display:inline-flex;min-height:44px;align-items:center;color:var(--color-brand-deep);font-size:.9rem;font-weight:600;text-decoration:underline;text-underline-offset:3px}
 .crm-hero-media figcaption{margin-top:14px;color:var(--color-muted);font-size:.84rem;line-height:1.45;text-align:center}
 .crm-float{display:none}
 .crm-hero-chain{display:grid;gap:10px;margin:6px 0 0;padding:0;list-style:none}
@@ -95,11 +99,11 @@ body.case-study h1{margin-bottom:18px;font-size:clamp(26px,7.5vw,36px);line-heig
 </style>
   <link rel="stylesheet" href="/assets/css/case-chrome.css?v=2" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="/assets/css/case-study.css?v=2" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="/keysy/crm/crm-case.css?v=5" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="/keysy/crm/crm-case.css?v=10" media="print" onload="this.media='all'">
   <noscript>
     <link rel="stylesheet" href="/assets/css/case-chrome.css?v=2">
     <link rel="stylesheet" href="/assets/css/case-study.css?v=2">
-    <link rel="stylesheet" href="/keysy/crm/crm-case.css?v=5">
+    <link rel="stylesheet" href="/keysy/crm/crm-case.css?v=10">
   </noscript>
   <link rel="stylesheet" href="/assets/css/lead-forms.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="/assets/css/lead-forms.css"></noscript>
@@ -145,11 +149,11 @@ body.case-study h1{margin-bottom:18px;font-size:clamp(26px,7.5vw,36px);line-heig
       {
         "@type": "ImageObject",
         "@id": "https://raskrutov.kz/keysy/crm/#primaryimage",
-        "url": "https://raskrutov.kz/assets/generated/sozdanie/crm-sistemy/v2.webp",
-        "contentUrl": "https://raskrutov.kz/assets/generated/sozdanie/crm-sistemy/v2.webp",
-        "width": 1200,
-        "height": 800,
-        "caption": "Схема CRM и автоматизации обработки заявок"
+        "url": "https://raskrutov.kz/assets/images/keysy/crm-futora/futora-bot-dialog.webp",
+        "contentUrl": "https://raskrutov.kz/assets/images/keysy/crm-futora/futora-bot-dialog.webp",
+        "width": 1024,
+        "height": 577,
+        "caption": "Обезличенный пример консультации клиента ботом FutoraBot"
       },
       {
         "@type": "BreadcrumbList",
@@ -170,7 +174,7 @@ body.case-study h1{margin-bottom:18px;font-size:clamp(26px,7.5vw,36px);line-heig
           {
             "@type": "ListItem",
             "position": 3,
-            "name": "CRM и автоматизация",
+            "name": "CRM и автоматизация для Futora.kz",
             "item": "https://raskrutov.kz/keysy/crm/"
           }
         ]
@@ -179,8 +183,8 @@ body.case-study h1{margin-bottom:18px;font-size:clamp(26px,7.5vw,36px);line-heig
         "@type": "WebPage",
         "@id": "https://raskrutov.kz/keysy/crm/#webpage",
         "url": "https://raskrutov.kz/keysy/crm/",
-        "name": "Кейс CRM и автоматизации — заявки и продажи | Raskrutov",
-        "description": "Показываем, как CRM, воронки, формы сайта и автоматизация помогают бизнесу не терять заявки, контролировать работу менеджеров и выстраивать понятный путь от обращения до продажи.",
+        "name": "Кейс Futora.kz: CRM и FutoraBot для обработки заявок | Raskrutov",
+        "description": "Как для Futora.kz настроили CRM, FutoraBot, автоматические задачи и аналитику, сократив время первого автоматического ответа клиенту с 20 минут до 30 секунд.",
         "isPartOf": {
           "@type": "WebSite",
           "@id": "https://raskrutov.kz/#website",
@@ -198,7 +202,7 @@ body.case-study h1{margin-bottom:18px;font-size:clamp(26px,7.5vw,36px);line-heig
         },
         "about": {
           "@type": "Service",
-          "name": "CRM и автоматизация",
+          "name": "CRM и автоматизация для Futora.kz",
           "provider": {
             "@id": "https://raskrutov.kz/#organization"
           },
@@ -213,66 +217,42 @@ body.case-study h1{margin-bottom:18px;font-size:clamp(26px,7.5vw,36px);line-heig
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "Зачем бизнесу CRM, если заявки уже приходят?",
+            "name": "Заменяет ли FutoraBot менеджера?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "CRM фиксирует каждое обращение, назначает ответственного и следующий шаг. Это снижает риск, что заявка останется в почте, чате или таблице без обработки."
+              "text": "Нет. В этом проекте FutoraBot обрабатывает первое сообщение, собирает вводные и сохраняет контекст. Менеджер подключается к дальнейшей консультации и работе со сделкой."
             }
           },
           {
             "@type": "Question",
-            "name": "Можно ли подключить CRM к сайту?",
+            "name": "Что происходит после ответа бота?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Да. Формы сайта можно связать с CRM так, чтобы заявка сразу попадала в воронку с нужным статусом и источником."
+              "text": "Диалог фиксируется в CRM, обращение получает этап, ответственного и следующее действие. Менеджер может продолжить работу, используя уже собранный контекст."
             }
           },
           {
             "@type": "Question",
-            "name": "Можно ли связать формы сайта и WhatsApp с CRM?",
+            "name": "Как автоматические задачи помогают не забывать о клиентах?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Да. В проект обычно входят формы сайта и мессенджеры. Конкретный набор каналов зависит от текущих процессов компании."
+              "text": "CRM показывает запланированные и просроченные действия. Это снижает зависимость процесса от памяти сотрудника и делает обращения без дальнейшего шага заметными."
             }
           },
           {
             "@type": "Question",
-            "name": "Можно ли настроить автоматические задачи менеджерам?",
+            "name": "Можно ли настроить такую систему для другого бизнеса?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Да. После поступления заявки система может создавать задачу, назначать ответственного и напоминать о сроке ответа."
+              "text": "Да, но логика зависит от каналов обращений, процесса продаж, ролей сотрудников и необходимых интеграций. Сначала требуется разобрать текущий путь заявки."
             }
           },
           {
             "@type": "Question",
-            "name": "Можно ли контролировать работу отдела продаж?",
+            "name": "Можно ли подключить только WhatsApp и CRM?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Да. Руководитель видит статусы заявок, просроченные задачи, загрузку менеджеров и этапы, где обращения зависают."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Подходит ли CRM для небольшого бизнеса?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Да. Даже небольшой команде нужна единая картина заявок, статусов и следующих действий. Масштаб настройки подбирается под объём обращений."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Можно ли настроить CRM на основе уже существующей воронки?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Да. Сначала фиксируем текущие этапы продаж и роли, затем переносим логику в CRM и при необходимости упрощаем или дополняем процесс."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Что нужно подготовить до внедрения CRM?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Полезны список каналов заявок, текущие этапы обработки, роли менеджеров, примеры типичных обращений и доступы к сайту, формам и используемым сервисам."
+              "text": "Можно начать с одного основного канала и базовой воронки, а затем расширять автоматизацию по мере необходимости."
             }
           }
         ]
@@ -434,7 +414,7 @@ body.case-study h1{margin-bottom:18px;font-size:clamp(26px,7.5vw,36px);line-heig
         <ol>
           <li><a href="/">Главная</a></li>
           <li><a href="/keysy/">Кейсы</a></li>
-          <li aria-current="page">CRM и автоматизация</li>
+          <li aria-current="page">CRM и автоматизация для Futora.kz</li>
         </ol>
       </nav>
     </div>
@@ -443,72 +423,21 @@ body.case-study h1{margin-bottom:18px;font-size:clamp(26px,7.5vw,36px);line-heig
       <section class="hero section" aria-labelledby="case-title">
         <div class="container hero__grid">
           <div class="hero__content">
-            <p class="eyebrow">Кейс 03. CRM и автоматизация</p>
-            <h1 id="case-title">Кейс CRM и автоматизации: каждая заявка получает <span class="gradient-text">следующий&nbsp;шаг</span></h1>
-            <p class="hero__lead">Связываем сайт, формы, мессенджеры, CRM, воронки и задачи менеджеров в единую систему, чтобы обращения не терялись и проходили понятный путь до продажи.</p>
+            <p class="eyebrow">Реальный кейс</p>
+            <h1 id="case-title">CRM и автоматизация продаж для Futora.kz: <span class="gradient-text">первый ответ за 30 секунд</span></h1>
+            <p class="hero__lead">WhatsApp-заявки, FutoraBot, задачи менеджеров и прозрачная аналитика в одной CRM-воронке — чтобы новое обращение сразу получало ответ и следующее действие.</p>
+            <p class="crm-hero-metric"><strong>30 секунд</strong><span>время первого автоматического ответа вместо 20 минут</span></p>
             <div class="hero__actions">
-              <button class="button button--primary" type="button" data-rk-open-modal="rk-modal-lead">Обсудить проект</button>
-              <a class="button button--secondary" href="/keysy/">Вернуться к кейсам</a>
+              <button class="button button--primary" type="button" data-rk-open-modal="rk-modal-lead">Обсудить автоматизацию</button>
+              <a class="button button--secondary" href="#solution">Посмотреть решение</a>
             </div>
-            <ul class="crm-hero-chain">
-              <li>
-                <span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-inbox"></use></svg></span>
-                <span class="crm-hero-chain__text">Заявка попадает в систему</span>
-              </li>
-              <li>
-                <span class="crm-ico crm-ico--sm crm-ico--blue" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-user"></use></svg></span>
-                <span class="crm-hero-chain__text">Назначается ответственный</span>
-              </li>
-              <li>
-                <span class="crm-ico crm-ico--sm crm-ico--cyan" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-arrow"></use></svg></span>
-                <span class="crm-hero-chain__text">Появляется следующий шаг</span>
-              </li>
-            </ul>
+            <a class="crm-extlink" href="https://futora.kz/" target="_blank" rel="noopener noreferrer">Перейти на сайт Futora.kz</a>
           </div>
-
           <figure class="crm-hero-media">
             <div class="crm-hero-media__frame">
-              <img
-                src="/assets/generated/sozdanie/crm-sistemy/v2.webp"
-                srcset="/assets/generated/sozdanie/crm-sistemy/v2.webp 1200w, /assets/generated/sozdanie/crm-sistemy/hero.webp 1536w"
-                sizes="(max-width: 980px) min(calc(100vw - 32px), 720px), min(52vw, 720px)"
-                width="1200"
-                height="800"
-                alt="Интерфейс CRM: заявки, воронка и контроль обработки обращений"
-                decoding="async"
-                fetchpriority="high">
+              <img src="/assets/images/keysy/crm-futora/futora-bot-dialog.webp" width="1024" height="577" alt="Обезличенный пример консультации клиента ботом FutoraBot" decoding="async" fetchpriority="high">
             </div>
-            <div class="crm-hero-media__floats" aria-hidden="true">
-              <div class="crm-float crm-float--a">
-                <span class="crm-ico crm-ico--xs crm-ico--solid"><svg viewBox="0 0 24 24" width="17" height="17"><use href="#i-inbox"></use></svg></span>
-                <span class="crm-float__text">
-                  <span class="crm-float__title">Новая заявка</span>
-                  <span class="crm-float__meta">сайт / WhatsApp</span>
-                </span>
-              </div>
-              <div class="crm-float crm-float--b" aria-hidden="true">
-                <span class="crm-ico crm-ico--xs crm-ico--blue"><svg viewBox="0 0 24 24" width="17" height="17"><use href="#i-user"></use></svg></span>
-                <span class="crm-float__text">
-                  <span class="crm-float__title">Назначен менеджер</span>
-                  <span class="crm-float__meta">ответственный за заявку</span>
-                </span>
-              </div>
-              <div class="crm-float crm-float--c" aria-hidden="true">
-                <span class="crm-ico crm-ico--xs crm-ico--cyan"><svg viewBox="0 0 24 24" width="17" height="17"><use href="#i-funnel"></use></svg></span>
-                <span class="crm-float__text">
-                  <span class="crm-float__title">Этап: уточнение</span>
-                  <span class="crm-float__meta">воронка продаж</span>
-                </span>
-              </div>
-              <div class="crm-float crm-float--d" aria-hidden="true">
-                <span class="crm-ico crm-ico--xs crm-ico--magenta"><svg viewBox="0 0 24 24" width="17" height="17"><use href="#i-bell"></use></svg></span>
-                <span class="crm-float__text">
-                  <span class="crm-float__title">Следующая задача</span>
-                  <span class="crm-float__meta">связаться с клиентом</span>
-                </span>
-              </div>
-            </div>
-            <figcaption>Заявки, воронка и задачи менеджеров в одной системе</figcaption>
+            <figcaption>Пример консультации FutoraBot в WhatsApp.</figcaption>
           </figure>
         </div>
       </section>
@@ -517,493 +446,272 @@ body.case-study h1{margin-bottom:18px;font-size:clamp(26px,7.5vw,36px);line-heig
         <div class="container">
           <div class="section-heading section-heading--wide">
             <p class="section-label">Краткий результат</p>
-            <h2 id="result-title">Заявка не должна оставаться в почте, мессенджере или таблице без следующего действия</h2>
-            <p>Когда обращение приходит из разных каналов, бизнесу сложно контролировать скорость ответа, статус клиента и работу менеджеров. CRM-система собирает заявки в одном месте, фиксирует этап обработки и помогает назначать следующий шаг.</p>
+            <h2 id="result-title">Клиент получает первый ответ, даже когда менеджер занят</h2>
           </div>
-          <ul class="crm-tiles">
-            <li class="crm-tile crm-tile--violet">
-              <span class="crm-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><use href="#i-inbox"></use></svg></span>
-              <h3>Единый учёт обращений</h3>
-              <p>Заявки из сайта, форм и мессенджеров собираются в одном рабочем пространстве.</p>
-            </li>
-            <li class="crm-tile crm-tile--blue">
-              <span class="crm-ico crm-ico--blue" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><use href="#i-funnel"></use></svg></span>
-              <h3>Понятные этапы воронки</h3>
-              <p>У каждой заявки есть текущий этап и критерий перехода на следующий.</p>
-            </li>
-            <li class="crm-tile crm-tile--cyan">
-              <span class="crm-ico crm-ico--cyan" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><use href="#i-task"></use></svg></span>
-              <h3>Автоматические задачи</h3>
-              <p>Система ставит задачу ответственному и напоминает о сроке ответа.</p>
-            </li>
-            <li class="crm-tile crm-tile--magenta">
-              <span class="crm-ico crm-ico--magenta" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><use href="#i-dash"></use></svg></span>
-              <h3>Контроль руководителя</h3>
-              <p>Видно статусы заявок, загрузку менеджеров и этапы, где обращения зависают.</p>
-            </li>
+          <p class="crm-result__note">30 секунд — время первого автоматического ответа FutoraBot, а не полной консультации менеджера.</p>
+          <div class="crm-result">
+            <ul class="crm-result__cards">
+              <li>
+                <span class="crm-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><use href="#i-clock"></use></svg></span>
+                <h3>20 минут → 30 секунд</h3>
+                <p>Время первого автоматического ответа клиенту. 30 секунд — ответ FutoraBot, а не полная консультация менеджера.</p>
+              </li>
+              <li>
+                <span class="crm-ico crm-ico--cyan" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><use href="#i-bolt"></use></svg></span>
+                <h3>Бот отвечает, пока менеджер занят</h3>
+                <p>Когда менеджер не может ответить сразу, FutoraBot начинает первичную консультацию и фиксирует диалог в CRM.</p>
+              </li>
+              <li>
+                <span class="crm-ico crm-ico--blue" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><use href="#i-task"></use></svg></span>
+                <h3>Автоматические задачи</h3>
+                <p>CRM делает пропущенные и просроченные действия видимыми, а автоматические задачи снижают риск забытых заявок.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="about-title">
+        <div class="container">
+          <div class="section-heading section-heading--wide">
+            <p class="section-label">О проекте Futora.kz</p>
+            <h2 id="about-title">Продажи, в которых клиенту часто нужна консультация</h2>
+            <p>Futora.kz — интернет-магазин профессиональной косметики и парикмахерских инструментов. Покупатели обращаются за подбором машинок, триммеров, косметики и оборудования, уточняют назначение товара, бренд, характеристики и бюджет.</p>
+            <p>В таких продажах скорость первого ответа особенно важна: клиент может написать в WhatsApp в момент выбора и ожидать конкретной рекомендации.</p>
+          </div>
+          <ul class="crm-tags">
+            <li>интернет-магазин</li>
+            <li>профессиональные товары</li>
+            <li>WhatsApp-обращения</li>
+            <li>консультационная продажа</li>
+            <li>Алматы и Казахстан</li>
           </ul>
         </div>
       </section>
 
-      <section class="section" aria-labelledby="task-title">
+      <section class="section section--soft" aria-labelledby="task-title">
         <div class="container">
           <div class="section-heading section-heading--wide">
-            <p class="section-label">Задача</p>
-            <h2 id="task-title">Задача: убрать потери между заявкой и продажей</h2>
-            <p>Типовая ситуация для компаний, у которых уже идут заявки с сайта, рекламы и WhatsApp, но обработка зависит от ручной передачи информации.</p>
+            <p class="section-label">Задача бизнеса</p>
+            <h2 id="task-title">Первый ответ зависел от доступности менеджера</h2>
           </div>
-          <div class="crm-task">
-            <div class="crm-scatter">
-              <p class="crm-scatter__label">Заявки живут в разных местах</p>
-              <ul class="crm-scatter__grid">
-                <li><span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-site"></use></svg></span>Сайт и формы</li>
-                <li><span class="crm-ico crm-ico--sm crm-ico--cyan" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-chat"></use></svg></span>WhatsApp</li>
-                <li><span class="crm-ico crm-ico--sm crm-ico--blue" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-mail"></use></svg></span>Почта</li>
-                <li><span class="crm-ico crm-ico--sm crm-ico--magenta" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-table"></use></svg></span>Таблица</li>
-                <li><span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-user"></use></svg></span>Менеджер</li>
-                <li><span class="crm-ico crm-ico--sm crm-ico--blue" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-clock"></use></svg></span>Ожидание ответа</li>
-              </ul>
-              <p class="crm-scatter__note">Пока каналы не связаны между собой, статус обращения приходится собирать вручную из нескольких источников.</p>
-            </div>
-            <div class="crm-problems">
-              <article class="crm-problem">
-                <span class="crm-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><use href="#i-plug"></use></svg></span>
-                <div>
-                  <h3>Разные каналы</h3>
-                  <p>Заявки приходят из разных каналов и живут в разных местах.</p>
-                </div>
-              </article>
-              <article class="crm-problem">
-                <span class="crm-ico crm-ico--blue" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><use href="#i-clock"></use></svg></span>
-                <div>
-                  <h3>Пропуски ответа</h3>
-                  <p>Часть обращений остаётся без ответа слишком долго.</p>
-                </div>
-              </article>
-              <article class="crm-problem">
-                <span class="crm-ico crm-ico--cyan" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><use href="#i-arrow"></use></svg></span>
-                <div>
-                  <h3>Неясный следующий шаг</h3>
-                  <p>Менеджеры не всегда понимают, что делать с заявкой прямо сейчас.</p>
-                </div>
-              </article>
-              <article class="crm-problem">
-                <span class="crm-ico crm-ico--magenta" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><use href="#i-shield"></use></svg></span>
-                <div>
-                  <h3>Слабый контроль</h3>
-                  <p>Руководителю сложно контролировать обработку и загрузку команды.</p>
-                </div>
-              </article>
-              <article class="crm-problem">
-                <span class="crm-ico crm-ico--blue" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><use href="#i-dash"></use></svg></span>
-                <div>
-                  <h3>Нет единой картины</h3>
-                  <p>Нет общей картины по источникам, статусам и этапам продаж.</p>
-                </div>
-              </article>
-              <article class="crm-problem">
-                <span class="crm-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><use href="#i-table"></use></svg></span>
-                <div>
-                  <h3>Ручная передача</h3>
-                  <p>Ручная передача информации создаёт задержки и ошибки.</p>
-                </div>
-              </article>
-            </div>
+          <div class="crm-issues">
+            <article class="crm-issue">
+              <span class="crm-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><use href="#i-clock"></use></svg></span>
+              <h3>Задержка ответа</h3>
+              <p>Если менеджер занят другой задачей, новое сообщение может ожидать реакции до момента, когда сотрудник вернётся к диалогу.</p>
+            </article>
+            <article class="crm-issue">
+              <span class="crm-ico crm-ico--blue" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><use href="#i-task"></use></svg></span>
+              <h3>Риск забытого обращения</h3>
+              <p>Без автоматически назначенного следующего действия менеджеру приходится самостоятельно помнить, к каким клиентам необходимо вернуться.</p>
+            </article>
+            <article class="crm-issue">
+              <span class="crm-ico crm-ico--magenta" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><use href="#i-dash"></use></svg></span>
+              <h3>Недостаток прозрачности</h3>
+              <p>Руководителю сложно контролировать обработку обращений, если переписка, этап сделки и задача не собраны в одной системе.</p>
+            </article>
           </div>
+          <p class="crm-issue-note">Проблема заключалась не в менеджерах, а в процессе, который слишком сильно зависел от человеческого внимания.</p>
         </div>
       </section>
 
-      <section class="section section--soft" aria-labelledby="diagnostics-title">
-        <div class="container crm-diag">
-          <div class="crm-diag__aside">
-            <span class="crm-ico crm-ico--lg crm-ico--solid" aria-hidden="true"><svg viewBox="0 0 24 24" width="30" height="30"><use href="#i-search"></use></svg></span>
-            <div class="section-heading">
-              <p class="section-label">Диагностика</p>
-              <h2 id="diagnostics-title">Диагностика: где бизнес теряет обращения</h2>
-              <p>До внедрения анализируем типовые точки CRM-проекта. Это карта проверки процессов, а не описание проблем конкретного клиента.</p>
-            </div>
-          </div>
-          <div class="crm-diag__panel">
-            <div class="crm-diag__head">
-              <span>Зона проверки</span>
-              <span>Смотрим на старте</span>
-            </div>
-            <ul class="crm-diag__list">
-              <li>
-                <span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-inbox"></use></svg></span>
-                источники заявок;
-                <span class="crm-diag__mark" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14"><use href="#i-check"></use></svg></span>
-              </li>
-              <li>
-                <span class="crm-ico crm-ico--sm crm-ico--blue" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-site"></use></svg></span>
-                формы сайта;
-                <span class="crm-diag__mark" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14"><use href="#i-check"></use></svg></span>
-              </li>
-              <li>
-                <span class="crm-ico crm-ico--sm crm-ico--cyan" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-chat"></use></svg></span>
-                WhatsApp и другие каналы связи;
-                <span class="crm-diag__mark" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14"><use href="#i-check"></use></svg></span>
-              </li>
-              <li>
-                <span class="crm-ico crm-ico--sm crm-ico--magenta" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-db"></use></svg></span>
-                текущая CRM или таблицы;
-                <span class="crm-diag__mark" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14"><use href="#i-check"></use></svg></span>
-              </li>
-              <li>
-                <span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-funnel"></use></svg></span>
-                этапы продаж;
-                <span class="crm-diag__mark" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14"><use href="#i-check"></use></svg></span>
-              </li>
-              <li>
-                <span class="crm-ico crm-ico--sm crm-ico--blue" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-team"></use></svg></span>
-                роли менеджеров;
-                <span class="crm-diag__mark" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14"><use href="#i-check"></use></svg></span>
-              </li>
-              <li>
-                <span class="crm-ico crm-ico--sm crm-ico--cyan" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-clock"></use></svg></span>
-                скорость реакции;
-                <span class="crm-diag__mark" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14"><use href="#i-check"></use></svg></span>
-              </li>
-              <li>
-                <span class="crm-ico crm-ico--sm crm-ico--magenta" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-target"></use></svg></span>
-                причины зависания заявок;
-                <span class="crm-diag__mark" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14"><use href="#i-check"></use></svg></span>
-              </li>
-              <li>
-                <span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-report"></use></svg></span>
-                отчётность и контроль руководителя.
-                <span class="crm-diag__mark" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14"><use href="#i-check"></use></svg></span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" aria-labelledby="solution-title">
+      <section class="section" id="solution" aria-labelledby="solution-title">
         <div class="container">
           <div class="section-heading section-heading--wide">
-            <p class="section-label">Решение</p>
-            <h2 id="solution-title">Решение: единая логика обработки заявки</h2>
-            <p>Собираем путь обращения в одну рабочую схему: от поступления до статуса сделки. Платформа подбирается под процессы компании; при необходимости используется amoCRM или другая CRM.</p>
+            <p class="section-label">Что реализовали</p>
+            <h2 id="solution-title">Связали первое сообщение, сделку и следующее действие</h2>
+            <p>Собрали рабочий контур вокруг CRM-системы:</p>
+            <p class="crm-flowline">Сообщение клиента → мгновенный ответ FutoraBot → фиксация в CRM → задача менеджеру → движение по воронке → аналитика</p>
           </div>
-          <div class="crm-builder">
-            <div class="crm-hub">
-              <div>
-                <p class="crm-hub__label">Ядро системы</p>
-                <h3>Единая логика обработки заявки</h3>
-                <p>Каналы, воронка, задачи, уведомления, интеграции и аналитика собираются вокруг одного правила: у обращения всегда есть статус, ответственный и следующий шаг.</p>
-              </div>
-              <div class="crm-hub__media">
-                <img src="/assets/generated/sozdanie/integratsii/v1.webp" width="800" height="800" alt="Схема: каналы, аналитика, оплата и коммуникация связаны с карточкой клиента" loading="lazy" decoding="async">
-              </div>
-            </div>
-            <article class="crm-mod">
-              <span class="crm-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><use href="#i-site"></use></svg></span>
-              <h3>Каналы и формы</h3>
-              <p>Подключение форм сайта к CRM и фиксация источника обращения.</p>
-            </article>
-            <article class="crm-mod">
-              <span class="crm-ico crm-ico--blue" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><use href="#i-funnel"></use></svg></span>
-              <h3>Воронка и роли</h3>
-              <p>Настройка воронки продаж и распределение заявок по ответственным.</p>
-            </article>
-            <article class="crm-mod">
-              <span class="crm-ico crm-ico--cyan" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><use href="#i-bolt"></use></svg></span>
-              <h3>Автоматизации</h3>
-              <p>Автоматическое создание задач и уведомления менеджерам.</p>
-            </article>
-            <article class="crm-mod">
-              <span class="crm-ico crm-ico--magenta" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><use href="#i-deal"></use></svg></span>
-              <h3>Статусы</h3>
-              <p>Контроль статуса каждой заявки на всём пути обработки.</p>
-            </article>
-            <article class="crm-mod">
-              <span class="crm-ico crm-ico--blue" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><use href="#i-plug"></use></svg></span>
-              <h3>Интеграции</h3>
-              <p>Интеграция с телефонией и мессенджерами при необходимости.</p>
-            </article>
-            <article class="crm-mod">
-              <span class="crm-ico crm-ico--cyan" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><use href="#i-report"></use></svg></span>
-              <h3>Управление</h3>
-              <p>Отчётность для руководителя и регламенты обработки обращений.</p>
-            </article>
-          </div>
+          <ul class="crm-system">
+            <li><span class="crm-ico crm-ico--sm crm-ico--cyan" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-chat"></use></svg></span><div><strong>Входящее сообщение</strong><span>Клиент пишет в WhatsApp</span></div></li>
+            <li><span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-bolt"></use></svg></span><div><strong>Первый ответ FutoraBot</strong><span>Бот начинает обработку сразу</span></div></li>
+            <li><span class="crm-ico crm-ico--sm crm-ico--blue" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-inbox"></use></svg></span><div><strong>Уточнение потребности</strong><span>Собирается задача, бренд и бюджет</span></div></li>
+            <li><span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-deal"></use></svg></span><div><strong>Фиксация диалога</strong><span>История сохраняется в CRM</span></div></li>
+            <li><span class="crm-ico crm-ico--sm crm-ico--blue" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-user"></use></svg></span><div><strong>Сделка и ответственный</strong><span>Появляется карточка и менеджер</span></div></li>
+            <li><span class="crm-ico crm-ico--sm crm-ico--magenta" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-task"></use></svg></span><div><strong>Автоматическая задача</strong><span>Следующее действие назначается системой</span></div></li>
+            <li><span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-funnel"></use></svg></span><div><strong>Движение по воронке</strong><span>Этап заявки становится видимым</span></div></li>
+            <li><span class="crm-ico crm-ico--sm crm-ico--cyan" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-dash"></use></svg></span><div><strong>Аналитика этапов</strong><span>Руководитель видит загрузку процесса</span></div></li>
+          </ul>
         </div>
       </section>
 
-      <section class="section section--soft" id="process" aria-labelledby="process-title">
-        <div class="container">
-          <div class="crm-sechead">
+      <section class="section section--soft" aria-labelledby="bot-title">
+        <div class="container crm-evidence">
+          <div>
             <div class="section-heading">
-              <p class="section-label">Внедрение</p>
-              <h2 id="process-title">Как CRM превращается в рабочий процесс</h2>
-              <p>Внедрение идёт по шагам: сначала понятная логика, затем настройка, проверка сценариев и поддержка команды.</p>
+              <p class="section-label">FutoraBot</p>
+              <h2 id="bot-title">FutoraBot отвечает, пока менеджер подключается к работе</h2>
+              <p>FutoraBot обрабатывает первое сообщение, уточняет назначение товара и бюджет, объясняет особенности бренда и помогает сузить выбор.</p>
             </div>
-            <span class="crm-sechead__note">
-              <span class="crm-ico crm-ico--xs" aria-hidden="true"><svg viewBox="0 0 24 24" width="17" height="17"><use href="#i-task"></use></svg></span>
-              8 шагов внедрения
-            </span>
           </div>
-          <ol class="crm-steps">
-            <li>
-              <div class="crm-steps__top">
-                <span class="crm-steps__num">Шаг 1</span>
-                <span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-search"></use></svg></span>
-              </div>
-              <h3>Анализ текущих заявок и процессов</h3>
-              <p>Собираем каналы, роли и текущий путь обращения.</p>
-            </li>
-            <li>
-              <div class="crm-steps__top">
-                <span class="crm-steps__num">Шаг 2</span>
-                <span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-funnel"></use></svg></span>
-              </div>
-              <h3>Проектирование воронки</h3>
-              <p>Фиксируем этапы, статусы и критерии перехода.</p>
-            </li>
-            <li>
-              <div class="crm-steps__top">
-                <span class="crm-steps__num">Шаг 3</span>
-                <span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-db"></use></svg></span>
-              </div>
-              <h3>Настройка CRM и каналов поступления</h3>
-              <p>Подключаем формы и согласованные каналы к системе.</p>
-            </li>
-            <li>
-              <div class="crm-steps__top">
-                <span class="crm-steps__num">Шаг 4</span>
-                <span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-team"></use></svg></span>
-              </div>
-              <h3>Распределение ролей и задач</h3>
-              <p>Назначаем ответственных и правила передачи заявок.</p>
-            </li>
-            <li>
-              <div class="crm-steps__top">
-                <span class="crm-steps__num">Шаг 5</span>
-                <span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-bolt"></use></svg></span>
-              </div>
-              <h3>Настройка автоматизаций и уведомлений</h3>
-              <p>Добавляем задачи, напоминания и служебные сценарии.</p>
-            </li>
-            <li>
-              <div class="crm-steps__top">
-                <span class="crm-steps__num">Шаг 6</span>
-                <span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-deal"></use></svg></span>
-              </div>
-              <h3>Тестирование сценариев</h3>
-              <p>Проверяем путь заявки от поступления до сделки.</p>
-            </li>
-            <li>
-              <div class="crm-steps__top">
-                <span class="crm-steps__num">Шаг 7</span>
-                <span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-user"></use></svg></span>
-              </div>
-              <h3>Обучение команды</h3>
-              <p>Показываем менеджерам и руководителю рабочий порядок действий.</p>
-            </li>
-            <li>
-              <div class="crm-steps__top">
-                <span class="crm-steps__num">Шаг 8</span>
-                <span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-dash"></use></svg></span>
-              </div>
-              <h3>Контроль работы и дальнейшая оптимизация</h3>
-              <p>Смотрим узкие места и донастраиваем процесс после запуска.</p>
-            </li>
+          <figure class="crm-shot">
+            <a href="/assets/images/keysy/crm-futora/futora-bot-dialog.webp" target="_blank" rel="noopener noreferrer" aria-label="Открыть полный скриншот диалога FutoraBot">
+              <img src="/assets/images/keysy/crm-futora/futora-bot-dialog.webp" width="1024" height="577" alt="Обезличенный пример консультации клиента ботом FutoraBot" loading="lazy" decoding="async">
+            </a>
+            <p class="crm-shot-role">Экран показывает первичную консультацию FutoraBot.</p>
+            <figcaption>Обезличенный диалог: бот уточняет задачу клиента, рассказывает о бренде Wahl и предлагает перейти к подбору.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="path-title">
+        <div class="container">
+          <div class="section-heading section-heading--wide">
+            <p class="section-label">Путь обращения</p>
+            <h2 id="path-title">Как сообщение превращается в контролируемую сделку</h2>
+          </div>
+            <ol class="crm-path">
+            <li><strong>Клиент пишет в WhatsApp</strong><span>Появляется новое обращение</span></li>
+            <li><strong>FutoraBot отправляет первый ответ</strong><span>Клиент получает реакцию сразу</span></li>
+            <li><strong>Потребность и контекст собираются</strong><span>Бот уточняет задачу и вводные</span></li>
+            <li><strong>В CRM появляется сделка</strong><span>Обращение получает карточку</span></li>
+            <li><strong>Менеджеру назначается задача</strong><span>Следующий шаг виден в системе</span></li>
+            <li><strong>Клиент получает подбор или прайс</strong><span>Менеджер продолжает консультацию</span></li>
+            <li><strong>Сделка переходит на следующий этап</strong><span>Статус обновляется по ходу работы</span></li>
+            <li><strong>Результат виден в аналитике</strong><span>Руководитель оценивает загрузку процесса</span></li>
           </ol>
         </div>
       </section>
 
-      <section class="section" aria-labelledby="business-result-title">
+      <section class="section section--soft" aria-labelledby="deal-title">
+        <div class="container crm-evidence crm-evidence--rev">
+          <div>
+            <div class="section-heading">
+              <p class="section-label">Карточка сделки</p>
+              <h2 id="deal-title">Вся история общения остаётся внутри CRM</h2>
+              <p>Менеджер видит диалог, ответственного, данные сделки и контекст запроса в одном интерфейсе. Это помогает продолжить общение с того места, на котором остановился FutoraBot.</p>
+            </div>
+          </div>
+          <figure class="crm-shot">
+            <a href="/assets/images/keysy/crm-futora/futora-deal-dialog.webp" target="_blank" rel="noopener noreferrer" aria-label="Открыть полный скриншот карточки сделки Futora.kz">
+              <img src="/assets/images/keysy/crm-futora/futora-deal-dialog.webp" width="1024" height="487" alt="Обезличенная карточка сделки Futora.kz с сохранённым диалогом FutoraBot" loading="lazy" decoding="async">
+            </a>
+            <p class="crm-shot-role">Контекст переписки доступен менеджеру в карточке сделки.</p>
+            <figcaption>Обезличенная карточка сделки: переписка FutoraBot видна рядом с карточкой обращения.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="tasks-title">
         <div class="container">
           <div class="section-heading section-heading--wide">
-            <p class="section-label">Результат для бизнеса</p>
-            <h2 id="business-result-title">Что меняется после настройки системы</h2>
-            <p>Цель настройки — управляемая обработка обращений, где сайт, реклама и продажи работают в одной связке.</p>
+            <p class="section-label">Автоматические задачи</p>
+            <h2 id="tasks-title">Следующее действие не остаётся только в памяти менеджера</h2>
+            <p>CRM назначает следующее действие по обращению. Менеджеру проще понимать, с кем связаться и где задача вышла за срок. Просроченные действия видны руководителю и сотруднику — это не означает, что просрочек больше нет.</p>
           </div>
-          <div class="crm-outcome">
-            <div class="crm-dash" aria-hidden="true">
-              <div class="crm-dash__top">
-                <span class="crm-ico crm-ico--xs crm-ico--solid"><svg viewBox="0 0 24 24" width="17" height="17"><use href="#i-dash"></use></svg></span>
-                Воронка обращений
-                <span class="crm-dash__dots"><i></i><i></i><i></i></span>
-              </div>
-              <div class="crm-dash__body">
-                <div class="crm-dash__row">
-                  <span class="crm-dash__stage">Новая</span>
-                  <span class="crm-dash__bar crm-dash__bar--w1"><i></i></span>
-                </div>
-                <div class="crm-dash__row">
-                  <span class="crm-dash__stage">В работе</span>
-                  <span class="crm-dash__bar crm-dash__bar--w2"><i></i></span>
-                </div>
-                <div class="crm-dash__row">
-                  <span class="crm-dash__stage">Уточнение</span>
-                  <span class="crm-dash__bar crm-dash__bar--w3"><i></i></span>
-                </div>
-                <div class="crm-dash__row">
-                  <span class="crm-dash__stage">Сделка</span>
-                  <span class="crm-dash__bar crm-dash__bar--w4"><i></i></span>
-                </div>
-                <ul class="crm-dash__tasks">
-                  <li><span class="crm-ico crm-ico--xs" aria-hidden="true"><svg viewBox="0 0 24 24" width="17" height="17"><use href="#i-user"></use></svg></span>Ответственный назначен</li>
-                  <li><span class="crm-ico crm-ico--xs crm-ico--blue" aria-hidden="true"><svg viewBox="0 0 24 24" width="17" height="17"><use href="#i-task"></use></svg></span>Задача на следующий шаг</li>
-                  <li><span class="crm-ico crm-ico--xs crm-ico--cyan" aria-hidden="true"><svg viewBox="0 0 24 24" width="17" height="17"><use href="#i-bell"></use></svg></span>Напоминание о сроке ответа</li>
-                </ul>
-              </div>
-            </div>
-            <ul class="crm-benefits">
-              <li class="is-key"><span class="crm-ico crm-ico--sm crm-ico--solid" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-inbox"></use></svg></span>заявки фиксируются в едином пространстве;</li>
-              <li class="is-key"><span class="crm-ico crm-ico--sm crm-ico--solid" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-user"></use></svg></span>у каждой заявки есть статус и ответственный;</li>
-              <li><span class="crm-ico crm-ico--sm crm-ico--blue" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-arrow"></use></svg></span>менеджер понимает следующий шаг;</li>
-              <li class="is-key"><span class="crm-ico crm-ico--sm crm-ico--solid" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-dash"></use></svg></span>руководитель видит загрузку и качество обработки;</li>
-              <li><span class="crm-ico crm-ico--sm crm-ico--cyan" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-funnel"></use></svg></span>проще находить узкие места воронки;</li>
-              <li><span class="crm-ico crm-ico--sm crm-ico--blue" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-bolt"></use></svg></span>снижается зависимость от ручного контроля;</li>
-              <li><span class="crm-ico crm-ico--sm crm-ico--magenta" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-plug"></use></svg></span>сайт, реклама и продажи работают в связке.</li>
-            </ul>
+          <div class="crm-board">
+            <section class="crm-board__col" aria-labelledby="board-today">
+              <h3 id="board-today">Сегодня</h3>
+              <ul>
+                <li>Связаться с клиентом</li>
+                <li>Продолжить консультацию</li>
+              </ul>
+            </section>
+            <section class="crm-board__col" aria-labelledby="board-next">
+              <h3 id="board-next">Запланировано</h3>
+              <ul>
+                <li>Уточнить комплектацию</li>
+                <li>Отправить прайс</li>
+              </ul>
+            </section>
+            <section class="crm-board__col crm-board__col--due" aria-labelledby="board-due">
+              <h3 id="board-due">Просрочено</h3>
+              <ul>
+                <li>Вернуться к открытому диалогу</li>
+                <li>Закрыть задачу по сделке</li>
+              </ul>
+            </section>
           </div>
         </div>
       </section>
 
-      <section class="section section--soft" aria-labelledby="flow-title">
-        <div class="container">
-          <div class="crm-sechead">
+      <section class="section section--soft" aria-labelledby="funnel-title">
+        <div class="container crm-evidence">
+          <div>
             <div class="section-heading">
-              <p class="section-label">Схема</p>
-              <h2 id="flow-title">Путь заявки в рабочей системе</h2>
-              <p>Короткая схема, по которой строится обработка обращений.</p>
+              <p class="section-label">CRM-воронка</p>
+              <h2 id="funnel-title">Заявки распределяются по понятным этапам</h2>
+              <p>Воронка показывает, на каком этапе находится обращение и сколько сделок переходит дальше. Руководитель может оценивать загрузку менеджеров и находить этапы, требующие внимания.</p>
             </div>
-            <span class="crm-sechead__note">
-              <span class="crm-ico crm-ico--xs" aria-hidden="true"><svg viewBox="0 0 24 24" width="17" height="17"><use href="#i-arrow"></use></svg></span>
-              7 этапов пути заявки
-            </span>
+            <ul class="crm-stages">
+              <li>новая заявка</li>
+              <li>взят в работу</li>
+              <li>прайс отправлен</li>
+              <li>ожидает заказа</li>
+              <li>на сборке или ожидает оплаты</li>
+              <li>успешно реализовано</li>
+              <li>закрыто без реализации</li>
+            </ul>
           </div>
-          <div class="crm-journey-panel">
-            <ol class="crm-journey" aria-label="Схема обработки заявки">
-              <li>
-                <span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-inbox"></use></svg></span>
-                <span class="crm-journey__body">
-                  <span class="crm-journey__title">Заявка</span>
-                  <span class="crm-journey__text">Обращение приходит из канала.</span>
-                </span>
-              </li>
-              <li>
-                <span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-db"></use></svg></span>
-                <span class="crm-journey__body">
-                  <span class="crm-journey__title">Фиксация</span>
-                  <span class="crm-journey__text">Данные попадают в систему.</span>
-                </span>
-              </li>
-              <li>
-                <span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-team"></use></svg></span>
-                <span class="crm-journey__body">
-                  <span class="crm-journey__title">Распределение</span>
-                  <span class="crm-journey__text">Назначается ответственный.</span>
-                </span>
-              </li>
-              <li>
-                <span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-task"></use></svg></span>
-                <span class="crm-journey__body">
-                  <span class="crm-journey__title">Задача</span>
-                  <span class="crm-journey__text">Менеджер получает действие.</span>
-                </span>
-              </li>
-              <li>
-                <span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-chat"></use></svg></span>
-                <span class="crm-journey__body">
-                  <span class="crm-journey__title">Коммуникация</span>
-                  <span class="crm-journey__text">Ведётся работа с клиентом.</span>
-                </span>
-              </li>
-              <li>
-                <span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-deal"></use></svg></span>
-                <span class="crm-journey__body">
-                  <span class="crm-journey__title">Сделка</span>
-                  <span class="crm-journey__text">Фиксируется результат.</span>
-                </span>
-              </li>
-              <li>
-                <span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-dash"></use></svg></span>
-                <span class="crm-journey__body">
-                  <span class="crm-journey__title">Аналитика</span>
-                  <span class="crm-journey__text">Руководитель видит движение заявки.</span>
-                </span>
-              </li>
-            </ol>
-          </div>
+          <figure class="crm-shot">
+            <a href="/assets/images/keysy/crm-futora/futora-crm-funnel.webp" target="_blank" rel="noopener noreferrer" aria-label="Открыть полный скриншот CRM-воронки Futora.kz">
+              <img src="/assets/images/keysy/crm-futora/futora-crm-funnel.webp" width="1024" height="644" alt="Обезличенная CRM-воронка обработки заявок Futora.kz" loading="lazy" decoding="async">
+            </a>
+            <p class="crm-shot-role">На экране видны этапы воронки и количество заявок на каждом из них.</p>
+            <figcaption>Обезличенная воронка: видны названия этапов, количества сделок, проценты и средняя длительность 5д. Финансовые суммы скрыты.</figcaption>
+          </figure>
         </div>
       </section>
 
       <section class="section" aria-labelledby="analytics-title">
-        <div class="container crm-analytics">
-          <figure class="crm-analytics__media">
-            <img src="/assets/generated/sozdanie/crm-sistemy/v1.webp" width="800" height="800" alt="Воронка с карточками заявок и переходом обращений между этапами" loading="lazy" decoding="async">
-            <figcaption>Этапы воронки и карточки обращений, по которым видно движение заявки</figcaption>
-          </figure>
+        <div class="container crm-evidence crm-evidence--rev">
           <div>
             <div class="section-heading">
-              <p class="section-label">Контроль и аналитика</p>
-              <h2 id="analytics-title">CRM нужна для управляемости продаж</h2>
-              <p>База контактов полезна только вместе с контролем статусов, сроков и качества обработки.</p>
+              <p class="section-label">Аналитика</p>
+              <h2 id="analytics-title">Руководитель видит не только сделки, но и движение по процессу</h2>
+              <p>CRM показывает количество обращений на этапах, переходы между ними и среднюю длительность сделки. Это позволяет анализировать процесс на основе фактических данных, а не только субъективных оценок.</p>
             </div>
-            <ul class="crm-rows">
-              <li><span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-inbox"></use></svg></span>откуда приходят обращения;</li>
-              <li><span class="crm-ico crm-ico--sm crm-ico--blue" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-funnel"></use></svg></span>сколько заявок находится на каждом этапе;</li>
-              <li><span class="crm-ico crm-ico--sm crm-ico--cyan" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-clock"></use></svg></span>где возникают задержки;</li>
-              <li><span class="crm-ico crm-ico--sm crm-ico--magenta" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-bell"></use></svg></span>какие задачи просрочены;</li>
-              <li><span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-team"></use></svg></span>как менеджеры обрабатывают обращения;</li>
-              <li><span class="crm-ico crm-ico--sm crm-ico--blue" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-target"></use></svg></span>какие каналы дают качественные лиды;</li>
-              <li><span class="crm-ico crm-ico--sm crm-ico--cyan" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-report"></use></svg></span>какие процессы требуют доработки.</li>
+            <ul class="crm-points">
+              <li><span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-inbox"></use></svg></span>количество входящих обращений</li>
+              <li><span class="crm-ico crm-ico--sm crm-ico--blue" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-funnel"></use></svg></span>переход обращений в сделки</li>
+              <li><span class="crm-ico crm-ico--sm crm-ico--cyan" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-dash"></use></svg></span>распределение по этапам</li>
+              <li><span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-clock"></use></svg></span>средняя длительность сделки</li>
+              <li><span class="crm-ico crm-ico--sm crm-ico--blue" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-deal"></use></svg></span>успешно реализованные сделки</li>
+              <li><span class="crm-ico crm-ico--sm crm-ico--magenta" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-report"></use></svg></span>закрытые без реализации обращения</li>
             </ul>
           </div>
+          <figure class="crm-shot">
+            <a href="/assets/images/keysy/crm-futora/futora-crm-analytics.webp" target="_blank" rel="noopener noreferrer" aria-label="Открыть полный скриншот аналитики Futora.kz">
+              <img src="/assets/images/keysy/crm-futora/futora-crm-analytics.webp" width="1024" height="449" alt="Обезличенная аналитика движения заявок Futora.kz по CRM-воронке" loading="lazy" decoding="async">
+            </a>
+            <p class="crm-shot-role">Экран показывает количества, проценты переходов и среднюю длительность сделки.</p>
+            <figcaption>Срез процесса по количеству, а не по бюджету. Цифры на экране описывают текущее состояние воронки, а не рост после внедрения.</figcaption>
+          </figure>
         </div>
       </section>
 
-      <section class="section section--soft faq" aria-labelledby="faq-title">
-        <div class="container faq__grid">
-          <div class="section-heading">
-            <span class="crm-ico crm-ico--lg crm-ico--solid" aria-hidden="true"><svg viewBox="0 0 24 24" width="30" height="30"><use href="#i-chat"></use></svg></span>
-            <p class="section-label">FAQ</p>
-            <h2 id="faq-title">Вопросы о CRM и автоматизации</h2>
-            <p>Короткие ответы по типовым сценариям внедрения.</p>
-            <div class="crm-faq-visual" aria-hidden="true">
-              <span class="crm-faq-visual__bubble crm-faq-visual__bubble--q"><i></i><i></i></span>
-              <span class="crm-faq-visual__bubble crm-faq-visual__bubble--a"><i></i><i></i><i></i></span>
-              <span class="crm-faq-visual__bubble crm-faq-visual__bubble--q"><i></i></span>
-            </div>
+      <section class="section section--soft" aria-labelledby="outcome-title">
+        <div class="container">
+          <div class="section-heading section-heading--wide">
+            <p class="section-label">Итог проекта</p>
+            <h2 id="outcome-title">CRM стала рабочим контуром между клиентом, ботом и менеджером</h2>
           </div>
-          <div class="faq__items">
-            <details open>
-              <summary>Зачем бизнесу CRM, если заявки уже приходят?</summary>
-              <div><p>CRM фиксирует каждое обращение, назначает ответственного и следующий шаг. Это снижает риск, что заявка останется в почте, чате или таблице без обработки.</p></div>
-            </details>
-            <details>
-              <summary>Можно ли подключить CRM к сайту?</summary>
-              <div><p>Да. Формы сайта можно связать с CRM так, чтобы заявка сразу попадала в воронку с нужным статусом и источником.</p></div>
-            </details>
-            <details>
-              <summary>Можно ли связать формы сайта и WhatsApp с CRM?</summary>
-              <div><p>Да. В проект обычно входят формы сайта и мессенджеры. Конкретный набор каналов зависит от текущих процессов компании.</p></div>
-            </details>
-            <details>
-              <summary>Можно ли настроить автоматические задачи менеджерам?</summary>
-              <div><p>Да. После поступления заявки система может создавать задачу, назначать ответственного и напоминать о сроке ответа.</p></div>
-            </details>
-            <details>
-              <summary>Можно ли контролировать работу отдела продаж?</summary>
-              <div><p>Да. Руководитель видит статусы заявок, просроченные задачи, загрузку менеджеров и этапы, где обращения зависают.</p></div>
-            </details>
-            <details>
-              <summary>Подходит ли CRM для небольшого бизнеса?</summary>
-              <div><p>Да. Даже небольшой команде нужна единая картина заявок, статусов и следующих действий. Масштаб настройки подбирается под объём обращений.</p></div>
-            </details>
-            <details>
-              <summary>Можно ли настроить CRM на основе уже существующей воронки?</summary>
-              <div><p>Да. Сначала фиксируем текущие этапы продаж и роли, затем переносим логику в CRM и при необходимости упрощаем или дополняем процесс.</p></div>
-            </details>
-            <details>
-              <summary>Что нужно подготовить до внедрения CRM?</summary>
-              <div><p>Полезны список каналов заявок, текущие этапы обработки, роли менеджеров, примеры типичных обращений и доступы к сайту, формам и используемым сервисам.</p></div>
-            </details>
+          <div class="crm-compare">
+            <article>
+              <h3>До</h3>
+              <ul>
+                <li>первый ответ зависел от доступности менеджера;</li>
+                <li>следующую задачу нужно было контролировать вручную;</li>
+                <li>данные о работе с обращением могли находиться в разных местах;</li>
+                <li>руководителю было сложнее видеть весь путь сделки.</li>
+              </ul>
+            </article>
+            <article>
+              <h3>После</h3>
+              <ul>
+                <li>FutoraBot отправляет первый ответ;</li>
+                <li>диалог фиксируется в CRM;</li>
+                <li>менеджер получает следующее действие;</li>
+                <li>заявка движется по понятным этапам;</li>
+                <li>руководитель видит задачи и аналитику.</li>
+              </ul>
+              <p class="crm-compare__metric">
+                <strong>20 минут → 30 секунд</strong>
+                <span>Сокращение времени первого автоматического ответа клиенту</span>
+              </p>
+            </article>
           </div>
         </div>
       </section>
@@ -1012,19 +720,54 @@ body.case-study h1{margin-bottom:18px;font-size:clamp(26px,7.5vw,36px);line-heig
         <div class="container crm-cta-band__inner">
           <div>
             <div class="section-heading">
-              <h2 id="final-cta-title">Заявки уже поступают, но часть из них теряется?</h2>
-              <p>Разберём текущую систему обработки обращений и предложим понятную схему CRM, автоматизации и контроля продаж под задачи вашего бизнеса.</p>
+              <h2 id="final-cta-title">Хотите так же связать обращения, CRM и работу менеджеров?</h2>
+              <p>Разберём ваш путь заявки и покажем, где CRM и автоматизация могут сократить время ответа и снизить риск потерянных обращений.</p>
             </div>
             <div class="hero__actions">
-              <button class="button button--primary" type="button" data-rk-open-modal="rk-modal-lead">Обсудить CRM-проект</button>
-              <a class="button button--secondary" href="/keysy/">Все кейсы</a>
+              <button class="button button--primary" type="button" data-rk-open-modal="rk-modal-lead">Обсудить автоматизацию</button>
+              <a class="button button--secondary" href="/keysy/">Посмотреть другие кейсы</a>
             </div>
           </div>
           <ul class="crm-cta-chips">
-            <li><span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-site"></use></svg></span>Каналы и формы заявок</li>
-            <li><span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-funnel"></use></svg></span>Воронка и ответственные</li>
-            <li><span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-shield"></use></svg></span>Контроль обработки</li>
+            <li><span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-search"></use></svg></span>аудит текущего процесса</li>
+            <li><span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-funnel"></use></svg></span>проектирование воронки</li>
+            <li><span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-chat"></use></svg></span>интеграция обращений</li>
+            <li><span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-task"></use></svg></span>автоматические задачи</li>
+            <li><span class="crm-ico crm-ico--sm" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><use href="#i-dash"></use></svg></span>аналитика</li>
           </ul>
+        </div>
+      </section>
+
+      <section class="section section--soft faq" aria-labelledby="faq-title">
+        <div class="container faq__grid">
+          <div class="section-heading">
+            <span class="crm-ico crm-ico--lg crm-ico--solid" aria-hidden="true"><svg viewBox="0 0 24 24" width="30" height="30"><use href="#i-chat"></use></svg></span>
+            <p class="section-label">FAQ</p>
+            <h2 id="faq-title">Вопросы о CRM и FutoraBot</h2>
+            <p>Как устроена связка бота, менеджера и воронки в этом проекте.</p>
+          </div>
+          <div class="faq__items">
+            <details open>
+              <summary>Заменяет ли FutoraBot менеджера?</summary>
+              <div><p>Нет. В этом проекте FutoraBot обрабатывает первое сообщение, собирает вводные и сохраняет контекст. Менеджер подключается к дальнейшей консультации и работе со сделкой.</p></div>
+            </details>
+            <details>
+              <summary>Что происходит после ответа бота?</summary>
+              <div><p>Диалог фиксируется в CRM, обращение получает этап, ответственного и следующее действие. Менеджер может продолжить работу, используя уже собранный контекст.</p></div>
+            </details>
+            <details>
+              <summary>Как автоматические задачи помогают не забывать о клиентах?</summary>
+              <div><p>CRM показывает запланированные и просроченные действия. Это снижает зависимость процесса от памяти сотрудника и делает обращения без дальнейшего шага заметными.</p></div>
+            </details>
+            <details>
+              <summary>Можно ли настроить такую систему для другого бизнеса?</summary>
+              <div><p>Да, но логика зависит от каналов обращений, процесса продаж, ролей сотрудников и необходимых интеграций. Сначала требуется разобрать текущий путь заявки.</p></div>
+            </details>
+            <details>
+              <summary>Можно ли подключить только WhatsApp и CRM?</summary>
+              <div><p>Можно начать с одного основного канала и базовой воронки, а затем расширять автоматизацию по мере необходимости.</p></div>
+            </details>
+          </div>
         </div>
       </section>
 
@@ -1045,7 +788,7 @@ body.case-study h1{margin-bottom:18px;font-size:clamp(26px,7.5vw,36px);line-heig
             <p class="rk-contacts__intro">Готовы обсудить ваш проект? Свяжитесь с нами удобным для вас способом или отправьте заявку — мы ответим в ближайшее время.</p>
             <div class="rk-form rk-form--contacts">
               <p class="rk-form__title">Отправьте заявку</p>
-              <p class="rk-form__lead">Расскажите о вашей системе заявок — предложим схему CRM и автоматизации.</p>
+              <p class="rk-form__lead">Расскажите, как сейчас обрабатываются обращения — предложим схему CRM и автоматизации.</p>
               <form id="rk-form-contacts-crm-case" name="contacts_crm_case" data-lead-form data-form-name="Контакты — кейс CRM и автоматизации" novalidate>
                 <div class="rk-field">
                   <label for="rk-contact-name">Имя: <span class="rk-req" aria-hidden="true">*</span></label>
@@ -1179,8 +922,8 @@ body.case-study h1{margin-bottom:18px;font-size:clamp(26px,7.5vw,36px);line-heig
     <div class="rk-modal__backdrop" tabindex="-1"></div>
     <div class="rk-modal__dialog">
       <button class="rk-modal__close" type="button" data-rk-modal-close aria-label="Закрыть">×</button>
-      <p class="rk-modal__title" id="rk-modal-lead-title" role="heading" aria-level="2">Обсудим CRM и автоматизацию?</p>
-      <p>Оставьте заявку — разберём каналы, воронку и контроль обработки обращений.</p>
+      <p class="rk-modal__title" id="rk-modal-lead-title" role="heading" aria-level="2">Обсудим автоматизацию заявок?</p>
+      <p>Оставьте заявку — разберём путь обращения, CRM и работу менеджеров.</p>
       <form id="rk-form-popup-crm-case" name="popup_crm_case" data-lead-form data-form-name="Попап — кейс CRM и автоматизации" novalidate>
         <input type="hidden" name="service" value="CRM и автоматизация">
         <div class="rk-field">
@@ -1204,7 +947,7 @@ body.case-study h1{margin-bottom:18px;font-size:clamp(26px,7.5vw,36px);line-heig
           <span>Я принимаю <a href="/regulation/" target="_blank" rel="noopener">Положение</a> и даю <a href="/consent/" target="_blank" rel="noopener">Согласие</a> на обработку персональных данных.</span>
         </label>
         <input type="text" name="website" autocomplete="off" tabindex="-1" aria-hidden="true" class="lead-form-honeypot" value="">
-        <button class="rk-btn rk-btn--primary" type="submit">Обсудить CRM-проект</button>
+        <button class="rk-btn rk-btn--primary" type="submit">Обсудить автоматизацию</button>
         <div data-form-status aria-live="polite" class="lead-form-status"></div>
       </form>
     </div>
