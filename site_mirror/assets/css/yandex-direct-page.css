@@ -1,4 +1,4 @@
-/* Google Ads page вЂ” scoped under .yd-page */
+/* Yandex Direct page — scoped under .yd-page */
 
 .yd-page .ctx-hero__title,
 .yd-page .ctx-hero__sub,
@@ -20,7 +20,7 @@
   }
 }
 
-/* About section heading + official Google Ads icon */
+/* About section heading + Direct mark */
 .yd-about-heading {
   display: flex;
   align-items: center;
@@ -700,7 +700,7 @@
 
 .yd-camp--search {
   background:
-    radial-gradient(110% 80% at 8% 0%, rgba(66, 133, 244, 0.12), transparent 55%),
+    radial-gradient(110% 80% at 8% 0%, rgba(252, 63, 29, 0.12), transparent 55%),
     #fff;
 }
 
@@ -873,6 +873,12 @@
   display: grid;
   gap: 16px;
   margin: 18px 0 22px;
+}
+
+@media (min-width: 900px) {
+  .yd-artifact-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 .yd-artifact {
@@ -1430,7 +1436,11 @@
 
 /* A11y: underline in-text links (link-in-text-block) */
 .yd-page #landing-seo a,
-.yd-page #landing-analytics a,
+.yd-page .yd-prose a,
+.yd-page .yd-price-board a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
 .yd-page .rk-consent a,
 .yd-page .rk-consent--contacts a {
   text-decoration: underline;
@@ -1440,8 +1450,8 @@
 .yd-card__visual svg,
 .yd-camp__visual svg {
   display: block;
-  width: 56px;
-  height: 56px;
+  width: 88px;
+  height: 88px;
   color: #FC3F1D;
 }
 

@@ -63,7 +63,8 @@ Redirect 301 /pages/web-studiya_dizayn_logotip.html /web-studiya/dizayn/logotip
 Redirect 301 /pages/web-studiya_dizayn_neyming.html /web-studiya/dizayn/neyming
 Redirect 301 /pages/web-studiya_kontekstnaya-reklama.html /web-studiya/kontekstnaya-reklama
 Redirect 301 /pages/web-studiya_kontekstnaya-reklama_google-ads.html /web-studiya/kontekstnaya-reklama/google-ads/
-Redirect 301 /pages/web-studiya_kontekstnaya-reklama_yandex-direct.html /web-studiya/kontekstnaya-reklama/yandex-direct
+Redirect 301 /pages/web-studiya_kontekstnaya-reklama_yandex-direct.html /web-studiya/kontekstnaya-reklama/yandex-direct/
+RedirectMatch 301 ^/web-studiya/kontekstnaya-reklama/yandex-direct$ /web-studiya/kontekstnaya-reklama/yandex-direct/
 RedirectMatch 301 ^/contextnaya-reklama-google/?$ /web-studiya/kontekstnaya-reklama/google-ads/
 Redirect 301 /pages/web-studiya_lidogeneratsiya.html /web-studiya/lidogeneratsiya
 Redirect 301 /pages/web-studiya_podderzhka-saytov.html /web-studiya/podderzhka-saytov
