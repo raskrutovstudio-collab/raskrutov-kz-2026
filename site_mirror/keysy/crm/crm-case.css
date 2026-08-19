@@ -1125,6 +1125,10 @@ body.case-study .crm-hero-media figcaption {
     --crm-float-pad-x: 84px;
   }
 
+  body.case-study .crm-hero-media {
+    padding-right: 0;
+  }
+
   body.case-study .crm-hero-media,
   body.case-study .crm-shot,
   body.case-study .crm-result__cards,
@@ -1155,5 +1159,10 @@ body.case-study .crm-hero-media figcaption {
   body.case-study .crm-compare,
   body.case-study .crm-cta-band__inner {
     padding-left: var(--crm-float-pad-left);
+  }
+
+  body.case-study .crm-hero-media {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
