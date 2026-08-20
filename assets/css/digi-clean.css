@@ -661,12 +661,17 @@
   cursor: pointer;
   font-weight: 700;
   color: #1f2430;
+  line-height: 1.45;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 .digi-faq details p {
   margin: 10px 0 0;
   font-size: 15px;
   line-height: 1.55;
   color: #4a4a4a;
+  overflow-wrap: anywhere;
 }
 
 /* Mid + bottom CTA */
