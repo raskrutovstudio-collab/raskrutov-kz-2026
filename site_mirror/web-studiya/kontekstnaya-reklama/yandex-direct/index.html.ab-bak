@@ -16,8 +16,9 @@
   <meta property="og:locale" content="ru_KZ">
 <link href="../../../assets/m-files.cdn1.cc/lpfile/favicon/favicon__q_1.png" type="image/png" rel="icon">
   <link href="../../../favicon.ico" sizes="16x16 32x32 48x48" rel="icon" type="image/x-icon">
-  <link rel="preload" href="../../../assets/m-files.cdn1.cc/web/user/fonts/montserrat/montserrat_normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="../../../assets/m-files.cdn1.cc/web/user/fonts/montserrat/montserrat_bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../../../assets/m-files.cdn1.cc/web/user/fonts/montserrat/montserrat_normal.woff2" as="font" type="font/woff2" crossorigin media="(max-width: 768px)">
+  <link rel="preload" href="../../../assets/m-files.cdn1.cc/web/user/fonts/montserrat/montserrat_normal.woff2" as="font" type="font/woff2" crossorigin media="(min-width: 769px)">
+  <link rel="preload" href="../../../assets/m-files.cdn1.cc/web/user/fonts/montserrat/montserrat_bold.woff2" as="font" type="font/woff2" crossorigin media="(min-width: 769px)">
   <style id="yd-critical" media="(max-width:768px)">
 @media (max-width:768px){
 @font-face{font-family:"Montserrat";src:url("../../../assets/m-files.cdn1.cc/web/user/fonts/montserrat/montserrat_normal.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
@@ -100,11 +101,10 @@ button{font:inherit;cursor:pointer;border:0;background:0 0}
 .yd-page main{padding-bottom:72px}
 }
 @media (max-width:480px){
-.yd-page .yd-hero-price{display:grid;gap:4px;width:100%;justify-content:start;align-items:start;border-radius:12px}
-.yd-page .yd-hero-price__note{display:block;text-align:left}
+  .yd-page .yd-hero-price{display:grid;gap:4px;width:100%;justify-content:start;align-items:start;border-radius:12px}
+  .yd-page .yd-hero-price__note{display:block;text-align:left}
 }
 @media (min-width:391px) and (max-width:768px){:root{--rk-gutter:20px}}
-
   </style>
   <link rel="stylesheet" href="../../../assets/css/home-clean.css?v=39" media="(min-width: 769px)" onload="this.onload=null;if(matchMedia('(max-width:768px)').matches)this.media='all'">
   <link rel="stylesheet" href="../../../assets/css/kontekst-clean.css?v=7" media="(min-width: 769px)" onload="this.onload=null;if(matchMedia('(max-width:768px)').matches)this.media='all'">
@@ -116,7 +116,7 @@ button{font:inherit;cursor:pointer;border:0;background:0 0}
     <link rel="stylesheet" href="../../../assets/css/yandex-direct-page.css?v=5">
     <link rel="stylesheet" href="../../../assets/css/lead-forms.css">
   </noscript>
-  <style>
+  <style id="yd-prod-critical">
     .rk-form--contacts .rk-consent--contacts{margin:0 0 15px;font-size:12px;line-height:1.4}
     .rk-form--contacts .rk-consent--contacts input{width:18px;height:18px}
     @media (min-width:769px){
