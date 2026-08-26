@@ -1,6 +1,7 @@
 (function () {
   "use strict";
 
+  var MOBILE_MQ = window.matchMedia("(max-width: 767px)");
   var gesture = {
     active: false,
     startX: 0,
@@ -10,8 +11,8 @@
     threshold: 12
   };
 
-  function prefersReducedMotion() {
-    return window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function isMobile() {
+    return MOBILE_MQ.matches;
   }
 
   function initLightbox() {
@@ -125,6 +126,69 @@
     });
   }
 
+  function activateLazyMedia(slide) {
+    slide.querySelectorAll("source[data-lazy-srcset]").forEach(function (source) {
+      if (!source.getAttribute("srcset")) {
+        source.setAttribute("srcset", source.getAttribute("data-lazy-srcset"));
+      }
+    });
+    slide.querySelectorAll("img[data-lazy-src]").forEach(function (imgEl) {
+      if (!imgEl.getAttribute("src")) {
+        imgEl.setAttribute("src", imgEl.getAttribute("data-lazy-src"));
+      }
+    });
+  }
+
+  function initLetterLazy(root, originals) {
+    if (!isMobile() || !("IntersectionObserver" in window)) return;
+
+    originals.forEach(function (slide, index) {
+      if (index < 2) return;
+
+      var picture = slide.querySelector("picture");
+      var source = slide.querySelector("source[media*='767px']");
+      var img = slide.querySelector("img");
+
+      if (source && source.getAttribute("srcset")) {
+        source.setAttribute("data-lazy-srcset", source.getAttribute("srcset"));
+        source.removeAttribute("srcset");
+      }
+
+      if (img && img.getAttribute("src")) {
+        img.setAttribute("data-lazy-src", img.getAttribute("src"));
+        img.removeAttribute("src");
+        img.removeAttribute("srcset");
+      }
+
+      if (picture) {
+        picture.classList.add("is-lazy-pending");
+      }
+    });
+
+    var viewport = root.querySelector("[data-slider-viewport]");
+    var observer = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          activateLazyMedia(entry.target);
+          entry.target.querySelectorAll(".is-lazy-pending").forEach(function (node) {
+            node.classList.remove("is-lazy-pending");
+          });
+          observer.unobserve(entry.target);
+        });
+      },
+      {
+        root: viewport,
+        rootMargin: "120px 0px",
+        threshold: 0.01
+      }
+    );
+
+    originals.forEach(function (slide, index) {
+      if (index >= 2) observer.observe(slide);
+    });
+  }
+
   function initSlider(root) {
     var viewport = root.querySelector("[data-slider-viewport]");
     var track = root.querySelector("[data-slider-track]");
@@ -132,30 +196,37 @@
     var nextBtn = root.querySelector("[data-slider-next]");
     if (!viewport || !track) return;
 
+    root.classList.add("is-paused");
+
     var originals = Array.prototype.slice.call(track.children);
     if (!originals.length) return;
 
-    originals.forEach(function (node) {
-      var clone = node.cloneNode(true);
-      clone.setAttribute("aria-hidden", "true");
-      clone.querySelectorAll("button, input, textarea").forEach(function (el) {
-        el.setAttribute("tabindex", "-1");
-        el.setAttribute("aria-hidden", "true");
-      });
-      clone.querySelectorAll("[data-letter-zoom]").forEach(function (el) {
-        el.setAttribute("tabindex", "-1");
-      });
-      clone.querySelectorAll("img").forEach(function (imgEl) {
-        imgEl.setAttribute("alt", "");
-        imgEl.setAttribute("loading", "lazy");
-      });
-      track.appendChild(clone);
-    });
-
+    var mobileMode = isMobile();
     var loopDistance = 0;
-    var resumeTimer = null;
     var dragStartX = 0;
     var baseOffset = 0;
+    var currentIndex = 0;
+
+    if (!mobileMode) {
+      originals.forEach(function (node) {
+        var clone = node.cloneNode(true);
+        clone.setAttribute("aria-hidden", "true");
+        clone.querySelectorAll("button, input, textarea").forEach(function (el) {
+          el.setAttribute("tabindex", "-1");
+          el.setAttribute("aria-hidden", "true");
+        });
+        clone.querySelectorAll("[data-letter-zoom]").forEach(function (el) {
+          el.setAttribute("tabindex", "-1");
+        });
+        clone.querySelectorAll("img").forEach(function (imgEl) {
+          imgEl.setAttribute("alt", "");
+          imgEl.setAttribute("loading", "lazy");
+        });
+        track.appendChild(clone);
+      });
+    }
+
+    initLetterLazy(root, originals);
 
     function measure() {
       var gap = parseFloat(window.getComputedStyle(track).gap) || 0;
@@ -164,11 +235,11 @@
         distance += node.getBoundingClientRect().width;
         if (index < originals.length - 1) distance += gap;
       });
-      distance += gap;
+      if (!mobileMode) {
+        distance += gap;
+      }
       loopDistance = distance;
       root.style.setProperty("--reviews-loop-distance", distance + "px");
-      var seconds = Math.max(40, Math.round(distance / 28));
-      root.style.setProperty("--reviews-marquee-duration", seconds + "s");
     }
 
     function currentTranslateX() {
@@ -181,7 +252,7 @@
     }
 
     function wrapOffset(x) {
-      if (!loopDistance) return x;
+      if (!loopDistance || mobileMode) return x;
       while (x > 0) x -= loopDistance;
       while (x <= -loopDistance) x += loopDistance;
       return x;
@@ -193,36 +264,66 @@
       return (first ? first.getBoundingClientRect().width : 0) + gap;
     }
 
-    function enterManualMode() {
-      root.classList.add("is-paused", "is-manual");
-      track.style.animation = "none";
+    function offsetForIndex(index) {
+      var gap = parseFloat(window.getComputedStyle(track).gap) || 0;
+      var offset = 0;
+      for (var i = 0; i < index; i += 1) {
+        offset += originals[i].getBoundingClientRect().width + gap;
+      }
+      return -offset;
     }
 
-    function resumeAuto() {
-      window.clearTimeout(resumeTimer);
-      resumeTimer = window.setTimeout(function () {
-        if (prefersReducedMotion()) return;
-        root.classList.remove("is-manual");
-        track.style.animation = "";
-        track.style.transform = "";
-        root.classList.remove("is-paused");
-      }, 4200);
+    function applyOffset(x) {
+      track.style.transform = "translate3d(" + x + "px,0,0)";
+    }
+
+    function setManualOffset(x) {
+      root.classList.add("is-manual");
+      track.style.animation = "none";
+      applyOffset(x);
+    }
+
+    function clampIndex(index) {
+      if (!originals.length) return 0;
+      if (index < 0) return originals.length - 1;
+      if (index >= originals.length) return 0;
+      return index;
+    }
+
+    function goToIndex(index) {
+      currentIndex = clampIndex(index);
+      setManualOffset(mobileMode ? offsetForIndex(currentIndex) : wrapOffset(offsetForIndex(currentIndex)));
+      activateLazyMedia(originals[currentIndex]);
+      var prevSlide = originals[clampIndex(currentIndex - 1)];
+      var nextSlide = originals[clampIndex(currentIndex + 1)];
+      if (prevSlide) activateLazyMedia(prevSlide);
+      if (nextSlide) activateLazyMedia(nextSlide);
     }
 
     function nudge(direction) {
-      if (!loopDistance) measure();
-      enterManualMode();
+      measure();
+      if (mobileMode) {
+        goToIndex(currentIndex + (direction < 0 ? 1 : -1));
+        return;
+      }
       var next = wrapOffset(currentTranslateX() + direction * stepSize());
-      track.style.transform = "translate3d(" + next + "px,0,0)";
-      resumeAuto();
+      setManualOffset(next);
     }
 
     measure();
+    if (mobileMode) {
+      goToIndex(0);
+    }
 
     var resizeTimer = null;
     window.addEventListener("resize", function () {
       window.clearTimeout(resizeTimer);
-      resizeTimer = window.setTimeout(measure, 120);
+      resizeTimer = window.setTimeout(function () {
+        measure();
+        if (mobileMode) {
+          goToIndex(currentIndex);
+        }
+      }, 120);
     });
 
     if (prevBtn) {
@@ -237,11 +338,6 @@
       });
     }
 
-    if (prefersReducedMotion()) {
-      root.classList.add("is-paused");
-      return;
-    }
-
     function onPointerDown(e) {
       if (e.pointerType === "mouse" && e.button !== 0) return;
       if (!viewport.contains(e.target)) return;
@@ -252,8 +348,7 @@
       gesture.dragging = false;
       gesture.suppressClick = false;
       dragStartX = e.clientX;
-      baseOffset = currentTranslateX();
-      window.clearTimeout(resumeTimer);
+      baseOffset = mobileMode ? offsetForIndex(currentIndex) : currentTranslateX();
     }
 
     function onPointerMove(e) {
@@ -267,7 +362,6 @@
 
         gesture.dragging = true;
         gesture.suppressClick = true;
-        enterManualMode();
         viewport.classList.add("is-dragging");
         track.style.animation = "none";
         track.style.transform = "translate3d(" + baseOffset + "px,0,0)";
@@ -277,7 +371,8 @@
       }
 
       var dragOffset = e.clientX - dragStartX;
-      track.style.transform = "translate3d(" + wrapOffset(baseOffset + dragOffset) + "px,0,0)";
+      var nextOffset = mobileMode ? baseOffset + dragOffset : wrapOffset(baseOffset + dragOffset);
+      applyOffset(nextOffset);
     }
 
     function endPointer(e) {
@@ -293,7 +388,14 @@
       } catch (err) {}
 
       if (wasDrag) {
-        resumeAuto();
+        if (mobileMode) {
+          var dx = e.clientX - dragStartX;
+          if (Math.abs(dx) >= stepSize() * 0.2) {
+            goToIndex(currentIndex + (dx < 0 ? 1 : -1));
+          } else {
+            goToIndex(currentIndex);
+          }
+        }
         window.setTimeout(function () {
           gesture.suppressClick = false;
         }, 0);
@@ -308,8 +410,87 @@
     viewport.addEventListener("pointercancel", endPointer);
   }
 
+  function mount2gisWidget(widget) {
+    if (widget.getAttribute("data-2gis-mounted") === "true") return;
+    var frameId = widget.getAttribute("data-2gis-id");
+    var payload = widget.getAttribute("data-2gis-payload");
+    var frame = frameId ? document.getElementById(frameId) : null;
+    if (!frame || !payload) return;
+    frame.contentWindow.document.open();
+    frame.contentWindow.document.write(decodeURIComponent(escape(window.atob(payload))));
+    frame.contentWindow.document.close();
+    widget.setAttribute("data-2gis-mounted", "true");
+  }
+
+  function init2gisWidget() {
+    var widget = document.querySelector("[data-deferred-2gis]");
+    if (!widget) return;
+
+    if (!isMobile()) {
+      mount2gisWidget(widget);
+      return;
+    }
+
+    if (!("IntersectionObserver" in window)) {
+      mount2gisWidget(widget);
+      return;
+    }
+
+    var observer = new IntersectionObserver(
+      function (entries, obs) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          mount2gisWidget(widget);
+          obs.disconnect();
+        });
+      },
+      { root: null, rootMargin: "220px 0px", threshold: 0.01 }
+    );
+
+    observer.observe(widget);
+  }
+
+  function loadGoogleWidget() {
+    if (document.querySelector('script[data-reviews-google-platform="true"]')) return;
+    var script = document.createElement("script");
+    script.src = "https://elfsightcdn.com/platform.js";
+    script.async = true;
+    script.setAttribute("data-reviews-google-platform", "true");
+    document.head.appendChild(script);
+  }
+
+  function initGoogleWidget() {
+    var section = document.getElementById("google-reviews");
+    if (!section) return;
+
+    if (!isMobile()) {
+      loadGoogleWidget();
+      return;
+    }
+
+    if (!("IntersectionObserver" in window)) {
+      loadGoogleWidget();
+      return;
+    }
+
+    var observer = new IntersectionObserver(
+      function (entries, obs) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          loadGoogleWidget();
+          obs.disconnect();
+        });
+      },
+      { root: null, rootMargin: "220px 0px", threshold: 0.01 }
+    );
+
+    observer.observe(section);
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     initLightbox();
     document.querySelectorAll("[data-reviews-slider]").forEach(initSlider);
+    init2gisWidget();
+    initGoogleWidget();
   });
 })();

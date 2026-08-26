@@ -209,13 +209,7 @@
   gap: 12px;
   width: max-content;
   will-change: transform;
-  animation: reviews-marquee var(--reviews-marquee-duration, 70s) linear infinite;
-}
-
-.reviews-page .reviews-slider.is-paused .reviews-slider__track,
-.reviews-page .reviews-slider:hover .reviews-slider__track,
-.reviews-page .reviews-slider:focus-within .reviews-slider__track {
-  animation-play-state: paused;
+  animation: none;
 }
 
 .reviews-page .reviews-slider.is-manual .reviews-slider__track {
@@ -517,5 +511,12 @@
   .reviews-page .reviews-lightbox__figure,
   .reviews-page .reviews-lightbox__img {
     max-height: calc(100vh - 20px);
+  }
+
+  .reviews-page picture.is-lazy-pending img:not([src]) {
+    display: block;
+    width: 100%;
+    min-height: 210px;
+    background: #eef1f7;
   }
 }
