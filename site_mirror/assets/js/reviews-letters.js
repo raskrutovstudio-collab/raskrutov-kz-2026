@@ -224,44 +224,8 @@
     viewport.addEventListener("pointercancel", onPointerUp);
   }
 
-  function initLazy2gis(section) {
-    if (!section || !("IntersectionObserver" in window)) {
-      if (section) boot2gis(section);
-      return;
-    }
-    var booted = false;
-    var io = new IntersectionObserver(
-      function (entries) {
-        entries.forEach(function (entry) {
-          if (!entry.isIntersecting || booted) return;
-          booted = true;
-          io.disconnect();
-          boot2gis(section);
-        });
-      },
-      { rootMargin: "200px 0px" }
-    );
-    io.observe(section);
-  }
-
-  function boot2gis(section) {
-    var iframe = section.querySelector("#big_light_70000001041348422");
-    if (!iframe || iframe.getAttribute("data-booted") === "1") return;
-    iframe.setAttribute("data-booted", "1");
-    var payload =
-      "PGhlYWQ+PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiPgogICAgd2luZG93Ll9fc2l6ZV9fPSdiaWcnOwogICAgd2luZG93Ll9fdGhlbWVfXz0nbGlnaHQnOwogICAgd2luZG93Ll9fYnJhbmNoSWRfXz0nNzAwMDAwMDEwNDEzNDg0MjInCiAgICB3aW5kb3cuX19vcmdJZF9fPSc3MDAwMDAwMTAzOTY0NDkxMicKICAgPC9zY3JpcHQ+PHNjcmlwdCBjcm9zc29yaWdpbj0iYW5vbnltb3VzIiB0eXBlPSJtb2R1bGUiIHNyYz0iaHR0cHM6Ly9kaXNrLjJnaXMuY29tL3dpZGdldC1jb25zdHJ1Y3Rvci9hc3NldHMvaWZyYW1lLmpzIj48L3NjcmlwdD48bGluayByZWw9Im1vZHVsZXByZWxvYWQiIGNyb3Nzb3JpZ2luPSJhbm9ueW1vdXMiIGhyZWY9Imh0dHBzOi8vZGlzay4yZ2lzLmNvbS93aWRnZXQtY29uc3RydWN0b3IvYXNzZXRzL2RlZmF1bHRzLmpzIj48L2xpbmsgcmVsPSJzdHlsZXNoZWV0IiBjcm9zc29yaWdpbj0iYW5vbnltb3VzIiBocmVmPSJodHRwczovL2Rpc2suMmdpcy5jb20vd2lkZ2V0LWNvbnN0cnVjdG9yL2Fzc2V0cy9kZWZhdWx0cy5jc3MiPjwvaGVhZD48Ym9keT48ZGl2IGlkPSJpZnJhbWUiPjwvZGl2PjwvYm9keT4=";
-    try {
-      iframe.contentWindow.document.open();
-      iframe.contentWindow.document.write(decodeURIComponent(escape(atob(payload))));
-      iframe.contentWindow.document.close();
-    } catch (err) {
-      // keep empty iframe shell; do not throw
-    }
-  }
-
   document.addEventListener("DOMContentLoaded", function () {
     initLightbox();
     document.querySelectorAll("[data-reviews-slider]").forEach(initSlider);
-    initLazy2gis(document.getElementById("gis-reviews"));
   });
 })();
