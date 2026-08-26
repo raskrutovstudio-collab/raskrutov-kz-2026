@@ -16,162 +16,53 @@
   <meta property="og:locale" content="ru_RU">
   <link href="assets/m-files.cdn1.cc/lpfile/favicon/favicon__q_1.png" type="image/png" rel="icon">
   <link href="favicon.ico" sizes="16x16 32x32 48x48" rel="icon" type="image/x-icon">
-  <link rel="preload" as="image" href="assets/img/perf/hero-lcp-780.avif" type="image/avif" media="(max-width: 767px)" fetchpriority="high">
-  <link rel="preload" as="image" href="assets/m-files.cdn1.cc/lpfile/6/e/e/6eea3ed3de3e5cbe118d06eb148fe963.webp" media="(min-width: 768px)" fetchpriority="high">
-  <link rel="preload" href="assets/m-files.cdn1.cc/web/user/fonts/montserrat/montserrat_normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" as="style" href="assets/css/home-clean-critical.v1.css?v=1">
+  <link rel="preload" as="image" href="assets/css/hero-home-mobile.webp" media="(max-width: 500px)" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/m-files.cdn1.cc/lpfile/6/e/e/6eea3ed3de3e5cbe118d06eb148fe963.webp" media="(min-width: 501px)" fetchpriority="high">
   <link rel="preload" href="assets/m-files.cdn1.cc/web/user/fonts/montserrat/montserrat_bold.woff2" as="font" type="font/woff2" crossorigin>
-  <style id="rk-critical">/* Above-fold critical — inline in index.html; keep tiny */
-@font-face{font-family:"Montserrat";src:url("assets/m-files.cdn1.cc/web/user/fonts/montserrat/montserrat_normal.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
-@font-face{font-family:"Montserrat";src:url("assets/m-files.cdn1.cc/web/user/fonts/montserrat/montserrat_bold.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
-@font-face{font-family:"Montserrat Fallback";src:local("Arial"),local("Helvetica Neue");size-adjust:107%;ascent-override:92%;descent-override:23%;line-gap-override:0%}
-:root{--rk-purple:#7f3ff2;--rk-link:#004f9a;--rk-text:#111;--rk-text-soft:#333;--rk-white:#fff;--rk-border:#e8e8ef;--rk-gutter:16px;--rk-container:1400px;--rk-font-head:Montserrat,"Montserrat Fallback",Arial,Helvetica,sans-serif;--rk-header-h:56px;--rk-header-desktop-height:64px}
-*,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body.rk-clean{margin:0;min-width:0;width:100%;color:var(--rk-text);font-family:var(--rk-font-head);font-size:13px;line-height:1.4;background:#fff;-webkit-font-smoothing:antialiased}
-img{max-width:100%;height:auto;display:block}
-a{color:var(--rk-link);text-decoration:none}
-button{font:inherit;cursor:pointer;border:none;background:none}
-.rk-container{width:min(100% - var(--rk-gutter)*2,var(--rk-container));margin-inline:auto}
-.rk-header{position:sticky;top:0;z-index:100;min-height:var(--rk-header-h);background:rgba(255,255,255,.96);border-bottom:1px solid var(--rk-border);backdrop-filter:blur(8px)}
-.rk-header__bar{display:grid;grid-template-columns:1fr auto;align-items:center;gap:12px;min-height:var(--rk-header-h);padding:8px 0;width:min(100% - var(--rk-gutter)*2,var(--rk-container));margin-inline:auto}
-.rk-logo img{width:min(180px,58vw);height:auto;aspect-ratio:211/49;object-fit:contain}
-.rk-nav,.rk-header__contacts{display:none}
-.rk-header__phone{white-space:nowrap;flex-shrink:0;font-weight:700;min-height:44px;display:inline-flex;align-items:center}
-.rk-burger{width:45px;height:45px;display:inline-flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;border-radius:8px;justify-self:end;grid-column:2}
-.rk-burger span{display:block;width:22px;height:2px;background:#111}
-.rk-mobile-nav{display:none}
-.rk-hero{position:relative;min-height:calc(100vh - var(--rk-header-h));min-height:calc(100svh - var(--rk-header-h));height:auto;padding:16px 0 28px;overflow:hidden;background:#fff}
-.rk-hero__bg{position:absolute;inset:0;z-index:0;overflow:hidden}
-.rk-hero__bg::after{content:"";position:absolute;inset:0;background:rgba(255,255,255,.42);pointer-events:none}
-.rk-hero__bg picture,.rk-hero__bg img{position:absolute;inset:0;display:block;width:100%;height:100%;margin:0;border:0;object-fit:cover;object-position:50% 100%}
-.rk-hero__stage{position:relative;z-index:1;display:flex;flex-direction:column;align-items:stretch;width:min(100% - var(--rk-gutter)*2,720px);height:auto;margin:0 auto}
-.rk-hero__title{order:1;margin:0 0 10px;font-weight:700;font-size:clamp(30px,9vw,38px);line-height:1.2;text-align:center;background-image:linear-gradient(260deg,rgb(223,98,226) 10%,rgb(106,92,234) 90%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
-.rk-hero__lead{order:2;margin:0 auto 12px;font-size:16px;line-height:1.5;text-align:center;color:#3a3a3a;max-width:54ch}
-.rk-hero__trusts{order:3;display:flex;flex-direction:row;align-items:flex-start;gap:8px;width:100%;margin:4px 0 14px}
-.rk-hero__trust{flex:1 1 0;min-width:0;display:flex;align-items:flex-start;gap:6px;font-weight:500;font-size:clamp(11px,2.8vw,13px);line-height:1.25;color:#111}
-.rk-check-ico{width:22px;height:22px;flex:0 0 auto;fill:#7f3ff2;margin-top:1px}
-.rk-hero__cta{order:4;display:inline-flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:48px;margin:0 0 10px;padding:12px 16px;border-radius:10px;font-weight:500;font-size:16px;line-height:1.2;text-decoration:none;border:none;cursor:pointer}
-.rk-hero__cta--primary{color:#fff;background:linear-gradient(270deg,rgb(223,98,226) 9%,rgb(106,92,234) 90%)}
-.rk-hero__cta--secondary{order:5;margin-bottom:16px;color:#004f9a;background:#fff;border:.8px solid rgba(30,30,30,.22);box-sizing:border-box}
-.rk-hero__ecosystem{order:6;display:flex;justify-content:center;width:min(100%,260px);margin:0 auto;aspect-ratio:531/470;pointer-events:none}
-.rk-hero__ecosystem-img{width:100%;height:auto;aspect-ratio:531/470;object-fit:contain}
-.rk-device,.rk-metric-card{display:none}
-.rk-sticky-cta{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:95;gap:8px;padding:8px 12px calc(8px + env(safe-area-inset-bottom,0px));background:rgba(255,255,255,.96);border-top:1px solid var(--rk-border)}
-.rk-sticky-cta__btn{flex:1;min-height:48px;display:inline-flex;align-items:center;justify-content:center;padding:10px 12px;border-radius:10px;font-weight:600;font-size:15px;color:#fff;text-decoration:none}
-.rk-sticky-cta__btn--call{background:linear-gradient(270deg,rgb(223,98,226) 9%,rgb(106,92,234) 90%)}
-.rk-sticky-cta__btn--wa{background:#0e7a4b;color:#fff}
-.rk-scroll-top,.rk-soc-widget{opacity:0;pointer-events:none}
-@media (min-width:391px) and (max-width:767px){:root{--rk-gutter:20px}}
-@media (min-width:1100px){
-:root{--rk-header-h:var(--rk-header-desktop-height);--rk-gutter:24px}
-.rk-header{min-height:var(--rk-header-desktop-height)}
-.rk-header__bar{grid-template-columns:17% 1fr 17%;min-height:var(--rk-header-desktop-height)}
-.rk-burger{display:none}
-.rk-nav,.rk-header__contacts{display:flex;align-items:center}
-.rk-nav{justify-content:center;flex-wrap:nowrap;gap:4px;min-width:0}
-.rk-nav a{display:inline-flex;align-items:center;white-space:nowrap;flex-shrink:0;min-height:44px;padding:8px 3px;font-size:13px;font-weight:500;color:#111}
-.rk-header__contacts{justify-content:flex-end;gap:10px}
-.rk-header__phone{white-space:nowrap;flex-shrink:0}
-.rk-logo img{width:211px;height:49px}
-.rk-sticky-cta{display:none}
-.rk-hero{min-height:0;padding:28px 0 40px}
-}
-@media (min-width:1400px){
-.rk-hero{height:628px;min-height:628px;padding:0;overflow:visible}
-.rk-hero__bg::after{display:none}
-.rk-hero__stage{display:block;width:1400px;height:628px}
-.rk-hero__title{position:absolute;top:21px;left:41px;width:545px;margin:0;font-size:36px;line-height:140%;text-align:left}
-.rk-hero__lead{position:absolute;top:148px;left:42px;width:574px;margin:0;font-size:18px;text-align:left}
-.rk-sticky-cta{display:none}
-}</style>
-  <link rel="stylesheet" href="assets/css/home-clean.css?v=39">
-  <noscript><link rel="stylesheet" href="assets/css/home-clean.css?v=39"></noscript>
+  <link rel="stylesheet" href="assets/css/home-clean-critical.v1.css?v=1">
+  <link rel="stylesheet" href="assets/css/home-clean-deferred.v1.css?v=2" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="assets/css/home-clean-deferred.v1.css?v=2"></noscript>
+  <link rel="stylesheet" href="assets/css/lead-forms.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="assets/css/lead-forms.css"></noscript>
   <script type="application/ld+json" data-schema="raskrutov">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": [
-        "Organization",
-        "ProfessionalService"
-      ],
+      "@type": "Organization",
       "@id": "https://raskrutov.kz/#organization",
       "name": "Raskrutov",
       "alternateName": "Raskrutov — экосистема цифрового роста бизнеса",
       "url": "https://raskrutov.kz/",
       "logo": {
         "@type": "ImageObject",
-        "@id": "https://raskrutov.kz/#logo",
         "url": "https://raskrutov.kz/assets/m-files.cdn1.cc/web/images/raskrutov/logo.png"
       },
-      "image": {
-        "@id": "https://raskrutov.kz/#logo"
-      },
-      "description": "Digital-агентство полного цикла: создание сайтов, SEO- и AEO-продвижение, контекстная реклама, CRM, автоматизация, обучение digital-навыкам и конструктор сайтов R-Builder.",
-      "email": "ceo@raskrutov.kz",
+      "description": "Digital-агентство полного цикла: создание сайтов, SEO и AEO-продвижение, контекстная реклама, CRM, обучение digital-навыкам и конструктор сайтов R-Builder.",
+      "email": "info@raskrutov.kz",
       "telephone": "+7 700 021 69 00",
-      "priceRange": "от 180 000 ₸",
-      "currenciesAccepted": "KZT",
       "address": {
         "@type": "PostalAddress",
         "addressCountry": "KZ",
-        "addressRegion": "Северо-Казахстанская область",
         "addressLocality": "Петропавловск",
         "streetAddress": "ул. М. Жумабаева, 109, 6 этаж, офис 606а"
       },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 54.8746,
-        "longitude": 69.135701
-      },
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-            "https://schema.org/Monday",
-            "https://schema.org/Tuesday",
-            "https://schema.org/Wednesday",
-            "https://schema.org/Thursday",
-            "https://schema.org/Friday"
-          ],
-          "opens": "10:00",
-          "closes": "19:00"
-        }
-      ],
-      "areaServed": {
-        "@type": "Country",
-        "name": "Казахстан"
-      },
-      "contactPoint": [
-        {
-          "@type": "ContactPoint",
-          "telephone": "+7 700 021 69 00",
-          "contactType": "customer service",
-          "availableLanguage": [
-            "Russian",
-            "Kazakh"
-          ],
-          "areaServed": "KZ"
-        }
-      ],
       "sameAs": [
         "https://www.instagram.com/raskrutov.kz/",
         "https://www.youtube.com/@raskrutov-kz",
         "https://t.me/Raskrutov_web",
-        "https://www.tiktok.com/@raskrutov.kz"
+        "https://www.tiktok.com/@raskrutov.kz",
+        "https://wa.me/77000216900"
       ],
       "knowsAbout": [
         "создание сайтов",
-        "разработка интернет-магазинов",
-        "SEO-продвижение",
-        "AEO-продвижение",
-        "оптимизация под AI-поиск",
+        "SEO",
+        "AEO",
         "контекстная реклама",
-        "лидогенерация",
         "CRM",
-        "автоматизация бизнеса",
         "digital-маркетинг",
-        "обучение digital-навыкам"
+        "обучение digital"
       ]
     },
     {
@@ -179,36 +70,71 @@ button{font:inherit;cursor:pointer;border:none;background:none}
       "@id": "https://raskrutov.kz/#website",
       "url": "https://raskrutov.kz/",
       "name": "Raskrutov",
-      "publisher": {
-        "@id": "https://raskrutov.kz/#organization"
+      "publisher": { "@id": "https://raskrutov.kz/#organization" },
+      "inLanguage": "ru"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://raskrutov.kz/"
+        }
+      ]
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://raskrutov.kz/#localbusiness",
+      "name": "Raskrutov — digital-агентство",
+      "image": "https://raskrutov.kz/assets/m-files.cdn1.cc/web/images/raskrutov/logo.png",
+      "url": "https://raskrutov.kz/",
+      "telephone": "+7 700 021 69 00",
+      "email": "info@raskrutov.kz",
+      "priceRange": "от 180 000 KZT",
+      "currenciesAccepted": "KZT",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "KZ",
+        "addressLocality": "Петропавловск",
+        "streetAddress": "ул. М. Жумабаева, 109, 6 этаж, офис 606а"
       },
-      "inLanguage": "ru-KZ"
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 54.8753,
+        "longitude": 69.162
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "10:00",
+          "closes": "19:00"
+        }
+      ],
+      "areaServed": { "@type": "Country", "name": "Казахстан" },
+      "sameAs": [
+        "https://www.instagram.com/raskrutov.kz/",
+        "https://www.youtube.com/@raskrutov-kz",
+        "https://t.me/Raskrutov_web",
+        "https://www.tiktok.com/@raskrutov.kz",
+        "https://wa.me/77000216900"
+      ],
+      "parentOrganization": { "@id": "https://raskrutov.kz/#organization" }
     },
     {
       "@type": "WebPage",
-      "@id": "https://raskrutov.kz/#webpage",
+      "@id": "https://raskrutov.kz/",
       "url": "https://raskrutov.kz/",
       "name": "Raskrutov — экосистема цифрового роста бизнеса",
-      "description": "Raskrutov объединяет создание сайтов, SEO, AEO, рекламу, CRM, автоматизацию, обучение и R-Builder в единую digital-систему для роста бизнеса.",
-      "isPartOf": {
-        "@id": "https://raskrutov.kz/#website"
-      },
-      "about": {
-        "@id": "https://raskrutov.kz/#organization"
-      },
-      "mainEntity": {
-        "@id": "https://raskrutov.kz/#organization"
-      },
-      "inLanguage": "ru-KZ"
+      "isPartOf": { "@id": "https://raskrutov.kz/#website" },
+      "about": { "@id": "https://raskrutov.kz/#organization" },
+      "inLanguage": "ru",
+      "description": "Raskrutov объединяет создание сайтов, SEO, AEO, рекламу, CRM, автоматизацию, обучение и R-Builder в единую digital-систему для роста бизнеса."
     },
     {
       "@type": "FAQPage",
-      "@id": "https://raskrutov.kz/#faq",
-      "url": "https://raskrutov.kz/#faq",
-      "isPartOf": {
-        "@id": "https://raskrutov.kz/#webpage"
-      },
-      "inLanguage": "ru-KZ",
       "mainEntity": [
         {
           "@type": "Question",
@@ -278,161 +204,21 @@ button{font:inherit;cursor:pointer;border:none;background:none}
     },
     {
       "@type": "ItemList",
-      "@id": "https://raskrutov.kz/#services",
       "name": "Услуги Raskrutov",
-      "url": "https://raskrutov.kz/#services",
-      "numberOfItems": 8,
       "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "item": {
-            "@type": "Service",
-            "@id": "https://raskrutov.kz/web-studiya/sozdanie-saitov/#service",
-            "name": "Создание сайтов",
-            "serviceType": "Создание сайтов",
-            "url": "https://raskrutov.kz/web-studiya/sozdanie-saitov/",
-            "provider": {
-              "@id": "https://raskrutov.kz/#organization"
-            },
-            "areaServed": {
-              "@type": "Country",
-              "name": "Казахстан"
-            }
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "item": {
-            "@type": "Service",
-            "@id": "https://raskrutov.kz/web-studiya/dizayn/#service",
-            "name": "Услуги дизайнера",
-            "serviceType": "Веб-дизайн и графический дизайн",
-            "url": "https://raskrutov.kz/web-studiya/dizayn/",
-            "provider": {
-              "@id": "https://raskrutov.kz/#organization"
-            },
-            "areaServed": {
-              "@type": "Country",
-              "name": "Казахстан"
-            }
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "item": {
-            "@type": "Service",
-            "@id": "https://raskrutov.kz/web-studiya/seo-prodvizhenie/#service",
-            "name": "SEO-продвижение сайтов",
-            "serviceType": "SEO-продвижение",
-            "url": "https://raskrutov.kz/web-studiya/seo-prodvizhenie/",
-            "provider": {
-              "@id": "https://raskrutov.kz/#organization"
-            },
-            "areaServed": {
-              "@type": "Country",
-              "name": "Казахстан"
-            }
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "item": {
-            "@type": "Service",
-            "@id": "https://raskrutov.kz/web-studiya/aeo-prodvizhenie/#service",
-            "name": "AEO-продвижение",
-            "serviceType": "Оптимизация сайта под AI-поиск и системы генеративных ответов",
-            "url": "https://raskrutov.kz/web-studiya/aeo-prodvizhenie/",
-            "provider": {
-              "@id": "https://raskrutov.kz/#organization"
-            },
-            "areaServed": {
-              "@type": "Country",
-              "name": "Казахстан"
-            }
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "item": {
-            "@type": "Service",
-            "@id": "https://raskrutov.kz/web-studiya/kontekstnaya-reklama/#service",
-            "name": "Контекстная реклама",
-            "serviceType": "Настройка и ведение контекстной рекламы",
-            "url": "https://raskrutov.kz/web-studiya/kontekstnaya-reklama/",
-            "provider": {
-              "@id": "https://raskrutov.kz/#organization"
-            },
-            "areaServed": {
-              "@type": "Country",
-              "name": "Казахстан"
-            }
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 6,
-          "item": {
-            "@type": "Service",
-            "@id": "https://raskrutov.kz/web-studiya/lidogeneratsiya/#service",
-            "name": "Лидогенерация",
-            "serviceType": "Привлечение целевых обращений и заявок",
-            "url": "https://raskrutov.kz/web-studiya/lidogeneratsiya/",
-            "provider": {
-              "@id": "https://raskrutov.kz/#organization"
-            },
-            "areaServed": {
-              "@type": "Country",
-              "name": "Казахстан"
-            }
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 7,
-          "item": {
-            "@type": "Service",
-            "@id": "https://raskrutov.kz/web-studiya/podderzhka-saytov/#service",
-            "name": "Поддержка сайтов",
-            "serviceType": "Техническая поддержка и развитие сайтов",
-            "url": "https://raskrutov.kz/web-studiya/podderzhka-saytov/",
-            "provider": {
-              "@id": "https://raskrutov.kz/#organization"
-            },
-            "areaServed": {
-              "@type": "Country",
-              "name": "Казахстан"
-            }
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 8,
-          "item": {
-            "@type": "Service",
-            "@id": "https://raskrutov.kz/web-studiya/digital-konsalting/#service",
-            "name": "Digital-консалтинг",
-            "serviceType": "Digital-стратегия, аудит и консультации",
-            "url": "https://raskrutov.kz/web-studiya/digital-konsalting/",
-            "provider": {
-              "@id": "https://raskrutov.kz/#organization"
-            },
-            "areaServed": {
-              "@type": "Country",
-              "name": "Казахстан"
-            }
-          }
-        }
+        { "@type": "ListItem", "position": 1, "item": { "@type": "Service", "name": "Создание сайтов", "url": "https://raskrutov.kz/sozdanie-saitov", "provider": { "@id": "https://raskrutov.kz/#organization" }, "areaServed": { "@type": "Country", "name": "Казахстан" }, "serviceType": "Создание сайтов" } },
+        { "@type": "ListItem", "position": 2, "item": { "@type": "Service", "name": "Услуги дизайнера", "url": "https://raskrutov.kz/dizayn", "provider": { "@id": "https://raskrutov.kz/#organization" }, "areaServed": { "@type": "Country", "name": "Казахстан" }, "serviceType": "Услуги дизайнера" } },
+        { "@type": "ListItem", "position": 3, "item": { "@type": "Service", "name": "SEO-продвижение", "url": "https://raskrutov.kz/seo-prodvizhenie", "provider": { "@id": "https://raskrutov.kz/#organization" }, "areaServed": { "@type": "Country", "name": "Казахстан" }, "serviceType": "SEO-продвижение" } },
+        { "@type": "ListItem", "position": 4, "item": { "@type": "Service", "name": "AEO — оптимизация под ИИ-поиск", "url": "https://raskrutov.kz/aeo-prodvizhenie", "provider": { "@id": "https://raskrutov.kz/#organization" }, "areaServed": { "@type": "Country", "name": "Казахстан" }, "serviceType": "AEO — оптимизация под ИИ-поиск" } },
+        { "@type": "ListItem", "position": 5, "item": { "@type": "Service", "name": "Контекстная реклама", "url": "https://raskrutov.kz/kontekstnaya-reklama", "provider": { "@id": "https://raskrutov.kz/#organization" }, "areaServed": { "@type": "Country", "name": "Казахстан" }, "serviceType": "Контекстная реклама" } },
+        { "@type": "ListItem", "position": 6, "item": { "@type": "Service", "name": "Лидогенерация", "url": "https://raskrutov.kz/lidogeneratsiya", "provider": { "@id": "https://raskrutov.kz/#organization" }, "areaServed": { "@type": "Country", "name": "Казахстан" }, "serviceType": "Лидогенерация" } },
+        { "@type": "ListItem", "position": 7, "item": { "@type": "Service", "name": "Поддержка сайтов", "url": "https://raskrutov.kz/podderzhka-saytov", "provider": { "@id": "https://raskrutov.kz/#organization" }, "areaServed": { "@type": "Country", "name": "Казахстан" }, "serviceType": "Поддержка сайтов" } },
+        { "@type": "ListItem", "position": 8, "item": { "@type": "Service", "name": "Digital-консалтинг", "url": "https://raskrutov.kz/digital-konsalting", "provider": { "@id": "https://raskrutov.kz/#organization" }, "areaServed": { "@type": "Country", "name": "Казахстан" }, "serviceType": "Digital-консалтинг" } }
       ]
     }
   ]
 }
-</script>
-
+  </script>
 </head>
 <body class="rk-clean">
   <!-- Yandex.Metrika counter -->
@@ -440,7 +226,7 @@ button{font:inherit;cursor:pointer;border:none;background:none}
   <header class="rk-header">
     <div class="rk-container rk-header__bar">
       <a class="rk-logo" href="https://raskrutov.kz/" aria-label="Raskrutov — на главную">
-        <img src="assets/img/perf/logo-180.webp" srcset="assets/img/perf/logo-180.webp 180w, assets/img/perf/logo-211.webp 211w, assets/img/perf/logo-360.webp 360w" sizes="(max-width: 767px) 180px, 211px" alt="Raskrutov" width="211" height="49" decoding="async">
+        <img src="assets/m-files.cdn1.cc/lpfile/8/1/a/81a3fe2ab76d8a7d4df2ea1900ce0265/-/crop/0x0x955x221/-/resize/211/-/scale/x3/-/resize/1920/f.webp" alt="Raskrutov" width="211" height="49" decoding="async" fetchpriority="low">
       </a>
       <nav class="rk-nav" aria-label="Основное меню">
         <a href="/" aria-current="page">Главная</a>
@@ -486,28 +272,25 @@ button{font:inherit;cursor:pointer;border:none;background:none}
     <section class="rk-hero" aria-label="Главный экран">
       <div class="rk-hero__bg" aria-hidden="true">
         <picture>
-          <source media="(max-width: 767px)" type="image/avif" srcset="assets/img/perf/hero-lcp-780.avif" width="780" height="359">
-          <source media="(max-width: 767px)" type="image/webp" srcset="assets/img/perf/hero-lcp-780.webp" width="780" height="359">
-          <img src="assets/m-files.cdn1.cc/lpfile/6/e/e/6eea3ed3de3e5cbe118d06eb148fe963.webp" alt="" width="1536" height="707" fetchpriority="high" loading="eager" decoding="sync">
+          <source media="(max-width: 500px)" srcset="assets/css/hero-home-mobile.webp" type="image/webp" width="1100" height="506">
+          <img src="assets/m-files.cdn1.cc/lpfile/6/e/e/6eea3ed3de3e5cbe118d06eb148fe963.webp" alt="" width="1536" height="707" decoding="async" fetchpriority="high" loading="eager">
         </picture>
       </div>
       <div class="rk-hero__stage">
         <h1 class="rk-hero__title">Raskrutov - экосистема цифрового роста бизнеса</h1>
         <p class="rk-hero__lead">Создаём сайты, продвигаем бизнес, запускаем рекламу, внедряем CRM, автоматизируем продажи, обучаем digital-навыкам.</p>
 
-        <div class="rk-hero__trusts">
-          <div class="rk-hero__trust rk-hero__trust--1">
-            <svg class="rk-check-ico" viewBox="0 0 52 52" aria-hidden="true"><path d="M26 0C11.664 0 0 11.663 0 26s11.664 26 26 26 26-11.663 26-26S40.336 0 26 0zm0 50C12.767 50 2 39.233 2 26S12.767 2 26 2s24 10.767 24 24-10.767 24-24 24z"/><path d="M38.252 15.336l-15.369 17.29-9.259-7.407a1 1 0 10-1.249 1.562l10 8a1 1 0 001.332-.18l16-18a1 1 0 10-1.455-1.265z"/></svg>
-            <span>Комплексный подход</span>
-          </div>
-          <div class="rk-hero__trust rk-hero__trust--2">
-            <svg class="rk-check-ico" viewBox="0 0 52 52" aria-hidden="true"><path d="M26 0C11.664 0 0 11.663 0 26s11.664 26 26 26 26-11.663 26-26S40.336 0 26 0zm0 50C12.767 50 2 39.233 2 26S12.767 2 26 2s24 10.767 24 24-10.767 24-24 24z"/><path d="M38.252 15.336l-15.369 17.29-9.259-7.407a1 1 0 10-1.249 1.562l10 8a1 1 0 001.332-.18l16-18a1 1 0 10-1.455-1.265z"/></svg>
-            <span>Прозрачная аналитика</span>
-          </div>
-          <div class="rk-hero__trust rk-hero__trust--3">
-            <svg class="rk-check-ico" viewBox="0 0 52 52" aria-hidden="true"><path d="M26 0C11.664 0 0 11.663 0 26s11.664 26 26 26 26-11.663 26-26S40.336 0 26 0zm0 50C12.767 50 2 39.233 2 26S12.767 2 26 2s24 10.767 24 24-10.767 24-24 24z"/><path d="M38.252 15.336l-15.369 17.29-9.259-7.407a1 1 0 10-1.249 1.562l10 8a1 1 0 001.332-.18l16-18a1 1 0 10-1.455-1.265z"/></svg>
-            <span>Гарантируем результат</span>
-          </div>
+        <div class="rk-hero__trust rk-hero__trust--1">
+          <svg class="rk-check-ico" viewBox="0 0 52 52" aria-hidden="true"><path d="M26 0C11.664 0 0 11.663 0 26s11.664 26 26 26 26-11.663 26-26S40.336 0 26 0zm0 50C12.767 50 2 39.233 2 26S12.767 2 26 2s24 10.767 24 24-10.767 24-24 24z"/><path d="M38.252 15.336l-15.369 17.29-9.259-7.407a1 1 0 10-1.249 1.562l10 8a1 1 0 001.332-.18l16-18a1 1 0 10-1.455-1.265z"/></svg>
+          <span>Комплексный подход</span>
+        </div>
+        <div class="rk-hero__trust rk-hero__trust--2">
+          <svg class="rk-check-ico" viewBox="0 0 52 52" aria-hidden="true"><path d="M26 0C11.664 0 0 11.663 0 26s11.664 26 26 26 26-11.663 26-26S40.336 0 26 0zm0 50C12.767 50 2 39.233 2 26S12.767 2 26 2s24 10.767 24 24-10.767 24-24 24z"/><path d="M38.252 15.336l-15.369 17.29-9.259-7.407a1 1 0 10-1.249 1.562l10 8a1 1 0 001.332-.18l16-18a1 1 0 10-1.455-1.265z"/></svg>
+          <span>Прозрачная аналитика</span>
+        </div>
+        <div class="rk-hero__trust rk-hero__trust--3">
+          <svg class="rk-check-ico" viewBox="0 0 52 52" aria-hidden="true"><path d="M26 0C11.664 0 0 11.663 0 26s11.664 26 26 26 26-11.663 26-26S40.336 0 26 0zm0 50C12.767 50 2 39.233 2 26S12.767 2 26 2s24 10.767 24 24-10.767 24-24 24z"/><path d="M38.252 15.336l-15.369 17.29-9.259-7.407a1 1 0 10-1.249 1.562l10 8a1 1 0 001.332-.18l16-18a1 1 0 10-1.455-1.265z"/></svg>
+          <span>Гарантируем результат</span>
         </div>
 
         <button class="rk-hero__cta rk-hero__cta--primary" type="button" data-rk-open-modal="rk-modal-lead">
@@ -521,14 +304,14 @@ button{font:inherit;cursor:pointer;border:none;background:none}
 
         <div class="rk-hero__ecosystem">
           <picture>
-            <source media="(max-width: 767px)" srcset="assets/img/perf/hero-ecosystem-280.webp" width="280" height="248">
+            <source media="(max-width: 500px)" srcset="assets/img/hero-ecosystem-mobile.webp" type="image/webp" width="451" height="400">
             <img
               class="rk-hero__ecosystem-img"
-              src="assets/img/perf/hero-ecosystem-560.webp"
+              src="assets/img/hero-ecosystem.webp"
               alt="Экосистема цифрового роста Raskrutov"
               width="531"
               height="470"
-              loading="lazy"
+              loading="eager"
               decoding="async"
               fetchpriority="low"
             >
@@ -603,40 +386,13 @@ button{font:inherit;cursor:pointer;border:none;background:none}
     <section class="rk-section rk-section--tight" aria-label="Партнёрские статусы">
       <div class="rk-container rk-badges">
         <a class="rk-badge-card" href="#badges" id="badges">
-          <img
-            src="assets/img/perf/badge-astana-280.webp"
-            srcset="assets/img/perf/badge-astana-280.webp 280w, assets/img/perf/badge-astana-560.webp 560w"
-            sizes="(max-width: 767px) 255px, 280px"
-            alt="Raskrutov резиндент Astana Hub"
-            width="560"
-            height="260"
-            loading="lazy"
-            decoding="async"
-          >
+          <img src="assets/m-files.cdn1.cc/lpfile/6/1/b/61be3ed1ac9f22c625dcd8063d66537b/-/crop/25x0x1365x634/-/resize/527/-/scale/x3/f__q_63750526.webp" alt="Raskrutov резиндент Astana Hub" width="527" height="245" loading="lazy">
         </a>
         <figure class="rk-badge-card">
-          <img
-            src="assets/img/perf/badge-cert-280.webp"
-            srcset="assets/img/perf/badge-cert-280.webp 280w, assets/img/perf/badge-cert-560.webp 560w"
-            sizes="(max-width: 767px) 255px, 280px"
-            alt="Свидетельство регистрации в Астана Хаб"
-            width="560"
-            height="396"
-            loading="lazy"
-            decoding="async"
-          >
+          <img src="assets/m-files.cdn1.cc/lpfile/8/a/9/8a9295d7d2c61d6ba474e83ff6e56aaf/-/crop/0x0x1316x929/-/resize/348/-/scale/x3/-/resize/1920/f__q_43722790.webp" alt="Свидетельство регистрации в Астана Хаб" width="348" height="246" loading="lazy">
         </figure>
         <figure class="rk-badge-card">
-          <img
-            src="assets/img/perf/badge-amocrm-280.webp"
-            srcset="assets/img/perf/badge-amocrm-280.webp 280w, assets/img/perf/badge-amocrm-560.webp 560w"
-            sizes="(max-width: 767px) 255px, 280px"
-            alt="Raskrutov Партнёр amo CRM"
-            width="560"
-            height="314"
-            loading="lazy"
-            decoding="async"
-          >
+          <img src="assets/m-files.cdn1.cc/lpfile/1/0/a/10a6848446203749a81f7e7c2ad273e9/-/crop/0x0x1600x896/-/resize/439/-/scale/x3/-/resize/1920/f__q_99007932.webp" alt="Raskrutov Партнёр amo CRM" width="439" height="246" loading="lazy">
         </figure>
       </div>
     </section>
@@ -965,6 +721,23 @@ button{font:inherit;cursor:pointer;border:none;background:none}
         <h2 class="rk-h2">О компании</h2>
         <p class="rk-lead">Raskrutov — digital-агентство полного цикла. Помогаем бизнесу расти в онлайне и достигать большего</p>
 
+        <article class="rk-about-card">
+          <header class="rk-about-card__head">
+            <img class="rk-about-card__icon" src="assets/css/perf-img/37w2x_f__q_15594404.webp" alt="" width="37" height="62" loading="lazy">
+            <h3 class="rk-h3">О нас</h3>
+            <a class="rk-about-card__more" href="/o-kompanii/o-nas/" aria-label="Перейти в раздел О нас">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </header>
+          <p class="rk-about-card__text"><strong>Raskrutov - digital-агентство полного цикла.</strong></p>
+          <p class="rk-about-card__text">Мы создаём эффективные digital-решения, которые помогают брендам и компаниям привлекать клиентов, увеличивать продажи и занимать лидирующие позиции в своей нише.</p>
+          <p class="rk-about-card__text">Объединяем стратегию, маркетинг, технологии и аналитику в единую систему. Сопровождаем бизнес на всех этапах цифровой трансформации - от идеи и разработки до масштабирования, продвижения и автоматизации процессов.</p>
+          <p class="rk-about-card__text">Наша цель - быть надёжным партнёром для бизнеса, который хочет расти системно, измеримо и прибыльно.</p>
+          <footer class="rk-about-card__foot">
+            <a href="/o-kompanii/o-nas/">Подробнее о компании ➔</a>
+          </footer>
+        </article>
+
         <div class="rk-about-stats">
           <article class="rk-about-stat">
             <img src="assets/css/perf-img/50w2x_f__q_656807.webp" alt="" width="50" height="62" loading="lazy">
@@ -977,136 +750,6 @@ button{font:inherit;cursor:pointer;border:none;background:none}
           <article class="rk-about-stat">
             <img src="assets/css/perf-img/51w2x_f__q_5287566.webp" alt="" width="51" height="62" loading="lazy">
             <p class="rk-about-stat__text"><strong>7000+</strong> успешных проектов</p>
-          </article>
-        </div>
-
-        <div class="rk-about-grid">
-          <article class="rk-about-card">
-            <header class="rk-about-card__head">
-              <img class="rk-about-card__icon" src="assets/css/perf-img/37w2x_f__q_15594404.webp" alt="" width="37" height="62" loading="lazy">
-              <h3 class="rk-h3">О нас</h3>
-              <a class="rk-about-card__more" href="/o-kompanii/o-nas/" aria-label="Перейти в раздел О нас">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-              </a>
-            </header>
-            <p class="rk-about-card__text">Мы создаем эффективные digital-решения, которые помогают брендам привлекать клиентов, увеличивать продажи и занимать лидерские позиции в своей нише. Наша миссия — быть надежным партнёром и драйвером роста для каждого клиента.</p>
-            <footer class="rk-about-card__foot">
-              <a href="/o-kompanii/o-nas/">Подробнее о компании ➔</a>
-            </footer>
-          </article>
-
-          <article class="rk-about-card">
-            <header class="rk-about-card__head">
-              <img class="rk-about-card__icon" src="assets/css/perf-img/41w2x_f__q_15594404.webp" alt="" width="41" height="62" loading="lazy">
-              <h3 class="rk-h3">Команда</h3>
-              <a class="rk-about-card__more" href="/o-kompanii/komanda/" aria-label="Перейти в раздел Команда">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-              </a>
-            </header>
-            <div class="rk-about-team">
-              <figure class="rk-about-person">
-                <img src="assets/m-files.cdn1.cc/lpfile/4/c/d/4cd3c380920339e3b4f5ffa3111357a1/-/crop/211x11x217x247/-/resize/149/-/resize/1920/f__q_6285402.webp" alt="Даниил Инжеватов" width="122" height="122" loading="lazy">
-                <figcaption><strong>Даниил Инжеватов</strong><span>CEO</span></figcaption>
-              </figure>
-              <figure class="rk-about-person">
-                <img src="assets/m-files.cdn1.cc/lpfile/f/9/5/f9507abf952e719ba94e80eb7db85536/-/crop/154x251x796x909/-/resize/149/-/resize/1920/f__q_86409101.webp" alt="Степан Верховых" width="122" height="122" loading="lazy">
-                <figcaption><strong>Степан Верховых</strong><span>Tech Lead</span></figcaption>
-              </figure>
-              <figure class="rk-about-person">
-                <img src="assets/m-files.cdn1.cc/lpfile/1/3/9/139902a488e696e0bf9d66931fa77e3d/-/crop/24x0x596x640/-/resize/149/-/resize/1920/f__q_44930358.webp" alt="Александр Коновалов" width="122" height="122" loading="lazy">
-                <figcaption><strong>Александр Коновалов</strong><span>SEO Lead</span></figcaption>
-              </figure>
-              <figure class="rk-about-person">
-                <img src="assets/m-files.cdn1.cc/lpfile/f/f/c/ffc23c6f23aeebe9f48ac713fc1f19a5/-/crop/0x126x941x1009/-/resize/149/-/resize/1920/f__q_1026310.webp" alt="Ксения Кулик" width="122" height="122" loading="lazy">
-                <figcaption><strong>Ксения Кулик</strong><span>Web-master</span></figcaption>
-              </figure>
-            </div>
-            <footer class="rk-about-card__foot">
-              <a href="/o-kompanii/komanda/">Смотреть всю команду ➔</a>
-            </footer>
-          </article>
-
-          <article class="rk-about-card">
-            <header class="rk-about-card__head">
-              <img class="rk-about-card__icon" src="assets/css/perf-img/42w2x_f__q_68035683.webp" alt="" width="42" height="62" loading="lazy">
-              <h3 class="rk-h3">Благодарственные письма</h3>
-              <a class="rk-about-card__more" href="/o-kompanii/blagodarstvennye-pisma/" aria-label="Перейти в раздел Благодарственные письма">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-              </a>
-            </header>
-            <div class="rk-about-letters">
-              <img src="assets/m-files.cdn1.cc/lpfile/1/f/9/1f94f922bceb0e18774002fc68f6ad3d/-/crop/0x65x905x1167/-/resize/97/-/resize/1920/f__q_43601616.webp" alt="Благодарственное письмо" width="97" height="125" loading="lazy">
-              <img src="assets/m-files.cdn1.cc/lpfile/9/9/2/9923b38fdf8891afdc551544d366a7d8/-/crop/0x0x945x1269/-/resize/93/-/resize/1920/f__q_97118766.webp" alt="Благодарственное письмо ОВК-САНТЕХ" width="93" height="125" loading="lazy">
-              <img src="assets/m-files.cdn1.cc/lpfile/4/0/f/40ff175497408df50d99e35d0490535b/-/crop/0x40x790x1007/-/resize/98/-/resize/1920/f__q_31201040.webp" alt="Благодарственное письмо ГЕРВЕНТ РУС" width="98" height="125" loading="lazy">
-            </div>
-            <footer class="rk-about-card__foot">
-              <a href="/o-kompanii/blagodarstvennye-pisma/">Смотреть все письма ➔</a>
-            </footer>
-          </article>
-
-          <article class="rk-about-card">
-            <header class="rk-about-card__head">
-              <img class="rk-about-card__icon" src="assets/css/perf-img/43w2x_f__q_27142004.webp" alt="" width="43" height="62" loading="lazy">
-              <h3 class="rk-h3">Наши клиенты</h3>
-              <a class="rk-about-card__more" href="/o-kompanii/klienty/" aria-label="Перейти в раздел Наши клиенты">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-              </a>
-            </header>
-            <div class="rk-about-clients">
-              <img src="assets/m-files.cdn1.cc/lpfile/6/1/8/618c7931091fff88c238fa3c7b50add6/-/crop/0x0x1273x514/-/resize/308/f__q_3985303.webp" alt="Логотипы клиентов Raskrutov" width="308" height="124" loading="lazy">
-            </div>
-            <footer class="rk-about-card__foot">
-              <a href="/o-kompanii/klienty/">Все клиенты ➔</a>
-            </footer>
-          </article>
-
-          <article class="rk-about-card" id="blog">
-            <header class="rk-about-card__head">
-              <img class="rk-about-card__icon" src="assets/css/perf-img/42w2x_f__q_2974550.webp" alt="" width="42" height="62" loading="lazy">
-              <h3 class="rk-h3">Блог</h3>
-              <a class="rk-about-card__more" href="/o-kompanii/blog/" aria-label="Перейти в блог">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-              </a>
-            </header>
-            <div class="rk-about-posts">
-              <a class="rk-about-post" href="/o-kompanii/blog/">
-                <img src="assets/m-files.cdn1.cc/lpfile/3/a/2/3a2682d1c8a9511832a12445ac5099bc/-/crop/0x27x666x326/-/resize/122/-/resize/1920/f__q_5542848.webp" alt="" width="117" height="60" loading="lazy">
-                <span class="rk-about-post__title">Как мы увеличили трафик интернет магазина в 3 раза</span>
-                <time datetime="2026-04-22">22 апреля 2026</time>
-              </a>
-              <a class="rk-about-post" href="/o-kompanii/blog/">
-                <img src="assets/m-files.cdn1.cc/lpfile/b/7/7/b77580cbf90c5ab90d07dcbaa8370fc9/-/crop/0x27x666x326/-/resize/123/-/resize/1920/f__q_93280917.webp" alt="" width="118" height="60" loading="lazy">
-                <span class="rk-about-post__title">Тренды digital-маркетинга в 2025 году</span>
-                <time datetime="2025-06-10">10 июня 2025</time>
-              </a>
-              <a class="rk-about-post" href="/o-kompanii/blog/">
-                <img src="assets/m-files.cdn1.cc/lpfile/2/c/d/2cd867b62a5abbdd3143a07109db8270/-/crop/0x22x666x330/-/resize/120/-/resize/1920/f__q_33333258.webp" alt="" width="120" height="60" loading="lazy">
-                <span class="rk-about-post__title">SEO-продвижение: что работает сегодня</span>
-                <time datetime="2026-05-30">30 мая 2026</time>
-              </a>
-            </div>
-            <footer class="rk-about-card__foot">
-              <a href="/o-kompanii/blog/">Все статьи ➔</a>
-            </footer>
-          </article>
-
-          <article class="rk-about-card" id="vacancies">
-            <header class="rk-about-card__head">
-              <img class="rk-about-card__icon" src="assets/css/perf-img/41w2x_f__q_60312686.webp" alt="" width="41" height="62" loading="lazy">
-              <h3 class="rk-h3">Вакансии</h3>
-              <a class="rk-about-card__more" href="/o-kompanii/vakansii/" aria-label="Перейти в раздел Вакансии">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-              </a>
-            </header>
-            <p class="rk-about-card__text">Мы всегда ищем талантливых и увлечённых людей, готовых развиваться вместе с нами</p>
-            <div class="rk-about-vacancies">
-              <a class="rk-about-chip" href="/o-kompanii/vakansii/">Специалист по контекстной рекламе</a>
-              <a class="rk-about-chip" href="/o-kompanii/vakansii/">SEO-Специалист</a>
-              <a class="rk-about-chip" href="/o-kompanii/vakansii/">Веб-дизайнер</a>
-            </div>
-            <footer class="rk-about-card__foot">
-              <a href="/o-kompanii/vakansii/">Все вакансии ➔</a>
-            </footer>
           </article>
         </div>
       </div>
@@ -1200,6 +843,7 @@ button{font:inherit;cursor:pointer;border:none;background:none}
               <footer class="rk-partners-agency__foot">
                 <a href="/partneram/dlya-reklamnyh-agentstv/">Узнать больше ➔</a>
               </footer>
+              <img class="rk-partners-agency__illus" src="assets/m-files.cdn1.cc/lpfile/c/b/1/cb1307e899ed1781f977ac04b5bec3ed/-/crop/38x0x450x500/-/resize/128/-/resize/1920/f__q_16636490.webp" alt="" width="128" height="142" loading="lazy">
             </article>
           </div>
         </div>
@@ -1321,7 +965,6 @@ button{font:inherit;cursor:pointer;border:none;background:none}
               data-lat="54.8746"
               data-lon="69.135701"
               data-zoom="16"
-              role="region"
               aria-label="Карта офиса Raskrutov"
             ></div>
             <div class="rk-contacts-social">
@@ -1350,11 +993,6 @@ button{font:inherit;cursor:pointer;border:none;background:none}
       </div>
     </section>
   </main>
-
-  <nav class="rk-sticky-cta" aria-label="Быстрая связь">
-    <a class="rk-sticky-cta__btn rk-sticky-cta__btn--call" href="tel:+77000216900">Позвонить</a>
-    <a class="rk-sticky-cta__btn rk-sticky-cta__btn--wa" href="https://wa.me/77000216900" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-  </nav>
 
   <button class="rk-scroll-top" type="button" data-rk-scroll-top aria-label="Наверх">
     <span class="rk-scroll-top__icon" aria-hidden="true"></span>
@@ -1450,33 +1088,41 @@ button{font:inherit;cursor:pointer;border:none;background:none}
 
   <script>
     window.YANDEX_METRIKA_ID = 101127167;
-    (function (m, e, t, r, i, k, a) {
-      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments); };
-      m[i].l = 1 * new Date();
-      for (var j = 0; j < document.scripts.length; j++) {
-        if (document.scripts[j].src === r) { return; }
+    (function () {
+      function bootMetrika() {
+        if (window.__rkMetrikaBooted) return;
+        window.__rkMetrikaBooted = true;
+        (function (m, e, t, r, i, k, a) {
+          m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments); };
+          m[i].l = 1 * new Date();
+          for (var j = 0; j < document.scripts.length; j++) {
+            if (document.scripts[j].src === r) { return; }
+          }
+          k = e.createElement(t);
+          a = e.getElementsByTagName(t)[0];
+          k.async = 1;
+          k.src = r;
+          a.parentNode.insertBefore(k, a);
+        })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+        ym(101127167, "init", {
+          clickmap: true,
+          trackLinks: true,
+          accurateTrackBounce: true,
+          webvisor: true
+        });
       }
-      function inject() {
-        k = e.createElement(t);
-        a = e.getElementsByTagName(t)[0];
-        k.async = 1;
-        k.src = r;
-        a.parentNode.insertBefore(k, a);
+      function schedule() {
+        if ("requestIdleCallback" in window) {
+          requestIdleCallback(bootMetrika, { timeout: 4000 });
+        } else {
+          setTimeout(bootMetrika, 2000);
+        }
       }
-      if ("requestIdleCallback" in m) {
-        m.requestIdleCallback(inject, { timeout: 1800 });
-      } else {
-        m.addEventListener("load", function () { setTimeout(inject, 1); });
-      }
-    })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-    ym(101127167, "init", {
-      clickmap: true,
-      trackLinks: true,
-      accurateTrackBounce: true,
-      webvisor: true
-    });
+      if (document.readyState === "complete") schedule();
+      else window.addEventListener("load", schedule, { once: true });
+    })();
   </script>
-  <script src="assets/js/home-clean.js?v=20" defer></script>
+  <script src="assets/js/home-clean.js?v=21" defer></script>
   <script src="assets/js/lead-forms.js" defer></script>
 </body>
 </html>
