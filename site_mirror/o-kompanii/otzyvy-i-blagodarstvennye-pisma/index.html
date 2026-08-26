@@ -21,11 +21,14 @@
   <link href="../../assets/m-files.cdn1.cc/lpfile/favicon/favicon__q_1.png" type="image/png" rel="icon">
   <link href="../../favicon.ico" sizes="16x16 32x32 48x48" rel="icon" type="image/x-icon">
   <link rel="preload" href="../../assets/m-files.cdn1.cc/web/user/fonts/montserrat/montserrat_bold.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="../../assets/img/reviews/hero-laptop-640.webp" as="image" type="image/webp" fetchpriority="high">
+  <link rel="preload" href="../../assets/img/reviews/hero-laptop-720.webp" as="image" type="image/webp" fetchpriority="high" media="(max-width: 767px)">
+  <link rel="preload" href="../../assets/img/reviews/hero-laptop-640.webp" as="image" type="image/webp" fetchpriority="high" media="(min-width: 768px)">
   <link rel="stylesheet" href="../../assets/css/home-clean.css?v=39">
   <link rel="stylesheet" href="../../assets/css/support-clean.css?v=2">
-  <link rel="stylesheet" href="../../assets/css/reviews-letters.css?v=7">
-  <link rel="stylesheet" href="../../assets/css/lead-forms.css">
+  <link rel="stylesheet" href="../../assets/css/reviews-letters.css?v=8">
+  <link rel="stylesheet" href="../../assets/css/lead-forms.css" media="(min-width: 768px)">
+  <link rel="stylesheet" href="../../assets/css/lead-forms.css" media="print" onload="this.media='(max-width:767px)'">
+  <noscript><link rel="stylesheet" href="../../assets/css/lead-forms.css"></noscript>
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":["Organization","ProfessionalService"],"@id":"https://raskrutov.kz/#organization","name":"Raskrutov","url":"https://raskrutov.kz/","logo":{"@type":"ImageObject","url":"https://raskrutov.kz/assets/m-files.cdn1.cc/web/images/raskrutov/logo.png"},"email":"info@raskrutov.kz","telephone":"+7 700 021 69 00","address":{"@type":"PostalAddress","addressCountry":"KZ","addressLocality":"Петропавловск","streetAddress":"ул. М. Жумабаева, 109, 6 этаж, офис 606а"},"sameAs":["https://www.instagram.com/raskrutov.kz/","https://www.youtube.com/@raskrutov-kz","https://t.me/Raskrutov_web","https://www.tiktok.com/@raskrutov.kz"]},{"@type":"WebSite","@id":"https://raskrutov.kz/#website","url":"https://raskrutov.kz/","name":"Raskrutov","publisher":{"@id":"https://raskrutov.kz/#organization"},"inLanguage":"ru-KZ"},{"@type":"WebPage","@id":"https://raskrutov.kz/o-kompanii/otzyvy-i-blagodarstvennye-pisma/#webpage","url":"https://raskrutov.kz/o-kompanii/otzyvy-i-blagodarstvennye-pisma/","name":"Отзывы о Raskrutov и благодарственные письма клиентов","description":"Отзывы клиентов Raskrutov, оценки в Google и 2GIS, благодарственные письма компаний о разработке сайтов, SEO, рекламе и digital-проектах.","isPartOf":{"@id":"https://raskrutov.kz/#website"},"about":{"@id":"https://raskrutov.kz/#organization"},"inLanguage":"ru-KZ"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://raskrutov.kz/"},{"@type":"ListItem","position":2,"name":"О компании","item":"https://raskrutov.kz/o-kompanii/"},{"@type":"ListItem","position":3,"name":"Отзывы и благодарственные письма","item":"https://raskrutov.kz/o-kompanii/otzyvy-i-blagodarstvennye-pisma/"}]}]}</script>
 </head>
 <body class="rk-clean seo-page support-page reviews-page">
@@ -93,8 +96,7 @@
         </div>
         <figure class="reviews-hero__visual">
           <img
-            src="../../assets/img/reviews/hero-laptop-640.webp"
-            srcset="../../assets/img/reviews/hero-laptop-640.webp 640w, ../../assets/img/reviews/hero-laptop-960.webp 960w"
+            src="../../assets/img/reviews/hero-laptop-640.webp" srcset="../../assets/img/reviews/hero-laptop-640.webp 640w, ../../assets/img/reviews/hero-laptop-720.webp 720w, ../../assets/img/reviews/hero-laptop-960.webp 960w"
             sizes="(max-width: 767px) 92vw, 42vw"
             width="960"
             height="640"
@@ -131,109 +133,154 @@
           <div class="reviews-slider__track" data-slider-track>
           <figure class="reviews-slide">
             <a class="reviews-slide__link" data-letter-zoom href="../../assets/img/reviews/letters/gervent-1400.webp">
-              <img src="../../assets/img/reviews/letters/gervent-720.webp" width="720" height="980" alt="Благодарственное письмо от ООО «ГЕРВЕНТ РУС»" decoding="async">
+              <picture>
+                <source media="(max-width: 767px)" type="image/webp" srcset="../../assets/img/reviews/letters/gervent-320.webp 320w, ../../assets/img/reviews/letters/gervent-480.webp 480w" sizes="150px">
+                <img src="../../assets/img/reviews/letters/gervent-720.webp" width="720" height="980" alt="Благодарственное письмо от ООО «ГЕРВЕНТ РУС»" decoding="async">
+              </picture>
             </a>
             <figcaption>ООО «ГЕРВЕНТ РУС»<span class="reviews-slide__hint">Открыть документ</span></figcaption>
           </figure>
           <figure class="reviews-slide">
             <a class="reviews-slide__link" data-letter-zoom href="../../assets/img/reviews/letters/kalina-1400.webp">
-              <img src="../../assets/img/reviews/letters/kalina-720.webp" width="720" height="960" alt="Благодарственное письмо от ООО «ПКФ «Калина»" loading="lazy" decoding="async">
+              <picture>
+                <source media="(max-width: 767px)" type="image/webp" srcset="../../assets/img/reviews/letters/kalina-320.webp 320w, ../../assets/img/reviews/letters/kalina-480.webp 480w" sizes="150px">
+                <img src="../../assets/img/reviews/letters/kalina-720.webp" width="720" height="960" alt="Благодарственное письмо от ООО «ПКФ «Калина»" decoding="async" loading="lazy">
+              </picture>
             </a>
             <figcaption>ООО «ПКФ «Калина»<span class="reviews-slide__hint">Открыть документ</span></figcaption>
           </figure>
           <figure class="reviews-slide">
             <a class="reviews-slide__link" data-letter-zoom href="../../assets/img/reviews/letters/kazakh-engineering-1400.webp">
-              <img src="../../assets/img/reviews/letters/kazakh-engineering-720.webp" width="720" height="974" alt="Благодарственное письмо от ТОО «KAZAKH -Engineering»" loading="lazy" decoding="async">
+              <picture>
+                <source media="(max-width: 767px)" type="image/webp" srcset="../../assets/img/reviews/letters/kazakh-engineering-320.webp 320w, ../../assets/img/reviews/letters/kazakh-engineering-480.webp 480w" sizes="150px">
+                <img src="../../assets/img/reviews/letters/kazakh-engineering-720.webp" width="720" height="974" alt="Благодарственное письмо от ТОО «KAZAKH -Engineering»" decoding="async" loading="lazy">
+              </picture>
             </a>
             <figcaption>ТОО «KAZAKH -Engineering»<span class="reviews-slide__hint">Открыть документ</span></figcaption>
           </figure>
           <figure class="reviews-slide">
             <a class="reviews-slide__link" data-letter-zoom href="../../assets/img/reviews/letters/profil-doors-1400.webp">
-              <img src="../../assets/img/reviews/letters/profil-doors-720.webp" width="720" height="994" alt="Благодарственное письмо от франшизы Profil DOORS" loading="lazy" decoding="async">
+              <picture>
+                <source media="(max-width: 767px)" type="image/webp" srcset="../../assets/img/reviews/letters/profil-doors-320.webp 320w, ../../assets/img/reviews/letters/profil-doors-480.webp 480w" sizes="150px">
+                <img src="../../assets/img/reviews/letters/profil-doors-720.webp" width="720" height="994" alt="Благодарственное письмо от франшизы Profil DOORS" decoding="async" loading="lazy">
+              </picture>
             </a>
             <figcaption>Profil DOORS<span class="reviews-slide__hint">Открыть документ</span></figcaption>
           </figure>
           <figure class="reviews-slide">
             <a class="reviews-slide__link" data-letter-zoom href="../../assets/img/reviews/letters/teplolux-1400.webp">
-              <img src="../../assets/img/reviews/letters/teplolux-720.webp" width="720" height="982" alt="Благодарственное письмо от ТОО «Теплолюкс-Казахстан»" loading="lazy" decoding="async">
+              <picture>
+                <source media="(max-width: 767px)" type="image/webp" srcset="../../assets/img/reviews/letters/teplolux-320.webp 320w, ../../assets/img/reviews/letters/teplolux-480.webp 480w" sizes="150px">
+                <img src="../../assets/img/reviews/letters/teplolux-720.webp" width="720" height="982" alt="Благодарственное письмо от ТОО «Теплолюкс-Казахстан»" decoding="async" loading="lazy">
+              </picture>
             </a>
             <figcaption>ТОО «Теплолюкс-Казахстан»<span class="reviews-slide__hint">Открыть документ</span></figcaption>
           </figure>
           <figure class="reviews-slide">
             <a class="reviews-slide__link" data-letter-zoom href="../../assets/img/reviews/letters/letter-01-1400.webp">
-              <img src="../../assets/img/reviews/letters/letter-01-720.webp" width="720" height="872" alt="Благодарственное письмо клиента Raskrutov" loading="lazy" decoding="async">
+              <picture>
+                <source media="(max-width: 767px)" type="image/webp" srcset="../../assets/img/reviews/letters/letter-01-320.webp 320w, ../../assets/img/reviews/letters/letter-01-480.webp 480w" sizes="150px">
+                <img src="../../assets/img/reviews/letters/letter-01-720.webp" width="720" height="872" alt="Благодарственное письмо клиента Raskrutov" decoding="async" loading="lazy">
+              </picture>
             </a>
             <figcaption>Благодарственное письмо<span class="reviews-slide__hint">Открыть документ</span></figcaption>
           </figure>
           <figure class="reviews-slide">
             <a class="reviews-slide__link" data-letter-zoom href="../../assets/img/reviews/letters/letter-02-1400.webp">
-              <img src="../../assets/img/reviews/letters/letter-02-720.webp" width="648" height="1100" alt="Благодарственное письмо клиента Raskrutov" loading="lazy" decoding="async">
+              <picture>
+                <source media="(max-width: 767px)" type="image/webp" srcset="../../assets/img/reviews/letters/letter-02-320.webp 320w, ../../assets/img/reviews/letters/letter-02-480.webp 480w" sizes="150px">
+                <img src="../../assets/img/reviews/letters/letter-02-720.webp" width="648" height="1100" alt="Благодарственное письмо клиента Raskrutov" decoding="async" loading="lazy">
+              </picture>
             </a>
             <figcaption>Благодарственное письмо<span class="reviews-slide__hint">Открыть документ</span></figcaption>
           </figure>
           <figure class="reviews-slide">
             <a class="reviews-slide__link" data-letter-zoom href="../../assets/img/reviews/letters/letter-03-1400.webp">
-              <img src="../../assets/img/reviews/letters/letter-03-720.webp" width="708" height="1100" alt="Благодарственное письмо клиента Raskrutov" loading="lazy" decoding="async">
-            </a>
-            <figcaption>Благодарственное письмо<span class="reviews-slide__hint">Открыть документ</span></figcaption>
-          </figure>
-          <figure class="reviews-slide">
-            <a class="reviews-slide__link" data-letter-zoom href="../../assets/img/reviews/letters/letter-04-1400.webp">
-              <img src="../../assets/img/reviews/letters/letter-04-720.webp" width="720" height="786" alt="Благодарственное письмо клиента Raskrutov" loading="lazy" decoding="async">
+              <picture>
+                <source media="(max-width: 767px)" type="image/webp" srcset="../../assets/img/reviews/letters/letter-03-320.webp 320w, ../../assets/img/reviews/letters/letter-03-480.webp 480w" sizes="150px">
+                <img src="../../assets/img/reviews/letters/letter-03-720.webp" width="708" height="1100" alt="Благодарственное письмо клиента Raskrutov" decoding="async" loading="lazy">
+              </picture>
             </a>
             <figcaption>Благодарственное письмо<span class="reviews-slide__hint">Открыть документ</span></figcaption>
           </figure>
           <figure class="reviews-slide">
             <a class="reviews-slide__link" data-letter-zoom href="../../assets/img/reviews/letters/letter-05-1400.webp">
-              <img src="../../assets/img/reviews/letters/letter-05-720.webp" width="720" height="975" alt="Благодарственное письмо клиента Raskrutov" loading="lazy" decoding="async">
+              <picture>
+                <source media="(max-width: 767px)" type="image/webp" srcset="../../assets/img/reviews/letters/letter-05-320.webp 320w, ../../assets/img/reviews/letters/letter-05-480.webp 480w" sizes="150px">
+                <img src="../../assets/img/reviews/letters/letter-05-720.webp" width="720" height="975" alt="Благодарственное письмо клиента Raskrutov" decoding="async" loading="lazy">
+              </picture>
             </a>
             <figcaption>Благодарственное письмо<span class="reviews-slide__hint">Открыть документ</span></figcaption>
           </figure>
           <figure class="reviews-slide">
             <a class="reviews-slide__link" data-letter-zoom href="../../assets/img/reviews/letters/letter-06-1400.webp">
-              <img src="../../assets/img/reviews/letters/letter-06-720.webp" width="720" height="1018" alt="Благодарственное письмо клиента Raskrutov" loading="lazy" decoding="async">
+              <picture>
+                <source media="(max-width: 767px)" type="image/webp" srcset="../../assets/img/reviews/letters/letter-06-320.webp 320w, ../../assets/img/reviews/letters/letter-06-480.webp 480w" sizes="150px">
+                <img src="../../assets/img/reviews/letters/letter-06-720.webp" width="720" height="1018" alt="Благодарственное письмо клиента Raskrutov" decoding="async" loading="lazy">
+              </picture>
             </a>
             <figcaption>Благодарственное письмо<span class="reviews-slide__hint">Открыть документ</span></figcaption>
           </figure>
           <figure class="reviews-slide">
             <a class="reviews-slide__link" data-letter-zoom href="../../assets/img/reviews/letters/letter-07-1400.webp">
-              <img src="../../assets/img/reviews/letters/letter-07-720.webp" width="720" height="1018" alt="Благодарственное письмо клиента Raskrutov" loading="lazy" decoding="async">
+              <picture>
+                <source media="(max-width: 767px)" type="image/webp" srcset="../../assets/img/reviews/letters/letter-07-320.webp 320w, ../../assets/img/reviews/letters/letter-07-480.webp 480w" sizes="150px">
+                <img src="../../assets/img/reviews/letters/letter-07-720.webp" width="720" height="1018" alt="Благодарственное письмо клиента Raskrutov" decoding="async" loading="lazy">
+              </picture>
             </a>
             <figcaption>Благодарственное письмо<span class="reviews-slide__hint">Открыть документ</span></figcaption>
           </figure>
           <figure class="reviews-slide">
             <a class="reviews-slide__link" data-letter-zoom href="../../assets/img/reviews/letters/letter-08-1400.webp">
-              <img src="../../assets/img/reviews/letters/letter-08-720.webp" width="518" height="1080" alt="Благодарственное письмо клиента Raskrutov" loading="lazy" decoding="async">
+              <picture>
+                <source media="(max-width: 767px)" type="image/webp" srcset="../../assets/img/reviews/letters/letter-08-320.webp 320w, ../../assets/img/reviews/letters/letter-08-480.webp 480w" sizes="150px">
+                <img src="../../assets/img/reviews/letters/letter-08-720.webp" width="518" height="1080" alt="Благодарственное письмо клиента Raskrutov" decoding="async" loading="lazy">
+              </picture>
             </a>
             <figcaption>Благодарственное письмо<span class="reviews-slide__hint">Открыть документ</span></figcaption>
           </figure>
           <figure class="reviews-slide">
             <a class="reviews-slide__link" data-letter-zoom href="../../assets/img/reviews/letters/letter-09-1400.webp">
-              <img src="../../assets/img/reviews/letters/letter-09-720.webp" width="720" height="966" alt="Благодарственное письмо клиента Raskrutov" loading="lazy" decoding="async">
+              <picture>
+                <source media="(max-width: 767px)" type="image/webp" srcset="../../assets/img/reviews/letters/letter-09-320.webp 320w, ../../assets/img/reviews/letters/letter-09-480.webp 480w" sizes="150px">
+                <img src="../../assets/img/reviews/letters/letter-09-720.webp" width="720" height="966" alt="Благодарственное письмо клиента Raskrutov" decoding="async" loading="lazy">
+              </picture>
             </a>
             <figcaption>Благодарственное письмо<span class="reviews-slide__hint">Открыть документ</span></figcaption>
           </figure>
           <figure class="reviews-slide">
             <a class="reviews-slide__link" data-letter-zoom href="../../assets/img/reviews/letters/letter-10-1400.webp">
-              <img src="../../assets/img/reviews/letters/letter-10-720.webp" width="720" height="1095" alt="Благодарственное письмо клиента Raskrutov" loading="lazy" decoding="async">
+              <picture>
+                <source media="(max-width: 767px)" type="image/webp" srcset="../../assets/img/reviews/letters/letter-10-320.webp 320w, ../../assets/img/reviews/letters/letter-10-480.webp 480w" sizes="150px">
+                <img src="../../assets/img/reviews/letters/letter-10-720.webp" width="720" height="1095" alt="Благодарственное письмо клиента Raskrutov" decoding="async" loading="lazy">
+              </picture>
             </a>
             <figcaption>Благодарственное письмо<span class="reviews-slide__hint">Открыть документ</span></figcaption>
           </figure>
           <figure class="reviews-slide">
             <a class="reviews-slide__link" data-letter-zoom href="../../assets/img/reviews/letters/letter-11-1400.webp">
-              <img src="../../assets/img/reviews/letters/letter-11-720.webp" width="622" height="898" alt="Благодарственное письмо клиента Raskrutov" loading="lazy" decoding="async">
+              <picture>
+                <source media="(max-width: 767px)" type="image/webp" srcset="../../assets/img/reviews/letters/letter-11-320.webp 320w, ../../assets/img/reviews/letters/letter-11-480.webp 480w" sizes="150px">
+                <img src="../../assets/img/reviews/letters/letter-11-720.webp" width="622" height="898" alt="Благодарственное письмо клиента Raskrutov" decoding="async" loading="lazy">
+              </picture>
             </a>
             <figcaption>Благодарственное письмо<span class="reviews-slide__hint">Открыть документ</span></figcaption>
           </figure>
           <figure class="reviews-slide">
             <a class="reviews-slide__link" data-letter-zoom href="../../assets/img/reviews/letters/letter-12-1400.webp">
-              <img src="../../assets/img/reviews/letters/letter-12-720.webp" width="720" height="941" alt="Благодарственное письмо клиента Raskrutov" loading="lazy" decoding="async">
+              <picture>
+                <source media="(max-width: 767px)" type="image/webp" srcset="../../assets/img/reviews/letters/letter-12-320.webp 320w, ../../assets/img/reviews/letters/letter-12-480.webp 480w" sizes="150px">
+                <img src="../../assets/img/reviews/letters/letter-12-720.webp" width="720" height="941" alt="Благодарственное письмо клиента Raskrutov" decoding="async" loading="lazy">
+              </picture>
             </a>
             <figcaption>Благодарственное письмо<span class="reviews-slide__hint">Открыть документ</span></figcaption>
           </figure>
           <figure class="reviews-slide">
             <a class="reviews-slide__link" data-letter-zoom href="../../assets/img/reviews/letters/letter-13-1400.webp">
-              <img src="../../assets/img/reviews/letters/letter-13-720.webp" width="720" height="932" alt="Благодарственное письмо клиента Raskrutov" loading="lazy" decoding="async">
+              <picture>
+                <source media="(max-width: 767px)" type="image/webp" srcset="../../assets/img/reviews/letters/letter-13-320.webp 320w, ../../assets/img/reviews/letters/letter-13-480.webp 480w" sizes="150px">
+                <img src="../../assets/img/reviews/letters/letter-13-720.webp" width="720" height="932" alt="Благодарственное письмо клиента Raskrutov" decoding="async" loading="lazy">
+              </picture>
             </a>
             <figcaption>Благодарственное письмо<span class="reviews-slide__hint">Открыть документ</span></figcaption>
           </figure>
@@ -257,7 +304,6 @@
         <p class="reviews-lead">Отзывы клиентов о сотрудничестве с Raskrutov, опубликованные в Google.</p>
         <div class="reviews-widget reviews-widget--google">
           <!-- Elfsight Google Reviews | Untitled Google Reviews -->
-          <script src="https://elfsightcdn.com/platform.js" async></script>
           <div class="elfsight-app-b3ee41a2-3a4e-4089-8014-605f0ba97115" data-elfsight-app-lazy></div>
         </div>
       </div>
@@ -268,8 +314,8 @@
         <p class="reviews-eyebrow reviews-eyebrow--2gis">2GIS</p>
         <h2 class="reviews-h2" id="gis-reviews-title">Отзывы о Raskrutov в 2GIS</h2>
         <p class="reviews-lead">Отзывы клиентов о работе Raskrutov, опубликованные в 2GIS.</p>
-        <div class="reviews-widget reviews-widget--2gis">
-          <iframe id="big_light_70000001041348422" title="Отзывы о Raskrutov в 2GIS" frameborder="0" width="100%" height="824px" sandbox="allow-modals allow-forms allow-scripts allow-same-origin allow-popups allow-top-navigation-by-user-activation"></iframe><script type="text/javascript">((r,u)=>{const l=document.getElementById(r);l.contentWindow.document.open(),l.contentWindow.document.write(decodeURIComponent(escape(atob(u)))),l.contentWindow.document.close()})("big_light_70000001041348422", "PGhlYWQ+PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiPgogICAgd2luZG93Ll9fc2l6ZV9fPSdiaWcnOwogICAgd2luZG93Ll9fdGhlbWVfXz0nbGlnaHQnOwogICAgd2luZG93Ll9fYnJhbmNoSWRfXz0nNzAwMDAwMDEwNDEzNDg0MjInCiAgICB3aW5kb3cuX19vcmdJZF9fPSc3MDAwMDAwMTAzOTY0NDkxMicKICAgPC9zY3JpcHQ+PHNjcmlwdCBjcm9zc29yaWdpbj0iYW5vbnltb3VzIiB0eXBlPSJtb2R1bGUiIHNyYz0iaHR0cHM6Ly9kaXNrLjJnaXMuY29tL3dpZGdldC1jb25zdHJ1Y3Rvci9hc3NldHMvaWZyYW1lLmpzIj48L3NjcmlwdD48bGluayByZWw9Im1vZHVsZXByZWxvYWQiIGNyb3Nzb3JpZ2luPSJhbm9ueW1vdXMiIGhyZWY9Imh0dHBzOi8vZGlzay4yZ2lzLmNvbS93aWRnZXQtY29uc3RydWN0b3IvYXNzZXRzL2RlZmF1bHRzLmpzIj48bGluayByZWw9InN0eWxlc2hlZXQiIGNyb3Nzb3JpZ2luPSJhbm9ueW1vdXMiIGhyZWY9Imh0dHBzOi8vZGlzay4yZ2lzLmNvbS93aWRnZXQtY29uc3RydWN0b3IvYXNzZXRzL2RlZmF1bHRzLmNzcyI+PC9oZWFkPjxib2R5PjxkaXYgaWQ9ImlmcmFtZSI+PC9kaXY+PC9ib2R5Pg==")</script>
+        <div class="reviews-widget reviews-widget--2gis" data-deferred-2gis data-2gis-id="big_light_70000001041348422" data-2gis-payload="PGhlYWQ+PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiPgogICAgd2luZG93Ll9fc2l6ZV9fPSdiaWcnOwogICAgd2luZG93Ll9fdGhlbWVfXz0nbGlnaHQnOwogICAgd2luZG93Ll9fYnJhbmNoSWRfXz0nNzAwMDAwMDEwNDEzNDg0MjInCiAgICB3aW5kb3cuX19vcmdJZF9fPSc3MDAwMDAwMTAzOTY0NDkxMicKICAgPC9zY3JpcHQ+PHNjcmlwdCBjcm9zc29yaWdpbj0iYW5vbnltb3VzIiB0eXBlPSJtb2R1bGUiIHNyYz0iaHR0cHM6Ly9kaXNrLjJnaXMuY29tL3dpZGdldC1jb25zdHJ1Y3Rvci9hc3NldHMvaWZyYW1lLmpzIj48L3NjcmlwdD48bGluayByZWw9Im1vZHVsZXByZWxvYWQiIGNyb3Nzb3JpZ2luPSJhbm9ueW1vdXMiIGhyZWY9Imh0dHBzOi8vZGlzay4yZ2lzLmNvbS93aWRnZXQtY29uc3RydWN0b3IvYXNzZXRzL2RlZmF1bHRzLmpzIj48bGluayByZWw9InN0eWxlc2hlZXQiIGNyb3Nzb3JpZ2luPSJhbm9ueW1vdXMiIGhyZWY9Imh0dHBzOi8vZGlzay4yZ2lzLmNvbS93aWRnZXQtY29uc3RydWN0b3IvYXNzZXRzL2RlZmF1bHRzLmNzcyI+PC9oZWFkPjxib2R5PjxkaXYgaWQ9ImlmcmFtZSI+PC9kaXY+PC9ib2R5Pg==">
+          <iframe id="big_light_70000001041348422" title="Отзывы о Raskrutov в 2GIS" frameborder="0" width="100%" height="824px" sandbox="allow-modals allow-forms allow-scripts allow-same-origin allow-popups allow-top-navigation-by-user-activation"></iframe>
         </div>
       </div>
     </section>
@@ -477,7 +523,7 @@
       webvisor: true
     });
   </script>
-  <script src="../../assets/js/reviews-letters.js?v=5" defer></script>
+  <script src="../../assets/js/reviews-letters.js?v=6" defer></script>
   <script src="../../assets/js/home-clean.js?v=21" defer></script>
   <script src="../../assets/js/lead-forms.js" defer></script>
 </body>
