@@ -1,0 +1,546 @@
+﻿[
+    {
+        "name":  "notebook",
+        "material":  "gradient",
+        "size":  200,
+        "status":  200,
+        "bytes":  7368,
+        "file":  "notebook__gradient__200.webp"
+    },
+    {
+        "name":  "notebook",
+        "material":  "gradient",
+        "size":  400,
+        "status":  200,
+        "bytes":  18724,
+        "file":  "notebook__gradient__400.webp"
+    },
+    {
+        "name":  "notebook",
+        "material":  "color",
+        "size":  200,
+        "status":  200,
+        "bytes":  8706,
+        "file":  "notebook__color__200.webp"
+    },
+    {
+        "name":  "notebook",
+        "material":  "color",
+        "size":  400,
+        "status":  200,
+        "bytes":  21868,
+        "file":  "notebook__color__400.webp"
+    },
+    {
+        "name":  "travel",
+        "material":  "gradient",
+        "size":  200,
+        "status":  200,
+        "bytes":  8464,
+        "file":  "travel__gradient__200.webp"
+    },
+    {
+        "name":  "travel",
+        "material":  "gradient",
+        "size":  400,
+        "status":  200,
+        "bytes":  20212,
+        "file":  "travel__gradient__400.webp"
+    },
+    {
+        "name":  "travel",
+        "material":  "color",
+        "size":  200,
+        "status":  200,
+        "bytes":  10006,
+        "file":  "travel__color__200.webp"
+    },
+    {
+        "name":  "travel",
+        "material":  "color",
+        "size":  400,
+        "status":  200,
+        "bytes":  31278,
+        "file":  "travel__color__400.webp"
+    },
+    {
+        "name":  "chat-text",
+        "material":  "gradient",
+        "size":  200,
+        "status":  200,
+        "bytes":  6846,
+        "file":  "chat-text__gradient__200.webp"
+    },
+    {
+        "name":  "chat-text",
+        "material":  "gradient",
+        "size":  400,
+        "status":  200,
+        "bytes":  15568,
+        "file":  "chat-text__gradient__400.webp"
+    },
+    {
+        "name":  "chat-text",
+        "material":  "color",
+        "size":  200,
+        "status":  200,
+        "bytes":  6954,
+        "file":  "chat-text__color__200.webp"
+    },
+    {
+        "name":  "chat-text",
+        "material":  "color",
+        "size":  400,
+        "status":  200,
+        "bytes":  15410,
+        "file":  "chat-text__color__400.webp"
+    },
+    {
+        "name":  "bag",
+        "material":  "gradient",
+        "size":  200,
+        "status":  200,
+        "bytes":  7356,
+        "file":  "bag__gradient__200.webp"
+    },
+    {
+        "name":  "bag",
+        "material":  "gradient",
+        "size":  400,
+        "status":  200,
+        "bytes":  17150,
+        "file":  "bag__gradient__400.webp"
+    },
+    {
+        "name":  "bag",
+        "material":  "color",
+        "size":  200,
+        "status":  200,
+        "bytes":  7454,
+        "file":  "bag__color__200.webp"
+    },
+    {
+        "name":  "bag",
+        "material":  "color",
+        "size":  400,
+        "status":  200,
+        "bytes":  17394,
+        "file":  "bag__color__400.webp"
+    },
+    {
+        "name":  "gift-box",
+        "material":  "gradient",
+        "size":  200,
+        "status":  200,
+        "bytes":  10394,
+        "file":  "gift-box__gradient__200.webp"
+    },
+    {
+        "name":  "gift-box",
+        "material":  "gradient",
+        "size":  400,
+        "status":  200,
+        "bytes":  24278,
+        "file":  "gift-box__gradient__400.webp"
+    },
+    {
+        "name":  "gift-box",
+        "material":  "color",
+        "size":  200,
+        "status":  200,
+        "bytes":  10806,
+        "file":  "gift-box__color__200.webp"
+    },
+    {
+        "name":  "gift-box",
+        "material":  "color",
+        "size":  400,
+        "status":  200,
+        "bytes":  25994,
+        "file":  "gift-box__color__400.webp"
+    },
+    {
+        "name":  "map-pin",
+        "material":  "gradient",
+        "size":  200,
+        "status":  200,
+        "bytes":  8070,
+        "file":  "map-pin__gradient__200.webp"
+    },
+    {
+        "name":  "map-pin",
+        "material":  "gradient",
+        "size":  400,
+        "status":  200,
+        "bytes":  18390,
+        "file":  "map-pin__gradient__400.webp"
+    },
+    {
+        "name":  "map-pin",
+        "material":  "color",
+        "size":  200,
+        "status":  200,
+        "bytes":  8486,
+        "file":  "map-pin__color__200.webp"
+    },
+    {
+        "name":  "map-pin",
+        "material":  "color",
+        "size":  400,
+        "status":  200,
+        "bytes":  20150,
+        "file":  "map-pin__color__400.webp"
+    },
+    {
+        "name":  "location",
+        "material":  "gradient",
+        "size":  200,
+        "status":  200,
+        "bytes":  4836,
+        "file":  "location__gradient__200.webp"
+    },
+    {
+        "name":  "location",
+        "material":  "gradient",
+        "size":  400,
+        "status":  200,
+        "bytes":  10640,
+        "file":  "location__gradient__400.webp"
+    },
+    {
+        "name":  "location",
+        "material":  "color",
+        "size":  200,
+        "status":  200,
+        "bytes":  5004,
+        "file":  "location__color__200.webp"
+    },
+    {
+        "name":  "location",
+        "material":  "color",
+        "size":  400,
+        "status":  200,
+        "bytes":  11392,
+        "file":  "location__color__400.webp"
+    },
+    {
+        "name":  "chart",
+        "material":  "gradient",
+        "size":  200,
+        "status":  200,
+        "bytes":  6948,
+        "file":  "chart__gradient__200.webp"
+    },
+    {
+        "name":  "chart",
+        "material":  "gradient",
+        "size":  400,
+        "status":  200,
+        "bytes":  16304,
+        "file":  "chart__gradient__400.webp"
+    },
+    {
+        "name":  "chart",
+        "material":  "color",
+        "size":  200,
+        "status":  200,
+        "bytes":  7736,
+        "file":  "chart__color__200.webp"
+    },
+    {
+        "name":  "chart",
+        "material":  "color",
+        "size":  400,
+        "status":  200,
+        "bytes":  18458,
+        "file":  "chart__color__400.webp"
+    },
+    {
+        "name":  "explorer",
+        "material":  "gradient",
+        "size":  200,
+        "status":  200,
+        "bytes":  8288,
+        "file":  "explorer__gradient__200.webp"
+    },
+    {
+        "name":  "explorer",
+        "material":  "gradient",
+        "size":  400,
+        "status":  200,
+        "bytes":  19730,
+        "file":  "explorer__gradient__400.webp"
+    },
+    {
+        "name":  "explorer",
+        "material":  "color",
+        "size":  200,
+        "status":  200,
+        "bytes":  8804,
+        "file":  "explorer__color__200.webp"
+    },
+    {
+        "name":  "explorer",
+        "material":  "color",
+        "size":  400,
+        "status":  200,
+        "bytes":  21222,
+        "file":  "explorer__color__400.webp"
+    },
+    {
+        "name":  "computer",
+        "material":  "gradient",
+        "size":  200,
+        "status":  200,
+        "bytes":  5090,
+        "file":  "computer__gradient__200.webp"
+    },
+    {
+        "name":  "computer",
+        "material":  "gradient",
+        "size":  400,
+        "status":  200,
+        "bytes":  12742,
+        "file":  "computer__gradient__400.webp"
+    },
+    {
+        "name":  "computer",
+        "material":  "color",
+        "size":  200,
+        "status":  200,
+        "bytes":  4912,
+        "file":  "computer__color__200.webp"
+    },
+    {
+        "name":  "computer",
+        "material":  "color",
+        "size":  400,
+        "status":  200,
+        "bytes":  12130,
+        "file":  "computer__color__400.webp"
+    },
+    {
+        "name":  "target",
+        "material":  "gradient",
+        "size":  200,
+        "status":  200,
+        "bytes":  8000,
+        "file":  "target__gradient__200.webp"
+    },
+    {
+        "name":  "target",
+        "material":  "gradient",
+        "size":  400,
+        "status":  200,
+        "bytes":  19544,
+        "file":  "target__gradient__400.webp"
+    },
+    {
+        "name":  "target",
+        "material":  "color",
+        "size":  200,
+        "status":  200,
+        "bytes":  8768,
+        "file":  "target__color__200.webp"
+    },
+    {
+        "name":  "target",
+        "material":  "color",
+        "size":  400,
+        "status":  200,
+        "bytes":  21000,
+        "file":  "target__color__400.webp"
+    },
+    {
+        "name":  "rocket",
+        "material":  "gradient",
+        "size":  200,
+        "status":  200,
+        "bytes":  6242,
+        "file":  "rocket__gradient__200.webp"
+    },
+    {
+        "name":  "rocket",
+        "material":  "gradient",
+        "size":  400,
+        "status":  200,
+        "bytes":  14496,
+        "file":  "rocket__gradient__400.webp"
+    },
+    {
+        "name":  "rocket",
+        "material":  "color",
+        "size":  200,
+        "status":  200,
+        "bytes":  8036,
+        "file":  "rocket__color__200.webp"
+    },
+    {
+        "name":  "rocket",
+        "material":  "color",
+        "size":  400,
+        "status":  200,
+        "bytes":  19174,
+        "file":  "rocket__color__400.webp"
+    },
+    {
+        "name":  "back",
+        "material":  "gradient",
+        "size":  200,
+        "status":  200,
+        "bytes":  5572,
+        "file":  "back__gradient__200.webp"
+    },
+    {
+        "name":  "back",
+        "material":  "gradient",
+        "size":  400,
+        "status":  200,
+        "bytes":  12550,
+        "file":  "back__gradient__400.webp"
+    },
+    {
+        "name":  "back",
+        "material":  "color",
+        "size":  200,
+        "status":  200,
+        "bytes":  5744,
+        "file":  "back__color__200.webp"
+    },
+    {
+        "name":  "back",
+        "material":  "color",
+        "size":  400,
+        "status":  200,
+        "bytes":  12982,
+        "file":  "back__color__400.webp"
+    },
+    {
+        "name":  "play",
+        "material":  "gradient",
+        "size":  200,
+        "status":  200,
+        "bytes":  3944,
+        "file":  "play__gradient__200.webp"
+    },
+    {
+        "name":  "play",
+        "material":  "gradient",
+        "size":  400,
+        "status":  200,
+        "bytes":  8816,
+        "file":  "play__gradient__400.webp"
+    },
+    {
+        "name":  "play",
+        "material":  "color",
+        "size":  200,
+        "status":  200,
+        "bytes":  4050,
+        "file":  "play__color__200.webp"
+    },
+    {
+        "name":  "play",
+        "material":  "color",
+        "size":  400,
+        "status":  200,
+        "bytes":  8970,
+        "file":  "play__color__400.webp"
+    },
+    {
+        "name":  "video-cam",
+        "material":  "gradient",
+        "size":  200,
+        "status":  200,
+        "bytes":  8422,
+        "file":  "video-cam__gradient__200.webp"
+    },
+    {
+        "name":  "video-cam",
+        "material":  "gradient",
+        "size":  400,
+        "status":  200,
+        "bytes":  19440,
+        "file":  "video-cam__gradient__400.webp"
+    },
+    {
+        "name":  "video-cam",
+        "material":  "color",
+        "size":  200,
+        "status":  200,
+        "bytes":  9016,
+        "file":  "video-cam__color__200.webp"
+    },
+    {
+        "name":  "video-cam",
+        "material":  "color",
+        "size":  400,
+        "status":  200,
+        "bytes":  22582,
+        "file":  "video-cam__color__400.webp"
+    },
+    {
+        "name":  "setting",
+        "material":  "gradient",
+        "size":  200,
+        "status":  200,
+        "bytes":  8054,
+        "file":  "setting__gradient__200.webp"
+    },
+    {
+        "name":  "setting",
+        "material":  "gradient",
+        "size":  400,
+        "status":  200,
+        "bytes":  17918,
+        "file":  "setting__gradient__400.webp"
+    },
+    {
+        "name":  "setting",
+        "material":  "color",
+        "size":  200,
+        "status":  200,
+        "bytes":  8584,
+        "file":  "setting__color__200.webp"
+    },
+    {
+        "name":  "setting",
+        "material":  "color",
+        "size":  400,
+        "status":  200,
+        "bytes":  19514,
+        "file":  "setting__color__400.webp"
+    },
+    {
+        "name":  "credit-card",
+        "material":  "gradient",
+        "size":  200,
+        "status":  200,
+        "bytes":  5648,
+        "file":  "credit-card__gradient__200.webp"
+    },
+    {
+        "name":  "credit-card",
+        "material":  "gradient",
+        "size":  400,
+        "status":  200,
+        "bytes":  13574,
+        "file":  "credit-card__gradient__400.webp"
+    },
+    {
+        "name":  "credit-card",
+        "material":  "color",
+        "size":  200,
+        "status":  200,
+        "bytes":  8208,
+        "file":  "credit-card__color__200.webp"
+    },
+    {
+        "name":  "credit-card",
+        "material":  "color",
+        "size":  400,
+        "status":  200,
+        "bytes":  33056,
+        "file":  "credit-card__color__400.webp"
+    }
+]

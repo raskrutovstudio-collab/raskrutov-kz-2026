@@ -1,0 +1,8 @@
+MOBILE1 Perf=85 A11y=96 BP=79 SEO=100 FCP=2656ms LCP=3631ms TBT=129ms CLS=0.0002634708721738487
+  FAILED: third-party-cookies:Uses third-party cookies | target-size:Touch targets do not have sufficient size or spacing. | inspector-issues:Issues were logged in the `Issues` panel in Chrome Devtools | bf-cache:Page prevented back/forward cache restoration
+MOBILE2 Perf=88 A11y=96 BP=79 SEO=100 FCP=2349ms LCP=3474ms TBT=72ms CLS=0.0002634708721738487
+  FAILED: third-party-cookies:Uses third-party cookies | target-size:Touch targets do not have sufficient size or spacing. | inspector-issues:Issues were logged in the `Issues` panel in Chrome Devtools
+MOBILE3 Perf=89 A11y=96 BP=79 SEO=100 FCP=2259ms LCP=3384ms TBT=56ms CLS=0.0002634708721738487
+  FAILED: third-party-cookies:Uses third-party cookies | target-size:Touch targets do not have sufficient size or spacing. | inspector-issues:Issues were logged in the `Issues` panel in Chrome Devtools
+DESKTOP1 Perf=67 A11y=100 BP=78 SEO=100 FCP=2274ms LCP=3774ms TBT=77ms CLS=0.01308404800373547
+  FAILED: third-party-cookies:Uses third-party cookies | inspector-issues:Issues were logged in the `Issues` panel in Chrome Devtools

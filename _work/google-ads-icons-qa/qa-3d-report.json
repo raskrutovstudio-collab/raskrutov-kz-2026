@@ -1,0 +1,891 @@
+{
+  "timestamp": "2026-08-14T13:14:35.265Z",
+  "pageUrl": "http://127.0.0.1:4179/web-studiya/kontekstnaya-reklama/google-ads/",
+  "overall": "PASS",
+  "checks": {
+    "noHorizontalOverflow": {
+      "pass": true,
+      "detail": {
+        "360": {
+          "scrollWidth": 360,
+          "clientWidth": 360,
+          "overflow": false
+        },
+        "390": {
+          "scrollWidth": 390,
+          "clientWidth": 390,
+          "overflow": false
+        },
+        "768": {
+          "scrollWidth": 768,
+          "clientWidth": 768,
+          "overflow": false
+        },
+        "1024": {
+          "scrollWidth": 1024,
+          "clientWidth": 1024,
+          "overflow": false
+        },
+        "1440": {
+          "scrollWidth": 1440,
+          "clientWidth": 1440,
+          "overflow": false
+        }
+      }
+    },
+    "aboutTitleFontSize32": {
+      "pass": true,
+      "detail": {
+        "360": "32px",
+        "390": "32px",
+        "768": "32px",
+        "1024": "32px",
+        "1440": "32px"
+      }
+    },
+    "aboutIconExists": {
+      "pass": true,
+      "detail": {
+        "src": "../../../assets/img/google-ads/google-ads-icon.svg",
+        "complete": true,
+        "naturalWidth": 44,
+        "naturalHeight": 44,
+        "displayedWidth": 44,
+        "displayedHeight": 44,
+        "cssWidth": "44px",
+        "cssHeight": "44px"
+      }
+    },
+    "cardVisualImgCount4": {
+      "pass": true,
+      "detail": {
+        "count": 4
+      }
+    },
+    "campVisualImgCount5": {
+      "pass": true,
+      "detail": {
+        "count": 5
+      }
+    },
+    "visualImgs256Complete": {
+      "pass": true,
+      "detail": {
+        "primary1440": [
+          {
+            "src": "../../../assets/img/google-ads/3d/b2b-briefcase.webp",
+            "complete": true,
+            "naturalWidth": 256,
+            "naturalHeight": 256,
+            "displayedWidth": 112,
+            "displayedHeight": 112,
+            "cssWidth": "112px",
+            "cssHeight": "112px"
+          },
+          {
+            "src": "../../../assets/img/google-ads/3d/ecommerce-bag.webp",
+            "complete": true,
+            "naturalWidth": 256,
+            "naturalHeight": 256,
+            "displayedWidth": 112,
+            "displayedHeight": 112,
+            "cssWidth": "112px",
+            "cssHeight": "112px"
+          },
+          {
+            "src": "../../../assets/img/google-ads/3d/local-map-pin.webp",
+            "complete": true,
+            "naturalWidth": 256,
+            "naturalHeight": 256,
+            "displayedWidth": 112,
+            "displayedHeight": 112,
+            "cssWidth": "112px",
+            "cssHeight": "112px"
+          },
+          {
+            "src": "../../../assets/img/google-ads/3d/account-chart.webp",
+            "complete": true,
+            "naturalWidth": 256,
+            "naturalHeight": 256,
+            "displayedWidth": 112,
+            "displayedHeight": 112,
+            "cssWidth": "112px",
+            "cssHeight": "112px"
+          },
+          {
+            "src": "../../../assets/img/google-ads/3d/camp-search-screen.webp",
+            "complete": true,
+            "naturalWidth": 256,
+            "naturalHeight": 256,
+            "displayedWidth": 104,
+            "displayedHeight": 104,
+            "cssWidth": "104px",
+            "cssHeight": "104px"
+          },
+          {
+            "src": "../../../assets/img/google-ads/3d/camp-pmax-target.webp",
+            "complete": true,
+            "naturalWidth": 256,
+            "naturalHeight": 256,
+            "displayedWidth": 104,
+            "displayedHeight": 104,
+            "cssWidth": "104px",
+            "cssHeight": "104px"
+          },
+          {
+            "src": "../../../assets/img/google-ads/3d/camp-shopping-box.webp",
+            "complete": true,
+            "naturalWidth": 256,
+            "naturalHeight": 256,
+            "displayedWidth": 104,
+            "displayedHeight": 104,
+            "cssWidth": "104px",
+            "cssHeight": "104px"
+          },
+          {
+            "src": "../../../assets/img/google-ads/3d/camp-remarketing-return.webp",
+            "complete": true,
+            "naturalWidth": 256,
+            "naturalHeight": 256,
+            "displayedWidth": 104,
+            "displayedHeight": 104,
+            "cssWidth": "104px",
+            "cssHeight": "104px"
+          },
+          {
+            "src": "../../../assets/img/google-ads/3d/camp-video-cam.webp",
+            "complete": true,
+            "naturalWidth": 256,
+            "naturalHeight": 256,
+            "displayedWidth": 104,
+            "displayedHeight": 104,
+            "cssWidth": "104px",
+            "cssHeight": "104px"
+          }
+        ],
+        "perWidthOk": {
+          "360": true,
+          "390": true,
+          "768": true,
+          "1024": true,
+          "1440": true
+        }
+      }
+    },
+    "noLeftoverSvg": {
+      "pass": true,
+      "detail": {
+        "360": {
+          "card": 0,
+          "camp": 0
+        },
+        "390": {
+          "card": 0,
+          "camp": 0
+        },
+        "768": {
+          "card": 0,
+          "camp": 0
+        },
+        "1024": {
+          "card": 0,
+          "camp": 0
+        },
+        "1440": {
+          "card": 0,
+          "camp": 0
+        }
+      }
+    },
+    "consoleClean": {
+      "pass": true,
+      "detail": {
+        "consoleErrors": [],
+        "pageErrors": []
+      }
+    },
+    "seoSmoke": {
+      "pass": true,
+      "detail": {
+        "title": "Google Ads в Казахстане — настройка и ведение рекламы | Raskrutov",
+        "metaDescription": "Настраиваем и ведём Google Ads в Казахстане: поисковые кампании, Performance Max, Demand Gen, аналитика, конверсии и сис",
+        "canonical": "https://raskrutov.kz/web-studiya/kontekstnaya-reklama/google-ads/",
+        "h1Count": 1,
+        "jsonLdCount": 1
+      }
+    },
+    "forms": {
+      "pass": true,
+      "detail": {
+        "formsActionCount": 0,
+        "formsTotal": 2,
+        "inputNameCount": 9,
+        "consentCheckbox": true,
+        "note": "Forms use data-lead-form without HTML action attribute"
+      }
+    },
+    "analytics": {
+      "pass": true,
+      "detail": {
+        "hasYmOrMetrika": true,
+        "metrikaId": "101127167"
+      }
+    }
+  },
+  "byWidth": {
+    "360": {
+      "scrollWidth": 360,
+      "clientWidth": 360,
+      "horizontalOverflow": false,
+      "aboutTitleFontSize": "32px",
+      "aboutIcon": {
+        "src": "../../../assets/img/google-ads/google-ads-icon.svg",
+        "complete": true,
+        "naturalWidth": 44,
+        "naturalHeight": 44,
+        "displayedWidth": 38,
+        "displayedHeight": 38,
+        "cssWidth": "38px",
+        "cssHeight": "38px"
+      },
+      "aboutIconExists": true,
+      "cardVisualImgCount": 4,
+      "campVisualImgCount": 5,
+      "cardVisualImgs": [
+        {
+          "src": "../../../assets/img/google-ads/3d/b2b-briefcase.webp",
+          "complete": true,
+          "naturalWidth": 256,
+          "naturalHeight": 256,
+          "displayedWidth": 88,
+          "displayedHeight": 88,
+          "cssWidth": "88px",
+          "cssHeight": "88px"
+        },
+        {
+          "src": "../../../assets/img/google-ads/3d/ecommerce-bag.webp",
+          "complete": true,
+          "naturalWidth": 256,
+          "naturalHeight": 256,
+          "displayedWidth": 88,
+          "displayedHeight": 88,
+          "cssWidth": "88px",
+          "cssHeight": "88px"
+        },
+        {
+          "src": "../../../assets/img/google-ads/3d/local-map-pin.webp",
+          "complete": true,
+          "naturalWidth": 256,
+          "naturalHeight": 256,
+          "displayedWidth": 88,
+          "displayedHeight": 88,
+          "cssWidth": "88px",
+          "cssHeight": "88px"
+        },
+        {
+          "src": "../../../assets/img/google-ads/3d/account-chart.webp",
+          "complete": true,
+          "naturalWidth": 256,
+          "naturalHeight": 256,
+          "displayedWidth": 88,
+          "displayedHeight": 88,
+          "cssWidth": "88px",
+          "cssHeight": "88px"
+        }
+      ],
+      "campVisualImgs": [
+        {
+          "src": "../../../assets/img/google-ads/3d/camp-search-screen.webp",
+          "complete": true,
+          "naturalWidth": 256,
+          "naturalHeight": 256,
+          "displayedWidth": 84,
+          "displayedHeight": 84,
+          "cssWidth": "84px",
+          "cssHeight": "84px"
+        },
+        {
+          "src": "../../../assets/img/google-ads/3d/camp-pmax-target.webp",
+          "complete": true,
+          "naturalWidth": 256,
+          "naturalHeight": 256,
+          "displayedWidth": 84,
+          "displayedHeight": 84,
+          "cssWidth": "84px",
+          "cssHeight": "84px"
+        },
+        {
+          "src": "../../../assets/img/google-ads/3d/camp-shopping-box.webp",
+          "complete": true,
+          "naturalWidth": 256,
+          "naturalHeight": 256,
+          "displayedWidth": 84,
+          "displayedHeight": 84,
+          "cssWidth": "84px",
+          "cssHeight": "84px"
+        },
+        {
+          "src": "../../../assets/img/google-ads/3d/camp-remarketing-return.webp",
+          "complete": true,
+          "naturalWidth": 256,
+          "naturalHeight": 256,
+          "displayedWidth": 84,
+          "displayedHeight": 84,
+          "cssWidth": "84px",
+          "cssHeight": "84px"
+        },
+        {
+          "src": "../../../assets/img/google-ads/3d/camp-video-cam.webp",
+          "complete": true,
+          "naturalWidth": 256,
+          "naturalHeight": 256,
+          "displayedWidth": 84,
+          "displayedHeight": 84,
+          "cssWidth": "84px",
+          "cssHeight": "84px"
+        }
+      ],
+      "leftoverSvg": {
+        "card": 0,
+        "camp": 0
+      }
+    },
+    "390": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "horizontalOverflow": false,
+      "aboutTitleFontSize": "32px",
+      "aboutIcon": {
+        "src": "../../../assets/img/google-ads/google-ads-icon.svg",
+        "complete": true,
+        "naturalWidth": 44,
+        "naturalHeight": 44,
+        "displayedWidth": 38,
+        "displayedHeight": 38,
+        "cssWidth": "38px",
+        "cssHeight": "38px"
+      },
+      "aboutIconExists": true,
+      "cardVisualImgCount": 4,
+      "campVisualImgCount": 5,
+      "cardVisualImgs": [
+        {
+          "src": "../../../assets/img/google-ads/3d/b2b-briefcase.webp",
+          "complete": true,
+          "naturalWidth": 256,
+          "naturalHeight": 256,
+          "displayedWidth": 88,
+          "displayedHeight": 88,
+          "cssWidth": "88px",
+          "cssHeight": "88px"
+        },
+        {
+          "src": "../../../assets/img/google-ads/3d/ecommerce-bag.webp",
+          "complete": true,
+          "naturalWidth": 256,
+          "naturalHeight": 256,
+          "displayedWidth": 88,
+          "displayedHeight": 88,
+          "cssWidth": "88px",
+          "cssHeight": "88px"
+        },
+        {
+          "src": "../../../assets/img/google-ads/3d/local-map-pin.webp",
+          "complete": true,
+          "naturalWidth": 256,
+          "naturalHeight": 256,
+          "displayedWidth": 88,
+          "displayedHeight": 88,
+          "cssWidth": "88px",
+          "cssHeight": "88px"
+        },
+        {
+          "src": "../../../assets/img/google-ads/3d/account-chart.webp",
+          "complete": true,
+          "naturalWidth": 256,
+          "naturalHeight": 256,
+          "displayedWidth": 88,
+          "displayedHeight": 88,
+          "cssWidth": "88px",
+          "cssHeight": "88px"
+        }
+      ],
+      "campVisualImgs": [
+        {
+          "src": "../../../assets/img/google-ads/3d/camp-search-screen.webp",
+          "complete": true,
+          "naturalWidth": 256,
+          "naturalHeight": 256,
+          "displayedWidth": 84,
+          "displayedHeight": 84,
+          "cssWidth": "84px",
+          "cssHeight": "84px"
+        },
+        {
+          "src": "../../../assets/img/google-ads/3d/camp-pmax-target.webp",
+          "complete": true,
+          "naturalWidth": 256,
+          "naturalHeight": 256,
+          "displayedWidth": 84,
+          "displayedHeight": 84,
+          "cssWidth": "84px",
+          "cssHeight": "84px"
+        },
+        {
+          "src": "../../../assets/img/google-ads/3d/camp-shopping-box.webp",
+          "complete": true,
+          "naturalWidth": 256,
+          "naturalHeight": 256,
+          "displayedWidth": 84,
+          "displayedHeight": 84,
+          "cssWidth": "84px",
+          "cssHeight": "84px"
+        },
+        {
+          "src": "../../../assets/img/google-ads/3d/camp-remarketing-return.webp",
+          "complete": true,
+          "naturalWidth": 256,
+          "naturalHeight": 256,
+          "displayedWidth": 84,
+          "displayedHeight": 84,
+          "cssWidth": "84px",
+          "cssHeight": "84px"
+        },
+        {
+          "src": "../../../assets/img/google-ads/3d/camp-video-cam.webp",
+          "complete": true,
+          "naturalWidth": 256,
+          "naturalHeight": 256,
+          "displayedWidth": 84,
+          "displayedHeight": 84,
+          "cssWidth": "84px",
+          "cssHeight": "84px"
+        }
+      ],
+      "leftoverSvg": {
+        "card": 0,
+        "camp": 0
+      }
+    },
+    "768": {
+      "scrollWidth": 768,
+      "clientWidth": 768,
+      "horizontalOverflow": false,
+      "aboutTitleFontSize": "32px",
+      "aboutIcon": {
+        "src": "../../../assets/img/google-ads/google-ads-icon.svg",
+        "complete": true,
+        "naturalWidth": 44,
+        "naturalHeight": 44,
+        "displayedWidth": 44,
+        "displayedHeight": 44,
+        "cssWidth": "44px",
+        "cssHeight": "44px"
+      },
+      "aboutIconExists": true,
+      "cardVisualImgCount": 4,
+      "campVisualImgCount": 5,
+      "cardVisualImgs": [
+        {
+          "src": "../../../assets/img/google-ads/3d/b2b-briefcase.webp",
+          "complete": true,
+          "naturalWidth": 256,
+          "naturalHeight": 256,
+          "displayedWidth": 112,
+          "displayedHeight": 112,
+          "cssWidth": "112px",
+          "cssHeight": "112px"
+        },
+        {
+          "src": "../../../assets/img/google-ads/3d/ecommerce-bag.webp",
+          "complete": true,
+          "naturalWidth": 256,
+          "naturalHeight": 256,
+          "displayedWidth": 112,
+          "displayedHeight": 112,
+          "cssWidth": "112px",
+          "cssHeight": "112px"
+        },
+        {
+          "src": "../../../assets/img/google-ads/3d/local-map-pin.webp",
+          "complete": true,
+          "naturalWidth": 256,
+          "naturalHeight": 256,
+          "displayedWidth": 112,
+          "displayedHeight": 112,
+          "cssWidth": "112px",
+          "cssHeight": "112px"
+        },
+        {
+          "src": "../../../assets/img/google-ads/3d/account-chart.webp",
+          "complete": true,
+          "naturalWidth": 256,
+          "naturalHeight": 256,
+          "displayedWidth": 112,
+          "displayedHeight": 112,
+          "cssWidth": "112px",
+          "cssHeight": "112px"
+        }
+      ],
+      "campVisualImgs": [
+        {
+          "src": "../../../assets/img/google-ads/3d/camp-search-screen.webp",
+          "complete": true,
+          "naturalWidth": 256,
+          "naturalHeight": 256,
+          "displayedWidth": 104,
+          "displayedHeight": 104,
+          "cssWidth": "104px",
+          "cssHeight": "104px"
+        },
+        {
+          "src": "../../../assets/img/google-ads/3d/camp-pmax-target.webp",
+          "complete": true,
+          "naturalWidth": 256,
+          "naturalHeight": 256,
+          "displayedWidth": 104,
+          "displayedHeight": 104,
+          "cssWidth": "104px",
+          "cssHeight": "104px"
+        },
+        {
+          "src": "../../../assets/img/google-ads/3d/camp-shopping-box.webp",
+          "complete": true,
+          "naturalWidth": 256,
+          "naturalHeight": 256,
+          "displayedWidth": 104,
+          "displayedHeight": 104,
+          "cssWidth": "104px",
+          "cssHeight": "104px"
+        },
+        {
+          "src": "../../../assets/img/google-ads/3d/camp-remarketing-return.webp",
+          "complete": true,
+          "naturalWidth": 256,
+          "naturalHeight": 256,
+          "displayedWidth": 104,
+          "displayedHeight": 104,
+          "cssWidth": "104px",
+          "cssHeight": "104px"
+        },
+        {
+          "src": "../../../assets/img/google-ads/3d/camp-video-cam.webp",
+          "complete": true,
+          "naturalWidth": 256,
+          "naturalHeight": 256,
+          "displayedWidth": 104,
+          "displayedHeight": 104,
+          "cssWidth": "104px",
+          "cssHeight": "104px"
+        }
+      ],
+      "leftoverSvg": {
+        "card": 0,
+        "camp": 0
+      }
+    },
+    "1024": {
+      "scrollWidth": 1024,
+      "clientWidth": 1024,
+      "horizontalOverflow": false,
+      "aboutTitleFontSize": "32px",
+      "aboutIcon": {
+        "src": "../../../assets/img/google-ads/google-ads-icon.svg",
+        "complete": true,
+        "naturalWidth": 44,
+        "naturalHeight": 44,
+        "displayedWidth": 44,
+        "displayedHeight": 44,
+        "cssWidth": "44px",
+        "cssHeight": "44px"
+      },
+      "aboutIconExists": true,
+      "cardVisualImgCount": 4,
+      "campVisualImgCount": 5,
+      "cardVisualImgs": [
+        {
+          "src": "../../../assets/img/google-ads/3d/b2b-briefcase.webp",
+          "complete": true,
+          "naturalWidth": 256,
+          "naturalHeight": 256,
+          "displayedWidth": 112,
+          "displayedHeight": 112,
+          "cssWidth": "112px",
+          "cssHeight": "112px"
+        },
+        {
+          "src": "../../../assets/img/google-ads/3d/ecommerce-bag.webp",
+          "complete": true,
+          "naturalWidth": 256,
+          "naturalHeight": 256,
+          "displayedWidth": 112,
+          "displayedHeight": 112,
+          "cssWidth": "112px",
+          "cssHeight": "112px"
+        },
+        {
+          "src": "../../../assets/img/google-ads/3d/local-map-pin.webp",
+          "complete": true,
+          "naturalWidth": 256,
+          "naturalHeight": 256,
+          "displayedWidth": 112,
+          "displayedHeight": 112,
+          "cssWidth": "112px",
+          "cssHeight": "112px"
+        },
+        {
+          "src": "../../../assets/img/google-ads/3d/account-chart.webp",
+          "complete": true,
+          "naturalWidth": 256,
+          "naturalHeight": 256,
+          "displayedWidth": 112,
+          "displayedHeight": 112,
+          "cssWidth": "112px",
+          "cssHeight": "112px"
+        }
+      ],
+      "campVisualImgs": [
+        {
+          "src": "../../../assets/img/google-ads/3d/camp-search-screen.webp",
+          "complete": true,
+          "naturalWidth": 256,
+          "naturalHeight": 256,
+          "displayedWidth": 104,
+          "displayedHeight": 104,
+          "cssWidth": "104px",
+          "cssHeight": "104px"
+        },
+        {
+          "src": "../../../assets/img/google-ads/3d/camp-pmax-target.webp",
+          "complete": true,
+          "naturalWidth": 256,
+          "naturalHeight": 256,
+          "displayedWidth": 104,
+          "displayedHeight": 104,
+          "cssWidth": "104px",
+          "cssHeight": "104px"
+        },
+        {
+          "src": "../../../assets/img/google-ads/3d/camp-shopping-box.webp",
+          "complete": true,
+          "naturalWidth": 256,
+          "naturalHeight": 256,
+          "displayedWidth": 104,
+          "displayedHeight": 104,
+          "cssWidth": "104px",
+          "cssHeight": "104px"
+        },
+        {
+          "src": "../../../assets/img/google-ads/3d/camp-remarketing-return.webp",
+          "complete": true,
+          "naturalWidth": 256,
+          "naturalHeight": 256,
+          "displayedWidth": 104,
+          "displayedHeight": 104,
+          "cssWidth": "104px",
+          "cssHeight": "104px"
+        },
+        {
+          "src": "../../../assets/img/google-ads/3d/camp-video-cam.webp",
+          "complete": true,
+          "naturalWidth": 256,
+          "naturalHeight": 256,
+          "displayedWidth": 104,
+          "displayedHeight": 104,
+          "cssWidth": "104px",
+          "cssHeight": "104px"
+        }
+      ],
+      "leftoverSvg": {
+        "card": 0,
+        "camp": 0
+      }
+    },
+    "1440": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "horizontalOverflow": false,
+      "aboutTitleFontSize": "32px",
+      "aboutIcon": {
+        "src": "../../../assets/img/google-ads/google-ads-icon.svg",
+        "complete": true,
+        "naturalWidth": 44,
+        "naturalHeight": 44,
+        "displayedWidth": 44,
+        "displayedHeight": 44,
+        "cssWidth": "44px",
+        "cssHeight": "44px"
+      },
+      "aboutIconExists": true,
+      "cardVisualImgCount": 4,
+      "campVisualImgCount": 5,
+      "cardVisualImgs": [
+        {
+          "src": "../../../assets/img/google-ads/3d/b2b-briefcase.webp",
+          "complete": true,
+          "naturalWidth": 256,
+          "naturalHeight": 256,
+          "displayedWidth": 112,
+          "displayedHeight": 112,
+          "cssWidth": "112px",
+          "cssHeight": "112px"
+        },
+        {
+          "src": "../../../assets/img/google-ads/3d/ecommerce-bag.webp",
+          "complete": true,
+          "naturalWidth": 256,
+          "naturalHeight": 256,
+          "displayedWidth": 112,
+          "displayedHeight": 112,
+          "cssWidth": "112px",
+          "cssHeight": "112px"
+        },
+        {
+          "src": "../../../assets/img/google-ads/3d/local-map-pin.webp",
+          "complete": true,
+          "naturalWidth": 256,
+          "naturalHeight": 256,
+          "displayedWidth": 112,
+          "displayedHeight": 112,
+          "cssWidth": "112px",
+          "cssHeight": "112px"
+        },
+        {
+          "src": "../../../assets/img/google-ads/3d/account-chart.webp",
+          "complete": true,
+          "naturalWidth": 256,
+          "naturalHeight": 256,
+          "displayedWidth": 112,
+          "displayedHeight": 112,
+          "cssWidth": "112px",
+          "cssHeight": "112px"
+        }
+      ],
+      "campVisualImgs": [
+        {
+          "src": "../../../assets/img/google-ads/3d/camp-search-screen.webp",
+          "complete": true,
+          "naturalWidth": 256,
+          "naturalHeight": 256,
+          "displayedWidth": 104,
+          "displayedHeight": 104,
+          "cssWidth": "104px",
+          "cssHeight": "104px"
+        },
+        {
+          "src": "../../../assets/img/google-ads/3d/camp-pmax-target.webp",
+          "complete": true,
+          "naturalWidth": 256,
+          "naturalHeight": 256,
+          "displayedWidth": 104,
+          "displayedHeight": 104,
+          "cssWidth": "104px",
+          "cssHeight": "104px"
+        },
+        {
+          "src": "../../../assets/img/google-ads/3d/camp-shopping-box.webp",
+          "complete": true,
+          "naturalWidth": 256,
+          "naturalHeight": 256,
+          "displayedWidth": 104,
+          "displayedHeight": 104,
+          "cssWidth": "104px",
+          "cssHeight": "104px"
+        },
+        {
+          "src": "../../../assets/img/google-ads/3d/camp-remarketing-return.webp",
+          "complete": true,
+          "naturalWidth": 256,
+          "naturalHeight": 256,
+          "displayedWidth": 104,
+          "displayedHeight": 104,
+          "cssWidth": "104px",
+          "cssHeight": "104px"
+        },
+        {
+          "src": "../../../assets/img/google-ads/3d/camp-video-cam.webp",
+          "complete": true,
+          "naturalWidth": 256,
+          "naturalHeight": 256,
+          "displayedWidth": 104,
+          "displayedHeight": 104,
+          "cssWidth": "104px",
+          "cssHeight": "104px"
+        }
+      ],
+      "leftoverSvg": {
+        "card": 0,
+        "camp": 0
+      }
+    }
+  },
+  "seoFormsAnalytics": {
+    "title": "Google Ads в Казахстане — настройка и ведение рекламы | Raskrutov",
+    "metaDescription": "Настраиваем и ведём Google Ads в Казахстане: поисковые кампании, Performance Max, Demand Gen, аналитика, конверсии и системная оптимизация рекламы.",
+    "canonical": "https://raskrutov.kz/web-studiya/kontekstnaya-reklama/google-ads/",
+    "h1Count": 1,
+    "jsonLdCount": 1,
+    "formsActionCount": 0,
+    "formsTotal": 2,
+    "inputNameCount": 9,
+    "consentCheckbox": true,
+    "analytics": {
+      "hasYmOrMetrika": true,
+      "metrikaId": "101127167"
+    }
+  },
+  "consoleErrors": [],
+  "pageErrors": [],
+  "screenshots": [
+    "site_mirror/_work/google-ads-icons-qa/shots/about-1440.png",
+    "site_mirror/_work/google-ads-icons-qa/shots/audience-1440.png",
+    "site_mirror/_work/google-ads-icons-qa/shots/audience-390.png",
+    "site_mirror/_work/google-ads-icons-qa/shots/audience-card-closeup-1440.png",
+    "site_mirror/_work/google-ads-icons-qa/shots/campaigns-1440.png",
+    "site_mirror/_work/google-ads-icons-qa/shots/campaigns-390.png",
+    "site_mirror/_work/google-ads-icons-qa/shots/home-directions-1440.png",
+    "site_mirror/_work/google-ads-icons-qa/shots/page-top-1440.png"
+  ],
+  "assets": {
+    "webp": [
+      {
+        "file": "assets/img/google-ads/3d/account-chart.webp",
+        "bytes": 12470
+      },
+      {
+        "file": "assets/img/google-ads/3d/b2b-briefcase.webp",
+        "bytes": 14296
+      },
+      {
+        "file": "assets/img/google-ads/3d/camp-pmax-target.webp",
+        "bytes": 14176
+      },
+      {
+        "file": "assets/img/google-ads/3d/camp-remarketing-return.webp",
+        "bytes": 11192
+      },
+      {
+        "file": "assets/img/google-ads/3d/camp-search-screen.webp",
+        "bytes": 10420
+      },
+      {
+        "file": "assets/img/google-ads/3d/camp-shopping-box.webp",
+        "bytes": 15404
+      },
+      {
+        "file": "assets/img/google-ads/3d/camp-video-cam.webp",
+        "bytes": 14136
+      },
+      {
+        "file": "assets/img/google-ads/3d/ecommerce-bag.webp",
+        "bytes": 13318
+      },
+      {
+        "file": "assets/img/google-ads/3d/local-map-pin.webp",
+        "bytes": 15510
+      }
+    ],
+    "totalWebpBytes": 120922,
+    "googleAdsIconSvgBytes": 799
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "s1500": {
+    "file": "D:\\РАБОТА\\111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111\\raskrutov-kz-2026\\site_mirror\\_work\\google-ads-perf\\screenshot-1500ms.png",
+    "state": {
+      "t": 1615.8999999761581,
+      "hasLead": true,
+      "opacity": "1",
+      "visibility": "visible",
+      "fontFamily": "Montserrat, \"Montserrat Fallback\", Arial, sans-serif",
+      "fontWeight": "400",
+      "color": "rgb(58, 58, 58)",
+      "text": "Собираем семантику и объявления, подключаем конверсии и ведё",
+      "paint": [],
+      "check400": false
+    }
+  },
+  "s2500": {
+    "file": "D:\\РАБОТА\\111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111\\raskrutov-kz-2026\\site_mirror\\_work\\google-ads-perf\\screenshot-2500ms.png",
+    "state": {
+      "t": 2512.899999976158,
+      "hasLead": true,
+      "opacity": "1",
+      "visibility": "visible",
+      "fontFamily": "Montserrat, \"Montserrat Fallback\", Arial, sans-serif",
+      "fontWeight": "400",
+      "color": "rgb(58, 58, 58)",
+      "text": "Собираем семантику и объявления, подключаем конверсии и ведё",
+      "paint": [
+        {
+          "name": "first-paint",
+          "startTime": 1745.1000000238419
+        },
+        {
+          "name": "first-contentful-paint",
+          "startTime": 1745.1000000238419
+        }
+      ],
+      "check400": true
+    }
+  }
+}

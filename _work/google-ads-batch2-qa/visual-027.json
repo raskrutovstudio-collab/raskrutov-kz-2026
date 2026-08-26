@@ -1,0 +1,166 @@
+[
+  {
+    "city": "aktau",
+    "url": "http://127.0.0.1:8777/web-studiya/kontekstnaya-reklama/google-ads/aktau/",
+    "viewports": {
+      "390": {
+        "screenshot": "site_mirror/_work/google-ads-batch2-qa/aktau-390.png",
+        "geo": {
+          "scrollWidth": 390,
+          "innerWidth": 390,
+          "hScroll": 0,
+          "scopeItems": 6,
+          "scopeIcons": 6,
+          "taskLis": 7,
+          "taskMarks": 7,
+          "issues": []
+        },
+        "consoleErrors": []
+      },
+      "430": {
+        "screenshot": "site_mirror/_work/google-ads-batch2-qa/aktau-430.png",
+        "geo": {
+          "scrollWidth": 430,
+          "innerWidth": 430,
+          "hScroll": 0,
+          "scopeItems": 6,
+          "scopeIcons": 6,
+          "taskLis": 7,
+          "taskMarks": 7,
+          "issues": []
+        },
+        "consoleErrors": []
+      },
+      "768": {
+        "screenshot": "site_mirror/_work/google-ads-batch2-qa/aktau-768.png",
+        "geo": {
+          "scrollWidth": 768,
+          "innerWidth": 768,
+          "hScroll": 0,
+          "scopeItems": 6,
+          "scopeIcons": 6,
+          "taskLis": 7,
+          "taskMarks": 7,
+          "issues": []
+        },
+        "consoleErrors": []
+      },
+      "1440": {
+        "screenshot": "site_mirror/_work/google-ads-batch2-qa/aktau-1440.png",
+        "geo": {
+          "scrollWidth": 1440,
+          "innerWidth": 1440,
+          "hScroll": 0,
+          "scopeItems": 6,
+          "scopeIcons": 6,
+          "taskLis": 7,
+          "taskMarks": 7,
+          "issues": []
+        },
+        "consoleErrors": []
+      }
+    }
+  },
+  {
+    "city": "atyrau",
+    "url": "http://127.0.0.1:8777/web-studiya/kontekstnaya-reklama/google-ads/atyrau/",
+    "viewports": {
+      "390": {
+        "screenshot": "site_mirror/_work/google-ads-batch2-qa/atyrau-390.png",
+        "geo": {
+          "scrollWidth": 390,
+          "innerWidth": 390,
+          "hScroll": 0,
+          "scopeItems": 6,
+          "scopeIcons": 6,
+          "taskLis": 7,
+          "taskMarks": 7,
+          "issues": []
+        },
+        "consoleErrors": []
+      },
+      "1440": {
+        "screenshot": "site_mirror/_work/google-ads-batch2-qa/atyrau-1440.png",
+        "geo": {
+          "scrollWidth": 1440,
+          "innerWidth": 1440,
+          "hScroll": 0,
+          "scopeItems": 6,
+          "scopeIcons": 6,
+          "taskLis": 7,
+          "taskMarks": 7,
+          "issues": []
+        },
+        "consoleErrors": []
+      }
+    }
+  },
+  {
+    "city": "kokshetau",
+    "url": "http://127.0.0.1:8777/web-studiya/kontekstnaya-reklama/google-ads/kokshetau/",
+    "viewports": {
+      "390": {
+        "screenshot": "site_mirror/_work/google-ads-batch2-qa/kokshetau-390.png",
+        "geo": {
+          "scrollWidth": 390,
+          "innerWidth": 390,
+          "hScroll": 0,
+          "scopeItems": 6,
+          "scopeIcons": 6,
+          "taskLis": 7,
+          "taskMarks": 7,
+          "issues": []
+        },
+        "consoleErrors": []
+      },
+      "1440": {
+        "screenshot": "site_mirror/_work/google-ads-batch2-qa/kokshetau-1440.png",
+        "geo": {
+          "scrollWidth": 1440,
+          "innerWidth": 1440,
+          "hScroll": 0,
+          "scopeItems": 6,
+          "scopeIcons": 6,
+          "taskLis": 7,
+          "taskMarks": 7,
+          "issues": []
+        },
+        "consoleErrors": []
+      }
+    }
+  },
+  {
+    "city": "kostanay",
+    "url": "http://127.0.0.1:8777/web-studiya/kontekstnaya-reklama/google-ads/kostanay/",
+    "viewports": {
+      "390": {
+        "screenshot": "site_mirror/_work/google-ads-batch2-qa/kostanay-390.png",
+        "geo": {
+          "scrollWidth": 390,
+          "innerWidth": 390,
+          "hScroll": 0,
+          "scopeItems": 6,
+          "scopeIcons": 6,
+          "taskLis": 7,
+          "taskMarks": 7,
+          "issues": []
+        },
+        "consoleErrors": []
+      },
+      "1440": {
+        "screenshot": "site_mirror/_work/google-ads-batch2-qa/kostanay-1440.png",
+        "geo": {
+          "scrollWidth": 1440,
+          "innerWidth": 1440,
+          "hScroll": 0,
+          "scopeItems": 6,
+          "scopeIcons": 6,
+          "taskLis": 7,
+          "taskMarks": 7,
+          "issues": []
+        },
+        "consoleErrors": []
+      }
+    }
+  }
+]

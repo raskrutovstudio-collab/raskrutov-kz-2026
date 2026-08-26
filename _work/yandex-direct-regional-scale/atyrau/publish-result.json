@@ -1,0 +1,9 @@
+{
+  "slug": "atyrau",
+  "commit": "d621c18086db29d21ba6c0f4b8450ad57d45ddf7",
+  "main": "819e92c907d03776d98a95542efccd7f784b8853",
+  "plesk": "d6c15d8e479cfb520739914623fc935ca7fb3c43",
+  "mobile_median": 99,
+  "desktop": 100,
+  "production_verified": true
+}

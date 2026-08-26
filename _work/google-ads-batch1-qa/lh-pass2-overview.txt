@@ -1,0 +1,87 @@
+Lighthouse Pass2 Overview
+Server: http://127.0.0.1:8765 (gzip)
+Generated: 2026-08-18T06:24:41.226Z
+Lighthouse: 12.8.2 (from runs)
+
+Columns: Perf | FCP(ms) | LCP(ms) | TBT(ms) | CLS | SI(ms) | A11y | BP | SEO
+
+==============================================================================
+CITY: ALMATY
+==============================================================================
+mobile-1    78 |  1060 |  4804 |  243 | 0.000 |  2315 | 100 |  79 | 100
+mobile-2    99 |  1064 |  2264 |   52 | 0.000 |  1064 | 100 |  79 | 100
+mobile-3    99 |  1059 |  2259 |   38 | 0.000 |  1059 | 100 |  79 | 100
+MEDIAN      99 |  1060 |  2264 |   52 | 0.000 |  1064 | 100 |  79 | 100
+desktop     83 |  1084 |  2713 |   39 | 0.000 |  1084 | 100 |  78 | 100
+
+lighthouseVersion: 12.8.2
+a11yFailed (m1/m2/m3/d): [[],[],[],[]]
+seoFailed  (m1/m2/m3/d): [[],[],[],[]]
+bpFailed   (m1/m2/m3/d): [["third-party-cookies","inspector-issues"],["third-party-cookies","inspector-issues"],["third-party-cookies","inspector-issues"],["third-party-cookies","inspector-issues"]]
+LCP element m1: <p class="ctx-hero__lead">
+LCP element m2: <p class="ctx-hero__lead">
+LCP element m3: <p class="ctx-hero__lead">
+LCP element  d: <p>
+
+==============================================================================
+CITY: SHYMKENT
+==============================================================================
+mobile-1    96 |   909 |  2184 |  195 | 0.000 |   909 | 100 |  79 | 100
+mobile-2    91 |   908 |  3068 |  196 | 0.000 |  2236 | 100 |  79 | 100
+mobile-3    99 |   910 |  2185 |   53 | 0.000 |  2130 | 100 |  79 | 100
+MEDIAN      96 |   909 |  2185 |  195 | 0.000 |  2130 | 100 |  79 | 100
+desktop     88 |   978 |  2113 |   65 | 0.000 |   978 | 100 |  78 | 100
+
+lighthouseVersion: 12.8.2
+a11yFailed (m1/m2/m3/d): [[],[],[],[]]
+seoFailed  (m1/m2/m3/d): [[],[],[],[]]
+bpFailed   (m1/m2/m3/d): [["third-party-cookies","inspector-issues"],["third-party-cookies","inspector-issues"],["third-party-cookies","inspector-issues"],["third-party-cookies","inspector-issues"]]
+LCP element m1: <p class="ctx-hero__lead">
+LCP element m2: <p class="ctx-hero__lead">
+LCP element m3: <p class="ctx-hero__lead">
+LCP element  d: <div class="rk-container ctx-hero__grid">
+
+==============================================================================
+CITY: KARAGANDA
+==============================================================================
+mobile-1    94 |  1058 |  2333 |  202 | 0.000 |  3651 | 100 |  79 | 100
+mobile-2    96 |  1058 |  2258 |  162 | 0.000 |  1058 | 100 |  79 | 100
+mobile-3    95 |  1061 |  2336 |  212 | 0.000 |  1061 | 100 |  79 | 100
+MEDIAN      95 |  1058 |  2333 |  202 | 0.000 |  1061 | 100 |  79 | 100
+desktop     85 |  1155 |  2261 |   86 | 0.000 |  1155 | 100 |  78 | 100
+
+lighthouseVersion: 12.8.2
+a11yFailed (m1/m2/m3/d): [[],[],[],[]]
+seoFailed  (m1/m2/m3/d): [[],[],[],[]]
+bpFailed   (m1/m2/m3/d): [["third-party-cookies","inspector-issues"],["third-party-cookies","inspector-issues"],["third-party-cookies","inspector-issues"],["third-party-cookies","inspector-issues"]]
+LCP element m1: <p class="ctx-hero__lead">
+LCP element m2: <p class="ctx-hero__lead">
+LCP element m3: <p class="ctx-hero__lead">
+LCP element  d: <p>
+
+==============================================================================
+CITY: AKTOBE
+==============================================================================
+mobile-1    94 |   908 |  2183 |  214 | 0.000 |  3666 | 100 |  79 | 100
+mobile-2    93 |   909 |  2184 |  244 | 0.000 |  3675 | 100 |  79 | 100
+mobile-3    99 |   908 |  2108 |   63 | 0.000 |   908 | 100 |  79 | 100
+MEDIAN      94 |   908 |  2183 |  214 | 0.000 |  3666 | 100 |  79 | 100
+desktop     68 |   911 |  2564 |  380 | 0.000 |  1132 | 100 |  78 | 100
+
+lighthouseVersion: 12.8.2
+a11yFailed (m1/m2/m3/d): [[],[],[],[]]
+seoFailed  (m1/m2/m3/d): [[],[],[],[]]
+bpFailed   (m1/m2/m3/d): [["third-party-cookies","inspector-issues"],["third-party-cookies","inspector-issues"],["third-party-cookies","inspector-issues"],["third-party-cookies","inspector-issues"]]
+LCP element m1: <p class="ctx-hero__lead">
+LCP element m2: <p class="ctx-hero__lead">
+LCP element m3: <p class="ctx-hero__lead">
+LCP element  d: <p>
+
+==============================================================================
+COMPACT SCORE TABLE (mobile median / desktop)
+==============================================================================
+City       | M-Perf | M-A11y | M-BP | M-SEO | D-Perf | D-A11y | D-BP | D-SEO | M-LCP | M-TBT
+almaty     |     99 |    100 |   79 |   100 |     83 |    100 |   78 |   100 |  2264 |    52
+shymkent   |     96 |    100 |   79 |   100 |     88 |    100 |   78 |   100 |  2185 |   195
+karaganda  |     95 |    100 |   79 |   100 |     85 |    100 |   78 |   100 |  2333 |   202
+aktobe     |     94 |    100 |   79 |   100 |     68 |    100 |   78 |   100 |  2183 |   214

@@ -1,0 +1,192 @@
+{
+  "kyzylorda": {
+    "url": "http://127.0.0.1:8768/web-studiya/kontekstnaya-reklama/google-ads/kyzylorda/",
+    "runs": [
+      {
+        "performance": 93,
+        "accessibility": 100,
+        "bestPractices": 79,
+        "seo": 100,
+        "fcp": 1061,
+        "lcp": 2336,
+        "tbt": 222,
+        "cls": 0,
+        "lcpElement": "2,340 ms"
+      },
+      {
+        "performance": 89,
+        "accessibility": 100,
+        "bestPractices": 79,
+        "seo": 100,
+        "fcp": 1060,
+        "lcp": 2335,
+        "tbt": 319,
+        "cls": 0,
+        "lcpElement": "2,340 ms"
+      },
+      {
+        "performance": 99,
+        "accessibility": 100,
+        "bestPractices": 79,
+        "seo": 100,
+        "fcp": 1061,
+        "lcp": 2261,
+        "tbt": 36,
+        "cls": 0,
+        "lcpElement": "2,260 ms"
+      }
+    ],
+    "median": {
+      "performance": 93,
+      "accessibility": 100,
+      "bestPractices": 79,
+      "seo": 100,
+      "fcp": 1061,
+      "lcp": 2335,
+      "tbt": 222,
+      "cls": 0
+    }
+  },
+  "pavlodar": {
+    "url": "http://127.0.0.1:8768/web-studiya/kontekstnaya-reklama/google-ads/pavlodar/",
+    "runs": [
+      {
+        "performance": 93,
+        "accessibility": 100,
+        "bestPractices": 79,
+        "seo": 100,
+        "fcp": 1059,
+        "lcp": 2334,
+        "tbt": 259,
+        "cls": 0,
+        "lcpElement": "2,330 ms"
+      },
+      {
+        "performance": 92,
+        "accessibility": 100,
+        "bestPractices": 79,
+        "seo": 100,
+        "fcp": 1060,
+        "lcp": 2335,
+        "tbt": 249,
+        "cls": 0,
+        "lcpElement": "2,330 ms"
+      },
+      {
+        "performance": 89,
+        "accessibility": 100,
+        "bestPractices": 79,
+        "seo": 100,
+        "fcp": 1063,
+        "lcp": 2338,
+        "tbt": 324,
+        "cls": 0,
+        "lcpElement": "2,340 ms"
+      }
+    ],
+    "median": {
+      "performance": 92,
+      "accessibility": 100,
+      "bestPractices": 79,
+      "seo": 100,
+      "fcp": 1060,
+      "lcp": 2335,
+      "tbt": 259,
+      "cls": 0
+    }
+  },
+  "petropavlovsk": {
+    "url": "http://127.0.0.1:8768/web-studiya/kontekstnaya-reklama/google-ads/petropavlovsk/",
+    "runs": [
+      {
+        "performance": 96,
+        "accessibility": 100,
+        "bestPractices": 79,
+        "seo": 100,
+        "fcp": 1057,
+        "lcp": 2257,
+        "tbt": 196,
+        "cls": 0,
+        "lcpElement": "2,260 ms"
+      },
+      {
+        "performance": 83,
+        "accessibility": 100,
+        "bestPractices": 79,
+        "seo": 100,
+        "fcp": 1059,
+        "lcp": 3934,
+        "tbt": 199,
+        "cls": 0,
+        "lcpElement": "3,930 ms"
+      },
+      {
+        "performance": 95,
+        "accessibility": 100,
+        "bestPractices": 79,
+        "seo": 100,
+        "fcp": 1057,
+        "lcp": 2332,
+        "tbt": 197,
+        "cls": 0,
+        "lcpElement": "2,330 ms"
+      }
+    ],
+    "median": {
+      "performance": 95,
+      "accessibility": 100,
+      "bestPractices": 79,
+      "seo": 100,
+      "fcp": 1057,
+      "lcp": 2332,
+      "tbt": 197,
+      "cls": 0
+    }
+  },
+  "semey": {
+    "url": "http://127.0.0.1:8768/web-studiya/kontekstnaya-reklama/google-ads/semey/",
+    "runs": [
+      {
+        "performance": 90,
+        "accessibility": 100,
+        "bestPractices": 79,
+        "seo": 100,
+        "fcp": 1060,
+        "lcp": 3245,
+        "tbt": 188,
+        "cls": 0
+      },
+      {
+        "performance": 95,
+        "accessibility": 100,
+        "bestPractices": 79,
+        "seo": 100,
+        "fcp": 1062,
+        "lcp": 2337,
+        "tbt": 212,
+        "cls": 0
+      },
+      {
+        "performance": 100,
+        "accessibility": 100,
+        "bestPractices": 79,
+        "seo": 100,
+        "fcp": 1061,
+        "lcp": 1886,
+        "tbt": 29,
+        "cls": 0
+      }
+    ],
+    "median": {
+      "performance": 95,
+      "accessibility": 100,
+      "bestPractices": 79,
+      "seo": 100,
+      "fcp": 1061,
+      "lcp": 2337,
+      "tbt": 188,
+      "cls": 0
+    }
+  },
+  "semeyNote": "rerun after noisy first pass"
+}

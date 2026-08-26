@@ -1,0 +1,128 @@
+{
+  "before": {
+    "t": 649.7000000178814,
+    "cls": 0,
+    "header": {
+      "t": 0,
+      "h": 62,
+      "w": 412
+    },
+    "crumbs": {
+      "t": 74,
+      "h": 38,
+      "w": 372
+    },
+    "title": {
+      "t": 132,
+      "h": 104,
+      "w": 372
+    },
+    "sub": {
+      "t": 246,
+      "h": 47,
+      "w": 372
+    },
+    "price": {
+      "t": 307,
+      "h": 60,
+      "w": 372
+    },
+    "lead": {
+      "t": 381,
+      "h": 99,
+      "w": 372
+    },
+    "actions": {
+      "t": 500,
+      "h": 108,
+      "w": 372
+    },
+    "trust": {
+      "t": 626,
+      "h": 152,
+      "w": 372
+    },
+    "visual": {
+      "t": 806,
+      "h": 692,
+      "w": 372
+    },
+    "sticky": null,
+    "media": [
+      "print:home-clean.css?v=39",
+      "print:kontekst-clean.css?v=7",
+      "print:yandex-direct-page.css?v=5",
+      "print:lead-forms.css"
+    ]
+  },
+  "after": {
+    "t": 5678.5,
+    "cls": 0.00021682357021520008,
+    "shifts": [
+      {
+        "value": 0.00021682357021520008,
+        "t": 2044,
+        "sources": [
+          "li.",
+          "li."
+        ]
+      }
+    ],
+    "header": {
+      "t": 0,
+      "h": 62,
+      "w": 412
+    },
+    "crumbs": {
+      "t": 74,
+      "h": 38,
+      "w": 372
+    },
+    "title": {
+      "t": 132,
+      "h": 104,
+      "w": 372
+    },
+    "sub": {
+      "t": 246,
+      "h": 47,
+      "w": 372
+    },
+    "price": {
+      "t": 307,
+      "h": 60,
+      "w": 372
+    },
+    "lead": {
+      "t": 381,
+      "h": 99,
+      "w": 372
+    },
+    "actions": {
+      "t": 500,
+      "h": 108,
+      "w": 372
+    },
+    "trust": {
+      "t": 626,
+      "h": 152,
+      "w": 372
+    },
+    "visual": {
+      "t": 806,
+      "h": 692,
+      "w": 372
+    },
+    "sticky": {
+      "t": 758,
+      "h": 65,
+      "w": 412
+    },
+    "media": [
+      "all:home-clean.css?v=39",
+      "all:kontekst-clean.css?v=7",
+      "all:yandex-direct-page.css?v=5",
+      "all:lead-forms.css"
+    ]
+  }
+}

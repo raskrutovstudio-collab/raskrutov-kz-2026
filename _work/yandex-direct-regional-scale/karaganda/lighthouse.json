@@ -1,0 +1,64 @@
+{
+  "url": "http://127.0.0.1:8791/web-studiya/kontekstnaya-reklama/yandex-direct/karaganda/",
+  "mobile": [
+    {
+      "performance": 95,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "fcp": 1543,
+      "lcp": 1543,
+      "tbt": 233,
+      "cls": 0.024,
+      "si": 1580,
+      "lcpElement": "<p class=\"ctx-hero__lead\">"
+    },
+    {
+      "performance": 96,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "fcp": 1561,
+      "lcp": 1561,
+      "tbt": 212,
+      "cls": 0.024,
+      "si": 1601,
+      "lcpElement": "<p class=\"ctx-hero__lead\">"
+    },
+    {
+      "performance": 89,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "fcp": 1399,
+      "lcp": 1399,
+      "tbt": 431,
+      "cls": 0.024,
+      "si": 1452,
+      "lcpElement": "<p class=\"ctx-hero__lead\">"
+    }
+  ],
+  "median": {
+    "performance": 95,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 100,
+    "fcp": 1543,
+    "lcp": 1543,
+    "tbt": 233,
+    "cls": 0.024,
+    "si": 1580
+  },
+  "desktop": {
+    "performance": 100,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 100,
+    "fcp": 330,
+    "lcp": 330,
+    "tbt": 0,
+    "cls": 0,
+    "si": 429,
+    "lcpElement": "<p>"
+  }
+}

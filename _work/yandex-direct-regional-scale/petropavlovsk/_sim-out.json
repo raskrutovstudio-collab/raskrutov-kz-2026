@@ -1,0 +1,175 @@
+{
+  "rows": [
+    {
+      "peer": "astana",
+      "pass": true,
+      "main_c": 1.6,
+      "core_c": 0.51,
+      "main_j": 0.84,
+      "core_j": 0.28,
+      "dups": 0,
+      "samples": []
+    },
+    {
+      "peer": "almaty",
+      "pass": true,
+      "main_c": 0.43,
+      "core_c": 0,
+      "main_j": 0.22,
+      "core_j": 0,
+      "dups": 0,
+      "samples": []
+    },
+    {
+      "peer": "shymkent",
+      "pass": true,
+      "main_c": 0.31,
+      "core_c": 0,
+      "main_j": 0.15,
+      "core_j": 0,
+      "dups": 0,
+      "samples": []
+    },
+    {
+      "peer": "karaganda",
+      "pass": true,
+      "main_c": 0.31,
+      "core_c": 0,
+      "main_j": 0.15,
+      "core_j": 0,
+      "dups": 0,
+      "samples": []
+    },
+    {
+      "peer": "aktobe",
+      "pass": true,
+      "main_c": 0.18,
+      "core_c": 0,
+      "main_j": 0.08,
+      "core_j": 0,
+      "dups": 0,
+      "samples": []
+    },
+    {
+      "peer": "taraz",
+      "pass": true,
+      "main_c": 0.31,
+      "core_c": 0.13,
+      "main_j": 0.14,
+      "core_j": 0.06,
+      "dups": 0,
+      "samples": []
+    },
+    {
+      "peer": "pavlodar",
+      "pass": true,
+      "main_c": 2.4,
+      "core_c": 1.79,
+      "main_j": 1.17,
+      "core_j": 0.87,
+      "dups": 0,
+      "samples": []
+    },
+    {
+      "peer": "ust-kamenogorsk",
+      "pass": true,
+      "main_c": 3.93,
+      "core_c": 2.56,
+      "main_j": 1.96,
+      "core_j": 1.25,
+      "dups": 0,
+      "samples": []
+    },
+    {
+      "peer": "semey",
+      "pass": true,
+      "main_c": 5.1,
+      "core_c": 5.51,
+      "main_j": 2.59,
+      "core_j": 2.78,
+      "dups": 0,
+      "samples": []
+    },
+    {
+      "peer": "atyrau",
+      "pass": true,
+      "main_c": 8.42,
+      "core_c": 8.21,
+      "main_j": 4.37,
+      "core_j": 4.24,
+      "dups": 0,
+      "samples": []
+    },
+    {
+      "peer": "kostanay",
+      "pass": true,
+      "main_c": 9.28,
+      "core_c": 9.36,
+      "main_j": 4.77,
+      "core_j": 4.74,
+      "dups": 0,
+      "samples": []
+    },
+    {
+      "peer": "kyzylorda",
+      "pass": true,
+      "main_c": 9.22,
+      "core_c": 5,
+      "main_j": 4.75,
+      "core_j": 2.48,
+      "dups": 0,
+      "samples": []
+    },
+    {
+      "peer": "uralsk",
+      "pass": true,
+      "main_c": 10.88,
+      "core_c": 4.87,
+      "main_j": 5.66,
+      "core_j": 2.42,
+      "dups": 0,
+      "samples": []
+    },
+    {
+      "peer": "yd-index",
+      "pass": true,
+      "main_c": 0.31,
+      "core_c": 0.13,
+      "main_j": 0.17,
+      "core_j": 0.08,
+      "dups": 0,
+      "samples": []
+    },
+    {
+      "peer": "kontekst/petropavlovsk",
+      "pass": true,
+      "main_c": 0.18,
+      "core_c": 0.38,
+      "main_j": 0.12,
+      "core_j": 0.3,
+      "dups": 0,
+      "samples": []
+    },
+    {
+      "peer": "google-ads/petropavlovsk",
+      "pass": true,
+      "main_c": 0.06,
+      "core_c": 0.13,
+      "main_j": 0.04,
+      "core_j": 0.09,
+      "dups": 0,
+      "samples": []
+    }
+  ],
+  "worst": {
+    "peer": "kostanay",
+    "pass": true,
+    "main_c": 9.28,
+    "core_c": 9.36,
+    "main_j": 4.77,
+    "core_j": 4.74,
+    "dups": 0,
+    "samples": [],
+    "score": 28.15
+  }
+}

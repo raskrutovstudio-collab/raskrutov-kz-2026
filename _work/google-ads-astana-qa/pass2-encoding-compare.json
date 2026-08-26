@@ -1,0 +1,82 @@
+﻿{
+    "measuredAt":  "2026-08-17 17:06:24 +05:00",
+    "note":  "gzip via _tmp_gzip_serve.mjs :8765; uncompressed via existing server :4180; curl saves raw body (no auto-decompress)",
+    "comparisons":  [
+                        {
+                            "asset":  "html",
+                            "path":  "/web-studiya/kontekstnaya-reklama/google-ads/astana/",
+                            "gzip":  {
+                                         "port":  8765,
+                                         "contentEncoding":  "gzip",
+                                         "contentType":  "text/html; charset=utf-8",
+                                         "transferBytes":  14052,
+                                         "transferEncoding":  "chunked"
+                                     },
+                            "uncompressed":  {
+                                                 "port":  4180,
+                                                 "contentEncoding":  null,
+                                                 "contentType":  "text/html; charset=utf-8",
+                                                 "transferBytes":  61980,
+                                                 "transferEncoding":  "chunked"
+                                             },
+                            "ratio":  0.227
+                        },
+                        {
+                            "asset":  "home-clean.css",
+                            "path":  "/assets/css/home-clean.css?v=39",
+                            "gzip":  {
+                                         "port":  8765,
+                                         "contentEncoding":  "gzip",
+                                         "contentType":  "text/css; charset=utf-8",
+                                         "transferBytes":  11974,
+                                         "transferEncoding":  "chunked"
+                                     },
+                            "uncompressed":  {
+                                                 "port":  4180,
+                                                 "contentEncoding":  null,
+                                                 "contentType":  "text/css; charset=utf-8",
+                                                 "transferBytes":  70937,
+                                                 "transferEncoding":  "chunked"
+                                             },
+                            "ratio":  0.169
+                        },
+                        {
+                            "asset":  "kontekst-clean.css",
+                            "path":  "/assets/css/kontekst-clean.css?v=7",
+                            "gzip":  {
+                                         "port":  8765,
+                                         "contentEncoding":  "gzip",
+                                         "contentType":  "text/css; charset=utf-8",
+                                         "transferBytes":  3618,
+                                         "transferEncoding":  "chunked"
+                                     },
+                            "uncompressed":  {
+                                                 "port":  4180,
+                                                 "contentEncoding":  null,
+                                                 "contentType":  "text/css; charset=utf-8",
+                                                 "transferBytes":  16605,
+                                                 "transferEncoding":  "chunked"
+                                             },
+                            "ratio":  0.218
+                        },
+                        {
+                            "asset":  "google-ads-page.css",
+                            "path":  "/assets/css/google-ads-page.css?v=7",
+                            "gzip":  {
+                                         "port":  8765,
+                                         "contentEncoding":  "gzip",
+                                         "contentType":  "text/css; charset=utf-8",
+                                         "transferBytes":  4478,
+                                         "transferEncoding":  "chunked"
+                                     },
+                            "uncompressed":  {
+                                                 "port":  4180,
+                                                 "contentEncoding":  null,
+                                                 "contentType":  "text/css; charset=utf-8",
+                                                 "transferBytes":  25928,
+                                                 "transferEncoding":  "chunked"
+                                             },
+                            "ratio":  0.173
+                        }
+                    ]
+}

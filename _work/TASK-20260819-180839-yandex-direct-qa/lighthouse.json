@@ -1,0 +1,165 @@
+{
+  "mobile": [
+    {
+      "performance": 96,
+      "accessibility": 100,
+      "bestPractices": 79,
+      "seo": 100,
+      "fcp": 1960,
+      "lcp": 2485,
+      "tbt": 41,
+      "cls": 0.0002168235702152001,
+      "si": 1960,
+      "failed": [
+        {
+          "cat": "performance",
+          "id": "first-contentful-paint",
+          "score": 0.85,
+          "title": "First Contentful Paint"
+        },
+        {
+          "cat": "performance",
+          "id": "largest-contentful-paint",
+          "score": 0.9,
+          "title": "Largest Contentful Paint"
+        },
+        {
+          "cat": "performance",
+          "id": "speed-index",
+          "score": 0.99,
+          "title": "Speed Index"
+        },
+        {
+          "cat": "best-practices",
+          "id": "third-party-cookies",
+          "score": 0,
+          "title": "Uses third-party cookies"
+        },
+        {
+          "cat": "best-practices",
+          "id": "inspector-issues",
+          "score": 0,
+          "title": "Issues were logged in the `Issues` panel in Chrome Devtools"
+        }
+      ]
+    },
+    {
+      "performance": 95,
+      "accessibility": 100,
+      "bestPractices": 79,
+      "seo": 100,
+      "fcp": 1959,
+      "lcp": 2559,
+      "tbt": 36,
+      "cls": 0.0002168235702152001,
+      "si": 1959,
+      "failed": [
+        {
+          "cat": "performance",
+          "id": "first-contentful-paint",
+          "score": 0.85,
+          "title": "First Contentful Paint"
+        },
+        {
+          "cat": "performance",
+          "id": "largest-contentful-paint",
+          "score": 0.88,
+          "title": "Largest Contentful Paint"
+        },
+        {
+          "cat": "performance",
+          "id": "speed-index",
+          "score": 0.99,
+          "title": "Speed Index"
+        },
+        {
+          "cat": "best-practices",
+          "id": "third-party-cookies",
+          "score": 0,
+          "title": "Uses third-party cookies"
+        },
+        {
+          "cat": "best-practices",
+          "id": "inspector-issues",
+          "score": 0,
+          "title": "Issues were logged in the `Issues` panel in Chrome Devtools"
+        }
+      ]
+    },
+    {
+      "performance": 92,
+      "accessibility": 100,
+      "bestPractices": 79,
+      "seo": 100,
+      "fcp": 1659,
+      "lcp": 3111,
+      "tbt": 36,
+      "cls": 0,
+      "si": 3706,
+      "failed": [
+        {
+          "cat": "performance",
+          "id": "first-contentful-paint",
+          "score": 0.93,
+          "title": "First Contentful Paint"
+        },
+        {
+          "cat": "performance",
+          "id": "largest-contentful-paint",
+          "score": 0.75,
+          "title": "Largest Contentful Paint"
+        },
+        {
+          "cat": "performance",
+          "id": "speed-index",
+          "score": 0.85,
+          "title": "Speed Index"
+        },
+        {
+          "cat": "best-practices",
+          "id": "third-party-cookies",
+          "score": 0,
+          "title": "Uses third-party cookies"
+        },
+        {
+          "cat": "best-practices",
+          "id": "inspector-issues",
+          "score": 0,
+          "title": "Issues were logged in the `Issues` panel in Chrome Devtools"
+        }
+      ]
+    }
+  ],
+  "median": {
+    "performance": 95,
+    "fcp": 1959,
+    "lcp": 2559,
+    "tbt": 36,
+    "cls": 0.0002168235702152001
+  },
+  "desktop": {
+    "performance": 100,
+    "accessibility": 100,
+    "bestPractices": 78,
+    "seo": 100,
+    "fcp": 409,
+    "lcp": 569,
+    "tbt": 0,
+    "cls": 0.009540006265327557,
+    "si": 409,
+    "failed": [
+      {
+        "cat": "best-practices",
+        "id": "third-party-cookies",
+        "score": 0,
+        "title": "Uses third-party cookies"
+      },
+      {
+        "cat": "best-practices",
+        "id": "inspector-issues",
+        "score": 0,
+        "title": "Issues were logged in the `Issues` panel in Chrome Devtools"
+      }
+    ]
+  }
+}

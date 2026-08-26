@@ -1,0 +1,194 @@
+{
+  "aktau": {
+    "url": "http://127.0.0.1:8777/web-studiya/kontekstnaya-reklama/google-ads/aktau/",
+    "runs": [
+      {
+        "performance": 74,
+        "accessibility": 100,
+        "bestPractices": 79,
+        "seo": 100,
+        "fcp": 1059,
+        "lcp": 2334,
+        "tbt": 1022,
+        "cls": 0,
+        "lcpElement": "2,330 ms"
+      },
+      {
+        "performance": 99,
+        "accessibility": 100,
+        "bestPractices": 79,
+        "seo": 100,
+        "fcp": 1058,
+        "lcp": 2258,
+        "tbt": 41,
+        "cls": 0,
+        "lcpElement": "2,260 ms"
+      },
+      {
+        "performance": 95,
+        "accessibility": 100,
+        "bestPractices": 79,
+        "seo": 100,
+        "fcp": 1058,
+        "lcp": 2258,
+        "tbt": 217,
+        "cls": 0,
+        "lcpElement": "2,260 ms"
+      }
+    ],
+    "median": {
+      "performance": 95,
+      "accessibility": 100,
+      "bestPractices": 79,
+      "seo": 100,
+      "fcp": 1058,
+      "lcp": 2258,
+      "tbt": 217,
+      "cls": 0
+    }
+  },
+  "atyrau": {
+    "url": "http://127.0.0.1:8777/web-studiya/kontekstnaya-reklama/google-ads/atyrau/",
+    "runs": [
+      {
+        "performance": 99,
+        "accessibility": 100,
+        "bestPractices": 79,
+        "seo": 100,
+        "fcp": 1058,
+        "lcp": 2258,
+        "tbt": 48,
+        "cls": 0,
+        "lcpElement": "2,260 ms"
+      },
+      {
+        "performance": 99,
+        "accessibility": 100,
+        "bestPractices": 79,
+        "seo": 100,
+        "fcp": 1061,
+        "lcp": 2261,
+        "tbt": 59,
+        "cls": 0,
+        "lcpElement": "2,260 ms"
+      },
+      {
+        "performance": 96,
+        "accessibility": 100,
+        "bestPractices": 79,
+        "seo": 100,
+        "fcp": 1061,
+        "lcp": 2261,
+        "tbt": 185,
+        "cls": 0,
+        "lcpElement": "2,260 ms"
+      }
+    ],
+    "median": {
+      "performance": 99,
+      "accessibility": 100,
+      "bestPractices": 79,
+      "seo": 100,
+      "fcp": 1061,
+      "lcp": 2261,
+      "tbt": 59,
+      "cls": 0
+    }
+  },
+  "kokshetau": {
+    "url": "http://127.0.0.1:8777/web-studiya/kontekstnaya-reklama/google-ads/kokshetau/",
+    "runs": [
+      {
+        "performance": 99,
+        "accessibility": 100,
+        "bestPractices": 79,
+        "seo": 100,
+        "fcp": 907,
+        "lcp": 2107,
+        "tbt": 40,
+        "cls": 0,
+        "lcpElement": "2,110 ms"
+      },
+      {
+        "performance": 85,
+        "accessibility": 100,
+        "bestPractices": 79,
+        "seo": 100,
+        "fcp": 906,
+        "lcp": 3772,
+        "tbt": 197,
+        "cls": 0,
+        "lcpElement": "3,770 ms"
+      },
+      {
+        "performance": 99,
+        "accessibility": 100,
+        "bestPractices": 79,
+        "seo": 100,
+        "fcp": 908,
+        "lcp": 2108,
+        "tbt": 39,
+        "cls": 0,
+        "lcpElement": "2,110 ms"
+      }
+    ],
+    "median": {
+      "performance": 99,
+      "accessibility": 100,
+      "bestPractices": 79,
+      "seo": 100,
+      "fcp": 907,
+      "lcp": 2108,
+      "tbt": 40,
+      "cls": 0
+    }
+  },
+  "kostanay": {
+    "url": "http://127.0.0.1:8777/web-studiya/kontekstnaya-reklama/google-ads/kostanay/",
+    "runs": [
+      {
+        "performance": 96,
+        "accessibility": 100,
+        "bestPractices": 79,
+        "seo": 100,
+        "fcp": 907,
+        "lcp": 2182,
+        "tbt": 190,
+        "cls": 0,
+        "lcpElement": "2,180 ms"
+      },
+      {
+        "performance": 99,
+        "accessibility": 100,
+        "bestPractices": 79,
+        "seo": 100,
+        "fcp": 910,
+        "lcp": 2110,
+        "tbt": 51,
+        "cls": 0,
+        "lcpElement": "2,110 ms"
+      },
+      {
+        "performance": 97,
+        "accessibility": 100,
+        "bestPractices": 79,
+        "seo": 100,
+        "fcp": 909,
+        "lcp": 2109,
+        "tbt": 175,
+        "cls": 0,
+        "lcpElement": "2,110 ms"
+      }
+    ],
+    "median": {
+      "performance": 97,
+      "accessibility": 100,
+      "bestPractices": 79,
+      "seo": 100,
+      "fcp": 909,
+      "lcp": 2110,
+      "tbt": 175,
+      "cls": 0
+    }
+  }
+}

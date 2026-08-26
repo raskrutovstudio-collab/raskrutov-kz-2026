@@ -1,0 +1,175 @@
+{
+  "page": "http://127.0.0.1:4180/web-studiya/kontekstnaya-reklama/google-ads/",
+  "lighthouse": "12.8.2",
+  "formFactor": "mobile",
+  "throttlingMethod": "simulate",
+  "runs": [
+    {
+      "run": 1,
+      "performance": 73,
+      "fcp": 2426,
+      "lcp": 3551,
+      "tbt": 543,
+      "cls": 0.0002,
+      "si": 3099,
+      "accessibility": 100,
+      "bestPractices": 79,
+      "seo": 100,
+      "colorContrast": 1,
+      "linkInTextBlock": null,
+      "renderBlocking": [
+        {
+          "url": "http://127.0.0.1:4180/assets/css/google-ads-page.css?v=7",
+          "wastedMs": 609
+        },
+        {
+          "url": "http://127.0.0.1:4180/assets/css/kontekst-clean.css?v=7",
+          "wastedMs": 459
+        },
+        {
+          "url": "http://127.0.0.1:4180/assets/css/home-clean.css?v=39",
+          "wastedMs": 909
+        }
+      ],
+      "lcpSelector": "section#ctx-hero > div.rk-container > div.ctx-hero__copy > p.ctx-hero__lead",
+      "lcpPhases": [
+        {
+          "phase": "TTFB",
+          "timing": 458.5846436227328,
+          "percent": "13%"
+        },
+        {
+          "phase": "Load Delay",
+          "timing": 0,
+          "percent": "0%"
+        },
+        {
+          "phase": "Load Time",
+          "timing": 0,
+          "percent": "0%"
+        },
+        {
+          "phase": "Render Delay",
+          "timing": 3092.169287245466,
+          "percent": "87%"
+        }
+      ],
+      "linkInTextBlockMode": "notApplicable"
+    },
+    {
+      "run": 2,
+      "performance": 88,
+      "fcp": 2406,
+      "lcp": 3531,
+      "tbt": 62,
+      "cls": 0.0002,
+      "si": 2406,
+      "accessibility": 100,
+      "bestPractices": 79,
+      "seo": 100,
+      "colorContrast": 1,
+      "linkInTextBlock": null,
+      "renderBlocking": [
+        {
+          "url": "http://127.0.0.1:4180/assets/css/google-ads-page.css?v=7",
+          "wastedMs": 602
+        },
+        {
+          "url": "http://127.0.0.1:4180/assets/css/kontekst-clean.css?v=7",
+          "wastedMs": 452
+        },
+        {
+          "url": "http://127.0.0.1:4180/assets/css/home-clean.css?v=39",
+          "wastedMs": 902
+        }
+      ],
+      "lcpSelector": "section#ctx-hero > div.rk-container > div.ctx-hero__copy > p.ctx-hero__lead",
+      "lcpPhases": [
+        {
+          "phase": "TTFB",
+          "timing": 452.02451936755375,
+          "percent": "13%"
+        },
+        {
+          "phase": "Load Delay",
+          "timing": 0,
+          "percent": "0%"
+        },
+        {
+          "phase": "Load Time",
+          "timing": 0,
+          "percent": "0%"
+        },
+        {
+          "phase": "Render Delay",
+          "timing": 3079.0490387351074,
+          "percent": "87%"
+        }
+      ],
+      "linkInTextBlockMode": "notApplicable"
+    },
+    {
+      "run": 3,
+      "performance": 88,
+      "fcp": 2405,
+      "lcp": 3530,
+      "tbt": 61,
+      "cls": 0.0002,
+      "si": 2405,
+      "accessibility": 100,
+      "bestPractices": 79,
+      "seo": 100,
+      "colorContrast": 1,
+      "linkInTextBlock": null,
+      "renderBlocking": [
+        {
+          "url": "http://127.0.0.1:4180/assets/css/google-ads-page.css?v=7",
+          "wastedMs": 602
+        },
+        {
+          "url": "http://127.0.0.1:4180/assets/css/kontekst-clean.css?v=7",
+          "wastedMs": 452
+        },
+        {
+          "url": "http://127.0.0.1:4180/assets/css/home-clean.css?v=39",
+          "wastedMs": 902
+        }
+      ],
+      "lcpSelector": "section#ctx-hero > div.rk-container > div.ctx-hero__copy > p.ctx-hero__lead",
+      "lcpPhases": [
+        {
+          "phase": "TTFB",
+          "timing": 451.7594132905277,
+          "percent": "13%"
+        },
+        {
+          "phase": "Load Delay",
+          "timing": 0,
+          "percent": "0%"
+        },
+        {
+          "phase": "Load Time",
+          "timing": 0,
+          "percent": "0%"
+        },
+        {
+          "phase": "Render Delay",
+          "timing": 3078.518826581056,
+          "percent": "87%"
+        }
+      ],
+      "linkInTextBlockMode": "notApplicable"
+    }
+  ],
+  "median": {
+    "performance": 88,
+    "fcp": 2406,
+    "lcp": 3531,
+    "tbt": 62,
+    "cls": 0.0002,
+    "si": 2406,
+    "accessibility": 100,
+    "bestPractices": 79,
+    "seo": 100
+  }
+}

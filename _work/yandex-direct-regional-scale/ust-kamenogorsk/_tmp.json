@@ -1,0 +1,11 @@
+﻿{
+  "a": "site_mirror\\web-studiya\\kontekstnaya-reklama\\yandex-direct\\ust-kamenogorsk\\index.html",
+  "b": "site_mirror\\web-studiya\\kontekstnaya-reklama\\google-ads\\ust-kamenogorsk\\index.html",
+  "main_containment": 0,
+  "main_jaccard": 0,
+  "core_containment": 0,
+  "core_jaccard": 0,
+  "long_dups": 0,
+  "long_dup_samples": [],
+  "pass": true
+}

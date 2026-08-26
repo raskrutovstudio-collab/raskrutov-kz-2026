@@ -1,0 +1,245 @@
+﻿================================================================================
+A. BLAGODARSTVENNYE-PISMA
+================================================================================
+Unique showOriginalImage letter imgs: 0
+
+ImageObject-linked imgs: 0
+TOTAL UNIQUE LETTER IMAGES: 0
+
+================================================================================
+OTZIVI PAGE
+================================================================================
+chars: 354550
+HEADING H1: ╨Ю╤В╨╖╤Л╨▓╤Л ╨╜╨░╤И╨╕╤Е ╨┐╨░╤А╤В╨╜╨╡╤А╨╛╨▓
+HEADING H2: ╨Ю╤В╨╖╤Л╨▓╤Л ╨╜╨░╤И╨╕╤Е ╨┐╨░╤А╤В╨╜╨╡╤А╨╛╨▓
+HEADING H2: ╨Ю╤В╨╖╤Л╨▓╤Л Goole
+HEADING H2: ╨Ю╤В╨╖╤Л╨▓╤Л 2GIS
+HEADING H2: ╨Ъ╨╛╨╜╤В╨░╨║╤В╤Л
+Keyword 'Google': 54
+Keyword '2GIS': 3
+Keyword '2gis': 3
+Keyword 'g.page': 3
+Keyword 'yandex': 45
+
+Otzivi unique gallery images: 17
+O1. idx=0 hash=54bf40700e8e987e359d73bd97e57a13
+   src=//m-files.cdn1.cc/lpfile/5/4/b/54bf40700e8e987e359d73bd97e57a13/-/resize/1920/f.jpeg?36039931
+O2. idx=1 hash=b5186d124bd7b548d25a20d6b095a3fb
+   src=//m-files.cdn1.cc/lpfile/b/5/1/b5186d124bd7b548d25a20d6b095a3fb/-/resize/1920/f.jpeg?19552059
+O3. idx=2 hash=b1fccd4e8418812ce4ee0f9e09501a9d
+   src=//m-files.cdn1.cc/lpfile/b/1/f/b1fccd4e8418812ce4ee0f9e09501a9d/-/resize/1920/f.jpeg?85419377
+O4. idx=3 hash=b31d83bd90e50afb268a6d633fbaa5cc
+   src=//m-files.cdn1.cc/lpfile/b/3/1/b31d83bd90e50afb268a6d633fbaa5cc/-/resize/1920/f.jpeg?65955080
+O5. idx=4 hash=c9a59117d0bda607ec821368b659adea
+   src=//m-files.cdn1.cc/lpfile/c/9/a/c9a59117d0bda607ec821368b659adea/-/resize/1920/f.jpeg?66421577
+O6. idx=5 hash=26f97aa4261cb5482493d9854372abc2
+   src=//m-files.cdn1.cc/lpfile/2/6/f/26f97aa4261cb5482493d9854372abc2/-/resize/1920/f.jpeg?48093859
+O7. idx=6 hash=5bf57122736eea77a71cabf84c254770
+   src=//m-files.cdn1.cc/lpfile/5/b/f/5bf57122736eea77a71cabf84c254770/-/resize/1920/f.jpeg?69060420
+O8. idx=7 hash=5b82959b1704c7d0c60dbfaf3c12aa68
+   src=//m-files.cdn1.cc/lpfile/5/b/8/5b82959b1704c7d0c60dbfaf3c12aa68/-/resize/1920/f.jpeg?98019702
+O9. idx=8 hash=5c7db6ed1c0c8fd0cb6b12dd5a4a5ce6
+   src=//m-files.cdn1.cc/lpfile/5/c/7/5c7db6ed1c0c8fd0cb6b12dd5a4a5ce6/-/resize/1920/f.jpeg?66512007
+O10. idx=9 hash=7e451be32fb06765c70cbc9653a3253a
+   src=//m-files.cdn1.cc/lpfile/7/e/4/7e451be32fb06765c70cbc9653a3253a/-/resize/1920/f.jpeg?89158479
+O11. idx=10 hash=9faf6971402e1dc7f28af85871661ffa
+   src=//m-files.cdn1.cc/lpfile/9/f/a/9faf6971402e1dc7f28af85871661ffa/-/resize/1920/f.jpeg?6925457
+O12. idx=11 hash=3af18b26863671835eb1eb4d8de36ec1
+   src=//m-files.cdn1.cc/lpfile/3/a/f/3af18b26863671835eb1eb4d8de36ec1/-/resize/1920/f.jpeg?25216604
+O13. idx=12 hash=c2da339090372d865027b4f7e625d165
+   src=//m-files.cdn1.cc/lpfile/c/2/d/c2da339090372d865027b4f7e625d165/-/resize/1920/f.jpeg?89646307
+O14. idx=13 hash=d58b0d3dc14e83eadbd5d34c902cff1c
+   src=//m-files.cdn1.cc/lpfile/d/5/8/d58b0d3dc14e83eadbd5d34c902cff1c/-/resize/1920/f.jpeg?34302935
+O15. idx=14 hash=4be51cc3cafbdae38191d104761d29ba
+   src=//m-files.cdn1.cc/lpfile/4/b/e/4be51cc3cafbdae38191d104761d29ba/-/resize/1920/f.jpeg?74862091
+O16. idx=15 hash=08d77280fef689a63d0c5ae13bc1b957
+   src=//m-files.cdn1.cc/lpfile/0/8/d/08d77280fef689a63d0c5ae13bc1b957/-/resize/1920/f.jpeg?34022886
+O17. idx=16 hash=fcb54c058baec77355158320da5dbfd4
+   src=//m-files.cdn1.cc/lpfile/f/c/b/fcb54c058baec77355158320da5dbfd4/-/resize/1920/f.jpeg?19793640
+
+--- TEXT BLOCKS ---
+Candidate text blocks: 7
+
+T1 (1000 chars):
+((r,u)=>{const l=document.getElementById(r);l.contentWindow.document.open(),l.contentWindow.document.write(decodeURIComponent(escape(atob(u)))),l.contentWindow.document.close()})("big_light_70000001041348422", "PGhlYWQ+PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiPgogICAgd2luZG93Ll9fc2l6ZV9fPSdiaWcnOwogICAgd2luZG93Ll9fdGhlbWVfXz0nbGlnaHQnOwogICAgd2luZG93Ll9fYnJhbmNoSWRfXz0nNzAwMDAwMDEwNDEzNDg0MjInCiAgICB3aW5kb3 cuX19vcmdJZF9fPSc3MDAwMDAwMTAzOTY0NDkxMicKICAgPC9zY3JpcHQ+PHNjcmlwdCBjcm9zc29yaWdpbj0iYW5vbnltb3VzIiB0eXBlPSJtb2R1bGUiIHNyYz0iaHR0cHM6Ly9kaXNrLjJnaXMuY29tL3dpZGdldC1jb25zdHJ1Y3Rvci9hc3NldHMv
+...[truncated]
+
+T2 (56 chars):
+╨Я╨╜-╨Я╤В: ╤Б 9-00 ╨┐╨╛ 18-00
+╨б╨▒: ╤Б 10-00 ╨┐╨╛ 16-00
+╨Т╤Б: ╨▓╤Л╤Е╨╛╨┤╨╜╨╛╨╣
+
+T3 (34 chars):
+E-mail: daniil@../../../index.html
+
+T4 (87 chars):
+╨Р╨┤╤А╨╡╤Б:┬а╨Я╨╡╤В╤А╨╛╨┐╨░╨▓╨╗╨╛╨▓╤Б╨║, ╨Ц╤Г╨╝╨░╨▒╨░╨╡╨▓╨░ 109, ╨╛╤Д╨╕╤Б 606╨░ 
+(╨┐╤А╨░╨▓╤Л╨╣ ╨╗╨╕╤Д╤В, 6╨╣ ╤Н╤В╨░╨╢, ╨╜╨░╨╗╨╡╨▓╨╛ ╨┤╨╛ ╤Г╨┐╨╛╤А╨░)
+
+T5 (95 chars):
+╨в╨╛╨▓╨░╤А╨╕╤Й╨╡╤Б╤В╨▓╨╛ ╤Б ╨╛╨│╤А╨░╨╜╨╕╤З╨╡╨╜╨╜╨╛╨╣ ╨╛╤В╨▓╨╡╤В╤Б╤В╨▓╨╡╨╜╨╜╨╛╤Б╤В╤М╤О
+ "╨а╨░╤Б╨║╤А╤Г╤В╨╛╨▓"
+╨С╨Ш╨Э 250440002596
+KZ10998KTB0001865903
+
+T6 (134 chars):
+╨С╨Ш╨Ъ TSEKZKA
+╨С╨░╨╜╨║ "Alatau City Bank"
+╨Р╨┤╤А╨╡╤Б:╨Ъ╨Р╨Ч╨Р╨е╨б╨в╨Р╨Э, ╨б╨╡╨▓╨╡╤А╨╛-╨Ъ╨░╨╖╨░╤Е╤Б╤В╨░╨╜╤Б╨║╨░╤П ╨╛╨▒╨╗╨░╤Б╤В╤М,
+ ╨│. ╨Я╨╡╤В╤А╨╛╨┐╨░╨▓╨╗╨╛╨▓╤Б╨║, ╤Г╨╗. ╨Ъ╨Р╨Ч╨Р╨е╨б╨в╨Р╨Э╨б╨Ъ╨Ю╨Щ ╨Я╨а╨Р╨Т╨Ф╨л, ╨┤. 271
+
+T7 (66 chars):
+╨Р╨У╨Х╨Э╨в╨б╨в╨Т╨Ю ╨Ш╨Э╨в╨Х╨а╨Э╨Х╨в ╨Ь╨Р╨а╨Ъ╨Х╨в╨Ш╨Э╨У╨Р
+┬йRASKRUTOV 2025 | ╨Т╨б╨Х ╨Я╨а╨Р╨Т╨Р ╨Ч╨Р╨й╨Ш╨й╨Х╨Э╨л
+
+--- RATING / AUTHOR patterns ---
+Pattern \d\s*/\s*5: 7
+  ...epeat: no-repeat}#\37 fba336d0d744b20a6a1d8253eb073e7 { --icon: url(//m-files.cdn1.cc/lpfile/3/5/0/3505e36d91c396bac1085ac76d54299d.svg?77195561) center center / cover no-repeat; --hoverEffect: scale(1.1); }#\37 fba336d0...
+  ... <img src="//m-files.cdn1.cc/lpfile/5/b/8/5b82959b1704c7d0c60dbfaf3c12aa68/-/resize/1920/f.jpeg?98019702" title="" alt="" loading="lazy"> ...
+  ... <img src="//m-files.cdn1.cc/lpfile/5/c/7/5c7db6ed1c0c8fd0cb6b12dd5a4a5ce6/-/resize/1920/f.jpeg?66512007" title="" alt="" loading="lazy"> ...
+  ...;"> <img class="preview__image" data-index="7" src="//m-files.cdn1.cc/lpfile/5/b/8/5b82959b1704c7d0c60dbfaf3c12aa68/-/resize/1920/f.jpeg?98019702" loading="lazy" ontouchstart="return msJsWrapper(event,'5f70f88c11424d7e87...
+  ...;"> <img class="preview__image" data-index="8" src="//m-files.cdn1.cc/lpfile/5/c/7/5c7db6ed1c0c8fd0cb6b12dd5a4a5ce6/-/resize/1920/f.jpeg?66512007" loading="lazy" ontouchstart="return msJsWrapper(event,'5f70f88c11424d7e87...
+  ...'6bdd7a710ad14a2fb6d235ad30d476bf','showImagePreview(6)');"> <img src="//m-files.cdn1.cc/lpfile/5/b/8/5b82959b1704c7d0c60dbfaf3c12aa68/-/resize/1920/f.jpeg?55445106" title="" alt="" loading="lazy"> </div> <div class="sli...
+  ...ouchCancel(event)');"> <img class="preview__image" data-index="6" src="//m-files.cdn1.cc/lpfile/5/b/8/5b82959b1704c7d0c60dbfaf3c12aa68/-/resize/1920/f.jpeg?55445106" loading="lazy" ontouchstart="return msJsWrapper(event,...
+Pattern Review: 193
+  ...11424d7e87962ce219a16633 .image__text { }}#\35 f70f88c11424d7e87962ce219a16633 .preview__wrapper { background: rgba(138,138,138,0.5);}#\35 f70f88c11424d7e87962ce219a16633 .section__wrapper {overflow: clip;padding-top: 0p...
+  ...-child(1) { width: 100%; margin-left: 0%; }}#\35 f70f88c11424d7e87962ce219a16633 .preview__wrapper { position: fixed; display: none; justify-content: center; align-items: center; top: 0; bottom: 0; left: 0; right: 0; tra...
+  ...0; right: 0; transition: opacity 0.3s; z-index: 20;}#\35 f70f88c11424d7e87962ce219a16633 .preview__image { display: none;}#\35 f70f88c11424d7e87962ce219a16633 .preview__image--active { display: block;}#\35 f70f88c11424d7...
+  ...11424d7e87962ce219a16633 .preview__image { display: none;}#\35 f70f88c11424d7e87962ce219a16633 .preview__image--active { display: block;}#\35 f70f88c11424d7e87962ce219a16633 .preview__images { position: absolute; inset: ...
+  ...7962ce219a16633 .preview__image--active { display: block;}#\35 f70f88c11424d7e87962ce219a16633 .preview__images { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;}#\35 f70f88c114...
+  ...y: flex; align-items: center; justify-content: center;}#\35 f70f88c11424d7e87962ce219a16633 .preview__images > img,#\35 f70f88c11424d7e87962ce219a16633 .preview__images > svg { max-height: 100%;}#\35 f70f88c11424d7e87962...
+  ...}#\35 f70f88c11424d7e87962ce219a16633 .preview__images > img,#\35 f70f88c11424d7e87962ce219a16633 .preview__images > svg { max-height: 100%;}#\35 f70f88c11424d7e87962ce219a16633 .preview__arrow-wrapper { position: absolu...
+  ...962ce219a16633 .preview__images > svg { max-height: 100%;}#\35 f70f88c11424d7e87962ce219a16633 .preview__arrow-wrapper { position: absolute; height: 100%; width: 50px; z-index: 1; cursor: pointer; -webkit-tap-highlight-c...
+Pattern Google: 54
+  ...TagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-MMWCPM9...
+  ...indow,document,'script','dataLayer','GTM-MMWCPM9L');</script> <noscript><iframe src="../../www.googletagmanager.com/ns__q_id_GTM-MMWCPM9L.html" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscr...
+  ..." style="display:none;visibility:hidden"></iframe></noscript> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17650621265"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){d...
+  ... <meta name="yandex-verification" content="bf184fc4800bd09a" /> <script async src="https://www.googletagmanager.com/gtag/js?id=G-C9LR71M86S"> </script> <script> window.dataLayer = window.dataLayer || []; function gtag(){...
+  ...5e6170deb7-103" href="https:../../../../../../../index.html/index.htmlindex.htmlcontextnaya-reklama-google" onclick="return msJsWrapper(event,'f7fd703c59eb408c82b2e25e6170deb7','mobileMenuHandler');" title=""> <div class...
+  ...-item__name"> <span class="ms-active-string">╨Ъ╨Ю╨Э╨в╨Х╨Ъ╨б╨в╨Э╨Р╨п ╨а╨Х╨Ъ╨Ы╨Р╨Ь╨Р ╨Т GOOGLE</span> </div> </a> <a class="submenu-item ms-ts-f7fd703c59eb408c82b2e25e...
+  ...b8911e0acd3-21" href="https:../../../../../../../index.html/index.htmlindex.htmlcontextnaya-reklama-google" onclick="return msJsWrapper(event,'7124183230b142c6a0de1b8911e0acd3','mobileMenuHandler');" title=""> <div class...
+  ...-item__name"> <span class="ms-active-string">╨Ъ╨Ю╨Э╨в╨Х╨Ъ╨б╨в╨Э╨Р╨п ╨а╨Х╨Ъ╨Ы╨Р╨Ь╨Р ╨Т GOOGLE</span> </div> </a> <a class="submenu-item ms-ts-7124183230b142c6a0de1b89...
+Pattern 2GIS: 3
+  ...d9b445fad49" > <h2 class="blk-data clearfix font-10399" ><b style="color: rgba(30,30,30,1);">╨Ю╤В╨╖╤Л╨▓╤Л 2GIS</b></h2> </div><div class="blk blk_html skip-adapt" id="1ec75d075ac54f54b7c079ea732ff48d" blk_class="blk_html" data...
+  ...e594d44feef2acb423','hideImgNotice');"> <div class="m-image m-image--pc" data-page-link="https://go.2gis.com/awlmq"> <img src="//m-files.cdn1.cc/lpfile/2/2/6/22658569af28563121b2b7d526331568/-/crop/0x0x445x441/-/resize/4...
+  ...svgColor":"#000000","onClickAction":"linkRedirect","actionUrl":{"type":"link","value":"https:\/\/go.2gis.com\/awlmq"},"newTab":true,"actionSectionPopup":"","productForCart":"","sectionId":"","email":"","number":"","goals...
+
+--- EXTERNAL LINKS ---
+https:../../../../../../../index.html/index.htmlindex.htmlcontextnaya-reklama-yandex
+https:../../../../../../../index.html/index.htmlindex.htmlcontextnaya-reklama-google
+URL-like mentions:
+  https://www.googletagmanager.com/gtm.js?id=
+  www.googletagmanager.com/ns__q_id_GTM-MMWCPM9L.html
+  https://www.googletagmanager.com/gtag/js?id=AW-17650621265
+  https://www.googletagmanager.com/gtag/js?id=G-C9LR71M86S
+  https://go.2gis.com/awlmq
+  https://yandex.ru/maps/org/raskrutov_kz/15842351333/?ll=69.135602%2C54.874605&amp;z=18
+  https://g.page/Raskrutov?share
+  googleName=arguments.length
+  googleEvent=arguments.length
+  googleName||this.goals){googleName=googleName?googleName:this.goals.googleGoalsName;googleEvent=googleEvent?googleEvent:this.goals.googleGoalsEvent;reachGaGoal(googleName,googleEvent)}}}};};function
+  googleGoalsName
+  googleGoalsEvent
+  googleGoalsName,this.closePopupGoals.googleGoalsEvent)}this.fadeOutPopup(index)},fadeOutPopup:function
+  2gis.com\/awlmq
+  g.page\/Raskrutov?share
+
+================================================================================
+D. DUPLICATES
+================================================================================
+Letter hashes: 0
+Otzivi hashes: 17
+Common: 0
+Only otzivi: 17
+  54bf40700e8e987e359d73bd97e57a13 //m-files.cdn1.cc/lpfile/5/4/b/54bf40700e8e987e359d73bd97e57a13/-/resize/1920/f.jpeg?36039931
+  b5186d124bd7b548d25a20d6b095a3fb //m-files.cdn1.cc/lpfile/b/5/1/b5186d124bd7b548d25a20d6b095a3fb/-/resize/1920/f.jpeg?19552059
+  b1fccd4e8418812ce4ee0f9e09501a9d //m-files.cdn1.cc/lpfile/b/1/f/b1fccd4e8418812ce4ee0f9e09501a9d/-/resize/1920/f.jpeg?85419377
+  b31d83bd90e50afb268a6d633fbaa5cc //m-files.cdn1.cc/lpfile/b/3/1/b31d83bd90e50afb268a6d633fbaa5cc/-/resize/1920/f.jpeg?65955080
+  c9a59117d0bda607ec821368b659adea //m-files.cdn1.cc/lpfile/c/9/a/c9a59117d0bda607ec821368b659adea/-/resize/1920/f.jpeg?66421577
+  26f97aa4261cb5482493d9854372abc2 //m-files.cdn1.cc/lpfile/2/6/f/26f97aa4261cb5482493d9854372abc2/-/resize/1920/f.jpeg?48093859
+  5bf57122736eea77a71cabf84c254770 //m-files.cdn1.cc/lpfile/5/b/f/5bf57122736eea77a71cabf84c254770/-/resize/1920/f.jpeg?69060420
+  5b82959b1704c7d0c60dbfaf3c12aa68 //m-files.cdn1.cc/lpfile/5/b/8/5b82959b1704c7d0c60dbfaf3c12aa68/-/resize/1920/f.jpeg?98019702
+  5c7db6ed1c0c8fd0cb6b12dd5a4a5ce6 //m-files.cdn1.cc/lpfile/5/c/7/5c7db6ed1c0c8fd0cb6b12dd5a4a5ce6/-/resize/1920/f.jpeg?66512007
+  7e451be32fb06765c70cbc9653a3253a //m-files.cdn1.cc/lpfile/7/e/4/7e451be32fb06765c70cbc9653a3253a/-/resize/1920/f.jpeg?89158479
+  9faf6971402e1dc7f28af85871661ffa //m-files.cdn1.cc/lpfile/9/f/a/9faf6971402e1dc7f28af85871661ffa/-/resize/1920/f.jpeg?6925457
+  3af18b26863671835eb1eb4d8de36ec1 //m-files.cdn1.cc/lpfile/3/a/f/3af18b26863671835eb1eb4d8de36ec1/-/resize/1920/f.jpeg?25216604
+  c2da339090372d865027b4f7e625d165 //m-files.cdn1.cc/lpfile/c/2/d/c2da339090372d865027b4f7e625d165/-/resize/1920/f.jpeg?89646307
+  d58b0d3dc14e83eadbd5d34c902cff1c //m-files.cdn1.cc/lpfile/d/5/8/d58b0d3dc14e83eadbd5d34c902cff1c/-/resize/1920/f.jpeg?34302935
+  4be51cc3cafbdae38191d104761d29ba //m-files.cdn1.cc/lpfile/4/b/e/4be51cc3cafbdae38191d104761d29ba/-/resize/1920/f.jpeg?74862091
+  08d77280fef689a63d0c5ae13bc1b957 //m-files.cdn1.cc/lpfile/0/8/d/08d77280fef689a63d0c5ae13bc1b957/-/resize/1920/f.jpeg?34022886
+  fcb54c058baec77355158320da5dbfd4 //m-files.cdn1.cc/lpfile/f/c/b/fcb54c058baec77355158320da5dbfd4/-/resize/1920/f.jpeg?19793640
+Only letters: 0
+
+================================================================================
+E. CLEAN TEMPLATE CANDIDATES
+================================================================================
+Clean-ish: 179
+index.html | rk=546 | public=false | lpm=false | home_clean=true | form=true | header=true | footer=true | size=81510
+web-studiya/seo-prodvizhenie/index.html | rk=368 | public=false | lpm=false | home_clean=true | form=true | header=true | footer=false | size=68972
+web-studiya/index.html | rk=339 | public=false | lpm=false | home_clean=true | form=true | header=true | footer=false | size=53509
+web-studiya/aktobe/index.html | rk=318 | public=false | lpm=false | home_clean=true | form=true | header=true | footer=false | size=54439
+web-studiya/atyrau/index.html | rk=318 | public=false | lpm=false | home_clean=true | form=true | header=true | footer=false | size=54486
+web-studiya/aktau/index.html | rk=318 | public=false | lpm=false | home_clean=true | form=true | header=true | footer=false | size=54819
+web-studiya/semey/index.html | rk=318 | public=false | lpm=false | home_clean=true | form=true | header=true | footer=false | size=54938
+web-studiya/taraz/index.html | rk=318 | public=false | lpm=false | home_clean=true | form=true | header=true | footer=false | size=54942
+web-studiya/karaganda/index.html | rk=318 | public=false | lpm=false | home_clean=true | form=true | header=true | footer=false | size=55002
+web-studiya/uralsk/index.html | rk=318 | public=false | lpm=false | home_clean=true | form=true | header=true | footer=false | size=55097
+web-studiya/kostanay/index.html | rk=318 | public=false | lpm=false | home_clean=true | form=true | header=true | footer=false | size=55142
+web-studiya/pavlodar/index.html | rk=318 | public=false | lpm=false | home_clean=true | form=true | header=true | footer=false | size=55217
+web-studiya/kokshetau/index.html | rk=318 | public=false | lpm=false | home_clean=true | form=true | header=true | footer=false | size=55262
+web-studiya/kyzylorda/index.html | rk=318 | public=false | lpm=false | home_clean=true | form=true | header=true | footer=false | size=55317
+web-studiya/turkestan/index.html | rk=318 | public=false | lpm=false | home_clean=true | form=true | header=true | footer=false | size=55453
+web-studiya/petropavlovsk/index.html | rk=318 | public=false | lpm=false | home_clean=true | form=true | header=true | footer=false | size=55556
+web-studiya/taldykorgan/index.html | rk=318 | public=false | lpm=false | home_clean=true | form=true | header=true | footer=false | size=55563
+web-studiya/ust-kamenogorsk/index.html | rk=318 | public=false | lpm=false | home_clean=true | form=true | header=true | footer=false | size=56075
+web-studiya/shymkent/index.html | rk=318 | public=false | lpm=false | home_clean=true | form=true | header=true | footer=false | size=56422
+web-studiya/almaty/index.html | rk=317 | public=false | lpm=false | home_clean=true | form=true | header=true | footer=false | size=56693
+web-studiya/astana/index.html | rk=313 | public=false | lpm=false | home_clean=true | form=true | header=true | footer=false | size=53582
+web-studiya/dizayn/index.html | rk=303 | public=false | lpm=false | home_clean=true | form=true | header=true | footer=false | size=54094
+web-studiya/dizayn/semey/index.html | rk=288 | public=false | lpm=false | home_clean=true | form=true | header=true | footer=false | size=54300
+web-studiya/dizayn/taraz/index.html | rk=288 | public=false | lpm=false | home_clean=true | form=true | header=true | footer=false | size=54351
+web-studiya/dizayn/atyrau/index.html | rk=288 | public=false | lpm=false | home_clean=true | form=true | header=true | footer=false | size=54560
+web-studiya/dizayn/aktau/index.html | rk=288 | public=false | lpm=false | home_clean=true | form=true | header=true | footer=false | size=54609
+web-studiya/dizayn/uralsk/index.html | rk=288 | public=false | lpm=false | home_clean=true | form=true | header=true | footer=false | size=54669
+web-studiya/dizayn/aktobe/index.html | rk=288 | public=false | lpm=false | home_clean=true | form=true | header=true | footer=false | size=54702
+web-studiya/dizayn/kostanay/index.html | rk=288 | public=false | lpm=false | home_clean=true | form=true | header=true | footer=false | size=54727
+web-studiya/dizayn/pavlodar/index.html | rk=288 | public=false | lpm=false | home_clean=true | form=true | header=true | footer=false | size=54753
+
+--- o-kompanii status ---
+o-kompanii/blagodarstvennye-pisma/index.html: public=YES rk=16 size=1015999
+o-kompanii/blog/index.html: public=YES rk=16 size=1015616
+o-kompanii/index.html: public=YES rk=16 size=1016284
+o-kompanii/klienty/index.html: public=YES rk=16 size=1015706
+o-kompanii/komanda/index.html: public=YES rk=16 size=1015805
+o-kompanii/o-nas/index.html: public=YES rk=16 size=1015682
+o-kompanii/vakansii/index.html: public=YES rk=16 size=1015765
+CHECK index.html: public=no rk=546 home-clean=true form=true footer=true
+CHECK web-studiya/podderzhka-saytov/index.html: public=no rk=220 home-clean=true form=true footer=false
+CHECK web-studiya/podderzhka-saytov/shymkent/index.html: public=no rk=220 home-clean=true form=true footer=false
+CHECK kontakty/index.html: public=YES rk=15 home-clean=false form=true footer=false
+MISSING portfolio/index.html
+
+================================================================================
+F. LIGHTBOX ON CLEAN PAGES
+================================================================================
+
+Lightbox-named assets: 0
+
+================================================================================
+REDIRECTS / SITEMAP for otzivi
+================================================================================
+
+site_mirror/.htaccess:
+  Redirect 301 /pages/o-kompanii_blagodarstvennye-pisma.html /o-kompanii/blagodarstvennye-pisma
+
+site_mirror/sitemap.xml:
+      <loc>https://raskrutov.kz/o-kompanii/blagodarstvennye-pisma</loc>
+
+docs/seo-regional/CLUSTERS.csv:
+  about_letters;╨С╨╗╨░╨│╨╛╨┤╨░╤А╤Б╤В╨▓╨╡╨╜╨╜╤Л╨╡ ╨┐╨╕╤Б╤М╨╝╨░;╨▒╨╗╨░╨│╨╛╨┤╨░╤А╤Б╤В╨▓╨╡╨╜╨╜╤Л╨╡ ╨┐╨╕╤Б╤М╨╝╨░;╨╜╨╡╤В ╨┤╨░╨╜╨╜╤Л╤Е;╨Ш╨╜╤Д╨╛╤А╨╝╨░╤Ж╨╕╨╛╨╜╨╜╤Л╨╣ / ╨╜╨░╨▓╨╕╨│╨░╤Ж╨╕╨╛╨╜╨╜╤Л╨╣;;0;0;0;0;/o-kompanii/blagodarstvennye-pisma;/o-kompanii/blagodarstvennye-pisma;NEW;╨Э╨╕╨╖╨║╨╕╨╣;╨Ю╤В╨┤╨╡╨╗╤М╨╜╤Л╨╣ ╨╕╨╜╤В╨╡╨╜╤В ╨╕╨╗╨╕ ╤Б╤В╤А╨░╤В╨╡╨│╨╕╤З╨╡╤Б╨║╨░╤П ╤Б╤В╤А╨░╨╜╨╕╤Ж╨░ ╨╛╤В╤Б╤Г╤В╤Б╤В╨▓╤Г╨╡╤В
+  about_reviews;╨Ю╤В╨╖╤Л╨▓╤Л;Raskrutov ╨╛╤В╨╖╤Л╨▓╤Л;╨╜╨╡╤В ╨┤╨░╨╜╨╜╤Л╤Е;╨Э╨░╨▓╨╕╨│╨░╤Ж╨╕╨╛╨╜╨╜╤Л╨╣ / ╤А╨╡╨┐╤Г╤В╨░╤Ж╨╕╨╛╨╜╨╜╤Л╨╣;;0;0;0;0;/otzivi;/otzivi;UPDATE;╨Э╨╕╨╖╨║╨╕╨╣;"URL ╨╕╨╝╨╡╨╡╤В ╨║╨╗╨╕╨║╨╕ ╨╕ ╨┐╨╛╨║╨░╨╖╤Л GSC; ╤Б╤В╤А╨░╨╜╨╕╤Ж╨░ ╤Г╤Б╨╕╨╗╨╕╨▓╨░╨╡╤В ╨┤╨╛╨▓╨╡╤А╨╕╨╡ ╨╕ ╨║╨╛╨╝╨╝╨╡╤А╤З╨╡╤Б╨║╨╕╨╡ ╤А╨░╨╖╨┤╨╡╨╗╤Л.";╨Т╤Л╤Б╨╛╨║╨░╤П
+
+url_mapping.json:
+    "o-kompanii_blagodarstvennye-pisma.html": "o-kompanii/blagodarstvennye-pisma",
+
+DONE

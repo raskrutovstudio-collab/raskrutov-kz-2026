@@ -1,0 +1,63 @@
+{
+  "cls": 0,
+  "shifts": [],
+  "lead": {
+    "opacity": "1",
+    "visibility": "visible",
+    "font": "Montserrat, \"Montserrat Fallback\", Arial, sans-serif",
+    "weight": "400",
+    "color": "rgb(58, 58, 58)",
+    "rect": {
+      "x": 20,
+      "y": 380.671875,
+      "width": 372,
+      "height": 99.1875,
+      "top": 380.671875,
+      "right": 392,
+      "bottom": 479.859375,
+      "left": 20
+    }
+  },
+  "sticky": {
+    "display": "flex",
+    "rect": {
+      "x": 0,
+      "y": 758,
+      "width": 412,
+      "height": 65,
+      "top": 758,
+      "right": 412,
+      "bottom": 823,
+      "left": 0
+    }
+  },
+  "headerH": 62,
+  "logo": {
+    "w": 180,
+    "h": 42,
+    "nw": 180
+  },
+  "titleH": 103.828125,
+  "stylesheets": [
+    {
+      "href": "inline",
+      "rules": 94
+    },
+    {
+      "href": "home-clean.css?v=39",
+      "rules": 414
+    },
+    {
+      "href": "kontekst-clean.css?v=7",
+      "rules": 129
+    },
+    {
+      "href": "yandex-direct-page.css?v=5",
+      "rules": 195
+    },
+    {
+      "href": "lead-forms.css",
+      "rules": 4
+    }
+  ]
+}

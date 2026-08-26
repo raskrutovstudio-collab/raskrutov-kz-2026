@@ -1,0 +1,99 @@
+{
+  "mobile": [
+    {
+      "tag": "m1",
+      "form": "mobile",
+      "perf": 96,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100,
+      "fcp": 1469,
+      "lcp": 2334,
+      "si": 3709,
+      "tbt": 0,
+      "cls": 0,
+      "lcpEl": "section#ctx-hero > div.rk-container > div.ctx-hero__copy > p.ctx-hero__lead",
+      "rb": []
+    },
+    {
+      "tag": "m2",
+      "form": "mobile",
+      "perf": 98,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100,
+      "fcp": 1356,
+      "lcp": 2331,
+      "si": 2274,
+      "tbt": 0,
+      "cls": 0,
+      "lcpEl": "section#ctx-hero > div.rk-container > div.ctx-hero__copy > p.ctx-hero__lead",
+      "rb": []
+    },
+    {
+      "tag": "m3",
+      "form": "mobile",
+      "perf": 98,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100,
+      "fcp": 1357,
+      "lcp": 2332,
+      "si": 2274,
+      "tbt": 0,
+      "cls": 0,
+      "lcpEl": "section#ctx-hero > div.rk-container > div.ctx-hero__copy > p.ctx-hero__lead",
+      "rb": []
+    }
+  ],
+  "median": {
+    "perf": 98,
+    "fcp": 1357,
+    "lcp": 2332,
+    "si": 2274,
+    "tbt": 0,
+    "cls": 0
+  },
+  "minPerf": 96,
+  "maxLcp": 2334,
+  "desktop": [
+    {
+      "tag": "d1",
+      "form": "desktop",
+      "perf": 80,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100,
+      "fcp": 1658,
+      "lcp": 2408,
+      "si": 1658,
+      "tbt": 24,
+      "cls": 0,
+      "lcpEl": "main#main > section#about > div.rk-container > p",
+      "rb": [
+        "yandex-direct-page.css?v=5",
+        "home-clean.css?v=39",
+        "kontekst-clean.css?v=7"
+      ]
+    },
+    {
+      "tag": "d2",
+      "form": "desktop",
+      "perf": 80,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100,
+      "fcp": 1661,
+      "lcp": 2336,
+      "si": 1661,
+      "tbt": 0,
+      "cls": 0.00007432941520923373,
+      "lcpEl": "main#main > section#about > div.rk-container > p",
+      "rb": [
+        "yandex-direct-page.css?v=5",
+        "home-clean.css?v=39",
+        "kontekst-clean.css?v=7"
+      ]
+    }
+  ]
+}

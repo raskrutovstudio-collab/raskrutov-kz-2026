@@ -1,0 +1,276 @@
+{
+  "measuredAt": "2026-08-18T06:12:01.513Z",
+  "pass": true,
+  "failCount": 0,
+  "results": [
+    {
+      "city": "almaty",
+      "viewport": "390x844",
+      "url": "http://127.0.0.1:8765/web-studiya/kontekstnaya-reklama/google-ads/almaty/",
+      "ok": true,
+      "errors": [],
+      "h1": "Настройка и ведение Google Ads в Алматы",
+      "hScroll": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "overflow": 0
+      },
+      "modal": {
+        "visible": true,
+        "ariaHidden": null
+      },
+      "faq": {
+        "expanded": "true",
+        "answerVisible": true,
+        "controls": "gads-alm-faq-a1"
+      },
+      "sticky": {
+        "count": 1,
+        "stickyVisible": true,
+        "box": {
+          "x": 0,
+          "y": 779,
+          "width": 390,
+          "height": 65
+        }
+      }
+    },
+    {
+      "city": "almaty",
+      "viewport": "1440x900",
+      "url": "http://127.0.0.1:8765/web-studiya/kontekstnaya-reklama/google-ads/almaty/",
+      "ok": true,
+      "errors": [],
+      "h1": "Настройка и ведение Google Ads в Алматы",
+      "hScroll": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "overflow": 0
+      },
+      "modal": {
+        "visible": true,
+        "ariaHidden": null
+      },
+      "faq": {
+        "expanded": "true",
+        "answerVisible": true,
+        "controls": "gads-alm-faq-a1"
+      },
+      "sticky": null
+    },
+    {
+      "city": "shymkent",
+      "viewport": "390x844",
+      "url": "http://127.0.0.1:8765/web-studiya/kontekstnaya-reklama/google-ads/shymkent/",
+      "ok": true,
+      "errors": [],
+      "h1": "Настройка и ведение Google Ads в Шымкенте",
+      "hScroll": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "overflow": 0
+      },
+      "modal": {
+        "visible": true,
+        "ariaHidden": null
+      },
+      "faq": {
+        "expanded": "true",
+        "answerVisible": true,
+        "controls": "gads-shy-faq-a1"
+      },
+      "sticky": {
+        "count": 1,
+        "stickyVisible": true,
+        "box": {
+          "x": 0,
+          "y": 779,
+          "width": 390,
+          "height": 65
+        }
+      },
+      "consoleErrors": [
+        "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
+      ]
+    },
+    {
+      "city": "shymkent",
+      "viewport": "1440x900",
+      "url": "http://127.0.0.1:8765/web-studiya/kontekstnaya-reklama/google-ads/shymkent/",
+      "ok": true,
+      "errors": [],
+      "h1": "Настройка и ведение Google Ads в Шымкенте",
+      "hScroll": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "overflow": 0
+      },
+      "modal": {
+        "visible": true,
+        "ariaHidden": null
+      },
+      "faq": {
+        "expanded": "true",
+        "answerVisible": true,
+        "controls": "gads-shy-faq-a1"
+      },
+      "sticky": null
+    },
+    {
+      "city": "karaganda",
+      "viewport": "390x844",
+      "url": "http://127.0.0.1:8765/web-studiya/kontekstnaya-reklama/google-ads/karaganda/",
+      "ok": true,
+      "errors": [],
+      "h1": "Настройка и ведение Google Ads в Караганде",
+      "hScroll": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "overflow": 0
+      },
+      "modal": {
+        "visible": true,
+        "ariaHidden": null
+      },
+      "faq": {
+        "expanded": "true",
+        "answerVisible": true,
+        "controls": "gads-kar-faq-a1"
+      },
+      "sticky": {
+        "count": 1,
+        "stickyVisible": true,
+        "box": {
+          "x": 0,
+          "y": 779,
+          "width": 390,
+          "height": 65
+        }
+      }
+    },
+    {
+      "city": "karaganda",
+      "viewport": "1440x900",
+      "url": "http://127.0.0.1:8765/web-studiya/kontekstnaya-reklama/google-ads/karaganda/",
+      "ok": true,
+      "errors": [],
+      "h1": "Настройка и ведение Google Ads в Караганде",
+      "hScroll": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "overflow": 0
+      },
+      "modal": {
+        "visible": true,
+        "ariaHidden": null
+      },
+      "faq": {
+        "expanded": "true",
+        "answerVisible": true,
+        "controls": "gads-kar-faq-a1"
+      },
+      "sticky": null
+    },
+    {
+      "city": "aktobe",
+      "viewport": "390x844",
+      "url": "http://127.0.0.1:8765/web-studiya/kontekstnaya-reklama/google-ads/aktobe/",
+      "ok": true,
+      "errors": [],
+      "h1": "Настройка и ведение Google Ads в Актобе",
+      "hScroll": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "overflow": 0
+      },
+      "modal": {
+        "visible": true,
+        "ariaHidden": null
+      },
+      "faq": {
+        "expanded": "true",
+        "answerVisible": true,
+        "controls": "gads-akt-faq-a1"
+      },
+      "sticky": {
+        "count": 1,
+        "stickyVisible": true,
+        "box": {
+          "x": 0,
+          "y": 779,
+          "width": 390,
+          "height": 65
+        }
+      }
+    },
+    {
+      "city": "aktobe",
+      "viewport": "1440x900",
+      "url": "http://127.0.0.1:8765/web-studiya/kontekstnaya-reklama/google-ads/aktobe/",
+      "ok": true,
+      "errors": [],
+      "h1": "Настройка и ведение Google Ads в Актобе",
+      "hScroll": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "overflow": 0
+      },
+      "modal": {
+        "visible": true,
+        "ariaHidden": null
+      },
+      "faq": {
+        "expanded": "true",
+        "answerVisible": true,
+        "controls": "gads-akt-faq-a1"
+      },
+      "sticky": null
+    },
+    {
+      "city": "almaty",
+      "viewport": "430x932",
+      "url": "http://127.0.0.1:8765/web-studiya/kontekstnaya-reklama/google-ads/almaty/",
+      "ok": true,
+      "errors": [],
+      "h1": "Настройка и ведение Google Ads в Алматы",
+      "hScroll": {
+        "scrollWidth": 430,
+        "clientWidth": 430,
+        "overflow": 0
+      },
+      "modal": {
+        "visible": true,
+        "ariaHidden": null
+      },
+      "faq": {
+        "expanded": "true",
+        "answerVisible": true,
+        "controls": "gads-alm-faq-a1"
+      },
+      "sticky": null
+    },
+    {
+      "city": "almaty",
+      "viewport": "768x1024",
+      "url": "http://127.0.0.1:8765/web-studiya/kontekstnaya-reklama/google-ads/almaty/",
+      "ok": true,
+      "errors": [],
+      "h1": "Настройка и ведение Google Ads в Алматы",
+      "hScroll": {
+        "scrollWidth": 768,
+        "clientWidth": 768,
+        "overflow": 0
+      },
+      "modal": {
+        "visible": true,
+        "ariaHidden": null
+      },
+      "faq": {
+        "expanded": "true",
+        "answerVisible": true,
+        "controls": "gads-alm-faq-a1"
+      },
+      "sticky": null
+    }
+  ]
+}

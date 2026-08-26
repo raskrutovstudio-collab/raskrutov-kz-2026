@@ -1,0 +1,9 @@
+{
+  "slug": "kostanay",
+  "commit": "07ef8f2693afb79cfac3276a63e5cf07f6ea22d8",
+  "main": "bcba9e310791355ee1acbb6b86939735ef70d4d8",
+  "plesk": "8de92de5693f7f9f547906c70c3416606f088df8",
+  "mobile_median": 99,
+  "desktop": 100,
+  "production_verified": true
+}

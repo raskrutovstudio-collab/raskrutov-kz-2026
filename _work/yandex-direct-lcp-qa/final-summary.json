@@ -1,0 +1,64 @@
+{
+  "mobile": [
+    {
+      "perf": 98,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100,
+      "fcp": 1358,
+      "lcp": 2333,
+      "si": 2282,
+      "tbt": 0,
+      "cls": 0,
+      "lcpEl": "section#ctx-hero > div.rk-container > div.ctx-hero__copy > p.ctx-hero__lead",
+      "rb": 0
+    },
+    {
+      "perf": 98,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100,
+      "fcp": 1356,
+      "lcp": 2331,
+      "si": 2285,
+      "tbt": 0,
+      "cls": 0,
+      "lcpEl": "section#ctx-hero > div.rk-container > div.ctx-hero__copy > p.ctx-hero__lead",
+      "rb": 0
+    },
+    {
+      "perf": 98,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100,
+      "fcp": 1358,
+      "lcp": 2333,
+      "si": 2328,
+      "tbt": 0,
+      "cls": 0,
+      "lcpEl": "section#ctx-hero > div.rk-container > div.ctx-hero__copy > p.ctx-hero__lead",
+      "rb": 0
+    }
+  ],
+  "median": {
+    "perf": 98,
+    "fcp": 1358,
+    "lcp": 2333,
+    "si": 2285,
+    "tbt": 0,
+    "cls": 0
+  },
+  "minPerf": 98,
+  "maxLcp": 2333,
+  "desktop": {
+    "perf": 85,
+    "a11y": 100,
+    "bp": 100,
+    "seo": 100,
+    "fcp": 1059,
+    "lcp": 2259,
+    "tbt": 121,
+    "cls": 0.00009921145626000013,
+    "lcpEl": "main#main > section#about > div.rk-container > p"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "state1500": {
+    "t": 3171.8000000715256,
+    "text": "Собираем семантику и объявления, подключаем конверсии и ведём кампании по данным",
+    "opacity": "1",
+    "visibility": "visible",
+    "color": "rgb(58, 58, 58)",
+    "fontFamily": "Montserrat, \"Montserrat Fallback\", Arial, sans-serif",
+    "fontWeight": "400",
+    "fontSize": "16px",
+    "rect": {
+      "top": 339.265625,
+      "height": 99.1875,
+      "width": 358
+    },
+    "fontsReadyAt": 2804.9000000953674,
+    "check400": true,
+    "check700": true
+  },
+  "state2500": {
+    "t": 3483.3000000715256,
+    "text": "Собираем семантику и объявления, подключаем конверсии и ведём кампании по данным",
+    "opacity": "1",
+    "visibility": "visible",
+    "color": "rgb(58, 58, 58)",
+    "fontFamily": "Montserrat, \"Montserrat Fallback\", Arial, sans-serif",
+    "fontWeight": "400",
+    "fontSize": "16px",
+    "rect": {
+      "top": 339.265625,
+      "height": 99.1875,
+      "width": 358
+    },
+    "fontsReadyAt": 2804.9000000953674,
+    "check400": true,
+    "check700": true
+  },
+  "final": {
+    "paint": [
+      {
+        "name": "first-paint",
+        "startTime": 2297.4000000953674
+      },
+      {
+        "name": "first-contentful-paint",
+        "startTime": 2297.4000000953674
+      }
+    ],
+    "lcp": [],
+    "fonts": [
+      {
+        "family": "Montserrat",
+        "weight": "400",
+        "status": "loaded",
+        "style": "normal"
+      },
+      {
+        "family": "Montserrat",
+        "weight": "700",
+        "status": "loaded",
+        "style": "normal"
+      },
+      {
+        "family": "Montserrat Fallback",
+        "weight": "normal",
+        "status": "loaded",
+        "style": "normal"
+      },
+      {
+        "family": "Montserrat",
+        "weight": "400",
+        "status": "loaded",
+        "style": "normal"
+      },
+      {
+        "family": "Montserrat",
+        "weight": "700",
+        "status": "loaded",
+        "style": "normal"
+      },
+      {
+        "family": "Montserrat",
+        "weight": "700",
+        "status": "loaded",
+        "style": "normal"
+      }
+    ],
+    "fontRes": [
+      {
+        "name": "http://127.0.0.1:4180/assets/m-files.cdn1.cc/web/user/fonts/montserrat/montserrat_bold.woff2",
+        "startTime": 284.10000002384186,
+        "responseEnd": 1567.2000000476837,
+        "transferSize": 59700,
+        "decodedBodySize": 59400
+      },
+      {
+        "name": "http://127.0.0.1:4180/assets/m-files.cdn1.cc/web/user/fonts/montserrat/montserrat_normal.woff2",
+        "startTime": 1697.7000000476837,
+        "responseEnd": 2731,
+        "transferSize": 60088,
+        "decodedBodySize": 59788
+      }
+    ],
+    "fontsReadyAt": 2804.9000000953674,
+    "leadWeight": "400",
+    "leadFamily": "Montserrat, \"Montserrat Fallback\", Arial, sans-serif"
+  },
+  "shot1500": "D:\\РАБОТА\\111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111\\raskrutov-kz-2026\\site_mirror\\_work\\google-ads-perf\\screenshot-1500ms.png",
+  "shot2500": "D:\\РАБОТА\\111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111\\raskrutov-kz-2026\\site_mirror\\_work\\google-ads-perf\\screenshot-2500ms.png"
+}

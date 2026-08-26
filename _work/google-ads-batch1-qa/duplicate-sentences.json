@@ -1,0 +1,74 @@
+{
+  "thresholdChars": 80,
+  "citySwap": {
+    "flag": false,
+    "recommendation": "NO city-swap flag. Identical-after-normalization duplicates are not dominant.",
+    "extraSharedAfterCityNorm": 0
+  },
+  "cityNormalized": {
+    "totalShared": 3,
+    "items": [
+      {
+        "sentence": "Отправка формы, клик по телефону, WhatsApp, оформление заказа и другие согласованные действия.",
+        "pages": [
+          "astana",
+          "almaty",
+          "shymkent"
+        ],
+        "length": 94
+      },
+      {
+        "sentence": "Результат зависит от спроса, предложения, сайта, бюджета, конкуренции и обработки обращений.",
+        "pages": [
+          "astana",
+          "almaty",
+          "shymkent",
+          "karaganda",
+          "aktobe"
+        ],
+        "length": 92
+      },
+      {
+        "sentence": "Тестируем конверсии и URL, проходим модерацию, включаем показы и смотрим первые фразы.",
+        "pages": [
+          "almaty",
+          "shymkent"
+        ],
+        "length": 86
+      }
+    ]
+  },
+  "raw": {
+    "totalShared": 3,
+    "items": [
+      {
+        "sentence": "Отправка формы, клик по телефону, WhatsApp, оформление заказа и другие согласованные действия.",
+        "pages": [
+          "astana",
+          "almaty",
+          "shymkent"
+        ],
+        "length": 94
+      },
+      {
+        "sentence": "Результат зависит от спроса, предложения, сайта, бюджета, конкуренции и обработки обращений.",
+        "pages": [
+          "astana",
+          "almaty",
+          "shymkent",
+          "karaganda",
+          "aktobe"
+        ],
+        "length": 92
+      },
+      {
+        "sentence": "Тестируем конверсии и URL, проходим модерацию, включаем показы и смотрим первые фразы.",
+        "pages": [
+          "almaty",
+          "shymkent"
+        ],
+        "length": 86
+      }
+    ]
+  }
+}

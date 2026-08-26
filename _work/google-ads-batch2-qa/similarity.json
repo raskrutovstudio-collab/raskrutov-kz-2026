@@ -1,0 +1,186 @@
+{
+  "metric": "word 5-gram Jaccard on visible text",
+  "maxPair": {
+    "pair": "aktau vs almaty",
+    "jaccard5": 0.136,
+    "cityNorm": 0.161
+  },
+  "citySwapDetected": "NO",
+  "citySwapRule": "city-normalized Jaccard >= 0.85",
+  "rows": [
+    {
+      "pair": "aktau vs almaty",
+      "jaccard5": 0.136,
+      "cityNorm": 0.161
+    },
+    {
+      "pair": "aktau vs closest-batch1",
+      "closest": "almaty",
+      "jaccard5": 0.136,
+      "cityNorm": 0.161
+    },
+    {
+      "pair": "aktau vs astana",
+      "jaccard5": 0.1282,
+      "cityNorm": 0.1588
+    },
+    {
+      "pair": "aktau vs aktobe",
+      "jaccard5": 0.1257,
+      "cityNorm": 0.1474
+    },
+    {
+      "pair": "aktau vs shymkent",
+      "jaccard5": 0.1191,
+      "cityNorm": 0.1336
+    },
+    {
+      "pair": "atyrau vs kostanay",
+      "jaccard5": 0.1174,
+      "cityNorm": 0.1481
+    },
+    {
+      "pair": "kokshetau vs kostanay",
+      "jaccard5": 0.1172,
+      "cityNorm": 0.1449
+    },
+    {
+      "pair": "aktau vs kostanay",
+      "jaccard5": 0.1149,
+      "cityNorm": 0.1438
+    },
+    {
+      "pair": "aktau vs atyrau",
+      "jaccard5": 0.1058,
+      "cityNorm": 0.129
+    },
+    {
+      "pair": "aktau vs kokshetau",
+      "jaccard5": 0.1025,
+      "cityNorm": 0.1245
+    },
+    {
+      "pair": "atyrau vs kokshetau",
+      "jaccard5": 0.1019,
+      "cityNorm": 0.1222
+    },
+    {
+      "pair": "atyrau vs astana",
+      "jaccard5": 0.1005,
+      "cityNorm": 0.118
+    },
+    {
+      "pair": "kostanay vs astana",
+      "jaccard5": 0.0978,
+      "cityNorm": 0.1181
+    },
+    {
+      "pair": "kostanay vs almaty",
+      "jaccard5": 0.0977,
+      "cityNorm": 0.117
+    },
+    {
+      "pair": "kostanay vs closest-batch1",
+      "closest": "almaty",
+      "jaccard5": 0.0977,
+      "cityNorm": 0.117
+    },
+    {
+      "pair": "kostanay vs aktobe",
+      "jaccard5": 0.0952,
+      "cityNorm": 0.1119
+    },
+    {
+      "pair": "atyrau vs shymkent",
+      "jaccard5": 0.0947,
+      "cityNorm": 0.1078
+    },
+    {
+      "pair": "atyrau vs closest-batch1",
+      "closest": "shymkent",
+      "jaccard5": 0.0947,
+      "cityNorm": 0.1078
+    },
+    {
+      "pair": "atyrau vs almaty",
+      "jaccard5": 0.0946,
+      "cityNorm": 0.1133
+    },
+    {
+      "pair": "kokshetau vs astana",
+      "jaccard5": 0.0945,
+      "cityNorm": 0.1158
+    },
+    {
+      "pair": "kostanay vs shymkent",
+      "jaccard5": 0.0942,
+      "cityNorm": 0.1073
+    },
+    {
+      "pair": "kokshetau vs almaty",
+      "jaccard5": 0.0937,
+      "cityNorm": 0.1142
+    },
+    {
+      "pair": "kokshetau vs closest-batch1",
+      "closest": "almaty",
+      "jaccard5": 0.0937,
+      "cityNorm": 0.1142
+    },
+    {
+      "pair": "kokshetau vs shymkent",
+      "jaccard5": 0.093,
+      "cityNorm": 0.1045
+    },
+    {
+      "pair": "atyrau vs aktobe",
+      "jaccard5": 0.0925,
+      "cityNorm": 0.1087
+    },
+    {
+      "pair": "kokshetau vs aktobe",
+      "jaccard5": 0.0886,
+      "cityNorm": 0.1072
+    },
+    {
+      "pair": "aktau vs karaganda",
+      "jaccard5": 0.0817,
+      "cityNorm": 0.0964
+    },
+    {
+      "pair": "kokshetau vs karaganda",
+      "jaccard5": 0.0811,
+      "cityNorm": 0.0958
+    },
+    {
+      "pair": "kostanay vs karaganda",
+      "jaccard5": 0.0811,
+      "cityNorm": 0.0944
+    },
+    {
+      "pair": "atyrau vs karaganda",
+      "jaccard5": 0.0809,
+      "cityNorm": 0.0942
+    },
+    {
+      "pair": "kokshetau vs ppc_kokshetau",
+      "jaccard5": 0.0274,
+      "cityNorm": 0.0274
+    },
+    {
+      "pair": "kostanay vs ppc_kostanay",
+      "jaccard5": 0.0272,
+      "cityNorm": 0.0272
+    },
+    {
+      "pair": "atyrau vs ppc_atyrau",
+      "jaccard5": 0.0262,
+      "cityNorm": 0.0262
+    },
+    {
+      "pair": "aktau vs ppc_aktau",
+      "jaccard5": 0.0255,
+      "cityNorm": 0.0255
+    }
+  ]
+}

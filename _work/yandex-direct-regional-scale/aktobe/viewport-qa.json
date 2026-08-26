@@ -1,0 +1,904 @@
+{
+  "390": {
+    "status": 200,
+    "screenshot": "D:/РАБОТА/111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111/raskrutov-kz-2026/site_mirror/_work/yandex-direct-regional-scale/aktobe/aktobe-390.png",
+    "consoleErrors": [],
+    "failedRequests": [],
+    "vw": 390,
+    "scrollWidth": 390,
+    "overflow": 0,
+    "offenders": [],
+    "h1": "Настройка и ведение Яндекс Директ в Актобе",
+    "h1Visible": true,
+    "h1Lines": 2,
+    "headerVisible": true,
+    "terminalId": "section#contacts",
+    "terminalVisible": true,
+    "docHeight": 20078,
+    "geometry": {
+      "yd-card": {
+        "count": 6,
+        "widths": [
+          358,
+          358,
+          358,
+          358,
+          358,
+          358
+        ],
+        "heights": [
+          292,
+          292,
+          269,
+          293,
+          292,
+          292
+        ]
+      },
+      "yd-camp": {
+        "count": 6,
+        "widths": [
+          358,
+          358,
+          358,
+          358,
+          358,
+          358
+        ],
+        "heights": [
+          304,
+          326,
+          304,
+          326,
+          304,
+          304
+        ]
+      },
+      "yd-artifact": {
+        "count": 8,
+        "widths": [
+          358,
+          358,
+          358,
+          358,
+          358,
+          358,
+          358,
+          358
+        ],
+        "heights": [
+          250,
+          224,
+          224,
+          245,
+          509,
+          366,
+          373,
+          540
+        ]
+      },
+      "scope-item": {
+        "count": 12,
+        "widths": [
+          358,
+          358,
+          358,
+          358,
+          358,
+          358,
+          358,
+          358,
+          358,
+          358,
+          358,
+          358
+        ],
+        "heights": [
+          158,
+          138,
+          158,
+          138,
+          138,
+          178,
+          158,
+          158,
+          158,
+          158,
+          138,
+          138
+        ]
+      },
+      "decision-card": {
+        "count": 3,
+        "widths": [
+          358,
+          358,
+          358
+        ],
+        "heights": [
+          161,
+          184,
+          186
+        ]
+      },
+      "timeline-item": {
+        "count": 5,
+        "widths": [
+          358,
+          358,
+          358,
+          358,
+          358
+        ],
+        "heights": [
+          204,
+          204,
+          184,
+          204,
+          184
+        ]
+      },
+      "faq-item": {
+        "count": 12,
+        "widths": [
+          358,
+          358,
+          358,
+          358,
+          358,
+          358,
+          358,
+          358,
+          358,
+          358,
+          358,
+          358
+        ],
+        "heights": [
+          75,
+          75,
+          75,
+          75,
+          52,
+          75,
+          75,
+          75,
+          75,
+          52,
+          75,
+          75
+        ]
+      },
+      "trust-item": {
+        "count": 0,
+        "widths": [],
+        "heights": []
+      }
+    },
+    "narrow": [],
+    "zeroBox": [],
+    "tallThin": [],
+    "overlaps": [],
+    "smallTargets": [
+      {
+        "sel": "a.",
+        "h": 19,
+        "w": 132,
+        "text": "создание сайтов"
+      },
+      {
+        "sel": "a.",
+        "h": 19,
+        "w": 121,
+        "text": "лидогенерация"
+      },
+      {
+        "sel": "a.",
+        "h": 19,
+        "w": 145,
+        "text": "SEO-продвижения"
+      },
+      {
+        "sel": "a.",
+        "h": 15,
+        "w": 68,
+        "text": "Положение"
+      },
+      {
+        "sel": "a.",
+        "h": 15,
+        "w": 56,
+        "text": "Согласие"
+      }
+    ],
+    "brokenImages": [],
+    "imagesMissingAlt": 0
+  },
+  "430": {
+    "status": 200,
+    "screenshot": "D:/РАБОТА/111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111/raskrutov-kz-2026/site_mirror/_work/yandex-direct-regional-scale/aktobe/aktobe-430.png",
+    "consoleErrors": [],
+    "failedRequests": [],
+    "vw": 430,
+    "scrollWidth": 430,
+    "overflow": 0,
+    "offenders": [],
+    "h1": "Настройка и ведение Яндекс Директ в Актобе",
+    "h1Visible": true,
+    "h1Lines": 2,
+    "headerVisible": true,
+    "terminalId": "section#contacts",
+    "terminalVisible": true,
+    "docHeight": 19144,
+    "geometry": {
+      "yd-card": {
+        "count": 6,
+        "widths": [
+          390,
+          390,
+          390,
+          390,
+          390,
+          390
+        ],
+        "heights": [
+          269,
+          269,
+          269,
+          269,
+          269,
+          269
+        ]
+      },
+      "yd-camp": {
+        "count": 6,
+        "widths": [
+          390,
+          390,
+          390,
+          390,
+          390,
+          390
+        ],
+        "heights": [
+          304,
+          304,
+          304,
+          304,
+          281,
+          304
+        ]
+      },
+      "yd-artifact": {
+        "count": 8,
+        "widths": [
+          390,
+          390,
+          390,
+          390,
+          390,
+          390,
+          390,
+          390
+        ],
+        "heights": [
+          224,
+          224,
+          224,
+          224,
+          463,
+          341,
+          348,
+          540
+        ]
+      },
+      "scope-item": {
+        "count": 12,
+        "widths": [
+          390,
+          390,
+          390,
+          390,
+          390,
+          390,
+          390,
+          390,
+          390,
+          390,
+          390,
+          390
+        ],
+        "heights": [
+          138,
+          138,
+          138,
+          117,
+          138,
+          158,
+          138,
+          158,
+          158,
+          138,
+          138,
+          138
+        ]
+      },
+      "decision-card": {
+        "count": 3,
+        "widths": [
+          390,
+          390,
+          390
+        ],
+        "heights": [
+          161,
+          161,
+          186
+        ]
+      },
+      "timeline-item": {
+        "count": 5,
+        "widths": [
+          390,
+          390,
+          390,
+          390,
+          390
+        ],
+        "heights": [
+          204,
+          204,
+          184,
+          184,
+          184
+        ]
+      },
+      "faq-item": {
+        "count": 12,
+        "widths": [
+          390,
+          390,
+          390,
+          390,
+          390,
+          390,
+          390,
+          390,
+          390,
+          390,
+          390,
+          390
+        ],
+        "heights": [
+          75,
+          75,
+          52,
+          75,
+          52,
+          52,
+          75,
+          75,
+          75,
+          52,
+          75,
+          52
+        ]
+      },
+      "trust-item": {
+        "count": 0,
+        "widths": [],
+        "heights": []
+      }
+    },
+    "narrow": [],
+    "zeroBox": [],
+    "tallThin": [],
+    "overlaps": [],
+    "smallTargets": [
+      {
+        "sel": "a.",
+        "h": 19,
+        "w": 226,
+        "text": "контекстной рекламе в Актобе"
+      },
+      {
+        "sel": "a.",
+        "h": 19,
+        "w": 132,
+        "text": "создание сайтов"
+      },
+      {
+        "sel": "a.",
+        "h": 19,
+        "w": 121,
+        "text": "лидогенерация"
+      },
+      {
+        "sel": "a.",
+        "h": 15,
+        "w": 68,
+        "text": "Положение"
+      },
+      {
+        "sel": "a.",
+        "h": 15,
+        "w": 56,
+        "text": "Согласие"
+      }
+    ],
+    "brokenImages": [],
+    "imagesMissingAlt": 0
+  },
+  "768": {
+    "status": 200,
+    "screenshot": "D:/РАБОТА/111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111/raskrutov-kz-2026/site_mirror/_work/yandex-direct-regional-scale/aktobe/aktobe-768.png",
+    "consoleErrors": [],
+    "failedRequests": [],
+    "vw": 768,
+    "scrollWidth": 768,
+    "overflow": 0,
+    "offenders": [],
+    "h1": "Настройка и ведение Яндекс Директ в Актобе",
+    "h1Visible": true,
+    "h1Lines": 1,
+    "headerVisible": true,
+    "terminalId": "section#contacts",
+    "terminalVisible": true,
+    "docHeight": 13818,
+    "geometry": {
+      "yd-card": {
+        "count": 6,
+        "widths": [
+          357,
+          357,
+          357,
+          357,
+          357,
+          357
+        ],
+        "heights": [
+          318,
+          318,
+          319,
+          319,
+          318,
+          318
+        ]
+      },
+      "yd-camp": {
+        "count": 6,
+        "widths": [
+          357,
+          357,
+          357,
+          357,
+          357,
+          357
+        ],
+        "heights": [
+          350,
+          350,
+          350,
+          350,
+          328,
+          328
+        ]
+      },
+      "yd-artifact": {
+        "count": 8,
+        "widths": [
+          728,
+          728,
+          728,
+          728,
+          728,
+          728,
+          728,
+          728
+        ],
+        "heights": [
+          163,
+          163,
+          163,
+          163,
+          425,
+          238,
+          307,
+          301
+        ]
+      },
+      "scope-item": {
+        "count": 12,
+        "widths": [
+          728,
+          728,
+          728,
+          728,
+          728,
+          728,
+          728,
+          728,
+          728,
+          728,
+          728,
+          728
+        ],
+        "heights": [
+          97,
+          97,
+          97,
+          97,
+          97,
+          117,
+          97,
+          97,
+          97,
+          97,
+          97,
+          97
+        ]
+      },
+      "decision-card": {
+        "count": 3,
+        "widths": [
+          728,
+          728,
+          728
+        ],
+        "heights": [
+          116,
+          116,
+          116
+        ]
+      },
+      "timeline-item": {
+        "count": 5,
+        "widths": [
+          728,
+          728,
+          728,
+          728,
+          728
+        ],
+        "heights": [
+          163,
+          163,
+          143,
+          143,
+          143
+        ]
+      },
+      "faq-item": {
+        "count": 12,
+        "widths": [
+          728,
+          728,
+          728,
+          728,
+          728,
+          728,
+          728,
+          728,
+          728,
+          728,
+          728,
+          728
+        ],
+        "heights": [
+          52,
+          52,
+          52,
+          52,
+          52,
+          52,
+          52,
+          52,
+          52,
+          52,
+          52,
+          52
+        ]
+      },
+      "trust-item": {
+        "count": 0,
+        "widths": [],
+        "heights": []
+      }
+    },
+    "narrow": [],
+    "zeroBox": [],
+    "tallThin": [],
+    "overlaps": [],
+    "smallTargets": [
+      {
+        "sel": "a.",
+        "h": 19,
+        "w": 225,
+        "text": "Яндекс Директ в Казахстане"
+      },
+      {
+        "sel": "a.",
+        "h": 19,
+        "w": 226,
+        "text": "контекстной рекламе в Актобе"
+      },
+      {
+        "sel": "a.",
+        "h": 19,
+        "w": 132,
+        "text": "создание сайтов"
+      },
+      {
+        "sel": "a.",
+        "h": 19,
+        "w": 121,
+        "text": "лидогенерация"
+      },
+      {
+        "sel": "a.",
+        "h": 19,
+        "w": 145,
+        "text": "SEO-продвижения"
+      },
+      {
+        "sel": "a.",
+        "h": 15,
+        "w": 68,
+        "text": "Положение"
+      },
+      {
+        "sel": "a.",
+        "h": 15,
+        "w": 56,
+        "text": "Согласие"
+      }
+    ],
+    "brokenImages": [],
+    "imagesMissingAlt": 0
+  },
+  "1440": {
+    "status": 200,
+    "screenshot": "D:/РАБОТА/111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111/raskrutov-kz-2026/site_mirror/_work/yandex-direct-regional-scale/aktobe/aktobe-1440.png",
+    "consoleErrors": [],
+    "failedRequests": [],
+    "vw": 1440,
+    "scrollWidth": 1440,
+    "overflow": 0,
+    "offenders": [],
+    "h1": "Настройка и ведение Яндекс Директ в Актобе",
+    "h1Visible": true,
+    "h1Lines": 2,
+    "headerVisible": true,
+    "terminalId": "section#contacts",
+    "terminalVisible": true,
+    "docHeight": 9155,
+    "geometry": {
+      "yd-card": {
+        "count": 6,
+        "widths": [
+          693,
+          693,
+          693,
+          693,
+          693,
+          693
+        ],
+        "heights": [
+          273,
+          273,
+          250,
+          250,
+          250,
+          250
+        ]
+      },
+      "yd-camp": {
+        "count": 6,
+        "widths": [
+          457,
+          457,
+          457,
+          457,
+          457,
+          457
+        ],
+        "heights": [
+          328,
+          328,
+          328,
+          305,
+          305,
+          305
+        ]
+      },
+      "yd-artifact": {
+        "count": 8,
+        "widths": [
+          692,
+          692,
+          692,
+          692,
+          692,
+          692,
+          692,
+          692
+        ],
+        "heights": [
+          163,
+          163,
+          163,
+          163,
+          305,
+          305,
+          307,
+          307
+        ]
+      },
+      "scope-item": {
+        "count": 12,
+        "widths": [
+          694,
+          694,
+          694,
+          694,
+          694,
+          694,
+          694,
+          694,
+          694,
+          694,
+          694,
+          694
+        ],
+        "heights": [
+          97,
+          97,
+          97,
+          97,
+          117,
+          117,
+          117,
+          117,
+          97,
+          97,
+          97,
+          97
+        ]
+      },
+      "decision-card": {
+        "count": 3,
+        "widths": [
+          457,
+          457,
+          457
+        ],
+        "heights": [
+          161,
+          161,
+          161
+        ]
+      },
+      "timeline-item": {
+        "count": 5,
+        "widths": [
+          270,
+          270,
+          270,
+          270,
+          270
+        ],
+        "heights": [
+          265,
+          265,
+          265,
+          265,
+          265
+        ]
+      },
+      "faq-item": {
+        "count": 12,
+        "widths": [
+          1400,
+          1400,
+          1400,
+          1400,
+          1400,
+          1400,
+          1400,
+          1400,
+          1400,
+          1400,
+          1400,
+          1400
+        ],
+        "heights": [
+          52,
+          52,
+          52,
+          52,
+          52,
+          52,
+          52,
+          52,
+          52,
+          52,
+          52,
+          52
+        ]
+      },
+      "trust-item": {
+        "count": 0,
+        "widths": [],
+        "heights": []
+      }
+    },
+    "narrow": [],
+    "zeroBox": [],
+    "tallThin": [],
+    "overlaps": [],
+    "smallTargets": [
+      {
+        "sel": "a.",
+        "h": 19,
+        "w": 53,
+        "text": "Главная"
+      },
+      {
+        "sel": "a.",
+        "h": 19,
+        "w": 46,
+        "text": "Студия"
+      },
+      {
+        "sel": "a.",
+        "h": 19,
+        "w": 138,
+        "text": "Контекстная реклама"
+      },
+      {
+        "sel": "a.",
+        "h": 19,
+        "w": 95,
+        "text": "Яндекс Директ"
+      },
+      {
+        "sel": "a.",
+        "h": 19,
+        "w": 225,
+        "text": "Яндекс Директ в Казахстане"
+      },
+      {
+        "sel": "a.",
+        "h": 19,
+        "w": 226,
+        "text": "контекстной рекламе в Актобе"
+      },
+      {
+        "sel": "a.",
+        "h": 19,
+        "w": 132,
+        "text": "создание сайтов"
+      },
+      {
+        "sel": "a.",
+        "h": 19,
+        "w": 121,
+        "text": "лидогенерация"
+      },
+      {
+        "sel": "a.",
+        "h": 19,
+        "w": 145,
+        "text": "SEO-продвижения"
+      },
+      {
+        "sel": "a.",
+        "h": 15,
+        "w": 68,
+        "text": "Положение"
+      }
+    ],
+    "brokenImages": [],
+    "imagesMissingAlt": 0
+  }
+}

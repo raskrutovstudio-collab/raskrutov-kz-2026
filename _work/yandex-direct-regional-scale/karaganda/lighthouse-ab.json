@@ -1,0 +1,48 @@
+{
+  "astana": [
+    {
+      "performance": 95,
+      "fcp": 1557,
+      "lcp": 1557,
+      "tbt": 239,
+      "cls": 0.004
+    },
+    {
+      "performance": 90,
+      "fcp": 1505,
+      "lcp": 1505,
+      "tbt": 384,
+      "cls": 0.004
+    },
+    {
+      "performance": 87,
+      "fcp": 1422,
+      "lcp": 1422,
+      "tbt": 484,
+      "cls": 0.001
+    }
+  ],
+  "karaganda": [
+    {
+      "performance": 85,
+      "fcp": 1477,
+      "lcp": 1477,
+      "tbt": 593,
+      "cls": 0.024
+    },
+    {
+      "performance": 96,
+      "fcp": 1554,
+      "lcp": 1554,
+      "tbt": 212,
+      "cls": 0.024
+    },
+    {
+      "performance": 97,
+      "fcp": 1522,
+      "lcp": 1522,
+      "tbt": 182,
+      "cls": 0.024
+    }
+  ]
+}

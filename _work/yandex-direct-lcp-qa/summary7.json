@@ -1,0 +1,101 @@
+{
+  "mobile": [
+    {
+      "tag": "m1",
+      "form": "mobile",
+      "perf": 98,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100,
+      "fcp": 1356,
+      "lcp": 2331,
+      "si": 2291,
+      "tbt": 0,
+      "cls": 0,
+      "lcpEl": "section#ctx-hero > div.rk-container > div.ctx-hero__copy > p.ctx-hero__lead"
+    },
+    {
+      "tag": "m2",
+      "form": "mobile",
+      "perf": 99,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100,
+      "fcp": 1356,
+      "lcp": 2106,
+      "si": 1356,
+      "tbt": 0,
+      "cls": 0,
+      "lcpEl": "section#ctx-hero > div.rk-container > div.ctx-hero__copy > p.ctx-hero__lead"
+    },
+    {
+      "tag": "m3",
+      "form": "mobile",
+      "perf": 98,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100,
+      "fcp": 1360,
+      "lcp": 2335,
+      "si": 2259,
+      "tbt": 0,
+      "cls": 0,
+      "lcpEl": "section#ctx-hero > div.rk-container > div.ctx-hero__copy > p.ctx-hero__lead"
+    }
+  ],
+  "median": {
+    "perf": 98,
+    "fcp": 1356,
+    "lcp": 2331,
+    "si": 2259,
+    "tbt": 0,
+    "cls": 0
+  },
+  "minPerf": 98,
+  "maxLcp": 2335,
+  "desktop": [
+    {
+      "tag": "d1",
+      "form": "desktop",
+      "perf": 95,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100,
+      "fcp": 1049,
+      "lcp": 1049,
+      "si": 1049,
+      "tbt": 110,
+      "cls": 0.007465253957296387,
+      "lcpEl": "main#main > section#about > div.rk-container > p"
+    },
+    {
+      "tag": "d2",
+      "form": "desktop",
+      "perf": 86,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100,
+      "fcp": 1059,
+      "lcp": 2109,
+      "si": 1059,
+      "tbt": 123,
+      "cls": 0.00009423677163048939,
+      "lcpEl": "main#main > section#about > div.rk-container > p"
+    },
+    {
+      "tag": "d3",
+      "form": "desktop",
+      "perf": 85,
+      "a11y": 100,
+      "bp": 100,
+      "seo": 100,
+      "fcp": 1062,
+      "lcp": 2262,
+      "si": 1062,
+      "tbt": 125,
+      "cls": 0.00009921145626000013,
+      "lcpEl": "main#main > section#about > div.rk-container > p"
+    }
+  ],
+  "deskMedPerf": 86
+}

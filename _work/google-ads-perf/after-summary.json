@@ -1,0 +1,554 @@
+{
+  "url": "http://127.0.0.1:4180/web-studiya/kontekstnaya-reklama/google-ads/",
+  "timestamp": "2026-08-17T08:02:11.343Z",
+  "formFactor": "mobile",
+  "throttlingMethod": "simulate",
+  "runs": [
+    {
+      "run": 1,
+      "performance": 71,
+      "accessibility": 97,
+      "bestPractices": 79,
+      "seo": 100,
+      "fcp": 3344.2136999999993,
+      "lcp": 5261.060675000001,
+      "tbt": 49,
+      "cls": 0,
+      "si": 4810.050010010984,
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-P",
+                  "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,0,DIV,3,P",
+                  "selector": "section#ctx-hero > div.rk-container > div.ctx-hero__copy > p.ctx-hero__lead",
+                  "boundingRect": {
+                    "top": 359,
+                    "bottom": 459,
+                    "left": 16,
+                    "right": 396,
+                    "width": 380,
+                    "height": 99
+                  },
+                  "snippet": "<p class=\"ctx-hero__lead\">",
+                  "nodeLabel": "Собираем семантику и объявления, подключаем конверсии и ведём кампании по данны…"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 452.30165,
+                "percent": "9%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 4808.759025,
+                "percent": "91%"
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "snippet": null,
+            "selector": null,
+            "nodeLabel": null,
+            "type": "table"
+          },
+          {
+            "snippet": null,
+            "selector": null,
+            "nodeLabel": null,
+            "type": "table"
+          }
+        ]
+      },
+      "renderBlocking": {
+        "score": 0,
+        "overallSavingsMs": 300,
+        "items": [
+          {
+            "url": "http://127.0.0.1:4180/assets/css/google-ads-page.css?v=7",
+            "totalBytes": 29816,
+            "wastedMs": 752
+          }
+        ]
+      },
+      "colorContrast": {
+        "score": 1,
+        "items": []
+      },
+      "lcpPhaseDetail": {
+        "score": 1,
+        "metricSavings": {
+          "LCP": 0
+        },
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "label",
+                "valueType": "text",
+                "label": "Subpart"
+              },
+              {
+                "key": "duration",
+                "valueType": "ms",
+                "label": "Duration"
+              }
+            ],
+            "items": [
+              {
+                "subpart": "timeToFirstByte",
+                "label": "Time to first byte",
+                "duration": 2.9180001220703127
+              },
+              {
+                "subpart": "elementRenderDelay",
+                "label": "Element render delay",
+                "duration": 2323.01999987793
+              }
+            ]
+          },
+          {
+            "type": "node",
+            "lhId": "page-0-P",
+            "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,0,DIV,3,P",
+            "selector": "section#ctx-hero > div.rk-container > div.ctx-hero__copy > p.ctx-hero__lead",
+            "boundingRect": {
+              "top": 359,
+              "bottom": 459,
+              "left": 16,
+              "right": 396,
+              "width": 380,
+              "height": 99
+            },
+            "snippet": "<p class=\"ctx-hero__lead\">",
+            "nodeLabel": "Собираем семантику и объявления, подключаем конверсии и ведём кампании по данны…"
+          }
+        ],
+        "debugData": null
+      },
+      "lcpDisplayValue": "5.3 s"
+    },
+    {
+      "run": 2,
+      "performance": 87,
+      "accessibility": 97,
+      "bestPractices": 79,
+      "seo": 100,
+      "fcp": 1656.5611753477967,
+      "lcp": 2031.561175347797,
+      "tbt": 472.21941232610175,
+      "cls": 0.0002168235702152001,
+      "si": 1656.5611753477967,
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-P",
+                  "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,0,DIV,3,P",
+                  "selector": "section#ctx-hero > div.rk-container > div.ctx-hero__copy > p.ctx-hero__lead",
+                  "boundingRect": {
+                    "top": 359,
+                    "bottom": 459,
+                    "left": 16,
+                    "right": 396,
+                    "width": 380,
+                    "height": 99
+                  },
+                  "snippet": "<p class=\"ctx-hero__lead\">",
+                  "nodeLabel": "Собираем семантику и объявления, подключаем конверсии и ведём кампании по данны…"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 453.2805876738983,
+                "percent": "22%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 1578.2805876738987,
+                "percent": "78%"
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "snippet": null,
+            "selector": null,
+            "nodeLabel": null,
+            "type": "table"
+          },
+          {
+            "snippet": null,
+            "selector": null,
+            "nodeLabel": null,
+            "type": "table"
+          }
+        ]
+      },
+      "renderBlocking": {
+        "score": 0,
+        "overallSavingsMs": 202,
+        "items": [
+          {
+            "url": "http://127.0.0.1:4180/assets/css/google-ads-page.css?v=7",
+            "totalBytes": 29816,
+            "wastedMs": 603
+          }
+        ]
+      },
+      "colorContrast": {
+        "score": 1,
+        "items": []
+      },
+      "lcpPhaseDetail": {
+        "score": 1,
+        "metricSavings": {
+          "LCP": 0
+        },
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "label",
+                "valueType": "text",
+                "label": "Subpart"
+              },
+              {
+                "key": "duration",
+                "valueType": "ms",
+                "label": "Duration"
+              }
+            ],
+            "items": [
+              {
+                "subpart": "timeToFirstByte",
+                "label": "Time to first byte",
+                "duration": 2.725
+              },
+              {
+                "subpart": "elementRenderDelay",
+                "label": "Element render delay",
+                "duration": 424.921
+              }
+            ]
+          },
+          {
+            "type": "node",
+            "lhId": "page-0-P",
+            "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,0,DIV,3,P",
+            "selector": "section#ctx-hero > div.rk-container > div.ctx-hero__copy > p.ctx-hero__lead",
+            "boundingRect": {
+              "top": 359,
+              "bottom": 459,
+              "left": 16,
+              "right": 396,
+              "width": 380,
+              "height": 99
+            },
+            "snippet": "<p class=\"ctx-hero__lead\">",
+            "nodeLabel": "Собираем семантику и объявления, подключаем конверсии и ведём кампании по данны…"
+          }
+        ],
+        "debugData": null
+      },
+      "lcpDisplayValue": "2.0 s"
+    },
+    {
+      "run": 3,
+      "performance": 71,
+      "accessibility": 97,
+      "bestPractices": 79,
+      "seo": 100,
+      "fcp": 3347.2259000000004,
+      "lcp": 5258.4502250000005,
+      "tbt": 50,
+      "cls": 0,
+      "si": 4894.174830574737,
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-P",
+                  "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,0,DIV,3,P",
+                  "selector": "section#ctx-hero > div.rk-container > div.ctx-hero__copy > p.ctx-hero__lead",
+                  "boundingRect": {
+                    "top": 359,
+                    "bottom": 459,
+                    "left": 16,
+                    "right": 396,
+                    "width": 380,
+                    "height": 99
+                  },
+                  "snippet": "<p class=\"ctx-hero__lead\">",
+                  "nodeLabel": "Собираем семантику и объявления, подключаем конверсии и ведём кампании по данны…"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 453.37755,
+                "percent": "9%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 4805.072675,
+                "percent": "91%"
+              }
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "snippet": null,
+            "selector": null,
+            "nodeLabel": null,
+            "type": "table"
+          },
+          {
+            "snippet": null,
+            "selector": null,
+            "nodeLabel": null,
+            "type": "table"
+          }
+        ]
+      },
+      "renderBlocking": {
+        "score": 0,
+        "overallSavingsMs": 300,
+        "items": [
+          {
+            "url": "http://127.0.0.1:4180/assets/css/google-ads-page.css?v=7",
+            "totalBytes": 29816,
+            "wastedMs": 753
+          }
+        ]
+      },
+      "colorContrast": {
+        "score": 1,
+        "items": []
+      },
+      "lcpPhaseDetail": {
+        "score": 1,
+        "metricSavings": {
+          "LCP": 0
+        },
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "label",
+                "valueType": "text",
+                "label": "Subpart"
+              },
+              {
+                "key": "duration",
+                "valueType": "ms",
+                "label": "Duration"
+              }
+            ],
+            "items": [
+              {
+                "subpart": "timeToFirstByte",
+                "label": "Time to first byte",
+                "duration": 2.349
+              },
+              {
+                "subpart": "elementRenderDelay",
+                "label": "Element render delay",
+                "duration": 2394.957
+              }
+            ]
+          },
+          {
+            "type": "node",
+            "lhId": "page-0-P",
+            "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,0,DIV,3,P",
+            "selector": "section#ctx-hero > div.rk-container > div.ctx-hero__copy > p.ctx-hero__lead",
+            "boundingRect": {
+              "top": 359,
+              "bottom": 459,
+              "left": 16,
+              "right": 396,
+              "width": 380,
+              "height": 99
+            },
+            "snippet": "<p class=\"ctx-hero__lead\">",
+            "nodeLabel": "Собираем семантику и объявления, подключаем конверсии и ведём кампании по данны…"
+          }
+        ],
+        "debugData": null
+      },
+      "lcpDisplayValue": "5.3 s"
+    }
+  ],
+  "median": {
+    "performance": 71,
+    "fcp": 3344.2136999999993,
+    "lcp": 5258.4502250000005,
+    "tbt": 50,
+    "cls": 0,
+    "si": 4810.050010010984,
+    "accessibility": 97,
+    "bestPractices": 79,
+    "seo": 100
+  },
+  "baselineMedian": {
+    "performance": 85,
+    "fcp": 2408.494519459777,
+    "lcp": 3635.070038891745,
+    "tbt": 133.83698702681568,
+    "cls": 0.0002168235702152001,
+    "si": 2410.5014506913594,
+    "accessibility": 96,
+    "bestPractices": 79,
+    "seo": 100
+  },
+  "delta": {
+    "performance": -14,
+    "fcp": 935.7191805402222,
+    "lcp": 1623.3801861082557,
+    "tbt": -83.83698702681568,
+    "cls": -0.0002168235702152001,
+    "si": 2399.5485593196245,
+    "accessibility": 1,
+    "bestPractices": 0,
+    "seo": 0
+  }
+}

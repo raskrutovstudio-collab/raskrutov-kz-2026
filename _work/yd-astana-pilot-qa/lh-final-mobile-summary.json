@@ -1,0 +1,44 @@
+{
+  "results": [
+    {
+      "performance": 85,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "fcp": 1341,
+      "lcp": 1341,
+      "cls": 0.001,
+      "tbt": 569
+    },
+    {
+      "performance": 86,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "fcp": 1328,
+      "lcp": 1328,
+      "cls": 0.001,
+      "tbt": 535
+    },
+    {
+      "performance": 87,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "fcp": 1298,
+      "lcp": 1298,
+      "cls": 0.001,
+      "tbt": 498
+    }
+  ],
+  "median": {
+    "performance": 86,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 100,
+    "fcp": 1328,
+    "lcp": 1328,
+    "cls": 0.001,
+    "tbt": 535
+  }
+}

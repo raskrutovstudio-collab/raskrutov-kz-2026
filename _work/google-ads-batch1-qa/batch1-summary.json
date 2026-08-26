@@ -1,0 +1,191 @@
+{
+  "taskId": "TASK-20260818-105340",
+  "timestamp": "2026-08-18 10:53:40 +05:00",
+  "mode": "LOCAL ONLY QA",
+  "commitPushDeploy": false,
+  "gitStatus": {
+    "branch": "work/pc1",
+    "short": [
+      "?? site_mirror/web-studiya/kontekstnaya-reklama/google-ads/aktobe/",
+      "?? site_mirror/web-studiya/kontekstnaya-reklama/google-ads/almaty/",
+      "?? site_mirror/web-studiya/kontekstnaya-reklama/google-ads/karaganda/",
+      "?? site_mirror/web-studiya/kontekstnaya-reklama/google-ads/shymkent/"
+    ],
+    "protectedPagesUntouched": true,
+    "note": "No edits to astana, republican google-ads, kontekst city pages, htaccess, sitemap"
+  },
+  "pages": [
+    "http://127.0.0.1:8765/web-studiya/kontekstnaya-reklama/google-ads/almaty/",
+    "http://127.0.0.1:8765/web-studiya/kontekstnaya-reklama/google-ads/shymkent/",
+    "http://127.0.0.1:8765/web-studiya/kontekstnaya-reklama/google-ads/karaganda/",
+    "http://127.0.0.1:8765/web-studiya/kontekstnaya-reklama/google-ads/aktobe/"
+  ],
+  "jsonLd": {
+    "almaty": { "blocks": 1, "parse": "PASS" },
+    "shymkent": { "blocks": 1, "parse": "PASS" },
+    "karaganda": { "blocks": 1, "parse": "PASS" },
+    "aktobe": { "blocks": 1, "parse": "PASS" }
+  },
+  "fontPreload": {
+    "order": "montserrat_normal.woff2 BEFORE montserrat_bold.woff2",
+    "almaty": "PASS",
+    "shymkent": "PASS",
+    "karaganda": "PASS",
+    "aktobe": "PASS"
+  },
+  "similarity": {
+    "citySwapFlag": false,
+    "method": "word 5-gram Jaccard after city-name normalization",
+    "vsAstanaJaccard": {
+      "almaty": 0.0864,
+      "shymkent": 0.0911,
+      "karaganda": 0.0529,
+      "aktobe": 0.0579
+    },
+    "amongBatchMaxJaccard": { "pair": "almaty-shymkent", "jaccard": 0.0932 },
+    "sharedLongSentencesGt80": [
+      {
+        "sentence": "Отправка формы, клик по телефону, WhatsApp, оформление заказа и другие согласованные действия.",
+        "pages": ["astana", "almaty", "shymkent"],
+        "length": 94
+      },
+      {
+        "sentence": "Результат зависит от спроса, предложения, сайта, бюджета, конкуренции и обработки обращений.",
+        "pages": ["astana", "almaty", "shymkent", "karaganda", "aktobe"],
+        "length": 92
+      },
+      {
+        "sentence": "Тестируем конверсии и URL, проходим модерацию, включаем показы и смотрим первые фразы.",
+        "pages": ["almaty", "shymkent"],
+        "length": 86
+      }
+    ],
+    "rewritePerformed": false,
+    "reason": "Only 3 shared long sentences; UI/disclaimer-like; no city-swap blocks"
+  },
+  "gzipServer": {
+    "script": "_tmp_gzip_serve.mjs",
+    "port": 8765,
+    "contentEncoding": "gzip",
+    "status200": {
+      "almaty": true,
+      "shymkent": true,
+      "karaganda": true,
+      "aktobe": true
+    }
+  },
+  "qualityAll": {
+    "command": "npm run quality:all",
+    "exitCode": 0,
+    "summary": "HTML files: 243; errors: 0; warnings: 855",
+    "artifact": "site_mirror/_work/google-ads-batch1-qa/quality-all.txt"
+  },
+  "playwrightSmoke": {
+    "pass": true,
+    "failCount": 0,
+    "viewportsPerCity": ["390x844", "1440x900"],
+    "optionalRepresentative": ["almaty 430x932", "almaty 768x1024"],
+    "checks": ["no h-scroll", "H1", "modal open", "FAQ expand", "sticky visible at 390"],
+    "note": "Shymkent 390 logged non-blocking ERR_CERT_AUTHORITY_INVALID (third-party)",
+    "artifact": "site_mirror/_work/google-ads-batch1-qa/smoke-playwright.json"
+  },
+  "relatedLinks": {
+    "checks": 24,
+    "all200": true,
+    "artifact": "site_mirror/_work/google-ads-batch1-qa/related-links.json"
+  },
+  "pageLocalFix": {
+    "issue": "link-in-text-block (A11y 97)",
+    "fix": "Inline CSS underline for .gads-page #about a and .gads-page .gads-prose a on all 4 pages",
+    "sharedCssTouched": false,
+    "protectedPagesTouched": false
+  },
+  "lighthouse": {
+    "version": "12.8.2",
+    "throttling": "simulate",
+    "server": "http://127.0.0.1:8765 gzip",
+    "officialPass": "pass2-a11y-underline",
+    "pass1Note": "Pre-fix: A11y 97 (link-in-text-block); karaganda mobile median Perf 88",
+    "mobile": {
+      "almaty": {
+        "runs": [
+          { "label": "m1", "perf": 78, "fcp": 1060, "lcp": 4804, "tbt": 243, "cls": 0, "si": 2315, "a11y": 100, "bp": 79, "seo": 100 },
+          { "label": "m2", "perf": 99, "fcp": 1064, "lcp": 2264, "tbt": 52, "cls": 0, "si": 1064, "a11y": 100, "bp": 79, "seo": 100 },
+          { "label": "m3", "perf": 99, "fcp": 1059, "lcp": 2259, "tbt": 38, "cls": 0, "si": 1059, "a11y": 100, "bp": 79, "seo": 100 }
+        ],
+        "median": { "perf": 99, "fcp": 1060, "lcp": 2264, "tbt": 52, "cls": 0, "si": 1064, "a11y": 100, "bp": 79, "seo": 100 },
+        "lcpElement": "p.ctx-hero__lead"
+      },
+      "shymkent": {
+        "runs": [
+          { "label": "m1", "perf": 96, "fcp": 909, "lcp": 2184, "tbt": 195, "cls": 0, "si": 909, "a11y": 100, "bp": 79, "seo": 100 },
+          { "label": "m2", "perf": 91, "fcp": 908, "lcp": 3068, "tbt": 196, "cls": 0, "si": 2236, "a11y": 100, "bp": 79, "seo": 100 },
+          { "label": "m3", "perf": 99, "fcp": 910, "lcp": 2185, "tbt": 53, "cls": 0, "si": 2130, "a11y": 100, "bp": 79, "seo": 100 }
+        ],
+        "median": { "perf": 96, "fcp": 909, "lcp": 2185, "tbt": 195, "cls": 0, "si": 2130, "a11y": 100, "bp": 79, "seo": 100 },
+        "lcpElement": "p.ctx-hero__lead"
+      },
+      "karaganda": {
+        "runs": [
+          { "label": "m1", "perf": 94, "fcp": 1058, "lcp": 2333, "tbt": 202, "cls": 0, "si": 3651, "a11y": 100, "bp": 79, "seo": 100 },
+          { "label": "m2", "perf": 96, "fcp": 1058, "lcp": 2258, "tbt": 162, "cls": 0, "si": 1058, "a11y": 100, "bp": 79, "seo": 100 },
+          { "label": "m3", "perf": 95, "fcp": 1061, "lcp": 2336, "tbt": 212, "cls": 0, "si": 1061, "a11y": 100, "bp": 79, "seo": 100 }
+        ],
+        "median": { "perf": 95, "fcp": 1058, "lcp": 2333, "tbt": 202, "cls": 0, "si": 1061, "a11y": 100, "bp": 79, "seo": 100 },
+        "lcpElement": "p.ctx-hero__lead"
+      },
+      "aktobe": {
+        "runs": [
+          { "label": "m1", "perf": 94, "fcp": 908, "lcp": 2183, "tbt": 214, "cls": 0, "si": 3666, "a11y": 100, "bp": 79, "seo": 100 },
+          { "label": "m2", "perf": 93, "fcp": 909, "lcp": 2184, "tbt": 244, "cls": 0, "si": 3675, "a11y": 100, "bp": 79, "seo": 100 },
+          { "label": "m3", "perf": 99, "fcp": 908, "lcp": 2108, "tbt": 63, "cls": 0, "si": 908, "a11y": 100, "bp": 79, "seo": 100 }
+        ],
+        "median": { "perf": 94, "fcp": 908, "lcp": 2183, "tbt": 214, "cls": 0, "si": 3666, "a11y": 100, "bp": 79, "seo": 100 },
+        "lcpElement": "p.ctx-hero__lead"
+      }
+    },
+    "desktop": {
+      "almaty": { "perf": 83, "a11y": 100, "bp": 78, "seo": 100, "fcp": 1084, "lcp": 2713, "tbt": 39, "cls": 0, "si": 1084 },
+      "shymkent": { "perf": 88, "a11y": 100, "bp": 78, "seo": 100, "fcp": 978, "lcp": 2113, "tbt": 65, "cls": 0, "si": 978 },
+      "karaganda": { "perf": 85, "a11y": 100, "bp": 78, "seo": 100, "fcp": 1155, "lcp": 2261, "tbt": 86, "cls": 0, "si": 1155 },
+      "aktobe": { "perf": 68, "a11y": 100, "bp": 78, "seo": 100, "fcp": 911, "lcp": 2564, "tbt": 380, "cls": 0, "si": 1132 }
+    },
+    "bpFailures": ["third-party-cookies", "inspector-issues"],
+    "bpNote": "Same analytics/cookie BP pattern as Astana reference (BP 79). Metrika not disabled."
+  },
+  "karagandaPerfDiagnosis": {
+    "pass1Median": 88,
+    "pass2Median": 95,
+    "artifact": "site_mirror/_work/google-ads-batch1-qa/karaganda-perf-diagnosis.txt",
+    "summary": "Pass1 median 88 was run-variance + text LCP render-delay (p.ctx-hero__lead). Shared render-blocking CSS and Metrika TBT present on all sister pages. Font preload already correct; gzip used. Pass2 re-measure after a11y underline: median 95, all runs >=94."
+  },
+  "gates": {
+    "jsonLdParse": "PASS",
+    "fontPreloadOrder": "PASS",
+    "citySwap": "PASS (no rewrite needed)",
+    "gzipHtml": "PASS",
+    "qualityAll": "PASS",
+    "playwrightSmoke": "PASS",
+    "relatedLinks200": "PASS",
+    "mobileMedianPerfGte90": "PASS (almaty 99, shymkent 96, karaganda 95, aktobe 94)",
+    "mobileMedianPerfGte95": "PARTIAL (aktobe 94)",
+    "noMobileRunBelow90": "FAIL (almaty m1=78 outlier; LCP 4804ms)",
+    "a11y100": "PASS (after page-local underline fix)",
+    "seo100": "PASS",
+    "bp100": "FAIL (analytics third-party-cookies / inspector-issues; expected)",
+    "desktopPerfGte98": "FAIL (83/88/85/68)"
+  },
+  "verdict": {
+    "localQaComplete": true,
+    "readyForProduction": false,
+    "readyForReview": true,
+    "blockersForProduction": [
+      "Best Practices 78-79 (third-party cookies / inspector issues from analytics; Metrika kept)",
+      "Desktop Performance below 98 on all 4 pages",
+      "Almaty pass2 mobile run m1 Performance 78 (<90 individual-run floor)",
+      "Aktobe mobile median 94 (<95 preferred target, above 90 floor)"
+    ],
+    "githubStatus": "LOCAL ONLY"
+  },
+  "artifactsDir": "site_mirror/_work/google-ads-batch1-qa/"
+}

@@ -1,0 +1,150 @@
+.ctx-page .rk-section
+.ctx-page .rk-h2
+.ctx-page .rk-breadcrumbs
+.ctx-page .rk-breadcrumbs ol
+.ctx-page .rk-breadcrumbs li
+.ctx-page .rk-breadcrumbs li:not(:last-child)::after
+.ctx-page .rk-breadcrumbs a
+.ctx-page .rk-breadcrumbs a:hover, .ctx-page .rk-breadcrumbs a:focus-visible
+.ctx-page .rk-breadcrumbs [aria-current="page"]
+.ctx-hero
+.ctx-hero__grid
+.ctx-hero__title
+.ctx-hero__sub
+.ctx-hero__sub em
+.ctx-hero__lead
+.ctx-hero__actions
+.ctx-btn
+.ctx-btn:focus-visible
+.ctx-btn--primary
+.ctx-btn--primary:hover
+.ctx-btn__arrow
+.ctx-btn--ghost
+.ctx-btn--ghost:hover
+.ctx-trust
+.ctx-trust__item
+.ctx-trust__item img, .ctx-trust__ico
+.ctx-hero__visual
+.ctx-hero__visual img
+@media (max-width: 767px) :: .ctx-hero__title
+@media (max-width: 767px) :: .ctx-hero__sub
+@media (max-width: 767px) :: .ctx-hero__lead
+@media (max-width: 767px) :: .ctx-trust
+@media (max-width: 767px) :: .ctx-hero__actions .ctx-btn
+.ctx-services
+.ctx-services__grid
+.ctx-scard
+.ctx-scard:hover
+.ctx-scard:focus-visible
+.ctx-scard__head
+.ctx-scard__icon
+.ctx-scard__icon--svg
+.ctx-scard__icon--svg svg
+.ctx-scard h2
+.ctx-scard h2 .ctx-accent-google
+.ctx-scard h2 .ctx-accent-yandex
+.ctx-scard h2 .ctx-accent-geo, .ctx-scard h2 .ctx-accent-aeo
+.ctx-scard p
+.ctx-scard__more
+.ctx-includes
+.ctx-includes__grid
+.ctx-inc
+.ctx-inc img
+.ctx-inc h3
+.ctx-inc p
+.ctx-blocks__grid
+.ctx-block
+.ctx-block img
+.ctx-block h3
+.ctx-block p
+.ctx-process
+.ctx-process__grid
+.ctx-step
+.ctx-step__num
+.ctx-step h3
+.ctx-step p
+.ctx-synergy__grid
+.ctx-syn
+.ctx-syn__icon
+.ctx-syn h3
+.ctx-syn > p
+.ctx-syn ul
+.ctx-syn li
+.ctx-syn li::before
+.ctx-kpi
+.ctx-kpi__grid
+.ctx-kpi__card
+.ctx-kpi__card img
+.ctx-kpi__card h3
+.ctx-approach__grid
+.ctx-approach__card
+.ctx-approach__card h3
+.ctx-approach__card--prolevel h3 .tag
+.ctx-approach__card--darktruth h3 .tag
+.ctx-approach__card--x10mind h3 .tag
+.ctx-approach__card--killcritic h3 .tag
+.ctx-approach__card h3 .rest
+.ctx-approach__card p
+.ctx-page #faq .rk-h2
+.ctx-page .rk-faq
+.ctx-cta-band
+.ctx-cta-band h2
+.ctx-cta-band p
+.ctx-cta-band .ctx-btn--light
+@media (min-width: 768px) :: .ctx-services__grid
+@media (min-width: 768px) :: .ctx-includes__grid
+@media (min-width: 768px) :: .ctx-blocks__grid
+@media (min-width: 768px) :: .ctx-process__grid
+@media (min-width: 768px) :: .ctx-synergy__grid
+@media (min-width: 768px) :: .ctx-approach__grid
+@media (min-width: 1100px) :: .ctx-hero__grid
+@media (min-width: 1100px) :: .ctx-services__grid
+@media (min-width: 1100px) :: .ctx-includes__grid
+@media (min-width: 1100px) :: .ctx-blocks__grid
+@media (min-width: 1100px) :: .ctx-process__grid
+@media (min-width: 1100px) :: .ctx-synergy__grid
+@media (min-width: 1100px) :: .ctx-kpi__grid
+@media (min-width: 1100px) :: .ctx-approach__grid
+@media (min-width: 1100px) :: .ctx-page .rk-section
+@media (max-width: 767px) :: .ctx-trust
+@media (max-width: 767px) :: .ctx-hero__actions
+@media (max-width: 767px) :: .ctx-hero__actions .ctx-btn
+@media (max-width: 767px) :: .ctx-kpi__grid
+@media (prefers-reduced-motion: reduce) :: .ctx-btn, .ctx-scard
+@media (prefers-reduced-motion: reduce) :: .ctx-btn--primary:hover, .ctx-scard:hover
+.ctx-audience__grid
+.ctx-aud
+.ctx-aud h3
+.ctx-aud p
+.ctx-pricing
+.ctx-pricing__grid
+.ctx-price
+.ctx-price--featured
+.ctx-price__badge
+.ctx-price h3
+.ctx-price__lead
+.ctx-price__cost
+.ctx-price ul
+.ctx-price li
+.ctx-price li::before
+.ctx-pricing__note
+.ctx-cases__grid
+.ctx-case
+.ctx-case__tag
+.ctx-case h3
+.ctx-case ul
+.ctx-case li
+.ctx-case li::before
+.ctx-case p
+.ctx-related__grid
+.ctx-related__grid a
+.ctx-related__grid a:hover,.ctx-related__grid a:focus-visible
+@media (min-width:768px) :: .ctx-audience__grid,.ctx-pricing__grid,.ctx-cases__grid
+@media (min-width:768px) :: .ctx-services__grid
+@media (min-width:1100px) :: .ctx-audience__grid
+@media (min-width:1100px) :: .ctx-pricing__grid,.ctx-cases__grid
+@media (min-width:1100px) :: .ctx-services__grid
+.ctx-local__lead
+.ctx-local__grid
+@media (min-width:768px) :: .ctx-local__grid
+@media (min-width:1100px) :: .ctx-local__grid

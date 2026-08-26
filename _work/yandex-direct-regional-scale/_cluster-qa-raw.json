@@ -1,0 +1,820 @@
+{
+  "generated_at": "2026-08-21T11:57:32.637Z",
+  "local": [
+    {
+      "slug": "astana",
+      "sectionOpen": 14,
+      "sectionClose": 14,
+      "sectionBal": true,
+      "contactsForm": "rk-form-contacts-yd-astana",
+      "hasContactsForm": true,
+      "formIds": [
+        "rk-form-contacts-yd-astana",
+        "rk-form-popup-yd-astana"
+      ],
+      "hasPopupForm": true,
+      "metrika": true,
+      "price": true,
+      "h1": "Настройка и ведение Яндекс Директ в Астане",
+      "h1HasYandex": true,
+      "h1HasCity": true,
+      "officeFaqs": []
+    },
+    {
+      "slug": "almaty",
+      "sectionOpen": 14,
+      "sectionClose": 14,
+      "sectionBal": true,
+      "contactsForm": "rk-form-contacts-yd-almaty",
+      "hasContactsForm": true,
+      "formIds": [
+        "rk-form-contacts-yd-almaty",
+        "rk-form-popup-yd-almaty"
+      ],
+      "hasPopupForm": true,
+      "metrika": true,
+      "price": true,
+      "h1": "Настройка и ведение Яндекс Директ в Алматы",
+      "h1HasYandex": true,
+      "h1HasCity": true,
+      "officeFaqs": []
+    },
+    {
+      "slug": "shymkent",
+      "sectionOpen": 14,
+      "sectionClose": 14,
+      "sectionBal": true,
+      "contactsForm": "rk-form-contacts-yd-shymkent",
+      "hasContactsForm": true,
+      "formIds": [
+        "rk-form-contacts-yd-shymkent",
+        "rk-form-popup-yd-shymkent"
+      ],
+      "hasPopupForm": true,
+      "metrika": true,
+      "price": true,
+      "h1": "Настройка и ведение Яндекс Директ в Шымкенте",
+      "h1HasYandex": true,
+      "h1HasCity": true,
+      "officeFaqs": []
+    },
+    {
+      "slug": "karaganda",
+      "sectionOpen": 14,
+      "sectionClose": 14,
+      "sectionBal": true,
+      "contactsForm": "rk-form-contacts-yd-karaganda",
+      "hasContactsForm": true,
+      "formIds": [
+        "rk-form-contacts-yd-karaganda",
+        "rk-form-popup-yd-karaganda"
+      ],
+      "hasPopupForm": true,
+      "metrika": true,
+      "price": true,
+      "h1": "Настройка и ведение Яндекс Директ в Караганде",
+      "h1HasYandex": true,
+      "h1HasCity": true,
+      "officeFaqs": []
+    },
+    {
+      "slug": "aktobe",
+      "sectionOpen": 14,
+      "sectionClose": 14,
+      "sectionBal": true,
+      "contactsForm": "rk-form-contacts-yd-aktobe",
+      "hasContactsForm": true,
+      "formIds": [
+        "rk-form-contacts-yd-aktobe",
+        "rk-form-popup-yd-aktobe"
+      ],
+      "hasPopupForm": true,
+      "metrika": true,
+      "price": true,
+      "h1": "Настройка и ведение Яндекс Директ в Актобе",
+      "h1HasYandex": true,
+      "h1HasCity": true,
+      "officeFaqs": []
+    },
+    {
+      "slug": "taraz",
+      "sectionOpen": 14,
+      "sectionClose": 14,
+      "sectionBal": true,
+      "contactsForm": "rk-form-contacts-yd-taraz",
+      "hasContactsForm": true,
+      "formIds": [
+        "rk-form-contacts-yd-taraz",
+        "rk-form-popup-yd-taraz"
+      ],
+      "hasPopupForm": true,
+      "metrika": true,
+      "price": true,
+      "h1": "Настройка и ведение Яндекс Директ в Таразе",
+      "h1HasYandex": true,
+      "h1HasCity": true,
+      "officeFaqs": []
+    },
+    {
+      "slug": "pavlodar",
+      "sectionOpen": 14,
+      "sectionClose": 14,
+      "sectionBal": true,
+      "contactsForm": "rk-form-contacts-yd-pavlodar",
+      "hasContactsForm": true,
+      "formIds": [
+        "rk-form-contacts-yd-pavlodar",
+        "rk-form-popup-yd-pavlodar"
+      ],
+      "hasPopupForm": true,
+      "metrika": true,
+      "price": true,
+      "h1": "Настройка и ведение Яндекс Директ в Павлодаре",
+      "h1HasYandex": true,
+      "h1HasCity": true,
+      "officeFaqs": []
+    },
+    {
+      "slug": "ust-kamenogorsk",
+      "sectionOpen": 14,
+      "sectionClose": 14,
+      "sectionBal": true,
+      "contactsForm": "rk-form-contacts-yd-ust-kamenogorsk",
+      "hasContactsForm": true,
+      "formIds": [
+        "rk-form-contacts-yd-ust-kamenogorsk",
+        "rk-form-popup-yd-ust-kamenogorsk"
+      ],
+      "hasPopupForm": true,
+      "metrika": true,
+      "price": true,
+      "h1": "Настройка и ведение Яндекс Директ в Усть-Каменогорске",
+      "h1HasYandex": true,
+      "h1HasCity": true,
+      "officeFaqs": []
+    },
+    {
+      "slug": "semey",
+      "sectionOpen": 14,
+      "sectionClose": 14,
+      "sectionBal": true,
+      "contactsForm": "rk-form-contacts-yd-semey",
+      "hasContactsForm": true,
+      "formIds": [
+        "rk-form-contacts-yd-semey",
+        "rk-form-popup-yd-semey"
+      ],
+      "hasPopupForm": true,
+      "metrika": true,
+      "price": true,
+      "h1": "Настройка и ведение Яндекс Директ в Семее",
+      "h1HasYandex": true,
+      "h1HasCity": false,
+      "officeFaqs": []
+    },
+    {
+      "slug": "atyrau",
+      "sectionOpen": 14,
+      "sectionClose": 14,
+      "sectionBal": true,
+      "contactsForm": "rk-form-contacts-yd-atyrau",
+      "hasContactsForm": true,
+      "formIds": [
+        "rk-form-contacts-yd-atyrau",
+        "rk-form-popup-yd-atyrau"
+      ],
+      "hasPopupForm": true,
+      "metrika": true,
+      "price": true,
+      "h1": "Настройка и ведение Яндекс Директ в Атырау",
+      "h1HasYandex": true,
+      "h1HasCity": true,
+      "officeFaqs": []
+    },
+    {
+      "slug": "kostanay",
+      "sectionOpen": 14,
+      "sectionClose": 14,
+      "sectionBal": true,
+      "contactsForm": "rk-form-contacts-yd-kostanay",
+      "hasContactsForm": true,
+      "formIds": [
+        "rk-form-contacts-yd-kostanay",
+        "rk-form-popup-yd-kostanay"
+      ],
+      "hasPopupForm": true,
+      "metrika": true,
+      "price": true,
+      "h1": "Настройка и ведение Яндекс Директ в Костанае",
+      "h1HasYandex": true,
+      "h1HasCity": false,
+      "officeFaqs": []
+    },
+    {
+      "slug": "kyzylorda",
+      "sectionOpen": 14,
+      "sectionClose": 14,
+      "sectionBal": true,
+      "contactsForm": "rk-form-contacts-yd-kyzylorda",
+      "hasContactsForm": true,
+      "formIds": [
+        "rk-form-contacts-yd-kyzylorda",
+        "rk-form-popup-yd-kyzylorda"
+      ],
+      "hasPopupForm": true,
+      "metrika": true,
+      "price": true,
+      "h1": "Настройка и ведение Яндекс Директ в Кызылорде",
+      "h1HasYandex": true,
+      "h1HasCity": true,
+      "officeFaqs": []
+    },
+    {
+      "slug": "uralsk",
+      "sectionOpen": 14,
+      "sectionClose": 14,
+      "sectionBal": true,
+      "contactsForm": "rk-form-contacts-yd-uralsk",
+      "hasContactsForm": true,
+      "formIds": [
+        "rk-form-contacts-yd-uralsk",
+        "rk-form-popup-yd-uralsk"
+      ],
+      "hasPopupForm": true,
+      "metrika": true,
+      "price": true,
+      "h1": "Настройка и ведение Яндекс Директ в Уральске",
+      "h1HasYandex": true,
+      "h1HasCity": true,
+      "officeFaqs": []
+    },
+    {
+      "slug": "petropavlovsk",
+      "sectionOpen": 14,
+      "sectionClose": 14,
+      "sectionBal": true,
+      "contactsForm": "rk-form-contacts-yd-petropavlovsk",
+      "hasContactsForm": true,
+      "formIds": [
+        "rk-form-contacts-yd-petropavlovsk",
+        "rk-form-popup-yd-petropavlovsk"
+      ],
+      "hasPopupForm": true,
+      "metrika": true,
+      "price": true,
+      "h1": "Настройка и ведение Яндекс Директ в Петропавловске",
+      "h1HasYandex": true,
+      "h1HasCity": true,
+      "officeFaqs": []
+    },
+    {
+      "slug": "aktau",
+      "sectionOpen": 14,
+      "sectionClose": 14,
+      "sectionBal": true,
+      "contactsForm": "rk-form-contacts-yd-aktau",
+      "hasContactsForm": true,
+      "formIds": [
+        "rk-form-contacts-yd-aktau",
+        "rk-form-popup-yd-aktau"
+      ],
+      "hasPopupForm": true,
+      "metrika": true,
+      "price": true,
+      "h1": "Настройка и ведение Яндекс Директ в Актау",
+      "h1HasYandex": true,
+      "h1HasCity": true,
+      "officeFaqs": []
+    },
+    {
+      "slug": "turkestan",
+      "sectionOpen": 14,
+      "sectionClose": 14,
+      "sectionBal": true,
+      "contactsForm": "rk-form-contacts-yd-turkestan",
+      "hasContactsForm": true,
+      "formIds": [
+        "rk-form-contacts-yd-turkestan",
+        "rk-form-popup-yd-turkestan"
+      ],
+      "hasPopupForm": true,
+      "metrika": true,
+      "price": true,
+      "h1": "Настройка и ведение Яндекс Директ в Туркестане",
+      "h1HasYandex": true,
+      "h1HasCity": true,
+      "officeFaqs": []
+    },
+    {
+      "slug": "kokshetau",
+      "sectionOpen": 14,
+      "sectionClose": 14,
+      "sectionBal": true,
+      "contactsForm": "rk-form-contacts-yd-kokshetau",
+      "hasContactsForm": true,
+      "formIds": [
+        "rk-form-contacts-yd-kokshetau",
+        "rk-form-popup-yd-kokshetau"
+      ],
+      "hasPopupForm": true,
+      "metrika": true,
+      "price": true,
+      "h1": "Настройка и ведение Яндекс Директ в Кокшетау",
+      "h1HasYandex": true,
+      "h1HasCity": true,
+      "officeFaqs": []
+    },
+    {
+      "slug": "taldykorgan",
+      "sectionOpen": 14,
+      "sectionClose": 14,
+      "sectionBal": true,
+      "contactsForm": "rk-form-contacts-yd-taldykorgan",
+      "hasContactsForm": true,
+      "formIds": [
+        "rk-form-contacts-yd-taldykorgan",
+        "rk-form-popup-yd-taldykorgan"
+      ],
+      "hasPopupForm": true,
+      "metrika": true,
+      "price": true,
+      "h1": "Настройка и ведение Яндекс Директ в Талдыкоргане",
+      "h1HasYandex": true,
+      "h1HasCity": true,
+      "officeFaqs": []
+    }
+  ],
+  "shots": [
+    {
+      "390": false,
+      "430": false,
+      "768": false,
+      "1440": false,
+      "slug": "astana"
+    },
+    {
+      "390": true,
+      "430": true,
+      "768": true,
+      "1440": true,
+      "slug": "almaty"
+    },
+    {
+      "390": true,
+      "430": true,
+      "768": true,
+      "1440": true,
+      "slug": "shymkent"
+    },
+    {
+      "390": true,
+      "430": true,
+      "768": true,
+      "1440": true,
+      "slug": "karaganda"
+    },
+    {
+      "390": true,
+      "430": true,
+      "768": true,
+      "1440": true,
+      "slug": "aktobe"
+    },
+    {
+      "390": true,
+      "430": true,
+      "768": true,
+      "1440": true,
+      "slug": "taraz"
+    },
+    {
+      "390": true,
+      "430": true,
+      "768": true,
+      "1440": true,
+      "slug": "pavlodar"
+    },
+    {
+      "390": true,
+      "430": true,
+      "768": true,
+      "1440": true,
+      "slug": "ust-kamenogorsk"
+    },
+    {
+      "390": true,
+      "430": true,
+      "768": true,
+      "1440": true,
+      "slug": "semey"
+    },
+    {
+      "390": true,
+      "430": true,
+      "768": true,
+      "1440": true,
+      "slug": "atyrau"
+    },
+    {
+      "390": true,
+      "430": true,
+      "768": true,
+      "1440": true,
+      "slug": "kostanay"
+    },
+    {
+      "390": true,
+      "430": true,
+      "768": true,
+      "1440": true,
+      "slug": "kyzylorda"
+    },
+    {
+      "390": true,
+      "430": true,
+      "768": true,
+      "1440": true,
+      "slug": "uralsk"
+    },
+    {
+      "390": true,
+      "430": true,
+      "768": true,
+      "1440": true,
+      "slug": "petropavlovsk"
+    },
+    {
+      "390": true,
+      "430": true,
+      "768": true,
+      "1440": true,
+      "slug": "aktau"
+    },
+    {
+      "390": true,
+      "430": true,
+      "768": true,
+      "1440": true,
+      "slug": "turkestan"
+    },
+    {
+      "390": true,
+      "430": true,
+      "768": true,
+      "1440": true,
+      "slug": "kokshetau"
+    },
+    {
+      "390": true,
+      "430": true,
+      "768": true,
+      "1440": true,
+      "slug": "taldykorgan"
+    }
+  ],
+  "similarity": [
+    {
+      "a": "kostanay",
+      "b": "kyzylorda",
+      "exit": 0,
+      "pass": true,
+      "result": {
+        "a": "site_mirror\\web-studiya\\kontekstnaya-reklama\\yandex-direct\\kostanay\\index.html",
+        "b": "site_mirror\\web-studiya\\kontekstnaya-reklama\\yandex-direct\\kyzylorda\\index.html",
+        "main_containment": 24.78,
+        "main_jaccard": 14.17,
+        "core_containment": 10.34,
+        "core_jaccard": 5.44,
+        "long_dups": 0,
+        "long_dup_samples": [],
+        "pass": true
+      }
+    },
+    {
+      "a": "kyzylorda",
+      "b": "uralsk",
+      "exit": 0,
+      "pass": true,
+      "result": {
+        "a": "site_mirror\\web-studiya\\kontekstnaya-reklama\\yandex-direct\\kyzylorda\\index.html",
+        "b": "site_mirror\\web-studiya\\kontekstnaya-reklama\\yandex-direct\\uralsk\\index.html",
+        "main_containment": 21.95,
+        "main_jaccard": 12.35,
+        "core_containment": 12.47,
+        "core_jaccard": 6.68,
+        "long_dups": 0,
+        "long_dup_samples": [],
+        "pass": true
+      }
+    },
+    {
+      "a": "uralsk",
+      "b": "petropavlovsk",
+      "exit": 0,
+      "pass": true,
+      "result": {
+        "a": "site_mirror\\web-studiya\\kontekstnaya-reklama\\yandex-direct\\uralsk\\index.html",
+        "b": "site_mirror\\web-studiya\\kontekstnaya-reklama\\yandex-direct\\petropavlovsk\\index.html",
+        "main_containment": 10.55,
+        "main_jaccard": 5.66,
+        "core_containment": 4.6,
+        "core_jaccard": 2.42,
+        "long_dups": 0,
+        "long_dup_samples": [],
+        "pass": true
+      }
+    },
+    {
+      "a": "aktau",
+      "b": "turkestan",
+      "exit": 0,
+      "pass": true,
+      "result": {
+        "a": "site_mirror\\web-studiya\\kontekstnaya-reklama\\yandex-direct\\aktau\\index.html",
+        "b": "site_mirror\\web-studiya\\kontekstnaya-reklama\\yandex-direct\\turkestan\\index.html",
+        "main_containment": 21.44,
+        "main_jaccard": 11.74,
+        "core_containment": 14.05,
+        "core_jaccard": 7.28,
+        "long_dups": 0,
+        "long_dup_samples": [],
+        "pass": true
+      }
+    },
+    {
+      "a": "kokshetau",
+      "b": "taldykorgan",
+      "exit": 0,
+      "pass": true,
+      "result": {
+        "a": "site_mirror\\web-studiya\\kontekstnaya-reklama\\yandex-direct\\kokshetau\\index.html",
+        "b": "site_mirror\\web-studiya\\kontekstnaya-reklama\\yandex-direct\\taldykorgan\\index.html",
+        "main_containment": 20.33,
+        "main_jaccard": 11.51,
+        "core_containment": 14.3,
+        "core_jaccard": 7.9,
+        "long_dups": 0,
+        "long_dup_samples": [],
+        "pass": true
+      }
+    }
+  ],
+  "http": [
+    {
+      "slug": "hub",
+      "url": "https://raskrutov.kz/web-studiya/kontekstnaya-reklama/yandex-direct/",
+      "status": 200,
+      "contentType": "text/html",
+      "ok": true,
+      "h1": "Настройка и ведение Яндекс Директ в Казахстане",
+      "h1HasYandex": true,
+      "h1HasCity": true,
+      "error": null,
+      "bodyLen": 83941
+    },
+    {
+      "slug": "astana",
+      "url": "https://raskrutov.kz/web-studiya/kontekstnaya-reklama/yandex-direct/astana/",
+      "status": 200,
+      "contentType": "text/html",
+      "ok": true,
+      "h1": "Настройка и ведение Яндекс Директ в Астане",
+      "h1HasYandex": true,
+      "h1HasCity": true,
+      "error": null,
+      "bodyLen": 85579
+    },
+    {
+      "slug": "almaty",
+      "url": "https://raskrutov.kz/web-studiya/kontekstnaya-reklama/yandex-direct/almaty/",
+      "status": 200,
+      "contentType": "text/html",
+      "ok": true,
+      "h1": "Настройка и ведение Яндекс Директ в Алматы",
+      "h1HasYandex": true,
+      "h1HasCity": true,
+      "error": null,
+      "bodyLen": 85638
+    },
+    {
+      "slug": "shymkent",
+      "url": "https://raskrutov.kz/web-studiya/kontekstnaya-reklama/yandex-direct/shymkent/",
+      "status": 200,
+      "contentType": "text/html",
+      "ok": true,
+      "h1": "Настройка и ведение Яндекс Директ в Шымкенте",
+      "h1HasYandex": true,
+      "h1HasCity": true,
+      "error": null,
+      "bodyLen": 88715
+    },
+    {
+      "slug": "karaganda",
+      "url": "https://raskrutov.kz/web-studiya/kontekstnaya-reklama/yandex-direct/karaganda/",
+      "status": 200,
+      "contentType": "text/html",
+      "ok": true,
+      "h1": "Настройка и ведение Яндекс Директ в Караганде",
+      "h1HasYandex": true,
+      "h1HasCity": true,
+      "error": null,
+      "bodyLen": 88314
+    },
+    {
+      "slug": "aktobe",
+      "url": "https://raskrutov.kz/web-studiya/kontekstnaya-reklama/yandex-direct/aktobe/",
+      "status": 200,
+      "contentType": "text/html",
+      "ok": true,
+      "h1": "Настройка и ведение Яндекс Директ в Актобе",
+      "h1HasYandex": true,
+      "h1HasCity": true,
+      "error": null,
+      "bodyLen": 89920
+    },
+    {
+      "slug": "taraz",
+      "url": "https://raskrutov.kz/web-studiya/kontekstnaya-reklama/yandex-direct/taraz/",
+      "status": 200,
+      "contentType": "text/html",
+      "ok": true,
+      "h1": "Настройка и ведение Яндекс Директ в Таразе",
+      "h1HasYandex": true,
+      "h1HasCity": true,
+      "error": null,
+      "bodyLen": 90730
+    },
+    {
+      "slug": "pavlodar",
+      "url": "https://raskrutov.kz/web-studiya/kontekstnaya-reklama/yandex-direct/pavlodar/",
+      "status": 200,
+      "contentType": "text/html",
+      "ok": true,
+      "h1": "Настройка и ведение Яндекс Директ в Павлодаре",
+      "h1HasYandex": true,
+      "h1HasCity": true,
+      "error": null,
+      "bodyLen": 87810
+    },
+    {
+      "slug": "ust-kamenogorsk",
+      "url": "https://raskrutov.kz/web-studiya/kontekstnaya-reklama/yandex-direct/ust-kamenogorsk/",
+      "status": 200,
+      "contentType": "text/html",
+      "ok": true,
+      "h1": "Настройка и ведение Яндекс Директ в Усть-Каменогорске",
+      "h1HasYandex": true,
+      "h1HasCity": true,
+      "error": null,
+      "bodyLen": 88192
+    },
+    {
+      "slug": "semey",
+      "url": "https://raskrutov.kz/web-studiya/kontekstnaya-reklama/yandex-direct/semey/",
+      "status": 200,
+      "contentType": "text/html",
+      "ok": true,
+      "h1": "Настройка и ведение Яндекс Директ в Семее",
+      "h1HasYandex": true,
+      "h1HasCity": false,
+      "error": null,
+      "bodyLen": 86390
+    },
+    {
+      "slug": "atyrau",
+      "url": "https://raskrutov.kz/web-studiya/kontekstnaya-reklama/yandex-direct/atyrau/",
+      "status": 200,
+      "contentType": "text/html",
+      "ok": true,
+      "h1": "Настройка и ведение Яндекс Директ в Атырау",
+      "h1HasYandex": true,
+      "h1HasCity": true,
+      "error": null,
+      "bodyLen": 86373
+    },
+    {
+      "slug": "kostanay",
+      "url": "https://raskrutov.kz/web-studiya/kontekstnaya-reklama/yandex-direct/kostanay/",
+      "status": 200,
+      "contentType": "text/html",
+      "ok": true,
+      "h1": "Настройка и ведение Яндекс Директ в Костанае",
+      "h1HasYandex": true,
+      "h1HasCity": false,
+      "error": null,
+      "bodyLen": 86883
+    },
+    {
+      "slug": "kyzylorda",
+      "url": "https://raskrutov.kz/web-studiya/kontekstnaya-reklama/yandex-direct/kyzylorda/",
+      "status": 200,
+      "contentType": "text/html",
+      "ok": true,
+      "h1": "Настройка и ведение Яндекс Директ в Кызылорде",
+      "h1HasYandex": true,
+      "h1HasCity": true,
+      "error": null,
+      "bodyLen": 87116
+    },
+    {
+      "slug": "uralsk",
+      "url": "https://raskrutov.kz/web-studiya/kontekstnaya-reklama/yandex-direct/uralsk/",
+      "status": 200,
+      "contentType": "text/html",
+      "ok": true,
+      "h1": "Настройка и ведение Яндекс Директ в Уральске",
+      "h1HasYandex": true,
+      "h1HasCity": true,
+      "error": null,
+      "bodyLen": 86547
+    },
+    {
+      "slug": "petropavlovsk",
+      "url": "https://raskrutov.kz/web-studiya/kontekstnaya-reklama/yandex-direct/petropavlovsk/",
+      "status": 200,
+      "contentType": "text/html",
+      "ok": true,
+      "h1": "Настройка и ведение Яндекс Директ в Петропавловске",
+      "h1HasYandex": true,
+      "h1HasCity": true,
+      "error": null,
+      "bodyLen": 86502
+    },
+    {
+      "slug": "aktau",
+      "url": "https://raskrutov.kz/web-studiya/kontekstnaya-reklama/yandex-direct/aktau/",
+      "status": 200,
+      "contentType": "text/html",
+      "ok": true,
+      "h1": "Настройка и ведение Яндекс Директ в Актау",
+      "h1HasYandex": true,
+      "h1HasCity": true,
+      "error": null,
+      "bodyLen": 87021
+    },
+    {
+      "slug": "turkestan",
+      "url": "https://raskrutov.kz/web-studiya/kontekstnaya-reklama/yandex-direct/turkestan/",
+      "status": 200,
+      "contentType": "text/html",
+      "ok": true,
+      "h1": "Настройка и ведение Яндекс Директ в Туркестане",
+      "h1HasYandex": true,
+      "h1HasCity": true,
+      "error": null,
+      "bodyLen": 88012
+    },
+    {
+      "slug": "kokshetau",
+      "url": "https://raskrutov.kz/web-studiya/kontekstnaya-reklama/yandex-direct/kokshetau/",
+      "status": 200,
+      "contentType": "text/html",
+      "ok": true,
+      "h1": "Настройка и ведение Яндекс Директ в Кокшетау",
+      "h1HasYandex": true,
+      "h1HasCity": true,
+      "error": null,
+      "bodyLen": 87836
+    },
+    {
+      "slug": "taldykorgan",
+      "url": "https://raskrutov.kz/web-studiya/kontekstnaya-reklama/yandex-direct/taldykorgan/",
+      "status": 200,
+      "contentType": "text/html",
+      "ok": true,
+      "h1": "Настройка и ведение Яндекс Директ в Талдыкоргане",
+      "h1HasYandex": true,
+      "h1HasCity": true,
+      "error": null,
+      "bodyLen": 87703
+    }
+  ],
+  "hubLinks": {
+    "missing": [],
+    "found": [
+      "astana",
+      "almaty",
+      "shymkent",
+      "karaganda",
+      "aktobe",
+      "taraz",
+      "pavlodar",
+      "ust-kamenogorsk",
+      "semey",
+      "atyrau",
+      "kostanay",
+      "kyzylorda",
+      "uralsk",
+      "petropavlovsk",
+      "aktau",
+      "turkestan",
+      "kokshetau",
+      "taldykorgan"
+    ],
+    "pilotOnly": false,
+    "bodySnippet": ""
+  },
+  "petropavlovsk_office": [],
+  "remote_office_sample": [],
+  "kokshetau_office": []
+}

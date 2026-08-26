@@ -1,0 +1,138 @@
+{
+  "url": "http://127.0.0.1:8765/web-studiya/kontekstnaya-reklama/google-ads/aktobe/",
+  "mobileRuns": [
+    {
+      "city": "aktobe",
+      "label": "m1",
+      "formFactor": "mobile",
+      "lighthouseVersion": "12.8.2",
+      "fetchTime": "2026-08-18T06:07:36.209Z",
+      "scores": {
+        "performance": 96,
+        "accessibility": 97,
+        "bestPractices": 79,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": 908,
+        "lcp": 2183,
+        "tbt": 191,
+        "cls": 0,
+        "si": 908
+      },
+      "a11yFailed": [
+        {
+          "id": "link-in-text-block",
+          "title": "Links rely on color to be distinguishable.",
+          "score": 0
+        }
+      ],
+      "seoFailed": [],
+      "outPath": "D:\\РАБОТА\\111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111\\raskrutov-kz-2026\\site_mirror\\_work\\google-ads-batch1-qa\\lh-aktobe-m1.json"
+    },
+    {
+      "city": "aktobe",
+      "label": "m2",
+      "formFactor": "mobile",
+      "lighthouseVersion": "12.8.2",
+      "fetchTime": "2026-08-18T06:07:49.649Z",
+      "scores": {
+        "performance": 87,
+        "accessibility": 97,
+        "bestPractices": 79,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": 909,
+        "lcp": 3122,
+        "tbt": 259,
+        "cls": 0,
+        "si": 3620
+      },
+      "a11yFailed": [
+        {
+          "id": "link-in-text-block",
+          "title": "Links rely on color to be distinguishable.",
+          "score": 0
+        }
+      ],
+      "seoFailed": [],
+      "outPath": "D:\\РАБОТА\\111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111\\raskrutov-kz-2026\\site_mirror\\_work\\google-ads-batch1-qa\\lh-aktobe-m2.json"
+    },
+    {
+      "city": "aktobe",
+      "label": "m3",
+      "formFactor": "mobile",
+      "lighthouseVersion": "12.8.2",
+      "fetchTime": "2026-08-18T06:08:04.923Z",
+      "scores": {
+        "performance": 90,
+        "accessibility": 97,
+        "bestPractices": 79,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": 908,
+        "lcp": 3037,
+        "tbt": 176,
+        "cls": 0,
+        "si": 3644
+      },
+      "a11yFailed": [
+        {
+          "id": "link-in-text-block",
+          "title": "Links rely on color to be distinguishable.",
+          "score": 0
+        }
+      ],
+      "seoFailed": [],
+      "outPath": "D:\\РАБОТА\\111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111\\raskrutov-kz-2026\\site_mirror\\_work\\google-ads-batch1-qa\\lh-aktobe-m3.json"
+    }
+  ],
+  "mobileMedian": {
+    "performance": 90,
+    "accessibility": 97,
+    "bestPractices": 79,
+    "seo": 100,
+    "fcp": 908,
+    "lcp": 3037,
+    "tbt": 191,
+    "cls": 0,
+    "si": 3620
+  },
+  "desktop": {
+    "city": "aktobe",
+    "label": "d",
+    "formFactor": "desktop",
+    "lighthouseVersion": "12.8.2",
+    "fetchTime": "2026-08-18T06:08:21.201Z",
+    "scores": {
+      "performance": 71,
+      "accessibility": 97,
+      "bestPractices": 78,
+      "seo": 100
+    },
+    "metrics": {
+      "fcp": 913,
+      "lcp": 2188,
+      "tbt": 378,
+      "cls": 0,
+      "si": 1118
+    },
+    "a11yFailed": [
+      {
+        "id": "link-in-text-block",
+        "title": "Links rely on color to be distinguishable.",
+        "score": 0
+      }
+    ],
+    "seoFailed": [],
+    "outPath": "D:\\РАБОТА\\111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111\\raskrutov-kz-2026\\site_mirror\\_work\\google-ads-batch1-qa\\lh-aktobe-d.json"
+  },
+  "gate": {
+    "mobileMedianPerfGte90": true,
+    "a11y100": false,
+    "seo100": true,
+    "bp100": false
+  }
+}

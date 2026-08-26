@@ -1,0 +1,1852 @@
+{
+  "url": "http://127.0.0.1:4180/web-studiya/kontekstnaya-reklama/google-ads/",
+  "timestamp": "2026-08-17T07:15:39.233Z",
+  "formFactor": "mobile",
+  "throttlingMethod": "simulate",
+  "runs": [
+    {
+      "run": 1,
+      "performance": 56,
+      "accessibility": 96,
+      "bestPractices": 79,
+      "seo": 100,
+      "fcp": 2360.0700388917444,
+      "lcp": 3635.070038891745,
+      "tbt": 5581.6199740721695,
+      "cls": 0.0002168235702152001,
+      "si": 3746.97191745865,
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-P",
+                  "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,0,DIV,3,P",
+                  "selector": "section#ctx-hero > div.rk-container > div.ctx-hero__copy > p.ctx-hero__lead",
+                  "boundingRect": {
+                    "top": 345,
+                    "bottom": 445,
+                    "left": 20,
+                    "right": 392,
+                    "width": 372,
+                    "height": 99
+                  },
+                  "snippet": "<p class=\"ctx-hero__lead\">",
+                  "nodeLabel": "Собираем семантику и объявления, подключаем конверсии и ведём кампании по данны…"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 486.69001296391485,
+                "percent": "13%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 3148.38002592783,
+                "percent": "87%"
+              }
+            ]
+          }
+        ],
+        "nodes": null,
+        "summary": [
+          {
+            "snippet": null,
+            "selector": null,
+            "nodeLabel": null,
+            "type": "table"
+          },
+          {
+            "snippet": null,
+            "selector": null,
+            "nodeLabel": null,
+            "type": "table"
+          }
+        ]
+      },
+      "lcpLazyLoaded": {
+        "score": null,
+        "title": "Largest Contentful Paint image was not lazily loaded"
+      },
+      "renderBlocking": {
+        "score": 0,
+        "overallSavingsMs": 904,
+        "items": [
+          {
+            "url": "http://127.0.0.1:4180/assets/css/home-clean.css?v=39",
+            "totalBytes": 71154,
+            "wastedMs": 787
+          },
+          {
+            "url": "http://127.0.0.1:4180/assets/css/kontekst-clean.css?v=7",
+            "totalBytes": 16813,
+            "wastedMs": 487
+          },
+          {
+            "url": "http://127.0.0.1:4180/assets/css/google-ads-page.css?v=6",
+            "totalBytes": 24504,
+            "wastedMs": 637
+          }
+        ]
+      },
+      "colorContrast": {
+        "score": 0,
+        "items": [
+          {
+            "node": {
+              "selector": "div.gads-serp__body > div.gads-serp__ads > article.gads-serp-ad > p.gads-serp-ad__title",
+              "snippet": "<p class=\"gads-serp-ad__title\">",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #1a73e8, background color: #faf9fd, font size: 9.8pt (13px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            "failingElement": {
+              "node": {
+                "type": "node",
+                "lhId": "1-0-P",
+                "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,1,FIGURE,0,DIV,2,DIV,0,DIV,0,ARTICLE,1,P",
+                "selector": "div.gads-serp__body > div.gads-serp__ads > article.gads-serp-ad > p.gads-serp-ad__title",
+                "boundingRect": {
+                  "top": 919,
+                  "bottom": 936,
+                  "left": 46,
+                  "right": 366,
+                  "width": 320,
+                  "height": 17
+                },
+                "snippet": "<p class=\"gads-serp-ad__title\">",
+                "nodeLabel": "Настройка Google Ads под заявки",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #1a73e8, background color: #faf9fd, font size: 9.8pt (13px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "lhId": "1-1-ARTICLE",
+                      "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,1,FIGURE,0,DIV,2,DIV,0,DIV,0,ARTICLE",
+                      "selector": "div.gads-serp > div.gads-serp__body > div.gads-serp__ads > article.gads-serp-ad",
+                      "boundingRect": {
+                        "top": 882,
+                        "bottom": 1011,
+                        "left": 33,
+                        "right": 379,
+                        "width": 346,
+                        "height": 129
+                      },
+                      "snippet": "<article class=\"gads-serp-ad\">",
+                      "nodeLabel": "Реклама\nexample.kz › google-ads\n\nНастройка Google Ads под заявки\n\nСбор семантик…"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "node": {
+              "selector": "div.gads-serp__ads > article.gads-serp-ad > div.gads-serp-ad__sitelinks > span",
+              "snippet": "<span>",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #1a73e8, background color: #faf9fd, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            "failingElement": {
+              "node": {
+                "type": "node",
+                "lhId": "1-2-SPAN",
+                "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,1,FIGURE,0,DIV,2,DIV,0,DIV,0,ARTICLE,3,DIV,0,SPAN",
+                "selector": "div.gads-serp__ads > article.gads-serp-ad > div.gads-serp-ad__sitelinks > span",
+                "boundingRect": {
+                  "top": 983,
+                  "bottom": 998,
+                  "left": 46,
+                  "right": 119,
+                  "width": 73,
+                  "height": 15
+                },
+                "snippet": "<span>",
+                "nodeLabel": "Состав работ",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #1a73e8, background color: #faf9fd, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "lhId": "1-1-ARTICLE",
+                      "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,1,FIGURE,0,DIV,2,DIV,0,DIV,0,ARTICLE",
+                      "selector": "div.gads-serp > div.gads-serp__body > div.gads-serp__ads > article.gads-serp-ad",
+                      "boundingRect": {
+                        "top": 882,
+                        "bottom": 1011,
+                        "left": 33,
+                        "right": 379,
+                        "width": 346,
+                        "height": 129
+                      },
+                      "snippet": "<article class=\"gads-serp-ad\">",
+                      "nodeLabel": "Реклама\nexample.kz › google-ads\n\nНастройка Google Ads под заявки\n\nСбор семантик…"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "node": {
+              "selector": "div.gads-serp__ads > article.gads-serp-ad > div.gads-serp-ad__sitelinks > span",
+              "snippet": "<span>",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #1a73e8, background color: #faf9fd, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            "failingElement": {
+              "node": {
+                "type": "node",
+                "lhId": "1-3-SPAN",
+                "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,1,FIGURE,0,DIV,2,DIV,0,DIV,0,ARTICLE,3,DIV,1,SPAN",
+                "selector": "div.gads-serp__ads > article.gads-serp-ad > div.gads-serp-ad__sitelinks > span",
+                "boundingRect": {
+                  "top": 983,
+                  "bottom": 998,
+                  "left": 131,
+                  "right": 189,
+                  "width": 58,
+                  "height": 15
+                },
+                "snippet": "<span>",
+                "nodeLabel": "Аналитика",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #1a73e8, background color: #faf9fd, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "lhId": "1-1-ARTICLE",
+                      "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,1,FIGURE,0,DIV,2,DIV,0,DIV,0,ARTICLE",
+                      "selector": "div.gads-serp > div.gads-serp__body > div.gads-serp__ads > article.gads-serp-ad",
+                      "boundingRect": {
+                        "top": 882,
+                        "bottom": 1011,
+                        "left": 33,
+                        "right": 379,
+                        "width": 346,
+                        "height": 129
+                      },
+                      "snippet": "<article class=\"gads-serp-ad\">",
+                      "nodeLabel": "Реклама\nexample.kz › google-ads\n\nНастройка Google Ads под заявки\n\nСбор семантик…"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "node": {
+              "selector": "div.gads-serp__ads > article.gads-serp-ad > div.gads-serp-ad__sitelinks > span",
+              "snippet": "<span>",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #1a73e8, background color: #faf9fd, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            "failingElement": {
+              "node": {
+                "type": "node",
+                "lhId": "1-4-SPAN",
+                "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,1,FIGURE,0,DIV,2,DIV,0,DIV,0,ARTICLE,3,DIV,2,SPAN",
+                "selector": "div.gads-serp__ads > article.gads-serp-ad > div.gads-serp-ad__sitelinks > span",
+                "boundingRect": {
+                  "top": 983,
+                  "bottom": 998,
+                  "left": 201,
+                  "right": 238,
+                  "width": 37,
+                  "height": 15
+                },
+                "snippet": "<span>",
+                "nodeLabel": "Запуск",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #1a73e8, background color: #faf9fd, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "lhId": "1-1-ARTICLE",
+                      "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,1,FIGURE,0,DIV,2,DIV,0,DIV,0,ARTICLE",
+                      "selector": "div.gads-serp > div.gads-serp__body > div.gads-serp__ads > article.gads-serp-ad",
+                      "boundingRect": {
+                        "top": 882,
+                        "bottom": 1011,
+                        "left": 33,
+                        "right": 379,
+                        "width": 346,
+                        "height": 129
+                      },
+                      "snippet": "<article class=\"gads-serp-ad\">",
+                      "nodeLabel": "Реклама\nexample.kz › google-ads\n\nНастройка Google Ads под заявки\n\nСбор семантик…"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "node": {
+              "selector": "div.gads-serp__body > div.gads-serp__ads > article.gads-serp-ad > p.gads-serp-ad__title",
+              "snippet": "<p class=\"gads-serp-ad__title\">",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #1a73e8, background color: #faf9fd, font size: 9.8pt (13px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            "failingElement": {
+              "node": {
+                "type": "node",
+                "lhId": "1-5-P",
+                "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,1,FIGURE,0,DIV,2,DIV,0,DIV,1,ARTICLE,1,P",
+                "selector": "div.gads-serp__body > div.gads-serp__ads > article.gads-serp-ad > p.gads-serp-ad__title",
+                "boundingRect": {
+                  "top": 1058,
+                  "bottom": 1075,
+                  "left": 46,
+                  "right": 366,
+                  "width": 320,
+                  "height": 17
+                },
+                "snippet": "<p class=\"gads-serp-ad__title\">",
+                "nodeLabel": "Ведение поисковой рекламы Google",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #1a73e8, background color: #faf9fd, font size: 9.8pt (13px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "lhId": "1-6-ARTICLE",
+                      "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,1,FIGURE,0,DIV,2,DIV,0,DIV,1,ARTICLE",
+                      "selector": "div.gads-serp > div.gads-serp__body > div.gads-serp__ads > article.gads-serp-ad",
+                      "boundingRect": {
+                        "top": 1021,
+                        "bottom": 1150,
+                        "left": 33,
+                        "right": 379,
+                        "width": 346,
+                        "height": 129
+                      },
+                      "snippet": "<article class=\"gads-serp-ad\">",
+                      "nodeLabel": "Реклама\nexample.kz › search-ads\n\nВедение поисковой рекламы Google\n\nСтруктура ка…"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "node": {
+              "selector": "div.gads-serp__ads > article.gads-serp-ad > div.gads-serp-ad__sitelinks > span",
+              "snippet": "<span>",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #1a73e8, background color: #faf9fd, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            "failingElement": {
+              "node": {
+                "type": "node",
+                "lhId": "1-7-SPAN",
+                "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,1,FIGURE,0,DIV,2,DIV,0,DIV,1,ARTICLE,3,DIV,0,SPAN",
+                "selector": "div.gads-serp__ads > article.gads-serp-ad > div.gads-serp-ad__sitelinks > span",
+                "boundingRect": {
+                  "top": 1122,
+                  "bottom": 1137,
+                  "left": 46,
+                  "right": 104,
+                  "width": 58,
+                  "height": 15
+                },
+                "snippet": "<span>",
+                "nodeLabel": "Конверсии",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #1a73e8, background color: #faf9fd, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "lhId": "1-6-ARTICLE",
+                      "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,1,FIGURE,0,DIV,2,DIV,0,DIV,1,ARTICLE",
+                      "selector": "div.gads-serp > div.gads-serp__body > div.gads-serp__ads > article.gads-serp-ad",
+                      "boundingRect": {
+                        "top": 1021,
+                        "bottom": 1150,
+                        "left": 33,
+                        "right": 379,
+                        "width": 346,
+                        "height": 129
+                      },
+                      "snippet": "<article class=\"gads-serp-ad\">",
+                      "nodeLabel": "Реклама\nexample.kz › search-ads\n\nВедение поисковой рекламы Google\n\nСтруктура ка…"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "node": {
+              "selector": "div.gads-serp__ads > article.gads-serp-ad > div.gads-serp-ad__sitelinks > span",
+              "snippet": "<span>",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #1a73e8, background color: #faf9fd, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            "failingElement": {
+              "node": {
+                "type": "node",
+                "lhId": "1-8-SPAN",
+                "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,1,FIGURE,0,DIV,2,DIV,0,DIV,1,ARTICLE,3,DIV,1,SPAN",
+                "selector": "div.gads-serp__ads > article.gads-serp-ad > div.gads-serp-ad__sitelinks > span",
+                "boundingRect": {
+                  "top": 1122,
+                  "bottom": 1137,
+                  "left": 116,
+                  "right": 157,
+                  "width": 41,
+                  "height": 15
+                },
+                "snippet": "<span>",
+                "nodeLabel": "Отчёты",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #1a73e8, background color: #faf9fd, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "lhId": "1-6-ARTICLE",
+                      "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,1,FIGURE,0,DIV,2,DIV,0,DIV,1,ARTICLE",
+                      "selector": "div.gads-serp > div.gads-serp__body > div.gads-serp__ads > article.gads-serp-ad",
+                      "boundingRect": {
+                        "top": 1021,
+                        "bottom": 1150,
+                        "left": 33,
+                        "right": 379,
+                        "width": 346,
+                        "height": 129
+                      },
+                      "snippet": "<article class=\"gads-serp-ad\">",
+                      "nodeLabel": "Реклама\nexample.kz › search-ads\n\nВедение поисковой рекламы Google\n\nСтруктура ка…"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "node": {
+              "selector": "div.rk-container > div.gads-camp-grid > article.gads-camp > span.gads-camp__meta",
+              "snippet": "<span class=\"gads-camp__meta\">",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #7f3ff2, background color: #eee6fc, font size: 9.0pt (12px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            "failingElement": {
+              "node": {
+                "type": "node",
+                "lhId": "1-9-SPAN",
+                "path": "1,HTML,1,BODY,1,MAIN,4,SECTION,0,DIV,2,DIV,4,ARTICLE,1,SPAN",
+                "selector": "div.rk-container > div.gads-camp-grid > article.gads-camp > span.gads-camp__meta",
+                "boundingRect": {
+                  "top": 4620,
+                  "bottom": 4645,
+                  "left": 39,
+                  "right": 144,
+                  "width": 105,
+                  "height": 25
+                },
+                "snippet": "<span class=\"gads-camp__meta\">",
+                "nodeLabel": "div.rk-container > div.gads-camp-grid > article.gads-camp > span.gads-camp__meta",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #7f3ff2, background color: #eee6fc, font size: 9.0pt (12px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "lhId": "1-10-LI",
+                      "path": "1,HTML,1,BODY,1,MAIN,5,SECTION,0,DIV,2,UL,4,LI",
+                      "selector": "section#setup > div.rk-container > ul.gads-scope-list > li.gads-scope-list__item",
+                      "boundingRect": {
+                        "top": 4563,
+                        "bottom": 4680,
+                        "left": 20,
+                        "right": 392,
+                        "width": 372,
+                        "height": 117
+                      },
+                      "snippet": "<li class=\"gads-scope-list__item\">",
+                      "nodeLabel": "section#setup > div.rk-container > ul.gads-scope-list > li.gads-scope-list__item"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "node": {
+              "selector": "article.gads-artifact > div.gads-artifact__body > div.gads-ad-draft > p.gads-ad-draft__title",
+              "snippet": "<p class=\"gads-ad-draft__title\">",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #1a73e8, background color: #faf9fd, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            "failingElement": {
+              "node": {
+                "type": "node",
+                "lhId": "1-11-P",
+                "path": "1,HTML,1,BODY,1,MAIN,6,SECTION,0,DIV,2,DIV,0,ARTICLE,2,DIV,1,DIV,2,P",
+                "selector": "article.gads-artifact > div.gads-artifact__body > div.gads-ad-draft > p.gads-ad-draft__title",
+                "boundingRect": {
+                  "top": 5397,
+                  "bottom": 5417,
+                  "left": 50,
+                  "right": 362,
+                  "width": 312,
+                  "height": 20
+                },
+                "snippet": "<p class=\"gads-ad-draft__title\">",
+                "nodeLabel": "article.gads-artifact > div.gads-artifact__body > div.gads-ad-draft > p.gads-ad-draft__title",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #1a73e8, background color: #faf9fd, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "lhId": "1-12-DIV",
+                      "path": "1,HTML,1,BODY,1,MAIN,6,SECTION,0,DIV,2,DIV,0,ARTICLE,2,DIV,1,DIV",
+                      "selector": "div.gads-artifact-grid > article.gads-artifact > div.gads-artifact__body > div.gads-ad-draft",
+                      "boundingRect": {
+                        "top": 5342,
+                        "bottom": 5468,
+                        "left": 37,
+                        "right": 375,
+                        "width": 338,
+                        "height": 125
+                      },
+                      "snippet": "<div class=\"gads-ad-draft\" aria-hidden=\"true\">",
+                      "nodeLabel": "div.gads-artifact-grid > article.gads-artifact > div.gads-artifact__body > div.gads-ad-draft"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "lcpElementResolved": {
+        "selector": "section#ctx-hero > div.rk-container > div.ctx-hero__copy > p.ctx-hero__lead",
+        "snippet": "<p class=\"ctx-hero__lead\">",
+        "nodeLabel": "Собираем семантику и объявления, подключаем конверсии и ведём кампании по данны…",
+        "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,0,DIV,3,P",
+        "boundingRect": {
+          "top": 345,
+          "bottom": 445,
+          "left": 20,
+          "right": 392,
+          "width": 372,
+          "height": 99
+        },
+        "phases": [
+          {
+            "phase": "TTFB",
+            "timing": 486.69001296391485,
+            "percent": "13%"
+          },
+          {
+            "phase": "Load Delay",
+            "timing": 0,
+            "percent": "0%"
+          },
+          {
+            "phase": "Load Time",
+            "timing": 0,
+            "percent": "0%"
+          },
+          {
+            "phase": "Render Delay",
+            "timing": 3148.38002592783,
+            "percent": "87%"
+          }
+        ]
+      }
+    },
+    {
+      "run": 2,
+      "performance": 85,
+      "accessibility": 96,
+      "bestPractices": 79,
+      "seo": 100,
+      "fcp": 2408.494519459777,
+      "lcp": 3760.122295406147,
+      "tbt": 133.83698702681568,
+      "cls": 0.0002168235702152001,
+      "si": 2408.494519459777,
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-P",
+                  "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,0,DIV,3,P",
+                  "selector": "section#ctx-hero > div.rk-container > div.ctx-hero__copy > p.ctx-hero__lead",
+                  "boundingRect": {
+                    "top": 345,
+                    "bottom": 445,
+                    "left": 20,
+                    "right": 392,
+                    "width": 372,
+                    "height": 99
+                  },
+                  "snippet": "<p class=\"ctx-hero__lead\">",
+                  "nodeLabel": "Собираем семантику и объявления, подключаем конверсии и ведём кампании по данны…"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 452.83150648659233,
+                "percent": "12%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 3307.2907889195544,
+                "percent": "88%"
+              }
+            ]
+          }
+        ],
+        "nodes": null,
+        "summary": [
+          {
+            "snippet": null,
+            "selector": null,
+            "nodeLabel": null,
+            "type": "table"
+          },
+          {
+            "snippet": null,
+            "selector": null,
+            "nodeLabel": null,
+            "type": "table"
+          }
+        ]
+      },
+      "lcpLazyLoaded": {
+        "score": null,
+        "title": "Largest Contentful Paint image was not lazily loaded"
+      },
+      "renderBlocking": {
+        "score": 0,
+        "overallSavingsMs": 1114,
+        "items": [
+          {
+            "url": "http://127.0.0.1:4180/assets/css/kontekst-clean.css?v=7",
+            "totalBytes": 16813,
+            "wastedMs": 453
+          },
+          {
+            "url": "http://127.0.0.1:4180/assets/css/google-ads-page.css?v=6",
+            "totalBytes": 24504,
+            "wastedMs": 603
+          },
+          {
+            "url": "http://127.0.0.1:4180/assets/css/home-clean.css?v=39",
+            "totalBytes": 71154,
+            "wastedMs": 903
+          }
+        ]
+      },
+      "colorContrast": {
+        "score": 0,
+        "items": [
+          {
+            "node": {
+              "selector": "div.gads-serp__body > div.gads-serp__ads > article.gads-serp-ad > p.gads-serp-ad__title",
+              "snippet": "<p class=\"gads-serp-ad__title\">",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #1a73e8, background color: #faf9fd, font size: 9.8pt (13px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            "failingElement": {
+              "node": {
+                "type": "node",
+                "lhId": "1-0-P",
+                "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,1,FIGURE,0,DIV,2,DIV,0,DIV,0,ARTICLE,1,P",
+                "selector": "div.gads-serp__body > div.gads-serp__ads > article.gads-serp-ad > p.gads-serp-ad__title",
+                "boundingRect": {
+                  "top": 919,
+                  "bottom": 936,
+                  "left": 46,
+                  "right": 366,
+                  "width": 320,
+                  "height": 17
+                },
+                "snippet": "<p class=\"gads-serp-ad__title\">",
+                "nodeLabel": "Настройка Google Ads под заявки",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #1a73e8, background color: #faf9fd, font size: 9.8pt (13px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "lhId": "1-1-ARTICLE",
+                      "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,1,FIGURE,0,DIV,2,DIV,0,DIV,0,ARTICLE",
+                      "selector": "div.gads-serp > div.gads-serp__body > div.gads-serp__ads > article.gads-serp-ad",
+                      "boundingRect": {
+                        "top": 882,
+                        "bottom": 1011,
+                        "left": 33,
+                        "right": 379,
+                        "width": 346,
+                        "height": 129
+                      },
+                      "snippet": "<article class=\"gads-serp-ad\">",
+                      "nodeLabel": "Реклама\nexample.kz › google-ads\n\nНастройка Google Ads под заявки\n\nСбор семантик…"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "node": {
+              "selector": "div.gads-serp__ads > article.gads-serp-ad > div.gads-serp-ad__sitelinks > span",
+              "snippet": "<span>",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #1a73e8, background color: #faf9fd, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            "failingElement": {
+              "node": {
+                "type": "node",
+                "lhId": "1-2-SPAN",
+                "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,1,FIGURE,0,DIV,2,DIV,0,DIV,0,ARTICLE,3,DIV,0,SPAN",
+                "selector": "div.gads-serp__ads > article.gads-serp-ad > div.gads-serp-ad__sitelinks > span",
+                "boundingRect": {
+                  "top": 983,
+                  "bottom": 998,
+                  "left": 46,
+                  "right": 119,
+                  "width": 73,
+                  "height": 15
+                },
+                "snippet": "<span>",
+                "nodeLabel": "Состав работ",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #1a73e8, background color: #faf9fd, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "lhId": "1-1-ARTICLE",
+                      "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,1,FIGURE,0,DIV,2,DIV,0,DIV,0,ARTICLE",
+                      "selector": "div.gads-serp > div.gads-serp__body > div.gads-serp__ads > article.gads-serp-ad",
+                      "boundingRect": {
+                        "top": 882,
+                        "bottom": 1011,
+                        "left": 33,
+                        "right": 379,
+                        "width": 346,
+                        "height": 129
+                      },
+                      "snippet": "<article class=\"gads-serp-ad\">",
+                      "nodeLabel": "Реклама\nexample.kz › google-ads\n\nНастройка Google Ads под заявки\n\nСбор семантик…"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "node": {
+              "selector": "div.gads-serp__ads > article.gads-serp-ad > div.gads-serp-ad__sitelinks > span",
+              "snippet": "<span>",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #1a73e8, background color: #faf9fd, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            "failingElement": {
+              "node": {
+                "type": "node",
+                "lhId": "1-3-SPAN",
+                "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,1,FIGURE,0,DIV,2,DIV,0,DIV,0,ARTICLE,3,DIV,1,SPAN",
+                "selector": "div.gads-serp__ads > article.gads-serp-ad > div.gads-serp-ad__sitelinks > span",
+                "boundingRect": {
+                  "top": 983,
+                  "bottom": 998,
+                  "left": 131,
+                  "right": 189,
+                  "width": 58,
+                  "height": 15
+                },
+                "snippet": "<span>",
+                "nodeLabel": "Аналитика",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #1a73e8, background color: #faf9fd, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "lhId": "1-1-ARTICLE",
+                      "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,1,FIGURE,0,DIV,2,DIV,0,DIV,0,ARTICLE",
+                      "selector": "div.gads-serp > div.gads-serp__body > div.gads-serp__ads > article.gads-serp-ad",
+                      "boundingRect": {
+                        "top": 882,
+                        "bottom": 1011,
+                        "left": 33,
+                        "right": 379,
+                        "width": 346,
+                        "height": 129
+                      },
+                      "snippet": "<article class=\"gads-serp-ad\">",
+                      "nodeLabel": "Реклама\nexample.kz › google-ads\n\nНастройка Google Ads под заявки\n\nСбор семантик…"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "node": {
+              "selector": "div.gads-serp__ads > article.gads-serp-ad > div.gads-serp-ad__sitelinks > span",
+              "snippet": "<span>",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #1a73e8, background color: #faf9fd, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            "failingElement": {
+              "node": {
+                "type": "node",
+                "lhId": "1-4-SPAN",
+                "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,1,FIGURE,0,DIV,2,DIV,0,DIV,0,ARTICLE,3,DIV,2,SPAN",
+                "selector": "div.gads-serp__ads > article.gads-serp-ad > div.gads-serp-ad__sitelinks > span",
+                "boundingRect": {
+                  "top": 983,
+                  "bottom": 998,
+                  "left": 201,
+                  "right": 238,
+                  "width": 37,
+                  "height": 15
+                },
+                "snippet": "<span>",
+                "nodeLabel": "Запуск",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #1a73e8, background color: #faf9fd, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "lhId": "1-1-ARTICLE",
+                      "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,1,FIGURE,0,DIV,2,DIV,0,DIV,0,ARTICLE",
+                      "selector": "div.gads-serp > div.gads-serp__body > div.gads-serp__ads > article.gads-serp-ad",
+                      "boundingRect": {
+                        "top": 882,
+                        "bottom": 1011,
+                        "left": 33,
+                        "right": 379,
+                        "width": 346,
+                        "height": 129
+                      },
+                      "snippet": "<article class=\"gads-serp-ad\">",
+                      "nodeLabel": "Реклама\nexample.kz › google-ads\n\nНастройка Google Ads под заявки\n\nСбор семантик…"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "node": {
+              "selector": "div.gads-serp__body > div.gads-serp__ads > article.gads-serp-ad > p.gads-serp-ad__title",
+              "snippet": "<p class=\"gads-serp-ad__title\">",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #1a73e8, background color: #faf9fd, font size: 9.8pt (13px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            "failingElement": {
+              "node": {
+                "type": "node",
+                "lhId": "1-5-P",
+                "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,1,FIGURE,0,DIV,2,DIV,0,DIV,1,ARTICLE,1,P",
+                "selector": "div.gads-serp__body > div.gads-serp__ads > article.gads-serp-ad > p.gads-serp-ad__title",
+                "boundingRect": {
+                  "top": 1058,
+                  "bottom": 1075,
+                  "left": 46,
+                  "right": 366,
+                  "width": 320,
+                  "height": 17
+                },
+                "snippet": "<p class=\"gads-serp-ad__title\">",
+                "nodeLabel": "Ведение поисковой рекламы Google",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #1a73e8, background color: #faf9fd, font size: 9.8pt (13px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "lhId": "1-6-ARTICLE",
+                      "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,1,FIGURE,0,DIV,2,DIV,0,DIV,1,ARTICLE",
+                      "selector": "div.gads-serp > div.gads-serp__body > div.gads-serp__ads > article.gads-serp-ad",
+                      "boundingRect": {
+                        "top": 1021,
+                        "bottom": 1150,
+                        "left": 33,
+                        "right": 379,
+                        "width": 346,
+                        "height": 129
+                      },
+                      "snippet": "<article class=\"gads-serp-ad\">",
+                      "nodeLabel": "Реклама\nexample.kz › search-ads\n\nВедение поисковой рекламы Google\n\nСтруктура ка…"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "node": {
+              "selector": "div.gads-serp__ads > article.gads-serp-ad > div.gads-serp-ad__sitelinks > span",
+              "snippet": "<span>",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #1a73e8, background color: #faf9fd, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            "failingElement": {
+              "node": {
+                "type": "node",
+                "lhId": "1-7-SPAN",
+                "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,1,FIGURE,0,DIV,2,DIV,0,DIV,1,ARTICLE,3,DIV,0,SPAN",
+                "selector": "div.gads-serp__ads > article.gads-serp-ad > div.gads-serp-ad__sitelinks > span",
+                "boundingRect": {
+                  "top": 1122,
+                  "bottom": 1137,
+                  "left": 46,
+                  "right": 104,
+                  "width": 58,
+                  "height": 15
+                },
+                "snippet": "<span>",
+                "nodeLabel": "Конверсии",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #1a73e8, background color: #faf9fd, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "lhId": "1-6-ARTICLE",
+                      "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,1,FIGURE,0,DIV,2,DIV,0,DIV,1,ARTICLE",
+                      "selector": "div.gads-serp > div.gads-serp__body > div.gads-serp__ads > article.gads-serp-ad",
+                      "boundingRect": {
+                        "top": 1021,
+                        "bottom": 1150,
+                        "left": 33,
+                        "right": 379,
+                        "width": 346,
+                        "height": 129
+                      },
+                      "snippet": "<article class=\"gads-serp-ad\">",
+                      "nodeLabel": "Реклама\nexample.kz › search-ads\n\nВедение поисковой рекламы Google\n\nСтруктура ка…"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "node": {
+              "selector": "div.gads-serp__ads > article.gads-serp-ad > div.gads-serp-ad__sitelinks > span",
+              "snippet": "<span>",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #1a73e8, background color: #faf9fd, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            "failingElement": {
+              "node": {
+                "type": "node",
+                "lhId": "1-8-SPAN",
+                "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,1,FIGURE,0,DIV,2,DIV,0,DIV,1,ARTICLE,3,DIV,1,SPAN",
+                "selector": "div.gads-serp__ads > article.gads-serp-ad > div.gads-serp-ad__sitelinks > span",
+                "boundingRect": {
+                  "top": 1122,
+                  "bottom": 1137,
+                  "left": 116,
+                  "right": 157,
+                  "width": 41,
+                  "height": 15
+                },
+                "snippet": "<span>",
+                "nodeLabel": "Отчёты",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #1a73e8, background color: #faf9fd, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "lhId": "1-6-ARTICLE",
+                      "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,1,FIGURE,0,DIV,2,DIV,0,DIV,1,ARTICLE",
+                      "selector": "div.gads-serp > div.gads-serp__body > div.gads-serp__ads > article.gads-serp-ad",
+                      "boundingRect": {
+                        "top": 1021,
+                        "bottom": 1150,
+                        "left": 33,
+                        "right": 379,
+                        "width": 346,
+                        "height": 129
+                      },
+                      "snippet": "<article class=\"gads-serp-ad\">",
+                      "nodeLabel": "Реклама\nexample.kz › search-ads\n\nВедение поисковой рекламы Google\n\nСтруктура ка…"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "node": {
+              "selector": "div.rk-container > div.gads-camp-grid > article.gads-camp > span.gads-camp__meta",
+              "snippet": "<span class=\"gads-camp__meta\">",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #7f3ff2, background color: #eee6fc, font size: 9.0pt (12px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            "failingElement": {
+              "node": {
+                "type": "node",
+                "lhId": "1-9-SPAN",
+                "path": "1,HTML,1,BODY,1,MAIN,4,SECTION,0,DIV,2,DIV,4,ARTICLE,1,SPAN",
+                "selector": "div.rk-container > div.gads-camp-grid > article.gads-camp > span.gads-camp__meta",
+                "boundingRect": {
+                  "top": 4620,
+                  "bottom": 4645,
+                  "left": 39,
+                  "right": 144,
+                  "width": 105,
+                  "height": 25
+                },
+                "snippet": "<span class=\"gads-camp__meta\">",
+                "nodeLabel": "div.rk-container > div.gads-camp-grid > article.gads-camp > span.gads-camp__meta",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #7f3ff2, background color: #eee6fc, font size: 9.0pt (12px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "lhId": "1-10-LI",
+                      "path": "1,HTML,1,BODY,1,MAIN,5,SECTION,0,DIV,2,UL,4,LI",
+                      "selector": "section#setup > div.rk-container > ul.gads-scope-list > li.gads-scope-list__item",
+                      "boundingRect": {
+                        "top": 4563,
+                        "bottom": 4680,
+                        "left": 20,
+                        "right": 392,
+                        "width": 372,
+                        "height": 117
+                      },
+                      "snippet": "<li class=\"gads-scope-list__item\">",
+                      "nodeLabel": "section#setup > div.rk-container > ul.gads-scope-list > li.gads-scope-list__item"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "node": {
+              "selector": "article.gads-artifact > div.gads-artifact__body > div.gads-ad-draft > p.gads-ad-draft__title",
+              "snippet": "<p class=\"gads-ad-draft__title\">",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #1a73e8, background color: #faf9fd, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            "failingElement": {
+              "node": {
+                "type": "node",
+                "lhId": "1-11-P",
+                "path": "1,HTML,1,BODY,1,MAIN,6,SECTION,0,DIV,2,DIV,0,ARTICLE,2,DIV,1,DIV,2,P",
+                "selector": "article.gads-artifact > div.gads-artifact__body > div.gads-ad-draft > p.gads-ad-draft__title",
+                "boundingRect": {
+                  "top": 5397,
+                  "bottom": 5417,
+                  "left": 50,
+                  "right": 362,
+                  "width": 312,
+                  "height": 20
+                },
+                "snippet": "<p class=\"gads-ad-draft__title\">",
+                "nodeLabel": "article.gads-artifact > div.gads-artifact__body > div.gads-ad-draft > p.gads-ad-draft__title",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #1a73e8, background color: #faf9fd, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "lhId": "1-12-DIV",
+                      "path": "1,HTML,1,BODY,1,MAIN,6,SECTION,0,DIV,2,DIV,0,ARTICLE,2,DIV,1,DIV",
+                      "selector": "div.gads-artifact-grid > article.gads-artifact > div.gads-artifact__body > div.gads-ad-draft",
+                      "boundingRect": {
+                        "top": 5342,
+                        "bottom": 5468,
+                        "left": 37,
+                        "right": 375,
+                        "width": 338,
+                        "height": 125
+                      },
+                      "snippet": "<div class=\"gads-ad-draft\" aria-hidden=\"true\">",
+                      "nodeLabel": "div.gads-artifact-grid > article.gads-artifact > div.gads-artifact__body > div.gads-ad-draft"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "lcpElementResolved": {
+        "selector": "section#ctx-hero > div.rk-container > div.ctx-hero__copy > p.ctx-hero__lead",
+        "snippet": "<p class=\"ctx-hero__lead\">",
+        "nodeLabel": "Собираем семантику и объявления, подключаем конверсии и ведём кампании по данны…",
+        "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,0,DIV,3,P",
+        "boundingRect": {
+          "top": 345,
+          "bottom": 445,
+          "left": 20,
+          "right": 392,
+          "width": 372,
+          "height": 99
+        },
+        "phases": [
+          {
+            "phase": "TTFB",
+            "timing": 452.83150648659233,
+            "percent": "12%"
+          },
+          {
+            "phase": "Load Delay",
+            "timing": 0,
+            "percent": "0%"
+          },
+          {
+            "phase": "Load Time",
+            "timing": 0,
+            "percent": "0%"
+          },
+          {
+            "phase": "Render Delay",
+            "timing": 3307.2907889195544,
+            "percent": "88%"
+          }
+        ]
+      }
+    },
+    {
+      "run": 3,
+      "performance": 87,
+      "accessibility": 96,
+      "bestPractices": 79,
+      "seo": 100,
+      "fcp": 2410.5014506913594,
+      "lcp": 3535.5014506913594,
+      "tbt": 68.5,
+      "cls": 0.0002168235702152001,
+      "si": 2410.5014506913594,
+      "lcpElement": {
+        "type": "list",
+        "items": [
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-P",
+                  "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,0,DIV,3,P",
+                  "selector": "section#ctx-hero > div.rk-container > div.ctx-hero__copy > p.ctx-hero__lead",
+                  "boundingRect": {
+                    "top": 345,
+                    "bottom": 445,
+                    "left": 20,
+                    "right": 392,
+                    "width": 372,
+                    "height": 99
+                  },
+                  "snippet": "<p class=\"ctx-hero__lead\">",
+                  "nodeLabel": "Собираем семантику и объявления, подключаем конверсии и ведём кампании по данны…"
+                }
+              }
+            ]
+          },
+          {
+            "type": "table",
+            "headings": [
+              {
+                "key": "phase",
+                "valueType": "text",
+                "label": "Phase"
+              },
+              {
+                "key": "percent",
+                "valueType": "text",
+                "label": "% of LCP"
+              },
+              {
+                "key": "timing",
+                "valueType": "ms",
+                "label": "Timing"
+              }
+            ],
+            "items": [
+              {
+                "phase": "TTFB",
+                "timing": 453.5004835637866,
+                "percent": "13%"
+              },
+              {
+                "phase": "Load Delay",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Load Time",
+                "timing": 0,
+                "percent": "0%"
+              },
+              {
+                "phase": "Render Delay",
+                "timing": 3082.000967127573,
+                "percent": "87%"
+              }
+            ]
+          }
+        ],
+        "nodes": null,
+        "summary": [
+          {
+            "snippet": null,
+            "selector": null,
+            "nodeLabel": null,
+            "type": "table"
+          },
+          {
+            "snippet": null,
+            "selector": null,
+            "nodeLabel": null,
+            "type": "table"
+          }
+        ]
+      },
+      "lcpLazyLoaded": {
+        "score": null,
+        "title": "Largest Contentful Paint image was not lazily loaded"
+      },
+      "renderBlocking": {
+        "score": 0,
+        "overallSavingsMs": 1099,
+        "items": [
+          {
+            "url": "http://127.0.0.1:4180/assets/css/kontekst-clean.css?v=7",
+            "totalBytes": 16813,
+            "wastedMs": 454
+          },
+          {
+            "url": "http://127.0.0.1:4180/assets/css/home-clean.css?v=39",
+            "totalBytes": 71154,
+            "wastedMs": 904
+          },
+          {
+            "url": "http://127.0.0.1:4180/assets/css/google-ads-page.css?v=6",
+            "totalBytes": 24504,
+            "wastedMs": 604
+          }
+        ]
+      },
+      "colorContrast": {
+        "score": 0,
+        "items": [
+          {
+            "node": {
+              "selector": "div.gads-serp__body > div.gads-serp__ads > article.gads-serp-ad > p.gads-serp-ad__title",
+              "snippet": "<p class=\"gads-serp-ad__title\">",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #1a73e8, background color: #faf9fd, font size: 9.8pt (13px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            "failingElement": {
+              "node": {
+                "type": "node",
+                "lhId": "1-0-P",
+                "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,1,FIGURE,0,DIV,2,DIV,0,DIV,0,ARTICLE,1,P",
+                "selector": "div.gads-serp__body > div.gads-serp__ads > article.gads-serp-ad > p.gads-serp-ad__title",
+                "boundingRect": {
+                  "top": 919,
+                  "bottom": 936,
+                  "left": 46,
+                  "right": 366,
+                  "width": 320,
+                  "height": 17
+                },
+                "snippet": "<p class=\"gads-serp-ad__title\">",
+                "nodeLabel": "Настройка Google Ads под заявки",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #1a73e8, background color: #faf9fd, font size: 9.8pt (13px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "lhId": "1-1-ARTICLE",
+                      "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,1,FIGURE,0,DIV,2,DIV,0,DIV,0,ARTICLE",
+                      "selector": "div.gads-serp > div.gads-serp__body > div.gads-serp__ads > article.gads-serp-ad",
+                      "boundingRect": {
+                        "top": 882,
+                        "bottom": 1011,
+                        "left": 33,
+                        "right": 379,
+                        "width": 346,
+                        "height": 129
+                      },
+                      "snippet": "<article class=\"gads-serp-ad\">",
+                      "nodeLabel": "Реклама\nexample.kz › google-ads\n\nНастройка Google Ads под заявки\n\nСбор семантик…"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "node": {
+              "selector": "div.gads-serp__ads > article.gads-serp-ad > div.gads-serp-ad__sitelinks > span",
+              "snippet": "<span>",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #1a73e8, background color: #faf9fd, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            "failingElement": {
+              "node": {
+                "type": "node",
+                "lhId": "1-2-SPAN",
+                "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,1,FIGURE,0,DIV,2,DIV,0,DIV,0,ARTICLE,3,DIV,0,SPAN",
+                "selector": "div.gads-serp__ads > article.gads-serp-ad > div.gads-serp-ad__sitelinks > span",
+                "boundingRect": {
+                  "top": 983,
+                  "bottom": 998,
+                  "left": 46,
+                  "right": 119,
+                  "width": 73,
+                  "height": 15
+                },
+                "snippet": "<span>",
+                "nodeLabel": "Состав работ",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #1a73e8, background color: #faf9fd, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "lhId": "1-1-ARTICLE",
+                      "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,1,FIGURE,0,DIV,2,DIV,0,DIV,0,ARTICLE",
+                      "selector": "div.gads-serp > div.gads-serp__body > div.gads-serp__ads > article.gads-serp-ad",
+                      "boundingRect": {
+                        "top": 882,
+                        "bottom": 1011,
+                        "left": 33,
+                        "right": 379,
+                        "width": 346,
+                        "height": 129
+                      },
+                      "snippet": "<article class=\"gads-serp-ad\">",
+                      "nodeLabel": "Реклама\nexample.kz › google-ads\n\nНастройка Google Ads под заявки\n\nСбор семантик…"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "node": {
+              "selector": "div.gads-serp__ads > article.gads-serp-ad > div.gads-serp-ad__sitelinks > span",
+              "snippet": "<span>",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #1a73e8, background color: #faf9fd, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            "failingElement": {
+              "node": {
+                "type": "node",
+                "lhId": "1-3-SPAN",
+                "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,1,FIGURE,0,DIV,2,DIV,0,DIV,0,ARTICLE,3,DIV,1,SPAN",
+                "selector": "div.gads-serp__ads > article.gads-serp-ad > div.gads-serp-ad__sitelinks > span",
+                "boundingRect": {
+                  "top": 983,
+                  "bottom": 998,
+                  "left": 131,
+                  "right": 189,
+                  "width": 58,
+                  "height": 15
+                },
+                "snippet": "<span>",
+                "nodeLabel": "Аналитика",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #1a73e8, background color: #faf9fd, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "lhId": "1-1-ARTICLE",
+                      "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,1,FIGURE,0,DIV,2,DIV,0,DIV,0,ARTICLE",
+                      "selector": "div.gads-serp > div.gads-serp__body > div.gads-serp__ads > article.gads-serp-ad",
+                      "boundingRect": {
+                        "top": 882,
+                        "bottom": 1011,
+                        "left": 33,
+                        "right": 379,
+                        "width": 346,
+                        "height": 129
+                      },
+                      "snippet": "<article class=\"gads-serp-ad\">",
+                      "nodeLabel": "Реклама\nexample.kz › google-ads\n\nНастройка Google Ads под заявки\n\nСбор семантик…"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "node": {
+              "selector": "div.gads-serp__ads > article.gads-serp-ad > div.gads-serp-ad__sitelinks > span",
+              "snippet": "<span>",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #1a73e8, background color: #faf9fd, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            "failingElement": {
+              "node": {
+                "type": "node",
+                "lhId": "1-4-SPAN",
+                "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,1,FIGURE,0,DIV,2,DIV,0,DIV,0,ARTICLE,3,DIV,2,SPAN",
+                "selector": "div.gads-serp__ads > article.gads-serp-ad > div.gads-serp-ad__sitelinks > span",
+                "boundingRect": {
+                  "top": 983,
+                  "bottom": 998,
+                  "left": 201,
+                  "right": 238,
+                  "width": 37,
+                  "height": 15
+                },
+                "snippet": "<span>",
+                "nodeLabel": "Запуск",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #1a73e8, background color: #faf9fd, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "lhId": "1-1-ARTICLE",
+                      "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,1,FIGURE,0,DIV,2,DIV,0,DIV,0,ARTICLE",
+                      "selector": "div.gads-serp > div.gads-serp__body > div.gads-serp__ads > article.gads-serp-ad",
+                      "boundingRect": {
+                        "top": 882,
+                        "bottom": 1011,
+                        "left": 33,
+                        "right": 379,
+                        "width": 346,
+                        "height": 129
+                      },
+                      "snippet": "<article class=\"gads-serp-ad\">",
+                      "nodeLabel": "Реклама\nexample.kz › google-ads\n\nНастройка Google Ads под заявки\n\nСбор семантик…"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "node": {
+              "selector": "div.gads-serp__body > div.gads-serp__ads > article.gads-serp-ad > p.gads-serp-ad__title",
+              "snippet": "<p class=\"gads-serp-ad__title\">",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #1a73e8, background color: #faf9fd, font size: 9.8pt (13px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            "failingElement": {
+              "node": {
+                "type": "node",
+                "lhId": "1-5-P",
+                "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,1,FIGURE,0,DIV,2,DIV,0,DIV,1,ARTICLE,1,P",
+                "selector": "div.gads-serp__body > div.gads-serp__ads > article.gads-serp-ad > p.gads-serp-ad__title",
+                "boundingRect": {
+                  "top": 1058,
+                  "bottom": 1075,
+                  "left": 46,
+                  "right": 366,
+                  "width": 320,
+                  "height": 17
+                },
+                "snippet": "<p class=\"gads-serp-ad__title\">",
+                "nodeLabel": "Ведение поисковой рекламы Google",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #1a73e8, background color: #faf9fd, font size: 9.8pt (13px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "lhId": "1-6-ARTICLE",
+                      "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,1,FIGURE,0,DIV,2,DIV,0,DIV,1,ARTICLE",
+                      "selector": "div.gads-serp > div.gads-serp__body > div.gads-serp__ads > article.gads-serp-ad",
+                      "boundingRect": {
+                        "top": 1021,
+                        "bottom": 1150,
+                        "left": 33,
+                        "right": 379,
+                        "width": 346,
+                        "height": 129
+                      },
+                      "snippet": "<article class=\"gads-serp-ad\">",
+                      "nodeLabel": "Реклама\nexample.kz › search-ads\n\nВедение поисковой рекламы Google\n\nСтруктура ка…"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "node": {
+              "selector": "div.gads-serp__ads > article.gads-serp-ad > div.gads-serp-ad__sitelinks > span",
+              "snippet": "<span>",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #1a73e8, background color: #faf9fd, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            "failingElement": {
+              "node": {
+                "type": "node",
+                "lhId": "1-7-SPAN",
+                "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,1,FIGURE,0,DIV,2,DIV,0,DIV,1,ARTICLE,3,DIV,0,SPAN",
+                "selector": "div.gads-serp__ads > article.gads-serp-ad > div.gads-serp-ad__sitelinks > span",
+                "boundingRect": {
+                  "top": 1122,
+                  "bottom": 1137,
+                  "left": 46,
+                  "right": 104,
+                  "width": 58,
+                  "height": 15
+                },
+                "snippet": "<span>",
+                "nodeLabel": "Конверсии",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #1a73e8, background color: #faf9fd, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "lhId": "1-6-ARTICLE",
+                      "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,1,FIGURE,0,DIV,2,DIV,0,DIV,1,ARTICLE",
+                      "selector": "div.gads-serp > div.gads-serp__body > div.gads-serp__ads > article.gads-serp-ad",
+                      "boundingRect": {
+                        "top": 1021,
+                        "bottom": 1150,
+                        "left": 33,
+                        "right": 379,
+                        "width": 346,
+                        "height": 129
+                      },
+                      "snippet": "<article class=\"gads-serp-ad\">",
+                      "nodeLabel": "Реклама\nexample.kz › search-ads\n\nВедение поисковой рекламы Google\n\nСтруктура ка…"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "node": {
+              "selector": "div.gads-serp__ads > article.gads-serp-ad > div.gads-serp-ad__sitelinks > span",
+              "snippet": "<span>",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #1a73e8, background color: #faf9fd, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            "failingElement": {
+              "node": {
+                "type": "node",
+                "lhId": "1-8-SPAN",
+                "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,1,FIGURE,0,DIV,2,DIV,0,DIV,1,ARTICLE,3,DIV,1,SPAN",
+                "selector": "div.gads-serp__ads > article.gads-serp-ad > div.gads-serp-ad__sitelinks > span",
+                "boundingRect": {
+                  "top": 1122,
+                  "bottom": 1137,
+                  "left": 116,
+                  "right": 157,
+                  "width": 41,
+                  "height": 15
+                },
+                "snippet": "<span>",
+                "nodeLabel": "Отчёты",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #1a73e8, background color: #faf9fd, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "lhId": "1-6-ARTICLE",
+                      "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,1,FIGURE,0,DIV,2,DIV,0,DIV,1,ARTICLE",
+                      "selector": "div.gads-serp > div.gads-serp__body > div.gads-serp__ads > article.gads-serp-ad",
+                      "boundingRect": {
+                        "top": 1021,
+                        "bottom": 1150,
+                        "left": 33,
+                        "right": 379,
+                        "width": 346,
+                        "height": 129
+                      },
+                      "snippet": "<article class=\"gads-serp-ad\">",
+                      "nodeLabel": "Реклама\nexample.kz › search-ads\n\nВедение поисковой рекламы Google\n\nСтруктура ка…"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "node": {
+              "selector": "div.rk-container > div.gads-camp-grid > article.gads-camp > span.gads-camp__meta",
+              "snippet": "<span class=\"gads-camp__meta\">",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #7f3ff2, background color: #eee6fc, font size: 9.0pt (12px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            "failingElement": {
+              "node": {
+                "type": "node",
+                "lhId": "1-9-SPAN",
+                "path": "1,HTML,1,BODY,1,MAIN,4,SECTION,0,DIV,2,DIV,4,ARTICLE,1,SPAN",
+                "selector": "div.rk-container > div.gads-camp-grid > article.gads-camp > span.gads-camp__meta",
+                "boundingRect": {
+                  "top": 4620,
+                  "bottom": 4645,
+                  "left": 39,
+                  "right": 144,
+                  "width": 105,
+                  "height": 25
+                },
+                "snippet": "<span class=\"gads-camp__meta\">",
+                "nodeLabel": "div.rk-container > div.gads-camp-grid > article.gads-camp > span.gads-camp__meta",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.45 (foreground color: #7f3ff2, background color: #eee6fc, font size: 9.0pt (12px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "lhId": "1-10-LI",
+                      "path": "1,HTML,1,BODY,1,MAIN,5,SECTION,0,DIV,2,UL,4,LI",
+                      "selector": "section#setup > div.rk-container > ul.gads-scope-list > li.gads-scope-list__item",
+                      "boundingRect": {
+                        "top": 4563,
+                        "bottom": 4680,
+                        "left": 20,
+                        "right": 392,
+                        "width": 372,
+                        "height": 117
+                      },
+                      "snippet": "<li class=\"gads-scope-list__item\">",
+                      "nodeLabel": "section#setup > div.rk-container > ul.gads-scope-list > li.gads-scope-list__item"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "node": {
+              "selector": "article.gads-artifact > div.gads-artifact__body > div.gads-ad-draft > p.gads-ad-draft__title",
+              "snippet": "<p class=\"gads-ad-draft__title\">",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #1a73e8, background color: #faf9fd, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            "failingElement": {
+              "node": {
+                "type": "node",
+                "lhId": "1-11-P",
+                "path": "1,HTML,1,BODY,1,MAIN,6,SECTION,0,DIV,2,DIV,0,ARTICLE,2,DIV,1,DIV,2,P",
+                "selector": "article.gads-artifact > div.gads-artifact__body > div.gads-ad-draft > p.gads-ad-draft__title",
+                "boundingRect": {
+                  "top": 5397,
+                  "bottom": 5417,
+                  "left": 50,
+                  "right": 362,
+                  "width": 312,
+                  "height": 20
+                },
+                "snippet": "<p class=\"gads-ad-draft__title\">",
+                "nodeLabel": "article.gads-artifact > div.gads-artifact__body > div.gads-ad-draft > p.gads-ad-draft__title",
+                "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #1a73e8, background color: #faf9fd, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+              },
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "relatedNode": {
+                      "type": "node",
+                      "lhId": "1-12-DIV",
+                      "path": "1,HTML,1,BODY,1,MAIN,6,SECTION,0,DIV,2,DIV,0,ARTICLE,2,DIV,1,DIV",
+                      "selector": "div.gads-artifact-grid > article.gads-artifact > div.gads-artifact__body > div.gads-ad-draft",
+                      "boundingRect": {
+                        "top": 5342,
+                        "bottom": 5468,
+                        "left": 37,
+                        "right": 375,
+                        "width": 338,
+                        "height": 125
+                      },
+                      "snippet": "<div class=\"gads-ad-draft\" aria-hidden=\"true\">",
+                      "nodeLabel": "div.gads-artifact-grid > article.gads-artifact > div.gads-artifact__body > div.gads-ad-draft"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "lcpElementResolved": {
+        "selector": "section#ctx-hero > div.rk-container > div.ctx-hero__copy > p.ctx-hero__lead",
+        "snippet": "<p class=\"ctx-hero__lead\">",
+        "nodeLabel": "Собираем семантику и объявления, подключаем конверсии и ведём кампании по данны…",
+        "path": "1,HTML,1,BODY,1,MAIN,1,SECTION,0,DIV,0,DIV,3,P",
+        "boundingRect": {
+          "top": 345,
+          "bottom": 445,
+          "left": 20,
+          "right": 392,
+          "width": 372,
+          "height": 99
+        },
+        "phases": [
+          {
+            "phase": "TTFB",
+            "timing": 453.5004835637866,
+            "percent": "13%"
+          },
+          {
+            "phase": "Load Delay",
+            "timing": 0,
+            "percent": "0%"
+          },
+          {
+            "phase": "Load Time",
+            "timing": 0,
+            "percent": "0%"
+          },
+          {
+            "phase": "Render Delay",
+            "timing": 3082.000967127573,
+            "percent": "87%"
+          }
+        ]
+      }
+    }
+  ],
+  "median": {
+    "performance": 85,
+    "fcp": 2408.494519459777,
+    "lcp": 3635.070038891745,
+    "tbt": 133.83698702681568,
+    "cls": 0.0002168235702152001,
+    "si": 2410.5014506913594,
+    "accessibility": 96,
+    "bestPractices": 79,
+    "seo": 100
+  }
+}

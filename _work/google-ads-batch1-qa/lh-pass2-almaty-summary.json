@@ -1,0 +1,166 @@
+{
+  "url": "http://127.0.0.1:8765/web-studiya/kontekstnaya-reklama/google-ads/almaty/",
+  "mobileRuns": [
+    {
+      "city": "almaty",
+      "label": "m1",
+      "formFactor": "mobile",
+      "lighthouseVersion": "12.8.2",
+      "fetchTime": "2026-08-18T06:16:45.349Z",
+      "scores": {
+        "performance": 78,
+        "accessibility": 100,
+        "bestPractices": 79,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": 1060,
+        "lcp": 4804,
+        "tbt": 243,
+        "cls": 0,
+        "si": 2315
+      },
+      "a11yFailed": [],
+      "seoFailed": [],
+      "bpFailed": [
+        {
+          "id": "third-party-cookies",
+          "title": "Uses third-party cookies",
+          "score": 0
+        },
+        {
+          "id": "inspector-issues",
+          "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
+          "score": 0
+        }
+      ],
+      "lcpElementSnippet": "<p class=\"ctx-hero__lead\">",
+      "outPath": "D:\\РАБОТА\\111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111\\raskrutov-kz-2026\\site_mirror\\_work\\google-ads-batch1-qa\\lh-pass2-almaty-m1.json"
+    },
+    {
+      "city": "almaty",
+      "label": "m2",
+      "formFactor": "mobile",
+      "lighthouseVersion": "12.8.2",
+      "fetchTime": "2026-08-18T06:17:00.092Z",
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "bestPractices": 79,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": 1064,
+        "lcp": 2264,
+        "tbt": 52,
+        "cls": 0,
+        "si": 1064
+      },
+      "a11yFailed": [],
+      "seoFailed": [],
+      "bpFailed": [
+        {
+          "id": "third-party-cookies",
+          "title": "Uses third-party cookies",
+          "score": 0
+        },
+        {
+          "id": "inspector-issues",
+          "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
+          "score": 0
+        }
+      ],
+      "lcpElementSnippet": "<p class=\"ctx-hero__lead\">",
+      "outPath": "D:\\РАБОТА\\111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111\\raskrutov-kz-2026\\site_mirror\\_work\\google-ads-batch1-qa\\lh-pass2-almaty-m2.json"
+    },
+    {
+      "city": "almaty",
+      "label": "m3",
+      "formFactor": "mobile",
+      "lighthouseVersion": "12.8.2",
+      "fetchTime": "2026-08-18T06:17:13.778Z",
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "bestPractices": 79,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": 1059,
+        "lcp": 2259,
+        "tbt": 38,
+        "cls": 0,
+        "si": 1059
+      },
+      "a11yFailed": [],
+      "seoFailed": [],
+      "bpFailed": [
+        {
+          "id": "third-party-cookies",
+          "title": "Uses third-party cookies",
+          "score": 0
+        },
+        {
+          "id": "inspector-issues",
+          "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
+          "score": 0
+        }
+      ],
+      "lcpElementSnippet": "<p class=\"ctx-hero__lead\">",
+      "outPath": "D:\\РАБОТА\\111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111\\raskrutov-kz-2026\\site_mirror\\_work\\google-ads-batch1-qa\\lh-pass2-almaty-m3.json"
+    }
+  ],
+  "mobileMedian": {
+    "performance": 99,
+    "accessibility": 100,
+    "bestPractices": 79,
+    "seo": 100,
+    "fcp": 1060,
+    "lcp": 2264,
+    "tbt": 52,
+    "cls": 0,
+    "si": 1064
+  },
+  "desktop": {
+    "city": "almaty",
+    "label": "d",
+    "formFactor": "desktop",
+    "lighthouseVersion": "12.8.2",
+    "fetchTime": "2026-08-18T06:17:27.038Z",
+    "scores": {
+      "performance": 83,
+      "accessibility": 100,
+      "bestPractices": 78,
+      "seo": 100
+    },
+    "metrics": {
+      "fcp": 1084,
+      "lcp": 2713,
+      "tbt": 39,
+      "cls": 0,
+      "si": 1084
+    },
+    "a11yFailed": [],
+    "seoFailed": [],
+    "bpFailed": [
+      {
+        "id": "third-party-cookies",
+        "title": "Uses third-party cookies",
+        "score": 0
+      },
+      {
+        "id": "inspector-issues",
+        "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
+        "score": 0
+      }
+    ],
+    "lcpElementSnippet": "<p>",
+    "outPath": "D:\\РАБОТА\\111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111\\raskrutov-kz-2026\\site_mirror\\_work\\google-ads-batch1-qa\\lh-pass2-almaty-d.json"
+  },
+  "gate": {
+    "mobileMedianPerfGte90": true,
+    "a11y100": true,
+    "seo100": true,
+    "bp100": false
+  }
+}

@@ -1,0 +1,111 @@
+[
+  {
+    "label": "astana-1440",
+    "width": 1440,
+    "earlyMedia": {
+      "media": "(min-width: 769px)",
+      "sheet": true
+    },
+    "after": {
+      "media": "(min-width: 769px)",
+      "sheet": true,
+      "cls": {
+        "total": 0,
+        "shifts": []
+      },
+      "shortCls": 0,
+      "saTop": 719.71875,
+      "saH": 323.96875,
+      "docW": 1440,
+      "vw": 1440
+    },
+    "cssReqCount": 1
+  },
+  {
+    "label": "astana-390",
+    "width": 390,
+    "earlyMedia": {
+      "media": "all",
+      "sheet": true
+    },
+    "after": {
+      "media": "all",
+      "sheet": true,
+      "cls": {
+        "total": 0,
+        "shifts": [
+          {
+            "value": 0.008127411891190503,
+            "hadRecentInput": true,
+            "startTime": 494.5,
+            "node": "DIV.yd-trust-strip"
+          }
+        ]
+      },
+      "shortCls": 0,
+      "saTop": 1522.96875,
+      "saH": 633.90625,
+      "docW": 390,
+      "vw": 390
+    },
+    "cssReqCount": 1
+  },
+  {
+    "label": "astana-430",
+    "width": 430,
+    "earlyMedia": {
+      "media": "all",
+      "sheet": true
+    },
+    "after": {
+      "media": "all",
+      "sheet": true,
+      "cls": {
+        "total": 0,
+        "shifts": [
+          {
+            "value": 0.0002904185641701368,
+            "hadRecentInput": true,
+            "startTime": 398.5,
+            "node": "P.ctx-hero__sub"
+          }
+        ]
+      },
+      "shortCls": 0,
+      "saTop": 1534.125,
+      "saH": 608.3125,
+      "docW": 430,
+      "vw": 430
+    },
+    "cssReqCount": 1
+  },
+  {
+    "label": "astana-768",
+    "width": 768,
+    "earlyMedia": {
+      "media": "all",
+      "sheet": true
+    },
+    "after": {
+      "media": "all",
+      "sheet": true,
+      "cls": {
+        "total": 0.25278568267822266,
+        "shifts": [
+          {
+            "value": 0.25278568267822266,
+            "hadRecentInput": false,
+            "startTime": 522.6999999880791,
+            "node": "FIGURE.yd-hero-visual"
+          }
+        ]
+      },
+      "shortCls": 0,
+      "saTop": 1231.28125,
+      "saH": 384.75,
+      "docW": 768,
+      "vw": 768
+    },
+    "cssReqCount": 1
+  }
+]

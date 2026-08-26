@@ -1,0 +1,138 @@
+{
+  "url": "http://127.0.0.1:8765/web-studiya/kontekstnaya-reklama/google-ads/shymkent/",
+  "mobileRuns": [
+    {
+      "city": "shymkent",
+      "label": "m1",
+      "formFactor": "mobile",
+      "lighthouseVersion": "12.8.2",
+      "fetchTime": "2026-08-18T06:05:38.307Z",
+      "scores": {
+        "performance": 90,
+        "accessibility": 97,
+        "bestPractices": 79,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": 909,
+        "lcp": 3109,
+        "tbt": 176,
+        "cls": 0,
+        "si": 3544
+      },
+      "a11yFailed": [
+        {
+          "id": "link-in-text-block",
+          "title": "Links rely on color to be distinguishable.",
+          "score": 0
+        }
+      ],
+      "seoFailed": [],
+      "outPath": "D:\\РАБОТА\\111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111\\raskrutov-kz-2026\\site_mirror\\_work\\google-ads-batch1-qa\\lh-shymkent-m1.json"
+    },
+    {
+      "city": "shymkent",
+      "label": "m2",
+      "formFactor": "mobile",
+      "lighthouseVersion": "12.8.2",
+      "fetchTime": "2026-08-18T06:05:53.905Z",
+      "scores": {
+        "performance": 99,
+        "accessibility": 97,
+        "bestPractices": 79,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": 910,
+        "lcp": 2110,
+        "tbt": 39,
+        "cls": 0,
+        "si": 910
+      },
+      "a11yFailed": [
+        {
+          "id": "link-in-text-block",
+          "title": "Links rely on color to be distinguishable.",
+          "score": 0
+        }
+      ],
+      "seoFailed": [],
+      "outPath": "D:\\РАБОТА\\111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111\\raskrutov-kz-2026\\site_mirror\\_work\\google-ads-batch1-qa\\lh-shymkent-m2.json"
+    },
+    {
+      "city": "shymkent",
+      "label": "m3",
+      "formFactor": "mobile",
+      "lighthouseVersion": "12.8.2",
+      "fetchTime": "2026-08-18T06:06:07.669Z",
+      "scores": {
+        "performance": 84,
+        "accessibility": 97,
+        "bestPractices": 79,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": 912,
+        "lcp": 3745,
+        "tbt": 234,
+        "cls": 0,
+        "si": 3699
+      },
+      "a11yFailed": [
+        {
+          "id": "link-in-text-block",
+          "title": "Links rely on color to be distinguishable.",
+          "score": 0
+        }
+      ],
+      "seoFailed": [],
+      "outPath": "D:\\РАБОТА\\111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111\\raskrutov-kz-2026\\site_mirror\\_work\\google-ads-batch1-qa\\lh-shymkent-m3.json"
+    }
+  ],
+  "mobileMedian": {
+    "performance": 90,
+    "accessibility": 97,
+    "bestPractices": 79,
+    "seo": 100,
+    "fcp": 910,
+    "lcp": 3109,
+    "tbt": 176,
+    "cls": 0,
+    "si": 3544
+  },
+  "desktop": {
+    "city": "shymkent",
+    "label": "d",
+    "formFactor": "desktop",
+    "lighthouseVersion": "12.8.2",
+    "fetchTime": "2026-08-18T06:06:23.313Z",
+    "scores": {
+      "performance": 68,
+      "accessibility": 97,
+      "bestPractices": 78,
+      "seo": 100
+    },
+    "metrics": {
+      "fcp": 913,
+      "lcp": 2512,
+      "tbt": 346,
+      "cls": 0,
+      "si": 1601
+    },
+    "a11yFailed": [
+      {
+        "id": "link-in-text-block",
+        "title": "Links rely on color to be distinguishable.",
+        "score": 0
+      }
+    ],
+    "seoFailed": [],
+    "outPath": "D:\\РАБОТА\\111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111\\raskrutov-kz-2026\\site_mirror\\_work\\google-ads-batch1-qa\\lh-shymkent-d.json"
+  },
+  "gate": {
+    "mobileMedianPerfGte90": true,
+    "a11y100": false,
+    "seo100": true,
+    "bp100": false
+  }
+}

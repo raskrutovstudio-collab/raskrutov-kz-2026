@@ -1,0 +1,71 @@
+{
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "url": "http://127.0.0.1:4180/web-studiya/kontekstnaya-reklama/google-ads/",
+  "targets": {
+    "home-clean.css": {
+      "entries": 1,
+      "urls": [
+        "http://127.0.0.1:4180/assets/css/home-clean.css?v=39"
+      ],
+      "totalBytes": 70937,
+      "usedBytes": 15779,
+      "unusedBytes": 55158,
+      "unusedPercent": 77.76
+    },
+    "kontekst-clean.css": {
+      "entries": 1,
+      "urls": [
+        "http://127.0.0.1:4180/assets/css/kontekst-clean.css?v=7"
+      ],
+      "totalBytes": 16602,
+      "usedBytes": 3717,
+      "unusedBytes": 12885,
+      "unusedPercent": 77.61
+    },
+    "google-ads-page.css": {
+      "entries": 1,
+      "urls": [
+        "http://127.0.0.1:4180/assets/css/google-ads-page.css?v=6"
+      ],
+      "totalBytes": 24296,
+      "usedBytes": 19487,
+      "unusedBytes": 4809,
+      "unusedPercent": 19.79
+    }
+  },
+  "allCss": [
+    {
+      "url": "http://127.0.0.1:4180/assets/css/lead-forms.css",
+      "totalBytes": 538,
+      "usedBytes": 308
+    },
+    {
+      "url": "http://127.0.0.1:4180/web-studiya/kontekstnaya-reklama/google-ads/",
+      "totalBytes": 158,
+      "usedBytes": 158
+    },
+    {
+      "url": "http://127.0.0.1:4180/assets/css/google-ads-page.css?v=6",
+      "totalBytes": 24296,
+      "usedBytes": 19487
+    },
+    {
+      "url": "http://127.0.0.1:4180/assets/css/home-clean.css?v=39",
+      "totalBytes": 70937,
+      "usedBytes": 15779
+    },
+    {
+      "url": "http://127.0.0.1:4180/assets/css/kontekst-clean.css?v=7",
+      "totalBytes": 16602,
+      "usedBytes": 3717
+    },
+    {
+      "url": "https://mc.yandex.ru/metrika/match.html",
+      "totalBytes": 564,
+      "usedBytes": 0
+    }
+  ]
+}

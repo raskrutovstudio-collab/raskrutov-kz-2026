@@ -1,0 +1,26 @@
+[
+  {
+    "performance": 94,
+    "fcp": 1286,
+    "lcp": 1286,
+    "tbt": 284,
+    "cls": 0.024,
+    "shifts": []
+  },
+  {
+    "performance": 87,
+    "fcp": 1454,
+    "lcp": 1454,
+    "tbt": 508,
+    "cls": 0.001,
+    "shifts": []
+  },
+  {
+    "performance": 87,
+    "fcp": 1431,
+    "lcp": 1431,
+    "tbt": 514,
+    "cls": 0.001,
+    "shifts": []
+  }
+]

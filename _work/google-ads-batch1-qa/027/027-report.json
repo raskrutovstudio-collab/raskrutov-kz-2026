@@ -1,0 +1,1292 @@
+{
+  "ok": false,
+  "errors": [
+    "almaty@390: missing footer",
+    "almaty@430: missing footer",
+    "almaty@768: missing footer",
+    "almaty@1440: missing footer",
+    "shymkent@390: missing footer",
+    "shymkent@430: missing footer",
+    "shymkent@768: missing footer",
+    "shymkent@1440: missing footer",
+    "karaganda@390: missing footer",
+    "karaganda@430: missing footer",
+    "karaganda@768: missing footer",
+    "karaganda@1440: missing footer",
+    "aktobe@390: missing footer",
+    "aktobe@430: missing footer",
+    "aktobe@768: missing footer",
+    "aktobe@1440: missing footer"
+  ],
+  "representative": "almaty",
+  "requiredFullShots": 10,
+  "pages": [
+    {
+      "city": "almaty",
+      "viewports": [
+        {
+          "width": 390,
+          "screenshotRequired": true,
+          "failures": [
+            "missing footer"
+          ],
+          "hScroll": false,
+          "overflowPx": 0,
+          "contracts": {
+            "scopeItems": 6,
+            "scopeIcons": 6,
+            "scopeNarrow": [],
+            "cards": 4,
+            "cardVisuals": 4,
+            "camps": 3,
+            "campVisuals": 3,
+            "taskLis": 7,
+            "taskMarks": 7,
+            "decisionNarrow": [],
+            "wrapping": []
+          },
+          "headings": [
+            {
+              "tag": "H1",
+              "text": "Настройка и ведение Google Ads в Алматы",
+              "w": 358,
+              "h": 66,
+              "lines": 1.9
+            },
+            {
+              "tag": "H2",
+              "text": "Google Ads в плотном спросе Алматы",
+              "w": 310,
+              "h": 120,
+              "lines": 3
+            },
+            {
+              "tag": "H3",
+              "text": "Чем страница Google Ads в Алматы отличается от страницы контекстной рекламы?",
+              "w": 356,
+              "h": 95,
+              "lines": 4.8
+            },
+            {
+              "tag": "H3",
+              "text": "Зачем в Search разделять бренд и общие запросы?",
+              "w": 356,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Когда задавать районы и радиус по Алматы?",
+              "w": 356,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Как не отдавать бюджет людям, которые ищут «Алматы» из другого города?",
+              "w": 356,
+              "h": 95,
+              "lines": 4.8
+            },
+            {
+              "tag": "H3",
+              "text": "Что нужно для Shopping с доставкой по районам Алматы?",
+              "w": 356,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Какие конверсии ставим для алматинского бизнеса?",
+              "w": 356,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Сколько стоит ведение Google Ads в Алматы?",
+              "w": 356,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Подходит ли канал B2B-офисам в Алматы?",
+              "w": 356,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Нужна ли посадочная именно под Алматы?",
+              "w": 356,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Что подготовить к запуску рекламы в Алматы?",
+              "w": 356,
+              "h": 73,
+              "lines": 3.6
+            }
+          ],
+          "shots": {
+            "full": "almaty-390-full.png",
+            "hero": "almaty-390-hero.png",
+            "about": "almaty-390-about.png",
+            "audience": "almaty-390-audience.png",
+            "campaigns": "almaty-390-campaigns.png",
+            "decision": "almaty-390-decision.png",
+            "setup": "almaty-390-setup.png",
+            "management": "almaty-390-management.png",
+            "analytics": "almaty-390-analytics.png",
+            "pricing": "almaty-390-pricing.png",
+            "related": "almaty-390-related.png",
+            "faq": "almaty-390-faq.png",
+            "forms": "almaty-390-forms.png"
+          }
+        },
+        {
+          "width": 430,
+          "screenshotRequired": true,
+          "failures": [
+            "missing footer"
+          ],
+          "hScroll": false,
+          "overflowPx": 0,
+          "contracts": {
+            "scopeItems": 6,
+            "scopeIcons": 6,
+            "scopeNarrow": [],
+            "cards": 4,
+            "cardVisuals": 4,
+            "camps": 3,
+            "campVisuals": 3,
+            "taskLis": 7,
+            "taskMarks": 7,
+            "decisionNarrow": [],
+            "wrapping": []
+          },
+          "headings": [
+            {
+              "tag": "H1",
+              "text": "Настройка и ведение Google Ads в Алматы",
+              "w": 390,
+              "h": 72,
+              "lines": 1.9
+            },
+            {
+              "tag": "H2",
+              "text": "Google Ads в плотном спросе Алматы",
+              "w": 342,
+              "h": 120,
+              "lines": 3
+            },
+            {
+              "tag": "H3",
+              "text": "Чем страница Google Ads в Алматы отличается от страницы контекстной рекламы?",
+              "w": 388,
+              "h": 95,
+              "lines": 4.8
+            },
+            {
+              "tag": "H3",
+              "text": "Зачем в Search разделять бренд и общие запросы?",
+              "w": 388,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Когда задавать районы и радиус по Алматы?",
+              "w": 388,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Как не отдавать бюджет людям, которые ищут «Алматы» из другого города?",
+              "w": 388,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Что нужно для Shopping с доставкой по районам Алматы?",
+              "w": 388,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Какие конверсии ставим для алматинского бизнеса?",
+              "w": 388,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Сколько стоит ведение Google Ads в Алматы?",
+              "w": 388,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Подходит ли канал B2B-офисам в Алматы?",
+              "w": 388,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Нужна ли посадочная именно под Алматы?",
+              "w": 388,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Что подготовить к запуску рекламы в Алматы?",
+              "w": 388,
+              "h": 73,
+              "lines": 3.6
+            }
+          ],
+          "shots": {
+            "full": "almaty-430-full.png",
+            "hero": "almaty-430-hero.png",
+            "about": "almaty-430-about.png",
+            "audience": "almaty-430-audience.png",
+            "campaigns": "almaty-430-campaigns.png",
+            "decision": "almaty-430-decision.png",
+            "setup": "almaty-430-setup.png",
+            "management": "almaty-430-management.png",
+            "analytics": "almaty-430-analytics.png",
+            "pricing": "almaty-430-pricing.png",
+            "related": "almaty-430-related.png",
+            "faq": "almaty-430-faq.png",
+            "forms": "almaty-430-forms.png"
+          }
+        },
+        {
+          "width": 768,
+          "screenshotRequired": true,
+          "failures": [
+            "missing footer"
+          ],
+          "hScroll": false,
+          "overflowPx": 0,
+          "contracts": {
+            "scopeItems": 6,
+            "scopeIcons": 6,
+            "scopeNarrow": [],
+            "cards": 4,
+            "cardVisuals": 4,
+            "camps": 3,
+            "campVisuals": 3,
+            "taskLis": 7,
+            "taskMarks": 7,
+            "decisionNarrow": [],
+            "wrapping": []
+          },
+          "headings": [
+            {
+              "tag": "H1",
+              "text": "Настройка и ведение Google Ads в Алматы",
+              "w": 728,
+              "h": 39,
+              "lines": 1
+            }
+          ],
+          "shots": {
+            "full": "almaty-768-full.png",
+            "hero": "almaty-768-hero.png",
+            "about": "almaty-768-about.png",
+            "audience": "almaty-768-audience.png",
+            "campaigns": "almaty-768-campaigns.png",
+            "decision": "almaty-768-decision.png",
+            "setup": "almaty-768-setup.png",
+            "management": "almaty-768-management.png",
+            "analytics": "almaty-768-analytics.png",
+            "pricing": "almaty-768-pricing.png",
+            "related": "almaty-768-related.png",
+            "faq": "almaty-768-faq.png",
+            "forms": "almaty-768-forms.png"
+          }
+        },
+        {
+          "width": 1440,
+          "screenshotRequired": true,
+          "failures": [
+            "missing footer"
+          ],
+          "hScroll": false,
+          "overflowPx": 0,
+          "contracts": {
+            "scopeItems": 6,
+            "scopeIcons": 6,
+            "scopeNarrow": [],
+            "cards": 4,
+            "cardVisuals": 4,
+            "camps": 3,
+            "campVisuals": 3,
+            "taskLis": 7,
+            "taskMarks": 7,
+            "decisionNarrow": [],
+            "wrapping": []
+          },
+          "headings": [
+            {
+              "tag": "H1",
+              "text": "Настройка и ведение Google Ads в Алматы",
+              "w": 712,
+              "h": 96,
+              "lines": 1.9
+            }
+          ],
+          "shots": {
+            "full": "almaty-1440-full.png",
+            "hero": "almaty-1440-hero.png",
+            "about": "almaty-1440-about.png",
+            "audience": "almaty-1440-audience.png",
+            "campaigns": "almaty-1440-campaigns.png",
+            "decision": "almaty-1440-decision.png",
+            "setup": "almaty-1440-setup.png",
+            "management": "almaty-1440-management.png",
+            "analytics": "almaty-1440-analytics.png",
+            "pricing": "almaty-1440-pricing.png",
+            "related": "almaty-1440-related.png",
+            "faq": "almaty-1440-faq.png",
+            "forms": "almaty-1440-forms.png"
+          }
+        }
+      ]
+    },
+    {
+      "city": "shymkent",
+      "viewports": [
+        {
+          "width": 390,
+          "screenshotRequired": true,
+          "failures": [
+            "missing footer"
+          ],
+          "hScroll": false,
+          "overflowPx": 0,
+          "contracts": {
+            "scopeItems": 6,
+            "scopeIcons": 6,
+            "scopeNarrow": [],
+            "cards": 4,
+            "cardVisuals": 4,
+            "camps": 3,
+            "campVisuals": 3,
+            "taskLis": 7,
+            "taskMarks": 7,
+            "decisionNarrow": [],
+            "wrapping": []
+          },
+          "headings": [
+            {
+              "tag": "H1",
+              "text": "Настройка и ведение Google Ads в Шымкенте",
+              "w": 358,
+              "h": 66,
+              "lines": 1.9
+            },
+            {
+              "tag": "H3",
+              "text": "Google Ads в Шымкенте закрывает только город или ещё область?",
+              "w": 356,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Чем эта страница отличается от контекстной рекламы в Шымкенте?",
+              "w": 356,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "На каком языке писать объявления для Шымкента?",
+              "w": 356,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Когда запускать Shopping в Шымкенте?",
+              "w": 356,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Подходит ли Google Ads опту и локальным услугам?",
+              "w": 356,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Как исключить территории, куда компания не едет?",
+              "w": 356,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Сколько стоит ведение Google Ads в Шымкенте?",
+              "w": 356,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Нужно ли разделять городскую кампанию и более широкое покрытие?",
+              "w": 356,
+              "h": 95,
+              "lines": 4.8
+            },
+            {
+              "tag": "H3",
+              "text": "Как фиксируются звонки, формы и сообщения из Шымкента?",
+              "w": 356,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Что нужно для старта рекламы в Шымкенте?",
+              "w": 356,
+              "h": 73,
+              "lines": 3.6
+            }
+          ],
+          "shots": {
+            "full": "shymkent-390-full.png",
+            "hero": "shymkent-390-hero.png",
+            "about": "shymkent-390-about.png",
+            "audience": "shymkent-390-audience.png",
+            "campaigns": "shymkent-390-campaigns.png",
+            "decision": "shymkent-390-decision.png",
+            "setup": "shymkent-390-setup.png",
+            "management": "shymkent-390-management.png",
+            "analytics": "shymkent-390-analytics.png",
+            "pricing": "shymkent-390-pricing.png",
+            "related": "shymkent-390-related.png",
+            "faq": "shymkent-390-faq.png",
+            "forms": "shymkent-390-forms.png"
+          }
+        },
+        {
+          "width": 430,
+          "screenshotRequired": false,
+          "failures": [
+            "missing footer"
+          ],
+          "hScroll": false,
+          "overflowPx": 0,
+          "contracts": {
+            "scopeItems": 6,
+            "scopeIcons": 6,
+            "scopeNarrow": [],
+            "cards": 4,
+            "cardVisuals": 4,
+            "camps": 3,
+            "campVisuals": 3,
+            "taskLis": 7,
+            "taskMarks": 7,
+            "decisionNarrow": [],
+            "wrapping": []
+          },
+          "headings": [
+            {
+              "tag": "H1",
+              "text": "Настройка и ведение Google Ads в Шымкенте",
+              "w": 390,
+              "h": 72,
+              "lines": 1.9
+            },
+            {
+              "tag": "H3",
+              "text": "Google Ads в Шымкенте закрывает только город или ещё область?",
+              "w": 388,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Чем эта страница отличается от контекстной рекламы в Шымкенте?",
+              "w": 388,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "На каком языке писать объявления для Шымкента?",
+              "w": 388,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Подходит ли Google Ads опту и локальным услугам?",
+              "w": 388,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Как исключить территории, куда компания не едет?",
+              "w": 388,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Сколько стоит ведение Google Ads в Шымкенте?",
+              "w": 388,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Нужно ли разделять городскую кампанию и более широкое покрытие?",
+              "w": 388,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Как фиксируются звонки, формы и сообщения из Шымкента?",
+              "w": 388,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Что нужно для старта рекламы в Шымкенте?",
+              "w": 388,
+              "h": 73,
+              "lines": 3.6
+            }
+          ],
+          "shots": {}
+        },
+        {
+          "width": 768,
+          "screenshotRequired": false,
+          "failures": [
+            "missing footer"
+          ],
+          "hScroll": false,
+          "overflowPx": 0,
+          "contracts": {
+            "scopeItems": 6,
+            "scopeIcons": 6,
+            "scopeNarrow": [],
+            "cards": 4,
+            "cardVisuals": 4,
+            "camps": 3,
+            "campVisuals": 3,
+            "taskLis": 7,
+            "taskMarks": 7,
+            "decisionNarrow": [],
+            "wrapping": []
+          },
+          "headings": [
+            {
+              "tag": "H1",
+              "text": "Настройка и ведение Google Ads в Шымкенте",
+              "w": 728,
+              "h": 77,
+              "lines": 1.9
+            }
+          ],
+          "shots": {}
+        },
+        {
+          "width": 1440,
+          "screenshotRequired": true,
+          "failures": [
+            "missing footer"
+          ],
+          "hScroll": false,
+          "overflowPx": 0,
+          "contracts": {
+            "scopeItems": 6,
+            "scopeIcons": 6,
+            "scopeNarrow": [],
+            "cards": 4,
+            "cardVisuals": 4,
+            "camps": 3,
+            "campVisuals": 3,
+            "taskLis": 7,
+            "taskMarks": 7,
+            "decisionNarrow": [],
+            "wrapping": []
+          },
+          "headings": [
+            {
+              "tag": "H1",
+              "text": "Настройка и ведение Google Ads в Шымкенте",
+              "w": 712,
+              "h": 96,
+              "lines": 1.9
+            }
+          ],
+          "shots": {
+            "full": "shymkent-1440-full.png",
+            "hero": "shymkent-1440-hero.png",
+            "about": "shymkent-1440-about.png",
+            "audience": "shymkent-1440-audience.png",
+            "campaigns": "shymkent-1440-campaigns.png",
+            "decision": "shymkent-1440-decision.png",
+            "setup": "shymkent-1440-setup.png",
+            "management": "shymkent-1440-management.png",
+            "analytics": "shymkent-1440-analytics.png",
+            "pricing": "shymkent-1440-pricing.png",
+            "related": "shymkent-1440-related.png",
+            "faq": "shymkent-1440-faq.png",
+            "forms": "shymkent-1440-forms.png"
+          }
+        }
+      ]
+    },
+    {
+      "city": "karaganda",
+      "viewports": [
+        {
+          "width": 390,
+          "screenshotRequired": true,
+          "failures": [
+            "missing footer"
+          ],
+          "hScroll": false,
+          "overflowPx": 0,
+          "contracts": {
+            "scopeItems": 6,
+            "scopeIcons": 6,
+            "scopeNarrow": [],
+            "cards": 4,
+            "cardVisuals": 4,
+            "camps": 3,
+            "campVisuals": 3,
+            "taskLis": 7,
+            "taskMarks": 7,
+            "decisionNarrow": [],
+            "wrapping": []
+          },
+          "headings": [
+            {
+              "tag": "H1",
+              "text": "Настройка и ведение Google Ads в Караганде",
+              "w": 358,
+              "h": 66,
+              "lines": 1.9
+            },
+            {
+              "tag": "H2",
+              "text": "Как Google Ads закрывает промышленный и сервисный спрос Караганды",
+              "w": 310,
+              "h": 200,
+              "lines": 5
+            },
+            {
+              "tag": "H2",
+              "text": "Порядок подключения Search, Performance Max и Shopping",
+              "w": 358,
+              "h": 90,
+              "lines": 3
+            },
+            {
+              "tag": "H2",
+              "text": "Караганда, соседние населённые пункты и радиус выезда",
+              "w": 358,
+              "h": 90,
+              "lines": 3
+            },
+            {
+              "tag": "H3",
+              "text": "С какого бюджета начинается ведение Google Ads в Караганде?",
+              "w": 356,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Как разделяете Караганду и соседние населённые пункты?",
+              "w": 356,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Почему для оборудования и B2B сначала запускают Search?",
+              "w": 356,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Когда в Караганде подключают Performance Max?",
+              "w": 356,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Можно ли запускать Shopping без товарного фида?",
+              "w": 356,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Как учитываете длинный цикл B2B-заявки?",
+              "w": 356,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Работаете с компаниями Караганды без местного офиса?",
+              "w": 356,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Чем эта страница отличается от контекстной рекламы в Караганде?",
+              "w": 356,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Что подготовить, чтобы стартовать в Караганде?",
+              "w": 356,
+              "h": 73,
+              "lines": 3.6
+            }
+          ],
+          "shots": {
+            "full": "karaganda-390-full.png",
+            "hero": "karaganda-390-hero.png",
+            "about": "karaganda-390-about.png",
+            "audience": "karaganda-390-audience.png",
+            "campaigns": "karaganda-390-campaigns.png",
+            "decision": "karaganda-390-decision.png",
+            "setup": "karaganda-390-setup.png",
+            "management": "karaganda-390-management.png",
+            "analytics": "karaganda-390-analytics.png",
+            "pricing": "karaganda-390-pricing.png",
+            "related": "karaganda-390-related.png",
+            "faq": "karaganda-390-faq.png",
+            "forms": "karaganda-390-forms.png"
+          }
+        },
+        {
+          "width": 430,
+          "screenshotRequired": false,
+          "failures": [
+            "missing footer"
+          ],
+          "hScroll": false,
+          "overflowPx": 0,
+          "contracts": {
+            "scopeItems": 6,
+            "scopeIcons": 6,
+            "scopeNarrow": [],
+            "cards": 4,
+            "cardVisuals": 4,
+            "camps": 3,
+            "campVisuals": 3,
+            "taskLis": 7,
+            "taskMarks": 7,
+            "decisionNarrow": [],
+            "wrapping": []
+          },
+          "headings": [
+            {
+              "tag": "H1",
+              "text": "Настройка и ведение Google Ads в Караганде",
+              "w": 390,
+              "h": 72,
+              "lines": 1.9
+            },
+            {
+              "tag": "H2",
+              "text": "Как Google Ads закрывает промышленный и сервисный спрос Караганды",
+              "w": 342,
+              "h": 200,
+              "lines": 5
+            },
+            {
+              "tag": "H2",
+              "text": "Караганда, соседние населённые пункты и радиус выезда",
+              "w": 390,
+              "h": 90,
+              "lines": 3
+            },
+            {
+              "tag": "H3",
+              "text": "С какого бюджета начинается ведение Google Ads в Караганде?",
+              "w": 388,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Как разделяете Караганду и соседние населённые пункты?",
+              "w": 388,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Почему для оборудования и B2B сначала запускают Search?",
+              "w": 388,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Когда в Караганде подключают Performance Max?",
+              "w": 388,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Можно ли запускать Shopping без товарного фида?",
+              "w": 388,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Как учитываете длинный цикл B2B-заявки?",
+              "w": 388,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Работаете с компаниями Караганды без местного офиса?",
+              "w": 388,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Чем эта страница отличается от контекстной рекламы в Караганде?",
+              "w": 388,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Что подготовить, чтобы стартовать в Караганде?",
+              "w": 388,
+              "h": 73,
+              "lines": 3.6
+            }
+          ],
+          "shots": {}
+        },
+        {
+          "width": 768,
+          "screenshotRequired": false,
+          "failures": [
+            "missing footer"
+          ],
+          "hScroll": false,
+          "overflowPx": 0,
+          "contracts": {
+            "scopeItems": 6,
+            "scopeIcons": 6,
+            "scopeNarrow": [],
+            "cards": 4,
+            "cardVisuals": 4,
+            "camps": 3,
+            "campVisuals": 3,
+            "taskLis": 7,
+            "taskMarks": 7,
+            "decisionNarrow": [],
+            "wrapping": []
+          },
+          "headings": [
+            {
+              "tag": "H1",
+              "text": "Настройка и ведение Google Ads в Караганде",
+              "w": 728,
+              "h": 77,
+              "lines": 1.9
+            },
+            {
+              "tag": "H2",
+              "text": "Как Google Ads закрывает промышленный и сервисный спрос Караганды",
+              "w": 670,
+              "h": 120,
+              "lines": 3
+            }
+          ],
+          "shots": {}
+        },
+        {
+          "width": 1440,
+          "screenshotRequired": true,
+          "failures": [
+            "missing footer"
+          ],
+          "hScroll": false,
+          "overflowPx": 0,
+          "contracts": {
+            "scopeItems": 6,
+            "scopeIcons": 6,
+            "scopeNarrow": [],
+            "cards": 4,
+            "cardVisuals": 4,
+            "camps": 3,
+            "campVisuals": 3,
+            "taskLis": 7,
+            "taskMarks": 7,
+            "decisionNarrow": [],
+            "wrapping": []
+          },
+          "headings": [
+            {
+              "tag": "H1",
+              "text": "Настройка и ведение Google Ads в Караганде",
+              "w": 712,
+              "h": 96,
+              "lines": 1.9
+            }
+          ],
+          "shots": {
+            "full": "karaganda-1440-full.png",
+            "hero": "karaganda-1440-hero.png",
+            "about": "karaganda-1440-about.png",
+            "audience": "karaganda-1440-audience.png",
+            "campaigns": "karaganda-1440-campaigns.png",
+            "decision": "karaganda-1440-decision.png",
+            "setup": "karaganda-1440-setup.png",
+            "management": "karaganda-1440-management.png",
+            "analytics": "karaganda-1440-analytics.png",
+            "pricing": "karaganda-1440-pricing.png",
+            "related": "karaganda-1440-related.png",
+            "faq": "karaganda-1440-faq.png",
+            "forms": "karaganda-1440-forms.png"
+          }
+        }
+      ]
+    },
+    {
+      "city": "aktobe",
+      "viewports": [
+        {
+          "width": 390,
+          "screenshotRequired": true,
+          "failures": [
+            "missing footer"
+          ],
+          "hScroll": false,
+          "overflowPx": 0,
+          "contracts": {
+            "scopeItems": 6,
+            "scopeIcons": 6,
+            "scopeNarrow": [],
+            "cards": 4,
+            "cardVisuals": 4,
+            "camps": 3,
+            "campVisuals": 3,
+            "taskLis": 7,
+            "taskMarks": 7,
+            "decisionNarrow": [],
+            "wrapping": []
+          },
+          "headings": [
+            {
+              "tag": "H1",
+              "text": "Настройка и ведение Google Ads в Актобе",
+              "w": 358,
+              "h": 66,
+              "lines": 1.9
+            },
+            {
+              "tag": "H2",
+              "text": "Google Ads для спроса Актобе и зоны обслуживания",
+              "w": 310,
+              "h": 160,
+              "lines": 4
+            },
+            {
+              "tag": "H3",
+              "text": "Какая цена ведения Google Ads в Актобе?",
+              "w": 356,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Как отделить Актобе от области и дальних регионов?",
+              "w": 356,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Как задать радиус для выездных бригад?",
+              "w": 356,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Нужно ли разделять самовывоз и доставку?",
+              "w": 356,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "На каком языке делать объявления для Актобе?",
+              "w": 356,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Когда подключать Performance Max в Актобе?",
+              "w": 356,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Как оцениваете качество заявок из Google Ads?",
+              "w": 356,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Чем Google Ads в Актобе отличается от страницы контекстной рекламы?",
+              "w": 356,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Можно ли продолжить работу в уже созданном аккаунте?",
+              "w": 356,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Что нужно для запуска кампаний в Актобе?",
+              "w": 356,
+              "h": 73,
+              "lines": 3.6
+            }
+          ],
+          "shots": {
+            "full": "aktobe-390-full.png",
+            "hero": "aktobe-390-hero.png",
+            "about": "aktobe-390-about.png",
+            "audience": "aktobe-390-audience.png",
+            "campaigns": "aktobe-390-campaigns.png",
+            "decision": "aktobe-390-decision.png",
+            "setup": "aktobe-390-setup.png",
+            "management": "aktobe-390-management.png",
+            "analytics": "aktobe-390-analytics.png",
+            "pricing": "aktobe-390-pricing.png",
+            "related": "aktobe-390-related.png",
+            "faq": "aktobe-390-faq.png",
+            "forms": "aktobe-390-forms.png"
+          }
+        },
+        {
+          "width": 430,
+          "screenshotRequired": false,
+          "failures": [
+            "missing footer"
+          ],
+          "hScroll": false,
+          "overflowPx": 0,
+          "contracts": {
+            "scopeItems": 6,
+            "scopeIcons": 6,
+            "scopeNarrow": [],
+            "cards": 4,
+            "cardVisuals": 4,
+            "camps": 3,
+            "campVisuals": 3,
+            "taskLis": 7,
+            "taskMarks": 7,
+            "decisionNarrow": [],
+            "wrapping": []
+          },
+          "headings": [
+            {
+              "tag": "H1",
+              "text": "Настройка и ведение Google Ads в Актобе",
+              "w": 390,
+              "h": 72,
+              "lines": 1.9
+            },
+            {
+              "tag": "H2",
+              "text": "Google Ads для спроса Актобе и зоны обслуживания",
+              "w": 342,
+              "h": 120,
+              "lines": 3
+            },
+            {
+              "tag": "H3",
+              "text": "Как отделить Актобе от области и дальних регионов?",
+              "w": 388,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Нужно ли разделять самовывоз и доставку?",
+              "w": 388,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "На каком языке делать объявления для Актобе?",
+              "w": 388,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Когда подключать Performance Max в Актобе?",
+              "w": 388,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Как оцениваете качество заявок из Google Ads?",
+              "w": 388,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Чем Google Ads в Актобе отличается от страницы контекстной рекламы?",
+              "w": 388,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Можно ли продолжить работу в уже созданном аккаунте?",
+              "w": 388,
+              "h": 73,
+              "lines": 3.6
+            },
+            {
+              "tag": "H3",
+              "text": "Что нужно для запуска кампаний в Актобе?",
+              "w": 388,
+              "h": 73,
+              "lines": 3.6
+            }
+          ],
+          "shots": {}
+        },
+        {
+          "width": 768,
+          "screenshotRequired": false,
+          "failures": [
+            "missing footer"
+          ],
+          "hScroll": false,
+          "overflowPx": 0,
+          "contracts": {
+            "scopeItems": 6,
+            "scopeIcons": 6,
+            "scopeNarrow": [],
+            "cards": 4,
+            "cardVisuals": 4,
+            "camps": 3,
+            "campVisuals": 3,
+            "taskLis": 7,
+            "taskMarks": 7,
+            "decisionNarrow": [],
+            "wrapping": []
+          },
+          "headings": [
+            {
+              "tag": "H1",
+              "text": "Настройка и ведение Google Ads в Актобе",
+              "w": 728,
+              "h": 39,
+              "lines": 1
+            }
+          ],
+          "shots": {}
+        },
+        {
+          "width": 1440,
+          "screenshotRequired": true,
+          "failures": [
+            "missing footer"
+          ],
+          "hScroll": false,
+          "overflowPx": 0,
+          "contracts": {
+            "scopeItems": 6,
+            "scopeIcons": 6,
+            "scopeNarrow": [],
+            "cards": 4,
+            "cardVisuals": 4,
+            "camps": 3,
+            "campVisuals": 3,
+            "taskLis": 7,
+            "taskMarks": 7,
+            "decisionNarrow": [],
+            "wrapping": []
+          },
+          "headings": [
+            {
+              "tag": "H1",
+              "text": "Настройка и ведение Google Ads в Актобе",
+              "w": 712,
+              "h": 96,
+              "lines": 1.9
+            }
+          ],
+          "shots": {
+            "full": "aktobe-1440-full.png",
+            "hero": "aktobe-1440-hero.png",
+            "about": "aktobe-1440-about.png",
+            "audience": "aktobe-1440-audience.png",
+            "campaigns": "aktobe-1440-campaigns.png",
+            "decision": "aktobe-1440-decision.png",
+            "setup": "aktobe-1440-setup.png",
+            "management": "aktobe-1440-management.png",
+            "analytics": "aktobe-1440-analytics.png",
+            "pricing": "aktobe-1440-pricing.png",
+            "related": "aktobe-1440-related.png",
+            "faq": "aktobe-1440-faq.png",
+            "forms": "aktobe-1440-forms.png"
+          }
+        }
+      ]
+    }
+  ]
+}

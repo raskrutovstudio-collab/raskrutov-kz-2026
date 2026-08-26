@@ -1,0 +1,205 @@
+{
+  "method": "word 5-grams; Jaccard = |A∩B|/|A∪B|; overlap = |A∩B|/min(|A|,|B|)",
+  "cityNormalization": "/Алматы|Шымкент|Караганда|Актобе|Астана|almaty|shymkent|karaganda|aktobe|astana|Almaty|Shymkent|Karaganda|Aktobe|Astana/gi",
+  "pages": [
+    "astana",
+    "almaty",
+    "shymkent",
+    "karaganda",
+    "aktobe"
+  ],
+  "grams": {
+    "astana": 1367,
+    "almaty": 1600,
+    "shymkent": 1519,
+    "karaganda": 1578,
+    "aktobe": 1557
+  },
+  "matrix": {
+    "astana": {
+      "astana": {
+        "jaccard": 1,
+        "overlap": 1,
+        "gramsA": 1367,
+        "gramsB": 1367,
+        "intersection": 1367
+      },
+      "almaty": {
+        "jaccard": 0.0864,
+        "overlap": 0.1726,
+        "gramsA": 1367,
+        "gramsB": 1600,
+        "intersection": 236
+      },
+      "shymkent": {
+        "jaccard": 0.0911,
+        "overlap": 0.1763,
+        "gramsA": 1367,
+        "gramsB": 1519,
+        "intersection": 241
+      },
+      "karaganda": {
+        "jaccard": 0.0529,
+        "overlap": 0.1083,
+        "gramsA": 1367,
+        "gramsB": 1578,
+        "intersection": 148
+      },
+      "aktobe": {
+        "jaccard": 0.0579,
+        "overlap": 0.117,
+        "gramsA": 1367,
+        "gramsB": 1557,
+        "intersection": 160
+      }
+    },
+    "almaty": {
+      "astana": {
+        "jaccard": 0.0864,
+        "overlap": 0.1726,
+        "gramsA": 1600,
+        "gramsB": 1367,
+        "intersection": 236
+      },
+      "almaty": {
+        "jaccard": 1,
+        "overlap": 1,
+        "gramsA": 1600,
+        "gramsB": 1600,
+        "intersection": 1600
+      },
+      "shymkent": {
+        "jaccard": 0.0932,
+        "overlap": 0.1751,
+        "gramsA": 1600,
+        "gramsB": 1519,
+        "intersection": 266
+      },
+      "karaganda": {
+        "jaccard": 0.0523,
+        "overlap": 0.1001,
+        "gramsA": 1600,
+        "gramsB": 1578,
+        "intersection": 158
+      },
+      "aktobe": {
+        "jaccard": 0.0666,
+        "overlap": 0.1265,
+        "gramsA": 1600,
+        "gramsB": 1557,
+        "intersection": 197
+      }
+    },
+    "shymkent": {
+      "astana": {
+        "jaccard": 0.0911,
+        "overlap": 0.1763,
+        "gramsA": 1519,
+        "gramsB": 1367,
+        "intersection": 241
+      },
+      "almaty": {
+        "jaccard": 0.0932,
+        "overlap": 0.1751,
+        "gramsA": 1519,
+        "gramsB": 1600,
+        "intersection": 266
+      },
+      "shymkent": {
+        "jaccard": 1,
+        "overlap": 1,
+        "gramsA": 1519,
+        "gramsB": 1519,
+        "intersection": 1519
+      },
+      "karaganda": {
+        "jaccard": 0.053,
+        "overlap": 0.1027,
+        "gramsA": 1519,
+        "gramsB": 1578,
+        "intersection": 156
+      },
+      "aktobe": {
+        "jaccard": 0.0541,
+        "overlap": 0.104,
+        "gramsA": 1519,
+        "gramsB": 1557,
+        "intersection": 158
+      }
+    },
+    "karaganda": {
+      "astana": {
+        "jaccard": 0.0529,
+        "overlap": 0.1083,
+        "gramsA": 1578,
+        "gramsB": 1367,
+        "intersection": 148
+      },
+      "almaty": {
+        "jaccard": 0.0523,
+        "overlap": 0.1001,
+        "gramsA": 1578,
+        "gramsB": 1600,
+        "intersection": 158
+      },
+      "shymkent": {
+        "jaccard": 0.053,
+        "overlap": 0.1027,
+        "gramsA": 1578,
+        "gramsB": 1519,
+        "intersection": 156
+      },
+      "karaganda": {
+        "jaccard": 1,
+        "overlap": 1,
+        "gramsA": 1578,
+        "gramsB": 1578,
+        "intersection": 1578
+      },
+      "aktobe": {
+        "jaccard": 0.0652,
+        "overlap": 0.1233,
+        "gramsA": 1578,
+        "gramsB": 1557,
+        "intersection": 192
+      }
+    },
+    "aktobe": {
+      "astana": {
+        "jaccard": 0.0579,
+        "overlap": 0.117,
+        "gramsA": 1557,
+        "gramsB": 1367,
+        "intersection": 160
+      },
+      "almaty": {
+        "jaccard": 0.0666,
+        "overlap": 0.1265,
+        "gramsA": 1557,
+        "gramsB": 1600,
+        "intersection": 197
+      },
+      "shymkent": {
+        "jaccard": 0.0541,
+        "overlap": 0.104,
+        "gramsA": 1557,
+        "gramsB": 1519,
+        "intersection": 158
+      },
+      "karaganda": {
+        "jaccard": 0.0652,
+        "overlap": 0.1233,
+        "gramsA": 1557,
+        "gramsB": 1578,
+        "intersection": 192
+      },
+      "aktobe": {
+        "jaccard": 1,
+        "overlap": 1,
+        "gramsA": 1557,
+        "gramsB": 1557,
+        "intersection": 1557
+      }
+    }
+  }
+}

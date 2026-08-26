@@ -1,0 +1,9 @@
+{
+  "slug": "semey",
+  "commit": "d6dcb136f4bf390b0376eeeec00b591bae0e7516",
+  "main": "91031f5e20e7c9ae2938bb3b7077cf20cd12a101",
+  "plesk": "d4e1338e19ffccfe24b6f3398ac7b4216656aedd",
+  "mobile_median": 99,
+  "desktop": 100,
+  "production_verified": true
+}

@@ -1,0 +1,11 @@
+import fs from "node:fs";
+const h = fs.readFileSync("site_mirror/web-studiya/kontekstnaya-reklama/yandex-direct/index.html", "utf8");
+const j = JSON.parse(h.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1]);
+console.log(j["@graph"].map((x) => JSON.stringify(x["@type"]) + " " + (x["@id"] || "")));
+const faq = j["@graph"].find((x) => x["@type"] === "FAQPage").mainEntity;
+const vis = [...h.matchAll(/id="yd-faq-q\d+"[^>]*>([^<]+)/g)].map((m) => m[1]);
+console.log("faq schema", faq.length, "visible", vis.length);
+console.log("match", faq.every((q, i) => q.name === vis[i]));
+console.log("h1", (h.match(/<h1\b/g) || []).length);
+console.log("remnants", /gads-|google-ads\/3d|public\.bundle/.test(h));
+console.log("trailing", /yandex-direct\/#webpage/.test(h) && /canonical" href="https:\/\/raskrutov.kz\/web-studiya\/kontekstnaya-reklama\/yandex-direct\/"/.test(h));

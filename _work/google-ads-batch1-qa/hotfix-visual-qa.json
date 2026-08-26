@@ -1,0 +1,961 @@
+{
+  "ok": false,
+  "pages": [
+    {
+      "city": "astana",
+      "url": "http://127.0.0.1:4177/web-studiya/kontekstnaya-reklama/google-ads/astana/",
+      "viewports": [
+        {
+          "width": 390,
+          "status": 200,
+          "failures": [],
+          "ownedErrors": [
+            "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
+          ],
+          "metrics": {
+            "overflow": false,
+            "hScrollEls": [],
+            "items": [
+              {
+                "i": 0,
+                "hasIcon": true,
+                "grid": "40px 276px",
+                "itemWidth": 358,
+                "contentWidth": 276,
+                "contentLeft": 83,
+                "iconWidth": 40
+              },
+              {
+                "i": 1,
+                "hasIcon": true,
+                "grid": "40px 276px",
+                "itemWidth": 358,
+                "contentWidth": 276,
+                "contentLeft": 83,
+                "iconWidth": 40
+              },
+              {
+                "i": 2,
+                "hasIcon": true,
+                "grid": "40px 276px",
+                "itemWidth": 358,
+                "contentWidth": 276,
+                "contentLeft": 83,
+                "iconWidth": 40
+              },
+              {
+                "i": 3,
+                "hasIcon": true,
+                "grid": "40px 276px",
+                "itemWidth": 358,
+                "contentWidth": 276,
+                "contentLeft": 83,
+                "iconWidth": 40
+              },
+              {
+                "i": 4,
+                "hasIcon": true,
+                "grid": "40px 276px",
+                "itemWidth": 358,
+                "contentWidth": 276,
+                "contentLeft": 83,
+                "iconWidth": 40
+              },
+              {
+                "i": 5,
+                "hasIcon": true,
+                "grid": "40px 276px",
+                "itemWidth": 358,
+                "contentWidth": 276,
+                "contentLeft": 83,
+                "iconWidth": 40
+              }
+            ],
+            "h1": 1,
+            "setup": true,
+            "pageErrors": []
+          },
+          "shots": {
+            "full": "D:\\РАБОТА\\111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111\\raskrutov-kz-2026\\site_mirror\\_work\\google-ads-batch1-qa\\screenshots\\astana-390-full.png",
+            "setup": "D:\\РАБОТА\\111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111\\raskrutov-kz-2026\\site_mirror\\_work\\google-ads-batch1-qa\\screenshots\\astana-390-setup.png",
+            "hero": "D:\\РАБОТА\\111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111\\raskrutov-kz-2026\\site_mirror\\_work\\google-ads-batch1-qa\\screenshots\\astana-390-hero.png"
+          }
+        },
+        {
+          "width": 430,
+          "status": 200,
+          "failures": [],
+          "ownedErrors": [
+            "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
+          ],
+          "metrics": {
+            "overflow": false,
+            "hScrollEls": [],
+            "items": [
+              {
+                "i": 0,
+                "hasIcon": true,
+                "grid": "40px 308px",
+                "itemWidth": 390,
+                "contentWidth": 308,
+                "contentLeft": 87,
+                "iconWidth": 40
+              },
+              {
+                "i": 1,
+                "hasIcon": true,
+                "grid": "40px 308px",
+                "itemWidth": 390,
+                "contentWidth": 308,
+                "contentLeft": 87,
+                "iconWidth": 40
+              },
+              {
+                "i": 2,
+                "hasIcon": true,
+                "grid": "40px 308px",
+                "itemWidth": 390,
+                "contentWidth": 308,
+                "contentLeft": 87,
+                "iconWidth": 40
+              },
+              {
+                "i": 3,
+                "hasIcon": true,
+                "grid": "40px 308px",
+                "itemWidth": 390,
+                "contentWidth": 308,
+                "contentLeft": 87,
+                "iconWidth": 40
+              },
+              {
+                "i": 4,
+                "hasIcon": true,
+                "grid": "40px 308px",
+                "itemWidth": 390,
+                "contentWidth": 308,
+                "contentLeft": 87,
+                "iconWidth": 40
+              },
+              {
+                "i": 5,
+                "hasIcon": true,
+                "grid": "40px 308px",
+                "itemWidth": 390,
+                "contentWidth": 308,
+                "contentLeft": 87,
+                "iconWidth": 40
+              }
+            ],
+            "h1": 1,
+            "setup": true,
+            "pageErrors": []
+          },
+          "shots": {
+            "full": "D:\\РАБОТА\\111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111\\raskrutov-kz-2026\\site_mirror\\_work\\google-ads-batch1-qa\\screenshots\\astana-430-full.png",
+            "setup": "D:\\РАБОТА\\111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111\\raskrutov-kz-2026\\site_mirror\\_work\\google-ads-batch1-qa\\screenshots\\astana-430-setup.png",
+            "hero": "D:\\РАБОТА\\111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111\\raskrutov-kz-2026\\site_mirror\\_work\\google-ads-batch1-qa\\screenshots\\astana-430-hero.png"
+          }
+        },
+        {
+          "width": 768,
+          "status": 200,
+          "failures": [],
+          "ownedErrors": [
+            "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
+          ],
+          "metrics": {
+            "overflow": false,
+            "hScrollEls": [],
+            "items": [
+              {
+                "i": 0,
+                "hasIcon": true,
+                "grid": "40px 646px",
+                "itemWidth": 728,
+                "contentWidth": 646,
+                "contentLeft": 87,
+                "iconWidth": 40
+              },
+              {
+                "i": 1,
+                "hasIcon": true,
+                "grid": "40px 646px",
+                "itemWidth": 728,
+                "contentWidth": 646,
+                "contentLeft": 87,
+                "iconWidth": 40
+              },
+              {
+                "i": 2,
+                "hasIcon": true,
+                "grid": "40px 646px",
+                "itemWidth": 728,
+                "contentWidth": 646,
+                "contentLeft": 87,
+                "iconWidth": 40
+              },
+              {
+                "i": 3,
+                "hasIcon": true,
+                "grid": "40px 646px",
+                "itemWidth": 728,
+                "contentWidth": 646,
+                "contentLeft": 87,
+                "iconWidth": 40
+              },
+              {
+                "i": 4,
+                "hasIcon": true,
+                "grid": "40px 646px",
+                "itemWidth": 728,
+                "contentWidth": 646,
+                "contentLeft": 87,
+                "iconWidth": 40
+              },
+              {
+                "i": 5,
+                "hasIcon": true,
+                "grid": "40px 646px",
+                "itemWidth": 728,
+                "contentWidth": 646,
+                "contentLeft": 87,
+                "iconWidth": 40
+              }
+            ],
+            "h1": 1,
+            "setup": true,
+            "pageErrors": []
+          },
+          "shots": {
+            "full": "D:\\РАБОТА\\111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111\\raskrutov-kz-2026\\site_mirror\\_work\\google-ads-batch1-qa\\screenshots\\astana-768-full.png",
+            "setup": "D:\\РАБОТА\\111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111\\raskrutov-kz-2026\\site_mirror\\_work\\google-ads-batch1-qa\\screenshots\\astana-768-setup.png",
+            "hero": "D:\\РАБОТА\\111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111\\raskrutov-kz-2026\\site_mirror\\_work\\google-ads-batch1-qa\\screenshots\\astana-768-hero.png"
+          }
+        },
+        {
+          "width": 1440,
+          "status": 200,
+          "failures": [],
+          "ownedErrors": [
+            "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
+          ],
+          "metrics": {
+            "overflow": false,
+            "hScrollEls": [],
+            "items": [
+              {
+                "i": 0,
+                "hasIcon": true,
+                "grid": "40px 608px",
+                "itemWidth": 690,
+                "contentWidth": 608,
+                "contentLeft": 91,
+                "iconWidth": 40
+              },
+              {
+                "i": 1,
+                "hasIcon": true,
+                "grid": "40px 608px",
+                "itemWidth": 690,
+                "contentWidth": 608,
+                "contentLeft": 793,
+                "iconWidth": 40
+              },
+              {
+                "i": 2,
+                "hasIcon": true,
+                "grid": "40px 608px",
+                "itemWidth": 690,
+                "contentWidth": 608,
+                "contentLeft": 91,
+                "iconWidth": 40
+              },
+              {
+                "i": 3,
+                "hasIcon": true,
+                "grid": "40px 608px",
+                "itemWidth": 690,
+                "contentWidth": 608,
+                "contentLeft": 793,
+                "iconWidth": 40
+              },
+              {
+                "i": 4,
+                "hasIcon": true,
+                "grid": "40px 608px",
+                "itemWidth": 690,
+                "contentWidth": 608,
+                "contentLeft": 91,
+                "iconWidth": 40
+              },
+              {
+                "i": 5,
+                "hasIcon": true,
+                "grid": "40px 608px",
+                "itemWidth": 690,
+                "contentWidth": 608,
+                "contentLeft": 793,
+                "iconWidth": 40
+              }
+            ],
+            "h1": 1,
+            "setup": true,
+            "pageErrors": []
+          },
+          "shots": {
+            "full": "D:\\РАБОТА\\111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111\\raskrutov-kz-2026\\site_mirror\\_work\\google-ads-batch1-qa\\screenshots\\astana-1440-full.png",
+            "setup": "D:\\РАБОТА\\111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111\\raskrutov-kz-2026\\site_mirror\\_work\\google-ads-batch1-qa\\screenshots\\astana-1440-setup.png",
+            "hero": "D:\\РАБОТА\\111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111\\raskrutov-kz-2026\\site_mirror\\_work\\google-ads-batch1-qa\\screenshots\\astana-1440-hero.png"
+          }
+        }
+      ]
+    },
+    {
+      "city": "almaty",
+      "url": "http://127.0.0.1:4177/web-studiya/kontekstnaya-reklama/google-ads/almaty/",
+      "viewports": [
+        {
+          "width": 390,
+          "status": 200,
+          "failures": [],
+          "ownedErrors": [
+            "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
+          ],
+          "metrics": {
+            "overflow": false,
+            "hScrollEls": [],
+            "items": [
+              {
+                "i": 0,
+                "hasIcon": true,
+                "grid": "40px 276px",
+                "itemWidth": 358,
+                "contentWidth": 276,
+                "contentLeft": 83,
+                "iconWidth": 40
+              },
+              {
+                "i": 1,
+                "hasIcon": true,
+                "grid": "40px 276px",
+                "itemWidth": 358,
+                "contentWidth": 276,
+                "contentLeft": 83,
+                "iconWidth": 40
+              },
+              {
+                "i": 2,
+                "hasIcon": true,
+                "grid": "40px 276px",
+                "itemWidth": 358,
+                "contentWidth": 276,
+                "contentLeft": 83,
+                "iconWidth": 40
+              },
+              {
+                "i": 3,
+                "hasIcon": true,
+                "grid": "40px 276px",
+                "itemWidth": 358,
+                "contentWidth": 276,
+                "contentLeft": 83,
+                "iconWidth": 40
+              },
+              {
+                "i": 4,
+                "hasIcon": true,
+                "grid": "40px 276px",
+                "itemWidth": 358,
+                "contentWidth": 276,
+                "contentLeft": 83,
+                "iconWidth": 40
+              },
+              {
+                "i": 5,
+                "hasIcon": true,
+                "grid": "40px 276px",
+                "itemWidth": 358,
+                "contentWidth": 276,
+                "contentLeft": 83,
+                "iconWidth": 40
+              }
+            ],
+            "h1": 1,
+            "setup": true,
+            "pageErrors": []
+          },
+          "shots": {
+            "full": "D:\\РАБОТА\\111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111\\raskrutov-kz-2026\\site_mirror\\_work\\google-ads-batch1-qa\\screenshots\\almaty-390-full.png",
+            "setup": "D:\\РАБОТА\\111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111\\raskrutov-kz-2026\\site_mirror\\_work\\google-ads-batch1-qa\\screenshots\\almaty-390-setup.png",
+            "hero": "D:\\РАБОТА\\111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111\\raskrutov-kz-2026\\site_mirror\\_work\\google-ads-batch1-qa\\screenshots\\almaty-390-hero.png"
+          }
+        },
+        {
+          "width": 1440,
+          "status": 200,
+          "failures": [],
+          "ownedErrors": [
+            "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
+          ],
+          "metrics": {
+            "overflow": false,
+            "hScrollEls": [],
+            "items": [
+              {
+                "i": 0,
+                "hasIcon": true,
+                "grid": "40px 608px",
+                "itemWidth": 690,
+                "contentWidth": 608,
+                "contentLeft": 91,
+                "iconWidth": 40
+              },
+              {
+                "i": 1,
+                "hasIcon": true,
+                "grid": "40px 608px",
+                "itemWidth": 690,
+                "contentWidth": 608,
+                "contentLeft": 793,
+                "iconWidth": 40
+              },
+              {
+                "i": 2,
+                "hasIcon": true,
+                "grid": "40px 608px",
+                "itemWidth": 690,
+                "contentWidth": 608,
+                "contentLeft": 91,
+                "iconWidth": 40
+              },
+              {
+                "i": 3,
+                "hasIcon": true,
+                "grid": "40px 608px",
+                "itemWidth": 690,
+                "contentWidth": 608,
+                "contentLeft": 793,
+                "iconWidth": 40
+              },
+              {
+                "i": 4,
+                "hasIcon": true,
+                "grid": "40px 608px",
+                "itemWidth": 690,
+                "contentWidth": 608,
+                "contentLeft": 91,
+                "iconWidth": 40
+              },
+              {
+                "i": 5,
+                "hasIcon": true,
+                "grid": "40px 608px",
+                "itemWidth": 690,
+                "contentWidth": 608,
+                "contentLeft": 793,
+                "iconWidth": 40
+              }
+            ],
+            "h1": 1,
+            "setup": true,
+            "pageErrors": []
+          },
+          "shots": {
+            "full": "D:\\РАБОТА\\111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111\\raskrutov-kz-2026\\site_mirror\\_work\\google-ads-batch1-qa\\screenshots\\almaty-1440-full.png",
+            "setup": "D:\\РАБОТА\\111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111\\raskrutov-kz-2026\\site_mirror\\_work\\google-ads-batch1-qa\\screenshots\\almaty-1440-setup.png",
+            "hero": "D:\\РАБОТА\\111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111\\raskrutov-kz-2026\\site_mirror\\_work\\google-ads-batch1-qa\\screenshots\\almaty-1440-hero.png"
+          }
+        }
+      ]
+    },
+    {
+      "city": "shymkent",
+      "url": "http://127.0.0.1:4177/web-studiya/kontekstnaya-reklama/google-ads/shymkent/",
+      "viewports": [
+        {
+          "width": 390,
+          "status": 200,
+          "failures": [],
+          "ownedErrors": [
+            "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
+          ],
+          "metrics": {
+            "overflow": false,
+            "hScrollEls": [],
+            "items": [
+              {
+                "i": 0,
+                "hasIcon": true,
+                "grid": "40px 276px",
+                "itemWidth": 358,
+                "contentWidth": 276,
+                "contentLeft": 83,
+                "iconWidth": 40
+              },
+              {
+                "i": 1,
+                "hasIcon": true,
+                "grid": "40px 276px",
+                "itemWidth": 358,
+                "contentWidth": 276,
+                "contentLeft": 83,
+                "iconWidth": 40
+              },
+              {
+                "i": 2,
+                "hasIcon": true,
+                "grid": "40px 276px",
+                "itemWidth": 358,
+                "contentWidth": 276,
+                "contentLeft": 83,
+                "iconWidth": 40
+              },
+              {
+                "i": 3,
+                "hasIcon": true,
+                "grid": "40px 276px",
+                "itemWidth": 358,
+                "contentWidth": 276,
+                "contentLeft": 83,
+                "iconWidth": 40
+              },
+              {
+                "i": 4,
+                "hasIcon": true,
+                "grid": "40px 276px",
+                "itemWidth": 358,
+                "contentWidth": 276,
+                "contentLeft": 83,
+                "iconWidth": 40
+              },
+              {
+                "i": 5,
+                "hasIcon": true,
+                "grid": "40px 276px",
+                "itemWidth": 358,
+                "contentWidth": 276,
+                "contentLeft": 83,
+                "iconWidth": 40
+              }
+            ],
+            "h1": 1,
+            "setup": true,
+            "pageErrors": []
+          },
+          "shots": {
+            "full": "D:\\РАБОТА\\111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111\\raskrutov-kz-2026\\site_mirror\\_work\\google-ads-batch1-qa\\screenshots\\shymkent-390-full.png",
+            "setup": "D:\\РАБОТА\\111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111\\raskrutov-kz-2026\\site_mirror\\_work\\google-ads-batch1-qa\\screenshots\\shymkent-390-setup.png",
+            "hero": "D:\\РАБОТА\\111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111\\raskrutov-kz-2026\\site_mirror\\_work\\google-ads-batch1-qa\\screenshots\\shymkent-390-hero.png"
+          }
+        },
+        {
+          "width": 1440,
+          "status": 200,
+          "failures": [],
+          "ownedErrors": [
+            "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
+          ],
+          "metrics": {
+            "overflow": false,
+            "hScrollEls": [],
+            "items": [
+              {
+                "i": 0,
+                "hasIcon": true,
+                "grid": "40px 608px",
+                "itemWidth": 690,
+                "contentWidth": 608,
+                "contentLeft": 91,
+                "iconWidth": 40
+              },
+              {
+                "i": 1,
+                "hasIcon": true,
+                "grid": "40px 608px",
+                "itemWidth": 690,
+                "contentWidth": 608,
+                "contentLeft": 793,
+                "iconWidth": 40
+              },
+              {
+                "i": 2,
+                "hasIcon": true,
+                "grid": "40px 608px",
+                "itemWidth": 690,
+                "contentWidth": 608,
+                "contentLeft": 91,
+                "iconWidth": 40
+              },
+              {
+                "i": 3,
+                "hasIcon": true,
+                "grid": "40px 608px",
+                "itemWidth": 690,
+                "contentWidth": 608,
+                "contentLeft": 793,
+                "iconWidth": 40
+              },
+              {
+                "i": 4,
+                "hasIcon": true,
+                "grid": "40px 608px",
+                "itemWidth": 690,
+                "contentWidth": 608,
+                "contentLeft": 91,
+                "iconWidth": 40
+              },
+              {
+                "i": 5,
+                "hasIcon": true,
+                "grid": "40px 608px",
+                "itemWidth": 690,
+                "contentWidth": 608,
+                "contentLeft": 793,
+                "iconWidth": 40
+              }
+            ],
+            "h1": 1,
+            "setup": true,
+            "pageErrors": []
+          },
+          "shots": {
+            "full": "D:\\РАБОТА\\111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111\\raskrutov-kz-2026\\site_mirror\\_work\\google-ads-batch1-qa\\screenshots\\shymkent-1440-full.png",
+            "setup": "D:\\РАБОТА\\111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111\\raskrutov-kz-2026\\site_mirror\\_work\\google-ads-batch1-qa\\screenshots\\shymkent-1440-setup.png",
+            "hero": "D:\\РАБОТА\\111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111\\raskrutov-kz-2026\\site_mirror\\_work\\google-ads-batch1-qa\\screenshots\\shymkent-1440-hero.png"
+          }
+        }
+      ]
+    },
+    {
+      "city": "karaganda",
+      "url": "http://127.0.0.1:4177/web-studiya/kontekstnaya-reklama/google-ads/karaganda/",
+      "viewports": [
+        {
+          "width": 390,
+          "status": 200,
+          "failures": [],
+          "ownedErrors": [
+            "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
+          ],
+          "metrics": {
+            "overflow": false,
+            "hScrollEls": [],
+            "items": [
+              {
+                "i": 0,
+                "hasIcon": true,
+                "grid": "40px 276px",
+                "itemWidth": 358,
+                "contentWidth": 276,
+                "contentLeft": 83,
+                "iconWidth": 40
+              },
+              {
+                "i": 1,
+                "hasIcon": true,
+                "grid": "40px 276px",
+                "itemWidth": 358,
+                "contentWidth": 276,
+                "contentLeft": 83,
+                "iconWidth": 40
+              },
+              {
+                "i": 2,
+                "hasIcon": true,
+                "grid": "40px 276px",
+                "itemWidth": 358,
+                "contentWidth": 276,
+                "contentLeft": 83,
+                "iconWidth": 40
+              },
+              {
+                "i": 3,
+                "hasIcon": true,
+                "grid": "40px 276px",
+                "itemWidth": 358,
+                "contentWidth": 276,
+                "contentLeft": 83,
+                "iconWidth": 40
+              },
+              {
+                "i": 4,
+                "hasIcon": true,
+                "grid": "40px 276px",
+                "itemWidth": 358,
+                "contentWidth": 276,
+                "contentLeft": 83,
+                "iconWidth": 40
+              },
+              {
+                "i": 5,
+                "hasIcon": true,
+                "grid": "40px 276px",
+                "itemWidth": 358,
+                "contentWidth": 276,
+                "contentLeft": 83,
+                "iconWidth": 40
+              }
+            ],
+            "h1": 1,
+            "setup": true,
+            "pageErrors": []
+          },
+          "shots": {
+            "full": "D:\\РАБОТА\\111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111\\raskrutov-kz-2026\\site_mirror\\_work\\google-ads-batch1-qa\\screenshots\\karaganda-390-full.png",
+            "setup": "D:\\РАБОТА\\111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111\\raskrutov-kz-2026\\site_mirror\\_work\\google-ads-batch1-qa\\screenshots\\karaganda-390-setup.png",
+            "hero": "D:\\РАБОТА\\111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111\\raskrutov-kz-2026\\site_mirror\\_work\\google-ads-batch1-qa\\screenshots\\karaganda-390-hero.png"
+          }
+        },
+        {
+          "width": 1440,
+          "status": 200,
+          "failures": [],
+          "ownedErrors": [
+            "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
+          ],
+          "metrics": {
+            "overflow": false,
+            "hScrollEls": [],
+            "items": [
+              {
+                "i": 0,
+                "hasIcon": true,
+                "grid": "40px 608px",
+                "itemWidth": 690,
+                "contentWidth": 608,
+                "contentLeft": 91,
+                "iconWidth": 40
+              },
+              {
+                "i": 1,
+                "hasIcon": true,
+                "grid": "40px 608px",
+                "itemWidth": 690,
+                "contentWidth": 608,
+                "contentLeft": 793,
+                "iconWidth": 40
+              },
+              {
+                "i": 2,
+                "hasIcon": true,
+                "grid": "40px 608px",
+                "itemWidth": 690,
+                "contentWidth": 608,
+                "contentLeft": 91,
+                "iconWidth": 40
+              },
+              {
+                "i": 3,
+                "hasIcon": true,
+                "grid": "40px 608px",
+                "itemWidth": 690,
+                "contentWidth": 608,
+                "contentLeft": 793,
+                "iconWidth": 40
+              },
+              {
+                "i": 4,
+                "hasIcon": true,
+                "grid": "40px 608px",
+                "itemWidth": 690,
+                "contentWidth": 608,
+                "contentLeft": 91,
+                "iconWidth": 40
+              },
+              {
+                "i": 5,
+                "hasIcon": true,
+                "grid": "40px 608px",
+                "itemWidth": 690,
+                "contentWidth": 608,
+                "contentLeft": 793,
+                "iconWidth": 40
+              }
+            ],
+            "h1": 1,
+            "setup": true,
+            "pageErrors": []
+          },
+          "shots": {
+            "full": "D:\\РАБОТА\\111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111\\raskrutov-kz-2026\\site_mirror\\_work\\google-ads-batch1-qa\\screenshots\\karaganda-1440-full.png",
+            "setup": "D:\\РАБОТА\\111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111\\raskrutov-kz-2026\\site_mirror\\_work\\google-ads-batch1-qa\\screenshots\\karaganda-1440-setup.png",
+            "hero": "D:\\РАБОТА\\111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111\\raskrutov-kz-2026\\site_mirror\\_work\\google-ads-batch1-qa\\screenshots\\karaganda-1440-hero.png"
+          }
+        }
+      ]
+    },
+    {
+      "city": "aktobe",
+      "url": "http://127.0.0.1:4177/web-studiya/kontekstnaya-reklama/google-ads/aktobe/",
+      "viewports": [
+        {
+          "width": 390,
+          "status": 200,
+          "failures": [],
+          "ownedErrors": [
+            "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
+          ],
+          "metrics": {
+            "overflow": false,
+            "hScrollEls": [],
+            "items": [
+              {
+                "i": 0,
+                "hasIcon": true,
+                "grid": "40px 276px",
+                "itemWidth": 358,
+                "contentWidth": 276,
+                "contentLeft": 83,
+                "iconWidth": 40
+              },
+              {
+                "i": 1,
+                "hasIcon": true,
+                "grid": "40px 276px",
+                "itemWidth": 358,
+                "contentWidth": 276,
+                "contentLeft": 83,
+                "iconWidth": 40
+              },
+              {
+                "i": 2,
+                "hasIcon": true,
+                "grid": "40px 276px",
+                "itemWidth": 358,
+                "contentWidth": 276,
+                "contentLeft": 83,
+                "iconWidth": 40
+              },
+              {
+                "i": 3,
+                "hasIcon": true,
+                "grid": "40px 276px",
+                "itemWidth": 358,
+                "contentWidth": 276,
+                "contentLeft": 83,
+                "iconWidth": 40
+              },
+              {
+                "i": 4,
+                "hasIcon": true,
+                "grid": "40px 276px",
+                "itemWidth": 358,
+                "contentWidth": 276,
+                "contentLeft": 83,
+                "iconWidth": 40
+              },
+              {
+                "i": 5,
+                "hasIcon": true,
+                "grid": "40px 276px",
+                "itemWidth": 358,
+                "contentWidth": 276,
+                "contentLeft": 83,
+                "iconWidth": 40
+              }
+            ],
+            "h1": 1,
+            "setup": true,
+            "pageErrors": []
+          },
+          "shots": {
+            "full": "D:\\РАБОТА\\111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111\\raskrutov-kz-2026\\site_mirror\\_work\\google-ads-batch1-qa\\screenshots\\aktobe-390-full.png",
+            "setup": "D:\\РАБОТА\\111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111\\raskrutov-kz-2026\\site_mirror\\_work\\google-ads-batch1-qa\\screenshots\\aktobe-390-setup.png",
+            "hero": "D:\\РАБОТА\\111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111\\raskrutov-kz-2026\\site_mirror\\_work\\google-ads-batch1-qa\\screenshots\\aktobe-390-hero.png"
+          }
+        },
+        {
+          "width": 1440,
+          "status": 200,
+          "failures": [],
+          "ownedErrors": [
+            "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
+          ],
+          "metrics": {
+            "overflow": false,
+            "hScrollEls": [],
+            "items": [
+              {
+                "i": 0,
+                "hasIcon": true,
+                "grid": "40px 608px",
+                "itemWidth": 690,
+                "contentWidth": 608,
+                "contentLeft": 91,
+                "iconWidth": 40
+              },
+              {
+                "i": 1,
+                "hasIcon": true,
+                "grid": "40px 608px",
+                "itemWidth": 690,
+                "contentWidth": 608,
+                "contentLeft": 793,
+                "iconWidth": 40
+              },
+              {
+                "i": 2,
+                "hasIcon": true,
+                "grid": "40px 608px",
+                "itemWidth": 690,
+                "contentWidth": 608,
+                "contentLeft": 91,
+                "iconWidth": 40
+              },
+              {
+                "i": 3,
+                "hasIcon": true,
+                "grid": "40px 608px",
+                "itemWidth": 690,
+                "contentWidth": 608,
+                "contentLeft": 793,
+                "iconWidth": 40
+              },
+              {
+                "i": 4,
+                "hasIcon": true,
+                "grid": "40px 608px",
+                "itemWidth": 690,
+                "contentWidth": 608,
+                "contentLeft": 91,
+                "iconWidth": 40
+              },
+              {
+                "i": 5,
+                "hasIcon": true,
+                "grid": "40px 608px",
+                "itemWidth": 690,
+                "contentWidth": 608,
+                "contentLeft": 793,
+                "iconWidth": 40
+              }
+            ],
+            "h1": 1,
+            "setup": true,
+            "pageErrors": []
+          },
+          "shots": {
+            "full": "D:\\РАБОТА\\111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111\\raskrutov-kz-2026\\site_mirror\\_work\\google-ads-batch1-qa\\screenshots\\aktobe-1440-full.png",
+            "setup": "D:\\РАБОТА\\111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111\\raskrutov-kz-2026\\site_mirror\\_work\\google-ads-batch1-qa\\screenshots\\aktobe-1440-setup.png",
+            "hero": "D:\\РАБОТА\\111 ПОРТАЛ ,,, ПРОЕКТ РАСКРУТОВ 05,2026 111\\raskrutov-kz-2026\\site_mirror\\_work\\google-ads-batch1-qa\\screenshots\\aktobe-1440-hero.png"
+          }
+        }
+      ]
+    }
+  ],
+  "errors": [
+    "astana@390: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "astana@430: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "astana@768: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "astana@1440: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "almaty@390: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "almaty@1440: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "shymkent@390: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "shymkent@1440: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "karaganda@390: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "karaganda@1440: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "aktobe@390: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+    "aktobe@1440: Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
+  ]
+}

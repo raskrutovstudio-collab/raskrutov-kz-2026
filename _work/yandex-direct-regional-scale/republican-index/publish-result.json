@@ -1,0 +1,41 @@
+{
+  "page": "yandex-direct/",
+  "commit": "f3ecedaef9998a14be4bd5aadb4872a0813b9007",
+  "main": "8ffcf3b3d9a76896049a0ec5ebc7b848d671d0b5",
+  "plesk": "d57d40d1eb1998327466d9366743a4bcf997691e",
+  "mobile_median": 99,
+  "mobile_scores": [
+    {
+      "p": 99,
+      "a": 100,
+      "b": 100,
+      "s": 100,
+      "fcp": 1056,
+      "lcp": 2028,
+      "tbt": 67,
+      "cls": 0
+    },
+    {
+      "p": 99,
+      "a": 100,
+      "b": 100,
+      "s": 100,
+      "fcp": 1018,
+      "lcp": 2103,
+      "tbt": 60,
+      "cls": 0
+    },
+    {
+      "p": 99,
+      "a": 100,
+      "b": 100,
+      "s": 100,
+      "fcp": 1032,
+      "lcp": 2178,
+      "tbt": 56,
+      "cls": 0
+    }
+  ],
+  "desktop": 100,
+  "production_verified": true
+}

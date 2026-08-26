@@ -1,0 +1,324 @@
+[
+  {
+    "city": "taraz",
+    "url": "http://127.0.0.1:8768/web-studiya/kontekstnaya-reklama/google-ads/taraz/",
+    "viewports": {
+      "390": {
+        "screenshot": "site_mirror/_work/google-ads-batch4-qa/taraz-390-post-perf.png",
+        "geo": {
+          "hScroll": 0,
+          "scopeIcons": 6,
+          "scopeItems": 6,
+          "taskMarks": 7,
+          "taskLis": 7,
+          "issues": [],
+          "h1": {
+            "text": "Настройка и ведение Google Ads в Таразе",
+            "fontFamily": "Montserrat, \"Montserrat Fallback\", Arial, sans-serif",
+            "fontWeight": "700",
+            "fontSize": "27.3px",
+            "width": 358,
+            "height": 65.5
+          },
+          "lead": {
+            "text": "Тараз собираем отдельной городской кампанией. Жамбылскую область подключаем только при фактическом покрытии: выезд, отгрузка, приём заказа. Дальние клики отсекаем до того, как они ",
+            "fontFamily": "Montserrat, \"Montserrat Fallback\", Arial, sans-serif",
+            "fontWeight": "400",
+            "fontSize": "16px",
+            "width": 358,
+            "height": 148.8
+          },
+          "fonts": [
+            {
+              "name": "montserrat_normal.woff2",
+              "duration": 129
+            },
+            {
+              "name": "montserrat_bold.woff2",
+              "duration": 120
+            }
+          ]
+        },
+        "consoleErrors": []
+      },
+      "1440": {
+        "screenshot": "site_mirror/_work/google-ads-batch4-qa/taraz-1440-post-perf.png",
+        "geo": {
+          "hScroll": 0,
+          "scopeIcons": 6,
+          "scopeItems": 6,
+          "taskMarks": 7,
+          "taskLis": 7,
+          "issues": [],
+          "h1": {
+            "text": "Настройка и ведение Google Ads в Таразе",
+            "fontFamily": "Montserrat, \"Montserrat Fallback\", Arial, sans-serif",
+            "fontWeight": "700",
+            "fontSize": "40px",
+            "width": 711.9,
+            "height": 96
+          },
+          "lead": {
+            "text": "Тараз собираем отдельной городской кампанией. Жамбылскую область подключаем только при фактическом покрытии: выезд, отгрузка, приём заказа. Дальние клики отсекаем до того, как они ",
+            "fontFamily": "Montserrat, \"Montserrat Fallback\", Arial, sans-serif",
+            "fontWeight": "400",
+            "fontSize": "16px",
+            "width": 614.3,
+            "height": 74.4
+          },
+          "fonts": [
+            {
+              "name": "montserrat_normal.woff2",
+              "duration": 241
+            },
+            {
+              "name": "montserrat_bold.woff2",
+              "duration": 228
+            }
+          ]
+        },
+        "consoleErrors": []
+      }
+    }
+  },
+  {
+    "city": "turkestan",
+    "url": "http://127.0.0.1:8768/web-studiya/kontekstnaya-reklama/google-ads/turkestan/",
+    "viewports": {
+      "390": {
+        "screenshot": "site_mirror/_work/google-ads-batch4-qa/turkestan-390-post-perf.png",
+        "geo": {
+          "hScroll": 0,
+          "scopeIcons": 6,
+          "scopeItems": 6,
+          "taskMarks": 7,
+          "taskLis": 7,
+          "issues": [],
+          "h1": {
+            "text": "Настройка и ведение Google Ads в Туркестане",
+            "fontFamily": "Montserrat, \"Montserrat Fallback\", Arial, sans-serif",
+            "fontWeight": "700",
+            "fontSize": "27.3px",
+            "width": 358,
+            "height": 65.5
+          },
+          "lead": {
+            "text": "Туркестан ведём самостоятельной городской зоной. Туркестанскую область подключаем только там, где клиент реально обслуживает заказ. Нерелевантные районы исключаем. Сезонность и тур",
+            "fontFamily": "Montserrat, \"Montserrat Fallback\", Arial, sans-serif",
+            "fontWeight": "400",
+            "fontSize": "16px",
+            "width": 358,
+            "height": 148.8
+          },
+          "fonts": [
+            {
+              "name": "montserrat_normal.woff2",
+              "duration": 122
+            },
+            {
+              "name": "montserrat_bold.woff2",
+              "duration": 115
+            }
+          ]
+        },
+        "consoleErrors": []
+      },
+      "1440": {
+        "screenshot": "site_mirror/_work/google-ads-batch4-qa/turkestan-1440-post-perf.png",
+        "geo": {
+          "hScroll": 0,
+          "scopeIcons": 6,
+          "scopeItems": 6,
+          "taskMarks": 7,
+          "taskLis": 7,
+          "issues": [],
+          "h1": {
+            "text": "Настройка и ведение Google Ads в Туркестане",
+            "fontFamily": "Montserrat, \"Montserrat Fallback\", Arial, sans-serif",
+            "fontWeight": "700",
+            "fontSize": "40px",
+            "width": 711.9,
+            "height": 96
+          },
+          "lead": {
+            "text": "Туркестан ведём самостоятельной городской зоной. Туркестанскую область подключаем только там, где клиент реально обслуживает заказ. Нерелевантные районы исключаем. Сезонность и тур",
+            "fontFamily": "Montserrat, \"Montserrat Fallback\", Arial, sans-serif",
+            "fontWeight": "400",
+            "fontSize": "16px",
+            "width": 614.3,
+            "height": 99.2
+          },
+          "fonts": [
+            {
+              "name": "montserrat_normal.woff2",
+              "duration": 198
+            },
+            {
+              "name": "montserrat_bold.woff2",
+              "duration": 182
+            }
+          ]
+        },
+        "consoleErrors": []
+      }
+    }
+  },
+  {
+    "city": "ust-kamenogorsk",
+    "url": "http://127.0.0.1:8768/web-studiya/kontekstnaya-reklama/google-ads/ust-kamenogorsk/",
+    "viewports": {
+      "390": {
+        "screenshot": "site_mirror/_work/google-ads-batch4-qa/ust-kamenogorsk-390-post-perf.png",
+        "geo": {
+          "hScroll": 0,
+          "scopeIcons": 6,
+          "scopeItems": 6,
+          "taskMarks": 7,
+          "taskLis": 7,
+          "issues": [],
+          "h1": {
+            "text": "Настройка и ведение Google Ads в Усть-Каменогорске",
+            "fontFamily": "Montserrat, \"Montserrat Fallback\", Arial, sans-serif",
+            "fontWeight": "700",
+            "fontSize": "27.3px",
+            "width": 358,
+            "height": 98.3
+          },
+          "lead": {
+            "text": "Усть-Каменогорск собираем отдельной городской кампанией. Восточно-Казахстанскую область подключаем только по фактической зоне обслуживания. B2B, услуги, выезд и доставку ведём разн",
+            "fontFamily": "Montserrat, \"Montserrat Fallback\", Arial, sans-serif",
+            "fontWeight": "400",
+            "fontSize": "16px",
+            "width": 358,
+            "height": 148.8
+          },
+          "fonts": [
+            {
+              "name": "montserrat_normal.woff2",
+              "duration": 124
+            },
+            {
+              "name": "montserrat_bold.woff2",
+              "duration": 115
+            }
+          ]
+        },
+        "consoleErrors": []
+      },
+      "430": {
+        "screenshot": "site_mirror/_work/google-ads-batch4-qa/ust-kamenogorsk-430-post-perf.png",
+        "geo": {
+          "hScroll": 0,
+          "scopeIcons": 6,
+          "scopeItems": 6,
+          "taskMarks": 7,
+          "taskLis": 7,
+          "issues": [],
+          "h1": {
+            "text": "Настройка и ведение Google Ads в Усть-Каменогорске",
+            "fontFamily": "Montserrat, \"Montserrat Fallback\", Arial, sans-serif",
+            "fontWeight": "700",
+            "fontSize": "30.1px",
+            "width": 390,
+            "height": 108.3
+          },
+          "lead": {
+            "text": "Усть-Каменогорск собираем отдельной городской кампанией. Восточно-Казахстанскую область подключаем только по фактической зоне обслуживания. B2B, услуги, выезд и доставку ведём разн",
+            "fontFamily": "Montserrat, \"Montserrat Fallback\", Arial, sans-serif",
+            "fontWeight": "400",
+            "fontSize": "16px",
+            "width": 390,
+            "height": 148.8
+          },
+          "fonts": [
+            {
+              "name": "montserrat_normal.woff2",
+              "duration": 122
+            },
+            {
+              "name": "montserrat_bold.woff2",
+              "duration": 114
+            }
+          ]
+        },
+        "consoleErrors": []
+      },
+      "768": {
+        "screenshot": "site_mirror/_work/google-ads-batch4-qa/ust-kamenogorsk-768-post-perf.png",
+        "geo": {
+          "hScroll": 0,
+          "scopeIcons": 6,
+          "scopeItems": 6,
+          "taskMarks": 7,
+          "taskLis": 7,
+          "issues": [],
+          "h1": {
+            "text": "Настройка и ведение Google Ads в Усть-Каменогорске",
+            "fontFamily": "Montserrat, \"Montserrat Fallback\", Arial, sans-serif",
+            "fontWeight": "700",
+            "fontSize": "32.256px",
+            "width": 728,
+            "height": 77.4
+          },
+          "lead": {
+            "text": "Усть-Каменогорск собираем отдельной городской кампанией. Восточно-Казахстанскую область подключаем только по фактической зоне обслуживания. B2B, услуги, выезд и доставку ведём разн",
+            "fontFamily": "Montserrat, \"Montserrat Fallback\", Arial, sans-serif",
+            "fontWeight": "400",
+            "fontSize": "16px",
+            "width": 614.3,
+            "height": 99.2
+          },
+          "fonts": [
+            {
+              "name": "montserrat_normal.woff2",
+              "duration": 210
+            },
+            {
+              "name": "montserrat_bold.woff2",
+              "duration": 197
+            }
+          ]
+        },
+        "consoleErrors": []
+      },
+      "1440": {
+        "screenshot": "site_mirror/_work/google-ads-batch4-qa/ust-kamenogorsk-1440-post-perf.png",
+        "geo": {
+          "hScroll": 0,
+          "scopeIcons": 6,
+          "scopeItems": 6,
+          "taskMarks": 7,
+          "taskLis": 7,
+          "issues": [],
+          "h1": {
+            "text": "Настройка и ведение Google Ads в Усть-Каменогорске",
+            "fontFamily": "Montserrat, \"Montserrat Fallback\", Arial, sans-serif",
+            "fontWeight": "700",
+            "fontSize": "40px",
+            "width": 711.9,
+            "height": 96
+          },
+          "lead": {
+            "text": "Усть-Каменогорск собираем отдельной городской кампанией. Восточно-Казахстанскую область подключаем только по фактической зоне обслуживания. B2B, услуги, выезд и доставку ведём разн",
+            "fontFamily": "Montserrat, \"Montserrat Fallback\", Arial, sans-serif",
+            "fontWeight": "400",
+            "fontSize": "16px",
+            "width": 614.3,
+            "height": 99.2
+          },
+          "fonts": [
+            {
+              "name": "montserrat_normal.woff2",
+              "duration": 199
+            },
+            {
+              "name": "montserrat_bold.woff2",
+              "duration": 185
+            }
+          ]
+        },
+        "consoleErrors": []
+      }
+    }
+  }
+]

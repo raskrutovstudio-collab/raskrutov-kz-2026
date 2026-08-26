@@ -1,0 +1,9 @@
+{
+  "slug": "aktau",
+  "commit": "18622b1be619830da605485bc6d02a583aced74a",
+  "main": "55a49a2c30126fc0669238557ae3f16d8f763072",
+  "plesk": "8df6968ef16d7221876de013c5a318a6fbbdcf2b",
+  "mobile_median": 99,
+  "desktop": 100,
+  "production_verified": true
+}

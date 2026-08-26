@@ -1,0 +1,654 @@
+{
+  "measuredAt": "2026-08-18T06:47:03.500Z",
+  "results": [
+    {
+      "city": "almaty",
+      "viewport": "430x932",
+      "ok": true,
+      "errors": [],
+      "warnings": [
+        "footer not injected in time; shot contacts",
+        "tiny targets: 2"
+      ],
+      "hScroll": {
+        "scrollWidth": 430,
+        "clientWidth": 430,
+        "overflow": 0,
+        "overflowing": []
+      },
+      "overflowEls": [],
+      "tinyTargets": [
+        {
+          "tag": "INPUT",
+          "text": "",
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "text": "",
+          "w": 8,
+          "h": 6
+        }
+      ],
+      "h1Wrap": {
+        "text": "Настройка и ведение Google Ads в Алматы",
+        "height": 72,
+        "width": 390,
+        "overflow": 0,
+        "whiteSpace": "normal",
+        "overflowX": "visible"
+      },
+      "sections": {
+        "ctx-hero": true,
+        "audience": true,
+        "campaign-types": true,
+        "pricing": true,
+        "faq": true,
+        "contacts": true
+      },
+      "footer": {
+        "injected": false
+      },
+      "sticky": {
+        "found": true,
+        "cls": "rk-sticky-cta",
+        "display": "flex",
+        "visibility": "visible",
+        "bottom": 932,
+        "height": 65,
+        "visible": true
+      },
+      "menu": {
+        "found": true,
+        "opened": false
+      },
+      "faq": {
+        "expanded": "true"
+      },
+      "popup": {
+        "visible": true
+      },
+      "form": {
+        "found": true,
+        "name": "contacts_google_ads_almaty",
+        "labels": 3,
+        "required": 2,
+        "consent": true,
+        "honey": true
+      },
+      "cards": {
+        "camp": 7,
+        "price": true
+      }
+    },
+    {
+      "city": "almaty",
+      "viewport": "768x1024",
+      "ok": true,
+      "errors": [],
+      "warnings": [
+        "footer not injected in time; shot contacts",
+        "tiny targets: 2"
+      ],
+      "hScroll": {
+        "scrollWidth": 768,
+        "clientWidth": 768,
+        "overflow": 0,
+        "overflowing": []
+      },
+      "overflowEls": [],
+      "tinyTargets": [
+        {
+          "tag": "INPUT",
+          "text": "",
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "text": "",
+          "w": 8,
+          "h": 6
+        }
+      ],
+      "h1Wrap": {
+        "text": "Настройка и ведение Google Ads в Алматы",
+        "height": 39,
+        "width": 728,
+        "overflow": 0,
+        "whiteSpace": "normal",
+        "overflowX": "visible"
+      },
+      "sections": {
+        "ctx-hero": true,
+        "audience": true,
+        "campaign-types": true,
+        "pricing": true,
+        "faq": true,
+        "contacts": true
+      },
+      "footer": {
+        "injected": false
+      },
+      "sticky": {
+        "found": true,
+        "cls": "rk-sticky-cta",
+        "display": "none",
+        "visibility": "visible",
+        "bottom": 0,
+        "height": 0,
+        "visible": false
+      },
+      "menu": {
+        "found": true,
+        "opened": false
+      },
+      "faq": {
+        "expanded": "true"
+      },
+      "popup": {
+        "visible": true
+      },
+      "form": {
+        "found": true,
+        "name": "contacts_google_ads_almaty",
+        "labels": 3,
+        "required": 2,
+        "consent": true,
+        "honey": true
+      },
+      "cards": {
+        "camp": 7,
+        "price": true
+      }
+    },
+    {
+      "city": "shymkent",
+      "viewport": "430x932",
+      "ok": true,
+      "errors": [],
+      "warnings": [
+        "footer not injected in time; shot contacts",
+        "tiny targets: 2"
+      ],
+      "hScroll": {
+        "scrollWidth": 430,
+        "clientWidth": 430,
+        "overflow": 0,
+        "overflowing": []
+      },
+      "overflowEls": [],
+      "tinyTargets": [
+        {
+          "tag": "INPUT",
+          "text": "",
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "text": "",
+          "w": 8,
+          "h": 6
+        }
+      ],
+      "h1Wrap": {
+        "text": "Настройка и ведение Google Ads в Шымкенте",
+        "height": 72,
+        "width": 390,
+        "overflow": 0,
+        "whiteSpace": "normal",
+        "overflowX": "visible"
+      },
+      "sections": {
+        "ctx-hero": true,
+        "audience": true,
+        "campaign-types": true,
+        "pricing": true,
+        "faq": true,
+        "contacts": true
+      },
+      "footer": {
+        "injected": false
+      },
+      "sticky": {
+        "found": true,
+        "cls": "rk-sticky-cta",
+        "display": "flex",
+        "visibility": "visible",
+        "bottom": 932,
+        "height": 65,
+        "visible": true
+      },
+      "menu": {
+        "found": true,
+        "opened": false
+      },
+      "faq": {
+        "expanded": "true"
+      },
+      "popup": {
+        "visible": true
+      },
+      "form": {
+        "found": true,
+        "name": "contacts_google_ads_shymkent",
+        "labels": 3,
+        "required": 2,
+        "consent": true,
+        "honey": true
+      },
+      "cards": {
+        "camp": 7,
+        "price": true
+      }
+    },
+    {
+      "city": "shymkent",
+      "viewport": "768x1024",
+      "ok": true,
+      "errors": [],
+      "warnings": [
+        "footer not injected in time; shot contacts",
+        "tiny targets: 2"
+      ],
+      "hScroll": {
+        "scrollWidth": 768,
+        "clientWidth": 768,
+        "overflow": 0,
+        "overflowing": []
+      },
+      "overflowEls": [],
+      "tinyTargets": [
+        {
+          "tag": "INPUT",
+          "text": "",
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "text": "",
+          "w": 8,
+          "h": 6
+        }
+      ],
+      "h1Wrap": {
+        "text": "Настройка и ведение Google Ads в Шымкенте",
+        "height": 77,
+        "width": 728,
+        "overflow": 0,
+        "whiteSpace": "normal",
+        "overflowX": "visible"
+      },
+      "sections": {
+        "ctx-hero": true,
+        "audience": true,
+        "campaign-types": true,
+        "pricing": true,
+        "faq": true,
+        "contacts": true
+      },
+      "footer": {
+        "injected": false
+      },
+      "sticky": {
+        "found": true,
+        "cls": "rk-sticky-cta",
+        "display": "none",
+        "visibility": "visible",
+        "bottom": 0,
+        "height": 0,
+        "visible": false
+      },
+      "menu": {
+        "found": true,
+        "opened": false
+      },
+      "faq": {
+        "expanded": "true"
+      },
+      "popup": {
+        "visible": true
+      },
+      "form": {
+        "found": true,
+        "name": "contacts_google_ads_shymkent",
+        "labels": 3,
+        "required": 2,
+        "consent": true,
+        "honey": true
+      },
+      "cards": {
+        "camp": 7,
+        "price": true
+      }
+    },
+    {
+      "city": "karaganda",
+      "viewport": "430x932",
+      "ok": true,
+      "errors": [],
+      "warnings": [
+        "footer not injected in time; shot contacts",
+        "tiny targets: 2"
+      ],
+      "hScroll": {
+        "scrollWidth": 430,
+        "clientWidth": 430,
+        "overflow": 0,
+        "overflowing": []
+      },
+      "overflowEls": [],
+      "tinyTargets": [
+        {
+          "tag": "INPUT",
+          "text": "",
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "text": "",
+          "w": 8,
+          "h": 6
+        }
+      ],
+      "h1Wrap": {
+        "text": "Настройка и ведение Google Ads в Караганде",
+        "height": 72,
+        "width": 390,
+        "overflow": 0,
+        "whiteSpace": "normal",
+        "overflowX": "visible"
+      },
+      "sections": {
+        "ctx-hero": true,
+        "audience": true,
+        "campaign-types": true,
+        "pricing": true,
+        "faq": true,
+        "contacts": true
+      },
+      "footer": {
+        "injected": false
+      },
+      "sticky": {
+        "found": true,
+        "cls": "rk-sticky-cta",
+        "display": "flex",
+        "visibility": "visible",
+        "bottom": 932,
+        "height": 65,
+        "visible": true
+      },
+      "menu": {
+        "found": true,
+        "opened": false
+      },
+      "faq": {
+        "expanded": "true"
+      },
+      "popup": {
+        "visible": true
+      },
+      "form": {
+        "found": true,
+        "name": "contacts_google_ads_karaganda",
+        "labels": 3,
+        "required": 2,
+        "consent": true,
+        "honey": true
+      },
+      "cards": {
+        "camp": 7,
+        "price": true
+      }
+    },
+    {
+      "city": "karaganda",
+      "viewport": "768x1024",
+      "ok": true,
+      "errors": [],
+      "warnings": [
+        "footer not injected in time; shot contacts",
+        "tiny targets: 2"
+      ],
+      "hScroll": {
+        "scrollWidth": 768,
+        "clientWidth": 768,
+        "overflow": 0,
+        "overflowing": []
+      },
+      "overflowEls": [],
+      "tinyTargets": [
+        {
+          "tag": "INPUT",
+          "text": "",
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "text": "",
+          "w": 8,
+          "h": 6
+        }
+      ],
+      "h1Wrap": {
+        "text": "Настройка и ведение Google Ads в Караганде",
+        "height": 77,
+        "width": 728,
+        "overflow": 0,
+        "whiteSpace": "normal",
+        "overflowX": "visible"
+      },
+      "sections": {
+        "ctx-hero": true,
+        "audience": true,
+        "campaign-types": true,
+        "pricing": true,
+        "faq": true,
+        "contacts": true
+      },
+      "footer": {
+        "injected": false
+      },
+      "sticky": {
+        "found": true,
+        "cls": "rk-sticky-cta",
+        "display": "none",
+        "visibility": "visible",
+        "bottom": 0,
+        "height": 0,
+        "visible": false
+      },
+      "menu": {
+        "found": true,
+        "opened": false
+      },
+      "faq": {
+        "expanded": "true"
+      },
+      "popup": {
+        "visible": true
+      },
+      "form": {
+        "found": true,
+        "name": "contacts_google_ads_karaganda",
+        "labels": 3,
+        "required": 2,
+        "consent": true,
+        "honey": true
+      },
+      "cards": {
+        "camp": 7,
+        "price": true
+      }
+    },
+    {
+      "city": "aktobe",
+      "viewport": "430x932",
+      "ok": true,
+      "errors": [],
+      "warnings": [
+        "footer not injected in time; shot contacts",
+        "tiny targets: 2"
+      ],
+      "hScroll": {
+        "scrollWidth": 430,
+        "clientWidth": 430,
+        "overflow": 0,
+        "overflowing": []
+      },
+      "overflowEls": [],
+      "tinyTargets": [
+        {
+          "tag": "INPUT",
+          "text": "",
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "text": "",
+          "w": 8,
+          "h": 6
+        }
+      ],
+      "h1Wrap": {
+        "text": "Настройка и ведение Google Ads в Актобе",
+        "height": 72,
+        "width": 390,
+        "overflow": 0,
+        "whiteSpace": "normal",
+        "overflowX": "visible"
+      },
+      "sections": {
+        "ctx-hero": true,
+        "audience": true,
+        "campaign-types": true,
+        "pricing": true,
+        "faq": true,
+        "contacts": true
+      },
+      "footer": {
+        "injected": false
+      },
+      "sticky": {
+        "found": true,
+        "cls": "rk-sticky-cta",
+        "display": "flex",
+        "visibility": "visible",
+        "bottom": 932,
+        "height": 65,
+        "visible": true
+      },
+      "menu": {
+        "found": true,
+        "opened": false
+      },
+      "faq": {
+        "expanded": "true"
+      },
+      "popup": {
+        "visible": true
+      },
+      "form": {
+        "found": true,
+        "name": "contacts_google_ads_aktobe",
+        "labels": 3,
+        "required": 2,
+        "consent": true,
+        "honey": true
+      },
+      "cards": {
+        "camp": 7,
+        "price": true
+      }
+    },
+    {
+      "city": "aktobe",
+      "viewport": "768x1024",
+      "ok": true,
+      "errors": [],
+      "warnings": [
+        "footer not injected in time; shot contacts",
+        "tiny targets: 2"
+      ],
+      "hScroll": {
+        "scrollWidth": 768,
+        "clientWidth": 768,
+        "overflow": 0,
+        "overflowing": []
+      },
+      "overflowEls": [],
+      "tinyTargets": [
+        {
+          "tag": "INPUT",
+          "text": "",
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "text": "",
+          "w": 8,
+          "h": 6
+        }
+      ],
+      "h1Wrap": {
+        "text": "Настройка и ведение Google Ads в Актобе",
+        "height": 39,
+        "width": 728,
+        "overflow": 0,
+        "whiteSpace": "normal",
+        "overflowX": "visible"
+      },
+      "sections": {
+        "ctx-hero": true,
+        "audience": true,
+        "campaign-types": true,
+        "pricing": true,
+        "faq": true,
+        "contacts": true
+      },
+      "footer": {
+        "injected": false
+      },
+      "sticky": {
+        "found": true,
+        "cls": "rk-sticky-cta",
+        "display": "none",
+        "visibility": "visible",
+        "bottom": 0,
+        "height": 0,
+        "visible": false
+      },
+      "menu": {
+        "found": true,
+        "opened": false
+      },
+      "faq": {
+        "expanded": "true"
+      },
+      "popup": {
+        "visible": true
+      },
+      "form": {
+        "found": true,
+        "name": "contacts_google_ads_aktobe",
+        "labels": 3,
+        "required": 2,
+        "consent": true,
+        "honey": true
+      },
+      "cards": {
+        "camp": 7,
+        "price": true
+      }
+    }
+  ],
+  "failCount": 0
+}

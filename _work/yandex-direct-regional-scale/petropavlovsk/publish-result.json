@@ -1,0 +1,9 @@
+{
+  "slug": "petropavlovsk",
+  "commit": "88527e7ac3d148e18aa77498a76d605433793155",
+  "main": "ac4ac255a20f9408b00b15f5acef3d901ac2ada5",
+  "plesk": "d37fdc1d52cb8afa10bc3e62f9a6a37ce70c9b28",
+  "mobile_median": 98,
+  "desktop": 100,
+  "production_verified": true
+}
