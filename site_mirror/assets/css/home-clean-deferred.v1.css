@@ -611,6 +611,30 @@ button {
   height: auto;
 }
 
+/* Restore desktop badges row: base 1fr above must not override critical @768 */
+@media (min-width: 768px) {
+  .rk-badges {
+    grid-template-columns: 527fr 348fr 439fr;
+    gap: 24px;
+    align-items: center;
+  }
+
+  .rk-badge-card:first-child img {
+    width: 527px;
+    max-height: none;
+  }
+
+  .rk-badge-card:nth-child(2) img {
+    width: 348px;
+    max-height: none;
+  }
+
+  .rk-badge-card:nth-child(3) img {
+    width: 439px;
+    max-height: none;
+  }
+}
+
 /* Studio cards — approved layout */
 
 .rk-studio-grid {
