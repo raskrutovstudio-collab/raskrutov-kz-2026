@@ -1,6 +1,14 @@
 (function () {
   "use strict";
 
+  var sliderPointer = {
+    active: false,
+    startX: 0,
+    startY: 0,
+    moved: false,
+    threshold: 10
+  };
+
   function prefersReducedMotion() {
     return window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   }
@@ -36,14 +44,24 @@
       }
     }
 
-    document.addEventListener("click", function (e) {
-      var link = e.target.closest(".reviews-slide__link");
-      if (!link || link.getAttribute("aria-hidden") === "true") return;
-      var slide = link.closest(".reviews-slide");
-      if (slide && slide.getAttribute("aria-hidden") === "true") return;
-      e.preventDefault();
-      var thumb = link.querySelector("img");
-      openLightbox(link.getAttribute("href"), thumb ? thumb.getAttribute("alt") : "");
+    document.querySelectorAll("[data-reviews-slider]").forEach(function (root) {
+      root.addEventListener("click", function (e) {
+        var trigger = e.target.closest("[data-letter-zoom]");
+        if (!trigger) return;
+        if (sliderPointer.moved) {
+          sliderPointer.moved = false;
+          return;
+        }
+        e.preventDefault();
+        var thumb = trigger.querySelector("img");
+        var fullSrc = trigger.getAttribute("href");
+        var alt = thumb ? thumb.getAttribute("alt") : "";
+        if (!alt && trigger.closest(".reviews-slide[aria-hidden='true']")) {
+          var caption = trigger.closest(".reviews-slide").querySelector("figcaption");
+          alt = caption ? caption.childNodes[0].textContent.trim() : alt;
+        }
+        openLightbox(fullSrc, alt);
+      });
     });
 
     closeEls.forEach(function (el) {
@@ -194,6 +212,10 @@
     function onPointerDown(e) {
       if (e.pointerType === "mouse" && e.button !== 0) return;
       dragging = true;
+      sliderPointer.active = true;
+      sliderPointer.startX = e.clientX;
+      sliderPointer.startY = e.clientY;
+      sliderPointer.moved = false;
       window.clearTimeout(resumeTimer);
       root.classList.add("is-paused", "is-manual");
       viewport.classList.add("is-dragging");
@@ -207,12 +229,19 @@
     function onPointerMove(e) {
       if (!dragging) return;
       var dragOffset = e.clientX - startX;
+      if (
+        Math.abs(e.clientX - sliderPointer.startX) > sliderPointer.threshold ||
+        Math.abs(e.clientY - sliderPointer.startY) > sliderPointer.threshold
+      ) {
+        sliderPointer.moved = true;
+      }
       track.style.transform = "translate3d(" + wrapOffset(baseOffset + dragOffset) + "px,0,0)";
     }
 
     function onPointerUp(e) {
       if (!dragging) return;
       dragging = false;
+      sliderPointer.active = false;
       viewport.classList.remove("is-dragging");
       try { viewport.releasePointerCapture(e.pointerId); } catch (err) {}
       resumeAuto();
