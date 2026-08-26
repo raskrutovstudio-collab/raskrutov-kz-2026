@@ -33,7 +33,7 @@ Redirect 301 /pages/keysy_prodvizhenie.html /keysy/prodvizhenie
 Redirect 301 /pages/keysy_sayty.html /keysy/sayty
 Redirect 301 /pages/kontakty.html /kontakty
 Redirect 301 /pages/o-kompanii.html /o-kompanii
-Redirect 301 /pages/o-kompanii_blagodarstvennye-pisma.html /o-kompanii/blagodarstvennye-pisma
+Redirect 301 /pages/o-kompanii_blagodarstvennye-pisma.html /o-kompanii/otzyvy-i-blagodarstvennye-pisma/
 Redirect 301 /pages/o-kompanii_blog.html /o-kompanii/blog
 Redirect 301 /pages/o-kompanii_klienty.html /o-kompanii/klienty
 Redirect 301 /pages/o-kompanii_komanda.html /o-kompanii/komanda
@@ -223,3 +223,7 @@ Redirect 301 /seo-prodvizhenie-sajtov-v-ust-kamenogorske/ /web-studiya/seo-prodv
 # Partner case canonical recovery: old nested Turan Agency URL -> final case URL
 Redirect 301 /keysy/partnery/turan-agency/ /keysy/partnery/
 Redirect 301 /keysy/partnery/turan-agency /keysy/partnery/
+
+# Reviews page: thanksgiving letters + legacy /otzivi -> canonical
+RedirectMatch 301 ^/o-kompanii/blagodarstvennye-pisma/?$ /o-kompanii/otzyvy-i-blagodarstvennye-pisma/
+RedirectMatch 301 ^/otzivi/?$ /o-kompanii/otzyvy-i-blagodarstvennye-pisma/
