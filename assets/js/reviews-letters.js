@@ -1,6 +1,15 @@
 (function () {
   "use strict";
 
+  var gesture = {
+    active: false,
+    startX: 0,
+    startY: 0,
+    dragging: false,
+    suppressClick: false,
+    threshold: 12
+  };
+
   function prefersReducedMotion() {
     return window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   }
@@ -11,8 +20,10 @@
 
     var dialog = lightbox.querySelector(".reviews-lightbox__dialog");
     var img = lightbox.querySelector("[data-lightbox-img]");
-    var closeEls = lightbox.querySelectorAll("[data-lightbox-close]");
+    var backdrop = lightbox.querySelector(".reviews-lightbox__backdrop");
+    var closeBtn = lightbox.querySelector(".reviews-lightbox__close");
     var lastFocus = null;
+    var openStamp = 0;
 
     function openLightbox(src, alt) {
       if (!src || !img) return;
@@ -22,7 +33,7 @@
       lightbox.hidden = false;
       lightbox.setAttribute("aria-hidden", "false");
       document.body.classList.add("reviews-lightbox-open");
-      var closeBtn = lightbox.querySelector(".reviews-lightbox__close");
+      openStamp = Date.now();
       if (closeBtn) closeBtn.focus();
     }
 
@@ -36,19 +47,56 @@
       }
     }
 
-    document.addEventListener("click", function (e) {
-      var link = e.target.closest(".reviews-slide__link");
-      if (!link || link.getAttribute("aria-hidden") === "true") return;
-      var slide = link.closest(".reviews-slide");
-      if (slide && slide.getAttribute("aria-hidden") === "true") return;
-      e.preventDefault();
-      var thumb = link.querySelector("img");
-      openLightbox(link.getAttribute("href"), thumb ? thumb.getAttribute("alt") : "");
-    });
+    document.addEventListener(
+      "click",
+      function (e) {
+        if (lightbox.contains(e.target)) return;
 
-    closeEls.forEach(function (el) {
-      el.addEventListener("click", closeLightbox);
-    });
+        var trigger = e.target.closest("[data-letter-zoom]");
+        if (!trigger) return;
+
+        if (gesture.suppressClick) {
+          e.preventDefault();
+          return;
+        }
+
+        e.preventDefault();
+        e.stopPropagation();
+
+        var thumb = trigger.querySelector("img");
+        var fullSrc =
+          trigger.getAttribute("data-full") ||
+          trigger.getAttribute("href") ||
+          (thumb ? thumb.currentSrc || thumb.src : "");
+
+        if (!fullSrc) return;
+
+        var alt = thumb ? thumb.getAttribute("alt") : "";
+        if (!alt) {
+          var slide = trigger.closest(".reviews-slide");
+          var caption = slide ? slide.querySelector("figcaption") : null;
+          alt = caption ? caption.childNodes[0].textContent.trim() : "";
+        }
+
+        openLightbox(fullSrc, alt);
+      },
+      true
+    );
+
+    if (backdrop) {
+      backdrop.addEventListener("click", function (e) {
+        if (Date.now() - openStamp < 120) return;
+        e.preventDefault();
+        closeLightbox();
+      });
+    }
+
+    if (closeBtn) {
+      closeBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        closeLightbox();
+      });
+    }
 
     document.addEventListener("keydown", function (e) {
       if (lightbox.hidden) return;
@@ -57,7 +105,9 @@
         closeLightbox();
       }
       if (e.key === "Tab" && dialog) {
-        var focusable = dialog.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+        var focusable = dialog.querySelectorAll(
+          'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+        );
         focusable = Array.prototype.filter.call(focusable, function (node) {
           return !node.disabled && node.offsetParent !== null;
         });
@@ -88,19 +138,24 @@
     originals.forEach(function (node) {
       var clone = node.cloneNode(true);
       clone.setAttribute("aria-hidden", "true");
-      clone.querySelectorAll("a, button, input, textarea").forEach(function (el) {
+      clone.querySelectorAll("button, input, textarea").forEach(function (el) {
         el.setAttribute("tabindex", "-1");
         el.setAttribute("aria-hidden", "true");
       });
-      clone.querySelectorAll("img").forEach(function (img) {
-        img.setAttribute("alt", "");
-        img.setAttribute("loading", "lazy");
+      clone.querySelectorAll("[data-letter-zoom]").forEach(function (el) {
+        el.setAttribute("tabindex", "-1");
+      });
+      clone.querySelectorAll("img").forEach(function (imgEl) {
+        imgEl.setAttribute("alt", "");
+        imgEl.setAttribute("loading", "lazy");
       });
       track.appendChild(clone);
     });
 
     var loopDistance = 0;
     var resumeTimer = null;
+    var dragStartX = 0;
+    var baseOffset = 0;
 
     function measure() {
       var gap = parseFloat(window.getComputedStyle(track).gap) || 0;
@@ -187,41 +242,70 @@
       return;
     }
 
-    var dragging = false;
-    var startX = 0;
-    var baseOffset = 0;
-
     function onPointerDown(e) {
       if (e.pointerType === "mouse" && e.button !== 0) return;
-      dragging = true;
-      window.clearTimeout(resumeTimer);
-      root.classList.add("is-paused", "is-manual");
-      viewport.classList.add("is-dragging");
-      startX = e.clientX;
+      if (!viewport.contains(e.target)) return;
+
+      gesture.active = true;
+      gesture.startX = e.clientX;
+      gesture.startY = e.clientY;
+      gesture.dragging = false;
+      gesture.suppressClick = false;
+      dragStartX = e.clientX;
       baseOffset = currentTranslateX();
-      track.style.animation = "none";
-      track.style.transform = "translate3d(" + baseOffset + "px,0,0)";
-      try { viewport.setPointerCapture(e.pointerId); } catch (err) {}
+      window.clearTimeout(resumeTimer);
     }
 
     function onPointerMove(e) {
-      if (!dragging) return;
-      var dragOffset = e.clientX - startX;
+      if (!gesture.active) return;
+
+      var dx = e.clientX - gesture.startX;
+      var dy = e.clientY - gesture.startY;
+
+      if (!gesture.dragging) {
+        if (Math.abs(dx) <= gesture.threshold && Math.abs(dy) <= gesture.threshold) return;
+
+        gesture.dragging = true;
+        gesture.suppressClick = true;
+        enterManualMode();
+        viewport.classList.add("is-dragging");
+        track.style.animation = "none";
+        track.style.transform = "translate3d(" + baseOffset + "px,0,0)";
+        try {
+          viewport.setPointerCapture(e.pointerId);
+        } catch (err) {}
+      }
+
+      var dragOffset = e.clientX - dragStartX;
       track.style.transform = "translate3d(" + wrapOffset(baseOffset + dragOffset) + "px,0,0)";
     }
 
-    function onPointerUp(e) {
-      if (!dragging) return;
-      dragging = false;
+    function endPointer(e) {
+      if (!gesture.active) return;
+
+      var wasDrag = gesture.dragging;
+      gesture.active = false;
+      gesture.dragging = false;
       viewport.classList.remove("is-dragging");
-      try { viewport.releasePointerCapture(e.pointerId); } catch (err) {}
-      resumeAuto();
+
+      try {
+        viewport.releasePointerCapture(e.pointerId);
+      } catch (err) {}
+
+      if (wasDrag) {
+        resumeAuto();
+        window.setTimeout(function () {
+          gesture.suppressClick = false;
+        }, 0);
+      } else {
+        gesture.suppressClick = false;
+      }
     }
 
     viewport.addEventListener("pointerdown", onPointerDown, { passive: true });
     viewport.addEventListener("pointermove", onPointerMove, { passive: true });
-    viewport.addEventListener("pointerup", onPointerUp);
-    viewport.addEventListener("pointercancel", onPointerUp);
+    viewport.addEventListener("pointerup", endPointer);
+    viewport.addEventListener("pointercancel", endPointer);
   }
 
   document.addEventListener("DOMContentLoaded", function () {

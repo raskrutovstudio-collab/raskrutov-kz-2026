@@ -386,13 +386,18 @@
   max-height: calc(100vh - 32px);
   background: #fff;
   box-shadow: 0 24px 64px rgba(0, 0, 0, 0.28);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
 }
 
 .reviews-page .reviews-lightbox__img {
   display: block;
-  width: 100%;
+  width: auto;
   height: auto;
-  max-height: calc(100vh - 32px);
+  max-width: 92vw;
+  max-height: 92vh;
   object-fit: contain;
   background: #eef1f7;
 }
