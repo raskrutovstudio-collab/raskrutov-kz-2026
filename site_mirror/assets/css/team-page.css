@@ -1,7 +1,13 @@
 /* Team page — local styles + first-screen critical */
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 @font-face {
-  font-family: "TeamSans";
+  font-family: "Montserrat";
   src: url("../m-files.cdn1.cc/web/user/fonts/montserrat/montserrat_normal.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
@@ -9,11 +15,20 @@
 }
 
 @font-face {
-  font-family: "TeamSans";
+  font-family: "Montserrat";
   src: url("../m-files.cdn1.cc/web/user/fonts/montserrat/montserrat_bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: optional;
+}
+
+@font-face {
+  font-family: "Montserrat Fallback";
+  src: local("Arial"), local("Helvetica Neue"), local("Helvetica");
+  size-adjust: 107%;
+  ascent-override: 92%;
+  descent-override: 23%;
+  line-gap-override: 0%;
 }
 
 .team-page .rk-section--contacts {
@@ -24,7 +39,7 @@
   margin: 0;
   min-width: 320px;
   color: #111;
-  font-family: TeamSans, Arial, Helvetica, sans-serif;
+  font-family: Montserrat, "Montserrat Fallback", Arial, sans-serif;
   background: #fff;
 }
 
@@ -160,16 +175,17 @@
   font-weight: 700;
   line-height: 1.18;
   color: #151a26;
-  font-family: TeamSans, Arial, Helvetica, sans-serif;
+  font-family: Montserrat, "Montserrat Fallback", Arial, sans-serif;
 }
 
 .team-page .team-hero__lead {
   margin: 0;
   max-width: 40em;
   font-size: 17px;
+  font-weight: 400;
   line-height: 1.55;
   color: #596174;
-  font-family: TeamSans, Arial, Helvetica, sans-serif;
+  font-family: Montserrat, "Montserrat Fallback", Arial, sans-serif !important;
 }
 
 .team-page .team-lead a,
