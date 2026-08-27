@@ -42,11 +42,10 @@
     .team-page .team-badge{display:inline-flex;align-items:center;margin:0 0 12px;padding:5px 12px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.02em;color:#5b2bc7;background:#f1e9ff;border:1px solid rgba(127,63,242,.18)}
     .team-page .team-hero__title{margin:0 0 12px;font-size:clamp(28px,4vw,42px);font-weight:700;line-height:1.18;color:#151a26;font-family:Montserrat,"Montserrat Fallback",Arial,sans-serif}
     .team-page .team-hero__lead{margin:0;max-width:40em;font-size:17px;font-weight:400;line-height:1.55;color:#596174;font-family:Montserrat,"Montserrat Fallback",Arial,sans-serif!important}
-    .team-page .team-hero__photos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
-    .team-page .team-hero__photo{margin:0;border-radius:16px;overflow:hidden;background:#eef1f6;border:2px solid #fff;box-shadow:0 12px 28px rgba(21,26,38,.08)}
-    .team-page .team-hero__photo img{display:block;width:100%;height:100%;aspect-ratio:1;object-fit:cover}
+    .team-page .team-hero__visual{display:flex;justify-content:center;align-items:center}
+    .team-page .team-hero__visual img{display:block;width:min(100%,420px);height:auto}
   </style>
-  <link rel="stylesheet" href="../../assets/css/team-page.css?v=6">
+  <link rel="stylesheet" href="../../assets/css/team-page.css?v=8">
   <link rel="preload" href="../../assets/css/home-clean.css?v=39" as="style">
   <link rel="preload" href="../../assets/css/lead-forms.css" as="style">
   <noscript>
@@ -118,19 +117,11 @@
           <h1 class="team-hero__title" id="team-hero-title">Люди, которые развивают проекты Raskrutov</h1>
           <p class="team-hero__lead">Стратегия, сайты, SEO, автоматизация и digital-маркетинг требуют сильной экспертизы на каждом этапе. Показываем специалистов, которые отвечают за развитие проектов Raskrutov.</p>
         </div>
-        <div class="team-hero__photos" aria-hidden="true">
-          <figure class="team-hero__photo team-hero__photo--daniil">
-            <img src="../../assets/img/team/daniil-240.jpg" width="240" height="254" alt="" decoding="async" fetchpriority="low">
-          </figure>
-          <figure class="team-hero__photo team-hero__photo--stepan">
-            <img src="../../assets/img/team/stepan-240.jpg" width="240" height="253" alt="" decoding="async" fetchpriority="low">
-          </figure>
-          <figure class="team-hero__photo team-hero__photo--alexander">
-            <img src="../../assets/img/team/alexander-240.jpg" width="240" height="241" alt="" decoding="async" fetchpriority="low">
-          </figure>
-          <figure class="team-hero__photo team-hero__photo--kseniya">
-            <img src="../../assets/img/team/kseniya-240.jpg" width="240" height="253" alt="" decoding="async" fetchpriority="low">
-          </figure>
+        <div class="team-hero__visual" aria-hidden="true">
+          <picture>
+            <source media="(max-width: 767px)" srcset="../../assets/img/team/team-hero-mobile.webp" type="image/webp" width="480" height="480">
+            <img src="../../assets/img/team/team-hero.webp" width="720" height="720" alt="" decoding="async" fetchpriority="low">
+          </picture>
         </div>
       </div>
     </section>
@@ -161,7 +152,10 @@
         <h2 class="team-h2" id="leadership-title">Руководство</h2>
         <article class="team-lead-card">
           <figure class="team-lead-card__photo">
-            <img src="../../assets/img/team/daniil-480.jpg" width="480" height="508" alt="Даниил Инжеватов — CEO Raskrutov" loading="lazy" decoding="async" fetchpriority="low">
+            <picture>
+              <source type="image/webp" srcset="../../assets/img/team/daniil-480.webp">
+              <img src="../../assets/img/team/daniil-480.jpg" width="452" height="478" alt="Даниил Инжеватов — CEO Raskrutov" loading="lazy" decoding="async" fetchpriority="low">
+            </picture>
           </figure>
           <div class="team-lead-card__body">
             <p class="team-tag">CEO</p>
@@ -176,7 +170,7 @@
     <section class="team-section team-section--muted" id="tech-team" aria-labelledby="tech-team-title">
       <div class="rk-container">
         <h2 class="team-h2" id="tech-team-title">Техническая команда</h2>
-        <p class="team-lead">Специалисты, которые собирают сайты, развивают видимость в поиске и готовят страницы к продвижению.</p>
+        <p class="team-lead">Специалисты, которые создают техническую и маркетинговую основу для роста бизнеса в digital. Команда работает над сайтами, поисковой видимостью, структурой страниц, качеством реализации и подготовкой проектов к дальнейшему развитию.</p>
         <div class="team-grid">
           <article class="team-card team-card--stepan">
             <figure class="team-card__photo">
