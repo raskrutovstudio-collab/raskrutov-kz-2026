@@ -195,33 +195,18 @@
   text-underline-offset: 2px;
 }
 
-.team-page .team-hero__photos {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 10px;
+.team-page .team-hero__visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.team-page .team-hero__photo {
-  margin: 0;
-  border-radius: 16px;
-  overflow: hidden;
-  background: #eef1f6;
-  border: 2px solid #fff;
-  box-shadow: 0 12px 28px rgba(21, 26, 38, 0.08);
-}
-
-.team-page .team-hero__photo img {
+.team-page .team-hero__visual picture,
+.team-page .team-hero__visual img {
   display: block;
-  width: 100%;
-  height: 100%;
-  aspect-ratio: 1;
-  object-fit: cover;
+  width: min(100%, 420px);
+  height: auto;
 }
-
-.team-page .team-hero__photo--daniil img { object-position: 50% 18%; }
-.team-page .team-hero__photo--stepan img { object-position: 50% 14%; }
-.team-page .team-hero__photo--alexander img { object-position: 50% 18%; }
-.team-page .team-hero__photo--kseniya img { object-position: 50% 22%; }
 
 .team-page .team-section {
   padding: 36px 0;
@@ -280,8 +265,10 @@
 
 .team-page .team-lead-card {
   display: grid;
-  gap: 18px;
-  padding: 16px;
+  grid-template-columns: 168px minmax(0, 1fr);
+  gap: 16px;
+  align-items: center;
+  padding: 14px;
   border-radius: 20px;
   background: #fff;
   border: 1px solid #e8ecf4;
@@ -290,6 +277,7 @@
 
 .team-page .team-lead-card__photo {
   margin: 0;
+  width: 168px;
   border-radius: 16px;
   overflow: hidden;
   background: #eef1f6;
@@ -299,7 +287,7 @@
   display: block;
   width: 100%;
   height: auto;
-  aspect-ratio: 480 / 508;
+  aspect-ratio: 1;
   object-fit: cover;
   object-position: 50% 16%;
 }
@@ -394,6 +382,47 @@
 
 .team-page .team-card .team-person-text {
   font-size: 15px;
+}
+
+.team-page #tech-team {
+  padding: 28px 0;
+}
+
+.team-page #tech-team .team-h2 {
+  margin-bottom: 8px;
+}
+
+.team-page #tech-team .team-lead {
+  margin-bottom: 16px;
+  font-size: 15px;
+}
+
+.team-page #tech-team .team-grid {
+  gap: 12px;
+}
+
+.team-page #tech-team .team-card {
+  padding: 10px;
+  gap: 10px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(21, 26, 38, 0.04);
+}
+
+.team-page #tech-team .team-card__photo {
+  border-radius: 12px;
+}
+
+.team-page #tech-team .team-card__photo img {
+  aspect-ratio: 16 / 10;
+}
+
+.team-page #tech-team .team-card h3 {
+  font-size: 18px;
+}
+
+.team-page #tech-team .team-card .team-person-text {
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 .team-page .team-flow {
@@ -622,53 +651,24 @@
 
 @media (min-width: 768px) {
   .team-page .team-hero__inner {
-    grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
-    gap: 36px;
+    grid-template-columns: minmax(0, 1.05fr) minmax(300px, 0.95fr);
+    gap: 28px;
   }
 
-  .team-page .team-hero__photos {
-    position: relative;
-    display: block;
-    min-height: 360px;
-  }
-
-  .team-page .team-hero__photo {
-    position: absolute;
-    width: 46%;
-  }
-
-  .team-page .team-hero__photo--daniil {
-    top: 0;
-    left: 6%;
-    z-index: 3;
-    width: 48%;
-  }
-
-  .team-page .team-hero__photo--stepan {
-    top: 8%;
-    right: 0;
-    z-index: 2;
-    transform: rotate(3deg);
-  }
-
-  .team-page .team-hero__photo--alexander {
-    bottom: 0;
-    left: 0;
-    z-index: 2;
-    transform: rotate(-3deg);
-  }
-
-  .team-page .team-hero__photo--kseniya {
-    bottom: 2%;
-    right: 8%;
-    z-index: 4;
+  .team-page .team-hero__visual picture,
+  .team-page .team-hero__visual img {
+    width: min(100%, 520px);
   }
 
   .team-page .team-lead-card {
-    grid-template-columns: minmax(220px, 280px) minmax(0, 1fr);
+    grid-template-columns: 200px minmax(0, 1fr);
     align-items: center;
-    padding: 20px;
-    gap: 28px;
+    padding: 18px 22px;
+    gap: 24px;
+  }
+
+  .team-page .team-lead-card__photo {
+    width: 200px;
   }
 
   .team-page .team-flow {
@@ -718,8 +718,22 @@
     max-width: 46rem;
   }
 
-  .team-page .team-hero__photos {
-    min-height: 400px;
+  .team-page .team-hero__visual picture,
+  .team-page .team-hero__visual img {
+    width: min(100%, 560px);
+  }
+}
+
+@media (max-width: 419px) {
+  .team-page .team-lead-card {
+    grid-template-columns: 132px minmax(0, 1fr);
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .team-page .team-lead-card__photo {
+    width: 132px;
+    border-radius: 12px;
   }
 }
 
@@ -732,5 +746,13 @@
   .team-page .team-person-text,
   .team-page .team-lead {
     font-size: 15px;
+  }
+
+  .team-page .team-lead-card {
+    grid-template-columns: 1fr;
+  }
+
+  .team-page .team-lead-card__photo {
+    width: min(180px, 58%);
   }
 }
