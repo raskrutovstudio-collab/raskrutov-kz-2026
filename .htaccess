@@ -34,7 +34,9 @@ Redirect 301 /pages/keysy_sayty.html /keysy/sayty
 Redirect 301 /pages/kontakty.html /kontakty
 Redirect 301 /pages/o-kompanii.html /o-kompanii
 Redirect 301 /pages/o-kompanii_blagodarstvennye-pisma.html /o-kompanii/otzyvy-i-blagodarstvennye-pisma/
-Redirect 301 /pages/o-kompanii_blog.html /o-kompanii/blog
+Redirect 301 /pages/o-kompanii_blog.html /blog/
+Redirect 301 /o-kompanii/blog /blog/
+Redirect 301 /o-kompanii/blog/ /blog/
 Redirect 301 /pages/o-kompanii_klienty.html /o-kompanii/klienty
 Redirect 301 /pages/o-kompanii_komanda.html /o-kompanii/komanda
 Redirect 301 /pages/o-kompanii_o-nas.html /o-kompanii/o-nas
