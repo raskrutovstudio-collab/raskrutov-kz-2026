@@ -417,27 +417,32 @@
 
 .team-page #tech-team .team-grid {
   display: grid;
+  grid-template-columns: 1fr;
   gap: 14px;
-  max-width: 920px;
+  max-width: 680px;
   margin-inline: 0;
   justify-content: start;
 }
 
 .team-page #tech-team .team-card {
   display: grid;
-  grid-template-columns: 1fr;
-  align-content: start;
+  grid-template-columns: 120px minmax(0, 1fr);
+  align-items: start;
+  column-gap: 16px;
+  row-gap: 0;
+  width: 100%;
   padding: 14px;
-  gap: 12px;
   border-radius: 16px;
   box-shadow: 0 8px 22px rgba(21, 26, 38, 0.05);
 }
 
-.team-page #tech-team .team-card__body {
-  min-width: 0;
-  display: grid;
-  gap: 0;
-  align-content: start;
+.team-page #tech-team .team-card__aside {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  width: 120px;
+  min-width: 120px;
 }
 
 .team-page #tech-team .team-card__photo {
@@ -464,36 +469,47 @@
   object-position: 50% 16%;
 }
 
+.team-page #tech-team .team-card .team-tag {
+  margin: 0;
+  max-width: 100%;
+}
+
 .team-page #tech-team .team-card h3 {
-  margin: 0 0 4px;
-  font-size: 18px;
+  margin: 0;
+  font-size: 16px;
   line-height: 1.25;
+  word-break: break-word;
 }
 
 .team-page #tech-team .team-card .team-person-role {
-  margin: 0 0 8px;
-  font-size: 14px;
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.3;
 }
 
 .team-page #tech-team .team-card .team-person-text {
   margin: 0;
   font-size: 14px;
   line-height: 1.5;
+  align-self: start;
 }
 
 @media (max-width: 767px) {
   .team-page #tech-team .team-grid {
-    grid-template-columns: 1fr;
-    gap: 12px;
     max-width: none;
+    gap: 12px;
   }
 
   .team-page #tech-team .team-card {
     grid-template-columns: 104px minmax(0, 1fr);
-    width: 100%;
     padding: 12px;
-    gap: 12px;
-    align-items: start;
+    column-gap: 12px;
+  }
+
+  .team-page #tech-team .team-card__aside {
+    width: 104px;
+    min-width: 104px;
+    gap: 6px;
   }
 
   .team-page #tech-team .team-card__photo {
@@ -508,19 +524,34 @@
   }
 
   .team-page #tech-team .team-card h3 {
-    font-size: 17px;
+    font-size: 15px;
+  }
+
+  .team-page #tech-team .team-card .team-person-role {
+    font-size: 12px;
   }
 
   .team-page #tech-team .team-card .team-person-text {
     font-size: 13px;
+  }
+
+  .team-page #tech-team .team-card .team-tag {
+    padding: 3px 8px;
+    font-size: 10px;
   }
 }
 
 @media (max-width: 359px) {
   .team-page #tech-team .team-card {
     grid-template-columns: 88px minmax(0, 1fr);
-    gap: 10px;
+    column-gap: 10px;
     padding: 10px;
+  }
+
+  .team-page #tech-team .team-card__aside {
+    width: 88px;
+    min-width: 88px;
+    gap: 5px;
   }
 
   .team-page #tech-team .team-card__photo,
@@ -528,6 +559,10 @@
     width: 88px;
     max-width: 88px;
     height: 88px;
+  }
+
+  .team-page #tech-team .team-card h3 {
+    font-size: 14px;
   }
 }
 
@@ -802,7 +837,8 @@
 
 @media (min-width: 768px) {
   .team-page #tech-team .team-grid {
-    grid-template-columns: repeat(3, minmax(0, 280px));
+    grid-template-columns: 1fr;
+    max-width: 680px;
     justify-content: start;
   }
 }
@@ -813,9 +849,9 @@
   }
 
   .team-page #tech-team .team-grid {
-    grid-template-columns: repeat(3, minmax(0, 280px));
+    grid-template-columns: 1fr;
+    max-width: 720px;
     justify-content: start;
-    max-width: 920px;
     margin-inline: 0;
   }
 
