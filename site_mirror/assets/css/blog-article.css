@@ -1,7 +1,28 @@
 /* Blog article — page-local styles */
 
-.blog-article-page .article-hero {
-  padding: 8px 0 20px;
+.blog-article-page .article-intro {
+  padding: 8px 0 22px;
+}
+
+.blog-article-page .article-intro__grid {
+  display: grid;
+  gap: 18px;
+  align-items: start;
+}
+
+.blog-article-page .article-intro__main {
+  min-width: 0;
+  display: grid;
+  gap: 0;
+}
+
+.blog-article-page .article-intro__meta {
+  min-width: 0;
+}
+
+.blog-article-page .article-intro .rk-breadcrumbs {
+  width: auto;
+  margin: 0 0 12px;
 }
 
 .blog-article-page .article-hero__meta {
@@ -13,7 +34,6 @@
 
 .blog-article-page .article-hero__title {
   margin: 0 0 12px;
-  max-width: 22em;
   font-size: clamp(26px, 3.4vw, 40px);
   font-weight: 700;
   line-height: 1.2;
@@ -36,14 +56,25 @@
 .blog-article-page .article-layout__inner {
   display: grid;
   gap: 28px;
+  width: 100%;
   max-width: 760px;
+  min-width: 0;
+}
+
+.blog-article-page .article-cover,
+.blog-article-page .article-prose {
+  min-width: 0;
+  max-width: 100%;
 }
 
 .blog-article-page .article-toc {
+  min-width: 0;
+  width: 100%;
   padding: 16px 18px;
   border: 1px solid #e6ebf2;
   border-radius: 12px;
   background: #fafbfe;
+  align-self: start;
 }
 
 .blog-article-page .article-toc__title {
@@ -176,6 +207,8 @@
 
 .blog-article-page .article-table-wrap {
   width: 100%;
+  max-width: 100%;
+  min-width: 0;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   border: 1px solid #e6ebf2;
@@ -252,6 +285,50 @@
 
 .blog-article-page .article-related li + li {
   margin-top: 6px;
+}
+
+/* Desktop: TOC right of intro only (not full-page sidebar) */
+@media (min-width: 960px) {
+  .blog-article-page .article-intro {
+    padding: 12px 0 28px;
+  }
+
+  .blog-article-page .article-intro__grid {
+    grid-template-columns: minmax(0, 1.7fr) minmax(240px, 0.95fr);
+    grid-template-areas:
+      "meta ."
+      "title toc"
+      "lead toc";
+    column-gap: 28px;
+    row-gap: 0;
+    align-items: start;
+  }
+
+  .blog-article-page .article-intro__main {
+    display: contents;
+  }
+
+  .blog-article-page .article-intro__meta {
+    grid-area: meta;
+  }
+
+  .blog-article-page .article-hero__title {
+    grid-area: title;
+    max-width: none;
+  }
+
+  .blog-article-page .article-hero__lead {
+    grid-area: lead;
+    max-width: 40em;
+  }
+
+  .blog-article-page .article-toc {
+    grid-area: toc;
+    align-self: start;
+    margin-top: 0;
+    max-width: 380px;
+    justify-self: stretch;
+  }
 }
 
 @media (max-width: 430px) {
