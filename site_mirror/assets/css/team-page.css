@@ -417,18 +417,20 @@
 
 .team-page #tech-team .team-grid {
   display: grid;
-  gap: 16px;
+  gap: 14px;
   max-width: 920px;
   margin-inline: 0;
   justify-content: start;
 }
 
 .team-page #tech-team .team-card {
-  padding: 12px;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: start;
+  padding: 14px;
   gap: 12px;
   border-radius: 16px;
   box-shadow: 0 8px 22px rgba(21, 26, 38, 0.05);
-  align-content: start;
 }
 
 .team-page #tech-team .team-card__body {
@@ -439,17 +441,18 @@
 }
 
 .team-page #tech-team .team-card__photo {
-  border-radius: 12px;
-  max-width: 280px;
+  width: 120px;
+  max-width: 120px;
   margin: 0;
-  width: 100%;
+  border-radius: 14px;
   overflow: hidden;
   background: #eef1f6;
 }
 
 .team-page #tech-team .team-card__photo img {
-  width: 100%;
-  height: auto;
+  display: block;
+  width: 120px;
+  height: 120px;
   aspect-ratio: 1;
   object-fit: cover;
   object-position: 50% 16%;
@@ -464,10 +467,12 @@
 .team-page #tech-team .team-card h3 {
   margin: 0 0 4px;
   font-size: 18px;
+  line-height: 1.25;
 }
 
 .team-page #tech-team .team-card .team-person-role {
   margin: 0 0 8px;
+  font-size: 14px;
 }
 
 .team-page #tech-team .team-card .team-person-text {
@@ -479,24 +484,50 @@
 @media (max-width: 767px) {
   .team-page #tech-team .team-grid {
     grid-template-columns: 1fr;
-    gap: 14px;
+    gap: 12px;
     max-width: none;
   }
 
   .team-page #tech-team .team-card {
+    grid-template-columns: 104px minmax(0, 1fr);
     width: 100%;
     padding: 12px;
     gap: 12px;
+    align-items: start;
   }
 
   .team-page #tech-team .team-card__photo {
-    max-width: none;
-    width: 100%;
+    width: 104px;
+    max-width: 104px;
+    border-radius: 12px;
   }
 
   .team-page #tech-team .team-card__photo img {
-    aspect-ratio: 1;
-    width: 100%;
+    width: 104px;
+    height: 104px;
+  }
+
+  .team-page #tech-team .team-card h3 {
+    font-size: 17px;
+  }
+
+  .team-page #tech-team .team-card .team-person-text {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 359px) {
+  .team-page #tech-team .team-card {
+    grid-template-columns: 88px minmax(0, 1fr);
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .team-page #tech-team .team-card__photo,
+  .team-page #tech-team .team-card__photo img {
+    width: 88px;
+    max-width: 88px;
+    height: 88px;
   }
 }
 
