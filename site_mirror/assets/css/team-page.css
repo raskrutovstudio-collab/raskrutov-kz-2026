@@ -199,120 +199,30 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  min-width: 0;
 }
 
-.team-page .team-hero__structure {
-  position: relative;
-  width: min(100%, 380px);
-  aspect-ratio: 1;
-  margin-inline: auto;
+.team-page .team-hero__media {
+  width: min(100%, 560px);
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #f3eefc;
+  border: 1px solid rgba(127, 63, 242, 0.1);
+  box-shadow: 0 18px 40px rgba(21, 26, 38, 0.1);
 }
 
-.team-page .team-hero__structure-lines {
-  position: absolute;
-  inset: 0;
+.team-page .team-hero__media picture,
+.team-page .team-hero__media img {
+  display: block;
   width: 100%;
-  height: 100%;
-  pointer-events: none;
+  height: auto;
 }
 
-.team-page .team-hero__structure-hub {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2px;
-  width: 38%;
-  aspect-ratio: 1;
-  padding: 10px;
-  border-radius: 50%;
-  text-align: center;
-  color: #151a26;
-  background: radial-gradient(circle at 30% 25%, #fff 0%, #f3edff 58%, #e8f0ff 100%);
-  border: 2px solid rgba(127, 63, 242, 0.18);
-  box-shadow: 0 16px 36px rgba(127, 63, 242, 0.14);
-  transform: translate(-50%, -50%);
-}
-
-.team-page .team-hero__structure-hub span {
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  color: #5b2bc7;
-  text-transform: uppercase;
-}
-
-.team-page .team-hero__structure-hub strong {
-  font-size: clamp(13px, 2.6vw, 16px);
-  font-weight: 700;
-  line-height: 1.15;
-}
-
-.team-page .team-hero__structure-card {
-  position: absolute;
-  z-index: 3;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  min-width: 96px;
-  max-width: 34%;
-  padding: 10px 12px;
-  border-radius: 14px;
-  background: rgba(255, 255, 255, 0.94);
-  border: 1px solid rgba(232, 236, 244, 0.95);
-  box-shadow: 0 10px 24px rgba(21, 26, 38, 0.07);
-  backdrop-filter: blur(6px);
-}
-
-.team-page .team-hero__structure-card strong {
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 1.2;
-  color: #151a26;
-}
-
-.team-page .team-hero__structure-tag {
-  display: inline-flex;
-  align-self: flex-start;
-  padding: 3px 8px;
-  border-radius: 999px;
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  color: #5b2bc7;
-  background: #f1e9ff;
-}
-
-.team-page .team-hero__structure-tag--tech { color: #0b6bcb; background: #e8f4ff; }
-.team-page .team-hero__structure-tag--seo { color: #0a7a4b; background: #e7f7ef; }
-.team-page .team-hero__structure-tag--web { color: #9a3412; background: #fff1e8; }
-
-.team-page .team-hero__structure-card--ceo {
-  top: 4%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.team-page .team-hero__structure-card--tech {
-  top: 50%;
-  right: 2%;
-  transform: translateY(-50%);
-}
-
-.team-page .team-hero__structure-card--seo {
-  bottom: 4%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.team-page .team-hero__structure-card--web {
-  top: 50%;
-  left: 2%;
-  transform: translateY(-50%);
+.team-page .team-hero__media img {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center center;
 }
 
 .team-page .team-section {
@@ -509,7 +419,8 @@
   display: grid;
   gap: 16px;
   max-width: 920px;
-  margin-inline: auto;
+  margin-inline: 0;
+  justify-content: start;
 }
 
 .team-page #tech-team .team-card {
@@ -522,7 +433,7 @@
 .team-page #tech-team .team-card__photo {
   border-radius: 12px;
   max-width: 280px;
-  margin-inline: auto;
+  margin-inline: 0;
   width: 100%;
 }
 
@@ -770,8 +681,9 @@
     gap: 28px;
   }
 
-  .team-page .team-hero__structure {
-    width: min(100%, 440px);
+  .team-page .team-hero__media {
+    width: min(100%, 560px);
+    margin-inline: 0 0 auto;
   }
 
   .team-page .team-lead-card {
@@ -811,7 +723,7 @@
 @media (min-width: 768px) {
   .team-page #tech-team .team-grid {
     grid-template-columns: repeat(3, minmax(0, 280px));
-    justify-content: center;
+    justify-content: start;
   }
 }
 
@@ -822,8 +734,9 @@
 
   .team-page #tech-team .team-grid {
     grid-template-columns: repeat(3, minmax(0, 280px));
-    justify-content: center;
+    justify-content: start;
     max-width: 920px;
+    margin-inline: 0;
   }
 
   .team-page .team-comp {
@@ -845,8 +758,8 @@
     max-width: 46rem;
   }
 
-  .team-page .team-hero__structure {
-    width: min(100%, 460px);
+  .team-page .team-hero__media {
+    width: min(100%, 580px);
   }
 }
 
