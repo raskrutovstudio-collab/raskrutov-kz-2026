@@ -280,39 +280,6 @@
   color: #596174;
 }
 
-.team-page .team-lead-card {
-  display: grid;
-  grid-template-columns: 168px minmax(0, 1fr);
-  gap: 16px;
-  align-items: center;
-  padding: 14px;
-  border-radius: 20px;
-  background: #fff;
-  border: 1px solid #e8ecf4;
-  box-shadow: 0 14px 36px rgba(21, 26, 38, 0.06);
-}
-
-.team-page .team-lead-card__photo {
-  margin: 0;
-  width: 168px;
-  border-radius: 16px;
-  overflow: hidden;
-  background: #eef1f6;
-}
-
-.team-page .team-lead-card__photo img {
-  display: block;
-  width: 100%;
-  height: auto;
-  aspect-ratio: 1;
-  object-fit: cover;
-  object-position: 50% 16%;
-}
-
-.team-page .team-lead-card__body {
-  min-width: 0;
-}
-
 .team-page .team-tag {
   display: inline-flex;
   margin: 0 0 8px;
@@ -401,10 +368,12 @@
   font-size: 15px;
 }
 
+.team-page #leadership,
 .team-page #tech-team {
   padding: 28px 0;
 }
 
+.team-page #leadership .team-h2,
 .team-page #tech-team .team-h2 {
   margin-bottom: 8px;
 }
@@ -415,7 +384,12 @@
   font-size: 15px;
 }
 
-/* Mobile-first: photo | role+name, text full-width below */
+.team-page #leadership .team-h2 {
+  margin-bottom: 14px;
+}
+
+/* Shared person cards: mobile photo | role+name, text full-width below */
+.team-page #leadership .team-grid,
 .team-page #tech-team .team-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -425,6 +399,7 @@
   justify-content: start;
 }
 
+.team-page #leadership .team-card,
 .team-page #tech-team .team-card {
   display: grid;
   grid-template-columns: 96px minmax(0, 1fr);
@@ -440,6 +415,7 @@
   box-shadow: 0 8px 22px rgba(21, 26, 38, 0.05);
 }
 
+.team-page #leadership .team-card__photo,
 .team-page #tech-team .team-card__photo {
   grid-area: photo;
   width: 96px;
@@ -450,6 +426,7 @@
   background: #eef1f6;
 }
 
+.team-page #leadership .team-card__photo img,
 .team-page #tech-team .team-card__photo img {
   display: block;
   width: 96px;
@@ -459,12 +436,14 @@
   object-position: 50% 16%;
 }
 
+.team-page #leadership .team-card--daniil img,
 .team-page #tech-team .team-card--stepan img,
 .team-page #tech-team .team-card--alexander img,
 .team-page #tech-team .team-card--kseniya img {
   object-position: 50% 16%;
 }
 
+.team-page #leadership .team-card__meta,
 .team-page #tech-team .team-card__meta {
   grid-area: meta;
   display: flex;
@@ -475,6 +454,7 @@
   min-width: 0;
 }
 
+.team-page #leadership .team-card h3,
 .team-page #tech-team .team-card h3 {
   margin: 0;
   font-size: 17px;
@@ -482,6 +462,7 @@
   order: 2;
 }
 
+.team-page #leadership .team-card .team-person-role,
 .team-page #tech-team .team-card .team-person-role {
   margin: 0;
   font-size: 13px;
@@ -489,6 +470,7 @@
   order: 1;
 }
 
+.team-page #leadership .team-card .team-person-text,
 .team-page #tech-team .team-card .team-person-text {
   grid-area: text;
   margin: 0;
@@ -497,6 +479,7 @@
 }
 
 @media (max-width: 359px) {
+  .team-page #leadership .team-card,
   .team-page #tech-team .team-card {
     grid-template-columns: 84px minmax(0, 1fr);
     column-gap: 10px;
@@ -504,6 +487,8 @@
     padding: 10px;
   }
 
+  .team-page #leadership .team-card__photo,
+  .team-page #leadership .team-card__photo img,
   .team-page #tech-team .team-card__photo,
   .team-page #tech-team .team-card__photo img {
     width: 84px;
@@ -511,10 +496,12 @@
     height: 84px;
   }
 
+  .team-page #leadership .team-card h3,
   .team-page #tech-team .team-card h3 {
     font-size: 15px;
   }
 
+  .team-page #leadership .team-card .team-person-role,
   .team-page #tech-team .team-card .team-person-role {
     font-size: 12px;
   }
@@ -755,17 +742,6 @@
     margin-inline: 0 0 auto;
   }
 
-  .team-page .team-lead-card {
-    grid-template-columns: 200px minmax(0, 1fr);
-    align-items: center;
-    padding: 18px 22px;
-    gap: 24px;
-  }
-
-  .team-page .team-lead-card__photo {
-    width: 200px;
-  }
-
   .team-page .team-flow {
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 0;
@@ -790,6 +766,13 @@
 }
 
 @media (min-width: 768px) {
+  .team-page #leadership .team-grid {
+    grid-template-columns: minmax(0, 280px);
+    gap: 14px;
+    max-width: 920px;
+    justify-content: start;
+  }
+
   .team-page #tech-team .team-grid {
     grid-template-columns: repeat(3, minmax(0, 280px));
     gap: 14px;
@@ -797,6 +780,7 @@
     justify-content: start;
   }
 
+  .team-page #leadership .team-card,
   .team-page #tech-team .team-card {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -808,32 +792,38 @@
     padding: 14px;
   }
 
+  .team-page #leadership .team-card__photo,
   .team-page #tech-team .team-card__photo {
     width: 120px;
     max-width: 120px;
     border-radius: 14px;
   }
 
+  .team-page #leadership .team-card__photo img,
   .team-page #tech-team .team-card__photo img {
     width: 120px;
     height: 120px;
   }
 
+  .team-page #leadership .team-card__meta,
   .team-page #tech-team .team-card__meta {
     gap: 4px;
   }
 
+  .team-page #leadership .team-card h3,
   .team-page #tech-team .team-card h3 {
     font-size: 18px;
     order: 1;
   }
 
+  .team-page #leadership .team-card .team-person-role,
   .team-page #tech-team .team-card .team-person-role {
     margin: 0;
     font-size: 14px;
     order: 2;
   }
 
+  .team-page #leadership .team-card .team-person-text,
   .team-page #tech-team .team-card .team-person-text {
     font-size: 14px;
   }
@@ -842,6 +832,13 @@
 @media (min-width: 1024px) {
   .team-page .team-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .team-page #leadership .team-grid {
+    grid-template-columns: minmax(0, 280px);
+    max-width: 920px;
+    justify-content: start;
+    margin-inline: 0;
   }
 
   .team-page #tech-team .team-grid {
@@ -875,19 +872,6 @@
   }
 }
 
-@media (max-width: 419px) {
-  .team-page .team-lead-card {
-    grid-template-columns: 132px minmax(0, 1fr);
-    gap: 12px;
-    padding: 12px;
-  }
-
-  .team-page .team-lead-card__photo {
-    width: 132px;
-    border-radius: 12px;
-  }
-}
-
 @media (max-width: 359px) {
   .team-page .team-hero__title {
     font-size: 26px;
@@ -897,13 +881,5 @@
   .team-page .team-person-text,
   .team-page .team-lead {
     font-size: 15px;
-  }
-
-  .team-page .team-lead-card {
-    grid-template-columns: 1fr;
-  }
-
-  .team-page .team-lead-card__photo {
-    width: min(180px, 58%);
   }
 }
