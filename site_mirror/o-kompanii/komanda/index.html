@@ -46,7 +46,7 @@
     .team-page .team-hero__media{width:min(100%,560px);margin-inline:auto;border-radius:20px;overflow:hidden;background:#f3eefc;box-shadow:0 18px 40px rgba(21,26,38,.1)}
     .team-page .team-hero__media img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
   </style>
-  <link rel="stylesheet" href="../../assets/css/team-page.css?v=14">
+  <link rel="stylesheet" href="../../assets/css/team-page.css?v=15">
   <link rel="preload" href="../../assets/css/home-clean.css?v=39" as="style">
   <link rel="preload" href="../../assets/css/lead-forms.css" as="style">
   <noscript>
@@ -160,19 +160,21 @@
     <section class="team-section" id="leadership" aria-labelledby="leadership-title">
       <div class="rk-container">
         <h2 class="team-h2" id="leadership-title">Руководство</h2>
-        <article class="team-lead-card">
-          <figure class="team-lead-card__photo">
-            <picture>
-              <source type="image/webp" srcset="../../assets/img/team/daniil-480.webp">
-              <img src="../../assets/img/team/daniil-480.jpg" width="452" height="478" alt="Даниил Инжеватов — CEO Raskrutov" loading="lazy" decoding="async" fetchpriority="low">
-            </picture>
-          </figure>
-          <div class="team-lead-card__body">
-            <p class="team-tag">CEO</p>
-            <h3 class="team-person-name">Даниил Инжеватов</h3>
+        <div class="team-grid team-grid--solo">
+          <article class="team-card team-card--daniil">
+            <figure class="team-card__photo">
+              <picture>
+                <source type="image/webp" srcset="../../assets/img/team/daniil-480.webp">
+                <img src="../../assets/img/team/daniil-480.jpg" width="452" height="478" alt="Даниил Инжеватов — CEO Raskrutov" loading="lazy" decoding="async" fetchpriority="low">
+              </picture>
+            </figure>
+            <div class="team-card__meta">
+              <h3>Даниил Инжеватов</h3>
+              <p class="team-person-role">CEO</p>
+            </div>
             <p class="team-person-text">Отвечает за стратегию и развитие Raskrutov, работу с ключевыми направлениями компании и развитие клиентских проектов.</p>
-          </div>
-        </article>
+          </article>
+        </div>
       </div>
     </section>
 
