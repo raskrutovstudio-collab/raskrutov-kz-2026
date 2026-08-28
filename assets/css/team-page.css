@@ -70,20 +70,117 @@
   display: none;
 }
 
+.team-page .rk-logo,
+.team-page .rk-logo:link,
+.team-page .rk-logo:visited {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.team-page .rk-logo img {
+  display: block;
+  width: 180px;
+  height: auto;
+  max-width: 100%;
+  aspect-ratio: 211 / 49;
+  object-fit: contain;
+}
+
+.team-page .rk-nav a,
+.team-page .rk-nav a:link,
+.team-page .rk-nav a:visited {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 8px 4px;
+  color: #111;
+  font-family: Montserrat, "Montserrat Fallback", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.team-page .rk-nav a[aria-current="page"],
+.team-page .rk-nav a[aria-current="page"]:link,
+.team-page .rk-nav a[aria-current="page"]:visited {
+  color: #7f3ff2;
+}
+
+.team-page .rk-header__phone,
+.team-page .rk-header__phone:link,
+.team-page .rk-header__phone:visited {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: #004f9a;
+  font-family: Montserrat, "Montserrat Fallback", Arial, sans-serif;
+  font-weight: 700;
+  white-space: nowrap;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.team-page .rk-wa,
+.team-page .rk-wa:link,
+.team-page .rk-wa:visited {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  text-decoration: none;
+  color: inherit;
+  flex: 0 0 auto;
+}
+
+.team-page .rk-header a:focus-visible,
+.team-page .rk-burger:focus-visible {
+  outline: 2px solid #7f3ff2;
+  outline-offset: 2px;
+}
+
 .team-page .rk-burger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
   border: 0;
   background: transparent;
   padding: 10px;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .team-page .rk-burger span {
   display: block;
   width: 22px;
   height: 2px;
-  margin: 5px auto;
+  margin: 0;
   background: #151a26;
+}
+
+.team-page .rk-mobile-nav a,
+.team-page .rk-mobile-nav a:link,
+.team-page .rk-mobile-nav a:visited {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 10px 0;
+  color: #111;
+  font-family: Montserrat, "Montserrat Fallback", Arial, sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 1px solid #f0f0f5;
+}
+
+.team-page .rk-mobile-nav a[aria-current="page"],
+.team-page .rk-mobile-nav a[aria-current="page"]:link,
+.team-page .rk-mobile-nav a[aria-current="page"]:visited {
+  color: #7f3ff2;
 }
 
 @media (min-width: 1100px) {
@@ -91,11 +188,42 @@
   .team-page .rk-header__contacts {
     display: flex;
     align-items: center;
+  }
+
+  .team-page .rk-nav {
+    justify-content: center;
+    gap: 4px;
+    flex-wrap: nowrap;
+  }
+
+  .team-page .rk-header__contacts {
+    justify-content: flex-end;
     gap: 10px;
+  }
+
+  .team-page .rk-nav a,
+  .team-page .rk-nav a:link,
+  .team-page .rk-nav a:visited {
+    white-space: nowrap;
+    flex-shrink: 0;
+    font-size: 13px;
+    padding: 8px 3px;
+  }
+
+  .team-page .rk-logo img {
+    width: 211px;
   }
 
   .team-page .rk-burger {
     display: none;
+  }
+}
+
+@media (min-width: 1440px) {
+  .team-page .rk-nav a,
+  .team-page .rk-nav a:link,
+  .team-page .rk-nav a:visited {
+    font-size: 15px;
   }
 }
 
