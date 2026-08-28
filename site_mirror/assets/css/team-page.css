@@ -428,27 +428,76 @@
   gap: 12px;
   border-radius: 16px;
   box-shadow: 0 8px 22px rgba(21, 26, 38, 0.05);
+  align-content: start;
+}
+
+.team-page #tech-team .team-card__body {
+  min-width: 0;
+  display: grid;
+  gap: 0;
+  align-content: start;
 }
 
 .team-page #tech-team .team-card__photo {
   border-radius: 12px;
   max-width: 280px;
-  margin-inline: 0;
+  margin: 0;
   width: 100%;
+  overflow: hidden;
+  background: #eef1f6;
 }
 
 .team-page #tech-team .team-card__photo img {
+  width: 100%;
+  height: auto;
   aspect-ratio: 1;
   object-fit: cover;
+  object-position: 50% 16%;
+}
+
+.team-page #tech-team .team-card--stepan img,
+.team-page #tech-team .team-card--alexander img,
+.team-page #tech-team .team-card--kseniya img {
+  object-position: 50% 16%;
 }
 
 .team-page #tech-team .team-card h3 {
+  margin: 0 0 4px;
   font-size: 18px;
 }
 
+.team-page #tech-team .team-card .team-person-role {
+  margin: 0 0 8px;
+}
+
 .team-page #tech-team .team-card .team-person-text {
+  margin: 0;
   font-size: 14px;
   line-height: 1.5;
+}
+
+@media (max-width: 767px) {
+  .team-page #tech-team .team-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    max-width: none;
+  }
+
+  .team-page #tech-team .team-card {
+    width: 100%;
+    padding: 12px;
+    gap: 12px;
+  }
+
+  .team-page #tech-team .team-card__photo {
+    max-width: none;
+    width: 100%;
+  }
+
+  .team-page #tech-team .team-card__photo img {
+    aspect-ratio: 1;
+    width: 100%;
+  }
 }
 
 .team-page .team-flow {
