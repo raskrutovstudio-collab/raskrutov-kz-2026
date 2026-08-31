@@ -44,6 +44,10 @@ body.sz-page {
 }
 
 .sz-page .rk-studio-hero__bg {
+  background-image: url("../m-files.cdn1.cc/lpfile/0/0/e/00e5f3089b7608f6ea110e879c58caea.webp");
+  background-position: 0% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
   opacity: 0.69;
 }
 
