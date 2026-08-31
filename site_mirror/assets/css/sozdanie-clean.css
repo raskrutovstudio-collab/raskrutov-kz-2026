@@ -10,16 +10,22 @@ body.sz-page {
   font: inherit;
 }
 
-/* Hero devices */
+/* Hero devices — reserve media box before image decode (CLS)
+   Root cause: former display:flex wrapper collapsed height until img painted,
+   so figure.rk-studio-hero__media jumped (~0.25 CLS on mobile). */
+.sz-page .rk-studio-hero__media {
+  margin: 0;
+  width: 100%;
+}
+
 .sz-page .rk-hero-devices {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
   width: 100%;
   max-width: 620px;
   margin: 0 0 0 auto;
   padding: 4px 8px 0;
   box-sizing: border-box;
+  aspect-ratio: 1100 / 619;
 }
 
 .sz-page .rk-hero-devices__img {
@@ -27,6 +33,7 @@ body.sz-page {
   width: 100%;
   height: auto;
   max-width: 100%;
+  aspect-ratio: 1100 / 619;
 }
 
 @media (max-width: 900px) {
