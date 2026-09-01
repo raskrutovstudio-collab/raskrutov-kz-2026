@@ -74,6 +74,8 @@
     "service",
     "company",
     "budget",
+    "vacancy",
+    "resume_url",
     "website",
   ];
 
@@ -214,9 +216,11 @@
 
   function buildMessage(fields) {
     var parts = [];
+    if (fields.vacancy) parts.push("Вакансия: " + fields.vacancy);
     if (fields.service) parts.push("Услуга: " + fields.service);
     if (fields.company) parts.push("Компания: " + fields.company);
     if (fields.budget) parts.push("Бюджет: " + fields.budget);
+    if (fields.resume_url) parts.push("Резюме/портфолио: " + fields.resume_url);
     var msg = fields.message || "";
     if (parts.length) {
       return parts.join("\n") + (msg ? "\n\nСообщение клиента: " + msg : "");
@@ -419,7 +423,8 @@
       }
       setStatus(
         form,
-        "Спасибо! Заявка отправлена. Мы скоро свяжемся с вами.",
+        form.getAttribute("data-success-message") ||
+          "Спасибо! Заявка отправлена. Мы скоро свяжемся с вами.",
         "success"
       );
       clearUserFields(form);
