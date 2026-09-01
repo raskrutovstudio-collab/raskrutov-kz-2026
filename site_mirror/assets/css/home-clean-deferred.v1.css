@@ -1,7 +1,7 @@
 /* Raskrutov homepage clean — AUTOSPLIT deferred */
 @font-face {
   font-family: "Inter";
-  src: url("../m-files.cdn1.cc/web/user/fonts/inter/inter_normal.woff2") format("woff2");
+  src: url("../fonts/inter/inter_normal.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -9,7 +9,7 @@
 
 @font-face {
   font-family: "Inter";
-  src: url("../m-files.cdn1.cc/web/user/fonts/inter/inter_bold.woff2") format("woff2");
+  src: url("../fonts/inter/inter_bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -17,7 +17,7 @@
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../m-files.cdn1.cc/web/user/fonts/open_sans/open_sans_light.woff2") format("woff2");
+  src: url("../fonts/open_sans/open_sans_light.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -25,7 +25,7 @@
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../m-files.cdn1.cc/web/user/fonts/open_sans/open_sans_normal.woff2") format("woff2");
+  src: url("../fonts/open_sans/open_sans_normal.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -33,7 +33,7 @@
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../m-files.cdn1.cc/web/user/fonts/open_sans/open_sans_semi-bold.woff2") format("woff2");
+  src: url("../fonts/open_sans/open_sans_semi-bold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -364,8 +364,8 @@ button {
 }
 
 .rk-device--laptop .rk-device__viewport {
-  mask-image: url("../m-files.cdn1.cc/lpfile/2/8/d/28dae1e53d68e6eac5d1f92db459a9ea__q_57823416.svg");
-  -webkit-mask-image: url("../m-files.cdn1.cc/lpfile/2/8/d/28dae1e53d68e6eac5d1f92db459a9ea__q_57823416.svg");
+  mask-image: url("../icons/migrated/d11c3f443de0.svg");
+  -webkit-mask-image: url("../icons/migrated/d11c3f443de0.svg");
 }
 
 .rk-device--laptop .rk-device__screen {
@@ -383,8 +383,8 @@ button {
 }
 
 .rk-device--phone .rk-device__viewport {
-  mask-image: url("../m-files.cdn1.cc/lpfile/3/9/0/390bd2d6c1042d94ec596476de6e3ccb__q_68072727.svg");
-  -webkit-mask-image: url("../m-files.cdn1.cc/lpfile/3/9/0/390bd2d6c1042d94ec596476de6e3ccb__q_68072727.svg");
+  mask-image: url("../icons/migrated/657d833fb0d5.svg");
+  -webkit-mask-image: url("../icons/migrated/657d833fb0d5.svg");
 }
 
 .rk-device--phone .rk-device__screen {
@@ -994,7 +994,7 @@ button {
 
 .rk-section--about {
   background-color: var(--rk-bg);
-  background-image: url("../m-files.cdn1.cc/lpfile/d/7/5/d75cf43e573ba54d325699e45b16395d.webp");
+  background-image: url("../img/migrated/3edf64281d0e.webp");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1630,7 +1630,7 @@ button {
   padding-top: 48px;
   padding-bottom: 48px;
   background-color: #e8eef8;
-  background-image: url("../m-files.cdn1.cc/lpfile/d/1/6/d1630e6a033b75a4379aa70c459e910a.webp");
+  background-image: url("../img/migrated/d4f602296159.webp");
   background-position: 50% 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1640,7 +1640,7 @@ button {
   content: "";
   position: absolute;
   inset: 0 0 42%;
-  background-image: url("../m-files.cdn1.cc/lpfile/c/4/e/c4ed9801b96b6a8a708ec72bb8b5c741.webp");
+  background-image: url("../img/migrated/b35263ef0c86.webp");
   background-position: 50% 0%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1910,7 +1910,7 @@ button {
   padding-top: 63px;
   padding-bottom: 40px;
   background-color: #fff;
-  background-image: url("../m-files.cdn1.cc/lpfile/6/e/e/6eea3ed3de3e5cbe118d06eb148fe963.webp");
+  background-image: url("../img/lidogeneratsiya/hero-lcp.webp");
   background-position: 50% 0%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2212,26 +2212,26 @@ button {
 
 .rk-contact-soc__icon--tg {
   color: #24a0ff;
-  -webkit-mask-image: url("../m-files.cdn1.cc/lpfile/f/d/9/fd9fedea05b117d3e04a183cd3c83a3d.svg");
-  mask-image: url("../m-files.cdn1.cc/lpfile/f/d/9/fd9fedea05b117d3e04a183cd3c83a3d.svg");
+  -webkit-mask-image: url("../icons/migrated/6d57279608ed.svg");
+  mask-image: url("../icons/migrated/6d57279608ed.svg");
 }
 
 .rk-contact-soc__icon--ig {
   color: #df62e2;
-  -webkit-mask-image: url("../m-files.cdn1.cc/lpfile/e/a/b/eab2f7775db05e2f32ee435ef46ec912.svg");
-  mask-image: url("../m-files.cdn1.cc/lpfile/e/a/b/eab2f7775db05e2f32ee435ef46ec912.svg");
+  -webkit-mask-image: url("../icons/migrated/730c0fcc00d5.svg");
+  mask-image: url("../icons/migrated/730c0fcc00d5.svg");
 }
 
 .rk-contact-soc__icon--yt {
   color: #e70000;
-  -webkit-mask-image: url("../m-files.cdn1.cc/lpfile/f/e/1/fe15ff57c84cb329f6089cb16a626c7c.svg");
-  mask-image: url("../m-files.cdn1.cc/lpfile/f/e/1/fe15ff57c84cb329f6089cb16a626c7c.svg");
+  -webkit-mask-image: url("../icons/migrated/239ad9090a1b.svg");
+  mask-image: url("../icons/migrated/239ad9090a1b.svg");
 }
 
 .rk-contact-soc__icon--tt {
   color: #1e1e1e;
-  -webkit-mask-image: url("../m-files.cdn1.cc/lpfile/d/d/b/ddbb4a541f587cbb566bba9316170e95.svg");
-  mask-image: url("../m-files.cdn1.cc/lpfile/d/d/b/ddbb4a541f587cbb566bba9316170e95.svg");
+  -webkit-mask-image: url("../icons/migrated/6514a5a5c789.svg");
+  mask-image: url("../icons/migrated/6514a5a5c789.svg");
 }
 
 .rk-contact-soc:has(.rk-contact-soc__icon--tg) { color: #24a0ff; }
@@ -2314,8 +2314,8 @@ button {
   width: 20px;
   height: 20px;
   background: #fff;
-  -webkit-mask: url("../m-files.cdn1.cc/lpfile/3/6/0/3602629724624ef5f818041256b3879e.svg") center center / cover no-repeat;
-  mask: url("../m-files.cdn1.cc/lpfile/3/6/0/3602629724624ef5f818041256b3879e.svg") center center / cover no-repeat;
+  -webkit-mask: url("../icons/migrated/36d9b40d9a46.svg") center center / cover no-repeat;
+  mask: url("../icons/migrated/36d9b40d9a46.svg") center center / cover no-repeat;
 }
 
 .rk-soc-widget {

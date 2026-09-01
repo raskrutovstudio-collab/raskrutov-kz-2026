@@ -105,8 +105,8 @@ Redirect 301 /pages/web-studiya_sozdanie-saitov_sayt-vizitka.html /web-studiya/s
 
 # Cache-Control for hashed/static assets (PSI / repeat views)
 <IfModule mod_headers.c>
-  # Versioned Mottor bundles & hashed lpfile paths — long cache
-  <FilesMatch "(__q_v_|/-/|lpfile/).+\.(css|js|webp|png|jpe?g|svg|woff2?)$">
+  # Content-addressed / long-lived static assets (migrated hashes, perf images)
+  <FilesMatch "(migrated|perf)/.+\.(css|js|webp|png|jpe?g|svg|woff2?|avif)$">
     Header set Cache-Control "public, max-age=31536000, immutable"
   </FilesMatch>
   # Optimized perf images (content-addressed via new filenames)
