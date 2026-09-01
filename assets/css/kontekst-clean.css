@@ -2,14 +2,14 @@
 /* Later @font-face overrides home-clean swap → optional, removes hero font CLS */
 @font-face {
   font-family: "Montserrat";
-  src: url("../m-files.cdn1.cc/web/user/fonts/montserrat/montserrat_normal.woff2") format("woff2");
+  src: url("../fonts/montserrat/montserrat_normal.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: optional;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("../m-files.cdn1.cc/web/user/fonts/montserrat/montserrat_bold.woff2") format("woff2");
+  src: url("../fonts/montserrat/montserrat_bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: optional;
@@ -68,7 +68,7 @@
 /* Hero title font: avoid CLS from late webfont swap on long city H1 */
 @font-face {
   font-family: "Montserrat";
-  src: url("../m-files.cdn1.cc/web/user/fonts/montserrat/montserrat_bold.woff2") format("woff2");
+  src: url("../fonts/montserrat/montserrat_bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: optional;
