@@ -1,9 +1,0 @@
-{
-  "slug": "uralsk",
-  "commit": "9f0539664a172f2fe8277a4f646cdb26bfbd6a53",
-  "main": "da9af5a3ae2fc23396066df5ef04213e76064a82",
-  "plesk": "4955a0b9733cf68b87631bb61d66b7fa033e3484",
-  "mobile_median": 99,
-  "desktop": 100,
-  "production_verified": true
-}

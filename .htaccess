@@ -35,8 +35,7 @@ Redirect 301 /pages/kontakty.html /kontakty
 Redirect 301 /pages/o-kompanii.html /o-kompanii
 Redirect 301 /pages/o-kompanii_blagodarstvennye-pisma.html /o-kompanii/otzyvy-i-blagodarstvennye-pisma/
 Redirect 301 /pages/o-kompanii_blog.html /blog/
-Redirect 301 /o-kompanii/blog /blog/
-Redirect 301 /o-kompanii/blog/ /blog/
+RedirectMatch 301 ^/o-kompanii/blog/?$ /blog/
 Redirect 301 /pages/o-kompanii_klienty.html /o-kompanii/klienty
 Redirect 301 /pages/o-kompanii_komanda.html /o-kompanii/komanda
 Redirect 301 /pages/o-kompanii_o-nas.html /o-kompanii/o-nas
@@ -142,6 +141,12 @@ Redirect 301 /pages/web-studiya_sozdanie-saitov_sayt-vizitka.html /web-studiya/s
 # Canonical AEO/GEO clean page (old Motor URL redirects here)
 # RedirectMatch exact: plain Redirect prefix-matches and turns .../aeo-prodvizhenie/ into .../aeo-geo-prodvizhenie//
 RedirectMatch 301 ^/web-studiya/aeo-prodvizhenie/?$ /web-studiya/aeo-geo-prodvizhenie/
+
+# Deliberately removed historical URLs — gone (410), no soft-404 homepage redirect
+RedirectMatch 410 ^/soundtrack/?$
+RedirectMatch 410 ^/kejs-raki/?$
+RedirectMatch 410 ^/kejs-laminat/?$
+RedirectMatch 410 ^/videoroliki-dlya-biznesa/?$
 
 # Legacy root service aliases (pre-/web-studiya/ URLs) — exact match only
 RedirectMatch 301 ^/sozdanie-saitov/?$ /web-studiya/sozdanie-saitov/

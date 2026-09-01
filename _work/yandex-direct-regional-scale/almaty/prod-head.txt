@@ -1,24 +1,0 @@
-﻿<!DOCTYPE html>
-<html lang="ru-KZ">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ð¯Ð½Ð´ÐµÐºÑ ÐÐ¸ÑÐµÐºÑ Ð² ÐÐ»Ð¼Ð°ÑÑ â Ð½Ð°ÑÑÑÐ¾Ð¹ÐºÐ° Ð¸ Ð²ÐµÐ´ÐµÐ½Ð¸Ðµ | Raskrutov</title>
-  <meta name="robots" content="index, follow">
-  <meta name="description" content="ÐÐ°ÑÑÑÐ°Ð¸Ð²Ð°ÐµÐ¼ Ð¸ Ð²ÐµÐ´ÑÐ¼ Ð¯Ð½Ð´ÐµÐºÑ ÐÐ¸ÑÐµÐºÑ Ð² ÐÐ»Ð¼Ð°ÑÑ: ÑÐµÐ³Ð¸Ð¾Ð½ Ð³Ð¾ÑÐ¾Ð´Ð° Ð¾ÑÐ´ÐµÐ»ÑÐ½Ð¾ Ð¾Ñ Ð¾Ð±Ð»Ð°ÑÑÐ¸, ÐÐ¾Ð¸ÑÐº Ð¸ Ð Ð¡Ð¯, ÑÐµÐ»Ð¸ ÐÐµÑÑÐ¸ÐºÐ¸, Ð¼Ð¸Ð½ÑÑ-Ð»Ð¸ÑÑÑ Ð¸ ÐºÐ¾Ð½ÑÑÐ¾Ð»Ñ ÑÐ°ÑÑÐ¾Ð´Ð° Ð½Ð° Ð·Ð°ÑÐ²ÐºÐ¸.">
-  <link rel="canonical" href="https://raskrutov.kz/web-studiya/kontekstnaya-reklama/yandex-direct/almaty/">
-  <meta property="og:title" content="Ð¯Ð½Ð´ÐµÐºÑ ÐÐ¸ÑÐµÐºÑ Ð² ÐÐ»Ð¼Ð°ÑÑ â Ð½Ð°ÑÑÑÐ¾Ð¹ÐºÐ° Ð¸ Ð²ÐµÐ´ÐµÐ½Ð¸Ðµ | Raskrutov">
-  <meta property="og:description" content="ÐÐ°ÑÑÑÐ°Ð¸Ð²Ð°ÐµÐ¼ Ð¸ Ð²ÐµÐ´ÑÐ¼ Ð¯Ð½Ð´ÐµÐºÑ ÐÐ¸ÑÐµÐºÑ Ð² ÐÐ»Ð¼Ð°ÑÑ: ÑÐµÐ³Ð¸Ð¾Ð½ Ð³Ð¾ÑÐ¾Ð´Ð° Ð¾ÑÐ´ÐµÐ»ÑÐ½Ð¾ Ð¾Ñ Ð¾Ð±Ð»Ð°ÑÑÐ¸, ÐÐ¾Ð¸ÑÐº Ð¸ Ð Ð¡Ð¯, ÑÐµÐ»Ð¸ ÐÐµÑÑÐ¸ÐºÐ¸, Ð¼Ð¸Ð½ÑÑ-Ð»Ð¸ÑÑÑ Ð¸ ÐºÐ¾Ð½ÑÑÐ¾Ð»Ñ ÑÐ°ÑÑÐ¾Ð´Ð° Ð½Ð° Ð·Ð°ÑÐ²ÐºÐ¸.">
-  <meta property="og:image" content="https://raskrutov.kz/assets/img/lidogeneratsiya/src-yandex-lg.webp">
-  <meta property="og:site_name" content="Raskrutov">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://raskrutov.kz/web-studiya/kontekstnaya-reklama/yandex-direct/almaty/">
-  <meta property="og:locale" content="ru_KZ">
-<link href="../../../../assets/m-files.cdn1.cc/lpfile/favicon/favicon__q_1.png" type="image/png" rel="icon">
-  <link href="../../../../favicon.ico" sizes="16x16 32x32 48x48" rel="icon" type="image/x-icon">
-  <link rel="preload" href="../../../../assets/m-files.cdn1.cc/web/user/fonts/montserrat/montserrat_normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="../../../../assets/m-files.cdn1.cc/web/user/fonts/montserrat/montserrat_bold.woff2" as="font" type="font/woff2" crossorigin>
-  <style id="yd-critical" media="(max-width:768px)">
-@media (max-width:768px){
-@font-face{font-family:"Montserrat";src:url("../../../../assets/m-files.cdn1.cc/web/user/fonts/montserrat/montserrat_normal.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
-@font-face{font-family:"Montserrat Fallback";src:local("Arial"),local("Helvetica Neue"),local("Helvetica");size-adjust:107%;ascent-override:92%;descent-override:23%;line-gap-override:0%

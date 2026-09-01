@@ -1,9 +1,0 @@
-{
-  "slug": "kyzylorda",
-  "commit": "ea780bd3bff9eb72574abad7946d60465e83e178",
-  "main": "aca0f3ce5fc6eb79bbc3ec62d2246151310a56bf",
-  "plesk": "13fadb6d6361dfa2ce4e0d8200916d53e180648d",
-  "mobile_median": 99,
-  "desktop": 100,
-  "production_verified": true
-}
