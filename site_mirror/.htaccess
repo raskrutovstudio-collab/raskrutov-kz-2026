@@ -143,6 +143,16 @@ Redirect 301 /pages/web-studiya_sozdanie-saitov_sayt-vizitka.html /web-studiya/s
 # RedirectMatch exact: plain Redirect prefix-matches and turns .../aeo-prodvizhenie/ into .../aeo-geo-prodvizhenie//
 RedirectMatch 301 ^/web-studiya/aeo-prodvizhenie/?$ /web-studiya/aeo-geo-prodvizhenie/
 
+# Legacy root service aliases (pre-/web-studiya/ URLs) — exact match only
+RedirectMatch 301 ^/sozdanie-saitov/?$ /web-studiya/sozdanie-saitov/
+RedirectMatch 301 ^/seo-prodvizhenie/?$ /web-studiya/seo-prodvizhenie/
+RedirectMatch 301 ^/dizayn/?$ /web-studiya/dizayn/
+RedirectMatch 301 ^/aeo-prodvizhenie/?$ /web-studiya/aeo-geo-prodvizhenie/
+RedirectMatch 301 ^/kontekstnaya-reklama/?$ /web-studiya/kontekstnaya-reklama/
+RedirectMatch 301 ^/lidogeneratsiya/?$ /web-studiya/lidogeneratsiya/
+RedirectMatch 301 ^/podderzhka-saytov/?$ /web-studiya/podderzhka-saytov/
+RedirectMatch 301 ^/digital-konsalting/?$ /web-studiya/digital-konsalting/
+
 # Do NOT add: Redirect /index.html → /
 # That loops with DirectoryIndex (/ → index.html → / → …) → ERR_TOO_MANY_REDIRECTS
 
