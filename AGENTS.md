@@ -12,7 +12,7 @@
 8. Не выдумывать факты, цены, отзывы, рейтинги и реквизиты. Не размечать невидимое содержимое.
 9. Писать прямо и уверенно, без риторических противопоставлений и сравнительных шаблонов.
 10. После изменений выполнить `npm run quality:all`, проверить страницу визуально, консоль, формы и показать `git diff`. Для regional batch требования evidence и критерии PASS определяются `027-regional-viewport-qa.mdc`; общий visual smoke не может понизить этот gate.
-11. Работать только в машинной ветке: PC1 — `work/pc1`, PC2 — `work/pc2`. Не переключаться на `main` для редактирования.
-12. В обычной Cursor-сессии commit/push выполняет after-response hook автоматически после `quality:all`. Не выполнять ручной push в `main`.
-13. GitHub Actions последовательно интегрирует машинные ветки в `main`. При изменении одного и того же файла двумя ПК интеграция останавливается для ручной проверки.
+11. Режим `SINGLE USER / SINGLE OPERATOR`: рабочая ветка — `work/pc1`, production — `plesk`. Session lock отключён; source of truth — Git state (см. `.cursor/rules/git-single-user-workflow.mdc`).
+12. Dirty working tree не является авто-блокером: классифицируй изменения и продолжай. Запрещены destructive git-команды без явной команды пользователя.
+13. After-response hook может auto-commit/push в `work/pc1` после `quality:all`. Auto-commit предыдущей сессии — валидное состояние. Не блокировать работу из-за stale Cursor session / `PARALLEL WORK BLOCKED`.
 

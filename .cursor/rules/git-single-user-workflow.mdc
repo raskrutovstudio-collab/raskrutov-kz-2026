@@ -1,0 +1,274 @@
+---
+description: Single-user Cursor workflow — session lock disabled, Git safety enabled
+alwaysApply: true
+---
+
+# SINGLE-USER CURSOR WORKFLOW — LOCK POLICY
+
+Проект работает в режиме:
+
+```text
+SINGLE USER / SINGLE OPERATOR
+```
+
+Владелец проекта работает один.
+
+Жёсткая межсессионная блокировка `PARALLEL WORK BLOCKED` больше не используется.
+
+## 1. ЗАПРЕЩЕНО БЛОКИРОВАТЬ РАБОТУ ИЗ-ЗА SESSION LOCK
+
+Не останавливать shell/write операции только по причинам:
+
+```text
+no active safe Cursor session
+previous Cursor session ended
+previous task thread is closed
+session owner mismatch
+stale parallel-work lock
+```
+
+Новая Cursor Agent session имеет право продолжать работу с текущим состоянием репозитория.
+
+---
+
+## 2. SOURCE OF TRUTH = GIT STATE
+
+Перед каждой новой задачей или продолжением выполнить:
+
+```powershell
+git status
+git branch --show-current
+git rev-parse HEAD
+git log -5 --oneline
+```
+
+Git является главным источником состояния проекта.
+
+Не состояние предыдущей Cursor session.
+
+---
+
+## 3. ЕСЛИ WORKING TREE CLEAN
+
+Если:
+
+```text
+working tree clean
+```
+
+то:
+
+```text
+CONTINUE
+```
+
+без каких-либо дополнительных session locks.
+
+Нельзя требовать повторного resubmit prompt только ради получения lock.
+
+---
+
+## 4. ЕСЛИ WORKING TREE DIRTY
+
+Dirty working tree сам по себе НЕ является автоматическим блокером.
+
+Сначала определить изменённые файлы:
+
+```powershell
+git status --short
+git diff --stat
+git diff --name-only
+```
+
+Классифицировать изменения:
+
+```text
+CURRENT TASK
+PREVIOUS TASK WIP
+AUTO-COMMITTED / GENERATED
+AUDIT ARTIFACT
+UNKNOWN
+```
+
+### CURRENT TASK / PREVIOUS TASK WIP
+
+Продолжить работу с ними.
+
+### AUDIT ARTIFACT
+
+Можно сохранить как локальный task artifact.
+
+### UNKNOWN
+
+Не изменять и не удалять.
+
+Показать пользователю точный список и остановить только операции, способные затереть эти конкретные файлы.
+
+---
+
+## 5. AUTO-COMMIT / AFTER-RESPONSE HOOK
+
+Если Cursor/project hook автоматически создал commit после предыдущего ответа:
+
+это НЕ считается конфликтом.
+
+Проверить:
+
+```powershell
+git show --stat --oneline HEAD
+```
+
+Если commit соответствует предыдущей задаче:
+
+```text
+ACCEPT CURRENT HEAD
+→ CONTINUE
+```
+
+Не требовать восстановления старой Cursor session.
+
+---
+
+## 6. STALE LOCK
+
+Любой stale session/parallel lock должен:
+
+```text
+not block project work
+```
+
+в single-user mode.
+
+Если lock-файл/metadata существует, но:
+
+```text
+нет реального второго процесса,
+нет второго пользователя,
+Git state безопасен
+```
+
+он может быть автоматически признан устаревшим.
+
+Не заставлять пользователя повторно отправлять один и тот же prompt.
+
+---
+
+## 7. СОХРАНЯЕМ GIT SAFETY
+
+По-прежнему запрещены без явной необходимости:
+
+```text
+git reset --hard
+git clean
+git checkout .
+git restore .
+```
+
+Нельзя удалять незнакомые изменения.
+
+Нельзя откатывать commit только потому, что его создала предыдущая Cursor session.
+
+---
+
+## 8. PARALLEL PROCESS CHECK
+
+Если действительно обнаружены одновременно работающие процессы, способные писать в один repository/worktree:
+
+не использовать глобальный hard block.
+
+Сначала определить:
+
+```text
+process
+task
+files being modified
+```
+
+Блокировать только потенциально конфликтующие операции.
+
+В обычном single-user workflow closure старого Cursor process/session не должно останавливать работу автоматически.
+
+---
+
+## 9. BRANCH SAFETY
+
+Рабочая ветка:
+
+```text
+work/pc1
+```
+
+Production:
+
+```text
+plesk
+```
+
+Правила остаются:
+
+```text
+no wholesale merge to production
+point deploy where required
+review diff before production publication
+```
+
+Session locking к этому не относится.
+
+---
+
+## 10. NEW TASK START BEHAVIOR
+
+При получении нового задания:
+
+```text
+1. inspect Git state
+2. inspect current HEAD
+3. inspect relevant task artifacts
+4. continue from actual repository state
+```
+
+Не отвечать:
+
+```text
+PARALLEL WORK BLOCKED
+```
+
+только потому, что предыдущая Cursor session отсутствует.
+
+---
+
+## 11. WHEN TO ACTUALLY STOP
+
+Остановиться только если существует реальный риск потери данных:
+
+```text
+unknown dirty files would be overwritten
+merge conflict
+unresolved conflict markers
+unexpected branch change
+another active writer modifying same files
+repository corruption
+```
+
+Не останавливать работу из-за административного session-state.
+
+---
+
+# FINAL POLICY
+
+Для этого проекта:
+
+```text
+SESSION LOCK = DISABLED
+GIT SAFETY = ENABLED
+DIRTY TREE = INVESTIGATE, NOT AUTO-BLOCK
+AUTO-COMMIT = VALID STATE TRANSITION
+STALE CURSOR SESSION = NON-BLOCKING
+```
+
+Главный принцип:
+
+```text
+protect files and Git history,
+not Cursor session ownership.
+```

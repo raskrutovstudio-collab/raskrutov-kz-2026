@@ -1,3 +1,10 @@
+/**
+ * SINGLE USER MODE — preToolUse
+ *
+ * SESSION LOCK = DISABLED
+ * Never deny for missing/stale session marker or session owner mismatch.
+ * Soft branch safety only when machine config is present.
+ */
 const fs = require('fs');
 const path = require('path');
 const { execFileSync } = require('child_process');
@@ -15,45 +22,49 @@ function allow() {
 }
 
 try {
-  // Drain stdin so Cursor can finish writing the hook payload.
   fs.readFileSync(0, 'utf8');
 
   const root = path.resolve(__dirname, '..', '..');
   const gitDir = path.join(root, '.git');
   const machinePath = path.join(gitDir, 'cursor-machine-id.json');
-  const sessionPath = path.join(gitDir, 'cursor-parallel-session.json');
 
+  // No machine config → allow (single-user, session lock disabled).
   if (!fs.existsSync(machinePath)) {
-    deny('PARALLEL WORK BLOCKED: machine config is missing. Run setup-parallel-work.cmd.');
+    allow();
     process.exit(0);
   }
 
-  const cfg = JSON.parse(fs.readFileSync(machinePath, 'utf8').replace(/^\uFEFF/, ''));
-  const expected = cfg.machine_name === 'PC1' ? 'work/pc1' : cfg.machine_name === 'PC2' ? 'work/pc2' : null;
+  let expected = null;
+  try {
+    const cfg = JSON.parse(fs.readFileSync(machinePath, 'utf8').replace(/^\uFEFF/, ''));
+    expected = cfg.machine_name === 'PC1' ? 'work/pc1' : cfg.machine_name === 'PC2' ? 'work/pc2' : null;
+  } catch {
+    allow();
+    process.exit(0);
+  }
+
   if (!expected) {
-    deny('PARALLEL WORK BLOCKED: invalid machine_name in machine config.');
+    allow();
     process.exit(0);
   }
 
-  const current = execFileSync('git', ['-C', root, 'branch', '--show-current'], { encoding: 'utf8' }).trim();
-  if (current !== expected) {
-    deny(`PARALLEL WORK BLOCKED: expected branch ${expected}, current branch ${current || '(detached)'}.`);
+  let current = '';
+  try {
+    current = execFileSync('git', ['-C', root, 'branch', '--show-current'], { encoding: 'utf8' }).trim();
+  } catch {
+    allow();
     process.exit(0);
   }
 
-  if (!fs.existsSync(sessionPath)) {
-    deny(`PARALLEL WORK BLOCKED: no active safe Cursor session for ${expected}. Resubmit the prompt.`);
+  // Real risk: writing on an unexpected branch.
+  if (current && current !== expected && current !== 'plesk') {
+    deny(`GIT SAFETY: unexpected branch '${current}'. Expected '${expected}'.`);
     process.exit(0);
   }
 
-  const marker = JSON.parse(fs.readFileSync(sessionPath, 'utf8').replace(/^\uFEFF/, ''));
-  if (marker.machine_id !== cfg.machine_id || marker.branch !== expected) {
-    deny(`PARALLEL WORK BLOCKED: Cursor session marker does not match ${expected}. Resubmit the prompt.`);
-    process.exit(0);
-  }
-
+  // Stale/missing session marker must NEVER block in single-user mode.
   allow();
 } catch (err) {
-  const message = err && err.message ? err.message.replace(/[\r\n]+/g, ' ') : 'unknown error';
-  deny(`PARALLEL WORK BLOCKED: pre-tool safety check failed: ${message}`);
+  // Prefer allow on hook errors — protect files via agent policy, not hard session deny.
+  allow();
 }

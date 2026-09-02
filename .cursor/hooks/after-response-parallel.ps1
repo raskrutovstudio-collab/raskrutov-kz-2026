@@ -1,5 +1,8 @@
 ﻿$ErrorActionPreference = "SilentlyContinue"
 
+# SINGLE USER MODE — afterAgentResponse counterpart
+# Session marker is optional; missing/stale marker must not skip auto-sync.
+
 function Emit([string]$Message) {
     $obj = [ordered]@{}
     if ($Message) { $obj["user_message"] = $Message }
@@ -9,14 +12,30 @@ function Emit([string]$Message) {
 
 try {
     $null = [Console]::In.ReadToEnd()
-    $lib = Join-Path $PSScriptRoot "..\..\scripts\parallel-work-lib.ps1"
-    . (Resolve-Path $lib)
 
-    $root = Get-ParallelRepoRoot
-    $ctx = Assert-OwnWorkBranch -RepoRoot $root
+    $root = (Resolve-Path (Join-Path $PSScriptRoot "..\..")).Path
+    $gitDir = Join-Path $root ".git"
+    $machinePath = Join-Path $gitDir "cursor-machine-id.json"
+    $sessionPath = Join-Path $gitDir "cursor-parallel-session.json"
 
-    if (-not (Test-ParallelSessionMarker -RepoRoot $root -MachineConfig $ctx.machine -WorkBranch $ctx.branch)) {
-        Emit ""
+    if (-not (Test-Path -LiteralPath $machinePath)) {
+        Emit "SINGLE USER AUTO-SYNC STOPPED: machine config is missing."
+        exit 0
+    }
+
+    $cfg = Get-Content -LiteralPath $machinePath -Raw -Encoding UTF8 | ConvertFrom-Json
+    $expected = $null
+    if ($cfg.machine_name -eq "PC1") { $expected = "work/pc1" }
+    elseif ($cfg.machine_name -eq "PC2") { $expected = "work/pc2" }
+
+    if (-not $expected) {
+        Emit "SINGLE USER AUTO-SYNC STOPPED: invalid machine config."
+        exit 0
+    }
+
+    $branch = (git -C $root branch --show-current 2>$null | Out-String).Trim()
+    if ($branch -ne $expected) {
+        Emit "SINGLE USER AUTO-SYNC STOPPED: expected branch $expected, current branch $branch."
         exit 0
     }
 
@@ -24,8 +43,8 @@ try {
     $dirty = $changes.Count -gt 0 -and -not [string]::IsNullOrWhiteSpace(($changes -join ""))
 
     if (-not $dirty) {
-        Remove-ParallelSessionMarker -RepoRoot $root
-        Emit "PARALLEL WORK: изменений нет."
+        if (Test-Path -LiteralPath $sessionPath) { Remove-Item -LiteralPath $sessionPath -Force -ErrorAction SilentlyContinue }
+        Emit "SINGLE USER: изменений нет."
         exit 0
     }
 
@@ -38,7 +57,7 @@ try {
     }
 
     if ($qualityCode -ne 0) {
-        Emit "PARALLEL WORK: quality:all не пройден. Изменения сохранены, безопасная сессия оставлена активной. Исправьте эту же задачу и повторите проверку."
+        Emit "SINGLE USER: quality:all не пройден. Изменения сохранены локально. Исправьте эту же задачу и повторите проверку."
         exit 0
     }
 
@@ -46,18 +65,18 @@ try {
     if ($LASTEXITCODE -ne 0) { throw "git add завершился ошибкой." }
 
     $stamp = Get-Date -Format "yyyy-MM-dd HH:mm"
-    $message = "auto($($ctx.machine.machine_name)): Cursor task $stamp"
+    $message = "auto($($cfg.machine_name)): Cursor task $stamp"
     & git -C $root commit -m $message
     if ($LASTEXITCODE -ne 0) { throw "git commit завершился ошибкой." }
 
-    & git -C $root push origin $ctx.branch
+    & git -C $root push origin $expected
     if ($LASTEXITCODE -ne 0) { throw "git push завершился ошибкой." }
 
-    Remove-ParallelSessionMarker -RepoRoot $root
-    Emit "PARALLEL WORK: изменения проверены, закоммичены и отправлены в $($ctx.branch). GitHub интегрирует их в main автоматически."
+    if (Test-Path -LiteralPath $sessionPath) { Remove-Item -LiteralPath $sessionPath -Force -ErrorAction SilentlyContinue }
+    Emit "SINGLE USER: изменения проверены, закоммичены и отправлены в $expected."
     exit 0
 }
 catch {
-    Emit "PARALLEL WORK AUTO-SYNC STOPPED: $($_.Exception.Message). Изменения не потеряны; безопасная сессия сохранена для продолжения этой же задачи."
+    Emit "SINGLE USER AUTO-SYNC STOPPED: $($_.Exception.Message). Изменения не потеряны."
     exit 0
 }

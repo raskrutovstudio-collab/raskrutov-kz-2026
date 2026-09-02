@@ -71,18 +71,21 @@ try {
     process.exit(0);
   }
 
-  if (!fs.existsSync(sessionPath)) {
-    appendLog(logPath, 'STOP: no active session marker');
-    emitEmpty();
-    process.exit(0);
-  }
-
-  const marker = JSON.parse(fs.readFileSync(sessionPath, 'utf8').replace(/^\uFEFF/, ''));
-  if (marker.machine_id !== cfg.machine_id || marker.branch !== expected) {
-    appendLog(logPath, 'STOP: session marker mismatch');
-    try { fs.unlinkSync(sessionPath); } catch {}
-    emitEmpty();
-    process.exit(0);
+  // SINGLE USER: session marker is optional. Stale/missing marker must not block finalize.
+  if (fs.existsSync(sessionPath)) {
+    try {
+      const marker = JSON.parse(fs.readFileSync(sessionPath, 'utf8').replace(/^\uFEFF/, ''));
+      if (marker.machine_id && marker.machine_id !== cfg.machine_id) {
+        appendLog(logPath, 'WARN: session marker machine_id mismatch — continuing (single-user)');
+      }
+      if (marker.branch && marker.branch !== expected) {
+        appendLog(logPath, `WARN: session marker branch ${marker.branch} — continuing on ${expected}`);
+      }
+    } catch {
+      appendLog(logPath, 'WARN: session marker unreadable — continuing (single-user)');
+    }
+  } else {
+    appendLog(logPath, 'INFO: no session marker — continuing finalize (session lock disabled)');
   }
 
   const status = run('git', ['-C', root, 'status', '--porcelain'], root);
