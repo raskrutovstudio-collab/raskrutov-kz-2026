@@ -42,7 +42,7 @@ alwaysApply: true
 
 - Не выполнять публикацию автоматически после завершения разработки.
 - Commit, push и deploy выполняются только по отдельной явной команде пользователя.
-- Соблюдать текущий parallel workflow и Git hooks.
+- Соблюдать single-user Git safety и Git hooks (session lock disabled; см. `git-single-user-workflow.mdc`).
 - Не использовать `--no-verify` для обхода quality/safety hooks.
 - Не использовать force push для обычного release.
 - Перед deploy показать точный список файлов, которые попадут в публикацию.
