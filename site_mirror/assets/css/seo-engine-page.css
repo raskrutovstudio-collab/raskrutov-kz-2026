@@ -704,3 +704,36 @@
     max-width: calc((100% - 32px) / 3);
   }
 }
+
+.seo-engine--google .seo-gsc-shot {
+  margin: 28px 0 0;
+  padding: 14px 14px 16px;
+  border: 1px solid #e8e4f4;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(47, 30, 92, 0.04);
+}
+.seo-engine--google .seo-gsc-shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1024 / 493;
+  border-radius: 12px;
+  border: 1px solid #ece8f7;
+  background: #f6f7fb;
+}
+.seo-engine--google .seo-gsc-shot figcaption {
+  margin: 12px 4px 0;
+  font-size: 13px;
+  line-height: 1.45;
+  color: #5c5470;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .seo-engine--google .seo-gsc-shot {
+    padding: 10px 10px 12px;
+  }
+  .seo-engine--google .seo-gsc-shot img {
+    aspect-ratio: 800 / 385;
+  }
+}
