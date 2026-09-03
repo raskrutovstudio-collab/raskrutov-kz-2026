@@ -737,3 +737,40 @@
     aspect-ratio: 800 / 385;
   }
 }
+
+.seo-engine--yandex #webmaster > .rk-container > .seo-prose--left {
+  max-width: 880px;
+  margin-inline: auto;
+}
+.seo-engine--yandex .seo-yw-shot {
+  margin: 24px 0 0;
+  padding: 12px 12px 14px;
+  border: 1px solid #e8e4f4;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(47, 30, 92, 0.04);
+}
+.seo-engine--yandex .seo-yw-shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1024 / 496;
+  border-radius: 10px;
+  border: 1px solid #ece8f7;
+  background: #f4f5f7;
+}
+.seo-engine--yandex .seo-yw-shot figcaption {
+  margin: 10px 4px 0;
+  font-size: 13px;
+  line-height: 1.45;
+  color: #5c5470;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .seo-engine--yandex .seo-yw-shot {
+    padding: 8px 8px 12px;
+  }
+  .seo-engine--yandex .seo-yw-shot img {
+    aspect-ratio: 790 / 478;
+  }
+}
