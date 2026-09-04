@@ -1,5 +1,20 @@
 /* Visual alignment of Motör .ms-menu chrome to homepage rk-header.
    Keeps Motör DOM, adapter and mobile menu JS. Desktop only. */
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat/montserrat_normal.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat/montserrat_bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 @media (min-width: 1100px) {
   body:not(.rk-clean) .is_fixed .ms-menu__wrapper {
     width: min(100%, 1400px);
@@ -9,16 +24,17 @@
   }
 
   body:not(.rk-clean) .is_fixed .ms-menu {
-    display: flex !important;
-    flex-direction: row;
+    display: grid !important;
+    grid-template-columns: 17% 1fr 17%;
     align-items: center !important;
-    justify-content: space-between;
+    justify-content: unset;
     min-height: 61px;
     height: 61px;
     padding: 6px 10px;
     box-sizing: border-box;
     width: 100%;
-    gap: 12px;
+    gap: 20px;
+    font-family: Montserrat, Arial, sans-serif !important;
   }
 
   body:not(.rk-clean) .is_fixed .ms-menu__logo {
@@ -44,15 +60,16 @@
     flex: 1 1 auto;
     display: flex !important;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     min-width: 0;
     overflow: visible;
+    width: 100%;
   }
 
   body:not(.rk-clean) .is_fixed .ms-menu__items {
     display: flex !important;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: nowrap;
     gap: 5px;
     width: auto;
@@ -62,14 +79,17 @@
     display: inline-flex;
     align-items: center;
     text-decoration: none;
+    padding: 0;
+    font-family: Montserrat, Arial, sans-serif !important;
   }
 
   body:not(.rk-clean) .is_fixed .ms-menu__item,
   body:not(.rk-clean) .is_fixed .ms-active-string {
+    font-family: Montserrat, Arial, sans-serif !important;
     font-size: 14px !important;
     font-weight: 400 !important;
     line-height: 1.2 !important;
-    padding: 8px 4px !important;
+    padding: 8px 3px !important;
     white-space: nowrap;
   }
 
@@ -83,12 +103,23 @@
     min-width: 0;
   }
 
+  body:not(.rk-clean) .is_fixed .ms-menu__contacts .ms-slot,
+  body:not(.rk-clean) .is_fixed .ms-menu__contacts .ms-slot__cell,
+  body:not(.rk-clean) .is_fixed .ms-menu__contacts .blk,
+  body:not(.rk-clean) .is_fixed .ms-menu__contacts .block-content,
+  body:not(.rk-clean) .is_fixed .ms-menu__contacts .m-block-wrapper,
   body:not(.rk-clean) .is_fixed .ms-menu__contacts .m-columns {
     display: flex !important;
     align-items: center;
-    gap: 10px;
+    justify-content: flex-end;
     width: auto !important;
+    max-width: 100%;
     float: none !important;
+    margin: 0 !important;
+  }
+
+  body:not(.rk-clean) .is_fixed .ms-menu__contacts .m-columns {
+    gap: 10px;
   }
 
   body:not(.rk-clean) .is_fixed .ms-menu__contacts .m-columns__column {
@@ -98,6 +129,21 @@
     align-items: center;
   }
 
+  body:not(.rk-clean) .is_fixed .ms-menu__contacts .m-image__wrapper,
+  body:not(.rk-clean) .is_fixed .ms-menu__contacts .m-image__sub-wrapper,
+  body:not(.rk-clean) .is_fixed .ms-menu__contacts .m-image,
+  body:not(.rk-clean) .is_fixed .ms-menu__contacts [data-page-link*="wa.me"] {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 44px !important;
+    height: 44px !important;
+    min-width: 44px;
+    min-height: 44px;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+
   body:not(.rk-clean) .is_fixed .ms-menu__contacts img {
     width: 30px !important;
     height: 30px !important;
@@ -105,10 +151,24 @@
   }
 
   body:not(.rk-clean) .is_fixed .ms-menu__contacts a[href^="tel"] {
+    font-family: Montserrat, Arial, sans-serif !important;
     font-size: 15px !important;
     font-weight: 700 !important;
     white-space: nowrap;
     line-height: 1;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 !important;
+  }
+
+  body:not(.rk-clean) .is_fixed .ms-menu__contacts .blk-data,
+  body:not(.rk-clean) .is_fixed .ms-menu__contacts [class*="font-"] {
+    font-family: Montserrat, Arial, sans-serif !important;
+    font-size: 15px !important;
+    font-weight: 700 !important;
+    padding: 0 !important;
+    margin: 0 !important;
   }
 }
 
