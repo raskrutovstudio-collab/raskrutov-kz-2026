@@ -12,44 +12,76 @@
   }
 }
 
+/* Standalone crumbs: same geometry as /keysy/ inline .rk-breadcrumbs.
+   Kept out of .faq-hero so hero padding-top no longer pushes crumbs down. */
+.faq-page .rk-breadcrumbs {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 12px 0 8px;
+  min-height: 41px;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 1.45;
+  color: #6b6b6b;
+  background: transparent;
+}
+
+.faq-page .rk-breadcrumbs ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 0;
+}
+
+.faq-page .rk-breadcrumbs li {
+  display: inline-flex;
+  align-items: center;
+  max-width: 100%;
+}
+
+.faq-page .rk-breadcrumbs li:not(:last-child)::after {
+  content: "→";
+  margin: 0 8px;
+  color: #b0b0b0;
+  font-weight: 400;
+}
+
+.faq-page .rk-breadcrumbs a {
+  color: #5a5a5a;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.faq-page .rk-breadcrumbs a:hover,
+.faq-page .rk-breadcrumbs a:focus {
+  color: #9867f3;
+  border-bottom-color: rgba(152, 103, 243, 0.45);
+  outline: none;
+}
+
+.faq-page .rk-breadcrumbs [aria-current="page"] {
+  color: #3a3a3a;
+  font-weight: 600;
+}
+
 .faq-hero {
-  padding: 28px 0 20px;
+  /* crumbs left the hero; 23px restores the previous H1 Y
+     (header + 41px crumbs + 23px = 126px, was 126.2). */
+  padding: 23px 0 20px;
   background:
     linear-gradient(180deg, rgba(245, 248, 252, 0.95) 0%, #fff 100%);
 }
 
 .faq-hero__inner {
   max-width: none;
-}
-
-.faq-hero .rk-crumbs {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 6px;
-  margin: 0 0 18px;
-  font-size: 13px;
-  line-height: 1.4;
-  color: #6b7788;
-}
-
-.faq-hero .rk-crumbs a {
-  color: #006fdc;
-  text-decoration: none;
-}
-
-.faq-hero .rk-crumbs a:hover,
-.faq-hero .rk-crumbs a:focus-visible {
-  text-decoration: underline;
-  outline: none;
-}
-
-.faq-hero .rk-crumbs__sep {
-  color: #9aa6b5;
-}
-
-.faq-hero .rk-crumbs [aria-current="page"] {
-  color: #3a4658;
 }
 
 .faq-hero__title {
@@ -179,9 +211,22 @@
   gap: 12px;
 }
 
+@media (max-width: 760px) {
+  .faq-page .rk-breadcrumbs {
+    padding: 10px 16px 0;
+    min-height: 0;
+    font-size: 12px;
+  }
+
+  .faq-page .rk-breadcrumbs li:not(:last-child)::after {
+    margin: 0 6px;
+  }
+}
+
 @media (max-width: 767px) {
+  /* Keep H1 at the pre-fix Y: 76 + 28.4 + 27.8 ≈ 132.2. */
   .faq-hero {
-    padding-top: 20px;
+    padding-top: 28px;
   }
 
   .faq-section {
