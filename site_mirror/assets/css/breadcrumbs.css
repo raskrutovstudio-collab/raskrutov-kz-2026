@@ -73,6 +73,9 @@ body:not(.rk-clean) .rk-breadcrumbs[data-rk-breadcrumbs] {
     padding: 10px 16px 0;
     font-size: 12px;
   }
+  body:not(.rk-clean) .rk-breadcrumbs[data-rk-breadcrumbs] {
+    z-index: 6;
+  }
   .rk-breadcrumbs li:not(:last-child)::after {
     margin: 0 6px;
   }
