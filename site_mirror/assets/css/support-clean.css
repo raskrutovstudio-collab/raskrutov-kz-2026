@@ -342,7 +342,7 @@
 }
 .support-page .support-stats {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
 }
 .support-page .support-stat {
@@ -476,6 +476,9 @@
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 18px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .support-page .support-step {
   padding: 18px 14px 20px;
@@ -515,8 +518,12 @@
 .support-page .support-guarantees-faq {
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
-  gap: 28px 40px;
+  gap: 36px 56px;
   align-items: start;
+}
+.support-page .support-faq {
+  padding-top: 8px;
+  border-top: 0;
 }
 .support-page .support-guarantees {
   display: grid;

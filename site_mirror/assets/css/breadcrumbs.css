@@ -1,17 +1,23 @@
 /* Raskrutov sitewide breadcrumbs (sit under Mottor fixed menu) */
 .rk-breadcrumbs {
   position: relative;
-  z-index: 2;
-  width: 100%;
+  z-index: 6;
+  width: min(100% - 40px, 1400px);
   max-width: 1400px;
   margin: 0 auto;
-  padding: 12px 0 8px;
+  padding: 10px 0 6px;
   box-sizing: border-box;
   font-family: inherit;
   font-size: 13px;
   line-height: 1.45;
   color: #6b6b6b;
   background: transparent;
+}
+
+/* Motör pages: keep crumbs on the first screen, not as a detached strip */
+body:not(.rk-clean) .rk-breadcrumbs[data-rk-breadcrumbs] {
+  padding: 12px 0 8px;
+  margin: 0 auto;
 }
 
 .rk-breadcrumbs ol {

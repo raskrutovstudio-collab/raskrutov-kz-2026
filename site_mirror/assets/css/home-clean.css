@@ -1050,6 +1050,8 @@ body.rk-modal-open {
   font-family: var(--rk-font-head);
   font-weight: 500;
   min-width: 200px;
+  color: var(--rk-purple);
+  background: #fff;
 }
 .rk-feature-row {
   display: grid;
@@ -1982,16 +1984,34 @@ body.rk-modal-open {
   margin-top: 18px;
   align-items: start;
 }
+@media (min-width: 768px) {
+  .rk-contacts {
+    align-items: stretch;
+  }
+  .rk-contacts__aside,
+  .rk-contacts__main {
+    min-height: 0;
+  }
+  .rk-contacts__main {
+    display: flex;
+    flex-direction: column;
+  }
+  .rk-map {
+    flex: 1 1 auto;
+    height: auto;
+    min-height: 262px;
+  }
+}
 .rk-contacts__aside {
   display: grid;
   gap: 14px;
   align-content: start;
 }
 .rk-contacts__line {
-  width: calc(100% - 24px);
+  width: 100%;
   max-width: 100%;
   height: 0;
-  margin: 0 21px 1px 3px;
+  margin: 0 0 1px;
   border: 0;
   border-top: 2px solid #9867f3;
 }
@@ -2563,8 +2583,8 @@ body.rk-modal-open {
 }
 @media (min-width: 1100px) {
   :root {
-    --rk-header-h: 64px;
-    --rk-header-desktop-height: 64px;
+    --rk-header-h: 62px;
+    --rk-header-desktop-height: 61px;
   }
   .rk-header {
     min-height: var(--rk-header-desktop-height);
@@ -2583,18 +2603,19 @@ body.rk-modal-open {
     grid-template-columns: 17% 1fr 17%;
     min-height: var(--rk-header-desktop-height);
     align-items: center;
-    padding: 8px 0;
+    padding: 6px 10px;
+    width: min(100%, 1400px);
   }
   .rk-nav {
     flex-wrap: nowrap;
-    gap: 4px;
+    gap: 5px;
     min-width: 0;
   }
   .rk-nav a {
     white-space: nowrap;
     flex-shrink: 0;
-    font-size: 13px;
-    padding: 8px 3px;
+    font-size: 14px;
+    padding: 8px 4px;
   }
   .rk-header__phone {
     white-space: nowrap;
@@ -2606,6 +2627,11 @@ body.rk-modal-open {
     max-width: 100%;
     aspect-ratio: 211 / 49;
     object-fit: contain;
+  }
+}
+@media (min-width: 1400px) {
+  .rk-nav a {
+    font-size: 15px;
   }
 }
 @media (min-width: 768px) {
