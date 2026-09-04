@@ -467,15 +467,6 @@
 
   function alignMotorHeaderChrome() {
     if (document.body.classList.contains("rk-clean")) return;
-    var logoSrc = "/assets/img/migrated/6b2b062d35c9.webp";
-    $all(".is_fixed .ms-menu__logo img").forEach(function (img) {
-      if ((img.getAttribute("src") || "").indexOf("6b2b062d35c9.webp") === -1) {
-        img.src = logoSrc;
-        img.removeAttribute("srcset");
-        img.setAttribute("width", "211");
-        img.setAttribute("height", "49");
-      }
-    });
     var path = (location.pathname || "/").replace(/\/+$/, "") || "/";
     $all(".is_fixed .ms-menu__items > a").forEach(function (a) {
       var href = (a.getAttribute("href") || "").replace(/\/+$/, "") || "/";

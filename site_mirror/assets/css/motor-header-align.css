@@ -79,7 +79,6 @@
   }
 
   body:not(.rk-clean) .is_fixed .ms-menu__logo img {
-    content: url("../img/migrated/6b2b062d35c9.webp");
     width: 211px !important;
     height: 49px !important;
     aspect-ratio: 211 / 49;
