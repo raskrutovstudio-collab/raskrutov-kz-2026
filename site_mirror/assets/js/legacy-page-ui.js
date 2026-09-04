@@ -394,6 +394,7 @@
     "@media (max-width:767px){" +
     ".blk_yandex_map,.yandex_map_wrap,.yandex_map{min-height:220px;height:220px;}" +
     "[id=\"3631813a16c54affa0d494dafd48adcb\"]>.block-content>.m-block-wrapper>.m-columns{display:block;}" +
+    "body:not(.rk-clean) .rk-breadcrumbs[data-rk-breadcrumbs]{position:relative;z-index:6;}" +
     "}" +
     "#b10ea1877ad1441d94e23457265b9334 .blk_section_inner," +
     "#ee8f469628294214a0a41c6786abc520 .blk_section_inner," +
@@ -458,6 +459,26 @@
     });
   }
 
+  function visibleMenuBottom() {
+    var bottom = 0;
+    $all(".ms-menu").forEach(function (el) {
+      var box = el.getBoundingClientRect();
+      if (box.height > 20 && box.bottom > bottom) bottom = box.bottom;
+    });
+    return bottom;
+  }
+
+  function clearCrumbsFromHeader() {
+    var crumbs = document.querySelector(".rk-breadcrumbs[data-rk-breadcrumbs]");
+    if (!crumbs || document.body.classList.contains("rk-clean")) return;
+    crumbs.style.marginTop = "";
+    var box = crumbs.getBoundingClientRect();
+    var menuBottom = visibleMenuBottom();
+    if (menuBottom && box.top < menuBottom - 2) {
+      crumbs.style.marginTop = Math.ceil(menuBottom - box.top + 8) + "px";
+    }
+  }
+
   function placeLegacyCrumbs() {
     if (document.body.classList.contains("rk-clean")) return;
     var crumbs = document.querySelector(".rk-breadcrumbs[data-rk-breadcrumbs]");
@@ -466,15 +487,15 @@
     while (next && next.nodeType === 1 && !next.classList.contains("blk_section")) {
       next = next.nextElementSibling;
     }
-    if (!next || !next.classList.contains("blk_section")) return;
-    if (next.contains(crumbs)) return;
-    var host =
-      next.querySelector(".m-header-slot") ||
-      next.querySelector(".blk_section_inner") ||
-      next.querySelector(".m-wrapper") ||
-      next;
-    if (host.firstChild === crumbs) return;
-    host.insertBefore(crumbs, host.firstChild);
+    if (next && next.classList.contains("blk_section") && !next.contains(crumbs)) {
+      var host =
+        next.querySelector(".m-header-slot") ||
+        next.querySelector(".blk_section_inner") ||
+        next.querySelector(".m-wrapper") ||
+        next;
+      if (host.firstChild !== crumbs) host.insertBefore(crumbs, host.firstChild);
+    }
+    clearCrumbsFromHeader();
   }
 
   if (document.readyState === "loading") {
@@ -490,4 +511,5 @@
     placeLegacyCrumbs();
     mountLegacyMaps();
   }
+  window.addEventListener("resize", clearCrumbsFromHeader);
 })();
