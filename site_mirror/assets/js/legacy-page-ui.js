@@ -375,8 +375,79 @@
     "@media (max-width:900px){" +
     ".ms-menu__button-wrapper.rk-legacy-menu-open + .ms-menu__items-wrapper," +
     ".ms-menu__items-wrapper.rk-legacy-menu-open{display:block!important;position:fixed;inset:0;background:#fff;z-index:10000;overflow:auto;padding:24px;}" +
+    "}" +
+    ".rk-breadcrumbs[data-rk-breadcrumbs]{position:relative;z-index:6;width:min(100% - 40px,1400px);max-width:1400px;margin:0 auto;padding:12px 0 8px;box-sizing:border-box;}" +
+    ".blk_section .rk-breadcrumbs[data-rk-breadcrumbs]{padding:14px 0 6px;}" +
+    ".rk-breadcrumbs[data-rk-breadcrumbs]+.blk_section{margin-top:0;}" +
+    ".blk_yandex_map,.yandex_map_wrap,.yandex_map{width:100%;min-height:262px;height:262px;}" +
+    ".blk_yandex_map iframe,.yandex_map iframe{display:block;width:100%;height:100%;border:0;}" +
+    "@media (min-width:768px){" +
+    "[id=\"3631813a16c54affa0d494dafd48adcb\"]>.block-content>.m-block-wrapper>.m-columns{display:grid;grid-template-columns:minmax(0,.38fr) minmax(0,.62fr);gap:16px;align-items:stretch;}" +
+    "[id=\"3631813a16c54affa0d494dafd48adcb\"] [class*=\"m-columns__column--3631813a16c54affa0d494dafd48adcb\"]{width:auto!important;float:none;}" +
+    "[id=\"3631813a16c54affa0d494dafd48adcb\"] .m-columns__column--1{display:flex;flex-direction:column;gap:12px;}" +
+    "[id=\"3631813a16c54affa0d494dafd48adcb\"] .m-columns__column--1 .blk_yandex_map{flex:1 1 auto;height:auto;min-height:262px;}" +
+    "[id=\"3631813a16c54affa0d494dafd48adcb\"] .m-columns__column--1 .yandex_map_wrap," +
+    "[id=\"3631813a16c54affa0d494dafd48adcb\"] .m-columns__column--1 .yandex_map{height:100%;min-height:262px;}" +
+    "[id=\"3631813a16c54affa0d494dafd48adcb\"] .m-columns__column--0 input," +
+    "[id=\"3631813a16c54affa0d494dafd48adcb\"] .m-columns__column--0 textarea{height:auto;min-height:0;}" +
+    "}" +
+    "@media (max-width:767px){" +
+    ".blk_yandex_map,.yandex_map_wrap,.yandex_map{min-height:220px;height:220px;}" +
+    "[id=\"3631813a16c54affa0d494dafd48adcb\"]>.block-content>.m-block-wrapper>.m-columns{display:block;}" +
+    "}" +
+    "#b10ea1877ad1441d94e23457265b9334 .blk_section_inner," +
+    "#ee8f469628294214a0a41c6786abc520 .blk_section_inner," +
+    "#b10ea1877ad1441d94e23457265b9334 .b-spoilers-wrapper{" +
+    "width:min(100% - 32px,1400px)!important;max-width:1400px;margin-left:auto;margin-right:auto;" +
     "}";
   document.head.appendChild(style);
+
+  function mountLegacyMaps() {
+    $all(".blk_yandex_map").forEach(function (block) {
+      if (block.getAttribute("data-rk-map-ready") === "1") return;
+      var host = block.querySelector(".yandex_map") || block.querySelector(".yandex_map_wrap") || block;
+      if (host.querySelector("iframe") || host.querySelector("canvas") || host.querySelector("ymaps")) return;
+
+      function mount() {
+        if (block.getAttribute("data-rk-map-ready") === "1") return;
+        block.setAttribute("data-rk-map-ready", "1");
+        var wrap = block.querySelector(".blk_yandex_map_data_wrap");
+        var lat = (wrap && wrap.getAttribute("data-map-latitude")) || "54.8746";
+        var lon = (wrap && wrap.getAttribute("data-map-longitude")) || "69.135701";
+        var iframe = document.createElement("iframe");
+        iframe.src =
+          "https://yandex.ru/map-widget/v1/?ll=" +
+          encodeURIComponent(lon + "," + lat) +
+          "&z=16&pt=" +
+          encodeURIComponent(lon + "," + lat + ",pm2rdm") +
+          "&l=map";
+        iframe.title = "Карта офиса Raskrutov";
+        iframe.loading = "lazy";
+        iframe.setAttribute("allowfullscreen", "");
+        iframe.referrerPolicy = "no-referrer-when-downgrade";
+        host.appendChild(iframe);
+      }
+
+      if ("IntersectionObserver" in window) {
+        var io = new IntersectionObserver(
+          function (entries) {
+            if (
+              entries.some(function (entry) {
+                return entry.isIntersecting;
+              })
+            ) {
+              io.disconnect();
+              mount();
+            }
+          },
+          { rootMargin: "240px 0px" }
+        );
+        io.observe(block);
+      } else {
+        mount();
+      }
+    });
+  }
 
   // Init tabs: show first panel groups if present
   function initTabs() {
@@ -387,13 +458,36 @@
     });
   }
 
+  function placeLegacyCrumbs() {
+    if (document.body.classList.contains("rk-clean")) return;
+    var crumbs = document.querySelector(".rk-breadcrumbs[data-rk-breadcrumbs]");
+    if (!crumbs) return;
+    var next = crumbs.nextElementSibling;
+    while (next && next.nodeType === 1 && !next.classList.contains("blk_section")) {
+      next = next.nextElementSibling;
+    }
+    if (!next || !next.classList.contains("blk_section")) return;
+    if (next.contains(crumbs)) return;
+    var host =
+      next.querySelector(".m-header-slot") ||
+      next.querySelector(".blk_section_inner") ||
+      next.querySelector(".m-wrapper") ||
+      next;
+    if (host.firstChild === crumbs) return;
+    host.insertBefore(crumbs, host.firstChild);
+  }
+
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", function () {
       applyAdapter();
       initTabs();
+      placeLegacyCrumbs();
+      mountLegacyMaps();
     });
   } else {
     applyAdapter();
     initTabs();
+    placeLegacyCrumbs();
+    mountLegacyMaps();
   }
 })();

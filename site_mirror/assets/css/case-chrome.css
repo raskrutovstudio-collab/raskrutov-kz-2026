@@ -277,6 +277,22 @@ body.rk-menu-open {
   align-items: start;
 }
 
+@media (min-width: 768px) {
+  .rk-contacts {
+    align-items: stretch;
+  }
+  .rk-contacts__main {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+  }
+  .rk-map {
+    flex: 1 1 auto;
+    height: auto;
+    min-height: 262px;
+  }
+}
+
 .rk-contacts__aside {
   display: grid;
   gap: 14px;
