@@ -1,0 +1,121 @@
+/* Visual alignment of Motör .ms-menu chrome to homepage rk-header.
+   Keeps Motör DOM, adapter and mobile menu JS. Desktop only. */
+@media (min-width: 1100px) {
+  body:not(.rk-clean) .is_fixed .ms-menu__wrapper {
+    width: min(100%, 1400px);
+    max-width: 1400px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  body:not(.rk-clean) .is_fixed .ms-menu {
+    display: flex !important;
+    flex-direction: row;
+    align-items: center !important;
+    justify-content: space-between;
+    min-height: 61px;
+    height: 61px;
+    padding: 6px 10px;
+    box-sizing: border-box;
+    width: 100%;
+    gap: 12px;
+  }
+
+  body:not(.rk-clean) .is_fixed .ms-menu__logo {
+    flex: 0 0 17%;
+    max-width: 17%;
+    display: flex;
+    align-items: center;
+    min-width: 0;
+  }
+
+  body:not(.rk-clean) .is_fixed .ms-menu__logo img {
+    width: 211px !important;
+    height: 49px !important;
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+  body:not(.rk-clean) .is_fixed .ms-menu__button-wrapper {
+    display: none !important;
+  }
+
+  body:not(.rk-clean) .is_fixed .ms-menu__items-wrapper {
+    flex: 1 1 auto;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    overflow: visible;
+  }
+
+  body:not(.rk-clean) .is_fixed .ms-menu__items {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 5px;
+    width: auto;
+  }
+
+  body:not(.rk-clean) .is_fixed .ms-menu__items > a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  body:not(.rk-clean) .is_fixed .ms-menu__item,
+  body:not(.rk-clean) .is_fixed .ms-active-string {
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    line-height: 1.2 !important;
+    padding: 8px 4px !important;
+    white-space: nowrap;
+  }
+
+  body:not(.rk-clean) .is_fixed .ms-menu__contacts {
+    flex: 0 0 17%;
+    max-width: 17%;
+    display: flex !important;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    min-width: 0;
+  }
+
+  body:not(.rk-clean) .is_fixed .ms-menu__contacts .m-columns {
+    display: flex !important;
+    align-items: center;
+    gap: 10px;
+    width: auto !important;
+    float: none !important;
+  }
+
+  body:not(.rk-clean) .is_fixed .ms-menu__contacts .m-columns__column {
+    width: auto !important;
+    float: none !important;
+    display: flex;
+    align-items: center;
+  }
+
+  body:not(.rk-clean) .is_fixed .ms-menu__contacts img {
+    width: 30px !important;
+    height: 30px !important;
+    object-fit: contain;
+  }
+
+  body:not(.rk-clean) .is_fixed .ms-menu__contacts a[href^="tel"] {
+    font-size: 15px !important;
+    font-weight: 700 !important;
+    white-space: nowrap;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 1400px) {
+  body:not(.rk-clean) .is_fixed .ms-menu__items > a,
+  body:not(.rk-clean) .is_fixed .ms-menu__item,
+  body:not(.rk-clean) .is_fixed .ms-active-string {
+    font-size: 15px !important;
+  }
+}
