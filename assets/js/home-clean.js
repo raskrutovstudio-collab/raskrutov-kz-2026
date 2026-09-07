@@ -22,6 +22,7 @@
 
   /* ---------- Mobile menu ---------- */
   function initMenu() {
+    if (window.__rkSiteHeader) return;
     var burger = $("[data-rk-menu-toggle]");
     var panel = $("[data-rk-mobile-nav]");
     if (!burger || !panel) return;
