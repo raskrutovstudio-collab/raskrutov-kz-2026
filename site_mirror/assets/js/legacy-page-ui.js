@@ -376,21 +376,10 @@
     ".ms-menu__button-wrapper.rk-legacy-menu-open + .ms-menu__items-wrapper," +
     ".ms-menu__items-wrapper.rk-legacy-menu-open{display:block!important;position:fixed;inset:0;background:#fff;z-index:10000;overflow:auto;padding:24px;}" +
     "}" +
-    ".blk_yandex_map,.yandex_map_wrap,.yandex_map{width:100%;min-height:262px;height:262px;}" +
+    ".blk_yandex_map:not(.rk-contacts-google-map),.yandex_map_wrap,.yandex_map{width:100%;min-height:262px;height:262px;}" +
     ".blk_yandex_map iframe,.yandex_map iframe{display:block;width:100%;height:100%;border:0;}" +
-    "@media (min-width:768px){" +
-    "[id=\"3631813a16c54affa0d494dafd48adcb\"]>.block-content>.m-block-wrapper>.m-columns{display:grid;grid-template-columns:minmax(0,.38fr) minmax(0,.62fr);gap:16px;align-items:stretch;}" +
-    "[id=\"3631813a16c54affa0d494dafd48adcb\"] [class*=\"m-columns__column--3631813a16c54affa0d494dafd48adcb\"]{width:auto!important;float:none;}" +
-    "[id=\"3631813a16c54affa0d494dafd48adcb\"] .m-columns__column--1{display:flex;flex-direction:column;gap:12px;}" +
-    "[id=\"3631813a16c54affa0d494dafd48adcb\"] .m-columns__column--1 .blk_yandex_map{flex:1 1 auto;height:auto;min-height:262px;}" +
-    "[id=\"3631813a16c54affa0d494dafd48adcb\"] .m-columns__column--1 .yandex_map_wrap," +
-    "[id=\"3631813a16c54affa0d494dafd48adcb\"] .m-columns__column--1 .yandex_map{height:100%;min-height:262px;}" +
-    "[id=\"3631813a16c54affa0d494dafd48adcb\"] .m-columns__column--0 input," +
-    "[id=\"3631813a16c54affa0d494dafd48adcb\"] .m-columns__column--0 textarea{height:auto;min-height:0;}" +
-    "}" +
     "@media (max-width:767px){" +
-    ".blk_yandex_map,.yandex_map_wrap,.yandex_map{min-height:220px;height:220px;}" +
-    "[id=\"3631813a16c54affa0d494dafd48adcb\"]>.block-content>.m-block-wrapper>.m-columns{display:block;}" +
+    ".blk_yandex_map:not(.rk-contacts-google-map),.yandex_map_wrap,.yandex_map{min-height:220px;height:220px;}" +
     "}" +
     "#b10ea1877ad1441d94e23457265b9334 .blk_section_inner," +
     "#ee8f469628294214a0a41c6786abc520 .blk_section_inner," +
