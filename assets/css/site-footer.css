@@ -1,0 +1,1205 @@
+/* Raskrutov canonical site footer v2 — fully scoped, Motör-independent.
+   Motör /keysy/ loads Montserrat/Open Sans as .woff only. Page-level .woff2
+   faces for "Montserrat" would win and change glyph AA — use dedicated
+   family names bound exclusively to the Motör-identical .woff files. */
+@font-face {
+  font-family: "Montserrat";
+  src: url("/assets/fonts/montserrat/montserrat_normal.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("/assets/fonts/montserrat/montserrat_medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("/assets/fonts/montserrat/montserrat_bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+/* Scoped aliases: only .woff, cannot be overridden by page .woff2 Montserrat */
+@font-face {
+  font-family: "RkFooterMontserrat";
+  src: url("/assets/fonts/montserrat/montserrat_normal.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "RkFooterMontserrat";
+  src: url("/assets/fonts/montserrat/montserrat_medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "RkFooterMontserrat";
+  src: url("/assets/fonts/montserrat/montserrat_bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("/assets/fonts/open_sans/open_sans_normal.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "RkFooterOpenSans";
+  src: url("/assets/fonts/open_sans/open_sans_normal.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.rk-site-footer {
+  --rk-footer-font: RkFooterMontserrat, Arial;
+  --rk-footer-ink: #111111;
+  --rk-footer-title: #282a2f;
+  --rk-footer-muted: #7b7b7b;
+  --rk-footer-border: #cccccc;
+  --rk-footer-accent: #9867f3;
+  --rk-footer-shell: 1400px;
+  --rk-footer-mobile: 330px;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  background: #fff;
+  color: var(--rk-footer-ink);
+  font-family: Helvetica, Arial, sans-serif !important;
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 400;
+  /* Prefer Motör-like smoothing when available; auto can increase glyph diffs */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.rk-site-footer *,
+.rk-site-footer *::before,
+.rk-site-footer *::after {
+  box-sizing: border-box;
+}
+/* Neutralize page Motör / global img stretch rules inside footer only */
+.rk-site-footer img {
+  max-width: none !important;
+  max-height: none !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+}
+
+.rk-site-footer .rk-footer {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 63px 0 15.67px;
+  background: #fff;
+  overflow: hidden;
+}
+.rk-site-footer .rk-footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image: url("/assets/img/lidogeneratsiya/hero-lcp.webp");
+  background-size: cover;
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+}
+.rk-site-footer .rk-footer::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: #ffffff;
+  opacity: 0.7;
+}
+.rk-site-footer .rk-footer__shell {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: var(--rk-footer-shell);
+  min-width: var(--rk-footer-shell);
+  margin: 0 auto;
+  padding: 0 32px;
+  box-sizing: border-box;
+}
+.rk-site-footer .rk-footer__grid {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 100%;
+}
+.rk-site-footer .rk-footer__col--left {
+  flex: 0 0 34.988%;
+  width: 34.988%;
+  max-width: 34.988%;
+  padding-right: 5px;
+  min-width: 0;
+}
+.rk-site-footer .rk-footer__col--right {
+  flex: 0 0 65.012%;
+  width: 65.012%;
+  max-width: 65.012%;
+  padding-left: 5px;
+  min-width: 0;
+}
+
+.rk-site-footer .rk-footer__line {
+  display: block;
+  width: calc(100% - 24px);
+  max-width: 438.44px;
+  height: 0;
+  margin: 0;
+  border: 0;
+  border-top: 2px solid #9867f3;
+}
+.rk-site-footer .rk-footer__intro {
+  /* keysy: line @63 + 2px + margin-top 13.86 ≈ intro @79.86 */
+  margin: 14.86px 0 13.86px;
+  padding: 0;
+  font-family: var(--rk-footer-font) !important;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.6px;
+  color: var(--rk-footer-ink);
+}
+
+/* Form */
+.rk-site-footer .rk-footer-form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 462.44px;
+  min-height: 387.77px !important;
+  height: 387.77px !important;
+  margin: 0;
+  padding: 17px;
+  border: 1px solid var(--rk-footer-accent);
+  border-radius: 10px;
+  background: #fff;
+  font-family: Helvetica, Arial, sans-serif !important;
+  overflow: hidden;
+}
+.rk-site-footer .rk-footer-form__title {
+  margin: 0 0 5px;
+  padding: 0;
+  font-family: var(--rk-footer-font) !important;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  color: var(--rk-footer-title);
+}
+.rk-site-footer .rk-footer-form__subtitle {
+  margin: 0 0 17px;
+  padding: 0;
+  font-family: var(--rk-footer-font) !important;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.6px;
+  color: var(--rk-footer-muted);
+}
+.rk-site-footer .rk-footer-form__field {
+  display: block;
+  width: 100%;
+  margin: 0 0 16px;
+}
+.rk-site-footer .rk-footer-form__label {
+  display: inline-block;
+  margin: 0 0 5px;
+  padding: 0;
+  font-family: var(--rk-footer-font) !important;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.6px;
+  color: var(--rk-footer-title);
+}
+.rk-site-footer .rk-footer-form__input {
+  display: block;
+  width: 100%;
+  height: 37px;
+  margin: 0;
+  padding: 4px 14px;
+  border: 1px solid #c7c7c7;
+  border-radius: 10px;
+  background: #fff;
+  color: var(--rk-footer-title);
+  font-family: "RkFooterOpenSans", "Open Sans", Arial !important;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  outline: none;
+}
+.rk-site-footer .rk-footer-form__input:focus {
+  border-color: var(--rk-footer-accent);
+}
+.rk-site-footer .rk-footer-form__submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  margin: 0;
+  padding: 8px 16px;
+  min-width: 163.9px;
+  min-height: 35.59px;
+  height: 35.59px;
+  border: 0 solid transparent;
+  border-radius: 8px;
+  background: linear-gradient(60deg, rgb(152, 103, 243) 10%, rgb(223, 98, 226) 92%);
+  color: #fff;
+  /* Motör button chrome */
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  gap: 5px;
+  appearance: button;
+  -webkit-appearance: button;
+  cursor: pointer;
+  vertical-align: middle;
+}
+.rk-site-footer .rk-footer-form__submit-text {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-family: RkFooterMontserrat, Arial !important;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.6px;
+  color: #fff;
+}
+.rk-site-footer .rk-footer-form__honeypot {
+  position: absolute !important;
+  left: -10000px !important;
+  top: auto !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+}
+.rk-site-footer .rk-footer-form__consent {
+  display: block;
+  position: relative;
+  margin: 0 0 5px;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif !important;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--rk-footer-ink);
+  cursor: pointer;
+  vertical-align: baseline;
+}
+.rk-site-footer .rk-footer-form__checkbox {
+  display: inline-block;
+  position: static;
+  width: 13px;
+  height: 13px;
+  margin: 4px 0 0;
+  padding: 0;
+  vertical-align: middle;
+  appearance: auto;
+  -webkit-appearance: auto;
+  accent-color: auto;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-size: 14px;
+  color: #000;
+  border: 0;
+  background: transparent;
+}
+.rk-site-footer .rk-footer-form__consent > span {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif !important;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--rk-footer-ink);
+  vertical-align: baseline;
+}
+.rk-site-footer .rk-footer-form__link {
+  color: rgb(50, 136, 230);
+  text-decoration: none;
+  font-family: Helvetica, Arial, sans-serif !important;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.rk-site-footer .rk-footer-form__link:hover {
+  text-decoration: underline;
+}
+.rk-site-footer .rk-footer-form__status {
+  min-height: 16.8px;
+  height: 16.8px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif !important;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.6px;
+  color: var(--rk-footer-ink);
+}
+
+/* Cards */
+.rk-site-footer .rk-footer-cards {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  gap: 3px;
+  width: 100%;
+  margin: 0 0 25.91px;
+}
+.rk-site-footer .rk-footer-card {
+  display: flex;
+  flex: 1 1 0%;
+  /* keysy icons sit at pad-top (y≈71), not vertically centered */
+  align-items: flex-start;
+  align-self: flex-start;
+  /* phone card: icon 42 → text x ≈ +28 */
+  gap: 28.14px;
+  min-width: 0;
+  /* Motör phone box fh 69.97 */
+  min-height: 69.97px !important;
+  height: 69.97px !important;
+  max-height: 69.97px !important;
+  margin: 0;
+  padding: 7px;
+  border: 1px solid var(--rk-footer-border);
+  border-radius: 10px;
+  background: #fff;
+  color: inherit;
+  text-decoration: none;
+  overflow: hidden;
+}
+/* WhatsApp: icon 43 → text gap ≈ 17.97; box fh 70.53 */
+.rk-site-footer .rk-footer-card:nth-child(2) {
+  gap: 17.97px;
+  min-height: 70.53px !important;
+  height: 70.53px !important;
+  max-height: 70.53px !important;
+}
+/* Email: icon 42 → text gap ≈ 19.99; box fh 70.47 */
+.rk-site-footer .rk-footer-card:nth-child(3) {
+  gap: 19.99px;
+  min-height: 70.47px !important;
+  height: 70.47px !important;
+  max-height: 70.47px !important;
+}
+.rk-site-footer .rk-footer-card__icon {
+  display: block;
+  flex: 0 0 auto;
+  max-width: none !important;
+  max-height: none !important;
+  object-fit: contain;
+  object-position: left top;
+}
+.rk-site-footer .rk-footer-card__icon--pc {
+  width: 42px !important;
+  height: 42px !important;
+}
+.rk-site-footer .rk-footer-card__icon--mob {
+  display: none !important;
+  width: 69px !important;
+  height: 69px !important;
+}
+.rk-site-footer .rk-footer-card:nth-child(2) .rk-footer-card__icon--pc {
+  width: 43px !important;
+  height: 42px !important;
+}
+.rk-site-footer .rk-footer-card:nth-child(2) .rk-footer-card__icon--mob {
+  width: 71px !important;
+  height: 68px !important;
+}
+.rk-site-footer .rk-footer-card:nth-child(3) .rk-footer-card__icon--pc {
+  width: 42px !important;
+  height: 42px !important;
+}
+.rk-site-footer .rk-footer-card:nth-child(3) .rk-footer-card__icon--mob {
+  width: 70px !important;
+  height: 68px !important;
+}
+.rk-site-footer .rk-footer-card__value {
+  /* Motör phone/email links are display:inline; line box ~18 */
+  display: inline;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  min-height: 0;
+  font-family: var(--rk-footer-font) !important;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #3a3a3a;
+  white-space: nowrap;
+}
+.rk-site-footer .rk-footer-card:nth-child(3) .rk-footer-card__value {
+  color: rgb(50, 136, 230);
+}
+/* keep vertical rhythm via body gaps after label / before meta */
+.rk-site-footer .rk-footer-card__body {
+  display: block;
+  min-width: 0;
+  padding-top: 0;
+  font-size: 14px;
+  line-height: 18px;
+}
+.rk-site-footer .rk-footer-card__label {
+  display: block;
+  margin: 0 0 3.98px;
+  padding: 0;
+  font-family: var(--rk-footer-font) !important;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  color: var(--rk-footer-ink);
+}
+.rk-site-footer .rk-footer-card__meta {
+  display: block;
+  margin: 3.99px 0 0;
+  padding: 0;
+  font-family: var(--rk-footer-font) !important;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  color: var(--rk-footer-ink);
+}
+.rk-site-footer .rk-footer-card:nth-child(2) .rk-footer-card__label {
+  margin-bottom: 4.27px;
+}
+.rk-site-footer .rk-footer-card:nth-child(2) .rk-footer-card__meta {
+  margin-top: 4.26px;
+}
+.rk-site-footer .rk-footer-card:nth-child(3) .rk-footer-card__label {
+  margin-bottom: 4.23px;
+}
+.rk-site-footer .rk-footer-card:nth-child(3) .rk-footer-card__meta {
+  margin-top: 4.24px;
+}
+
+.rk-site-footer .rk-footer__address {
+  margin: 0 0 25.91px;
+  padding: 0;
+  font-family: var(--rk-footer-font) !important;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  color: var(--rk-footer-ink);
+}
+.rk-site-footer .rk-footer__address strong {
+  font-weight: 700;
+}
+
+/* Map */
+.rk-site-footer .rk-footer-map {
+  display: block;
+  width: 100%;
+  height: 339px;
+  /* keysy: socials y 568.25 − map bottom 540.34 = 27.91 */
+  margin: 0 0 27.91px;
+  overflow: hidden;
+  background: #f3f3f3;
+}
+.rk-site-footer .rk-footer-map__iframe {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  border: 0;
+  max-width: 100%;
+}
+
+/* Social */
+.rk-site-footer .rk-footer-social {
+  width: 100%;
+  min-height: 118.34px;
+  /* keysy: cta y 725.59 − socials bottom 686.59 = 39; footer pb 15.67 → mb 23.33 */
+  margin: 0 0 23.33px;
+  padding: 15px;
+  border: 1px solid var(--rk-footer-border);
+  border-radius: 10px;
+  background: #fff;
+  box-sizing: border-box;
+}
+.rk-site-footer .rk-footer-social__title {
+  margin: 0 0 24.9px;
+  padding: 3px 0 0;
+  font-family: var(--rk-footer-font) !important;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22.4px;
+  color: var(--rk-footer-ink);
+}
+.rk-site-footer .rk-footer-social__list {
+  display: flex;
+  flex-wrap: nowrap;
+  /* Motör columns use unequal gaps: 22.59 / 21.84 / 25.3 */
+  gap: 0;
+  align-items: center;
+}
+.rk-site-footer .rk-footer-social__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: auto;
+  min-width: 0;
+  min-height: 36px;
+  height: 36px;
+  margin: 0;
+  padding: 7px 15px;
+  border: 1px solid rgba(196, 196, 196, 0.4);
+  border-radius: 8px;
+  background: #fff;
+  font-family: var(--rk-footer-font) !important;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19.6px;
+  text-decoration: none;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+.rk-site-footer .rk-footer-social__btn--tg {
+  margin-right: 22.59px;
+}
+.rk-site-footer .rk-footer-social__btn--ig {
+  margin-right: 21.84px;
+}
+.rk-site-footer .rk-footer-social__btn--yt {
+  margin-right: 25.3px;
+}
+.rk-site-footer .rk-footer-social__btn::before {
+  content: "";
+  display: block;
+  flex: 0 0 20px;
+  width: 20px !important;
+  height: 20px !important;
+  min-width: 20px;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-position: left top;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  -webkit-mask-position: left top;
+  mask-position: left top;
+  /* Motör .m-button__img uses luminance masks */
+  -webkit-mask-type: luminance;
+  mask-type: luminance;
+}
+.rk-site-footer .rk-footer-social__btn--tg {
+  color: #24a0ff;
+}
+.rk-site-footer .rk-footer-social__btn--tg::before {
+  background-color: #24a0ff;
+  -webkit-mask-image: url("/assets/icons/migrated/6d57279608ed.svg");
+  mask-image: url("/assets/icons/migrated/6d57279608ed.svg");
+}
+.rk-site-footer .rk-footer-social__btn--ig {
+  color: #df62e2;
+}
+.rk-site-footer .rk-footer-social__btn--ig::before {
+  background-color: #df62e2;
+  -webkit-mask-image: url("/assets/icons/migrated/730c0fcc00d5.svg");
+  mask-image: url("/assets/icons/migrated/730c0fcc00d5.svg");
+}
+.rk-site-footer .rk-footer-social__btn--yt {
+  color: #e70000;
+}
+.rk-site-footer .rk-footer-social__btn--yt::before {
+  background-color: #e70000;
+  -webkit-mask-image: url("/assets/icons/migrated/239ad9090a1b.svg");
+  mask-image: url("/assets/icons/migrated/239ad9090a1b.svg");
+}
+.rk-site-footer .rk-footer-social__btn--tt {
+  color: #1e1e1e;
+}
+.rk-site-footer .rk-footer-social__btn--tt::before {
+  background-color: #1e1e1e;
+  -webkit-mask-image: url("/assets/icons/migrated/6514a5a5c789.svg");
+  mask-image: url("/assets/icons/migrated/6514a5a5c789.svg");
+}
+
+/* CTA */
+.rk-site-footer .rk-footer-cta {
+  position: relative;
+  display: block;
+  width: 100%;
+  /* Motör CTA stays on 1400 shell below desktop; do not shrink with viewport */
+  min-width: var(--rk-footer-shell);
+  height: 136px !important;
+  min-height: 136px !important;
+  max-height: 136px !important;
+  margin: 0;
+  overflow: hidden;
+  background: transparent !important;
+}
+.rk-site-footer .rk-footer-cta__inner {
+  position: relative;
+  z-index: 1;
+  max-width: var(--rk-footer-shell);
+  margin: 0 auto;
+  padding: 0 !important;
+  height: 136px !important;
+  min-height: 136px !important;
+  max-height: 136px !important;
+  box-sizing: border-box;
+}
+.rk-site-footer .rk-footer-cta__bg {
+  position: absolute !important;
+  pointer-events: none !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+}
+.rk-site-footer .rk-footer-cta__bg--pc {
+  display: block !important;
+  top: 20px !important;
+  left: 27px !important;
+  right: auto !important;
+  bottom: auto !important;
+  width: 1342px !important;
+  height: 87px !important;
+  object-fit: fill !important;
+  object-position: center !important;
+}
+.rk-site-footer .rk-footer-cta__bg--mob {
+  display: none !important;
+}
+.rk-site-footer .rk-footer-cta__content {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.rk-site-footer .rk-footer-cta__icon {
+  display: block;
+  object-fit: fill !important;
+  max-width: none !important;
+}
+.rk-site-footer .rk-footer-cta__icon--pc {
+  position: absolute;
+  left: 39px;
+  top: 36px;
+  width: 52px !important;
+  height: 52px !important;
+}
+.rk-site-footer .rk-footer-cta__icon--mob {
+  display: none !important;
+  width: 38px !important;
+  height: 37px !important;
+}
+.rk-site-footer .rk-footer-cta__text {
+  position: absolute;
+  left: 96px;
+  /* Motör .blk-data fy 41; inline span sits ~2px above → visual title at 39 */
+  top: 41px;
+  width: auto;
+  max-width: 392px;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: var(--rk-footer-font) !important;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  overflow: visible;
+}
+.rk-site-footer .rk-footer-cta__copy {
+  color: #fff;
+  font-family: var(--rk-footer-font) !important;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+}
+.rk-site-footer .rk-footer-cta__title {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  font-family: var(--rk-footer-font) !important;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  color: #fff;
+  white-space: normal;
+}
+.rk-site-footer .rk-footer-cta__sub {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  font-family: var(--rk-footer-font) !important;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  color: #fff;
+  white-space: normal;
+}
+.rk-site-footer .rk-footer-cta__btn {
+  position: absolute;
+  left: 580px;
+  top: 48px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin: 0;
+  padding: 6px 14px;
+  min-width: 239px;
+  width: 239px;
+  min-height: 38.41px;
+  height: 38.41px;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  background: transparent;
+  color: #fff;
+  font-family: var(--rk-footer-font) !important;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
+  cursor: pointer;
+  white-space: normal;
+  box-sizing: border-box;
+}
+.rk-site-footer .rk-footer-cta__btn::before,
+.rk-site-footer .rk-footer-cta__btn::after {
+  content: none !important;
+  display: none !important;
+}
+.rk-site-footer .rk-footer-cta__btn-icon {
+  display: block;
+  flex: 0 0 18px;
+  width: 18px !important;
+  height: 18px !important;
+  min-width: 18px;
+  min-height: 18px;
+  background-color: #fff;
+  -webkit-mask-image: url("/assets/icons/migrated/ccd9bdf12005.svg");
+  mask-image: url("/assets/icons/migrated/ccd9bdf12005.svg");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  -webkit-mask-position: left top;
+  mask-position: left top;
+  -webkit-mask-type: luminance;
+  mask-type: luminance;
+}
+.rk-site-footer .rk-footer-cta__btn-text {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  line-height: 22.4px;
+  color: inherit;
+  white-space: nowrap;
+}
+.rk-site-footer .rk-footer-cta__btn:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+
+/* Motör keeps a 1400px canvas below shell width (scrollW=1400).
+   Centering would shift content left by (vw-1400)/2 and break pixel gate. */
+@media (max-width: 1399px) and (min-width: 768px) {
+  .rk-site-footer .rk-footer__shell {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .rk-site-footer .rk-footer-cta__inner {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  /*
+    Windows Chrome paints footer text with ClearType (subpixel RGB) by default.
+    Motör /keysy/ rasterizes grayscale AA. One composited layer on the footer root
+    matches Motör glyph AA without promoting ~28 text nodes (was will-change on each).
+
+    Compositor gate (injection vs live keysy @360/@390):
+    - Z/E1/E2 (no forced layer): keysy ratio ~0.013 FAIL
+    - D (4 group layers): keysy ~0.009 FAIL
+    - A (28 text will-change): PASS ~0.0029, crossHome 0
+    - B (1 layer .rk-footer__shell): PASS ~0.0026
+    - C (1 layer .rk-site-footer): PASS ~0.0014 — chosen (minimal layers, best Motör match)
+    Do not disable page media rules / #all_blocks-style.
+  */
+  .rk-site-footer {
+    -webkit-font-smoothing: antialiased;
+    transform: translateZ(0);
+    will-change: transform;
+  }
+  .rk-site-footer .rk-footer__intro,
+  .rk-site-footer .rk-footer__address,
+  .rk-site-footer .rk-footer-card__label,
+  .rk-site-footer .rk-footer-card__value,
+  .rk-site-footer .rk-footer-card__meta,
+  .rk-site-footer .rk-footer-form__title,
+  .rk-site-footer .rk-footer-form__subtitle,
+  .rk-site-footer .rk-footer-form__label,
+  .rk-site-footer .rk-footer-form__input,
+  .rk-site-footer .rk-footer-form__consent,
+  .rk-site-footer .rk-footer-social__title,
+  .rk-site-footer .rk-footer-social__btn,
+  .rk-site-footer .rk-footer-cta__text,
+  .rk-site-footer .rk-footer-cta__copy,
+  .rk-site-footer .rk-footer-cta__btn,
+  .rk-site-footer .rk-footer-cta__bg--mob,
+  .rk-site-footer .rk-footer-cta__icon--mob {
+    -webkit-font-smoothing: antialiased !important;
+  }
+  /* Motör submit: transform:none; opacity forces grayscale AA without gradient clash */
+  .rk-site-footer .rk-footer-form__submit {
+    -webkit-font-smoothing: antialiased !important;
+    transform: none !important;
+    opacity: 0.999;
+  }
+  .rk-site-footer .rk-footer-form__submit-text {
+    display: inline-block !important;
+    -webkit-font-smoothing: antialiased !important;
+    transform: none !important;
+  }
+  .rk-site-footer .rk-footer {
+    padding: 35px 0 43.11px;
+  }
+  .rk-site-footer .rk-footer__shell {
+    width: var(--rk-footer-mobile);
+    max-width: var(--rk-footer-mobile);
+    min-width: 0;
+    margin: 0 auto;
+    padding: 0;
+  }
+  /* Match live /keysy/ Motör 370-wrapper clipped to 360: content offset 20px left */
+  @media (max-width: 360px) {
+    .rk-site-footer .rk-footer__shell {
+      margin-left: 20px;
+      margin-right: 10px;
+    }
+  }
+  .rk-site-footer .rk-footer-form {
+    height: 387.77px !important;
+    min-height: 387.77px !important;
+  }
+  /* Motör .msf-input__header::after content:" *" */
+  .rk-site-footer .rk-footer-form__label::after {
+    content: " *";
+  }
+  /* Motör subtitle is a single text node (natural wrap). HTML uses no <br>. */
+  .rk-site-footer .rk-footer-form__subtitle br {
+    display: none !important;
+  }
+  /* Motör inputs are inline-block + vertical-align:middle */
+  .rk-site-footer .rk-footer-form__input {
+    display: inline-block !important;
+    vertical-align: middle !important;
+    width: 100% !important;
+    max-width: 100%;
+    box-sizing: border-box !important;
+  }
+  /*
+    Motör field stack @390:
+    - wrapper font/lh 13px → header sits at fieldY+1
+    - field height 62.59 (= 1 + 19.59 + 5 + 37)
+    - adjacent .blk margin-top: var(--msf-field-margin)=15px (not mb:16)
+  */
+  .rk-site-footer .rk-footer-form__field {
+    font-size: 13px !important;
+    line-height: 13px !important;
+    margin: 0 !important;
+    padding-top: 1px !important;
+    box-sizing: border-box !important;
+    min-height: 62.59px;
+  }
+  .rk-site-footer .rk-footer-form__field + .rk-footer-form__field,
+  .rk-site-footer .rk-footer-form__field + .rk-footer-form__submit {
+    margin-top: 15px !important;
+  }
+  .rk-site-footer .rk-footer-form__label {
+    display: inline-block !important;
+    margin: 0 0 5px !important;
+    line-height: 19.6px !important;
+    font-size: 14px !important;
+  }
+  /* nth-child desktop heights are more specific — must re-override on mobile.
+     Motör slots @390: 85 / 84.44 / 85 + gap 10 → wrap 274.44 */
+  .rk-site-footer .rk-footer-card,
+  .rk-site-footer .rk-footer-card:nth-child(1),
+  .rk-site-footer .rk-footer-card:nth-child(3) {
+    height: 85px !important;
+    min-height: 85px !important;
+    max-height: 85px !important;
+  }
+  .rk-site-footer .rk-footer-card:nth-child(2) {
+    height: 84.44px !important;
+    min-height: 84.44px !important;
+    max-height: 84.44px !important;
+  }
+  .rk-site-footer .rk-footer__grid {
+    flex-direction: column;
+  }
+  .rk-site-footer .rk-footer__col--left,
+  .rk-site-footer .rk-footer__col--right {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+  .rk-site-footer .rk-footer__line {
+    width: 100%;
+    max-width: 100%;
+  }
+  .rk-site-footer .rk-footer-form {
+    max-width: 100%;
+    width: 100%;
+  }
+  .rk-site-footer .rk-footer__intro {
+    /* keysy intro y 48.89 = pad35 + line2 + mt11.9 */
+    margin: 11.9px 0 9.89px;
+  }
+  .rk-site-footer .rk-footer__col--left {
+    margin-bottom: 10px;
+  }
+  .rk-site-footer .rk-footer-cards {
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 9.89px;
+  }
+  .rk-site-footer .rk-footer-card,
+  .rk-site-footer .rk-footer-card:nth-child(1),
+  .rk-site-footer .rk-footer-card:nth-child(3) {
+    flex: none !important;
+    flex-grow: 0 !important;
+    flex-shrink: 0 !important;
+    flex-basis: auto !important;
+    width: 100% !important;
+    height: 85px !important;
+    min-height: 85px !important;
+    max-height: 85px !important;
+    /* Motör phone gap icon→text 23.53; top-aligned */
+    gap: 23.53px !important;
+    align-items: flex-start !important;
+  }
+  .rk-site-footer .rk-footer-card:nth-child(2) {
+    flex: none !important;
+    width: 100% !important;
+    height: 84.44px !important;
+    min-height: 84.44px !important;
+    max-height: 84.44px !important;
+    gap: 22px !important;
+    align-items: flex-start !important;
+  }
+  .rk-site-footer .rk-footer-card:nth-child(3) {
+    gap: 26px !important;
+  }
+  .rk-site-footer .rk-footer-card__icon--pc {
+    display: none !important;
+  }
+  .rk-site-footer .rk-footer-card__icon--mob {
+    display: block !important;
+  }
+  /* Motör mobile card type: label/meta 12/16.8, value 14/19.6
+     Motör text blks use margin-top: 6.64px; value blk pad-top:2 → h 21.59 */
+  .rk-site-footer .rk-footer-card__body {
+    font-size: 12px !important;
+    line-height: 16.8px !important;
+  }
+  .rk-site-footer .rk-footer-card__label,
+  .rk-site-footer .rk-footer-card__meta {
+    font-size: 12px !important;
+    line-height: 16.8px !important;
+  }
+  .rk-site-footer .rk-footer-card__label,
+  .rk-site-footer .rk-footer-card:nth-child(2) .rk-footer-card__label,
+  .rk-site-footer .rk-footer-card:nth-child(3) .rk-footer-card__label {
+    margin: 0 !important;
+  }
+  .rk-site-footer .rk-footer-card__value {
+    display: block !important;
+    box-sizing: border-box !important;
+    margin: 6.64px 0 0 !important;
+    padding: 2px 0 0 !important;
+    height: 21.59px !important;
+    font-size: 14px !important;
+    line-height: 19.6px !important;
+  }
+  .rk-site-footer .rk-footer-card__meta,
+  .rk-site-footer .rk-footer-card:nth-child(2) .rk-footer-card__meta,
+  .rk-site-footer .rk-footer-card:nth-child(3) .rk-footer-card__meta {
+    margin: 6.64px 0 0 !important;
+  }
+  /* Motör address inner: Montserrat 14/500/19.6 + <b>Наш офис: </b> */
+  .rk-site-footer .rk-footer__address {
+    font-family: var(--rk-footer-font) !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    line-height: 19.6px !important;
+    margin: 0 0 9.89px !important;
+  }
+  .rk-site-footer .rk-footer-map {
+    height: 262px;
+    /* keysy map→social gap 11.89 */
+    margin-bottom: 11.89px;
+  }
+  .rk-site-footer .rk-footer-social {
+    /* Motör blk_box_self @390: 144.53 with padding 15 */
+    height: 144.53px !important;
+    min-height: 144.53px !important;
+    max-height: 144.53px !important;
+    margin-bottom: 9.89px;
+    overflow: hidden;
+  }
+  /* Motör title inner: 14/700/19.6 + pad-top 2 → h 21.59 */
+  .rk-site-footer .rk-footer-social__title {
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    line-height: 19.6px !important;
+    padding: 2px 0 0 !important;
+    margin: 0 0 8.94px !important;
+    height: 21.59px !important;
+    box-sizing: border-box !important;
+  }
+  /* Motör social slots: 144px cells + 10px gap; buttons fit-content */
+  .rk-site-footer .rk-footer-social__list {
+    display: grid !important;
+    grid-template-columns: 144px 144px !important;
+    gap: 10px !important;
+    justify-items: start !important;
+    justify-content: start !important;
+  }
+  .rk-site-footer .rk-footer-social__btn,
+  .rk-site-footer .rk-footer-social__btn--tg,
+  .rk-site-footer .rk-footer-social__btn--ig,
+  .rk-site-footer .rk-footer-social__btn--yt,
+  .rk-site-footer .rk-footer-social__btn--tt {
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    justify-content: flex-start !important;
+    flex: 0 1 auto !important;
+  }
+  .rk-site-footer .rk-footer-cta {
+    height: 189px !important;
+    min-height: 189px !important;
+    max-height: 189px !important;
+    min-width: 0;
+    background: transparent !important;
+  }
+  .rk-site-footer .rk-footer-cta__inner {
+    position: relative;
+    height: 189px !important;
+    min-height: 189px !important;
+    max-height: 189px !important;
+    max-width: none;
+    margin: 0;
+    padding: 0 !important;
+  }
+  .rk-site-footer .rk-footer-cta__bg--pc {
+    display: none !important;
+  }
+  /* Motör mobile CTA bg: 377×186 @ (10, 9) */
+  .rk-site-footer .rk-footer-cta__bg--mob {
+    display: block !important;
+    position: absolute !important;
+    top: 9px !important;
+    left: 10px !important;
+    margin: 0 !important;
+    right: auto !important;
+    bottom: auto !important;
+    width: 377px !important;
+    height: 186px !important;
+    object-fit: fill !important;
+  }
+  .rk-site-footer .rk-footer-cta__icon--pc {
+    display: none !important;
+  }
+  /* Motör rocket: 38×37 @ (26, 111) */
+  .rk-site-footer .rk-footer-cta__icon--mob {
+    position: absolute !important;
+    left: 26px !important;
+    top: 111px !important;
+    display: block !important;
+    width: 38px !important;
+    height: 37px !important;
+  }
+  .rk-site-footer .rk-footer-cta__content {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  /* Motör text block ~ (26, 30) — outer blk w≈366, inner span ≈329; use 366 to match wrap */
+  .rk-site-footer .rk-footer-cta__text {
+    position: absolute !important;
+    left: 26px !important;
+    top: 30px !important;
+    width: 366px !important;
+    max-width: 366px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 13px !important;
+    line-height: 18.2px !important;
+  }
+  .rk-site-footer .rk-footer-cta__copy,
+  .rk-site-footer .rk-footer-cta__title,
+  .rk-site-footer .rk-footer-cta__sub {
+    font-size: 13px !important;
+    line-height: 18.2px !important;
+  }
+  .rk-site-footer .rk-footer-cta__btn {
+    position: absolute !important;
+    left: 79px !important;
+    top: 111px !important;
+    margin: 0 !important;
+    width: 230px !important;
+    min-width: 230px !important;
+  }
+  /* Motör .m-button__img @390 mobile CTA: 20×20 (desktop uses 18) */
+  .rk-site-footer .rk-footer-cta__btn-icon {
+    display: block !important;
+    flex: 0 1 auto !important;
+    width: 20px !important;
+    height: 20px !important;
+    min-width: 20px !important;
+    min-height: 20px !important;
+    margin: 0 !important;
+  }
+  /* Motör @360: 370-canvas clipped → CTA full-bleed shifts −10px vs 390 */
+  @media (max-width: 360px) {
+    .rk-site-footer .rk-footer-cta__bg--mob {
+      left: 0 !important;
+    }
+    .rk-site-footer .rk-footer-cta__text {
+      left: 16px !important;
+    }
+    .rk-site-footer .rk-footer-cta__icon--mob {
+      left: 16px !important;
+    }
+    .rk-site-footer .rk-footer-cta__btn {
+      left: 69px !important;
+    }
+  }
+}
