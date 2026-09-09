@@ -838,6 +838,13 @@
     Windows Chrome paints footer text with ClearType (subpixel RGB) by default.
     Motör /keysy/ rasterizes grayscale AA. Promoting text to a composited layer
     (translateZ(0) / opacity<1) matches Motör glyph AA. Desktop rules untouched.
+
+    will-change:transform is required on Motör pages where #all_blocks-style
+    @media (max-width:500px) matched width/font rules keep sibling sections in the
+    render tree (e.g. audit-sayta @360). Without early layer promotion those rules
+    change footer glyph AA even though no selector matches .rk-site-footer
+    (crossHome ~0.006). Evidence: strip matched width+font → 0; display:none Motör
+    → 0; will-change alone → 0 (5/5). Do not disable page media rules.
   */
   .rk-site-footer .rk-footer__intro,
   .rk-site-footer .rk-footer__address,
@@ -858,6 +865,7 @@
   .rk-site-footer .rk-footer-cta__icon--mob {
     -webkit-font-smoothing: antialiased !important;
     transform: translateZ(0);
+    will-change: transform;
   }
   /* Motör submit: transform:none; opacity forces grayscale AA without gradient clash */
   .rk-site-footer .rk-footer-form__submit {
