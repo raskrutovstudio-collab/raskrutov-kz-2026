@@ -459,7 +459,8 @@ body.ks-pdf-modal-open {
   position: relative;
   min-width: 0;
   min-height: 0;
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
   overscroll-behavior: contain;
   background: #dfe4ed;
   -webkit-overflow-scrolling: touch;
