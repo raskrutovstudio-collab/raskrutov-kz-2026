@@ -18,43 +18,63 @@
   if (!statusEl || !pagesEl || !viewerEl || !closeBtn || !triggers.length) return;
 
   var SCROLL_LOCK = 'ks-pdf-modal-open';
-  var ALLOWED_PATH = '/assets/pdf/keysy/sayty/';
-  var PDFJS_URL = '/assets/vendor/pdfjs/pdf.min.mjs?v=1';
-  var WORKER_URL = '/assets/vendor/pdfjs/pdf.worker.min.mjs?v=1';
+  var PDF_DIR = '/assets/pdf/keysy/sayty/';
+  var PDFJS_SRC = '/assets/vendor/pdfjs/pdf.min.mjs?v=2';
+  var WORKER_SRC = '/assets/vendor/pdfjs/pdf.worker.min.mjs?v=2';
   var MAX_CANVAS_DIMENSION = 16384;
   var MAX_CANVAS_PIXELS = 16000000;
   var ZOOM_MIN = 0.5;
   var ZOOM_MAX = 2;
   var ZOOM_STEP = 0.25;
 
+  var PDF_FILES = {
+    'best-tools': 'best-tools.pdf',
+    'poezdki-go': 'poezdki-go.pdf',
+    'sino-pipes': 'sino-pipes.pdf',
+    'profloor': 'profloor.pdf',
+    'transforman': 'transforman.pdf',
+    'eurasia-polymer': 'eurasia-polymer.pdf',
+    'vip-company': 'vip-company.pdf',
+    'more-ryb': 'more-ryb.pdf',
+    'shampurok': 'shampurok.pdf'
+  };
+
   var lastTrigger = null;
   var pdfjsLib = null;
   var pdfjsPromise = null;
+  var workerObjectUrl = null;
+  var moduleObjectUrl = null;
   var activeToken = 0;
   var activeLoadingTask = null;
   var activePdf = null;
-  var activeAbort = null;
-  var currentPath = '';
+  var activeXhr = null;
+  var currentKey = '';
   var userZoom = 1;
   var renderGeneration = 0;
 
-  function isAllowedPdfUrl(raw) {
-    if (!raw || typeof raw !== 'string') return false;
-    var url;
+  function resolvePdfKey(raw) {
+    if (!raw || typeof raw !== 'string') return null;
+    var key = raw.trim();
+    if (PDF_FILES[key]) return key;
+
     try {
-      url = new URL(raw, window.location.href);
+      var url = new URL(key, window.location.href);
+      if (url.origin !== window.location.origin) return null;
+      var path = url.pathname;
+      var prefix = PDF_DIR;
+      var idx = path.indexOf(prefix);
+      if (idx === -1) return null;
+      var file = path.slice(idx + prefix.length);
+      if (!file || file.indexOf('/') !== -1 || !/\.pdf$/i.test(file)) return null;
+      var base = file.replace(/\.pdf$/i, '');
+      return PDF_FILES[base] ? base : null;
     } catch (e) {
-      return false;
+      return null;
     }
-    if (url.origin !== window.location.origin) return false;
-    if (url.search || url.hash) return false;
-    var path = url.pathname;
-    if (!/\.pdf$/i.test(path)) return false;
-    var idx = path.indexOf(ALLOWED_PATH);
-    if (idx === -1) return false;
-    var after = path.slice(idx + ALLOWED_PATH.length);
-    if (!after || after.indexOf('/') !== -1) return false;
-    return true;
+  }
+
+  function pdfPathForKey(key) {
+    return PDF_DIR + PDF_FILES[key];
   }
 
   function setStatus(text, isError) {
@@ -74,14 +94,46 @@
     if (zoomInBtn) zoomInBtn.disabled = userZoom >= ZOOM_MAX - 0.001;
   }
 
+  function fetchText(url) {
+    return new Promise(function (resolve, reject) {
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', url, true);
+      xhr.responseType = 'text';
+      xhr.setRequestHeader('X-Requested-With', 'KSPdfModal');
+      xhr.onload = function () {
+        if (xhr.status >= 200 && xhr.status < 300) resolve(xhr.responseText);
+        else reject(new Error('text-http-' + xhr.status));
+      };
+      xhr.onerror = function () {
+        reject(new Error('text-network'));
+      };
+      xhr.send();
+    });
+  }
+
   function loadPdfJs() {
     if (pdfjsLib) return Promise.resolve(pdfjsLib);
     if (!pdfjsPromise) {
-      pdfjsPromise = import(PDFJS_URL).then(function (mod) {
-        mod.GlobalWorkerOptions.workerSrc = WORKER_URL;
-        pdfjsLib = mod;
-        return mod;
-      });
+      pdfjsPromise = Promise.all([fetchText(PDFJS_SRC), fetchText(WORKER_SRC)])
+        .then(function (parts) {
+          var moduleCode = parts[0];
+          var workerCode = parts[1];
+          moduleObjectUrl = URL.createObjectURL(
+            new Blob([moduleCode], { type: 'text/javascript' })
+          );
+          workerObjectUrl = URL.createObjectURL(
+            new Blob([workerCode], { type: 'text/javascript' })
+          );
+          return import(moduleObjectUrl).then(function (mod) {
+            mod.GlobalWorkerOptions.workerSrc = workerObjectUrl;
+            pdfjsLib = mod;
+            return mod;
+          });
+        })
+        .catch(function (err) {
+          pdfjsPromise = null;
+          throw err;
+        });
     }
     return pdfjsPromise;
   }
@@ -89,11 +141,11 @@
   function cancelActive() {
     activeToken += 1;
     renderGeneration += 1;
-    if (activeAbort) {
+    if (activeXhr) {
       try {
-        activeAbort.abort();
+        activeXhr.abort();
       } catch (e) {}
-      activeAbort = null;
+      activeXhr = null;
     }
     if (activeLoadingTask) {
       try {
@@ -108,7 +160,7 @@
       activePdf = null;
     }
     pagesEl.replaceChildren();
-    currentPath = '';
+    currentKey = '';
   }
 
   function clearViewerDom() {
@@ -120,7 +172,7 @@
     var padL = parseFloat(pagesStyle.paddingLeft) || 0;
     var padR = parseFloat(pagesStyle.paddingRight) || 0;
     var width = viewerEl.clientWidth - padL - padR;
-    return Math.max(200, Math.floor(width) - 2);
+    return Math.max(200, Math.floor(width) - 8);
   }
 
   function planPageRender(page, cssWidth) {
@@ -194,16 +246,16 @@
                 ? [plan.outputScale, 0, 0, plan.outputScale, 0, 0]
                 : null;
 
-            var renderTask = page.render({
-              canvasContext: ctx,
-              viewport: plan.cssViewport,
-              transform: transform
-            });
-
-            return renderTask.promise.then(function () {
-              if (token !== activeToken || gen !== renderGeneration) return;
-              if (num === 1) setStatus('');
-            });
+            return page
+              .render({
+                canvasContext: ctx,
+                viewport: plan.cssViewport,
+                transform: transform
+              })
+              .promise.then(function () {
+                if (token !== activeToken || gen !== renderGeneration) return;
+                if (num === 1) setStatus('');
+              });
           });
         });
       })(pageNum);
@@ -215,39 +267,54 @@
     });
   }
 
-  function fetchPdfBytes(pdfPath, signal) {
-    return fetch(pdfPath, {
-      method: 'GET',
-      credentials: 'same-origin',
-      cache: 'no-store',
-      redirect: 'error',
-      headers: {
-        Accept: 'application/pdf'
-      },
-      signal: signal
-    }).then(function (response) {
-      if (!response.ok) {
-        throw new Error('pdf-http-' + response.status);
-      }
-      var ct = (response.headers.get('content-type') || '').toLowerCase();
-      if (ct && ct.indexOf('pdf') === -1 && ct.indexOf('octet-stream') === -1) {
-        throw new Error('pdf-bad-type');
-      }
-      return response.arrayBuffer();
-    }).then(function (buffer) {
-      var bytes = new Uint8Array(buffer);
-      if (bytes.length < 5) throw new Error('pdf-empty');
-      var magic = String.fromCharCode(bytes[0], bytes[1], bytes[2], bytes[3], bytes[4]);
-      if (magic !== '%PDF-') throw new Error('pdf-magic');
-      return bytes;
+  function loadPdfBytes(pdfPath) {
+    return new Promise(function (resolve, reject) {
+      var xhr = new XMLHttpRequest();
+      activeXhr = xhr;
+      xhr.open('GET', pdfPath, true);
+      xhr.responseType = 'arraybuffer';
+      xhr.setRequestHeader('X-Requested-With', 'KSPdfModal');
+      xhr.setRequestHeader('Accept', '*/*');
+      xhr.onprogress = function (evt) {
+        if (!evt.lengthComputable || evt.total <= 0) return;
+        var pct = Math.max(0, Math.min(100, Math.round((evt.loaded / evt.total) * 100)));
+        setStatus('Загрузка макета: ' + pct + '%');
+      };
+      xhr.onload = function () {
+        activeXhr = null;
+        if (xhr.status < 200 || xhr.status >= 300) {
+          reject(new Error('pdf-http-' + xhr.status));
+          return;
+        }
+        var bytes = new Uint8Array(xhr.response || new ArrayBuffer(0));
+        if (bytes.length < 5) {
+          reject(new Error('pdf-empty'));
+          return;
+        }
+        var magic = String.fromCharCode(bytes[0], bytes[1], bytes[2], bytes[3], bytes[4]);
+        if (magic !== '%PDF-') {
+          reject(new Error('pdf-magic'));
+          return;
+        }
+        resolve(bytes);
+      };
+      xhr.onerror = function () {
+        activeXhr = null;
+        reject(new Error('pdf-network'));
+      };
+      xhr.onabort = function () {
+        activeXhr = null;
+        reject(Object.assign(new Error('aborted'), { name: 'AbortError' }));
+      };
+      xhr.send();
     });
   }
 
   function openPdf(trigger) {
-    var raw = trigger.getAttribute('data-ks-pdf');
-    if (!isAllowedPdfUrl(raw)) return;
+    var key = resolvePdfKey(trigger.getAttribute('data-ks-pdf'));
+    if (!key) return;
 
-    var pdfPath = new URL(raw, window.location.href).pathname;
+    var pdfPath = pdfPathForKey(key);
     var title = trigger.getAttribute('data-ks-pdf-title') || 'Макет сайта';
     lastTrigger = trigger;
     userZoom = 1;
@@ -263,19 +330,16 @@
 
     cancelActive();
     clearViewerDom();
-    currentPath = pdfPath;
+    currentKey = key;
     setStatus('Загрузка макета…');
     viewerEl.scrollTop = 0;
 
     var token = activeToken;
-    var abort = typeof AbortController !== 'undefined' ? new AbortController() : null;
-    activeAbort = abort;
 
     loadPdfJs()
       .then(function (lib) {
         if (token !== activeToken) return null;
-        setStatus('Загрузка макета…');
-        return fetchPdfBytes(pdfPath, abort ? abort.signal : undefined).then(function (bytes) {
+        return loadPdfBytes(pdfPath).then(function (bytes) {
           if (token !== activeToken) return null;
           setStatus('Загрузка макета: 100%');
           var loadingTask = lib.getDocument({
@@ -283,7 +347,8 @@
             isEvalSupported: false,
             useSystemFonts: true,
             disableAutoFetch: true,
-            disableStream: true
+            disableStream: true,
+            disableRange: true
           });
           activeLoadingTask = loadingTask;
           return loadingTask.promise;
@@ -300,7 +365,6 @@
         }
         if (!pdf) return;
         activeLoadingTask = null;
-        activeAbort = null;
         activePdf = pdf;
         return renderAllPages(pdf, token);
       })
@@ -314,7 +378,7 @@
   }
 
   function rerenderCurrent() {
-    if (!activePdf || !currentPath) return;
+    if (!activePdf || !currentKey) return;
     var token = activeToken;
     var pdf = activePdf;
     clearViewerDom();
@@ -343,12 +407,18 @@
     lastTrigger = null;
   }
 
+  function onTriggerActivate(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    if (typeof event.stopImmediatePropagation === 'function') {
+      event.stopImmediatePropagation();
+    }
+    openPdf(event.currentTarget);
+  }
+
   triggers.forEach(function (btn) {
-    btn.addEventListener('click', function (event) {
-      event.preventDefault();
-      event.stopPropagation();
-      openPdf(btn);
-    });
+    btn.addEventListener('click', onTriggerActivate);
+    btn.addEventListener('auxclick', onTriggerActivate);
   });
 
   closeBtn.addEventListener('click', function (event) {
