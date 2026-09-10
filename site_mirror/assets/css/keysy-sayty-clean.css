@@ -130,6 +130,8 @@ body.ks-page {
 
 .ks-case__mockup {
   display: inline-flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 12px;
   min-height: 44px;
   padding: 10px 18px;
@@ -140,12 +142,19 @@ body.ks-page {
   font-family: var(--rk-font-head);
   font-size: 14px;
   font-weight: 600;
+  line-height: 1.2;
+  text-decoration: none;
   cursor: pointer;
   box-shadow: 0 4px 14px rgba(40, 30, 90, 0.08);
 }
 
 .ks-case__mockup:hover {
   background: #f0f4ff;
+}
+
+.ks-case__mockup:focus-visible {
+  outline: 2px solid #2084d6;
+  outline-offset: 2px;
 }
 
 .ks-case__title {
