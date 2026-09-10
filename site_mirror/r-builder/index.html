@@ -27,7 +27,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-MMWCPM9L');</script>
   <link rel="preload" href="../assets/fonts/montserrat/montserrat_bold.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="../assets/img/migrated/f592fe318b01.webp" as="image">
+  <link rel="preload" href="../assets/img/r-builder/hero-r-builder-hq.webp" as="image" media="(min-width: 768px)">
+  <link rel="preload" href="../assets/img/r-builder/hero-r-builder-mobile.webp" as="image" media="(max-width: 767px)">
   <link rel="stylesheet" href="../assets/css/home-clean.css?v=40">
   <link rel="stylesheet" href="../assets/css/r-builder-clean.css?v=1">
   <link rel="stylesheet" href="../assets/css/lead-forms.css">
@@ -247,23 +248,26 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <span>Сделано в Казахстане</span>
               </li>
               <li class="rb-badges__item">
-                <img src="../assets/img/migrated/2a48099c3f15.webp" alt="" width="123" height="123" decoding="async">
+                <img src="../assets/img/r-builder/badge-ai-transparent.webp" alt="" width="123" height="123" decoding="async">
                 <span>AI + экспертные алгоритмы</span>
               </li>
               <li class="rb-badges__item">
-                <img src="../assets/img/migrated/da96ece2727b.webp" alt="" width="123" height="123" decoding="async">
+                <img src="../assets/img/r-builder/badge-tools-transparent.webp" alt="" width="123" height="123" decoding="async">
                 <span>Инструменты для бизнеса и партнеров</span>
               </li>
             </ul>
           </div>
           <figure class="rb-hero__visual">
-            <img
-              src="../assets/img/migrated/f592fe318b01.webp"
-              width="748"
-              height="420"
-              alt="Интерфейс R-Builder — создание сайтов быстрее с умом"
-              fetchpriority="high"
-              decoding="async">
+            <picture>
+              <source media="(max-width: 767px)" srcset="../assets/img/r-builder/hero-r-builder-mobile.webp" type="image/webp" width="720" height="404">
+              <img
+                src="../assets/img/r-builder/hero-r-builder-hq.webp"
+                width="748"
+                height="420"
+                alt="Интерфейс R-Builder — создание сайтов быстрее с умом"
+                fetchpriority="high"
+                decoding="async">
+            </picture>
           </figure>
         </div>
       </div>
