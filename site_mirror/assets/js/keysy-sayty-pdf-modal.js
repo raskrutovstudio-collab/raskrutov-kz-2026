@@ -33,7 +33,8 @@
   var activeToken = 0;
   var activeLoadingTask = null;
   var activePdf = null;
-  var currentUrl = '';
+  var activeAbort = null;
+  var currentPath = '';
   var userZoom = 1;
   var renderGeneration = 0;
 
@@ -88,6 +89,12 @@
   function cancelActive() {
     activeToken += 1;
     renderGeneration += 1;
+    if (activeAbort) {
+      try {
+        activeAbort.abort();
+      } catch (e) {}
+      activeAbort = null;
+    }
     if (activeLoadingTask) {
       try {
         activeLoadingTask.destroy();
@@ -101,7 +108,7 @@
       activePdf = null;
     }
     pagesEl.replaceChildren();
-    currentUrl = '';
+    currentPath = '';
   }
 
   function clearViewerDom() {
@@ -109,11 +116,11 @@
   }
 
   function getFitWidth() {
-    var style = window.getComputedStyle(viewerEl);
-    var padL = parseFloat(style.paddingLeft) || 0;
-    var padR = parseFloat(style.paddingRight) || 0;
+    var pagesStyle = window.getComputedStyle(pagesEl);
+    var padL = parseFloat(pagesStyle.paddingLeft) || 0;
+    var padR = parseFloat(pagesStyle.paddingRight) || 0;
     var width = viewerEl.clientWidth - padL - padR;
-    return Math.max(240, width - 8);
+    return Math.max(200, Math.floor(width) - 2);
   }
 
   function planPageRender(page, cssWidth) {
@@ -208,11 +215,39 @@
     });
   }
 
+  function fetchPdfBytes(pdfPath, signal) {
+    return fetch(pdfPath, {
+      method: 'GET',
+      credentials: 'same-origin',
+      cache: 'no-store',
+      redirect: 'error',
+      headers: {
+        Accept: 'application/pdf'
+      },
+      signal: signal
+    }).then(function (response) {
+      if (!response.ok) {
+        throw new Error('pdf-http-' + response.status);
+      }
+      var ct = (response.headers.get('content-type') || '').toLowerCase();
+      if (ct && ct.indexOf('pdf') === -1 && ct.indexOf('octet-stream') === -1) {
+        throw new Error('pdf-bad-type');
+      }
+      return response.arrayBuffer();
+    }).then(function (buffer) {
+      var bytes = new Uint8Array(buffer);
+      if (bytes.length < 5) throw new Error('pdf-empty');
+      var magic = String.fromCharCode(bytes[0], bytes[1], bytes[2], bytes[3], bytes[4]);
+      if (magic !== '%PDF-') throw new Error('pdf-magic');
+      return bytes;
+    });
+  }
+
   function openPdf(trigger) {
     var raw = trigger.getAttribute('data-ks-pdf');
     if (!isAllowedPdfUrl(raw)) return;
 
-    var url = new URL(raw, window.location.href).pathname;
+    var pdfPath = new URL(raw, window.location.href).pathname;
     var title = trigger.getAttribute('data-ks-pdf-title') || 'Макет сайта';
     lastTrigger = trigger;
     userZoom = 1;
@@ -228,30 +263,31 @@
 
     cancelActive();
     clearViewerDom();
-    currentUrl = url;
+    currentPath = pdfPath;
     setStatus('Загрузка макета…');
     viewerEl.scrollTop = 0;
 
     var token = activeToken;
+    var abort = typeof AbortController !== 'undefined' ? new AbortController() : null;
+    activeAbort = abort;
 
     loadPdfJs()
       .then(function (lib) {
-        if (token !== activeToken) return;
-        var loadingTask = lib.getDocument({
-          url: url,
-          withCredentials: false,
-          isEvalSupported: false,
-          useSystemFonts: true
+        if (token !== activeToken) return null;
+        setStatus('Загрузка макета…');
+        return fetchPdfBytes(pdfPath, abort ? abort.signal : undefined).then(function (bytes) {
+          if (token !== activeToken) return null;
+          setStatus('Загрузка макета: 100%');
+          var loadingTask = lib.getDocument({
+            data: bytes,
+            isEvalSupported: false,
+            useSystemFonts: true,
+            disableAutoFetch: true,
+            disableStream: true
+          });
+          activeLoadingTask = loadingTask;
+          return loadingTask.promise;
         });
-        activeLoadingTask = loadingTask;
-        loadingTask.onProgress = function (evt) {
-          if (token !== activeToken) return;
-          if (evt && evt.total > 0) {
-            var pct = Math.max(0, Math.min(100, Math.round((evt.loaded / evt.total) * 100)));
-            setStatus('Загрузка макета: ' + pct + '%');
-          }
-        };
-        return loadingTask.promise;
       })
       .then(function (pdf) {
         if (token !== activeToken) {
@@ -262,12 +298,15 @@
           }
           return;
         }
+        if (!pdf) return;
         activeLoadingTask = null;
+        activeAbort = null;
         activePdf = pdf;
         return renderAllPages(pdf, token);
       })
       .catch(function (err) {
         if (token !== activeToken) return;
+        if (err && err.name === 'AbortError') return;
         console.error('[ks-pdf-modal]', err);
         setStatus('Не удалось открыть макет. Попробуйте ещё раз.', true);
         clearViewerDom();
@@ -275,7 +314,7 @@
   }
 
   function rerenderCurrent() {
-    if (!activePdf || !currentUrl) return;
+    if (!activePdf || !currentPath) return;
     var token = activeToken;
     var pdf = activePdf;
     clearViewerDom();
@@ -305,12 +344,15 @@
   }
 
   triggers.forEach(function (btn) {
-    btn.addEventListener('click', function () {
+    btn.addEventListener('click', function (event) {
+      event.preventDefault();
+      event.stopPropagation();
       openPdf(btn);
     });
   });
 
-  closeBtn.addEventListener('click', function () {
+  closeBtn.addEventListener('click', function (event) {
+    event.preventDefault();
     closePdf();
   });
 

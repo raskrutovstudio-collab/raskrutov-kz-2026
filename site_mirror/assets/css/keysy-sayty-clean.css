@@ -494,7 +494,8 @@ body.ks-pdf-modal-open {
   display: grid;
   justify-items: center;
   gap: 16px;
-  min-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
   padding: 16px;
 }
 
