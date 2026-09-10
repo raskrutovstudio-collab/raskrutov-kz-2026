@@ -18,7 +18,8 @@
   <link href="../assets/img/migrated/7b93ae076fcb-favicon.png" type="image/png" rel="icon">
   <link href="../favicon.ico" sizes="16x16 32x32 48x48" rel="icon" type="image/x-icon">
   <link rel="preload" as="style" href="../assets/css/home-clean-critical.v1.css?v=1">
-  <link rel="preload" as="image" href="../assets/img/studio/hero-laptop.webp" type="image/webp" fetchpriority="high">
+  <link rel="preload" as="image" href="../assets/img/studio/hero-laptop-v2.webp" type="image/webp" fetchpriority="high" media="(min-width: 768px)">
+  <link rel="preload" as="image" href="../assets/img/studio/hero-laptop-v2-720.webp" type="image/webp" fetchpriority="high" media="(max-width: 767px)">
   <link rel="preload" as="image" href="../assets/img/studio/hero-bg.webp">
   <link rel="preload" href="../assets/fonts/montserrat/montserrat_bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../assets/css/home-clean-critical.v1.css?v=1">
@@ -251,12 +252,12 @@
         </div>
         <figure class="rk-studio-hero__media">
           <picture>
-            <source media="(max-width: 767px)" srcset="../assets/img/reviews/hero-laptop-720.webp" type="image/webp" width="720" height="405">
+            <source media="(max-width: 767px)" srcset="../assets/img/studio/hero-laptop-v2-720.webp" type="image/webp" width="720" height="405">
             <img
-              src="../assets/img/studio/hero-laptop.webp"
-              alt="Пример сайта на ноутбуке и смартфоне"
-              width="1200"
-              height="675"
+              src="../assets/img/studio/hero-laptop-v2.webp"
+              alt="Пример адаптивного сайта на ноутбуке и смартфоне"
+              width="1672"
+              height="941"
               fetchpriority="high"
               loading="eager"
               decoding="async"
