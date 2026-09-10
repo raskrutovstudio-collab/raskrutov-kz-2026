@@ -125,8 +125,6 @@ body.ks-page {
   width: 100%;
   height: auto;
   border-radius: 10px;
-  aspect-ratio: 16 / 10;
-  object-fit: cover;
   background: #e8eef8;
 }
 
