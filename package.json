@@ -6,7 +6,11 @@
   "scripts": {
     "audit:pages": "node tools/audit-pages.mjs",
     "quality:all": "npm run audit:pages",
-    "lighthouse:mobile": "node tools/lighthouse-mobile.mjs"
+    "lighthouse:mobile": "node tools/lighthouse-mobile.mjs",
+    "indexnow": "node scripts/indexnow-submit.mjs",
+    "indexnow:dry": "node scripts/indexnow-submit.mjs --dry-run",
+    "indexnow:changed": "node scripts/indexnow-submit.mjs --changed",
+    "indexnow:changed:dry": "node scripts/indexnow-submit.mjs --changed --dry-run"
   },
   "devDependencies": {
     "lighthouse": "^12.8.2"
