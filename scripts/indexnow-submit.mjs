@@ -13,6 +13,7 @@
  */
 
 import { execFileSync } from 'node:child_process';
+import { readFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -39,10 +40,12 @@ function usage(code = 0) {
 
 Usage:
   node scripts/indexnow-submit.mjs [--dry-run] <url> [url...]
+  node scripts/indexnow-submit.mjs [--dry-run] --file <path>
   node scripts/indexnow-submit.mjs [--dry-run] --changed [--base <git-ref>]
 
 Options:
   --dry-run     Build and print payload, do not POST
+  --file <path> Read URLs from a text file (one URL per line)
   --changed     Collect public HTML pages changed vs git base (default: origin/plesk)
   --base <ref>  Git ref for --changed comparison
   --help        Show help
@@ -52,13 +55,20 @@ Options:
 }
 
 function parseArgs(argv) {
-  const opts = { dryRun: false, changed: false, base: 'origin/plesk', urls: [] };
+  const opts = { dryRun: false, changed: false, base: 'origin/plesk', file: '', urls: [] };
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
     if (a === '--help' || a === '-h') usage(0);
     else if (a === '--dry-run') opts.dryRun = true;
     else if (a === '--changed') opts.changed = true;
-    else if (a === '--base') {
+    else if (a === '--file') {
+      const v = argv[++i];
+      if (!v) {
+        console.error('ERROR: --file requires a path');
+        process.exit(1);
+      }
+      opts.file = v;
+    } else if (a === '--base') {
       const v = argv[++i];
       if (!v) {
         console.error('ERROR: --base requires a git ref');
@@ -311,9 +321,22 @@ async function submit(urls, dryRun) {
   process.exit(1);
 }
 
+function readUrlFile(filePath) {
+  const abs = path.isAbsolute(filePath) ? filePath : path.resolve(ROOT, filePath);
+  const text = readFileSync(abs, 'utf8');
+  return text
+    .split(/\r?\n/)
+    .map((line) => line.trim())
+    .filter((line) => line && !line.startsWith('#'));
+}
+
 async function main() {
   const opts = parseArgs(process.argv.slice(2));
   let raw = [...opts.urls];
+
+  if (opts.file) {
+    raw = raw.concat(readUrlFile(opts.file));
+  }
 
   if (opts.changed) {
     console.log(`Collecting changed pages vs ${opts.base}...`);
@@ -321,7 +344,7 @@ async function main() {
   }
 
   if (!raw.length) {
-    console.error('ERROR: provide URL(s) or --changed');
+    console.error('ERROR: provide URL(s), --file, or --changed');
     usage(1);
   }
 
